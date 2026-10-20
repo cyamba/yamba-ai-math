@@ -1,0 +1,40 @@
+{
+  "id": "P001",
+  "title": "Attention compression that preserves decisive evidence",
+  "objective": "Identify a precise task family in which a query-sensitive compression guarantee can preserve retrieval or reasoning outcomes more efficiently than a generic reconstruction objective, and state a falsifiable resource advantage.",
+  "fleet": "explore",
+  "briefs": [
+    "explore/E001-certified-attention-compression.md",
+    "explore/E002-rare-facts-and-memory-bits.md"
+  ],
+  "constraints": {
+    "max_agents": 6,
+    "max_cost_units": 12,
+    "max_workers": 3,
+    "max_rounds": 1
+  },
+  "deliverables": [
+    "A primary-literature novelty table distinguishing sparse-plus-low-rank prior art from the proposed contribution",
+    "A defined synthetic retrieval task with noise, distractors, rare exceptions, precision, and whole-system resource accounting",
+    "One theorem statement with a complete proof attempt and an independent counterexample search",
+    "A preregistered smallest falsifying experiment; no experiment results unless actually executed",
+    "A synthesis report labeling every claim and recording unresolved disagreement"
+  ],
+  "success_criteria": [
+    "A nontrivial claim is stated with explicit quantifiers and assumptions, or a documented obstruction explains why it fails",
+    "The report distinguishes logits rank, normalized attention rank, value error, and answer correctness",
+    "Rare-fact preservation and baseline memory costs are included",
+    "A proposed advantage has an observable falsifier and resource-matched baseline"
+  ],
+  "stop_conditions": [
+    "The assignment or round budget is exhausted",
+    "Required source access or mathematical assumptions cannot be established; report the gap",
+    "The proposal reduces to existing results without a defensible extension; record and park it",
+    "No useful claim survives counterexamples; retain the negative result"
+  ],
+  "preferred_tags": [
+    "first-principles",
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

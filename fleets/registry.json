@@ -1,0 +1,99 @@
+{
+  "fleets": [
+    {
+      "id": "explore",
+      "description": "Scope a research angle, check prior work, formalize a candidate, challenge it, and account for resources.",
+      "required_capabilities": ["orchestration", "literature", "formalization", "cost-analysis", "falsification", "synthesis"],
+      "max_agents": 6,
+      "stages": [
+        {"id": "frame", "requires": ["orchestration"], "depends_on": []},
+        {"id": "survey", "requires": ["literature"], "depends_on": ["frame"]},
+        {"id": "formalize", "requires": ["formalization"], "depends_on": ["survey"]},
+        {"id": "budget", "requires": ["cost-analysis"], "depends_on": ["frame"]},
+        {"id": "challenge", "requires": ["falsification"], "depends_on": ["formalize", "budget"], "independent_of": ["formalize", "budget"]},
+        {"id": "integrate", "requires": ["synthesis"], "depends_on": ["survey", "formalize", "budget", "challenge"], "independent_of": ["formalize", "challenge"]}
+      ]
+    },
+    {
+      "id": "theorem",
+      "description": "Develop a bounded theorem candidate, independently seek counterexamples, and check tractable cases.",
+      "required_capabilities": ["literature", "formalization", "falsification", "experiments", "synthesis"],
+      "max_agents": 6,
+      "stages": [
+        {"id": "survey", "requires": ["literature"], "depends_on": []},
+        {"id": "statement", "requires": ["formalization"], "depends_on": ["survey"]},
+        {"id": "counterexample", "requires": ["falsification"], "depends_on": ["statement"], "independent_of": ["statement"]},
+        {"id": "finite-check", "requires": ["experiments"], "depends_on": ["statement"], "independent_of": ["statement"]},
+        {"id": "revise", "requires": ["formalization"], "depends_on": ["counterexample", "finite-check"]},
+        {"id": "integrate", "requires": ["synthesis"], "depends_on": ["revise", "counterexample", "finite-check"], "independent_of": ["revise", "counterexample"]}
+      ]
+    },
+    {
+      "id": "architecture",
+      "description": "Turn a formal attention hypothesis into a costed architecture and independently designed evaluation.",
+      "required_capabilities": ["formalization", "attention", "cost-analysis", "experiments", "falsification", "synthesis"],
+      "max_agents": 6,
+      "stages": [
+        {"id": "specify", "requires": ["formalization"], "depends_on": []},
+        {"id": "design", "requires": ["attention"], "depends_on": ["specify"]},
+        {"id": "account", "requires": ["cost-analysis"], "depends_on": ["design"]},
+        {"id": "protocol", "requires": ["experiments"], "depends_on": ["design"], "independent_of": ["design"]},
+        {"id": "review", "requires": ["falsification"], "depends_on": ["design", "account", "protocol"], "independent_of": ["design", "account", "protocol"]},
+        {"id": "integrate", "requires": ["synthesis"], "depends_on": ["review", "account", "protocol"], "independent_of": ["design", "review"]}
+      ]
+    },
+    {
+      "id": "pair",
+      "description": "Use a small author–critic pair for one proposal, independent challenge, and bounded revision.",
+      "required_capabilities": ["formalization", "falsification"],
+      "max_agents": 2,
+      "stages": [
+        {"id": "propose", "requires": ["formalization"], "depends_on": []},
+        {"id": "challenge", "requires": ["falsification"], "depends_on": ["propose"], "independent_of": ["propose"]},
+        {"id": "revise", "requires": ["formalization"], "depends_on": ["challenge"], "independent_of": ["challenge"]}
+      ]
+    },
+    {
+      "id": "world-model",
+      "description": "Study state, geometric structure, causal mechanisms, and full cost of a world-model architecture.",
+      "required_capabilities": ["world-models", "geometry", "causality", "cost-analysis", "falsification", "synthesis"],
+      "max_agents": 6,
+      "stages": [
+        {"id": "model", "requires": ["world-models"], "depends_on": []},
+        {"id": "structure", "requires": ["geometry"], "depends_on": ["model"]},
+        {"id": "interventions", "requires": ["causality"], "depends_on": ["model"], "independent_of": ["model"]},
+        {"id": "account", "requires": ["cost-analysis"], "depends_on": ["model"]},
+        {"id": "review", "requires": ["falsification"], "depends_on": ["structure", "interventions", "account"], "independent_of": ["model", "structure", "interventions", "account"]},
+        {"id": "integrate", "requires": ["synthesis"], "depends_on": ["review", "structure", "interventions", "account"], "independent_of": ["model", "review"]}
+      ]
+    },
+    {
+      "id": "topology",
+      "description": "Formalize and test an agent collaboration topology with causal interventions, full costs, and independent criticism.",
+      "required_capabilities": ["harness-evaluation", "formalization", "causality", "cost-analysis", "falsification", "synthesis"],
+      "max_agents": 6,
+      "stages": [
+        {"id": "model", "requires": ["harness-evaluation"], "depends_on": []},
+        {"id": "formalize", "requires": ["formalization"], "depends_on": ["model"]},
+        {"id": "interventions", "requires": ["causality"], "depends_on": ["model"], "independent_of": ["model"]},
+        {"id": "account", "requires": ["cost-analysis"], "depends_on": ["model"]},
+        {"id": "review", "requires": ["falsification"], "depends_on": ["formalize", "interventions", "account"], "independent_of": ["model", "formalize", "interventions", "account"]},
+        {"id": "integrate", "requires": ["synthesis"], "depends_on": ["review", "formalize", "interventions", "account"], "independent_of": ["model", "review"]}
+      ]
+    },
+    {
+      "id": "meta",
+      "description": "Evaluate a research harness with an independently designed probe, a simpler baseline, and explicit resource accounting.",
+      "required_capabilities": ["orchestration", "harness-evaluation", "experiments", "cost-analysis", "falsification", "synthesis"],
+      "max_agents": 6,
+      "stages": [
+        {"id": "frame", "requires": ["orchestration"], "depends_on": []},
+        {"id": "audit", "requires": ["harness-evaluation"], "depends_on": ["frame"]},
+        {"id": "probe", "requires": ["experiments"], "depends_on": ["audit"], "independent_of": ["audit"]},
+        {"id": "account", "requires": ["cost-analysis"], "depends_on": ["frame"]},
+        {"id": "review", "requires": ["falsification"], "depends_on": ["audit", "probe", "account"], "independent_of": ["audit", "probe", "account"]},
+        {"id": "integrate", "requires": ["synthesis"], "depends_on": ["review", "audit", "probe", "account"], "independent_of": ["audit", "review"]}
+      ]
+    }
+  ]
+}

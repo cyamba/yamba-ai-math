@@ -1,0 +1,201 @@
+{
+  "agents": [
+    {
+      "id": "scout",
+      "name": "Literature Scout",
+      "category": "discovery",
+      "capabilities": [
+        "literature"
+      ],
+      "tags": [
+        "primary-sources",
+        "novelty",
+        "related-work",
+        "gap-finder"
+      ],
+      "cost_units": 2,
+      "prompt_file": "agents/scout.md"
+    },
+    {
+      "id": "mathematician",
+      "name": "Mathematician",
+      "category": "theory",
+      "capabilities": [
+        "formalization"
+      ],
+      "tags": [
+        "theorems",
+        "assumptions",
+        "lower-bounds",
+        "first-principles"
+      ],
+      "cost_units": 3,
+      "prompt_file": "agents/mathematician.md"
+    },
+    {
+      "id": "geometer",
+      "name": "Geometric Learning Researcher",
+      "category": "theory",
+      "capabilities": [
+        "geometry",
+        "formalization"
+      ],
+      "tags": [
+        "equivariance",
+        "graphs",
+        "spectral-methods",
+        "structure-seeking"
+      ],
+      "cost_units": 3,
+      "prompt_file": "agents/geometer.md"
+    },
+    {
+      "id": "attention-engineer",
+      "name": "Attention Engineer",
+      "category": "architecture",
+      "capabilities": [
+        "attention",
+        "experiments"
+      ],
+      "tags": [
+        "retrieval",
+        "binding",
+        "compression",
+        "mechanism-builder"
+      ],
+      "cost_units": 3,
+      "prompt_file": "agents/attention-engineer.md"
+    },
+    {
+      "id": "causal-investigator",
+      "name": "Causal Investigator",
+      "category": "mechanisms",
+      "capabilities": [
+        "causality",
+        "falsification"
+      ],
+      "tags": [
+        "interventions",
+        "confounding",
+        "mechanistic-tests",
+        "intervention-first"
+      ],
+      "cost_units": 3,
+      "prompt_file": "agents/causal-investigator.md"
+    },
+    {
+      "id": "world-model-researcher",
+      "name": "World Model Researcher",
+      "category": "architecture",
+      "capabilities": [
+        "world-models",
+        "causality"
+      ],
+      "tags": [
+        "state",
+        "planning",
+        "partial-observability",
+        "counterfactual-thinker"
+      ],
+      "cost_units": 3,
+      "prompt_file": "agents/world-model-researcher.md"
+    },
+    {
+      "id": "critic",
+      "name": "Independent Critic",
+      "category": "review",
+      "capabilities": [
+        "falsification"
+      ],
+      "tags": [
+        "counterexamples",
+        "leakage",
+        "negative-results",
+        "constructive-skeptic"
+      ],
+      "cost_units": 2,
+      "prompt_file": "agents/critic.md"
+    },
+    {
+      "id": "experimenter",
+      "name": "Experiment Designer",
+      "category": "validation",
+      "capabilities": [
+        "experiments"
+      ],
+      "tags": [
+        "baselines",
+        "ablations",
+        "uncertainty",
+        "falsification-first"
+      ],
+      "cost_units": 2,
+      "prompt_file": "agents/experimenter.md"
+    },
+    {
+      "id": "systems-economist",
+      "name": "Systems Economist",
+      "category": "evaluation",
+      "capabilities": [
+        "cost-analysis"
+      ],
+      "tags": [
+        "total-cost",
+        "latency",
+        "pareto-frontiers",
+        "frugal"
+      ],
+      "cost_units": 2,
+      "prompt_file": "agents/systems-economist.md"
+    },
+    {
+      "id": "synthesizer",
+      "name": "Research Synthesizer",
+      "category": "synthesis",
+      "capabilities": [
+        "synthesis"
+      ],
+      "tags": [
+        "claim-ledger",
+        "disagreements",
+        "decision-records",
+        "integrative"
+      ],
+      "cost_units": 2,
+      "prompt_file": "agents/synthesizer.md"
+    },
+    {
+      "id": "orchestrator",
+      "name": "Research Orchestrator",
+      "category": "coordination",
+      "capabilities": [
+        "orchestration"
+      ],
+      "tags": [
+        "scope",
+        "dependencies",
+        "budgets",
+        "budget-aware"
+      ],
+      "cost_units": 1,
+      "prompt_file": "agents/orchestrator.md"
+    },
+    {
+      "id": "harness-methodologist",
+      "name": "Harness Methodologist",
+      "category": "meta-research",
+      "capabilities": [
+        "harness-evaluation",
+        "experiments"
+      ],
+      "tags": [
+        "agent-fleets",
+        "reproducibility",
+        "evaluation-design",
+        "self-critical"
+      ],
+      "cost_units": 3,
+      "prompt_file": "agents/harness-methodologist.md"
+    }
+  ]
+}

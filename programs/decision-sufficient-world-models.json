@@ -1,0 +1,36 @@
+{
+  "id": "P002",
+  "title": "World models that preserve decisions and interventions",
+  "objective": "Determine what additional structure beyond predictive latent agreement can make a compact world representation identifiable for actions and sufficient for a specified decision problem.",
+  "fleet": "world-model",
+  "briefs": [
+    "explore/E005-action-identifiable-jepa.md",
+    "explore/E006-decision-sufficient-world-models.md",
+    "explore/E007-multimodal-predictive-world-models.md"
+  ],
+  "constraints": {
+    "max_agents": 6,
+    "max_cost_units": 15,
+    "max_workers": 3,
+    "max_rounds": 1
+  },
+  "deliverables": [
+    "A comparison of predictive, action-conditioned, causal, and decision-sufficient representation objectives",
+    "An explicit pair of observationally indistinguishable environments with different action consequences",
+    "A proposed sufficient condition or impossibility statement with a proof attempt",
+    "A minimal intervention-based experiment and compact-architecture candidate, both labeled proposed",
+    "A source-backed novelty assessment and go-or-park decision"
+  ],
+  "success_criteria": [
+    "The representation target, action coverage, observability, and identifiability equivalence are explicit",
+    "The report distinguishes lower prediction loss from better downstream decisions",
+    "Any compactness claim counts encoders, memory, planning, data, and rollout costs",
+    "The proposal is compared with the closest primary work rather than presented as a generic replacement for JEPA"
+  ],
+  "stop_conditions": [
+    "The assignment or round budget is exhausted",
+    "The desired guarantee requires unavailable interventions or untestable assumptions; report this boundary",
+    "No distinction from prior work survives review",
+    "The claimed sufficiency is disproved by a concrete environment pair"
+  ]
+}

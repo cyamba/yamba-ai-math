@@ -1,0 +1,6 @@
+[project]
+name = "yamba-ai-math"
+version = "0.1.0"
+description = "A mathematical AI research lab with bounded agent fleets and an explore-first agenda"
+requires-python = ">=3.11"
+dependencies = []

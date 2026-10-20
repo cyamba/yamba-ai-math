@@ -1,0 +1,32 @@
+{
+  "id": "P004",
+  "title": "Design a controlled harness improvement trial",
+  "objective": "Prepare a reversible champion-versus-challenger evaluation of one bounded orchestration change without modifying research goals, permissions, or evaluation standards.",
+  "fleet": "meta",
+  "briefs": [],
+  "constraints": {
+    "max_agents": 6,
+    "max_cost_units": 12,
+    "max_workers": 3,
+    "max_rounds": 1
+  },
+  "deliverables": [
+    "One candidate proposal following meta/protocol.md",
+    "A frozen evaluation manifest with separate development and held-out task IDs",
+    "A preregistered scorecard, paired comparison, resource cap, and rollback condition",
+    "An independent review of leakage risks and opportunities to game the score",
+    "A ledger entry marked proposed or rejected; no fabricated execution or promotion"
+  ],
+  "success_criteria": [
+    "Only one interpretable harness change is proposed",
+    "Evaluation tasks and scorer versions are fixed before any held-out execution",
+    "Correctness and evidence gates cannot be traded away for lower cost",
+    "The proposal records unknown measurements and has an explicit rollback path"
+  ],
+  "stop_conditions": [
+    "The assignment or round budget is exhausted",
+    "The candidate requires expanded goals, permissions, or spending authority",
+    "Held-out material is exposed during candidate development",
+    "An independent evaluation cannot be arranged; retain the proposal without claiming a gain"
+  ]
+}

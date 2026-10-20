@@ -1,0 +1,35 @@
+{
+  "id": "P003",
+  "title": "When does an agent team beat equal-cost independent work?",
+  "objective": "Formulate and design a decisive comparison of pair, directed-workflow, and bounded-network collaboration under correlated errors and a fixed whole-system resource budget.",
+  "fleet": "topology",
+  "briefs": [
+    "explore/E013-agent-topology-and-correlation.md",
+    "explore/E014-value-of-computation.md"
+  ],
+  "constraints": {
+    "max_agents": 6,
+    "max_cost_units": 15,
+    "max_workers": 3,
+    "max_rounds": 1
+  },
+  "deliverables": [
+    "An explicit stochastic error model separating common-cause errors, independent errors, and communication-induced dependence",
+    "A qualified theorem attempt or counterexample for one topology advantage",
+    "A fixed-budget experiment design including a single-worker baseline and independent retries",
+    "A scoring rubric for correctness, evidence, uncertainty, time, messages, and resource use",
+    "A report identifying assumptions that prevent extrapolation to open-ended discovery"
+  ],
+  "success_criteria": [
+    "All compared systems receive comparable tools and evidence",
+    "The comparison counts orchestration, verification, communication, and repeated work",
+    "First-pass independent outputs are isolated before reconciliation",
+    "A measured gain would be distinguished from a voting or verbosity artifact"
+  ],
+  "stop_conditions": [
+    "The assignment or round budget is exhausted",
+    "A fair resource match or independent scoring procedure cannot be specified",
+    "The model assumes away the error correlation central to the question",
+    "The analysis only restates an existing ensemble result without a useful extension"
+  ]
+}
