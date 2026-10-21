@@ -1,0 +1,38 @@
+{
+  "id": "P005",
+  "title": "Partition positivity: audit and repair the tableau involution",
+  "objective": "Attempt a complete constructive coefficientwise e-positivity proof beginning with the supplied arm-leg and corner-slide constructions; retain exact obstructions and prove the strongest valid repair without presenting partial results as a general solution.",
+  "fleet": "theorem",
+  "briefs": [
+    "research/partitions/README.md"
+  ],
+  "constraints": {
+    "max_agents": 6,
+    "max_cost_units": 14,
+    "max_workers": 3,
+    "max_rounds": 2
+  },
+  "rounds": 1,
+  "deliverables": [
+    "Source-status and proof audit with primary references",
+    "Actual P-tableau enumerator checked by an independent proper-coloring oracle",
+    "Precisely stated universal repair lemmas, independent criticism, and checked Lean proofs",
+    "Illustrated article and an explicit account of the unsolved obligations"
+  ],
+  "success_criteria": [
+    "A complete general constructive positivity proof and its formal bridge are required to report the original research objective as achieved",
+    "For an incomplete investigation, preserve exact counterexamples and report the full objective as unresolved; a useful repair is not completion",
+    "Formalization uses actual tableau validity and identifies any absent symmetric-function bridge",
+    "All claimed finite computations are reproducible and all claimed Lean checks are executed"
+  ],
+  "stop_conditions": [
+    "At most two mathematical proposal/review rounds for this bounded investigation",
+    "A false premise is refuted; preserve it and develop a scoped repair rather than assert the original result",
+    "No full solution survives review; report remaining obligations explicitly",
+    "No paid compute or new provider dependency is required"
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

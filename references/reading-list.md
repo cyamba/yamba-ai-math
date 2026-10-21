@@ -1,6 +1,10 @@
 # Primary-source reading and inspection ledger
 
-**Verification date for every entry: 2026-10-20.** Verification here means that a primary-source record and the indicated material were inspected through web retrieval. It does not mean that every claim in the paper was independently verified. This is a seed bibliography, not a systematic or exhaustive literature review.
+**Verification date for the initial entries: 2026-10-20.** Later additions carry
+their own inspection dates. Verification here means that a primary-source record
+and the indicated material were inspected through web retrieval or an identified
+local primary-source copy. It does not mean that every claim in the paper was
+independently verified. This is a seed bibliography, not an exhaustive review.
 
 ## Inspection levels
 
@@ -70,3 +74,22 @@ The papers' conclusions are established prior-work footholds only within their a
 3. Audit the entire proof before assigning **P**. Record reproduced experiments separately; neither an abstract nor a clean proof establishes empirical usefulness.
 4. Freeze the proposed claim, comparator, and resource boundary before testing. Preserve a negative outcome and distinguish it from an invalid experiment.
 5. Update this ledger when a paper or source becomes inaccessible, is corrected, or changes version. The date above is a record of this inspection, not a permanent accuracy guarantee.
+
+## Integer partitions and constructive positivity
+
+Inspected 2026-10-20; synthesis reviewed 2026-10-21. These entries support the
+[partition investigation](../research/partitions/README.md), separately from the
+AI research seeds. Detailed comparison and retained disagreements are in
+[the independent review](../research/partitions/evidence/reviewer.md).
+
+| ID | Primary source | Inspection | What was checked; limit |
+| --- | --- | --- | --- |
+| R034 | [Cho–Huh, On e-positivity and e-unimodality of chromatic quasisymmetric functions](https://arxiv.org/abs/1711.07152) | T; local argument reproduced | Section 3.1, injection ψ and Theorem 3.3. Our bubble insertion is this existing construction. Its validity and height-two inverse were independently derived and reviewed. This is attribution, not a novelty claim or an audit of every theorem in the paper. |
+| R035 | [Shareshian–Wachs, Chromatic quasisymmetric functions](https://arxiv.org/abs/1405.4629) | T | Definition 6.1, inversion convention, and Theorem 6.3. The Schur/tableau expansion is an imported mathematical dependency; not formalized in our Lean project. |
+| R036 | [Hikita, A proof of the Stanley–Stembridge conjecture, v2](https://arxiv.org/abs/2410.12758v2) | T | Main result and introduction. Ordinary positivity and nonnegativity for positive real q are distinct from nonnegative polynomial coefficients. Full proof not audited. |
+| R037 | [Sagan–Tom, Chromatic symmetric functions and change of basis](https://doi.org/10.5802/alco.468) | T | Top-coefficient tableau formula and existing coefficient positivity results. No priority is claimed for reproducing these constructions. |
+| R038 | [OpenAI, Elementary positivity of chromatic quasisymmetric functions](https://github.com/openai/math/blob/main/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/paper.pdf) | T; partial proof inspection | Theorem 1.1 claims full coefficientwise positivity. Selected local source sections were inspected; the positive-reordering and wall foundations were not fully audited, and no formal rebuild was performed. Recorded as a claimed result, not independently certified. |
+
+The [other-target audit](../research/partitions/evidence/other-targets.md) records
+primary-source checks on the remaining supplied briefs. Its inspection levels
+must be retained when reusing those status corrections.

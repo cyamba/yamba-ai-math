@@ -23,6 +23,12 @@ The harness can study and improve itself through controlled trials. Its own succ
 
 Ideas are welcome even when speculative. Label the uncertainty, identify the closest existing work, and make the proposed advantage falsifiable.
 
+The [integer-partition investigation](research/partitions/README.md) records the
+user-authorized expansion into constructive combinatorics: an audit of the
+supplied positivity proofs, a reproduced height-two theorem, checked Lean
+lemmas, and an illustrated article. It does not claim a general open-problem
+solution or an improvement to an AI architecture.
+
 ## Run the harness
 
 Clone the repository and work from its root. Python **3.11+** is the only dependency; no model account is required for planning, handoffs, replay, or tests.
@@ -82,6 +88,7 @@ Those records are synthetic fixtures. The comparison reports descriptive outcome
 | --- | --- |
 | `explore/` | Mathematical research angles and brief template |
 | `references/` | Primary-source reading and inspection ledger |
+| `research/partitions/` | Partition research, exact counterexamples, formal proofs, and article |
 | `agents/`, `fleets/` | Role cards, categories, tags, and workflow registries |
 | `skills/`, `SKILLS.md` | Reusable research workflows |
 | `programs/` | Bounded investigations ready to plan or dispatch |

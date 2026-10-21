@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-21T06:38:11.761504+00:00",
+  "status": "passed",
+  "scope": "Actual tableau validity, height-two bubbling injection, and graph-inversion preservation; no symmetric-function coefficient bridge.",
+  "sha256": {
+    "CornerSlide.lean": "b4f5c7efa75e4a311d84e1db4115e8d27ecedf4f364ad9cdd459f5a33b962af1",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "lakefile.toml": "2799ce238d7e9e8d643bf1017219570fda97a0668b2e977b5e0cae7125ba2545",
+    "lake-manifest.json": "86390877b1ec5ac828b6c8a08f657bc7b41b8ef3a04d6bda2e26068297458235"
+  },
+  "source_forbidden_token_scan": "passed",
+  "axioms": {
+    "CornerSlide.demote_valid_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.flatten_before_after": [
+      "propext"
+    ],
+    "CornerSlide.word_statistic_preserved": [
+      "propext"
+    ],
+    "CornerSlide.counterexample_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.counterexample_target_invalid": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.demote_bottom_row_valid": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.extract_bubble_inverse_height_two": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.bubble_injective_height_two": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.bubble_noDescent": [
+      "propext"
+    ],
+    "CornerSlide.bubble_tableau_valid": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.bubble_tableau_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.graph_inversions_comparable_swap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.bubble_graph_inversions": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.tableau_graph_inversions_eq_word": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.bubble_tableau_graph_inversions": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.collision_source_other": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CornerSlide.collision_without_height_two": []
+  },
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)\n"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "output": "ℹ [2/3] Replayed CornerSlide\ninfo: CornerSlide.lean:510:0: 'CornerSlide.demote_valid_iff' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:511:0: 'CornerSlide.flatten_before_after' depends on axioms: [propext]\ninfo: CornerSlide.lean:512:0: 'CornerSlide.word_statistic_preserved' depends on axioms: [propext]\ninfo: CornerSlide.lean:513:0: 'CornerSlide.counterexample_source' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: CornerSlide.lean:514:0: 'CornerSlide.counterexample_target_invalid' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:515:0: 'CornerSlide.demote_bottom_row_valid' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:516:0: 'CornerSlide.extract_bubble_inverse_height_two' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:517:0: 'CornerSlide.bubble_injective_height_two' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:518:0: 'CornerSlide.bubble_noDescent' depends on axioms: [propext]\ninfo: CornerSlide.lean:519:0: 'CornerSlide.bubble_tableau_valid' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:520:0: 'CornerSlide.bubble_tableau_injective' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:521:0: 'CornerSlide.graph_inversions_comparable_swap' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:522:0: 'CornerSlide.bubble_graph_inversions' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:523:0: 'CornerSlide.tableau_graph_inversions_eq_word' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:524:0: 'CornerSlide.bubble_tableau_graph_inversions' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:525:0: 'CornerSlide.collision_source_other' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:526:0: 'CornerSlide.collision_without_height_two' does not depend on any axioms\nBuild completed successfully (3 jobs).\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "CornerSlide.lean"
+      ],
+      "exit_code": 0,
+      "output": "'CornerSlide.demote_valid_iff' depends on axioms: [propext, Quot.sound]\n'CornerSlide.flatten_before_after' depends on axioms: [propext]\n'CornerSlide.word_statistic_preserved' depends on axioms: [propext]\n'CornerSlide.counterexample_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.counterexample_target_invalid' depends on axioms: [propext, Quot.sound]\n'CornerSlide.demote_bottom_row_valid' depends on axioms: [propext, Quot.sound]\n'CornerSlide.extract_bubble_inverse_height_two' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_injective_height_two' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_noDescent' depends on axioms: [propext]\n'CornerSlide.bubble_tableau_valid' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_tableau_injective' depends on axioms: [propext, Quot.sound]\n'CornerSlide.graph_inversions_comparable_swap' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_graph_inversions' depends on axioms: [propext, Quot.sound]\n'CornerSlide.tableau_graph_inversions_eq_word' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_tableau_graph_inversions' depends on axioms: [propext, Quot.sound]\n'CornerSlide.collision_source_other' depends on axioms: [propext, Quot.sound]\n'CornerSlide.collision_without_height_two' does not depend on any axioms\n"
+    }
+  ]
+}
