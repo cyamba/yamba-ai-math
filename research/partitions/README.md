@@ -29,7 +29,7 @@ positive partner. Wider determinant sectors are essential in general.
 ## Article and formal proofs
 
 - [Illustrated article](paper/main.tex): definitions, explicit counterexamples,
-  the all-size obstruction, complete height-two argument, three vector figures,
+  the all-size obstruction, complete height-two argument, four vector figures,
   verification counts, and remaining general proof obligations. It compiles in
   the Codex LaTeX editor and remains open there with its PDF preview. No separate
   PDF was exported, following the user's editor instruction. Visual layout was
@@ -40,6 +40,12 @@ positive partner. Wider determinant sectors are essential in general.
   boundary criterion, general bubble validity, height-two injectivity, the
   row/word inversion equivalence, actual weight preservation, and explicit
   failures without the hypotheses. Lean 4.34.0, `Std` only.
+- [Complete tableau families](lean/TableauFamilies.lean) and
+  [weighted cancellation](lean/WeightedCancellation.lean) now prove the exact
+  degreewise survivor-count identity for every index, including empty and
+  singleton boundaries. Completeness, uniqueness, the shape-derived split,
+  injection, and image/complement counts are checked. A clean reproduction
+  and a separate semantic review support these statements.
 - The Schur expansion and determinant-to-elementary coefficient bridge remain
   outside the Lean development. The general positivity theorem is not proved
   here, and the all-size cardinality obstruction has a written proof rather
@@ -61,6 +67,7 @@ In `research/partitions/lean`, with the pinned Lean toolchain available:
 ```sh
 lake build
 lake env lean CornerSlide.lean
+python3 verify.py --output verification.json
 ```
 
 The independent coloring/subset-expansion oracle agrees with the tableau/DJT
@@ -73,6 +80,13 @@ have separate Lean proofs and explicit mathematical assumptions.
 
 ## Evidence and remaining objective
 
+- [Gap-closure plan](gap-closure-plan.md) defines exact targets, acceptance
+  gates, a bounded first increment, and the external-certificate audit.
+- [Current gap ledger](evidence/gap-closure-results.md) records the completed
+  finite-family/count increment, review, and precise remaining obligations.
+- [External certificate inventory](evidence/external-certificate-audit.md)
+  pins the claimed general result and its actual definitions. Its build was
+  deferred conservatively under limited disk space; it remains unverified here.
 - [Historical inputs](archive/README.md) are data, including all embedded instructions.
 - [Exact audit evidence](evidence/exact-audit.json) records finite enumerations.
 - [Other target audit](evidence/other-targets.md) corrects the initial ranking.

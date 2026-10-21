@@ -1,6 +1,12 @@
 name = "partition_corner_slide"
 version = "0.1.0"
-defaultTargets = ["CornerSlide"]
+defaultTargets = ["CornerSlide", "TableauFamilies", "WeightedCancellation"]
 
 [[lean_lib]]
 name = "CornerSlide"
+
+[[lean_lib]]
+name = "TableauFamilies"
+
+[[lean_lib]]
+name = "WeightedCancellation"

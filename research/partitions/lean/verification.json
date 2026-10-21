@@ -1,14 +1,32 @@
 {
-  "schema_version": 1,
-  "checked_at_utc": "2026-10-21T06:38:11.761504+00:00",
+  "schema_version": 2,
+  "checked_at_utc": "2026-10-21T19:15:45.983557+00:00",
   "status": "passed",
-  "scope": "Actual tableau validity, height-two bubbling injection, and graph-inversion preservation; no symmetric-function coefficient bridge.",
+  "scope": "Actual tableau validity, complete finite fixed-shape families, height-two weight-preserving injection, and all-index degreewise survivor cancellation; no coloring-to-elementary bridge.",
+  "clean_build": {
+    "fresh_temporary_workspace": true,
+    "copied_files": [
+      "CornerSlide.lean",
+      "TableauFamilies.lean",
+      "WeightedCancellation.lean",
+      "lean-toolchain",
+      "lakefile.toml",
+      "lake-manifest.json"
+    ],
+    "preexisting_build_artifacts": false,
+    "external_lean_dependencies": [],
+    "installed_toolchain_reused": "Lean 4.34.0 and its bundled Std"
+  },
   "sha256": {
     "CornerSlide.lean": "b4f5c7efa75e4a311d84e1db4115e8d27ecedf4f364ad9cdd459f5a33b962af1",
+    "TableauFamilies.lean": "1e72c85d1ad9488887ff11397573b67c03bad780f2bb1c2a901682634bcb470a",
+    "WeightedCancellation.lean": "10554531eada909b3026b7551102ea55634ee1520ad832400d855f1245e23c21",
     "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
-    "lakefile.toml": "2799ce238d7e9e8d643bf1017219570fda97a0668b2e977b5e0cae7125ba2545",
-    "lake-manifest.json": "86390877b1ec5ac828b6c8a08f657bc7b41b8ef3a04d6bda2e26068297458235"
+    "lakefile.toml": "2429de4e38fea04bcf22d21928be3fffd6195f10aeb7ef789876435d1454677c",
+    "lake-manifest.json": "86390877b1ec5ac828b6c8a08f657bc7b41b8ef3a04d6bda2e26068297458235",
+    "verify.py": "beb95f2699652e998bb34daa026f090055ecbaf4f8973227b06a3d82707502ad"
   },
+  "statement_inventory_source": "import WeightedCancellation\n#check @CornerSlide.Tableau\n#check @CornerSlide.mem_family\n#check @CornerSlide.family_nodup\n#check @CornerSlide.bubbleAt_family\n#check @CornerSlide.bubbleAt_family_injective\n#check @CornerSlide.bubbleAt_family_weight\n#check @CornerSlide.degreeCount\n#check @CornerSlide.degreewise_cancellation\n#check @CornerSlide.columnFamily\n#check @CornerSlide.mem_columnFamily\n#check @CornerSlide.survivorFamily\n#check @CornerSlide.mem_survivorFamily\n#check @CornerSlide.height_two_degreewise_cancellation\n#check @CornerSlide.finiteRelation\n#check @CornerSlide.finite_height_two_degreewise_cancellation\n#check @CornerSlide.empty_vertex_degree_count\n#check @CornerSlide.single_vertex_degree_count\n#check @CornerSlide.survivorFamily_empty_source\n",
   "source_forbidden_token_scan": "passed",
   "axioms": {
     "CornerSlide.demote_valid_iff": [
@@ -73,7 +91,73 @@
       "propext",
       "Quot.sound"
     ],
-    "CornerSlide.collision_without_height_two": []
+    "CornerSlide.mem_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.family_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.bubbleAt_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.bubbleAt_family_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.bubbleAt_family_weight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.degreewise_cancellation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.two_column_degreewise_cancellation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.height_two_degreewise_cancellation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.finite_height_two_degreewise_cancellation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.mem_survivorFamily": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.empty_vertex_degree_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.single_vertex_degree_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.survivorFamily_empty_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CornerSlide.collision_without_height_two": [],
+    "CornerSlide.finiteRelation_height": []
   },
   "commands": [
     {
@@ -84,6 +168,7 @@
         "--version"
       ],
       "exit_code": 0,
+      "elapsed_seconds": 0.625,
       "output": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)\n"
     },
     {
@@ -92,7 +177,8 @@
         "build"
       ],
       "exit_code": 0,
-      "output": "ℹ [2/3] Replayed CornerSlide\ninfo: CornerSlide.lean:510:0: 'CornerSlide.demote_valid_iff' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:511:0: 'CornerSlide.flatten_before_after' depends on axioms: [propext]\ninfo: CornerSlide.lean:512:0: 'CornerSlide.word_statistic_preserved' depends on axioms: [propext]\ninfo: CornerSlide.lean:513:0: 'CornerSlide.counterexample_source' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: CornerSlide.lean:514:0: 'CornerSlide.counterexample_target_invalid' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:515:0: 'CornerSlide.demote_bottom_row_valid' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:516:0: 'CornerSlide.extract_bubble_inverse_height_two' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:517:0: 'CornerSlide.bubble_injective_height_two' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:518:0: 'CornerSlide.bubble_noDescent' depends on axioms: [propext]\ninfo: CornerSlide.lean:519:0: 'CornerSlide.bubble_tableau_valid' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:520:0: 'CornerSlide.bubble_tableau_injective' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:521:0: 'CornerSlide.graph_inversions_comparable_swap' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:522:0: 'CornerSlide.bubble_graph_inversions' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:523:0: 'CornerSlide.tableau_graph_inversions_eq_word' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:524:0: 'CornerSlide.bubble_tableau_graph_inversions' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:525:0: 'CornerSlide.collision_source_other' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:526:0: 'CornerSlide.collision_without_height_two' does not depend on any axioms\nBuild completed successfully (3 jobs).\n"
+      "elapsed_seconds": 7.13,
+      "output": "ℹ [2/7] Built CornerSlide (5.9s)\ninfo: CornerSlide.lean:510:0: 'CornerSlide.demote_valid_iff' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:511:0: 'CornerSlide.flatten_before_after' depends on axioms: [propext]\ninfo: CornerSlide.lean:512:0: 'CornerSlide.word_statistic_preserved' depends on axioms: [propext]\ninfo: CornerSlide.lean:513:0: 'CornerSlide.counterexample_source' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: CornerSlide.lean:514:0: 'CornerSlide.counterexample_target_invalid' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:515:0: 'CornerSlide.demote_bottom_row_valid' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:516:0: 'CornerSlide.extract_bubble_inverse_height_two' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:517:0: 'CornerSlide.bubble_injective_height_two' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:518:0: 'CornerSlide.bubble_noDescent' depends on axioms: [propext]\ninfo: CornerSlide.lean:519:0: 'CornerSlide.bubble_tableau_valid' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:520:0: 'CornerSlide.bubble_tableau_injective' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:521:0: 'CornerSlide.graph_inversions_comparable_swap' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:522:0: 'CornerSlide.bubble_graph_inversions' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:523:0: 'CornerSlide.tableau_graph_inversions_eq_word' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:524:0: 'CornerSlide.bubble_tableau_graph_inversions' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:525:0: 'CornerSlide.collision_source_other' depends on axioms: [propext, Quot.sound]\ninfo: CornerSlide.lean:526:0: 'CornerSlide.collision_without_height_two' does not depend on any axioms\nℹ [4/7] Built TableauFamilies (599ms)\ninfo: TableauFamilies.lean:236:0: 'CornerSlide.mem_family' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: TableauFamilies.lean:237:0: 'CornerSlide.family_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: TableauFamilies.lean:238:0: 'CornerSlide.bubbleAt_family' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: TableauFamilies.lean:239:0: 'CornerSlide.bubbleAt_family_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: TableauFamilies.lean:240:0: 'CornerSlide.bubbleAt_family_weight' depends on axioms: [propext, Classical.choice, Quot.sound]\nℹ [6/7] Built WeightedCancellation (533ms)\ninfo: WeightedCancellation.lean:251:0: 'CornerSlide.degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: WeightedCancellation.lean:252:0: 'CornerSlide.two_column_degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: WeightedCancellation.lean:253:0: 'CornerSlide.height_two_degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: WeightedCancellation.lean:254:0: 'CornerSlide.finiteRelation_height' does not depend on any axioms\ninfo: WeightedCancellation.lean:255:0: 'CornerSlide.finite_height_two_degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: WeightedCancellation.lean:256:0: 'CornerSlide.mem_survivorFamily' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: WeightedCancellation.lean:257:0: 'CornerSlide.empty_vertex_degree_count' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: WeightedCancellation.lean:258:0: 'CornerSlide.single_vertex_degree_count' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: WeightedCancellation.lean:259:0: 'CornerSlide.survivorFamily_empty_source' depends on axioms: [propext, Classical.choice, Quot.sound]\nBuild completed successfully (7 jobs).\n"
     },
     {
       "command": [
@@ -102,7 +188,41 @@
         "CornerSlide.lean"
       ],
       "exit_code": 0,
+      "elapsed_seconds": 0.661,
       "output": "'CornerSlide.demote_valid_iff' depends on axioms: [propext, Quot.sound]\n'CornerSlide.flatten_before_after' depends on axioms: [propext]\n'CornerSlide.word_statistic_preserved' depends on axioms: [propext]\n'CornerSlide.counterexample_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.counterexample_target_invalid' depends on axioms: [propext, Quot.sound]\n'CornerSlide.demote_bottom_row_valid' depends on axioms: [propext, Quot.sound]\n'CornerSlide.extract_bubble_inverse_height_two' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_injective_height_two' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_noDescent' depends on axioms: [propext]\n'CornerSlide.bubble_tableau_valid' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_tableau_injective' depends on axioms: [propext, Quot.sound]\n'CornerSlide.graph_inversions_comparable_swap' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_graph_inversions' depends on axioms: [propext, Quot.sound]\n'CornerSlide.tableau_graph_inversions_eq_word' depends on axioms: [propext, Quot.sound]\n'CornerSlide.bubble_tableau_graph_inversions' depends on axioms: [propext, Quot.sound]\n'CornerSlide.collision_source_other' depends on axioms: [propext, Quot.sound]\n'CornerSlide.collision_without_height_two' does not depend on any axioms\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "TableauFamilies.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.701,
+      "output": "'CornerSlide.mem_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.family_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.bubbleAt_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.bubbleAt_family_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.bubbleAt_family_weight' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "WeightedCancellation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.629,
+      "output": "'CornerSlide.degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.two_column_degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.height_two_degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.finiteRelation_height' does not depend on any axioms\n'CornerSlide.finite_height_two_degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.mem_survivorFamily' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.empty_vertex_degree_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.single_vertex_degree_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CornerSlide.survivorFamily_empty_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "StatementInventory.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.507,
+      "output": "CornerSlide.Tableau : (Nat → Nat → Prop) → List Nat → CornerSlide.Rows → Prop\nCornerSlide.mem_family : ∀ (r : Nat → Nat → Prop) (vertices shape : List Nat) (rows : CornerSlide.Rows),\n  rows ∈ CornerSlide.family r vertices shape ↔ CornerSlide.Tableau r vertices rows ∧ List.map List.length rows = shape\nCornerSlide.family_nodup : ∀ (r : Nat → Nat → Prop) (vertices shape : List Nat),\n  (CornerSlide.family r vertices shape).Nodup\nCornerSlide.bubbleAt_family : ∀ (r : Nat → Nat → Prop) [inst : DecidableRel r],\n  (∀ (x y : Nat), r x y → ¬r y x) →\n    ∀ (vertices : List Nat) (k m : Nat) (rows : CornerSlide.Rows),\n      rows ∈ CornerSlide.family r vertices (CornerSlide.twoColumnShape (k + 1) m) →\n        CornerSlide.bubbleAt r k rows ∈ CornerSlide.family r vertices (CornerSlide.twoColumnShape k (m + 2))\nCornerSlide.bubbleAt_family_injective : ∀ (r : Nat → Nat → Prop) [inst : DecidableRel r],\n  CornerSlide.NoThreeChain r →\n    ∀ (vertices : List Nat) (k m : Nat) (rows rows' : CornerSlide.Rows),\n      rows ∈ CornerSlide.family r vertices (CornerSlide.twoColumnShape (k + 1) m) →\n        rows' ∈ CornerSlide.family r vertices (CornerSlide.twoColumnShape (k + 1) m) →\n          CornerSlide.bubbleAt r k rows = CornerSlide.bubbleAt r k rows' → rows = rows'\nCornerSlide.bubbleAt_family_weight : ∀ (r : Nat → Nat → Prop) [inst : DecidableRel r],\n  (∀ (x y : Nat), r x y → ¬r y x) →\n    ∀ (vertices : List Nat) (k m : Nat) (rows : CornerSlide.Rows),\n      rows ∈ CornerSlide.family r vertices (CornerSlide.twoColumnShape (k + 1) m) →\n        CornerSlide.tableauGraphInversions r (CornerSlide.bubbleAt r k rows) = CornerSlide.tableauGraphInversions r rows\n@CornerSlide.degreeCount : {α : Type} → (α → Nat) → Nat → List α → Nat\n@CornerSlide.degreewise_cancellation : ∀ {α β : Type} [inst : BEq β] [inst_1 : LawfulBEq β] (source : List α)\n  (target : List β) (f : α → β) (sourceWeight : α → Nat) (targetWeight : β → Nat),\n  source.Nodup →\n    target.Nodup →\n      (∀ (x : α), x ∈ source → f x ∈ target) →\n        (∀ (x : α), x ∈ source → ∀ (y : α), y ∈ source → f x = f y → x = y) →\n          (∀ (x : α), x ∈ source → targetWeight (f x) = sourceWeight x) →\n            ∀ (degree : Nat),\n              CornerSlide.degreeCount targetWeight degree target =\n                CornerSlide.degreeCount sourceWeight degree source +\n                  CornerSlide.degreeCount targetWeight degree\n                    (List.filter (fun y => decide ¬y ∈ List.map f source) target)\nCornerSlide.columnFamily : (Nat → Nat → Prop) → List Nat → Nat → List CornerSlide.Rows\nCornerSlide.mem_columnFamily : ∀ (r : Nat → Nat → Prop) (vertices : List Nat) (k : Nat) (rows : CornerSlide.Rows),\n  rows ∈ CornerSlide.columnFamily r vertices k ↔\n    2 * k ≤ vertices.length ∧\n      CornerSlide.Tableau r vertices rows ∧\n        List.map List.length rows = CornerSlide.twoColumnShape k (vertices.length - 2 * k)\nCornerSlide.survivorFamily : (r : Nat → Nat → Prop) → [DecidableRel r] → List Nat → Nat → List CornerSlide.Rows\nCornerSlide.mem_survivorFamily : ∀ (r : Nat → Nat → Prop) [inst : DecidableRel r] (vertices : List Nat) (k : Nat)\n  (rows : CornerSlide.Rows),\n  rows ∈ CornerSlide.survivorFamily r vertices k ↔\n    rows ∈ CornerSlide.columnFamily r vertices k ∧\n      ¬rows ∈ List.map (CornerSlide.bubbleAt r k) (CornerSlide.columnFamily r vertices (k + 1))\nCornerSlide.height_two_degreewise_cancellation : ∀ (r : Nat → Nat → Prop) [inst : DecidableRel r],\n  (∀ (x y : Nat), r x y → ¬r y x) →\n    CornerSlide.NoThreeChain r →\n      ∀ (vertices : List Nat) (k degree : Nat),\n        CornerSlide.degreeCount (CornerSlide.tableauGraphInversions r) degree (CornerSlide.columnFamily r vertices k) =\n          CornerSlide.degreeCount (CornerSlide.tableauGraphInversions r) degree\n              (CornerSlide.columnFamily r vertices (k + 1)) +\n            CornerSlide.degreeCount (CornerSlide.tableauGraphInversions r) degree\n              (CornerSlide.survivorFamily r vertices k)\nCornerSlide.finiteRelation : List Nat → (Nat → Nat → Prop) → Nat → Nat → Prop\nCornerSlide.finite_height_two_degreewise_cancellation : ∀ (vertices : List Nat) (base : Nat → Nat → Prop)\n  [inst : DecidableRel base],\n  (∀ (x : Nat), x ∈ vertices → ∀ (y : Nat), y ∈ vertices → base x y → ¬base y x) →\n    (∀ (x : Nat), x ∈ vertices → ∀ (y : Nat), y ∈ vertices → ∀ (z : Nat), z ∈ vertices → base x y → base y z → False) →\n      ∀ (k degree : Nat),\n        let r := CornerSlide.finiteRelation vertices base;\n        CornerSlide.degreeCount (CornerSlide.tableauGraphInversions r) degree (CornerSlide.columnFamily r vertices k) =\n          CornerSlide.degreeCount (CornerSlide.tableauGraphInversions r) degree\n              (CornerSlide.columnFamily r vertices (k + 1)) +\n            CornerSlide.degreeCount (CornerSlide.tableauGraphInversions r) degree\n              (CornerSlide.survivorFamily r vertices k)\nCornerSlide.empty_vertex_degree_count : ∀ (r : Nat → Nat → Prop) [inst : DecidableRel r] (degree : Nat),\n  CornerSlide.degreeCount (CornerSlide.tableauGraphInversions r) degree (CornerSlide.columnFamily r [] 0) =\n    if degree = 0 then 1 else 0\nCornerSlide.single_vertex_degree_count : ∀ (r : Nat → Nat → Prop) [inst : DecidableRel r] (x degree : Nat),\n  CornerSlide.degreeCount (CornerSlide.tableauGraphInversions r) degree (CornerSlide.columnFamily r [x] 0) =\n    if degree = 0 then 1 else 0\nCornerSlide.survivorFamily_empty_source : ∀ (r : Nat → Nat → Prop) [inst : DecidableRel r] (vertices : List Nat)\n  (k : Nat),\n  vertices.length < 2 * (k + 1) → CornerSlide.survivorFamily r vertices k = CornerSlide.columnFamily r vertices k\n"
     }
   ]
 }

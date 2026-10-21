@@ -1,0 +1,42 @@
+{
+  "id": "P006",
+  "title": "Partition proof gaps: finite weighted cancellation and certificate audit",
+  "objective": "Complete the first bounded increment of the gap-closure plan: freeze the actual theorem statements, attempt a pinned external-certificate build and semantic inventory within declared resource limits, and prove degreewise survivor cancellation for complete finite height-two tableau families, or identify the precise unresolved obligation without claiming completion.",
+  "fleet": "pair",
+  "briefs": [
+    "research/partitions/gap-closure-plan.md",
+    "research/partitions/lean/README.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_cost_units": 16,
+    "max_workers": 2,
+    "max_rounds": 2
+  },
+  "rounds": 2,
+  "deliverables": [
+    "Pinned source, toolchain, actual theorem signatures, and dependency manifest",
+    "External certificate build-feasibility and semantic-statement report, with exact commands, resource use, and blockers",
+    "Complete finite actual-tableau families, fixed-shape bubble map, and degreewise image/complement count identity, or the exact remaining formal obligation",
+    "Separate critic's verdict tied to declarations and assumptions, followed by at most two bounded proposal/review rounds",
+    "Hash-bound verification evidence and an updated gap ledger distinguishing this increment from the full coloring-to-elementary theorem"
+  ],
+  "success_criteria": [
+    "All source versions and actual definitions are pinned before proof changes",
+    "The count identity concerns complete actual-tableau families and follows from a proved weight-preserving injection; truncated subtraction cannot mask negativity",
+    "The external audit reports build assurance and mathematical meaning separately, with no placeholder or unrecorded trusted assumption accepted as a proof",
+    "The final formal statements build and pass a distinct role's semantic review; missing obligations are explicitly incomplete",
+    "The full height-two coloring identity and the general theorem remain open in our ledger unless their separate acceptance gates are actually met"
+  ],
+  "stop_conditions": [
+    "Two proposal/review rounds are exhausted for this increment; preserve failed obligations and scope the next increment",
+    "The external build audit reaches 60 cumulative build-process minutes or 15 GiB of dependency/build storage, or lacks required disk space",
+    "At most one clean build attempt and one diagnosed retry are allowed within the external-audit limits",
+    "A theorem needs an additional hypothesis or semantic equivalence that has not been proved; mark it conditional or incomplete",
+    "No automated paid provider calls or deployment/publication beyond the user-authorized repository work"
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

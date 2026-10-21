@@ -11,11 +11,15 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
+import time
 from datetime import datetime, timezone
 
 
 ROOT = Path(__file__).resolve().parent
 ALLOWED_AXIOMS = {"propext", "Quot.sound", "Classical.choice"}
+SOURCES = ["CornerSlide.lean", "TableauFamilies.lean", "WeightedCancellation.lean"]
+CONFIGURATION = ["lean-toolchain", "lakefile.toml", "lake-manifest.json"]
 REQUIRED_THEOREMS = {
     "CornerSlide.demote_valid_iff",
     "CornerSlide.counterexample_source",
@@ -27,17 +31,41 @@ REQUIRED_THEOREMS = {
     "CornerSlide.tableau_graph_inversions_eq_word",
     "CornerSlide.bubble_tableau_graph_inversions",
     "CornerSlide.collision_without_height_two",
+    "CornerSlide.mem_family",
+    "CornerSlide.family_nodup",
+    "CornerSlide.bubbleAt_family",
+    "CornerSlide.bubbleAt_family_injective",
+    "CornerSlide.bubbleAt_family_weight",
+    "CornerSlide.degreewise_cancellation",
+    "CornerSlide.two_column_degreewise_cancellation",
+    "CornerSlide.height_two_degreewise_cancellation",
+    "CornerSlide.finite_height_two_degreewise_cancellation",
+    "CornerSlide.mem_survivorFamily",
+    "CornerSlide.empty_vertex_degree_count",
+    "CornerSlide.single_vertex_degree_count",
+    "CornerSlide.survivorFamily_empty_source",
 }
+STATEMENT_DECLARATIONS = [
+    "Tableau", "mem_family", "family_nodup", "bubbleAt_family",
+    "bubbleAt_family_injective", "bubbleAt_family_weight", "degreeCount",
+    "degreewise_cancellation", "columnFamily", "mem_columnFamily",
+    "survivorFamily", "mem_survivorFamily", "height_two_degreewise_cancellation",
+    "finiteRelation", "finite_height_two_degreewise_cancellation",
+    "empty_vertex_degree_count", "single_vertex_degree_count",
+    "survivorFamily_empty_source",
+]
 
 
-def run(lake: str, arguments: list[str]) -> dict:
+def run(lake: str, arguments: list[str], workspace: Path) -> dict:
+    started = time.perf_counter()
     result = subprocess.run(
-        [lake, *arguments], cwd=ROOT, text=True,
+        [lake, *arguments], cwd=workspace, text=True,
         stdout=subprocess.PIPE, stderr=subprocess.STDOUT, check=False,
     )
     record = {
         "command": ["lake", *arguments],
         "exit_code": result.returncode,
+        "elapsed_seconds": round(time.perf_counter() - started, 3),
         "output": result.stdout,
     }
     if result.returncode:
@@ -57,17 +85,30 @@ def main() -> None:
             raise SystemExit("An installed Lean 4.34.0 toolchain and lake are required.")
         lake = str(fallback)
 
-    source = (ROOT / "CornerSlide.lean").read_text()
-    forbidden = re.findall(r"\b(?:sorry|admit|sorryAx|unsafe|native_decide|axiom)\b", source)
-    if forbidden:
-        raise SystemExit(f"Forbidden proof tokens in source: {sorted(set(forbidden))}")
+    filenames = [*SOURCES, *CONFIGURATION, "verify.py"]
+    hashes = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest() for name in filenames}
+    for filename in SOURCES:
+        source = (ROOT / filename).read_text()
+        forbidden = re.findall(r"\b(?:sorry|admit|sorryAx|unsafe|native_decide|axiom)\b", source)
+        if forbidden:
+            raise SystemExit(f"Forbidden proof tokens in {filename}: {sorted(set(forbidden))}")
 
-    commands = [run(lake, ["env", "lean", "--version"])]
-    if "version 4.34.0," not in commands[0]["output"]:
-        raise SystemExit("This certificate is pinned to Lean 4.34.0.")
-    commands.append(run(lake, ["build"]))
-    commands.append(run(lake, ["env", "lean", "CornerSlide.lean"]))
-    output = commands[-1]["output"]
+    inventory = "import WeightedCancellation\n" + "\n".join(
+        f"#check @CornerSlide.{name}" for name in STATEMENT_DECLARATIONS
+    ) + "\n"
+    with tempfile.TemporaryDirectory(prefix="partition-certificate-") as temporary:
+        workspace = Path(temporary)
+        for filename in [*SOURCES, *CONFIGURATION]:
+            shutil.copyfile(ROOT / filename, workspace / filename)
+        commands = [run(lake, ["env", "lean", "--version"], workspace)]
+        if "version 4.34.0," not in commands[0]["output"]:
+            raise SystemExit("This certificate is pinned to Lean 4.34.0.")
+        commands.append(run(lake, ["build"], workspace))
+        for filename in SOURCES:
+            commands.append(run(lake, ["env", "lean", filename], workspace))
+        (workspace / "StatementInventory.lean").write_text(inventory)
+        commands.append(run(lake, ["env", "lean", "StatementInventory.lean"], workspace))
+    output = "\n".join(command["output"] for command in commands[2:-1])
     axioms = {}
     for name, values in re.findall(r"'([^']+)' depends on axioms: \[([^]]*)\]", output):
         axioms[name] = [value.strip() for value in values.split(",") if value.strip()]
@@ -78,16 +119,25 @@ def main() -> None:
     disallowed = {a for values in axioms.values() for a in values} - ALLOWED_AXIOMS
     if disallowed:
         raise SystemExit(f"Unexpected axioms: {sorted(disallowed)}")
-    if "warning:" in output or "error:" in output:
+    if any("warning:" in command["output"] or "error:" in command["output"] for command in commands):
         raise SystemExit("Direct source check returned a diagnostic; inspect it before recording success.")
+    if any(hashlib.sha256((ROOT / name).read_bytes()).hexdigest() != hashes[name] for name in filenames):
+        raise SystemExit("Source changed during verification; rerun against the final sources.")
 
-    filenames = ["CornerSlide.lean", "lean-toolchain", "lakefile.toml", "lake-manifest.json"]
     report = {
-        "schema_version": 1,
+        "schema_version": 2,
         "checked_at_utc": datetime.now(timezone.utc).isoformat(),
         "status": "passed",
-        "scope": "Actual tableau validity, height-two bubbling injection, and graph-inversion preservation; no symmetric-function coefficient bridge.",
-        "sha256": {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest() for name in filenames},
+        "scope": "Actual tableau validity, complete finite fixed-shape families, height-two weight-preserving injection, and all-index degreewise survivor cancellation; no coloring-to-elementary bridge.",
+        "clean_build": {
+            "fresh_temporary_workspace": True,
+            "copied_files": [*SOURCES, *CONFIGURATION],
+            "preexisting_build_artifacts": False,
+            "external_lean_dependencies": [],
+            "installed_toolchain_reused": "Lean 4.34.0 and its bundled Std",
+        },
+        "sha256": hashes,
+        "statement_inventory_source": inventory,
         "source_forbidden_token_scan": "passed",
         "axioms": axioms,
         "commands": commands,
