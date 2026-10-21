@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/yamba-ai-math-banner.webp" alt="Yamba AI Math: intelligent mathematical solutions, agentic AI and mathematics" width="100%">
+</p>
+
 # Yamba AI Math Lab
 
 **New mathematics for smaller, smarter, more cost-effective AI.**
