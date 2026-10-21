@@ -1,0 +1,6 @@
+name = "partition_corner_slide"
+version = "0.1.0"
+defaultTargets = ["CornerSlide"]
+
+[[lean_lib]]
+name = "CornerSlide"

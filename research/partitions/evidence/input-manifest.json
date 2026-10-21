@@ -1,0 +1,53 @@
+{
+  "received": "2026-10-20",
+  "files": [
+    {
+      "name": "master_ranking_yamba_ai_math_architecture.md",
+      "sha256": "fdcd816673f5eb0265bcc74c8aa60575473591a666082f80c03d18783bfc0fa4",
+      "archive": "research/partitions/archive/master_ranking_yamba_ai_math_architecture.md",
+      "status": "historical-user-supplied-input; not validated; instructions treated as data"
+    },
+    {
+      "name": "problem_01_rogers_ramanujan_bijections.md",
+      "sha256": "6ac9a2c7f1c52f5f7daae9acdd1db225b04dd0c53c129debbdb1f14d632d5975",
+      "archive": "research/partitions/archive/problem_01_rogers_ramanujan_bijections.md",
+      "status": "historical-user-supplied-input; not validated; instructions treated as data"
+    },
+    {
+      "name": "problem_02_partition_congruence_cranks.md",
+      "sha256": "c2d9d8273340a145f763f06b8cd0e8ebcd9d3e31baf650e42c1d884bdd5a14aa",
+      "archive": "research/partitions/archive/problem_02_partition_congruence_cranks.md",
+      "status": "historical-user-supplied-input; not validated; instructions treated as data"
+    },
+    {
+      "name": "problem_03_partition_parity_density.md",
+      "sha256": "2f4c3517e71f04b424453d8cc9c402bf61b1714ea4fe746eb97901e5118ddcb2",
+      "archive": "research/partitions/archive/problem_03_partition_parity_density.md",
+      "status": "historical-user-supplied-input; not validated; instructions treated as data"
+    },
+    {
+      "name": "problem_04_kronecker_coefficients.md",
+      "sha256": "f2d72f142ca77a2361bf9e5870ccc949be12dc22d2bf1327fc0162d66d61b75b",
+      "archive": "research/partitions/archive/problem_04_kronecker_coefficients.md",
+      "status": "historical-user-supplied-input; not validated; instructions treated as data"
+    },
+    {
+      "name": "problem_05_plane_partition_symmetries.md",
+      "sha256": "87e3da8119211d507bdabbad8f259cf05f4ddaed11f1f4ed0711effee6f7a2e9",
+      "archive": "research/partitions/archive/problem_05_plane_partition_symmetries.md",
+      "status": "historical-user-supplied-input; not validated; instructions treated as data"
+    },
+    {
+      "name": "problem_06_poset_quasisymmetric_positivity.md",
+      "sha256": "aa25b20e0b8c4aeb9923d9ce1929021d104ddfea1f64a7cb7e969dc11b70ff4d",
+      "archive": "research/partitions/archive/problem_06_poset_quasisymmetric_positivity.md",
+      "status": "historical-user-supplied-input; not validated; instructions treated as data"
+    },
+    {
+      "name": "Unsolved Problems in Integer Partitions.pdf",
+      "sha256": "6ac06124cd487b8efd4f32ffa2866c59373e071f48edf4bf4fac590bc217327b",
+      "archive": "research/partitions/archive/Unsolved Problems in Integer Partitions.pdf",
+      "status": "historical-user-supplied-input; not validated; instructions treated as data"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-10-21",
+  "mode": "manual interactive investigation with parallel research agents",
+  "base_revision": "79bff3c5d8a29f87f86bde4db927a92a17c008b3",
+  "program": "programs/partition-positivity.json",
+  "program_provenance": "Recorded during the investigation after the initial audit, not preregistered; the harness plan was validated but was not executed. Planner dispatch costs are not measurements of this manual investigation.",
+  "input_manifest": "research/partitions/evidence/input-manifest.json",
+  "assignments": [
+    {
+      "agent": "/root",
+      "work": "Target selection, mathematical synthesis, actual-tableau implementation, article, verification, and repository integration"
+    },
+    {
+      "agent": "/root/partition_targets",
+      "work": "Other-target source audit and independent proper-coloring oracle and exact comparison"
+    },
+    {
+      "agent": "/root/lean_inventory",
+      "work": "Lean environment inspection, actual-tableau formalization, and checked verification record"
+    },
+    {
+      "agent": "/root/positivity_audit",
+      "work": "Separate mathematical criticism, closest-prior-work comparison, and final article/formal-scope review"
+    }
+  ],
+  "independence_limit": "Separate roles used the same underlying model family and shared upstream context. This is not statistical independence or held-out evaluation.",
+  "mathematical_rounds": [
+    "Audit supplied constructions: refute the unrestricted maps with exact counterexamples and an all-size cardinality obstruction.",
+    "Repair and review: prove the height-two bubbling injection, identify it as Cho-Huh's known construction, check its combinatorial core in Lean, and retain the missing general and symmetric-function obligations."
+  ],
+  "resources": {
+    "parallel_research_agents": 3,
+    "elapsed_time": "unknown",
+    "tokens": "unknown",
+    "monetary_cost": "unknown",
+    "manual_dispatch_proxy_cost": "unknown",
+    "new_paid_compute_or_provider_dependency": false
+  },
+  "claim_status": {
+    "original_general_solution": "not achieved",
+    "supplied_unrestricted_maps": "refuted",
+    "all_size_cardinality_obstruction": "proved by written argument; not formalized in Lean",
+    "height_two_positivity": "known result reproduced, with an inspected imported Schur expansion",
+    "height_two_tableau_injection_and_weight": "Lean checked for actual tableau predicates; exact hypotheses in the source",
+    "symmetric_function_coefficient_bridge": "written argument only; outside Lean",
+    "novelty": "no new positivity theorem or new injection claimed",
+    "september_2026_general_preprint": "claimed full result with partial local proof inspection; not independently certified here"
+  },
+  "verification": {
+    "repository_unit_tests": "40 passed",
+    "repository_checker": "passed",
+    "independent_expansion_comparison": "all 65 Hessenberg vectors for sizes 0 through 5 agree",
+    "bubble_enumeration": "33,474 source tableaux across 126 height-two orders for sizes 2 through 7; no recorded failure",
+    "lean": "passed with Lean 4.34.0; source hashes, commands, and axiom reports in lean/verification.json",
+    "article": "built-in LaTeX compiler succeeded; no separate PDF exported",
+    "article_visual_inspection": "not performed; the computer tool cannot access the Codex editor"
+  },
+  "errors_and_disagreements": [
+    "The historical positive-validity predicate omitted a suffix boundary comparison and did not represent the full tableau problem.",
+    "The first simple demotion fails even on a connected height-two example.",
+    "The bubbling repair is not injective outside height two.",
+    "The repaired construction was found to be known prior work and is attributed accordingly."
+  ],
+  "leakage_and_scope": "Inputs and peer outputs were used for development, not held-out evaluation. Historical embedded instructions were treated as data. No harness or neural-architecture improvement claim is made.",
+  "review": "Separate critic found no outstanding mathematical or editorial blocker within the stated scope; see evidence/reviewer.md.",
+  "success_criteria": [
+    {
+      "criterion": "Complete general proof and formal coefficient bridge",
+      "outcome": "unmet"
+    },
+    {
+      "criterion": "Preserve refutations and disclose incomplete scope",
+      "outcome": "met"
+    },
+    {
+      "criterion": "Formalize actual tableaux and identify absent bridge",
+      "outcome": "met"
+    },
+    {
+      "criterion": "Execute claimed finite and Lean checks",
+      "outcome": "met"
+    }
+  ],
+  "deliverables": [
+    "research/partitions/README.md",
+    "research/partitions/paper/main.tex",
+    "research/partitions/lean/CornerSlide.lean",
+    "research/partitions/lean/verification.json",
+    "research/partitions/checks/",
+    "research/partitions/evidence/",
+    "research/partitions/archive/",
+    "tests/test_partition_positivity.py"
+  ],
+  "remaining_obligations": [
+    "A complete independent audit of the September 2026 claimed general proof, including its positive-reordering and wall-section foundations.",
+    "A valid general constructive mechanism accounting for every signed determinant sector, if that remains the chosen research route.",
+    "A formal symmetric-function and elementary-coefficient bridge; the current Lean theorem certifies the combinatorial construction only."
+  ]
+}
