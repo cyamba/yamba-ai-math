@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-21T19:17:04.490689+00:00",
+  "status": "source inventory only; external build not attempted",
+  "official_repository": "https://github.com/openai/math",
+  "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "official_main_git_blob_verified": "12abe371e589d0b2ca4548b3c90631afb030aa7f",
+  "license": "Apache-2.0; official LICENSE header inspected",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "local_mathlib_checkout_present": false,
+  "lexical_inventory": {
+    "entry_module": "OAI.Combinatorics.Chromatic.Main",
+    "local_file_count": 549,
+    "local_line_count": 74575,
+    "external_import_modules": [
+      "Mathlib"
+    ],
+    "sorted_path_nul_sha256_newline_manifest_sha256": "ae7970039ba9b61423524279ae8a34539c9f9575adfd11ca2f01472954ff27f9",
+    "limitation": "Line-based import traversal, not a compiler dependency or semantic audit."
+  },
+  "inspected_file_sha256": {
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "lean/lakefile.lean": "4cca977ebece444b6c999d99755c1ad3c93119bafc127ea761f7f703c7279e74",
+    "lean/OAI/Combinatorics/Chromatic/Main.lean": "55232993dbec14b6ade95820c8381791bbb42fb2f8e3e9ec159bbf528d5d3607",
+    "lean/OAI/Combinatorics/Chromatic/Model.lean": "b5ff241c30d9699119871a67c9d131daf7ea6357d43459075f758aeefd25638a",
+    "lean/OAI/Combinatorics/Chromatic/Witness/ElementaryAlphabetRigidity.lean": "11bab1966768fc097437b35578e8f3a1944ef5985c8abe51ba3d860f00942d3a",
+    "lean/OAI/Combinatorics/Chromatic/Witness/HistoryMainWitness.lean": "33e52f24d925fed85fe767e841c235815adffcb828f7bfd7844c7bc93be88c11",
+    "lean/OAI/Combinatorics/Chromatic/Witness/ElementaryProductDegree.lean": "c2f25555cd2758266b7c39e83ed59b4dda0f25e43026c815cb919e049eb786d8"
+  },
+  "available_temporary_filesystem_bytes": 9625600000,
+  "build_process_seconds": 0,
+  "build_attempts": 0,
+  "provisioning_or_build_download_bytes": 0,
+  "new_toolchains_or_dependencies_installed": [],
+  "decision": "Conservatively defer provisioning with limited free disk, absent required toolchain and local mathlib. The 15 GiB storage ceiling is not a demonstrated minimum requirement.",
+  "formal_build_assurance": "unverified",
+  "mathematical_assurance": "partial source inspection only"
+}

@@ -24,7 +24,7 @@
 \newcommand{\cell}[4]{\draw[draw=ink,fill=#4,rounded corners=1pt] (#1,#2) rectangle ++(.68,.68);\node[text=ink] at (#1+.34,#2+.34) {$#3$};}
 \newcommand{\tagline}[1]{\par\smallskip\noindent\textcolor{teal}{\small\textsf{#1}}\par\smallskip}
 \title{\textcolor{ink}{From a Failed Corner Slide\\to a Verified Tableau Injection}\\[3mm]
-\large A constructive positivity proof in height two,\\with exact obstructions and a Lean verification boundary}
+\large A constructive positivity proof in height two,\\with exact obstructions and Lean-checked survivor counts}
 \author{Yamba AI Math Lab\\\small Research note prepared for Christopher Yamba}
 \date{21 October 2026}
 
@@ -42,7 +42,9 @@ three-element chain makes this repair injective. This construction is the
 existing injection of Cho--Huh, which we independently recovered and explicitly
 attribute. We give a complete mathematical proof of the height-two positivity
 corollary, reproducible finite calculations, and a precise account of which
-combinatorial statements are checked by Lean. We do not claim a new proof of
+combinatorial statements are checked by Lean. The certificate now includes
+complete finite tableau families and a survivor-count identity in every
+inversion degree, including all boundary indices. We do not claim a new proof of
 general positivity, a novel injection, or a fully formalized symmetric-function
 theorem.
 \end{abstract}
@@ -347,6 +349,62 @@ shape, and every adjacent column condition. This prevents the semantic gap
 in the earlier boundary object, which omitted the comparison below the moved
 entry.
 
+\subsection{Complete families and degreewise cancellation}
+
+Let $\mathcal T_k=\PT_{(2^k,1^{n-2k})}(P)$ when $2k\le n$, and let
+$\mathcal T_k=\varnothing$ otherwise. Put
+$\mathcal S_k=\mathcal T_k\setminus B_k(\mathcal T_{k+1})$, where $B_k$
+is insertion at the final two-cell row. For a finite family $A$, write
+$C_d(A)=\#\{T\in A:\inv_G(T)=d\}$.
+
+\begin{theorem}[Formal degreewise survivor identity]\label{thm:formalcounts}
+For every finite poset of height at most two and every $k,d\in\N$,
+\[
+ C_d(\mathcal T_k)=C_d(\mathcal T_{k+1})+C_d(\mathcal S_k).
+\]
+The empty vertex set has one empty tableau of degree zero. A single vertex
+also has one tableau of degree zero. At either an odd or even maximal index,
+the next source is empty and every target is a survivor.
+\end{theorem}
+\begin{proof}
+Generate every filling of the specified shape from the finite vertex list,
+retain exactly the actual tableaux, and remove duplicates. Membership in this
+family is proved equivalent to tableau validity and the exact row-length list;
+completeness is not an input assumption. The source shape determines the split
+index $k$. Theorem~\ref{thm:injection} gives a weight-preserving injection into
+the target family. Its image in degree $d$ has exactly
+$C_d(\mathcal T_{k+1})$ objects. Partitioning the target into this image and its
+complement proves the equality using addition of natural counts. The guard
+$2k\le n$ handles every out-of-range index before forming $n-2k$.
+\end{proof}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[font=\small,>=Stealth]
+\node[draw=ink,rounded corners,minimum width=3.6cm,minimum height=1cm]
+ (source) at (0,0) {$\mathcal T_{k+1}$ in degree $d$};
+\node[draw=teal,fill=teal!8,rounded corners,minimum width=3.6cm,minimum height=1cm]
+ (image) at (0,-1.9) {$B_k(\mathcal T_{k+1})$ in degree $d$};
+\node[draw=blue,fill=blue!8,rounded corners,minimum width=3.6cm,minimum height=1cm]
+ (survivor) at (5,-1.9) {$\mathcal S_k$ in degree $d$};
+\draw[->,thick,teal] (source)--node[right]{bijection onto image}(image);
+\node at (2.5,-1.9) {$\sqcup$};
+\node[draw=ink,dashed,rounded corners,fit=(image)(survivor),inner sep=5mm,
+ label=below:{$\mathcal T_k$ in degree $d$}] {};
+\end{tikzpicture}
+\caption{The checked finite decomposition. The weight-preserving injection
+identifies the source with one part of the target; the other part consists
+of survivors. No subtraction or polynomial-coefficient assumption is used.}
+\end{figure}
+
+The declarations \texttt{mem\_family} and \texttt{family\_nodup} establish the
+enumeration properties. The all-index result is
+\texttt{height\_two\_degreewise\_cancellation}. For a relation defined only
+on the vertex set, \texttt{finiteRelation} extends it by false outside that
+set, and \texttt{finite\_height\_two\_degreewise\_cancellation} requires
+asymmetry and height only on those vertices. The following table records the
+remaining assurance boundary.
+
 \begin{center}
 \small
 \begin{tabular}{p{.39\linewidth}p{.51\linewidth}}
@@ -362,6 +420,10 @@ Comparable-prefix insertion & Recursive insertion and first-eligible extraction,
 with a general left inverse; actual-tableau validity and injectivity\\[2mm]
 Tableau inversion weight & The row-to-word correspondence and the actual
 tableau weight-preservation theorem are checked in Lean\\[2mm]
+Complete fixed-shape families & Exact membership, no duplicates, derived
+split index, and the family-level injection are checked\\[2mm]
+Survivor counts & Theorem~\ref{thm:formalcounts}, for all indices and degrees,
+including empty and singleton boundaries, is checked\\[2mm]
 Symmetric-function bridge & The imported Schur expansion, determinant
 coefficient identity, and final elementary positivity corollary are written
 arguments; they are not formalized in Lean\\
@@ -373,7 +435,17 @@ The accompanying Lean README identifies every checked declaration, its
 assumptions, and its axiom dependencies. A successful build establishes those
 formal statements relative to Lean's kernel and listed standard axioms. It
 does not certify the informal translation or the general positivity problem.
-The source contains no proof placeholders or new axioms.
+The source contains no proof placeholders or new axioms. A separate semantic
+review found no defect in these finite-family statements. The recorded
+reproduction builds all three modules in a fresh temporary directory and
+checks their sources directly; all 31 printed dependency lists use only
+\texttt{propext}, \texttt{Quot.sound}, and \texttt{Classical.choice}.
+
+The remaining height-two formalization gap is the equality between the actual
+proper-coloring polynomial and the elementary expansion. Theorem~\ref{thm:formalcounts}
+does not supply the Schur expansion or the basis change in
+\eqref{eq:schur}--\eqref{eq:djt}. Those identities still require their own
+formal development or a verified, correctly attributed import.
 
 \section{Finite evidence from two independent calculations}
 

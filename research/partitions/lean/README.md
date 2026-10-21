@@ -49,10 +49,53 @@ source shape `(2^(k+1),1^m)`, that length is the fixed integer `k`; it is not
 an extra restriction on the fillings. The output shape has `k` two-cell rows
 followed by `m+2` singleton rows.
 
-The file also proves the general extraction theorem under its weaker explicit
+`CornerSlide.lean` also proves the general extraction theorem under its weaker explicit
 separation condition, arbitrary-score adjacent-swap lemmas, filling preservation,
 and the simple bottom-row corollary. The source prints axiom dependencies for
 the principal statements.
+
+## Complete families and weighted cancellation
+
+[TableauFamilies.lean](TableauFamilies.lean) defines all fillings of a fixed
+row-length list using a finite vertex list, filters by the actual `Tableau`
+predicate, and removes duplicates. Its use of classical decidability makes the
+family definition noncomputable; no efficient enumeration algorithm is claimed.
+
+| Lean declaration | Universally checked statement |
+| --- | --- |
+| `mem_family` | Membership iff actual tableau validity and the exact row-length list; completeness is proved without an enumeration premise. |
+| `family_nodup` | Every tableau appears at most once. |
+| `pair_decomposition` | Shape `(2^(k+1),1^m)` determines a front of exactly `k` two-cell rows, the final pair, and the singleton suffix. |
+| `bubbleAt_family` | The derived split maps the entire source family into shape `(2^k,1^(m+2))`. |
+| `bubbleAt_family_injective` | Height at most two gives injectivity on that complete source family. |
+| `bubbleAt_family_weight` | The actual row-based inversion degree is preserved on the family. |
+
+[WeightedCancellation.lean](WeightedCancellation.lean) defines `degreeCount`
+and proves the image/complement decomposition for any finite weight-preserving
+injection. It then instantiates that theorem with these complete families.
+`columnFamily r vertices k` is empty when `2*k > vertices.length`; the guard is
+tested before the natural-number difference in the shape. `survivorFamily`
+is the complement of the **full image** of the next source family.
+
+For every `k` and degree `d`, `height_two_degreewise_cancellation` proves
+
+```text
+count(columnFamily k, inv = d)
+  = count(columnFamily (k+1), inv = d) + count(survivorFamily k, inv = d).
+```
+
+This uses addition of natural counts. It does not rely on truncated subtraction
+or assume a polynomial coefficient identity. Empty and one-vertex families
+each have exactly one tableau of degree zero, by `empty_vertex_degree_count`
+and `single_vertex_degree_count`. `survivorFamily_empty_source` handles the
+odd and even maximal indices and every other empty-next-source case.
+
+`finiteRelation vertices base` extends a relation by false outside `vertices`.
+`finite_height_two_degreewise_cancellation` requires asymmetry and the absence
+of three-element chains only on those vertices, then applies the all-index
+theorem to that extension. Transitivity is not needed by the combinatorial
+identity; every strict finite poset of height at most two meets its hypotheses.
+No equivalence with a separately defined coloring polynomial is assumed.
 
 ## Boundary of the certificate
 
@@ -64,11 +107,14 @@ obstruction. Those parts have written arguments and separate Python checks.
 The final height-two positivity theorem is therefore not claimed as an
 end-to-end Lean theorem.
 
-The checked principal statements use only `propext`, `Quot.sound`, and, for
-one concrete source-filling proof, `Classical.choice`. There is no `sorryAx`,
+The checked principal statements use only `propext`, `Quot.sound`, and
+`Classical.choice`. Classical choice is used by the finite-family definitions
+as well as one original concrete filling proof. There is no `sorryAx`,
 custom axiom declaration, `unsafe`, or `native_decide`. See the successful,
 source-hash-bound [verification record](verification.json) for actual command
-outputs and every printed dependency list.
+outputs, actual declaration types, and all 31 printed dependency lists. The
+[separate semantic review](../evidence/gap-review.md) supports H1/H2 while
+retaining the coloring-to-elementary gap H3.
 
 ## Reproduce
 
@@ -77,11 +123,17 @@ An installed Lean 4.34.0 toolchain is required. From this directory:
 ```sh
 lake build
 lake env lean CornerSlide.lean
+lake env lean TableauFamilies.lean
+lake env lean WeightedCancellation.lean
 python3 verify.py --output verification.json
 ```
 
-The last command repeats the build and direct source check, checks that all
+The last command copies the three sources and pinned configuration into a fresh
+temporary directory without existing build products, builds them, and directly
+checks every source. It records an inventory of the actual declaration types,
+checks that all
 printed axiom lists use the allowed standard foundations, scans the source for
 proof placeholders and custom axioms, and records the source/configuration
-hashes. It writes the report only after successful checks. Build products stay
-in ignored `.lake/`; the small verification record is intentional review evidence.
+and verifier hashes. It rejects diagnostics, missing required reports, or source
+changes during verification, and writes the report only after success. The
+temporary build is removed; the installed Lean/Std toolchain is reused.
