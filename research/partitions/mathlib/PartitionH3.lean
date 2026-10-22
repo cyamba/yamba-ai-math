@@ -1,0 +1,5 @@
+import PartitionH3.Foundations
+import PartitionH3.Coloring
+import PartitionH3.Alternant
+import PartitionH3.Vandermonde
+import PartitionH3.SubsetBridge

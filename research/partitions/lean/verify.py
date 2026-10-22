@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parent
 ALLOWED_AXIOMS = {"propext", "Quot.sound", "Classical.choice"}
-SOURCES = ["CornerSlide.lean", "TableauFamilies.lean", "WeightedCancellation.lean"]
+SOURCES = ["CornerSlide.lean", "TableauFamilies.lean", "WeightedCancellation.lean", "SignedArrays.lean", "AlternantSubsets.lean"]
 CONFIGURATION = ["lean-toolchain", "lakefile.toml", "lake-manifest.json"]
 REQUIRED_THEOREMS = {
     "CornerSlide.demote_valid_iff",
@@ -46,7 +46,10 @@ REQUIRED_THEOREMS = {
     "CornerSlide.survivorFamily_empty_source",
 }
 STATEMENT_DECLARATIONS = [
-    "Tableau", "mem_family", "family_nodup", "bubbleAt_family",
+    "Tableau", "NoThreeChain", "demote_valid_iff", "flatten_before_after",
+    "tableau_graph_inversions_eq_word", "bubble_tableau_valid",
+    "bubble_tableau_graph_inversions", "extract_bubble_inverse_height_two",
+    "bubble_tableau_injective", "mem_family", "family_nodup", "bubbleAt_family",
     "bubbleAt_family_injective", "bubbleAt_family_weight", "degreeCount",
     "degreewise_cancellation", "columnFamily", "mem_columnFamily",
     "survivorFamily", "mem_survivorFamily", "height_two_degreewise_cancellation",
@@ -54,6 +57,27 @@ STATEMENT_DECLARATIONS = [
     "empty_vertex_degree_count", "single_vertex_degree_count",
     "survivorFamily_empty_source",
 ]
+SIGNED_DECLARATIONS = [
+    "ChainArray", "SignedArray", "Partition", "PaddedTableau", "permutationSign",
+    "shiftKey_injective", "adjacent_length_exclusion", "height_two_row_length_le_two",
+    "togglePair_involution", "bottommost_pivot_stable", "move_involution",
+    "move_signedArray", "move_tableauGraphInversions", "move_fixed_iff_good",
+    "columns_iff_good", "signedArray_fixed_iff_padded", "fixed_labels_identity",
+    "fixed_row_lengths", "move_sign_reversing", "signedArray_bad_sign_reversing",
+    "fixed_permutationSign",
+]
+REQUIRED_THEOREMS.update(
+    "SignedArrays." + name for name in SIGNED_DECLARATIONS[5:]
+)
+ALTERNANT_DECLARATIONS = [
+    "NoRise", "ones", "exponent", "candidate", "noRise_iff_prefix",
+    "adjacent_exponent_collision", "adjacent_exponent_weakly_decreasing",
+    "candidate_length", "candidate_ones", "candidate_injective",
+    "two_block_classification",
+]
+REQUIRED_THEOREMS.update(
+    "AlternantSubsets." + name for name in ALTERNANT_DECLARATIONS[4:]
+)
 
 
 def run(lake: str, arguments: list[str], workspace: Path) -> dict:
@@ -93,8 +117,12 @@ def main() -> None:
         if forbidden:
             raise SystemExit(f"Forbidden proof tokens in {filename}: {sorted(set(forbidden))}")
 
-    inventory = "import WeightedCancellation\n" + "\n".join(
+    inventory = "import WeightedCancellation\nimport SignedArrays\nimport AlternantSubsets\n" + "\n".join(
         f"#check @CornerSlide.{name}" for name in STATEMENT_DECLARATIONS
+    ) + "\n" + "\n".join(
+        f"#check @SignedArrays.{name}" for name in SIGNED_DECLARATIONS
+    ) + "\n" + "\n".join(
+        f"#check @AlternantSubsets.{name}" for name in ALTERNANT_DECLARATIONS
     ) + "\n"
     with tempfile.TemporaryDirectory(prefix="partition-certificate-") as temporary:
         workspace = Path(temporary)
@@ -128,7 +156,7 @@ def main() -> None:
         "schema_version": 2,
         "checked_at_utc": datetime.now(timezone.utc).isoformat(),
         "status": "passed",
-        "scope": "Actual tableau validity, complete finite fixed-shape families, height-two weight-preserving injection, and all-index degreewise survivor cancellation; no coloring-to-elementary bridge.",
+        "scope": "Actual tableaux, complete finite families, height-two injection and degreewise survivors; signed-array involution, integer shape/filling and inversion preservation, padded tableau fixed sector, identity labels and inversion-parity sign reversal; unique two-block Boolean subset classification and adjacent integer exponent collisions. No polynomial alternant identity, finite signed-sum theorem or coloring-to-elementary bridge.",
         "clean_build": {
             "fresh_temporary_workspace": True,
             "copied_files": [*SOURCES, *CONFIGURATION],

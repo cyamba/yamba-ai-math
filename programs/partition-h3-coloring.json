@@ -1,0 +1,41 @@
+{
+  "id": "P008",
+  "title": "H3 actual-coloring and signed-array bridge",
+  "objective": "Prove adjacent-color symmetry, exact ascent/descent correspondence, the height-two signed-array involution and its fixed-sector equivalence with the existing complete tableau families.",
+  "fleet": "pair",
+  "briefs": [
+    "research/partitions/h3-bridge-plan.md",
+    "research/partitions/lean/README.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_cost_units": 16,
+    "max_workers": 2,
+    "max_rounds": 2
+  },
+  "rounds": 2,
+  "deliverables": [
+    "Exact source-bound statements, definitions, hypotheses and primary-source provenance",
+    "Checked Lean declarations for this contract, or the exact unresolved obligations",
+    "Separate critic verdict and at most two bounded proposal/review rounds",
+    "Source hashes, actual execution and resource receipts; no inferred proof status"
+  ],
+  "success_criteria": [
+    "Only actual colorings, subset elementary polynomials and existing complete survivor families support H3",
+    "All public mathematical conclusions have an actual proof and recorded assurance level",
+    "No desired expansion, truncated negative shape, hidden positivity hypothesis or custom axiom is assumed",
+    "Passed compilation and distinct-role semantic review are both required for a closed gate",
+    "Integration P009 starts only after P007/P008 deliver checked compatible interfaces; incomplete inputs remain incomplete"
+  ],
+  "stop_conditions": [
+    "At most two author-critic rounds for this contract; retain exact unresolved obligations at the boundary",
+    "No local Mathlib provisioning below 20 GiB initial free space; delete no user files",
+    "New dependency/build storage at most 15 GiB; stop provisioning below 5 GiB free",
+    "Initial provisioning/build at most 60 cumulative process minutes, one attempt and one diagnosed retry",
+    "No nested fleets or automated paid provider calls; no claim that dispatch proxy units measure money or tokens"
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}
