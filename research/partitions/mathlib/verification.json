@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-22T21:01:42.111740+00:00",
+  "status": "passed",
+  "h3_status": "incomplete",
+  "final_h3_declaration": null,
+  "sha256": {
+    "PartitionH3.lean": "614a2e3bf4ab3d764e5a2233112cc41fa3d33737364ac9d1f41ba650f00e364e",
+    "PartitionH3/Foundations.lean": "875a7c0afbcb534e069353c93da9825758023bcc0a3d1891399008a99823562b",
+    "PartitionH3/Coloring.lean": "dc415218fa4d625d96a711469d11aadf016437a6dd1a79c7337e21422dc12235",
+    "PartitionH3/Alternant.lean": "f903afbdd32b36e2c83dcfdc3bc86654305431da74569de1e8895ca65a6a4caf",
+    "PartitionH3/Vandermonde.lean": "450de9316322b90674611407fc4cd8d8654ec79e5b74b7df702d56e6f87f30f8",
+    "PartitionH3/SubsetBridge.lean": "6acac3a84779ea950c566406b0f71be9a908fb31a9f3256fe50cecbbb5b27deb",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "lakefile.toml": "3468678bb1f25b59f823b9cb919a866a4c761e34c39a55fa5530c57f91ebbd9d",
+    "lake-manifest.json": "519bb42602944b5e01f310ecde293c7679e00eb50ad218be6e063048656e020c",
+    "verify.py": "799d60e580263517b47965170ca1265b7c1e04b89598d9aefe6d10b036ef65bd",
+    "../lean/CornerSlide.lean": "b4f5c7efa75e4a311d84e1db4115e8d27ecedf4f364ad9cdd459f5a33b962af1",
+    "../lean/TableauFamilies.lean": "1e72c85d1ad9488887ff11397573b67c03bad780f2bb1c2a901682634bcb470a",
+    "../lean/WeightedCancellation.lean": "10554531eada909b3026b7551102ea55634ee1520ad832400d855f1245e23c21",
+    "../lean/AlternantSubsets.lean": "32748cec117cbe8d97cfac47ca93079ef79271abf71ddc9a8410e3c1d0b7055b"
+  },
+  "dependency_revisions": {
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "statement_inventory_source": "import PartitionH3\n#check @PartitionH3.chromatic\n#check @PartitionH3.elementary\n#check @PartitionH3.tableauCoefficient\n#check @PartitionH3.survivorCoefficient\n#check @PartitionH3.elementary_zero\n#check @PartitionH3.elementary_isSymmetric\n#check @PartitionH3.chromatic_empty\n#check @PartitionH3.chromatic_zero_alphabet\n#check @PartitionH3.edge_iff_incomparable\n#check @PartitionH3.same_color_comparable\n#check @PartitionH3.colorClass_card_le_two\n#check @PartitionH3.reverseColors_involutive\n#check @PartitionH3.proper_reverseColors_iff\n#check @PartitionH3.ascents_reverseColors\n#check @PartitionH3.descents_reverseColors\n#check @PartitionH3.descents_eq_colorRowInversions\n#check @PartitionH3.alternant\n#check @PartitionH3.alternant_eq_sum\n#check @PartitionH3.powerMonomial_mul_elementary\n#check @PartitionH3.alternant_mul_elementary\n#check @PartitionH3.alternant_eq_zero_of_eq\n#check @PartitionH3.delta_injective\n#check @PartitionH3.coeff_signed_delta\n#check @PartitionH3.vandermonde_delta_coefficient\n#check @PartitionH3.vandermonde_ne_zero\n#check @PartitionH3.vandermonde_cancel\n#check @PartitionH3.vandermonde_empty\n#check @PartitionH3.subsetBits_ones\n#check @PartitionH3.subsetBits_injective\n#check @PartitionH3.subsetBits_fromBits\n#check @PartitionH3.fromBits_subsetBits\n#check @PartitionH3.twoBlockSubset_card\n#check @PartitionH3.twoBlockSubset_classification\n",
+  "axioms": {
+    "PartitionH3.elementary_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.elementary_isSymmetric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.chromatic_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.chromatic_zero_alphabet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.edge_iff_incomparable": [
+      "propext"
+    ],
+    "PartitionH3.same_color_comparable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.colorClass_card_le_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.reverseColors_involutive": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PartitionH3.proper_reverseColors_iff": [
+      "propext"
+    ],
+    "PartitionH3.ascents_reverseColors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.descents_reverseColors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.descents_eq_colorRowInversions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.alternant_eq_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.powerMonomial_mul_elementary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.alternant_mul_elementary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.alternant_eq_zero_of_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.delta_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PartitionH3.coeff_signed_delta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.vandermonde_delta_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.vandermonde_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.vandermonde_cancel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.vandermonde_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.subsetBits_ones": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.subsetBits_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.subsetBits_fromBits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.fromBits_subsetBits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.twoBlockSubset_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PartitionH3.twoBlockSubset_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "clean_build": {
+    "fresh_temporary_workspace": true,
+    "project_build_products_reused": false,
+    "pinned_dependency_products_reused": true
+  },
+  "scope": "Actual finite coloring/subset/tableau polynomial definitions; color-class bounds and orientation; generic alternant multiplication, repeated-exponent vanishing, Vandermonde coefficient/nonzero/cancellation; actual two-block subset classification. No final coloring-to-survivor identity.",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.824,
+      "output": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n"
+    },
+    {
+      "command": [
+        "lake",
+        "--no-cache",
+        "--wfail",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.98,
+      "output": "ℹ [1324/1334] Built CornerSlide (1.0s)\ninfo: ../lean/CornerSlide.lean:510:0: 'CornerSlide.demote_valid_iff' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:511:0: 'CornerSlide.flatten_before_after' depends on axioms: [propext]\ninfo: ../lean/CornerSlide.lean:512:0: 'CornerSlide.word_statistic_preserved' depends on axioms: [propext]\ninfo: ../lean/CornerSlide.lean:513:0: 'CornerSlide.counterexample_source' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/CornerSlide.lean:514:0: 'CornerSlide.counterexample_target_invalid' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:515:0: 'CornerSlide.demote_bottom_row_valid' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:516:0: 'CornerSlide.extract_bubble_inverse_height_two' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:517:0: 'CornerSlide.bubble_injective_height_two' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:518:0: 'CornerSlide.bubble_noDescent' depends on axioms: [propext]\ninfo: ../lean/CornerSlide.lean:519:0: 'CornerSlide.bubble_tableau_valid' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:520:0: 'CornerSlide.bubble_tableau_injective' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:521:0: 'CornerSlide.graph_inversions_comparable_swap' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:522:0: 'CornerSlide.bubble_graph_inversions' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:523:0: 'CornerSlide.tableau_graph_inversions_eq_word' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:524:0: 'CornerSlide.bubble_tableau_graph_inversions' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:525:0: 'CornerSlide.collision_source_other' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/CornerSlide.lean:526:0: 'CornerSlide.collision_without_height_two' does not depend on any axioms\nℹ [1325/1334] Built AlternantSubsets (1.9s)\ninfo: ../lean/AlternantSubsets.lean:194:0: AlternantSubsets.noRise_iff_prefix : ∀ (xs : List Bool),\n  AlternantSubsets.NoRise xs ↔\n    xs = List.replicate (AlternantSubsets.ones xs) true ++ List.replicate (xs.length - AlternantSubsets.ones xs) false\ninfo: ../lean/AlternantSubsets.lean:195:0: AlternantSubsets.adjacent_exponent_collision : ∀ (m a i : Nat) (x y : Bool),\n  AlternantSubsets.exponent m a i x = AlternantSubsets.exponent m a (i + 1) y ↔ i + 1 ≠ a ∧ x = false ∧ y = true\ninfo: ../lean/AlternantSubsets.lean:196:0: AlternantSubsets.two_block_classification : ∀ (m a b : Nat),\n  b ≤ a →\n    a + b ≤ m →\n      ∀ (xs : List Bool),\n        xs.length = m →\n          AlternantSubsets.ones xs = b →\n            (AlternantSubsets.NoRise (List.take a xs) ∧ AlternantSubsets.NoRise (List.drop a xs) ↔\n              ∃ j,\n                (j ≤ b ∧ xs = AlternantSubsets.candidate m a b j) ∧\n                  ∀ (k : Nat), k ≤ b ∧ xs = AlternantSubsets.candidate m a b k → k = j)\ninfo: ../lean/AlternantSubsets.lean:197:0: 'AlternantSubsets.noRise_iff_prefix' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/AlternantSubsets.lean:198:0: 'AlternantSubsets.adjacent_exponent_collision' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/AlternantSubsets.lean:199:0: 'AlternantSubsets.adjacent_exponent_weakly_decreasing' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/AlternantSubsets.lean:200:0: 'AlternantSubsets.candidate_length' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/AlternantSubsets.lean:201:0: 'AlternantSubsets.candidate_ones' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/AlternantSubsets.lean:202:0: 'AlternantSubsets.candidate_injective' depends on axioms: [propext, Quot.sound]\ninfo: ../lean/AlternantSubsets.lean:203:0: 'AlternantSubsets.two_block_classification' depends on axioms: [propext, Quot.sound]\nℹ [1326/1334] Built TableauFamilies (710ms)\ninfo: ../lean/TableauFamilies.lean:236:0: 'CornerSlide.mem_family' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/TableauFamilies.lean:237:0: 'CornerSlide.family_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/TableauFamilies.lean:238:0: 'CornerSlide.bubbleAt_family' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/TableauFamilies.lean:239:0: 'CornerSlide.bubbleAt_family_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/TableauFamilies.lean:240:0: 'CornerSlide.bubbleAt_family_weight' depends on axioms: [propext, Classical.choice, Quot.sound]\nℹ [1327/1334] Built WeightedCancellation (815ms)\ninfo: ../lean/WeightedCancellation.lean:251:0: 'CornerSlide.degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/WeightedCancellation.lean:252:0: 'CornerSlide.two_column_degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/WeightedCancellation.lean:253:0: 'CornerSlide.height_two_degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/WeightedCancellation.lean:254:0: 'CornerSlide.finiteRelation_height' does not depend on any axioms\ninfo: ../lean/WeightedCancellation.lean:255:0: 'CornerSlide.finite_height_two_degreewise_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/WeightedCancellation.lean:256:0: 'CornerSlide.mem_survivorFamily' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/WeightedCancellation.lean:257:0: 'CornerSlide.empty_vertex_degree_count' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/WeightedCancellation.lean:258:0: 'CornerSlide.single_vertex_degree_count' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../lean/WeightedCancellation.lean:259:0: 'CornerSlide.survivorFamily_empty_source' depends on axioms: [propext, Classical.choice, Quot.sound]\nℹ [1328/1334] Built PartitionH3.Foundations (6.6s)\ninfo: PartitionH3/Foundations.lean:96:0: @PartitionH3.chromatic : {n : ℕ} → PartitionH3.NaturalUnitInterval n → (m : ℕ) → PartitionH3.Poly m\ninfo: PartitionH3/Foundations.lean:97:0: PartitionH3.elementary : (m : ℕ) → ℕ → PartitionH3.Poly m\ninfo: PartitionH3/Foundations.lean:98:0: @PartitionH3.tableauCoefficient : {n : ℕ} → PartitionH3.NaturalUnitInterval n → ℕ → PartitionH3.Coeff\ninfo: PartitionH3/Foundations.lean:99:0: @PartitionH3.survivorCoefficient : {n : ℕ} → PartitionH3.NaturalUnitInterval n → ℕ → PartitionH3.Coeff\ninfo: PartitionH3/Foundations.lean:100:0: 'PartitionH3.elementary_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Foundations.lean:101:0: 'PartitionH3.elementary_isSymmetric' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Foundations.lean:102:0: 'PartitionH3.chromatic_empty' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Foundations.lean:103:0: 'PartitionH3.chromatic_zero_alphabet' depends on axioms: [propext, Classical.choice, Quot.sound]\nℹ [1329/1334] Built PartitionH3.Coloring (2.5s)\ninfo: PartitionH3/Coloring.lean:121:0: @PartitionH3.colorClass_card_le_two : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n),\n  PartitionH3.HeightTwo H →\n    ∀ (κ : Fin n → Fin m), PartitionH3.Proper H κ → ∀ (c : Fin m), (PartitionH3.colorClass κ c).card ≤ 2\ninfo: PartitionH3/Coloring.lean:122:0: @PartitionH3.descents_eq_colorRowInversions : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n) (κ : Fin n → Fin m),\n  PartitionH3.descents H κ = PartitionH3.colorRowInversions H κ\ninfo: PartitionH3/Coloring.lean:123:0: 'PartitionH3.edge_iff_incomparable' depends on axioms: [propext]\ninfo: PartitionH3/Coloring.lean:124:0: 'PartitionH3.same_color_comparable' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Coloring.lean:125:0: 'PartitionH3.colorClass_card_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Coloring.lean:126:0: 'PartitionH3.reverseColors_involutive' depends on axioms: [propext, Quot.sound]\ninfo: PartitionH3/Coloring.lean:127:0: 'PartitionH3.proper_reverseColors_iff' depends on axioms: [propext]\ninfo: PartitionH3/Coloring.lean:128:0: 'PartitionH3.ascents_reverseColors' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Coloring.lean:129:0: 'PartitionH3.descents_reverseColors' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Coloring.lean:130:0: 'PartitionH3.descents_eq_colorRowInversions' depends on axioms: [propext, Classical.choice, Quot.sound]\nℹ [1330/1334] Built PartitionH3.Alternant (2.7s)\ninfo: PartitionH3/Alternant.lean:171:0: @PartitionH3.alternant_mul_elementary : ∀ {m : ℕ} (gamma : Fin m → ℕ) (b : ℕ),\n  PartitionH3.alternant gamma * PartitionH3.elementary m b =\n    ∑ T ∈ Finset.powersetCard b Finset.univ, PartitionH3.alternant (PartitionH3.bump gamma T)\ninfo: PartitionH3/Alternant.lean:172:0: @PartitionH3.alternant_eq_zero_of_eq : ∀ {m : ℕ} (gamma : Fin m → ℕ) (p q : Fin m),\n  p ≠ q → gamma p = gamma q → PartitionH3.alternant gamma = 0\ninfo: PartitionH3/Alternant.lean:173:0: 'PartitionH3.alternant_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Alternant.lean:174:0: 'PartitionH3.powerMonomial_mul_elementary' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Alternant.lean:175:0: 'PartitionH3.alternant_mul_elementary' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Alternant.lean:176:0: 'PartitionH3.alternant_eq_zero_of_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\nℹ [1331/1334] Built PartitionH3.Vandermonde (5.8s)\ninfo: PartitionH3/Vandermonde.lean:106:0: PartitionH3.vandermonde_delta_coefficient : ∀ (m : ℕ),\n  (PartitionH3.vandermonde m).coeff (PartitionH3.powerExponent (PartitionH3.delta m)) = 1\ninfo: PartitionH3/Vandermonde.lean:107:0: @PartitionH3.vandermonde_cancel : ∀ {m : ℕ} (p q : PartitionH3.Poly m),\n  PartitionH3.vandermonde m * p = PartitionH3.vandermonde m * q ↔ p = q\ninfo: PartitionH3/Vandermonde.lean:108:0: 'PartitionH3.delta_injective' depends on axioms: [propext, Quot.sound]\ninfo: PartitionH3/Vandermonde.lean:109:0: 'PartitionH3.coeff_signed_delta' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Vandermonde.lean:110:0: 'PartitionH3.vandermonde_delta_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Vandermonde.lean:111:0: 'PartitionH3.vandermonde_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Vandermonde.lean:112:0: 'PartitionH3.vandermonde_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/Vandermonde.lean:113:0: 'PartitionH3.vandermonde_empty' depends on axioms: [propext, Classical.choice, Quot.sound]\nℹ [1332/1334] Built PartitionH3.SubsetBridge (5.8s)\ninfo: PartitionH3/SubsetBridge.lean:100:0: PartitionH3.twoBlockSubset_classification : ∀ (m a b : ℕ),\n  b ≤ a →\n    a + b ≤ m →\n      ∀ (T : Finset (Fin m)),\n        T.card = b →\n          (AlternantSubsets.NoRise (List.take a (PartitionH3.subsetBits T)) ∧\n              AlternantSubsets.NoRise (List.drop a (PartitionH3.subsetBits T)) ↔\n            ∃ j,\n              (j ≤ b ∧ T = PartitionH3.twoBlockSubset m a b j) ∧\n                ∀ (k : ℕ), k ≤ b ∧ T = PartitionH3.twoBlockSubset m a b k → k = j)\ninfo: PartitionH3/SubsetBridge.lean:101:0: 'PartitionH3.subsetBits_ones' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/SubsetBridge.lean:102:0: 'PartitionH3.subsetBits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/SubsetBridge.lean:103:0: 'PartitionH3.subsetBits_fromBits' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/SubsetBridge.lean:104:0: 'PartitionH3.fromBits_subsetBits' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/SubsetBridge.lean:105:0: 'PartitionH3.twoBlockSubset_card' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: PartitionH3/SubsetBridge.lean:106:0: 'PartitionH3.twoBlockSubset_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n✔ [1333/1334] Built PartitionH3 (3.2s)\nBuild completed successfully (1334 jobs).\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "PartitionH3/Foundations.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.148,
+      "output": "@PartitionH3.chromatic : {n : ℕ} → PartitionH3.NaturalUnitInterval n → (m : ℕ) → PartitionH3.Poly m\nPartitionH3.elementary : (m : ℕ) → ℕ → PartitionH3.Poly m\n@PartitionH3.tableauCoefficient : {n : ℕ} → PartitionH3.NaturalUnitInterval n → ℕ → PartitionH3.Coeff\n@PartitionH3.survivorCoefficient : {n : ℕ} → PartitionH3.NaturalUnitInterval n → ℕ → PartitionH3.Coeff\n'PartitionH3.elementary_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.elementary_isSymmetric' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.chromatic_empty' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.chromatic_zero_alphabet' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "PartitionH3/Coloring.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.084,
+      "output": "@PartitionH3.colorClass_card_le_two : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n),\n  PartitionH3.HeightTwo H →\n    ∀ (κ : Fin n → Fin m), PartitionH3.Proper H κ → ∀ (c : Fin m), (PartitionH3.colorClass κ c).card ≤ 2\n@PartitionH3.descents_eq_colorRowInversions : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n) (κ : Fin n → Fin m),\n  PartitionH3.descents H κ = PartitionH3.colorRowInversions H κ\n'PartitionH3.edge_iff_incomparable' depends on axioms: [propext]\n'PartitionH3.same_color_comparable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.colorClass_card_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.reverseColors_involutive' depends on axioms: [propext, Quot.sound]\n'PartitionH3.proper_reverseColors_iff' depends on axioms: [propext]\n'PartitionH3.ascents_reverseColors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.descents_reverseColors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.descents_eq_colorRowInversions' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "PartitionH3/Alternant.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.774,
+      "output": "@PartitionH3.alternant_mul_elementary : ∀ {m : ℕ} (gamma : Fin m → ℕ) (b : ℕ),\n  PartitionH3.alternant gamma * PartitionH3.elementary m b =\n    ∑ T ∈ Finset.powersetCard b Finset.univ, PartitionH3.alternant (PartitionH3.bump gamma T)\n@PartitionH3.alternant_eq_zero_of_eq : ∀ {m : ℕ} (gamma : Fin m → ℕ) (p q : Fin m),\n  p ≠ q → gamma p = gamma q → PartitionH3.alternant gamma = 0\n'PartitionH3.alternant_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.powerMonomial_mul_elementary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.alternant_mul_elementary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.alternant_eq_zero_of_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "PartitionH3/Vandermonde.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.989,
+      "output": "PartitionH3.vandermonde_delta_coefficient : ∀ (m : ℕ),\n  (PartitionH3.vandermonde m).coeff (PartitionH3.powerExponent (PartitionH3.delta m)) = 1\n@PartitionH3.vandermonde_cancel : ∀ {m : ℕ} (p q : PartitionH3.Poly m),\n  PartitionH3.vandermonde m * p = PartitionH3.vandermonde m * q ↔ p = q\n'PartitionH3.delta_injective' depends on axioms: [propext, Quot.sound]\n'PartitionH3.coeff_signed_delta' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.vandermonde_delta_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.vandermonde_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.vandermonde_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.vandermonde_empty' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "PartitionH3/SubsetBridge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.989,
+      "output": "PartitionH3.twoBlockSubset_classification : ∀ (m a b : ℕ),\n  b ≤ a →\n    a + b ≤ m →\n      ∀ (T : Finset (Fin m)),\n        T.card = b →\n          (AlternantSubsets.NoRise (List.take a (PartitionH3.subsetBits T)) ∧\n              AlternantSubsets.NoRise (List.drop a (PartitionH3.subsetBits T)) ↔\n            ∃ j,\n              (j ≤ b ∧ T = PartitionH3.twoBlockSubset m a b j) ∧\n                ∀ (k : ℕ), k ≤ b ∧ T = PartitionH3.twoBlockSubset m a b k → k = j)\n'PartitionH3.subsetBits_ones' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.subsetBits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.subsetBits_fromBits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.fromBits_subsetBits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.twoBlockSubset_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PartitionH3.twoBlockSubset_classification' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "StatementInventory.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.705,
+      "output": "@PartitionH3.chromatic : {n : ℕ} → PartitionH3.NaturalUnitInterval n → (m : ℕ) → PartitionH3.Poly m\nPartitionH3.elementary : (m : ℕ) → ℕ → PartitionH3.Poly m\n@PartitionH3.tableauCoefficient : {n : ℕ} → PartitionH3.NaturalUnitInterval n → ℕ → PartitionH3.Coeff\n@PartitionH3.survivorCoefficient : {n : ℕ} → PartitionH3.NaturalUnitInterval n → ℕ → PartitionH3.Coeff\nPartitionH3.elementary_zero : ∀ (m : ℕ), PartitionH3.elementary m 0 = 1\nPartitionH3.elementary_isSymmetric : ∀ (m k : ℕ), MvPolynomial.IsSymmetric (PartitionH3.elementary m k)\nPartitionH3.chromatic_empty : ∀ (H : PartitionH3.NaturalUnitInterval 0) (m : ℕ), PartitionH3.chromatic H m = 1\n@PartitionH3.chromatic_zero_alphabet : ∀ {n : ℕ},\n  0 < n → ∀ (H : PartitionH3.NaturalUnitInterval n), PartitionH3.chromatic H 0 = 0\n@PartitionH3.edge_iff_incomparable : ∀ {n : ℕ} (H : PartitionH3.NaturalUnitInterval n) (i j : Fin n),\n  PartitionH3.Edge H i j ↔ i < j ∧ ¬PartitionH3.PosetLt H i j ∧ ¬PartitionH3.PosetLt H j i\n@PartitionH3.same_color_comparable : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n) (κ : Fin n → Fin m),\n  PartitionH3.Proper H κ → ∀ {i j : Fin n}, i < j → κ i = κ j → PartitionH3.PosetLt H i j\n@PartitionH3.colorClass_card_le_two : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n),\n  PartitionH3.HeightTwo H →\n    ∀ (κ : Fin n → Fin m), PartitionH3.Proper H κ → ∀ (c : Fin m), (PartitionH3.colorClass κ c).card ≤ 2\n@PartitionH3.reverseColors_involutive : ∀ {n m : ℕ} (κ : Fin n → Fin m),\n  PartitionH3.reverseColors (PartitionH3.reverseColors κ) = κ\n@PartitionH3.proper_reverseColors_iff : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n) (κ : Fin n → Fin m),\n  PartitionH3.Proper H (PartitionH3.reverseColors κ) ↔ PartitionH3.Proper H κ\n@PartitionH3.ascents_reverseColors : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n) (κ : Fin n → Fin m),\n  PartitionH3.ascents H (PartitionH3.reverseColors κ) = PartitionH3.descents H κ\n@PartitionH3.descents_reverseColors : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n) (κ : Fin n → Fin m),\n  PartitionH3.descents H (PartitionH3.reverseColors κ) = PartitionH3.ascents H κ\n@PartitionH3.descents_eq_colorRowInversions : ∀ {n m : ℕ} (H : PartitionH3.NaturalUnitInterval n) (κ : Fin n → Fin m),\n  PartitionH3.descents H κ = PartitionH3.colorRowInversions H κ\n@PartitionH3.alternant : {m : ℕ} → (Fin m → ℕ) → PartitionH3.Poly m\n@PartitionH3.alternant_eq_sum : ∀ {m : ℕ} (gamma : Fin m → ℕ),\n  PartitionH3.alternant gamma = ∑ sigma, PartitionH3.signCoeff sigma * ∏ i, MvPolynomial.X (sigma i) ^ gamma i\n@PartitionH3.powerMonomial_mul_elementary : ∀ {m : ℕ} (gamma : Fin m → ℕ) (b : ℕ),\n  PartitionH3.powerMonomial gamma * PartitionH3.elementary m b =\n    ∑ T ∈ Finset.powersetCard b Finset.univ, PartitionH3.powerMonomial (PartitionH3.bump gamma T)\n@PartitionH3.alternant_mul_elementary : ∀ {m : ℕ} (gamma : Fin m → ℕ) (b : ℕ),\n  PartitionH3.alternant gamma * PartitionH3.elementary m b =\n    ∑ T ∈ Finset.powersetCard b Finset.univ, PartitionH3.alternant (PartitionH3.bump gamma T)\n@PartitionH3.alternant_eq_zero_of_eq : ∀ {m : ℕ} (gamma : Fin m → ℕ) (p q : Fin m),\n  p ≠ q → gamma p = gamma q → PartitionH3.alternant gamma = 0\nPartitionH3.delta_injective : ∀ (m : ℕ), Function.Injective (PartitionH3.delta m)\n@PartitionH3.coeff_signed_delta : ∀ {m : ℕ} (sigma : Equiv.Perm (Fin m)),\n  (PartitionH3.signCoeff sigma * (MvPolynomial.rename ⇑sigma) (PartitionH3.powerMonomial (PartitionH3.delta m))).coeff\n      (PartitionH3.powerExponent (PartitionH3.delta m)) =\n    if sigma = 1 then 1 else 0\nPartitionH3.vandermonde_delta_coefficient : ∀ (m : ℕ),\n  (PartitionH3.vandermonde m).coeff (PartitionH3.powerExponent (PartitionH3.delta m)) = 1\nPartitionH3.vandermonde_ne_zero : ∀ (m : ℕ), PartitionH3.vandermonde m ≠ 0\n@PartitionH3.vandermonde_cancel : ∀ {m : ℕ} (p q : PartitionH3.Poly m),\n  PartitionH3.vandermonde m * p = PartitionH3.vandermonde m * q ↔ p = q\nPartitionH3.vandermonde_empty : PartitionH3.vandermonde 0 = 1\n@PartitionH3.subsetBits_ones : ∀ {m : ℕ} (T : Finset (Fin m)), AlternantSubsets.ones (PartitionH3.subsetBits T) = T.card\n@PartitionH3.subsetBits_injective : ∀ {m : ℕ}, Function.Injective PartitionH3.subsetBits\nPartitionH3.subsetBits_fromBits : ∀ (m : ℕ) (xs : List Bool),\n  xs.length = m → PartitionH3.subsetBits (PartitionH3.fromBits m xs) = xs\n@PartitionH3.fromBits_subsetBits : ∀ {m : ℕ} (T : Finset (Fin m)), PartitionH3.fromBits m (PartitionH3.subsetBits T) = T\nPartitionH3.twoBlockSubset_card : ∀ (m a b j : ℕ),\n  b ≤ a → a + b ≤ m → j ≤ b → (PartitionH3.twoBlockSubset m a b j).card = b\nPartitionH3.twoBlockSubset_classification : ∀ (m a b : ℕ),\n  b ≤ a →\n    a + b ≤ m →\n      ∀ (T : Finset (Fin m)),\n        T.card = b →\n          (AlternantSubsets.NoRise (List.take a (PartitionH3.subsetBits T)) ∧\n              AlternantSubsets.NoRise (List.drop a (PartitionH3.subsetBits T)) ↔\n            ∃ j,\n              (j ≤ b ∧ T = PartitionH3.twoBlockSubset m a b j) ∧\n                ∀ (k : ℕ), k ≤ b ∧ T = PartitionH3.twoBlockSubset m a b k → k = j)\n"
+    }
+  ]
+}

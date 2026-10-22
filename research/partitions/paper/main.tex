@@ -26,7 +26,7 @@
 \title{\textcolor{ink}{From a Failed Corner Slide\\to a Verified Tableau Injection}\\[3mm]
 \large A constructive positivity proof in height two,\\with exact obstructions and Lean-checked survivor counts}
 \author{Yamba AI Math Lab\\\small Research note prepared for Christopher Yamba}
-\date{21 October 2026}
+\date{22 October 2026}
 
 \begin{document}
 \maketitle
@@ -43,8 +43,9 @@ existing injection of Cho--Huh, which we independently recovered and explicitly
 attribute. We give a complete mathematical proof of the height-two positivity
 corollary, reproducible finite calculations, and a precise account of which
 combinatorial statements are checked by Lean. The certificate now includes
-complete finite tableau families and a survivor-count identity in every
-inversion degree, including all boundary indices. We do not claim a new proof of
+complete finite tableau families, a survivor-count identity in every
+inversion degree, a signed-array involution, and finite alternant algebra.
+The coloring-to-survivor bridge remains incomplete. We do not claim a new proof of
 general positivity, a novel injection, or a fully formalized symmetric-function
 theorem.
 \end{abstract}
@@ -349,6 +350,73 @@ shape, and every adjacent column condition. This prevents the semantic gap
 in the earlier boundary object, which omitted the comparison below the moved
 entry.
 
+\subsection{Signed arrays: a checked cancellation map}
+
+The new signed-array certificate permits empty rows. Fix a weakly decreasing
+function $\lambda:\N\to\N$, an array with $m$ rows, and permutation labels
+$\pi(0),\ldots,\pi(m-1)$. Its row lengths satisfy the integer equations
+\[
+ |R_i|=\lambda(\pi(i))-\pi(i)+i\qquad(0\le i<m).
+\]
+The subtraction takes place in $\mathbb Z$: a negative requested length
+admits no row. Each row is a strict $P$-chain, and the concatenated rows
+bijectively fill the given distinct vertices. These are the actual predicates
+\texttt{ChainArray} and \texttt{SignedArray}, rather than coefficient identities
+assumed as inputs.
+
+\begin{theorem}[Formal signed-array involution]\label{thm:formalsigned}
+For a finite poset of height at most two, the bottommost-defect map on these
+signed arrays is an involution preserving the vertex filling, shifted shape,
+chain rows, and tableau graph-inversion degree. Every moved array reverses
+$(-1)^{\inv(\pi)}$. Its fixed arrays are exactly actual tableaux followed by
+empty rows. Their labels are the identity permutation, their row lengths
+are $\lambda(0),\ldots,\lambda(m-1)$, and their signs are $+1$.
+\end{theorem}
+\begin{proof}
+At the bottommost failing first-column boundary, apply the local toggle in
+Figure~\ref{fig:signedtoggle}, swapping the two row labels. The lower first
+entry stays $b$, preserving the good suffix and the pivot on the return move.
+The shifted keys $\lambda(j)-j$ are distinct; this excludes adjacent length
+increases of one, including $(0,1)$ and $(1,2)$. Height two bounds every chain
+row by two cells and excludes a second-column defect between two pair rows.
+Consequently the only fixed signed arrays are actual tableau bodies with
+trailing empty rows. The shape equations then force increasing, hence identity,
+permutation labels. The toggle swaps adjacent comparable entries in the
+row-major word, preserving graph inversions, and adjacent distinct permutation
+labels, reversing their inversion parity. The Lean source proves these steps
+as \texttt{move\_involution}, \texttt{move\_signedArray},
+\texttt{move\_tableauGraphInversions},
+\texttt{signedArray\_fixed\_iff\_padded},
+\texttt{fixed\_labels\_identity}, \texttt{fixed\_row\_lengths},
+\texttt{move\_sign\_reversing}, and \texttt{fixed\_permutationSign}.
+\end{proof}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[font=\small,>=Stealth]
+\node at (-.5,1.14) {$p$};
+\node at (-.5,.34) {$q$};
+\draw[draw=ink,dashed,rounded corners=1pt] (0,.8) rectangle ++(.68,.68);
+\node at (.34,1.14) {$\varnothing$};
+\cell{0}{0}{b}{teal!10}\cell{.72}{0}{a}{blue!10}
+\draw[<->,thick] (2,.72)--node[above]{$b<_P a$}(4,.72);
+\node at (4.5,1.14) {$q$};
+\node at (4.5,.34) {$p$};
+\cell{5}{.8}{a}{blue!10}\cell{5}{0}{b}{teal!10}
+\node[align=center] at (2.8,-.65)
+ {same lower first entry; same inversion degree; opposite signs};
+\end{tikzpicture}
+\caption{The checked local toggle. The dashed box denotes an empty row,
+not a cell of the filling. The row labels $p,q$ are exchanged along with
+the change of row lengths.}\label{fig:signedtoggle}
+\end{figure}
+
+This theorem does not yet sum over all signed sectors. A complete finite
+enumeration, a canonical padding/removal bijection with the existing tableau
+families, and an interface between inversion parity and alternant permutation
+signs remain to be checked. The coloring and polynomial identities are
+separate obligations.
+
 \subsection{Complete families and degreewise cancellation}
 
 Let $\mathcal T_k=\PT_{(2^k,1^{n-2k})}(P)$ when $2k\le n$, and let
@@ -402,8 +470,114 @@ enumeration properties. The all-index result is
 \texttt{height\_two\_degreewise\_cancellation}. For a relation defined only
 on the vertex set, \texttt{finiteRelation} extends it by false outside that
 set, and \texttt{finite\_height\_two\_degreewise\_cancellation} requires
-asymmetry and height only on those vertices. The following table records the
-remaining assurance boundary.
+asymmetry and height only on those vertices.
+
+\subsection{Actual polynomials and checked finite alternants}
+
+The separate polynomial project uses Lean 4.34.1 and Mathlib revision
+\texttt{d13f23b723b8a846827a245b89c10fc7d3f11612}. Its ring is
+$R_m=\mathbb Z[q][x_1,\ldots,x_m]$. The definition of $X_{h,m}$ is the
+finite sum over actual proper functions $[n]\to[m]$, with their actual
+color monomials and ascent powers. The elementary polynomial is the actual
+subset sum $e_b=\sum_{|S|=b}\prod_{i\in S}x_i$. Tableau and survivor
+coefficients use the existing complete families; no equality with $X_{h,m}$
+is assumed in any definition.
+
+For $\gamma\in\N^m$, define
+\[
+ A(\gamma)=\sum_{\sigma\in S_m}\operatorname{sgn}(\sigma)
+       \prod_{i=1}^m x_{\sigma(i)}^{\gamma_i},\qquad
+ \delta=(m-1,m-2,\ldots,0),\qquad \Delta=A(\delta).
+\]
+The sign is the actual permutation sign. An empty product or empty
+permutation has value one.
+
+\begin{theorem}[Formal finite alternant ingredients]\label{thm:formalalternant}
+For every $m,b\in\N$ and $\gamma\in\N^m$,
+\[
+ A(\gamma)e_b=\sum_{\substack{S\subseteq[m]\\|S|=b}}
+                       A(\gamma+\mathbf1_S).
+\]
+If two distinct coordinates of $\gamma$ are equal, then $A(\gamma)=0$.
+The coefficient of $\mathbf x^\delta$ in $\Delta$ is one. Consequently
+$\Delta\ne0$ and $\Delta p=\Delta t$ if and only if $p=t$ in $R_m$.
+For $m=0$, $\Delta=1$.
+\end{theorem}
+\begin{proof}
+Elementary subset sums are unchanged by permuting variables. Multiply each
+signed monomial by this subset sum, distribute both finite sums, and move
+the permutation through the elementary factor. This gives the first identity,
+including $b>m$, when both sides are zero. A transposition of equal exponent
+positions fixes the monomial and reverses its sign, so $A=-A$. The concrete
+domain $R_m$ has no zero divisors and $2\ne0$, hence $A=0$.
+
+The coordinates of $\delta$ are distinct. Only the identity permutation
+contributes to $\mathbf x^\delta$, with sign one. This proves the coefficient
+claim and nonvanishing; cancellation follows in the same domain. For zero
+variables the sole empty permutation contributes one. The checked declarations
+are \texttt{alternant\_mul\_elementary},
+\texttt{alternant\_eq\_zero\_of\_eq},
+\texttt{vandermonde\_delta\_coefficient},
+\texttt{vandermonde\_ne\_zero}, \texttt{vandermonde\_cancel} and
+\texttt{vandermonde\_empty}, all in namespace \texttt{PartitionH3}.
+\end{proof}
+
+The next proposed specialization is
+\[
+ \Delta e_a e_b=\sum_{j=0}^b
+ A\bigl(\delta+(2^j,1^{a+b-2j},0^{m-a-b+j})\bigr),
+ \qquad b\le a,\quad a+b\le m.
+\]
+The subset classification behind this formula is checked: a subset of
+size $b$ that has no rise inside either block is uniquely a prefix in each
+block. Its two prefix lengths are $j$ and $b-j$. The Boolean-list
+classification and its cardinality-preserving transfer to actual subsets
+include empty blocks and balanced cases. The connection to bumped natural
+exponents and the resulting polynomial sum reduction are still missing.
+Thus the displayed specialization is a written proof target, not another
+Lean-certified conclusion of Theorem~\ref{thm:formalalternant}.
+
+\subsection{The coloring bridge and its orientation}
+
+Proper color classes are chains: if $i<j$ have the same color, properness
+excludes an edge, giving $h_i<j$. Under height two, a class therefore has
+at most two vertices. These statements and color reversal are checked in
+the polynomial project. Reversal exchanges the actual ascent and descent
+counts and preserves properness.
+
+Place color classes in \emph{increasing} color order. A graph edge $i<j$
+then has its larger endpoint in an earlier row exactly when
+$\kappa(j)<\kappa(i)$: this counts \emph{descents}. The checked declaration
+\texttt{descents\_eq\_colorRowInversions} states this equality for a finite-pair
+definition. A bijection to the original list arrays and their statistic is
+still required. Adjacent-color symmetry has not yet been formalized.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[font=\small,>=Stealth]
+\node[draw=ink,rounded corners,align=center,minimum width=3.5cm,
+ minimum height=1cm] (color) at (0,0)
+ {actual coloring $\kappa$\\descent count};
+\node[draw=teal,fill=teal!7,rounded corners,align=center,
+ minimum width=4.4cm,minimum height=1cm] (pairs) at (7,0)
+ {$\#\{ij\in E:i<j,\ \kappa(j)<\kappa(i)\}$\\finite-pair inversion count};
+\draw[->,thick,teal] (color)--node[above]{checked equality}(pairs);
+\node[draw=ink,dashed,rounded corners,align=center,minimum width=5.6cm,
+ minimum height=1cm] (arrays) at (3.5,-2)
+ {chain arrays in increasing color rows\\original list inversion statistic};
+\draw[->,dashed,rust] (pairs.south)--node[right,align=center]
+ {list/statistic bridge\\still required}(arrays.east);
+\draw[->,dashed,rust] (color.south)--node[left,align=center]
+ {bijection\\still required}(arrays.west);
+\end{tikzpicture}
+\caption{Checked pair counts and the remaining array interface. For one edge
+with colors $(2,1)$, increasing color rows give word $21$ and one inversion;
+descending color rows give word $12$ and zero. This small counterexample
+fixes the orientation. Dashed arrows are unproved interfaces.}
+\label{fig:colorbridge}
+\end{figure}
+
+The following table records the remaining assurance boundary.
 
 \begin{center}
 \small
@@ -424,6 +598,12 @@ Complete fixed-shape families & Exact membership, no duplicates, derived
 split index, and the family-level injection are checked\\[2mm]
 Survivor counts & Theorem~\ref{thm:formalcounts}, for all indices and degrees,
 including empty and singleton boundaries, is checked\\[2mm]
+Signed-array local cancellation & Theorem~\ref{thm:formalsigned} is checked;
+finite signed sums and the padding bijection remain open obligations\\[2mm]
+Finite alternant algebra & Theorem~\ref{thm:formalalternant} is checked;
+the two-elementary specialization and coefficient reconstruction remain\\[2mm]
+Actual coloring preliminaries & Class-size bounds, reversal and the finite-pair
+descent count are checked; symmetry and the list-array bijection remain\\[2mm]
 Symmetric-function bridge & The imported Schur expansion, determinant
 coefficient identity, and final elementary positivity corollary are written
 arguments; they are not formalized in Lean\\
@@ -437,8 +617,10 @@ formal statements relative to Lean's kernel and listed standard axioms. It
 does not certify the informal translation or the general positivity problem.
 The source contains no proof placeholders or new axioms. A separate semantic
 review found no defect in these finite-family statements. The recorded
-reproduction builds all three modules in a fresh temporary directory and
-checks their sources directly; all 31 printed dependency lists use only
+reproduction builds five Std modules and a separate five-module polynomial
+bridge in fresh temporary projects. It reuses pinned Mathlib dependency
+products, never project proof products. All 54 Std and 28 polynomial principal
+dependency lists use only
 \texttt{propext}, \texttt{Quot.sound}, and \texttt{Classical.choice}.
 
 The remaining height-two formalization gap is the equality between the actual
@@ -446,6 +628,48 @@ proper-coloring polynomial and the elementary expansion. Theorem~\ref{thm:formal
 does not supply the Schur expansion or the basis change in
 \eqref{eq:schur}--\eqref{eq:djt}. Those identities still require their own
 formal development or a verified, correctly attributed import.
+
+\section{A worked three-vertex example}
+
+Take $h=(2,3,3)$. The only comparability is $1<_P3$, and $G_h$ is the path
+$1\!\! -\!\!2\!\! -\!\!3$. Write a singleton-row tableau as its top-to-bottom
+word. The complete family $\mathcal T_0$ consists of
+$123,132,213,321$, with weights $1,q,q,q^2$. The only member of
+$\mathcal T_1$ is $[1,3]/[2]$, with weight $q$. Insertion sends it to
+$132$. Therefore
+\[
+ W(\mathcal S_0)=1+q+q^2,\qquad W(\mathcal S_1)=q,
+ \qquad X_{h,r}=(1+q+q^2)e_3+q e_2e_1.
+\]
+The last equality is an instance of the established mathematical theorem,
+not a completed universal Lean coloring bridge.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[font=\small,>=Stealth]
+\foreach \x/\v/\c in {0/1/blue,1.6/2/teal,3.2/3/blue} {
+ \node[circle,draw=\c,fill=\c!12,minimum size=.7cm] (v\v) at (\x,0) {$\v$};
+}
+\draw[thick] (v1)--(v2)--(v3);
+\node[align=center] at (1.6,-1) {colors $(1,2,1)$: one ascent\\colors $(2,1,2)$: one ascent};
+\cell{6}{.4}{1}{blue!10}\cell{6.72}{.4}{3}{blue!10}
+\cell{6}{-.4}{2}{teal!10}
+\draw[->,thick,teal] (7.8,.35)--node[above]{insertion}(9.5,.35);
+\cell{10}{.4}{1}{blue!10}\cell{10}{-.4}{3}{blue!10}
+\cell{10}{-1.2}{2}{teal!10}
+\node at (6.7,-1.65) {weight $q$};
+\node at (10.3,-1.65) {weight $q$};
+\end{tikzpicture}
+\caption{The path has exactly two proper colorings on two colors.
+The sole source tableau maps to $132$, leaving $123,213,321$ as survivors
+in the singleton family.}\label{fig:threevertex}
+\end{figure}
+
+On two colors, $e_3=0$ and the two proper colorings give
+$q(x_1^2x_2+x_1x_2^2)=q e_2e_1$. With three distinct colors, the coefficient
+of $x_1x_2x_3$ is $1+4q+q^2$. The same coefficient in $e_2e_1$ is $3$,
+so subtracting its contribution leaves $1+q+q^2$. The independent coloring
+oracle and the tableau enumerator both give these exact values.
 
 \section{Finite evidence from two independent calculations}
 

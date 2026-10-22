@@ -48,6 +48,40 @@ class ColoringOracleTests(unittest.TestCase):
                             coefficient,
                         )
 
+    def test_color_rows_match_descents_with_empty_rows_and_small_alphabets(self):
+        from research.partitions.checks import tableaux
+
+        for n in range(6):
+            for h in all_hessenberg_vectors(n):
+                edges = coloring_oracle.graph_edges(h)
+                height_two = tableaux.height_two(h)
+                for alphabet in range(4):
+                    for colors in itertools.product(range(alphabet), repeat=n):
+                        if any(colors[i] == colors[j] for i, j in edges):
+                            continue
+                        rows = tuple(tuple(i + 1 for i in range(n) if colors[i] == color)
+                                     for color in range(alphabet))
+                        descents = sum(colors[j] < colors[i] for i, j in edges)
+                        reversed_colors = tuple(alphabet - 1 - color for color in colors)
+                        with self.subTest(h=h, alphabet=alphabet, colors=colors):
+                            self.assertEqual(tableaux.inv_g(h, rows), descents)
+                            self.assertEqual(
+                                sum(reversed_colors[i] < reversed_colors[j] for i, j in edges),
+                                descents,
+                            )
+                            self.assertTrue(all(tableaux.lt_p(h, a, b)
+                                                for row in rows for a, b in zip(row, row[1:])))
+                            if height_two:
+                                self.assertTrue(all(len(row) <= 2 for row in rows))
+
+    def test_descending_color_rows_are_the_wrong_statistic_orientation(self):
+        from research.partitions.checks import tableaux
+
+        # One edge, colors (1,0): one descent. The increasing-color rows
+        # form word (2,1); reversing their order loses that inversion.
+        self.assertEqual(tableaux.inv_g((2, 2), ((2,), (1,))), 1)
+        self.assertEqual(tableaux.inv_g((2, 2), ((1,), (2,))), 0)
+
     def test_subset_expansion_of_elementary_products(self):
         # e_2 e_1 has coefficients 1 at x_1^2 x_2 and 3 at x_1 x_2 x_3.
         self.assertEqual(

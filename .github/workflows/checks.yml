@@ -20,3 +20,69 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: python -m unittest discover -s tests -v
       - run: python scripts/check_repository.py
+
+  lean-std:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ~/.elan
+          key: lean-${{ runner.os }}-${{ runner.arch }}-4.34.0
+      - name: Install the pinned Std checker
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/leanprover/elan/9605b24b08cf68b78dce0014b6fa01be1f8e2cee/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+            sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          fi
+          "$HOME/.elan/bin/elan" toolchain install leanprover/lean4:v4.34.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Rebuild the original certificate freshly
+        run: |
+          mkdir -p .runs
+          python3 research/partitions/lean/verify.py --output .runs/ci-std.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: lean-std-verification
+          path: .runs/ci-std.json
+
+  lean-mathlib:
+    runs-on: ubuntu-latest
+    env:
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ~/.elan
+          key: lean-${{ runner.os }}-${{ runner.arch }}-4.34.1
+      - name: Install the pinned polynomial checker
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/leanprover/elan/9605b24b08cf68b78dce0014b6fa01be1f8e2cee/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+            sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          fi
+          "$HOME/.elan/bin/elan" toolchain install leanprover/lean4:v4.34.1
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          # Project .lake/build is deliberately excluded: proofs rebuild freshly.
+          path: research/partitions/mathlib/.lake/packages
+          key: mathlib-${{ runner.os }}-${{ runner.arch }}-4.34.1-d13f23b723b8a846827a245b89c10fc7d3f11612-${{ hashFiles('research/partitions/mathlib/lake-manifest.json') }}
+      - name: Prepare only the requested polynomial imports
+        working-directory: research/partitions/mathlib
+        run: |
+          lake update
+          lake exe cache get Mathlib.RingTheory.MvPolynomial.Symmetric.Defs Mathlib.Algebra.Polynomial.Basic Mathlib.GroupTheory.Perm.Sign
+      - name: Rebuild all bridge proofs freshly
+        run: python3 research/partitions/mathlib/verify.py --output .runs/ci-mathlib.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: lean-mathlib-verification
+          path: .runs/ci-mathlib.json

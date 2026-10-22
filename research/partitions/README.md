@@ -29,8 +29,9 @@ positive partner. Wider determinant sectors are essential in general.
 ## Article and formal proofs
 
 - [Illustrated article](paper/main.tex): definitions, explicit counterexamples,
-  the all-size obstruction, complete height-two argument, four vector figures,
-  verification counts, and remaining general proof obligations. It compiles in
+  the all-size obstruction, complete height-two argument, vector figures,
+  verification counts, finite polynomial ingredients, a three-vertex example,
+  and remaining proof obligations. It compiles in
   the Codex LaTeX editor and remains open there with its PDF preview. No separate
   PDF was exported, following the user's editor instruction. Visual layout was
   not independently inspected because the available computer tool cannot access
@@ -46,10 +47,24 @@ positive partner. Wider determinant sectors are essential in general.
   singleton boundaries. Completeness, uniqueness, the shape-derived split,
   injection, and image/complement counts are checked. A clean reproduction
   and a separate semantic review support these statements.
-- The Schur expansion and determinant-to-elementary coefficient bridge remain
-  outside the Lean development. The general positivity theorem is not proved
-  here, and the all-size cardinality obstruction has a written proof rather
-  than a Lean proof.
+- The Schur expansion and complete determinant-to-elementary coefficient
+  bridge remain outside the Lean development. The general positivity theorem
+  is not proved here, and the all-size cardinality obstruction has a written
+  proof rather than a Lean proof.
+- [Signed arrays](lean/SignedArrays.lean) now give a universal bottommost-defect
+  involution with empty rows and integer shifted shapes, actual permutation
+  sign reversal, inversion preservation, and a padded-tableau fixed sector.
+  The fresh five-module Std build prints 54 standard-axiom reports; a
+  [separate semantic review](evidence/h3-signed-array-review.md) supports the
+  precise statements. Finite signed-sum cancellation, the canonical padding
+  bijection, and the full coloring/alternant polynomial bridge remain unchecked.
+- The separate [Mathlib bridge](mathlib/README.md), pinned to Lean 4.34.1 and
+  Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`, defines actual coloring,
+  elementary and tableau-weight polynomials. Its 28 principal reports cover
+  color-class bounds and orientation, generic alternant multiplication,
+  repeated-exponent vanishing, Vandermonde nonzero/cancellation, and actual
+  subset classification. [Separate review](evidence/h3-algebra-review-r2.md)
+  supports these interfaces. **H3 remains incomplete.**
 
 ## Reproduce the evidence
 
@@ -60,7 +75,14 @@ python3 -m unittest discover -s tests -v
 python3 scripts/check_repository.py
 python3 research/partitions/checks/tableaux.py --max-n 6
 python3 research/partitions/checks/verify.py --max-n 5 --bubble-max-n 7
+python3 research/partitions/verify_all.py
 ```
+
+The last command runs repository tests, the repository checker and fresh
+builds of both certificates. It binds its ignored report to a snapshot of
+the repository sources. Missing installed toolchains/dependencies or any
+failed check prevent success; it never installs dependencies or declares
+H3 closed. See [the bridge guide](mathlib/README.md) for its prerequisites.
 
 In `research/partitions/lean`, with the pinned Lean toolchain available:
 
@@ -82,6 +104,8 @@ have separate Lean proofs and explicit mathematical assumptions.
 
 - [Gap-closure plan](gap-closure-plan.md) defines exact targets, acceptance
   gates, a bounded first increment, and the external-certificate audit.
+- [H3 bridge contracts and route](h3-bridge-plan.md) describe the current
+  algebra, coloring, and integration stages and their resource limits.
 - [Current gap ledger](evidence/gap-closure-results.md) records the completed
   finite-family/count increment, review, and precise remaining obligations.
 - [External certificate inventory](evidence/external-certificate-audit.md)
@@ -98,6 +122,11 @@ have separate Lean proofs and explicit mathematical assumptions.
   checks, resource-measurement limits, and the unmet general objective.
 - [Lean verification record](lean/verification.json) binds the executed checks
   and reported axioms to the formal source hashes.
+- [Polynomial verification record](mathlib/verification.json) separately
+  binds the Mathlib sources, pinned dependencies, types and axiom reports.
+- [Claim-to-theorem index](evidence/claim-to-theorem-index.md) maps every named
+  article theorem to its exact declarations, hypotheses, reviews and records,
+  including claims with no Lean certificate.
 - [Investigation contract](../../programs/partition-positivity.json) bounds this attempt.
 
 The original objective—an entire general solution with a complete Lean proof—

@@ -1,6 +1,6 @@
 # Lean certificate for the tableau correction
 
-Checked on 21 October 2026 with Lean 4.34.0 and its bundled `Std` library.
+Checked on 22 October 2026 with Lean 4.34.0 and its bundled `Std` library.
 There are no external Lean dependencies. This formalizes a local obstruction
 and the combinatorial core of a known construction; it is not a new solution
 of a general positivity conjecture.
@@ -97,22 +97,60 @@ theorem to that extension. Transitivity is not needed by the combinatorial
 identity; every strict finite poset of height at most two meets its hypotheses.
 No equivalence with a separately defined coloring polynomial is assumed.
 
+## Signed arrays with empty rows
+
+[SignedArrays.lean](SignedArrays.lean) adds a checked involution on actual
+chain arrays. Empty rows are allowed, the filling is a permutation of the
+distinct vertex list, and permutation labels satisfy the integer equations
+`length(row_i) = lambda(pi(i)) - pi(i) + i`. Partitionhood and height at most
+two are explicit hypotheses where needed; they are not inferred from this
+definition.
+
+The suffix-first move toggles `[]/[b,a]` with `[a]/[b]` at the bottommost
+first-column defect when `r b a`, swapping the two permutation labels.
+`move_involution`, `move_signedArray`, and `move_tableauGraphInversions`
+prove involutivity, preservation of the actual shape/filling/row conditions,
+and preservation of the existing tableau inversion statistic.
+`signedArray_fixed_iff_padded` characterizes fixed arrays as actual
+`CornerSlide.Tableau` bodies followed by empty rows; `fixed_labels_identity`
+and `fixed_row_lengths` give their identity labels and entire shape profile.
+`move_sign_reversing` uses inversion parity of the actual label permutation,
+and `fixed_permutationSign` gives sign one on the fixed sector.
+
+The [exact handoff](../evidence/h3-signed-array-handoff.md) and
+[separate two-round semantic review](../evidence/h3-signed-array-review.md)
+record hypotheses and checked declarations. This is a universal list-based
+involution, not yet a finite signed-sum identity. Complete finite sector
+enumeration, canonical padding removal into `CornerSlide.family`, and the
+alternant permutation-sign interface remain integration obligations.
+
 ## Boundary of the certificate
 
-The Lean development does **not** define chromatic quasisymmetric functions,
+This Std-only project does **not** define chromatic quasisymmetric functions,
 Schur or elementary bases, dual Jacobi–Trudi determinants, the imported
 Shareshian–Wachs expansion, or the final elementary coefficient formula. It
 does not prove the finite count difference `5 > 4` or the infinite hook-count
 obstruction. Those parts have written arguments and separate Python checks.
-The final height-two positivity theorem is therefore not claimed as an
-end-to-end Lean theorem.
+The separate [Mathlib bridge](../mathlib/README.md) now defines actual coloring,
+elementary and tableau-weight polynomials and checks generic alternant
+multiplication and Vandermonde cancellation. The final height-two positivity
+theorem is still not an end-to-end Lean theorem.
+
+[AlternantSubsets.lean](AlternantSubsets.lean) is the fifth Std module.
+`noRise_iff_prefix`, `adjacent_exponent_collision` and
+`two_block_classification` classify Boolean lists that can avoid repeated
+adjacent exponents in the proposed two-elementary identity. The classification
+uses integer exponents and includes empty blocks and balanced shapes. Its
+seven principal reports were separately [reviewed](../evidence/h3-algebra-review-r1.md).
+An actual finite-subset bijection is checked in the Mathlib project, but
+the complete two-elementary polynomial specialization remains an obligation.
 
 The checked principal statements use only `propext`, `Quot.sound`, and
 `Classical.choice`. Classical choice is used by the finite-family definitions
 as well as one original concrete filling proof. There is no `sorryAx`,
 custom axiom declaration, `unsafe`, or `native_decide`. See the successful,
 source-hash-bound [verification record](verification.json) for actual command
-outputs, actual declaration types, and all 31 printed dependency lists. The
+outputs, actual declaration types, and all 54 printed dependency lists. The
 [separate semantic review](../evidence/gap-review.md) supports H1/H2 while
 retaining the coloring-to-elementary gap H3.
 
@@ -125,10 +163,12 @@ lake build
 lake env lean CornerSlide.lean
 lake env lean TableauFamilies.lean
 lake env lean WeightedCancellation.lean
+lake env lean SignedArrays.lean
+lake env lean AlternantSubsets.lean
 python3 verify.py --output verification.json
 ```
 
-The last command copies the three sources and pinned configuration into a fresh
+The last command copies the five sources and pinned configuration into a fresh
 temporary directory without existing build products, builds them, and directly
 checks every source. It records an inventory of the actual declaration types,
 checks that all
