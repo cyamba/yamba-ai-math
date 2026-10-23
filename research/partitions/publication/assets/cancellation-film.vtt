@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:05.000
+The beauty of cancellation. A visual journey into a Lean-checked proof. Christopher Yamba, Yamba AI Math.
+
+00:05.000 --> 00:10.000
+Three beads, two colors. Neighbors must differ. Both proper colorings have one ascent, giving q(x²y + xy²).
+
+00:10.000 --> 00:15.000
+A reversible move pairs opposite signs with the same weight. Inside the signed array, empty above b,a exchanges with a above b.
+
+00:15.000 --> 00:20.000
+Cho–Huh insertion matches the word 132. The survivors 123, 213, 321 have weights 1, q, q².
+
+00:20.000 --> 00:25.000
+For this path, X = (1 + q + q²)e₃ + q e₂e₁. Every survivor contributes positively.
+
+00:25.000 --> 00:30.000
+Established theorem: Cho–Huh. Coloring bridge: Shareshian–Wachs. Completed height-two Lean formalization in Yamba AI Math. Read the illustrated article at christopheryamba.com.

@@ -1,0 +1,11 @@
+{
+  "slug": "the-beauty-of-cancellation",
+  "title": "The beauty of cancellation",
+  "subtitle": "Colored beads, disappearing tableaux, and a proof that leaves only positive survivors",
+  "description": "A visual journey from a three-bead coloring puzzle to the Lean-checked height-two theorem of Cho and Huh.",
+  "author": "Christopher Yamba",
+  "publishDate": "2026-10-23T20:00:00Z",
+  "hero": "cancellation-hero.webp",
+  "canonical": "https://www.christopheryamba.com/posts/the-beauty-of-cancellation/",
+  "status": "Exposition of an established theorem with completed Lean formalization; not externally peer reviewed"
+}

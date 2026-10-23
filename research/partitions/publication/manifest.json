@@ -1,0 +1,114 @@
+{
+  "article": "The beauty of cancellation",
+  "version": 1,
+  "files": {
+    "article.html": {
+      "bytes": 11851,
+      "sha256": "f8a2f07399b3b3e0c4e6044e38cc3707f7b541b33c95b6e4ebebb13da38bc33d"
+    },
+    "assets/cancellation-film.mp4": {
+      "bytes": 1018630,
+      "sha256": "be9e2ebea0251f1202388934c2b862a6aa1756a9de05e9758bb7418f748a5223"
+    },
+    "assets/cancellation-film.vtt": {
+      "bytes": 866,
+      "sha256": "67cc89a9cf9ef0ad79c4204bd37626ef1165f43b63d149b43e233e6bc703faad"
+    },
+    "assets/cancellation-hero.jpg": {
+      "bytes": 254745,
+      "sha256": "9dc48e1b15b93e8730499d7ea91b8507f4e9dce88c282ab2e6c9f69a36215d64"
+    },
+    "assets/cancellation-hero.webp": {
+      "bytes": 276382,
+      "sha256": "7a7c34a606d361b0e17a0a90f35bc47fb438acbf72a79befa21ee7d6791c3e2a"
+    },
+    "assets/h3-social-pack.zip": {
+      "bytes": 4990516,
+      "sha256": "b29efa286482170a2cae9bf5573f6c9f59260e9e6430f11f6d5d68a96e75e663"
+    },
+    "assets/local-cancellation.png": {
+      "bytes": 235714,
+      "sha256": "c92fea9ce9fd16d4a5b5338acffecc8caa6a2dfcf5e379914c288ae9b79c751b"
+    },
+    "assets/local-cancellation.svg": {
+      "bytes": 3709,
+      "sha256": "2adf53aa8cd2b5e075db157cc3b7e26c05729c5f36b8319594dcd86ae11c2f7d"
+    },
+    "assets/social-cover.webp": {
+      "bytes": 289684,
+      "sha256": "96bc582485a92ac612834caa2f4296d8b237d14ffa2a1000353199df64c87677"
+    },
+    "assets/survivors.png": {
+      "bytes": 312515,
+      "sha256": "110633c01bec79903e63fcce7a84a0b7b0bc75bf8cd890db54cc25db8d531f36"
+    },
+    "assets/survivors.svg": {
+      "bytes": 5542,
+      "sha256": "3d848d448d97041bdf1e6ce0588dd2633937e621498b8909d65b84ba2e057e29"
+    },
+    "assets/three-beads.png": {
+      "bytes": 281961,
+      "sha256": "c0d8dbbf9cd6431a840bffbb69e30735eb659cdd89e88a2ff54956b36c39d953"
+    },
+    "assets/three-beads.svg": {
+      "bytes": 4252,
+      "sha256": "d621c53718710bb8a90d5a19aaa9468584ce397f4ddf07ef075e826dfbf73456"
+    },
+    "metadata.json": {
+      "bytes": 624,
+      "sha256": "2a6a3938d4908ed23a902c66f10dffa352acbde17db477e865e4dc4176b854bc"
+    },
+    "social/01-cover.png": {
+      "bytes": 2177185,
+      "sha256": "36720bb47fd9cdc4c4d60994d8e0abac0cb046e03842d05aff62b01c6838dafc"
+    },
+    "social/02-a-puzzle-you-can-see.png": {
+      "bytes": 190817,
+      "sha256": "e575b9e60a237c73d1da202ccb4c9a1bed15ecfcc1482817d1a30f0bfa18ec4d"
+    },
+    "social/02-a-puzzle-you-can-see.svg": {
+      "bytes": 5116,
+      "sha256": "965ea5d6850ff4645bf6372d4d5859c99c9247bd8ef813adc0d1fed61b162537"
+    },
+    "social/03-a-pair-can-disappear.png": {
+      "bytes": 174929,
+      "sha256": "0e871ca4ef4d59f0b5ec1e0e4be1575cd560aea819f26372ffca0407c126be9e"
+    },
+    "social/03-a-pair-can-disappear.svg": {
+      "bytes": 4585,
+      "sha256": "0cf4b269dcc0f029a0fe3b74db4952a32c89f73e61c3b0986bd5bf7e332e42f9"
+    },
+    "social/04-count-what-remains.png": {
+      "bytes": 200700,
+      "sha256": "dc991eb7b2858a79a60c85b8f7119c0a80dcb0f1a59262636a952b4552620b30"
+    },
+    "social/04-count-what-remains.svg": {
+      "bytes": 6410,
+      "sha256": "84e1ac27cfcc3eb5256d71ab0a73227062e48f51ef09e066da2c33422a3d75a2"
+    },
+    "social/05-a-positive-formula.png": {
+      "bytes": 114874,
+      "sha256": "6f15b8bb63e1eaf5ee382e64457e477a26469b28b365bc141d936d9ecbc84a09"
+    },
+    "social/05-a-positive-formula.svg": {
+      "bytes": 1596,
+      "sha256": "d206c89db6f725e86f290e82966fbdf36f9bdbba5a534c3a3e538d69336d9955"
+    },
+    "social/06-imagination-meets-verification.png": {
+      "bytes": 148412,
+      "sha256": "0ec81410ceed1f7810fbaaa2f99d336464d9ff40f1296d378a74c93be7b0ee74"
+    },
+    "social/06-imagination-meets-verification.svg": {
+      "bytes": 1741,
+      "sha256": "9502323bf8c5fec26913b889a2c6d0eb4e783385cc3084f8689efe587f52e2f4"
+    },
+    "social/README.txt": {
+      "bytes": 887,
+      "sha256": "59651511b56ff639beca23cf13f4df39a0a388ff5c01e2257c625a5a7d59e688"
+    },
+    "social/captions.md": {
+      "bytes": 3410,
+      "sha256": "a5d0f22b40816769c207cdf6172764d486ca8500f37cda63bbdd00f812814f35"
+    }
+  }
+}
