@@ -24,9 +24,9 @@
 \newcommand{\cell}[4]{\draw[draw=ink,fill=#4,rounded corners=1pt] (#1,#2) rectangle ++(.68,.68);\node[text=ink] at (#1+.34,#2+.34) {$#3$};}
 \newcommand{\tagline}[1]{\par\smallskip\noindent\textcolor{teal}{\small\textsf{#1}}\par\smallskip}
 \title{\textcolor{ink}{From a Failed Corner Slide\\to a Verified Tableau Injection}\\[3mm]
-\large A constructive positivity proof in height two,\\with exact obstructions and Lean-checked survivor counts}
+\large A constructive positivity proof in height two,\\with exact obstructions and a Lean-checked coloring formula}
 \author{Yamba AI Math Lab\\\small Research note prepared for Christopher Yamba}
-\date{22 October 2026}
+\date{23 October 2026}
 
 \begin{document}
 \maketitle
@@ -45,9 +45,10 @@ corollary, reproducible finite calculations, and a precise account of which
 combinatorial statements are checked by Lean. The certificate now includes
 complete finite tableau families, a survivor-count identity in every
 inversion degree, a signed-array involution, and finite alternant algebra.
-The coloring-to-survivor bridge remains incomplete. We do not claim a new proof of
-general positivity, a novel injection, or a fully formalized symmetric-function
-theorem.
+The all-alphabet coloring-to-survivor equality is now checked in Lean, using
+actual proper colorings and the original complete survivor families. We claim
+a formalization of the established height-two result, not a novel injection
+or a solution for arbitrary height.
 \end{abstract}
 
 \begin{center}
@@ -522,112 +523,154 @@ are \texttt{alternant\_mul\_elementary},
 \texttt{vandermonde\_empty}, all in namespace \texttt{PartitionH3}.
 \end{proof}
 
-The next proposed specialization is
+The two-elementary specialization is now checked:
 \[
  \Delta e_a e_b=\sum_{j=0}^b
  A\bigl(\delta+(2^j,1^{a+b-2j},0^{m-a-b+j})\bigr),
  \qquad b\le a,\quad a+b\le m.
 \]
-The subset classification behind this formula is checked: a subset of
-size $b$ that has no rise inside either block is uniquely a prefix in each
-block. Its two prefix lengths are $j$ and $b-j$. The Boolean-list
-classification and its cardinality-preserving transfer to actual subsets
-include empty blocks and balanced cases. The connection to bumped natural
-exponents and the resulting polynomial sum reduction are still missing.
-Thus the displayed specialization is a written proof target, not another
-Lean-certified conclusion of Theorem~\ref{thm:formalalternant}.
+Actual subsets are classified by their two prefix lengths. A rise inside
+one block causes equal adjacent natural exponents, so its alternant vanishes.
+The surviving subsets have prefix lengths $j$ and $b-j$.
+The declaration \texttt{vandermonde\_mul\_two\_elementary} includes balanced
+and empty cases. The declaration \texttt{alternating\_reconstruction}
+reconstructs an alternating polynomial from its actual finite support and
+dominant coefficients; an expansion is not assumed.
 
-\subsection{The coloring bridge and its orientation}
+\subsection{Actual colorings, signed arrays, and the final bridge}
 
 Proper color classes are chains: if $i<j$ have the same color, properness
-excludes an edge, giving $h_i<j$. Under height two, a class therefore has
-at most two vertices. These statements and color reversal are checked in
-the polynomial project. Reversal exchanges the actual ascent and descent
-counts and preserves properness.
-
-Place color classes in \emph{increasing} color order. A graph edge $i<j$
-then has its larger endpoint in an earlier row exactly when
-$\kappa(j)<\kappa(i)$: this counts \emph{descents}. The checked declaration
-\texttt{descents\_eq\_colorRowInversions} states this equality for a finite-pair
-definition. A bijection to the original list arrays and their statistic is
-still required. Adjacent-color symmetry has not yet been formalized.
+excludes an edge, giving $h_i<j$. Height two bounds a class by two vertices.
+For adjacent colors, let $U$ be their support. Flip every isolated vertex
+of the graph induced on $U$, except that if $|U|=3$ and there is no isolated
+vertex, flip all of $U$. This rule depends only on $U$, which it preserves,
+so it is an involution. The nontrivial three-vertex case is a path; natural
+unit interval monotonicity puts its center between its endpoints. Each
+coloring has one ascent on its two edges. Outside comparisons are unchanged
+because the colors are adjacent. The map preserves properness and ascent
+weight and exchanges the two multiplicities. Summing it proves symmetry.
 
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}[font=\small,>=Stealth]
-\node[draw=ink,rounded corners,align=center,minimum width=3.5cm,
- minimum height=1cm] (color) at (0,0)
- {actual coloring $\kappa$\\descent count};
-\node[draw=teal,fill=teal!7,rounded corners,align=center,
- minimum width=4.4cm,minimum height=1cm] (pairs) at (7,0)
- {$\#\{ij\in E:i<j,\ \kappa(j)<\kappa(i)\}$\\finite-pair inversion count};
-\draw[->,thick,teal] (color)--node[above]{checked equality}(pairs);
-\node[draw=ink,dashed,rounded corners,align=center,minimum width=5.6cm,
- minimum height=1cm] (arrays) at (3.5,-2)
- {chain arrays in increasing color rows\\original list inversion statistic};
-\draw[->,dashed,rust] (pairs.south)--node[right,align=center]
- {list/statistic bridge\\still required}(arrays.east);
-\draw[->,dashed,rust] (color.south)--node[left,align=center]
- {bijection\\still required}(arrays.west);
+\foreach \x/\name/\col in {0/u/a,1.4/z/{a+1},2.8/v/a}{
+ \node[draw=ink,circle,minimum size=8mm] (L\name) at (\x,0) {$\col$};}
+\draw[thick] (Lu)--(Lz)--(Lv);
+\node at (1.4,-.7) {$u<z<v$};
+\draw[<->,thick,teal] (3.6,0)--node[above]{flip $U$}(5.5,0);
+\foreach \x/\name/\col in {6.3/u/{a+1},7.7/z/a,9.1/v/{a+1}}{
+ \node[draw=teal,circle,minimum size=8mm] (R\name) at (\x,0) {$\col$};}
+\draw[thick] (Ru)--(Rz)--(Rv);
+\node at (7.7,-.7) {one ascent on each side};
 \end{tikzpicture}
-\caption{Checked pair counts and the remaining array interface. For one edge
-with colors $(2,1)$, increasing color rows give word $21$ and one inversion;
-descending color rows give word $12$ and zero. This small counterexample
-fixes the orientation. Dashed arrows are unproved interfaces.}
+\caption{The exceptional adjacent-color switch. If the induced graph has
+one edge, only its isolated vertex flips. These are the actual cases of
+\texttt{toggleColors}, not a free choice of a matching coloring.}
+\end{figure}
+
+Place sorted color classes in \emph{increasing} color order, including empty
+classes, and attach permutation label $\sigma(i)$ to row $i$. Their lengths
+satisfy the literal integer equations
+\[
+ |R_i|=\lambda_{\sigma(i)}-\sigma(i)+i.
+\]
+The inverse coloring assigns each vertex its unique row index. Sortedness
+and chain validity recover every original row. The list permutation sign
+is proved equal to the sign of $\sigma$. Original array graph inversions
+count \emph{descents} of this coloring. Color reversal and the proved
+symmetry identify its descent polynomial with the ascent polynomial.
+Thus the coefficient of $x^{\delta+\lambda}$ in $\Delta X_{h,m}$ is exactly
+the signed weight sum over the original complete shifted-array universe.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[font=\small,>=Stealth,
+ box/.style={draw=teal,fill=teal!5,rounded corners,align=center,
+ minimum width=3cm,minimum height=1cm}]
+\node[box] (c) at (0,0) {proper colorings\\integer coefficient constraint};
+\node[box] (a) at (4.3,0) {all labelled chain arrays\\including empty rows};
+\node[box] (t) at (8.6,0) {complete tableaux\\canonical zero padding};
+\draw[<->,thick,teal] (c)--node[above]{bijection}(a);
+\draw[->,thick,teal] (a)--node[above]{cancellation}(t);
+\node[box] (s) at (4.3,-2) {original survivors\\elementary expansion};
+\draw[->,thick,teal] (t.south)--node[below right]{H2 and telescope}(s.east);
+\draw[->,thick,teal] (s.west)--node[below left]{nonzero $\Delta$ cancels}(c.south);
+\end{tikzpicture}
+\caption{The checked bridge. Increasing color rows use descents: on one edge
+with colors $(2,1)$ their word is $21$, with one inversion. Reversal plus
+symmetry returns the requested ascent convention.}
 \label{fig:colorbridge}
 \end{figure}
 
-The following table records the remaining assurance boundary.
+The bottommost-defect involution cancels every nonfixed array. Fixed labels
+are the identity and fixed rows are precisely tableaux with trailing empty
+rows. Removing those rows is a proved bijection with the complete original
+family, preserving its inversion statistic. A decreasing partition with
+row lengths at most two is necessarily $(2^k,1^{n-2k},0^{m-n+k})$; all other
+sectors vanish. Dominant-coefficient reconstruction therefore gives
+\[
+ \Delta X_{h,m}=\sum_k W(\mathcal T_k)
+ A\bigl(\delta+(2^k,1^{n-2k},0^{m-n+k})\bigr).
+\]
+H2 is lifted from every degree to the actual polynomial identity
+$W(\mathcal T_k)=W(\mathcal T_{k+1})+W(S_k)$.
+The two-elementary identity and finite telescoping give the same alternant
+sum for $\Delta\sum_k W(S_k)e_{n-k}e_k$. Its boundary term is zero because
+$\mathcal T_{\lfloor n/2\rfloor+1}$ is empty. Nonzero Vandermonde cancellation
+proves the equality for $m\ge n$.
 
-\begin{center}
-\small
-\begin{tabular}{p{.39\linewidth}p{.51\linewidth}}
-\toprule
-Mathematical obligation & Verification boundary\\
-\midrule
-Exact top-only slide criterion & General actual-tableau theorem
-\texttt{demote\_valid\_iff}\\[2mm]
-Unchanged word for the top-only slide & General equality
-\texttt{flatten\_before\_after}\\[2mm]
-Five-vertex invalidity & Explicit source validity and target invalidity\\[2mm]
-Comparable-prefix insertion & Recursive insertion and first-eligible extraction,
-with a general left inverse; actual-tableau validity and injectivity\\[2mm]
-Tableau inversion weight & The row-to-word correspondence and the actual
-tableau weight-preservation theorem are checked in Lean\\[2mm]
-Complete fixed-shape families & Exact membership, no duplicates, derived
-split index, and the family-level injection are checked\\[2mm]
-Survivor counts & Theorem~\ref{thm:formalcounts}, for all indices and degrees,
-including empty and singleton boundaries, is checked\\[2mm]
-Signed-array local cancellation & Theorem~\ref{thm:formalsigned} is checked;
-finite signed sums and the padding bijection remain open obligations\\[2mm]
-Finite alternant algebra & Theorem~\ref{thm:formalalternant} is checked;
-the two-elementary specialization and coefficient reconstruction remain\\[2mm]
-Actual coloring preliminaries & Class-size bounds, reversal and the finite-pair
-descent count are checked; symmetry and the list-array bijection remain\\[2mm]
-Symmetric-function bridge & The imported Schur expansion, determinant
-coefficient identity, and final elementary positivity corollary are written
-arguments; they are not formalized in Lean\\
-\bottomrule
-\end{tabular}
-\end{center}
+\begin{theorem}[All-alphabet Lean survivor formula]\label{thm:formalh3}
+For every natural unit interval poset $P_h$ of height at most two on $n$
+vertices and every finite alphabet size $r\ge0$,
+\[
+ X_{h,r}(x;q)=\sum_{k=0}^{\lfloor n/2\rfloor}
+ \left(\sum_{T\in S_k}q^{\operatorname{inv}(T)}\right)
+ e_{n-k}(x)e_k(x).
+\]
+Here $S_k$ is the original full image complement of the Cho--Huh injection.
+\end{theorem}
+\begin{proof}
+The preceding construction proves the equality for $m\ge n$. Take
+$m=\max(n,r)$ and set $x_r,\ldots,x_{m-1}$ to zero. A coloring using one of
+these colors contributes zero; the remaining colorings are in bijection
+with actual $r$-colorings. Elementary subset products restrict by the same
+rule. This argument includes $r=0$ and $n=0$ without dividing by a variable
+or assuming a nonempty coloring type.
+\end{proof}
 
-The accompanying Lean README identifies every checked declaration, its
-assumptions, and its axiom dependencies. A successful build establishes those
-formal statements relative to Lean's kernel and listed standard axioms. It
-does not certify the informal translation or the general positivity problem.
-The source contains no proof placeholders or new axioms. A separate semantic
-review found no defect in these finite-family statements. The recorded
-reproduction builds five Std modules and a separate five-module polynomial
-bridge in fresh temporary projects. It reuses pinned Mathlib dependency
-products, never project proof products. All 54 Std and 28 polynomial principal
-dependency lists use only
-\texttt{propext}, \texttt{Quot.sound}, and \texttt{Classical.choice}.
+The exact declaration is
+\texttt{PartitionH3.height\_two\_survivor\_expansion}.
+Its only mathematical assumption on the supplied natural unit interval
+poset is \texttt{HeightTwo}; it quantifies over every $r$. Its direct Lean
+check reports only \texttt{propext}, \texttt{Quot.sound}, and
+\texttt{Classical.choice}. No proof placeholder, custom axiom, assumed
+Schur expansion, or final coefficient equality is an input. This formalizes
+the established height-two theorem and construction of Cho--Huh
+\cite{chohuh}, following the finite coloring and alternant route of
+Shareshian--Wachs \cite{sw}. The intermediate Schur expansion is not itself
+claimed as a separate Lean theorem.
 
-The remaining height-two formalization gap is the equality between the actual
-proper-coloring polynomial and the elementary expansion. Theorem~\ref{thm:formalcounts}
-does not supply the Schur expansion or the basis change in
-\eqref{eq:schur}--\eqref{eq:djt}. Those identities still require their own
-formal development or a verified, correctly attributed import.
+The signed calculation takes place over $\mathbb Z[q]$. To return to
+$\mathbb N[q]$, define the coloring polynomial, elementary subset products
+and survivor weights by the same actual sums in the natural coefficient
+semiring. The coefficient embedding $\mathbb N\hookrightarrow\mathbb Z$
+induces injective maps on both polynomial levels, and maps each of these
+sums to its integer counterpart. Pulling back the equality gives the exact
+natural-coefficient declaration
+\texttt{PartitionH3.height\_two\_survivor\_expansion\_nat},
+with the same height and alphabet scope and standard axioms.
+
+The reproducible development preserves the separate five-module,
+Lean~4.34.0 Std certificate. Its Mathlib bridge has twenty-one modules pinned to
+Lean~4.34.1 and the recorded Mathlib revision. The verification entry point
+checks fresh project builds, printed signatures and standard-axiom reports;
+semantic review and its source hashes are recorded separately in the
+claim-to-theorem index. Fresh project builds check the original five Std
+modules and all twenty-one Mathlib modules, with respectively 54 and 137
+principal dependency reports limited to standard axioms. Separate integration
+reviews support the integer formula and natural-coefficient transport at
+their recorded source hashes. These checks and reviews close H3 for height
+two; the general-height objective remains outside this certificate.
 
 \section{A worked three-vertex example}
 
@@ -641,8 +684,8 @@ $132$. Therefore
  W(\mathcal S_0)=1+q+q^2,\qquad W(\mathcal S_1)=q,
  \qquad X_{h,r}=(1+q+q^2)e_3+q e_2e_1.
 \]
-The last equality is an instance of the established mathematical theorem,
-not a completed universal Lean coloring bridge.
+The last equality is an instance of the established mathematical theorem
+and of the all-alphabet Lean survivor formula above.
 
 \begin{figure}[ht]
 \centering
@@ -739,7 +782,7 @@ general proof is credible.
 
 This investigation does not establish a new open-problem solution. It
 replaces an invalid purported solution with precise obstructions, a complete
-restricted mathematical proof, and a formally checked combinatorial core.
+restricted mathematical proof, and an all-alphabet Lean formalization of that restricted result.
 No inference about AI architecture quality follows from this research run.
 
 \begin{thebibliography}{9}

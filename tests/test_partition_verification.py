@@ -11,7 +11,7 @@ from research.partitions.verify_all import run_suite
 
 class PartitionVerificationTests(unittest.TestCase):
     def run_fixture(self, *, failed_stage=None, missing=None, failed_certificate=None,
-                    changed=False, unavailable=False):
+                    changed=False, unavailable=False, h3_checked=False, natural_checked=True):
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)
         root = Path(temporary.name)
@@ -29,6 +29,11 @@ class PartitionVerificationTests(unittest.TestCase):
                     path.write_text(json.dumps({
                         "status": "failed" if name == failed_certificate else "passed",
                         "sha256": {"synthetic.lean": "fixture"}, "axioms": {},
+                        "h3_status": "lean_checked" if h3_checked and name == "mathlib" else "incomplete",
+                        "final_h3_declaration": "PartitionH3.height_two_survivor_expansion"
+                        if h3_checked and name == "mathlib" else None,
+                        "natural_h3_declaration": "PartitionH3.height_two_survivor_expansion_nat"
+                        if h3_checked and natural_checked and name == "mathlib" else None,
                     }))
             return subprocess.CompletedProcess(command, 1 if index == failed_stage else 0,
                                                 "Synthetic verification protocol fixture")
@@ -72,6 +77,26 @@ class PartitionVerificationTests(unittest.TestCase):
         report, _ = self.run_fixture(changed=True)
         self.assertEqual(report["status"], "failed")
         self.assertFalse(report["source_unchanged_during_checks"])
+
+    def test_checked_h3_is_reported_only_with_all_acceptance_checks(self):
+        report, _ = self.run_fixture(h3_checked=True)
+        self.assertEqual(report["h3_status"], "lean_checked")
+        self.assertEqual(report["final_h3_declaration"], "PartitionH3.height_two_survivor_expansion")
+        self.assertEqual(report["natural_h3_declaration"], "PartitionH3.height_two_survivor_expansion_nat")
+
+    def test_missing_natural_transport_prevents_checked_h3_status(self):
+        report, _ = self.run_fixture(h3_checked=True, natural_checked=False)
+        self.assertEqual(report["h3_status"], "incomplete")
+        self.assertIsNone(report["natural_h3_declaration"])
+
+    def test_failed_stage_prevents_checked_h3_status(self):
+        report, _ = self.run_fixture(h3_checked=True, failed_stage=0)
+        self.assertEqual(report["status"], "failed")
+        self.assertEqual(report["h3_status"], "incomplete")
+
+    def test_changed_sources_prevent_checked_h3_status(self):
+        report, _ = self.run_fixture(h3_checked=True, changed=True)
+        self.assertEqual(report["h3_status"], "incomplete")
 
 
 if __name__ == "__main__":

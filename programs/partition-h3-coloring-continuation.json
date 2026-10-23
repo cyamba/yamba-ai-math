@@ -1,0 +1,40 @@
+{
+  "id": "P011",
+  "title": "H3 adjacent-color symmetry and array coefficients",
+  "objective": "Prove an actual proper-coloring adjacent-color involution, symmetry and the coloring-to-signed-array coefficient interface without assuming a desired expansion.",
+  "fleet": "pair",
+  "briefs": [
+    "research/partitions/h3-continuation-20261023.md",
+    "research/partitions/h3-bridge-plan.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_cost_units": 16,
+    "max_workers": 2,
+    "max_rounds": 2
+  },
+  "rounds": 2,
+  "deliverables": [
+    "Exact source-bound statements, definitions, hypotheses and primary-source provenance",
+    "Checked Lean declarations for this contract, or the exact unresolved obligations",
+    "Separate critic verdict and at most two bounded proposal/review rounds",
+    "Source hashes, actual execution and resource receipts; no inferred proof status"
+  ],
+  "success_criteria": [
+    "Only actual colorings, subset elementary polynomials and existing complete survivor families support H3",
+    "All public mathematical conclusions have an actual proof and recorded assurance level",
+    "No desired expansion, truncated negative shape, hidden positivity hypothesis or custom axiom is assumed",
+    "Passed compilation and distinct-role semantic review are both required for a closed gate",
+    "Integration P009 starts only after P007/P008 deliver checked compatible interfaces; incomplete inputs remain incomplete"
+  ],
+  "stop_conditions": [
+    "At most two author-critic rounds and 16 declared dispatch proxy units for this new continuation; retain incomplete obligations.",
+    "Historical P007/P008 accounts and review rounds remain frozen; no retroactive reset or relabeling of their work.",
+    "Reuse installed pinned local dependencies; no new toolchain or full Mathlib cache provisioning.",
+    "No nested fleets, paid provider automation, placeholders, custom axioms or assumed coloring expansion."
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

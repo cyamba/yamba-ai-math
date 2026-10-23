@@ -13,6 +13,55 @@ def all_hessenberg_vectors(n):
 
 
 class ColoringOracleTests(unittest.TestCase):
+    @staticmethod
+    def adjacent_color_toggle(edges, colors, a, b):
+        support = {i for i, color in enumerate(colors) if color in (a, b)}
+        isolated = {i for i in support if not any(
+            (i == u and v in support) or (i == v and u in support)
+            for u, v in edges)}
+        mask = support if len(support) == 3 and not isolated else isolated
+        return tuple((b if color == a else a) if i in mask else color
+                     for i, color in enumerate(colors))
+
+    def test_pointwise_adjacent_color_involution_through_five_vertices(self):
+        from research.partitions.checks import tableaux
+
+        witnessed = set()
+        for n in range(6):
+            for h in all_hessenberg_vectors(n):
+                if not tableaux.height_two(h):
+                    continue
+                edges = coloring_oracle.graph_edges(h)
+                for alphabet in range(6):
+                    for colors in itertools.product(range(alphabet), repeat=n):
+                        if any(colors[i] == colors[j] for i, j in edges):
+                            continue
+                        for a in range(alphabet - 1):
+                            b = a + 1
+                            changed = self.adjacent_color_toggle(edges, colors, a, b)
+                            self.assertFalse(any(changed[i] == changed[j] for i, j in edges))
+                            self.assertEqual(self.adjacent_color_toggle(edges, changed, a, b), colors)
+                            self.assertEqual(sum(colors[i] < colors[j] for i, j in edges),
+                                             sum(changed[i] < changed[j] for i, j in edges))
+                            expected = [colors.count(color) for color in range(alphabet)]
+                            expected[a], expected[b] = expected[b], expected[a]
+                            self.assertEqual([changed.count(color) for color in range(alphabet)],
+                                             expected)
+                            witnessed.add((colors.count(a), colors.count(b)))
+        self.assertTrue({(0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 1), (2, 2)} <= witnessed)
+
+    def test_color_toggle_needs_monotonicity_and_adjacent_colors(self):
+        # The nonmonotone extensive zero-based vector (2,1,2) has these
+        # two edges. It is a counterexample to removing monotonicity.
+        edges = ((0, 1), (0, 2))
+        colors = (1, 0, 0)
+        changed = self.adjacent_color_toggle(edges, colors, 0, 1)
+        self.assertEqual(changed, (0, 1, 1))
+        self.assertEqual(sum(colors[i] < colors[j] for i, j in edges), 0)
+        self.assertEqual(sum(changed[i] < changed[j] for i, j in edges), 2)
+        # A nonadjacent swap also changes an outside-edge ascent.
+        self.assertEqual(self.adjacent_color_toggle(((0, 1),), (0, 1), 0, 2), (2, 1))
+
     def test_four_vertex_path_expansion(self):
         self.assertEqual(
             coloring_oracle.elementary_expansion((2, 3, 4, 4)),
