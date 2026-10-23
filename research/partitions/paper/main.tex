@@ -471,13 +471,13 @@ The declarations \texttt{mem\_family} and \texttt{family\_nodup} establish the
 enumeration properties. The all-index result is
 \texttt{height\_two\_degreewise\_cancellation}. For a relation defined only
 on the vertex set, \texttt{finiteRelation} extends it by false outside that
-set, and \texttt{finite\_height\_two\_degreewise\_cancellation} requires
+set, and \texttt{finite\_\allowbreak height\_\allowbreak two\_\allowbreak degreewise\_\allowbreak cancellation} requires
 asymmetry and height only on those vertices.
 
 \subsection{Actual polynomials and checked finite alternants}
 
 The separate polynomial project uses Lean 4.34.1 and Mathlib revision
-\texttt{d13f23b723b8a846827a245b89c10fc7d3f11612}. Its ring is
+\texttt{d13f23b723b8a846827a\allowbreak 245b89c10fc7d3f11612}. Its ring is
 $R_m=\mathbb Z[q][x_1,\ldots,x_m]$. The definition of $X_{h,m}$ is the
 finite sum over actual proper functions $[n]\to[m]$, with their actual
 color monomials and ascent powers. The elementary polynomial is the actual
@@ -516,12 +516,15 @@ domain $R_m$ has no zero divisors and $2\ne0$, hence $A=0$.
 The coordinates of $\delta$ are distinct. Only the identity permutation
 contributes to $\mathbf x^\delta$, with sign one. This proves the coefficient
 claim and nonvanishing; cancellation follows in the same domain. For zero
-variables the sole empty permutation contributes one. The checked declarations
-are \texttt{alternant\_mul\_elementary},
+variables the sole empty permutation contributes one.
+\par\begingroup\raggedright
+The checked declarations are \texttt{alternant\_mul\_elementary},
 \texttt{alternant\_eq\_zero\_of\_eq},
 \texttt{vandermonde\_delta\_coefficient},
-\texttt{vandermonde\_ne\_zero}, \texttt{vandermonde\_cancel} and
-\texttt{vandermonde\_empty}, all in namespace \texttt{PartitionH3}.
+\texttt{vandermonde\_\allowbreak ne\_\allowbreak zero},
+\texttt{vandermonde\_\allowbreak cancel} and
+\texttt{vandermonde\_\allowbreak empty}, all in namespace \texttt{PartitionH3}.
+\par\endgroup
 \end{proof}
 
 The two-elementary specialization is now checked:
