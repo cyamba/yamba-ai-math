@@ -32,6 +32,11 @@ positive partner. Wider determinant sectors are essential in general.
 
 ## Article and formal proofs
 
+- [The beauty of cancellation](publication/README.md): a recreational-mathematics
+  companion with conceptual artwork, three exact diagrams, a six-image social
+  carousel, ready-to-use captions and a 30-second silent video. Its
+  [separate semantic and visual review](publication/review.md) preserves the
+  distinction between the established theorem and this Lean formalization.
 - [Illustrated article](paper/main.tex): definitions, explicit counterexamples,
   the all-size obstruction, complete height-two argument, vector figures,
   verification counts, finite polynomial ingredients, a three-vertex example,
