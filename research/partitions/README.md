@@ -37,14 +37,15 @@ positive partner. Wider determinant sectors are essential in general.
   carousel, ready-to-use captions and a 30-second silent video. Its
   [separate semantic and visual review](publication/review.md) preserves the
   distinction between the established theorem and this Lean formalization.
-- [Illustrated article](paper/main.tex): definitions, explicit counterexamples,
+- [Full technical PDF](paper/height-two-positivity.pdf) (11 pages), with
+  [editable LaTeX source](paper/main.tex): definitions, explicit counterexamples,
   the all-size obstruction, complete height-two argument, vector figures,
   verification counts, finite polynomial ingredients, a three-vertex example,
-  and remaining proof obligations. It compiles in
-  the Codex LaTeX editor and remains open there with its PDF preview. No separate
-  PDF was exported, following the user's editor instruction. Visual layout was
-  not independently inspected because the available computer tool cannot access
-  Codex; compiler success alone is the recorded check.
+  and remaining proof obligations. The source compiles in the Codex LaTeX
+  editor and remains open there with its PDF preview. At the user's request,
+  the full PDF was exported using the existing local LaTeX installation,
+  with package installation disabled. Its rendered pages were visually
+  inspected; long identifiers were wrapped to remove margin overflow.
 - [Lean source](lean/CornerSlide.lean) and [formalization guide](lean/README.md):
   actual bijective fillings, all row and column conditions, the exact local
   boundary criterion, general bubble validity, height-two injectivity, the
