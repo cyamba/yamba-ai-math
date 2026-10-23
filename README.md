@@ -33,6 +33,12 @@ supplied positivity proofs, a reproduced height-two theorem, checked Lean
 lemmas, and an illustrated article. It does not claim a general open-problem
 solution or an improvement to an AI architecture.
 
+The [Parikh matrix research](research/parikh/README.md) continues Christopher Yamba's 2006
+thesis on Parikh matrices and permutation statistics. It contains two articles with their
+LaTeX sources, Lean 4 proofs and verification checks. That directory is **all rights
+reserved** and excluded from the MIT License (see its
+[NOTICE](research/parikh/NOTICE.md)).
+
 ## Run the harness
 
 Clone the repository and work from its root. Python **3.11+** is the only dependency; no model account is required for planning, handoffs, replay, or tests.
