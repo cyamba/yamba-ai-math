@@ -10,5 +10,6 @@ A program turns research briefs into one bounded assignment. The JSON files are 
 | `harness-improvement.json` | Design a controlled evaluation of one harness change | `meta` |
 | [partition-positivity.json](partition-positivity.json) | Record the initial partition-construction audit and scoped repair | `theorem` |
 | [partition-gap-closure.json](partition-gap-closure.json) | Prove finite weighted cancellation and audit the claimed general certificate | `pair` |
+| [rogers-ramanujan-bijections.json](rogers-ramanujan-bijections.json) | Audit the actual bijection gap and plan one precise Rogers–Ramanujan-type target | `pair` |
 
 Read `contract.md` before creating or executing a program. A planning or packet-generation command prepares work; it does not establish that the research was performed. Runtime-generated reports must identify the execution mode and preserve any missing evidence.

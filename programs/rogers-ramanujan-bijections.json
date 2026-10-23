@@ -1,0 +1,44 @@
+{
+  "id": "RR001",
+  "title": "Rogers–Ramanujan bijections: verify the gap and plan one exact target",
+  "objective": "Produce a source-audited, separately criticized plan for one genuinely unresolved constructive partition-bijection target from the historical brief, or document why no defensible target has been selected; do not execute or claim a proof in this initial increment.",
+  "fleet": "pair",
+  "briefs": [
+    "research/rogers-ramanujan/README.md",
+    "research/rogers-ramanujan/PLANNING_PROMPT.md",
+    "research/rogers-ramanujan/problem_01_rogers_ramanujan_bijections.md",
+    "research/partitions/evidence/other-targets.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_cost_units": 16,
+    "max_workers": 2,
+    "max_rounds": 2
+  },
+  "rounds": 2,
+  "deliverables": [
+    "A dated primary-source status table separating count identities, bijections, stronger map properties and formalizations",
+    "At most two precise candidate statements and one recommended target, or a documented selection blocker",
+    "An explicit map class, proof-obligation DAG, smallest falsifiers and bounded enumeration protocol",
+    "An inventory-based Lean and dependency plan with final semantic and formal acceptance gates",
+    "Separate critic findings based on re-inspection of the selected gap's primary sources, author revisions, unresolved disagreements and a reviewable implementation plan"
+  ],
+  "success_criteria": [
+    "Historical status claims are re-audited or explicitly unverified; no known result is silently substituted for the intended open contribution",
+    "The proposed target fixes every partition restriction, parameter, quantifier, weight and claimed statistic, and compares the intended construction with the closest known maps",
+    "Forward/inverse well-definedness, weight preservation, termination and both inverse identities have explicit proof obligations and falsifiers",
+    "The plan respects role separation, two bounded rounds and the dispatch limit, while reporting excluded resources separately",
+    "The output is labeled as a plan; no unexecuted worker call, finite check or Lean build is reported as completed research"
+  ],
+  "stop_conditions": [
+    "After two proposal/challenge/revision rounds, preserve blockers and disagreements rather than start another round",
+    "Required primary sources cannot be inspected: mark status unverified and identify the missing evidence",
+    "The purported gap is already covered by an existing construction: attribute it and return alternatives for the user rather than silently expand scope",
+    "A candidate's refined counts or map constraints fail: retain the smallest counterexample and narrow or reject the proposal",
+    "This planning increment does not authorize proof execution, new dependency provisioning, paid adapters or publication"
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

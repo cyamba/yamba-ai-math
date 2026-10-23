@@ -39,6 +39,11 @@ LaTeX sources, Lean 4 proofs and verification checks. That directory is **all ri
 reserved** and excluded from the MIT License (see its
 [NOTICE](research/parikh/NOTICE.md)).
 
+The [Rogers–Ramanujan bijection investigation](research/rogers-ramanujan/README.md)
+preserves the original problem brief and supplies a Plan-mode prompt and bounded
+harness contract. Its first task is to verify one precise unresolved constructive
+target; no new bijection or theorem is claimed by this setup.
+
 ## Run the harness
 
 Clone the repository and work from its root. Python **3.11+** is the only dependency; no model account is required for planning, handoffs, replay, or tests.
