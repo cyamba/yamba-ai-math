@@ -29,8 +29,8 @@ Ideas are welcome even when speculative. Label the uncertainty, identify the clo
 
 The [integer-partition investigation](research/partitions/README.md) records the
 user-authorized expansion into constructive combinatorics: an audit of the
-supplied positivity proofs, a reproduced height-two theorem, checked Lean
-lemmas, and an illustrated article. It does not claim a general open-problem
+supplied positivity proofs, a reproduced height-two theorem with an end-to-end
+Lean proof for every finite alphabet, and an illustrated article. It does not claim a general open-problem
 solution or an improvement to an AI architecture.
 
 The [Parikh matrix research](research/parikh/README.md) continues Christopher Yamba's 2006

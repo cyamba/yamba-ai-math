@@ -1,7 +1,12 @@
 # Finite polynomial bridge for H3
 
-**H3 remains incomplete.** This project checks polynomial ingredients, not
-the final equality between actual proper colorings and survivor coefficients.
+The final all-alphabet height-two theorem is `PartitionH3.height_two_survivor_expansion`
+in [H3.lean](PartitionH3/H3.lean). Fresh source checking passed for all 21
+modules with 137 principal standard-only axiom reports. The separate
+[integration review](../evidence/h3-integration-review-r1.md) and
+[natural-transport review](../evidence/h3-integration-review-r2.md) support
+the exact source-bound statements. The theorem uses actual proper colorings
+and the original complete survivor coefficients, including alphabet zero.
 It is separate from the [original Std certificate](../lean/README.md), whose
 Lean 4.34.0 pin and independence from Mathlib are preserved.
 
@@ -18,7 +23,7 @@ every transitive Git dependency. All polynomials are actual
 | `PartitionH3/Vandermonde.lean` | The coefficient at `delta` is one, hence the alternant is nonzero and multiplication by it cancels; zero variables give one. |
 | `PartitionH3/SubsetBridge.lean` | A cardinality-preserving bijection between actual subsets and Boolean lists; unique surviving two-block subsets under the stated no-rise and size hypotheses. |
 
-The exact types, source/configuration hashes, 28 principal dependency reports
+The exact types, source/configuration hashes, 137 principal dependency reports
 and Git revisions are in [verification.json](verification.json). The
 [separate semantic review](../evidence/h3-algebra-review-r2.md) supports these
 precise interfaces; distinct roles do not imply independent model errors.
@@ -45,8 +50,8 @@ returns a nonzero exit code. It never installs a missing toolchain/library.
 The second command also runs all repository tests, the repository checker
 and the original Std certificate. Its default source-bound report is in
 ignored `.runs/partition-verification/latest.json`. A passed build record is
-different from a completed H3 proof; both records explicitly retain H3 as
-incomplete and have no final H3 declaration.
+different from a completed H3 proof; the bridge record reports the exact checked H3 declaration, while
+semantic review remains a separate record. Missing evidence is never inferred.
 
 ## Optional initial setup
 
@@ -67,14 +72,26 @@ bounds for that setup, not minimum requirements of Lean. The recorded setup
 used about 4.76 GiB additional allocated storage, within those bounds; see
 [the author receipt](../evidence/h3-algebra-revision-r1.md).
 
-## Exact remaining obligations
+## Integration modules
 
-The actual-subset classification must still be linked to bumped natural
-exponents and used to prove the two-elementary specialization. Dominant
-alternating-coefficient reconstruction is also missing. The coloring route
-still needs adjacent-color symmetry, actual coloring/list-array bijections,
-complete signed-sector finite-sum cancellation, permutation-sign translation
-and the canonical padding/family bijection. H2 must then be lifted and
-telescoped in polynomials, followed by all-alphabet specialization including
-zero. The generic identity and nonzero cancellation do not supply these
-missing results. See [the exact claim index](../evidence/claim-to-theorem-index.md).
+The twenty-one-module project additionally checks `ElementaryProduct`, `Reconstruction`,
+`ColorSymmetry`, `ColorCoefficients`, `SignedCancellation`, `PermutationSign`,
+`ArrayColorBridge`, `FamilyPadding`, `FamilyReindex`, `SurvivorAlgebra`,
+`DominantShape`, `ChromaticArrays`, `FiniteH3`, `AlphabetSpecialization` `H3` and `NaturalCoefficients`.
+They supply actual coefficient extraction, complete finite reindexing, list sign
+and statistic translation, canonical padding, dominant shape classification,
+H2 telescoping, valid cancellation and specialization from max(n,r).
+
+See the [claim index](../evidence/claim-to-theorem-index.md) and
+[author handoff](../evidence/h3-integration-r1.md) for exact statements, hypotheses,
+source hashes and review status. This is a formalization of an established
+height-two result, not a new solution in arbitrary height.
+
+The natural-coefficient restatement is
+`PartitionH3.height_two_survivor_expansion_nat`. Its `natChromatic`,
+`natElementary` and `natSurvivorCoefficient` are actual finite sums over
+`Polynomial Nat`. The proved injective coefficient maps identify them with
+the integer sums and transport the equality back, including alphabet zero.
+The [auxiliary handoff](../evidence/h3-integration-r2.md) records the exact
+source and direct check; the [final review](../evidence/h3-integration-review-r2.md)
+and fresh build support the natural-coefficient theorem.

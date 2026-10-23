@@ -1,4 +1,54 @@
-# Gap ledger: finite-family and survivor-count increment
+# Gap ledger: H3 all-alphabet closure
+
+Updated 2026-10-23. **H1/H2/H3 are proved and Lean-checked for height-two natural
+unit interval posets.** The final formula uses actual proper colorings and the
+original complete survivor families, for every number of vertices and every
+finite alphabet including zero. Both integer- and natural-coefficient versions
+are formal declarations, with no assumed expansion or positivity premise:
+
+- `PartitionH3.height_two_survivor_expansion`
+- `PartitionH3.height_two_survivor_expansion_nat`
+
+The mathematical theorem and construction are established Cho–Huh work. This
+is a formalization and exposition of that restricted result; the original
+arbitrary-height research objective remains unresolved here. The historical
+failed maps, counterexamples and incomplete milestones below remain evidence.
+
+## Current acceptance evidence
+
+- Fresh builds of the five-module Lean 4.34.0 Std project and twenty-one-module
+  Lean 4.34.1/Mathlib project passed. Project proof products were rebuilt in
+  temporary workspaces; only pinned external dependency products were reused.
+- The [Std record](../lean/verification.json) has 54 principal axiom reports;
+  the [Mathlib record](../mathlib/verification.json) has 137. Printed final
+  signatures and all required reports are present, using only `propext`,
+  `Quot.sound` and `Classical.choice`; the verifier rejects placeholders,
+  custom proof assumptions, diagnostics, changed sources and dirty dependencies.
+- The [integration review](h3-integration-review-r1.md) supports the ten frozen
+  integration sources and independently checks the integer formula. The
+  [final review](h3-integration-review-r2.md) supports the actual natural-sum
+  transport, closing the first review's explicit auxiliary qualification.
+- All 54 repository tests passed, including the independent coloring oracle
+  through five vertices, pointwise adjacent-color switches for zero through
+  five colors, statistic orientation and retained counterexamples. The
+  repository checker passed. Finite tests support implementation, not the
+  universal proof.
+- The existing article is updated in place with the exact proof route, local
+  cancellation, coloring bridge and worked three-vertex diagrams. The built-in
+  editor compiler returned success on 23 October for source SHA-256
+  `81ecadf857e380dd89131d17c521d72bb73332bc67ce29dd76496be318c0e1f2`.
+  The existing editor remains open; no separate PDF was exported. Final
+  combined repository snapshot verification is reported with the follow-up PR.
+
+The [claim index](claim-to-theorem-index.md) maps article statements to exact
+formal declarations, hypotheses, source attributions, review verdicts and
+verification records. `verify_all.py` reruns both fresh certificates and the
+repository checks, requiring stable sources and both exact final declarations
+before reporting `lean_checked`. Its complete source-bound report is generated
+under ignored `.runs/partition-verification/`; it does not infer semantic
+review from compilation.
+
+## Historical first increment, 2026-10-21
 
 Updated 2026-10-21. **H1/H2 are proved and Lean-checked. The full coloring-to-
 elementary theorem H3 and the original general research objective remain

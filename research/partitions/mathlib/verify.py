@@ -20,11 +20,15 @@ ROOT = Path(__file__).resolve().parent
 TOOLCHAIN = "leanprover/lean4:v4.34.1"
 MATHLIB_REV = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 ALLOWED_AXIOMS = {"propext", "Quot.sound", "Classical.choice"}
-MODULES = ["Foundations", "Coloring", "Alternant", "Vandermonde", "SubsetBridge"]
+MODULES = ["Foundations", "Coloring", "Alternant", "Vandermonde", "SubsetBridge",
+           "ElementaryProduct", "Reconstruction", "ColorSymmetry", "ColorCoefficients",
+           "SignedCancellation",
+           "PermutationSign", "ArrayColorBridge", "FamilyPadding", "FamilyReindex", "SurvivorAlgebra", "DominantShape", "ChromaticArrays", "FiniteH3", "AlphabetSpecialization", "H3",
+           "NaturalCoefficients"]
 SOURCES = ["PartitionH3.lean", *[f"PartitionH3/{m}.lean" for m in MODULES]]
 CONFIGURATION = ["lean-toolchain", "lakefile.toml", "lake-manifest.json"]
 STD_SOURCES = ["CornerSlide.lean", "TableauFamilies.lean", "WeightedCancellation.lean",
-               "AlternantSubsets.lean"]
+               "AlternantSubsets.lean", "SignedArrays.lean"]
 DECLARATIONS = [
     "chromatic", "elementary", "tableauCoefficient", "survivorCoefficient",
     "elementary_zero", "elementary_isSymmetric", "chromatic_empty", "chromatic_zero_alphabet",
@@ -37,6 +41,84 @@ DECLARATIONS = [
     "vandermonde_cancel", "vandermonde_empty", "subsetBits_ones", "subsetBits_injective",
     "subsetBits_fromBits", "fromBits_subsetBits", "twoBlockSubset_card",
     "twoBlockSubset_classification",
+    "bump_prefix_adjacent_collision", "alternant_bump_prefix_eq_zero",
+    "vandermonde_mul_elementary", "bump_prefix_twoBlockSubset",
+    "prefix_alternant_mul_elementary", "vandermonde_mul_two_elementary",
+    "vandermonde_mul_two_elementary_empty", "vandermonde_mul_two_elementary_zero",
+    "rename_antisymmetrize", "alternant_isAlternating", "alternating_coefficient_eq_zero_of_eq",
+    "alternating_eq_of_dominant_coeff", "dominant_permutation_eq_iff",
+    "alternant_dominant_coefficient", "vandermonde_mul_isAlternating",
+    "dominantReconstruction_isAlternating", "dominantReconstruction_coefficient",
+    "alternating_reconstruction",
+    "toggleColors_involutive", "swap_lt_outside", "proper_toggleColors_iff",
+    "middle_of_two_edges", "path_internal_edges", "toggleColors_ascents",
+    "unflipped_balanced", "colorMonomial_toggleColors", "chromatic_adjacent_swap",
+    "isSymmetric_of_adjacent", "chromatic_isSymmetric",
+    "colorMonomial_eq_powerMonomial", "weightedChromatic_power_coefficient", "coeff_rename_at",
+    "vandermonde_weighted_coefficient", "chromaticDesc_eq_rename_reverse",
+    "chromaticDesc_eq_chromatic", "shifted_color_shape", "vandermonde_chromatic_coefficient",
+    "mem_finiteLists", "mem_signedArrayUniverse", "signedArrayWeight_move",
+    "signedArray_moved_sum_zero", "signedArray_sum_eq_fixed", "signedArray_sum_eq_padded",
+    "signedArray_universe_cancellation", "heightTwo_natLt_noThreeChain",
+    "natural_signed_array_cancellation",
+    "ofFn_adjacent_swap",
+    "permutationLabels_adjacent_sign",
+    "permutationSign_permutationLabels",
+    "colorRows_contents",
+    "colorArray_chain",
+    "shapeAt_iff_get",
+    "colorArray_signed_iff",
+    "colorArray_sign",
+    "colorArray_inverse",
+    "colorArray_injective",
+    "signedColorUniverse_image",
+    "signedArray_sum_reindex",
+    "graphScore_natLt",
+    "colorArray_inversions",
+    "rows_padding_decomposition",
+    "padded_rows_iff_complete_family",
+    "tableauGraphInversions_padding",
+    "paddedIdentityArray_mem",
+    "paddedSignedArrays_eq_image",
+    "sum_toFinset_map",
+    "signedArray_sum_eq_complete_family",
+    "list_weight_coefficient",
+    "natLt_asymm",
+    "tableauCoefficient_eq_next_add_survivor",
+    "tableauCoefficient_after_last",
+    "survivorCoefficient_eq_sub",
+    "sum_differences_mul_prefix",
+    "vandermonde_mul_survivorExpansion",
+    "dominant_ge_delta",
+    "dominantPartition_partition",
+    "delta_add_dominantPartition",
+    "delta_add_partition_strictAnti",
+    "twoColumnPartition_partition",
+    "twoColumnShape_strictAnti",
+    "bounded_partition_three_blocks",
+    "partition_range_three_blocks",
+    "twoColumnPartition_range",
+    "fixed_signedArray_shape",
+    "range_map_eq_iff",
+    "twoColumn_exponent_eq_iff",
+    "chromatic_signedArray_coefficient",
+    "chromatic_twoColumn_coefficient",
+    "chromatic_other_partition_coefficient_zero",
+    "tableauAlternantExpansion_isAlternating",
+    "tableauAlternantExpansion_twoColumn_coefficient",
+    "vandermonde_mul_chromatic_eq_tableauAlternantExpansion",
+    "height_two_survivor_expansion_large_alphabet",
+    "liftColor_injective",
+    "proper_liftColor",
+    "specialize_colorMonomial_lift",
+    "specialize_colorMonomial_zero",
+    "specialize_chromatic",
+    "specialize_elementary",
+    "specialize_survivorExpansion",
+    "height_two_survivor_expansion",
+    "coefficientCast_injective", "naturalCast_injective", "naturalCast_colorMonomial",
+    "naturalCast_chromatic", "naturalCast_elementary", "coefficientCast_tableauWeight",
+    "coefficientCast_survivorCoefficient", "height_two_survivor_expansion_nat",
 ]
 REQUIRED = {"PartitionH3." + name for name in DECLARATIONS
             if name not in {"chromatic", "elementary", "tableauCoefficient",
@@ -80,7 +162,8 @@ def main() -> int:
     inputs = {name: ROOT / name for name in [*SOURCES, *CONFIGURATION, "verify.py"]}
     inputs.update({"../lean/" + name: ROOT.parent / "lean" / name for name in STD_SOURCES})
     report = {"schema_version": 1, "checked_at_utc": datetime.now(timezone.utc).isoformat(),
-              "status": "failed", "h3_status": "incomplete", "final_h3_declaration": None}
+              "status": "failed", "h3_status": "incomplete", "final_h3_declaration": None,
+              "natural_h3_declaration": None}
     try:
         lake = shutil.which("lake") or str(Path.home() / ".elan/bin/lake")
         elan = shutil.which("elan") or str(Path.home() / ".elan/bin/elan")
@@ -146,15 +229,22 @@ def main() -> int:
             raise RuntimeError("Source changed during verification.")
         if require_dependencies(elan) != revisions:
             raise RuntimeError("Dependency revisions changed during verification.")
-        report.update(status="passed", sha256=hashes, dependency_revisions=revisions,
+        report.update(status="passed", h3_status="lean_checked",
+                      final_h3_declaration="PartitionH3.height_two_survivor_expansion",
+                      natural_h3_declaration="PartitionH3.height_two_survivor_expansion_nat",
+                      sha256=hashes, dependency_revisions=revisions,
                       statement_inventory_source=inventory, axioms=axioms,
                       clean_build={"fresh_temporary_workspace": True,
                                    "project_build_products_reused": False,
                                    "pinned_dependency_products_reused": True},
                       scope="Actual finite coloring/subset/tableau polynomial definitions; color-class "
-                            "bounds and orientation; generic alternant multiplication, repeated-exponent "
-                            "vanishing, Vandermonde coefficient/nonzero/cancellation; actual two-block "
-                            "subset classification. No final coloring-to-survivor identity.")
+                            "bounds, actual adjacent-color symmetry and signed integer coefficient "
+                            "extraction; alternant multiplication, vanishing, Vandermonde cancellation, "
+                            "two-elementary specialization and actual-support reconstruction; complete "
+                            "finite signed-array cancellation; complete coloring/array and padding/family bijections; "
+                            "unconditional height-two survivor expansion for every finite alphabet, including zero; "
+                            "actual natural-coefficient sums and injective coefficient transport. "
+                            "Semantic review is recorded separately.")
     except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as error:
         report["failure"] = str(error)
     report["commands"] = commands
@@ -164,7 +254,7 @@ def main() -> int:
         args.output.write_text(rendered)
     else:
         print(rendered, end="")
-    print(f"Bridge certificate {report['status']}; H3 remains incomplete.", file=sys.stderr)
+    print(f"Bridge certificate {report['status']}; H3: {report['h3_status']}.", file=sys.stderr)
     return 0 if report["status"] == "passed" else 1
 
 

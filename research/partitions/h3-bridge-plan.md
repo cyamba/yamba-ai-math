@@ -2,8 +2,8 @@
 
 Execution contract accepted by the user on 2026-10-22. Baseline is
 `b989eb12376c0276d99aba349aedd9ba956d286b`, verified with `git rev-parse HEAD`.
-H1/H2 are checked; **H3 is incomplete**. This document is a proof
-specification, not a certificate or a novelty claim.
+At entry H1/H2 were checked and H3 was incomplete. This document preserves
+the original specification and historical progress. The [23 October continuation](h3-continuation-20261023.md) and [claim index](evidence/claim-to-theorem-index.md) record the later all-alphabet proof, checks and reviews; no novelty is claimed.
 
 ## Exact public target
 
@@ -153,3 +153,27 @@ polynomial lift/telescope and specialization to every alphabet. The two
 first acceptance gates are closed, but their checked compatible integration
 interfaces are not complete. The bounded run therefore retains these exact
 obligations rather than starting P009 on an assumed expansion.
+
+## Continuation, 2026-10-23
+
+The actual all-alphabet theorem now directly checks as
+`PartitionH3.height_two_survivor_expansion`, with only `HeightTwo` beyond the
+natural unit interval structure. The new module
+`NaturalCoefficients.lean` also directly checks
+`height_two_survivor_expansion_nat`: the actual natural-semiring sums are
+identified under proved injective coefficient maps and the equality is pulled
+back. Thus the transport requested in step 5 is an explicit theorem.
+
+The algebra and coloring continuation contracts preserve the exhausted
+historical bounds; their exact source packets and two reviews are separate.
+P009 joins actual colorings, complete signed arrays, signs, statistics, zero
+padding and the complete original tableau families; it lifts H2, reconstructs
+the actual coloring alternant, telescopes and specializes from max(n,r).
+The [first integration review](evidence/h3-integration-review-r1.md) supports
+the ten frozen integration sources and independently checks the final
+integer-coefficient theorem. The auxiliary natural transport has a separate
+final review. Fresh source checking of the complete 21-module bridge now passed with
+137 principal standard-only reports, alongside a fresh 54-report Std check.
+The final combined source snapshot is recorded by the entry point and
+reported with the follow-up PR, not inferred from the direct checks or reviews. The original general-height objective and external
+general certificate audit remain outside this result.

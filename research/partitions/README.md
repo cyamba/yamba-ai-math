@@ -1,6 +1,10 @@
 # Partition positivity: a proof attempt with checked boundaries
 
-**Status: the full problem is unresolved in this project.** We selected Problem
+**H3 is closed for height two:** Lean proves the actual coloring-to-survivor
+formula for every finite alphabet, including zero, over integer and natural
+polynomial coefficients. Fresh source builds and separate reviews support
+the exact declarations below. The general-height problem remains unresolved
+in this project. We selected Problem
 06 from the supplied notes because the earlier conversation contains explicit
 constructions to test. Ordinary Stanley–Stembridge positivity has an existing
 proof. A September 2026 preprint also claims coefficientwise q-positivity; its
@@ -47,24 +51,21 @@ positive partner. Wider determinant sectors are essential in general.
   singleton boundaries. Completeness, uniqueness, the shape-derived split,
   injection, and image/complement counts are checked. A clean reproduction
   and a separate semantic review support these statements.
-- The Schur expansion and complete determinant-to-elementary coefficient
-  bridge remain outside the Lean development. The general positivity theorem
-  is not proved here, and the all-size cardinality obstruction has a written
-  proof rather than a Lean proof.
-- [Signed arrays](lean/SignedArrays.lean) now give a universal bottommost-defect
-  involution with empty rows and integer shifted shapes, actual permutation
-  sign reversal, inversion preservation, and a padded-tableau fixed sector.
-  The fresh five-module Std build prints 54 standard-axiom reports; a
-  [separate semantic review](evidence/h3-signed-array-review.md) supports the
-  precise statements. Finite signed-sum cancellation, the canonical padding
-  bijection, and the full coloring/alternant polynomial bridge remain unchecked.
-- The separate [Mathlib bridge](mathlib/README.md), pinned to Lean 4.34.1 and
-  Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`, defines actual coloring,
-  elementary and tableau-weight polynomials. Its 28 principal reports cover
-  color-class bounds and orientation, generic alternant multiplication,
-  repeated-exponent vanishing, Vandermonde nonzero/cancellation, and actual
-  subset classification. [Separate review](evidence/h3-algebra-review-r2.md)
-  supports these interfaces. **H3 remains incomplete.**
+- The [twenty-one-module Mathlib bridge](mathlib/README.md), pinned to Lean 4.34.1
+  and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`, now includes the final
+  all-alphabet theorem `PartitionH3.height_two_survivor_expansion`. It uses the
+  actual coloring polynomial and the original complete survivor families.
+  Fresh checking passed with only standard axioms;
+  [independent integration review](evidence/h3-integration-review-r1.md) and
+  [natural-transport review](evidence/h3-integration-review-r2.md) support the
+  exact source-bound statements. The complete route includes symmetry, signed-array
+  cancellation, canonical padding, polynomial H2, alternant reconstruction
+  specialization to zero or any other alphabet, and the natural-coefficient
+  restatement `PartitionH3.height_two_survivor_expansion_nat`.
+- The separate five-module Lean 4.34.0 Std certificate remains unchanged,
+  with 54 principal reports. The new Mathlib bridge has 137 principal reports.
+  This formalizes the established Cho–Huh height-two result. A general-height
+  theorem and the intermediate Schur expansion are not claimed as Lean results.
 
 ## Reproduce the evidence
 
@@ -82,7 +83,7 @@ The last command runs repository tests, the repository checker and fresh
 builds of both certificates. It binds its ignored report to a snapshot of
 the repository sources. Missing installed toolchains/dependencies or any
 failed check prevent success; it never installs dependencies or declares
-H3 closed. See [the bridge guide](mathlib/README.md) for its prerequisites.
+a semantic-review verdict from build success. See [the bridge guide](mathlib/README.md) for its prerequisites.
 
 In `research/partitions/lean`, with the pinned Lean toolchain available:
 

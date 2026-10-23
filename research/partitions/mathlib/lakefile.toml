@@ -25,3 +25,7 @@ srcDir = "../lean"
 [[lean_lib]]
 name = "AlternantSubsets"
 srcDir = "../lean"
+
+[[lean_lib]]
+name = "SignedArrays"
+srcDir = "../lean"

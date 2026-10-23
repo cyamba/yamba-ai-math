@@ -37,6 +37,7 @@ def run_suite(root: Path, artifacts: Path, *, runner=subprocess.run,
     artifacts.mkdir(parents=True, exist_ok=True)
     report = {"schema_version": 1, "checked_at_utc": datetime.now(timezone.utc).isoformat(),
               "status": "failed", "h3_status": "incomplete", "final_h3_declaration": None,
+              "natural_h3_declaration": None,
               "checks": [], "certificates": {}}
     try:
         before = snapshotter(root)
@@ -75,6 +76,9 @@ def run_suite(root: Path, artifacts: Path, *, runner=subprocess.run,
                 "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
                 "source_sha256": certificate.get("sha256", {}),
                 "theorem_reports": len(certificate.get("axioms", {})),
+                "h3_status": certificate.get("h3_status", "incomplete"),
+                "final_h3_declaration": certificate.get("final_h3_declaration"),
+                "natural_h3_declaration": certificate.get("natural_h3_declaration"),
             }
         except (OSError, ValueError) as error:
             report["certificates"][name] = {"status": "failed", "failure": str(error)}
@@ -88,6 +92,13 @@ def run_suite(root: Path, artifacts: Path, *, runner=subprocess.run,
     if (stable and all(c["status"] == "passed" for c in report["checks"])
             and all(c["status"] == "passed" for c in report["certificates"].values())):
         report["status"] = "passed"
+        bridge = report["certificates"]["mathlib"]
+        if (bridge["h3_status"] == "lean_checked" and bridge["final_h3_declaration"] ==
+                "PartitionH3.height_two_survivor_expansion" and bridge["natural_h3_declaration"] ==
+                "PartitionH3.height_two_survivor_expansion_nat"):
+            report["h3_status"] = "lean_checked"
+            report["final_h3_declaration"] = bridge["final_h3_declaration"]
+            report["natural_h3_declaration"] = bridge["natural_h3_declaration"]
     return report
 
 
