@@ -57,7 +57,8 @@ or a solution for arbitrary height.
 The local repair and height-two injection are \textbf{proved} below.
 Height-two positivity is an \textbf{established result reproduced here}.
 Finite computations are \textbf{empirical, exact, and bounded}.
-The full research objective remains \textbf{unresolved in this project}.}}
+H3 is \textbf{proved and Lean-checked for height two}, for every finite
+alphabet, including zero. No arbitrary-height solution is claimed.}}
 \end{center}
 
 \section{The problem and its actual frontier}
@@ -412,11 +413,11 @@ not a cell of the filling. The row labels $p,q$ are exchanged along with
 the change of row lengths.}\label{fig:signedtoggle}
 \end{figure}
 
-This theorem does not yet sum over all signed sectors. A complete finite
-enumeration, a canonical padding/removal bijection with the existing tableau
-families, and an interface between inversion parity and alternant permutation
-signs remain to be checked. The coloring and polynomial identities are
-separate obligations.
+This local theorem supplies the cancellation move. The Mathlib bridge below
+proves the complete finite summation, the canonical padding/removal bijection
+with the existing tableau families, and compatibility between inversion
+parity and alternant permutation signs. These connect the actual coloring
+polynomial to the survivor expansion in Theorem~\ref{thm:formalh3}.
 
 \subsection{Complete families and degreewise cancellation}
 
