@@ -1,0 +1,19 @@
+[
+  {
+    "critic_round": 1,
+    "original_execution_sha256": "d54a069ae6ab040cd89d899f5d7285a5fb948681346bbc4f3ca1590dad2b5437",
+    "portable_reproduction_sha256": "5d35caea493b5c84c1bb5e428f025da89493d354d749c61834be77b4783ed409",
+    "only_changes": [
+      "derive canonical ROOT from file location"
+    ]
+  },
+  {
+    "critic_round": 2,
+    "original_execution_sha256": "b273f220607a1db239ff5715972e2d394c8878026f95fe7e10a4c857dd0d35dd",
+    "portable_reproduction_sha256": "4064217463f327eef899777b370a6744667a81c7ad8d99030629098a538dc3ff",
+    "only_changes": [
+      "derive canonical ROOT from file location",
+      "load sibling critic1 instead of ephemeral /private/tmp path"
+    ]
+  }
+]

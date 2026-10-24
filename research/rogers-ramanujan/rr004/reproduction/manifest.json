@@ -1,0 +1,17 @@
+{
+  "critic1_independent.py": {
+    "original": ".runs/rr004/critic1_independent.py",
+    "sha256": "36f6346157dbe03541baa49df4c7576684f212d2f75e8d8db0b57a57e9837543",
+    "status": "passed in original invocation"
+  },
+  "critic2_failed.py": {
+    "original": ".runs/rr004/critic2_independent.py",
+    "sha256": "166c0033807376834585ad9be6a0c04111fd2bbfab65a1fb17abba1b6c793f2c",
+    "status": "failed preserved"
+  },
+  "critic2_independent.py": {
+    "original": ".runs/rr004/critic2_independent_v2.py",
+    "sha256": "22852a6a758fd7c1d22fc24f2e131adddab795712c2704c31a4ea0e2b6f8612a",
+    "status": "passed in original invocation"
+  }
+}

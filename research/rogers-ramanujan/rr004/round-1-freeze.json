@@ -1,0 +1,13 @@
+{
+  "program": "RR004",
+  "round": 1,
+  "claim": "No weight-preserving U-C bijection with fixed transition-additive pair count, including signed charges; complete KR1 unresolved",
+  "assurance_at_freeze": "author written argument awaiting separate semantic review",
+  "source_sha256": {
+    "research/rogers-ramanujan/rr004/contract.md": "9b972e551e844929d9092f57a24691ad32cb84b07e7195d00d2ed833ec441386",
+    "research/rogers-ramanujan/rr004/round-1-proposal.md": "0878ecfea8e3785656845a0bfeef14b2bd7240937ba0b75f14d4c8e5d8dfd5be",
+    "research/rogers-ramanujan/checks/rr004_verify.py": "80cf0ec22940b23b02ac49cd6143961af177f5a57f664a52bb7affa079550909",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+  },
+  "discovery_exposure": "Exact listed weights through ten; earlier RR002/RR003 exposure through thirty; no held-out status"
+}

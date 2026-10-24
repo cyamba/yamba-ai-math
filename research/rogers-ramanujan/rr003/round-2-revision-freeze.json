@@ -1,0 +1,16 @@
+{
+  "program": "RR003",
+  "stage": "final author revision of round two",
+  "frozen_utc": "2026-10-24T10:35:34.487148+00:00",
+  "discovery_exposure": "All U,C,A,B through weight 30, symbolic witnesses above30; no held-out claim",
+  "separate_semantic_review": "not performed on this revision; two scheduled rounds exhausted",
+  "claim": "Explicit restricted a<=2 maps only; full KR1 unresolved",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_columns.py": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+    "research/rogers-ramanujan/checks/rr003_revision.py": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+    "research/rogers-ramanujan/checks/rr003_a2.py": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+    "research/rogers-ramanujan/rr003/round-2-revision.md": "0310ac52fe59173994a185af514e01c665de6ddf1871c2681e366a06b3d63b34",
+    "research/rogers-ramanujan/rr003/round-2-freeze.json": "0bce7b2b5addcea2cf0188f300f40a836dbf9b00b9ad650b009d3836871c094a"
+  }
+}

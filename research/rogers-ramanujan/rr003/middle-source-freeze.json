@@ -1,0 +1,15 @@
+{
+  "program": "RR003",
+  "stage": "final author middle-source interpretation",
+  "frozen_utc": "2026-10-24T12:40:45.607485+00:00",
+  "claim": "literal positive two-cut series model only, no branch map or complete bijection",
+  "discovery_exposure": "KR1 objects through30; Xia Lemma2.2 inspected; new two-cut family not yet enumerated by this script",
+  "verification_ceiling_pilot": 12,
+  "verification_ceiling_max": 30,
+  "frozen_sha256": {
+    "research/rogers-ramanujan/rr003/reproduction/middle_source.py": "3756435cd00e13de3de78fddd1b934d9fdc2e673bc7e6531ff7aa027204884f7",
+    "research/rogers-ramanujan/rr003/middle-source-model.md": "306b46a09ec842d72c10f57048b796fec6321648d91e532fc9552e59093ddaf3",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_second_product.py": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9"
+  }
+}

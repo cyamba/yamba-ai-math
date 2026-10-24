@@ -1,0 +1,11 @@
+{
+  "program": "RR003",
+  "stage": "mechanism B final author auxiliary source seed",
+  "frozen_utc": "2026-10-24T12:01:46.662579+00:00",
+  "claim": "restricted P3-to-P2 injection only; universal author argument; no separate review",
+  "discovery_exposure": "all RR003 A/B objects through30; symbolic auxiliary witnesses5,10; no prior auxiliary enumeration",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/rr003_recursive_seed.py": "10a550057e4d924fa9b3b58b12b13e9397724574d5b1a98e1c81b6bb41e29d56",
+    "research/rogers-ramanujan/rr003/recursive-source-seed.md": "0cfc1e8bd87161b296d6c239d8634145a128404d9672e491d826b46e9f77980c"
+  }
+}

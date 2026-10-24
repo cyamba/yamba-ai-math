@@ -1,0 +1,18 @@
+{
+  "program": "RR004",
+  "round": 2,
+  "claim": "No weight-preserving injection from the fourteen listed source objects into C with fixed real signed transition-additive b",
+  "assurance_at_freeze": "author written argument awaiting second separate semantic review",
+  "source_sha256": {
+    "research/rogers-ramanujan/rr004/contract.md": "9b972e551e844929d9092f57a24691ad32cb84b07e7195d00d2ed833ec441386",
+    "research/rogers-ramanujan/rr004/round-1-proposal.md": "0878ecfea8e3785656845a0bfeef14b2bd7240937ba0b75f14d4c8e5d8dfd5be",
+    "research/rogers-ramanujan/rr004/round-1-freeze.json": "7c7eae339589f7492af1576f57d7ee8f8a0fd94ae613dbc67c898ce76a39e8a0",
+    "research/rogers-ramanujan/rr004/round-1-review.md": "8f854bb9d85878b5420b415e91cad812c0e01f8791c2c0963f001860552e5142",
+    "research/rogers-ramanujan/rr004/round-1-revision.md": "ead009749f02087e1ce9551cf9ba70a25049c394088a12551804b52d9aa0e98b",
+    "research/rogers-ramanujan/rr004/round-2-proposal.md": "f336f4bed26bf121438acff9872769bd7cad21182b2cd0ce7975271a64be589b",
+    "research/rogers-ramanujan/checks/rr004_verify.py": "80cf0ec22940b23b02ac49cd6143961af177f5a57f664a52bb7affa079550909",
+    "research/rogers-ramanujan/checks/rr004_finite_certificate.py": "2865f16ba147594dbcfac84875c19ab94a8b26ac8e8c986247f00a9f20a66715",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+  },
+  "discovery_exposure": "All listed cases and first-round certificate through twelve; no held-out claim"
+}

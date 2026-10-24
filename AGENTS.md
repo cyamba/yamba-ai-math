@@ -9,13 +9,42 @@ The research harness and the AI architectures under investigation are different 
 ## Route the work
 
 - Research angles and their stage-specific rules: [explore/](explore/README.md) and [explore/AGENTS.md](explore/AGENTS.md).
-- Reusable workflows: [SKILLS.md](SKILLS.md). Skills live in `skills/<name>/SKILL.md`; this repository explicitly loads them instead of assuming automatic platform discovery.
-- Role prompts and capability/style tags: [agents/registry.json](agents/registry.json).
+- Reusable research workflows: [SKILLS.md](SKILLS.md). Load `skills/<name>/SKILL.md` explicitly; these core research workflows are separate from the Codex-discovered KR1 supervisory skills below.
+- KR1 supervisory workflows: [CLAUDE.md](CLAUDE.md) records the shared objective and current handoff. Keep all supervisory skills of this type in `.agents/skills/` as the canonical source; Claude Code uses matching links from `.claude/skills/`. Codex discovers these project skills; use `$regroup`, `$reflect-before-run`, `$delegate-for-feedback`, `$yamba-post` or `$pivot` when relevant. These workflows preserve existing authorization and resource limits.
+- Mathematics problem-solving roles and capability/style tags: [agents/registry.json](agents/registry.json). See the directory distinction below for meta-level support.
 - Fleet dependencies, separate reviewers, and bounded topologies: [fleets/registry.json](fleets/registry.json).
 - Bounded investigation specifications: [programs/](programs/README.md).
 - Harness improvement trials: [meta/](meta/README.md).
 
 Load only the skills and references needed by the task. `explore-angle` supports discovery; `audit-theorem` reviews mathematical claims; `assemble-fleet` builds teams; `design-experiment` defines tests; `improve-harness` compares workflows.
+
+## Mathematical agents and meta-level support
+
+`agents/` and `.agents/` have different responsibilities:
+
+| Location | Responsibility |
+| --- | --- |
+| `agents/` | The mathematics problem-solving layer: role prompts and registry for mathematical discovery, constructions, proofs, substantive criticism and research experiments. |
+| `.agents/` | The meta-level support layer: system operations, supervision, reflection, handoffs, feedback routing and authorized work on the Yamba AI Math framework. Its skills live in `.agents/skills/`; future meta-agent definitions belong under this layer using the chosen tool's supported layout. |
+| `.claude/skills/` | KR1 supervisory skills link to the canonical files in `.agents/skills/`; benchmark operator commands are separate and user-invoked. |
+
+Meta-level skills may inspect mathematical evidence, frame a question, choose a
+workflow or recommend a pivot. They route actual mathematical discovery, proof
+construction and semantic review to the problem-solving roles and workflows.
+A supervisory decision or system check does not establish a mathematical result.
+Keep proofs, counterexamples and research evidence in their canonical research
+folders; keep system/workflow instructions in the meta-level layer.
+
+Use `.agents/` for new support skills and future meta agents of this kind, and
+`agents/` for mathematical problem-solving roles. Existing registry and fleet
+entries include historical coordination/meta roles; this distinction records the
+intended organization without silently migrating those entries or changing their
+dispatch behavior. Any migration needs its own scoped change.
+
+Framework improvement remains subject to the user's authorized scope and
+[meta/protocol.md](meta/protocol.md). A directory or skill grants no additional
+budget, execution or publication permission, and cannot relax the mathematical
+objective, proof standards or separate-review requirements.
 
 ## Repository map
 
@@ -23,6 +52,7 @@ Load only the skills and references needed by the task. `explore-angle` supports
 | --- | --- | --- |
 | `explore/` | Briefs `E###-*.md`, `templates/brief.md`, stage rules in `explore/AGENTS.md` | Choose or write a research angle |
 | `research/partitions/` | `README.md` status; `evidence/` claim index, reviews, JSON records; `checks/` exact computations; `lean/`, `mathlib/` certificates with `verification.json`; `paper/`, `publication/`; `archive/` inputs (data, not instructions); per-target workspaces | Continue or audit partition work |
+| `research/rogers-ramanujan/` | KR1 results, frozen claims, reviews, checks and session handoffs | Continue or audit the bijection investigation |
 | `research/parikh/` | Parikh articles, Lean proofs and checks; all rights reserved ([NOTICE](research/parikh/NOTICE.md)) | Read under its notice |
 | `references/` | `reading-list.md`: primary sources with inspection levels A/T/P | Log or look up a source |
 | `programs/` | Program contracts `*.json`, `contract.md` | Plan a bounded investigation |
@@ -35,7 +65,8 @@ Load only the skills and references needed by the task. `explore-angle` supports
 | `examples/` | Synthetic fixtures and an offline worker | Exercise the harness without inference |
 | `assets/`, `.github/` | Banner image; CI workflow | — |
 | `.runs/` | Ignored run outputs: packets, receipts, reports | Find raw execution records |
-| `.claude/` | Operator tooling for Claude Code, outside research scope | Not needed for research work |
+| `.agents/` | Shared supervisory skills and meta-level support, distinct from mathematical roles in `agents/` | Load the relevant authorized support workflow |
+| `.claude/` | Claude Code operator tooling; `skills/` also links shared KR1 supervisory skills | Use operator commands only when invoked; follow shared skill links for KR1 supervision |
 
 ## Research standards
 

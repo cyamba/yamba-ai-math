@@ -1,0 +1,214 @@
+{
+  "schema": "kr1-manual-construction-execution-v1",
+  "status": "bounded_attempt_complete_bridge_unresolved",
+  "started_utc": "2026-10-23T21:56:48Z",
+  "hard_deadline_utc": "2026-10-23T23:26:48Z",
+  "branch": "codex/rogers-ramanujan-bijections",
+  "base_revision": "a7834f156ea31d3e7f6f2e8893eb8d2f76029889",
+  "execution_mode": "manual author-critic stages; not an automated harness research run",
+  "roles": {
+    "author": "/root (mathematician profile)",
+    "critic": "/root/rr_plan_critic (separate critic profile)",
+    "distinct_profiles": 2,
+    "nested_agents": 0
+  },
+  "accounting": {
+    "declared_dispatch_proxy_units": 16,
+    "proxy_convention": "two rounds of author 3, critic 2, author revision 3; neither money nor tokens",
+    "critic_dispatches": 2,
+    "automated_harness_worker_dispatches": 0,
+    "lead_tokens": null,
+    "critic_tokens": null,
+    "monetary_cost": null
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "proposal": "research/rogers-ramanujan/evidence/round-1-proposal.md",
+      "review": "research/rogers-ramanujan/evidence/round-1-review.md",
+      "revision": "research/rogers-ramanujan/evidence/round-1-revision.md",
+      "completed": true
+    },
+    {
+      "round": 2,
+      "proposal": "research/rogers-ramanujan/evidence/round-2-proposal.md",
+      "review": "research/rogers-ramanujan/evidence/round-2-review.md",
+      "revision": "research/rogers-ramanujan/evidence/round-2-revision.md",
+      "completed": true
+    }
+  ],
+  "mathematics": {
+    "bridge": "unresolved",
+    "novelty": "unverified",
+    "row_projection": "refuted; written universal factorization obstruction",
+    "column_interface": "attributed lossless representation; written argument and finite checks",
+    "local_normalization": "proved by elementary unformalized energy argument; separately reviewed",
+    "local_bijection_family": "all 16 frozen profiles refuted by exact collisions",
+    "endpoint_adapters": "not implemented",
+    "lean": {
+      "new_proof_builds": 0,
+      "bridge_declaration": null,
+      "final_signature": null,
+      "axiom_report": null
+    },
+    "article_phase": "not started; mathematical bridge gate failed"
+  },
+  "verification": {
+    "finite30": {
+      "argv": [
+        "python3",
+        "research/rogers-ramanujan/checks/verify.py",
+        "--ceiling",
+        "30",
+        "--output",
+        "research/rogers-ramanujan/evidence/verification-30.json"
+      ],
+      "exit_code": 0,
+      "status": "finite_checks_passed_bridge_unresolved",
+      "receipt": "research/rogers-ramanujan/evidence/verification-30.json",
+      "sha256": "3c455f0e524d44d049f5acf1b4540ec99203f36f77b5e41bb921d21ed07351f7"
+    },
+    "repository_tests": {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests": 68,
+      "reported_elapsed_seconds": 2.072,
+      "output_tail": "r_parameters) ... ok\n\n----------------------------------------------------------------------\nRan 68 tests in 2.072s\n\nOK\n"
+    },
+    "harness_validation": {
+      "argv": [
+        "python3",
+        "-m",
+        "harness",
+        "validate"
+      ],
+      "exit_code": 0,
+      "status": "valid"
+    },
+    "diff_check": {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    "repository_checker": {
+      "status": "passed",
+      "initial_attempt": {
+        "argv": [
+          "python3",
+          "scripts/check_repository.py"
+        ],
+        "exit_code": 1,
+        "reason": "checker ran before linked output files were created",
+        "output": "research/rogers-ramanujan/evidence/construction-result.md: broken local link verification-30.json\nresearch/rogers-ramanujan/evidence/construction-result.md: broken local link verification-30.json\nresearch/rogers-ramanujan/evidence/construction-result.md: broken local link execution-receipt.json\n"
+      },
+      "final_attempt": {
+        "argv": [
+          "python3",
+          "scripts/check_repository.py"
+        ],
+        "exit_code": 0,
+        "output": "Repository checks passed: registries, feasible programs, brief/skill metadata, and local file links.\nThese checks do not establish citation accuracy, novelty, mathematical validity, or model performance.\n"
+      }
+    },
+    "completion_gate": {
+      "argv": [
+        "python3",
+        "research/rogers-ramanujan/checks/verify.py",
+        "--ceiling",
+        "2",
+        "--require-bijection",
+        "--output",
+        ".runs/rr002/proof-gate.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "meaning": "correctly refuses full-bijection certification",
+      "receipt": ".runs/rr002/proof-gate.json"
+    },
+    "source_hash_consistency_check": "passed for all bound changed sources and finite receipt"
+  },
+  "source_sha256": {
+    "programs/README.md": "340b0612868e821dde42867e315168142a67be3f536769e3dfbdb3e99095d1a9",
+    "programs/rogers-ramanujan-construction.json": "fb6a2bfc3167906a6ad0e3de751468cb4409b3726933b66f83b09387ef046625",
+    "research/rogers-ramanujan/README.md": "4767fd8759638c7cdd4046af5c6df9052c6a8e862cff0fc023706f54e65c1e25",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/verify.py": "196042af27be6c4850b4b5af0b8bd18d692363632c69daa3b185520ab364394e",
+    "research/rogers-ramanujan/evidence/construction-contract.md": "8f5516bd2ebeda1c00689ef259a6c7c40a48038d798ce98ca7729554ef02bbec",
+    "research/rogers-ramanujan/evidence/construction-result.md": "c9bbd4dcda0ca3b747545f95f6854e77881add164e11e259296d29964a44e486",
+    "research/rogers-ramanujan/evidence/round-1-proposal.md": "1f64fa4b5238bd8e4b12791e7407a1dbb4656674a640ce1f9aed816813904bfc",
+    "research/rogers-ramanujan/evidence/round-1-review.md": "1b59d09e170665822737ccf05b2d70727d9ac5eca1c3d3364cce25b29e58d9e8",
+    "research/rogers-ramanujan/evidence/round-1-revision.md": "44f2f33ac5fbc946516d99b6d0c8f62b07ab4384e3d438e75a14fffabaa5d8a6",
+    "research/rogers-ramanujan/evidence/round-2-proposal.md": "4fcea0958047ea85c5ed12e2306a9ef62460436bba66b6e544585bf2935b9aef",
+    "research/rogers-ramanujan/evidence/round-2-review.md": "a55ee790c5157ee0ced5c9ef54ba733ec6bb983f59f6af5a9a564f2610235e30",
+    "research/rogers-ramanujan/evidence/round-2-revision.md": "7fbfc1f3c32dc3c0c83ca8985f60d5397042ccd093071025ffb99b800de6d2db",
+    "research/rogers-ramanujan/evidence/source-audit.md": "40616542c391bd93e2605b56c4be5f800319c9d84a473a1e8efac2bfb92b69ce",
+    "tests/test_rogers_ramanujan.py": "f9a06117b5067c2077544a14ea61fb93e61e367979ee8a8ea5aa98e0548be428"
+  },
+  "resources": {
+    "initial_time_limit_seconds": 5400,
+    "enumeration_limit_seconds_cumulative": 600,
+    "enumeration_rss_limit_bytes": 2147483648,
+    "incremental_storage_limit_bytes": 1073741824,
+    "provisioning_floor_free_bytes": 5368709120,
+    "free_bytes_observed": 19456000000,
+    "changed_files_and_retained_raw_artifacts_bytes_at_inventory": 144087,
+    "retained_raw_runs": {
+      ".runs/rr002/enumeration-30.json": {
+        "column_round_trips": 1393,
+        "elapsed_seconds": 1.0395870420034043,
+        "peak_rss_bytes": 27525120,
+        "started_utc": "2026-10-23T22:07:02.759579+00:00",
+        "status": "finite_checks_passed_bridge_unresolved"
+      },
+      ".runs/rr002/pilot.json": {
+        "column_round_trips": 59,
+        "elapsed_seconds": 0.019741541997063905,
+        "peak_rss_bytes": 23003136,
+        "started_utc": "2026-10-23T22:01:50.590679+00:00",
+        "status": "finite_checks_passed_bridge_unresolved"
+      }
+    },
+    "final_finite_run": {
+      "elapsed_seconds": 1.0769438749994151,
+      "peak_rss_bytes": 26148864
+    },
+    "other_recorded_runs": {
+      "early_full_before_family_seconds": 0.551105417,
+      "critic_round1_seconds_approx": 0.94,
+      "critic_round2_seconds_approx": 1.32
+    },
+    "exact_cumulative_enumeration_seconds": null,
+    "cumulative_accounting_limitation": "Not every short exploratory invocation and unit-test subprocess was separately metered. Retained and reviewer timings are reported, rather than inventing an exact cumulative total. The per-process alarm is not cumulative enforcement.",
+    "critic_peak_rss_bytes": null,
+    "memory_enforcement": "observed RSS at each weight, not an OS hard limit; parent/model/critic usage is not included",
+    "new_dependencies": 0,
+    "user_files_deleted": 0,
+    "paid_adapters": 0,
+    "lean_build_attempts": 0,
+    "research_directory_and_retained_raw_bytes_at_final_inventory": 181975,
+    "proof_gate_run": {
+      "elapsed_seconds": 0.029605750009068288,
+      "peak_rss_bytes": 23150592
+    }
+  },
+  "stop_reason": "Two reviewed construction rounds completed; no successful invertible bridge. No automatic third round or formalization/exposition increment.",
+  "publication": {
+    "committed": false,
+    "pushed": false,
+    "pull_request_created": false,
+    "article_published": false
+  },
+  "completed_utc": "2026-10-23T22:13:20Z",
+  "elapsed_wall_seconds": 992
+}

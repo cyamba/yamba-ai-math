@@ -1,0 +1,12 @@
+{
+  "program": "RR003",
+  "stage": "direct cluster endpoint final author formulation",
+  "frozen_utc": "2026-10-24T10:46:34.211440+00:00",
+  "discovery_exposure": "all A,C through 30; prior interpreter runs exposed",
+  "claim": "Proposed proved endpoint only, author argument, separate review outstanding",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_cluster_merge.py": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+    "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc"
+  }
+}

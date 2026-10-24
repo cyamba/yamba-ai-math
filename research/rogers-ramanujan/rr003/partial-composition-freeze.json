@@ -1,0 +1,20 @@
+{
+  "program": "RR003",
+  "stage": "final author restricted endpoint composition",
+  "frozen_utc": "2026-10-24T11:43:59.550276+00:00",
+  "discovery_exposure": "all actual domains through30, prior intermediate verification",
+  "claim": "restricted composition only; universal author arguments, separate review outstanding",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_partial.py": "6d47cdc695f5f5a04db827efd9ce3795823fe3fce535c7b299623b1ab8e73eb8",
+    "research/rogers-ramanujan/checks/rr003_a2.py": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+    "research/rogers-ramanujan/checks/rr003_columns.py": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+    "research/rogers-ramanujan/checks/rr003_revision.py": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+    "research/rogers-ramanujan/checks/rr003_stockhofe.py": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+    "research/rogers-ramanujan/checks/rr003_cluster_merge.py": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+    "research/rogers-ramanujan/rr003/partial-composition.md": "df5b8c3161df881c406b639a95e6e22e96bd0d6a7cdb8a7abe51cc2c61002e54",
+    "research/rogers-ramanujan/rr003/endpoint-stockhofe.md": "4e79d433f1faa8cfc86bb701aa7bd7a18b89739de8336ed5895ec18e87d471be",
+    "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc",
+    "research/rogers-ramanujan/rr003/round-2-revision.md": "0310ac52fe59173994a185af514e01c665de6ddf1871c2681e366a06b3d63b34"
+  }
+}

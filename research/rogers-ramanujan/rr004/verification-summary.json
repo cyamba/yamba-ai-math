@@ -1,0 +1,64 @@
+{
+  "program": "RR004",
+  "full_bijection": "unresolved",
+  "math_status": "finite_transition_additive_injection_obstruction_supported_by_second_separate_review",
+  "maximum_discovery_sweep_weight": 12,
+  "finite_theorem_maximum_weight": 10,
+  "finite_theorem_source_objects": 14,
+  "map_pilot": "not_applicable_no_candidate_maps",
+  "weight30_sweep": "not_run",
+  "novelty": "NOT VERIFIED",
+  "formal_certification": "not_run",
+  "tests": {
+    "passed": 95,
+    "receipt": ".runs/rr004/repository-unittests.json"
+  },
+  "initial_repository_check": {
+    "exit_code": 1,
+    "reason": "closing-record links checked before the two records were written",
+    "receipt": ".runs/rr004/repository-check.json"
+  },
+  "final_repository_check": {
+    "exit_code": 0,
+    "receipt": ".runs/rr004/repository-check-final.json"
+  },
+  "program_plan": {
+    "exit_code": 0,
+    "cost_units": 16,
+    "profiles": [
+      "mathematician",
+      "critic"
+    ],
+    "max_workers": 1,
+    "receipt": ".runs/rr004/program-plan.json"
+  },
+  "completion_gate": {
+    "exit_code": 2,
+    "expected": true,
+    "reason": "No U-C maps or complete KR1 proof",
+    "receipt": ".runs/rr004/completion-gate.json"
+  },
+  "failed_critic_diagnostic": {
+    "exit_code": 1,
+    "retained": true,
+    "reason": "Auxiliary formula transcription error; corrected independent run passed",
+    "receipt": ".runs/rr004/critic2-independent.json"
+  },
+  "critic1": {
+    "verdict": "supported for first exact obstruction",
+    "receipt": ".runs/rr004/critic1-independent.json",
+    "separate_profile": "rr004_critic",
+    "independent_script_sha256": "36f6346157dbe03541baa49df4c7576684f212d2f75e8d8db0b57a57e9837543"
+  },
+  "critic2": {
+    "verdict": "supported for finite fourteen-object injection obstruction",
+    "receipt": ".runs/rr004/critic2-independent-v2.json",
+    "same_separate_profile": "rr004_critic",
+    "capacity_admissible_assignments": 224,
+    "consistent_real_charge_solutions": 0,
+    "independent_script_sha256": "22852a6a758fd7c1d22fc24f2e131adddab795712c2704c31a4ea0e2b6f8612a"
+  },
+  "both_freeze_manifests_match": true,
+  "prior_preparation_preserved": true,
+  "source_exposure": "All small weights are discovery exposure, not held-out"
+}
