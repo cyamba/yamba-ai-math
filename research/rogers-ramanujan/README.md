@@ -1,5 +1,19 @@
 # Rogers–Ramanujan bijections: research setup
 
+## Current checkpoint — RR004
+
+**RR004 closed; complete KR1 unresolved.** The
+[reviewed finite obstruction](rr004/result.md) rules out fixed signed
+height-transition charges as the pair-count statistic, already for fourteen
+source objects of weight at most ten. It supplies no global bijection or
+novelty conclusion. Both critic rounds are spent. Start the next session from
+[the RR004 continuation](rr004/NEXT_SESSION.md); preserve the fresh resource
+ledger and all earlier assurance distinctions. Christopher subsequently
+authorized a [remote progress checkpoint](REMOTE_CHECKPOINT.md); the run
+records retain their original local-only scope and closure state.
+
+## Historical RR003 checkpoint
+
 **Status: RR003 completed as a bounded attempt; complete KR1 bijection unresolved.**
 The [RR003 result](rr003/result.md) distinguishes two separately reviewed
 restricted theorems from later author-only proofs, executable endpoints,

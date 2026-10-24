@@ -1,0 +1,42 @@
+{
+  "id": "RR004",
+  "title": "KR1 intrinsic U-C decomposition attempt",
+  "objective": "Complete explicit weight-preserving mutually inverse residue-to-gap algorithms with universal proofs; this attempt investigates one U-C decomposition and records exact failures without redefining completion.",
+  "fleet": "pair",
+  "briefs": [
+    "research/rogers-ramanujan/rr004/contract.md",
+    "research/rogers-ramanujan/rr004/pre-run.md",
+    "explore/AGENTS.md",
+    "skills/explore-angle/SKILL.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_workers": 1,
+    "max_cost_units": 16,
+    "max_rounds": 2,
+    "timeout_seconds": 900
+  },
+  "rounds": 2,
+  "deliverables": [
+    "Frozen mathematical candidate or exact obstruction",
+    "Two separately scoped critic reviews and revisions within ceilings",
+    "Exact finite checks and capped incomplete status",
+    "Resource ledger, assurance distinctions and next unresolved lemma"
+  ],
+  "success_criteria": [
+    "Full KR1 requires universal validity, weight, termination, both inverse proofs, full executable endpoints and separate semantic review",
+    "A restricted theorem or failure is progress only; novelty remains NOT VERIFIED",
+    "No enumeration/ranking/hidden lookup defines the map; all known cases remain exposure",
+    "Preserve closed RR003 and all current uncommitted preparation"
+  ],
+  "stop_conditions": [
+    "100 minutes new elapsed from 2026-10-24T15:26:58Z; preparation conservatively charged 20 minutes",
+    "Discovery <=40 minutes; two profiles, sequential, two critic rounds and <=16 dispatch proxies",
+    "Computation <=600 seconds; computational peak RSS <=2GiB; artifacts <=1GiB and free floor >=5GiB",
+    "Local only; no pushing, publication, external messaging, providers, dependencies or recursive-route pivot"
+  ],
+  "preferred_tags": [
+    "first-principles",
+    "constructive-skeptic"
+  ]
+}
