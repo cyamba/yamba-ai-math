@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "all_phase_files",
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      "research/phase2-20261025"
+    ],
+    "exit_code": 2,
+    "output_lines": 46
+  },
+  {
+    "scope": "new_authored_files",
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      "research/phase2-20261025",
+      ":(exclude)research/phase2-20261025/inputs"
+    ],
+    "exit_code": 0,
+    "output_lines": 0
+  }
+]

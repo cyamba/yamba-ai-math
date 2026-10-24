@@ -1,0 +1,46 @@
+research/phase2-20261025/inputs/external-scratch/explore_d_dim.py:14: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/explore_d_dim.py:28: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/inspect_after_a3_b0.py:13: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/inspect_after_a3_b0.py:18: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/test_collision_exact.py:9: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/test_collision_exact.py:20: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/test_complete_n26.py:15: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/test_complete_n26.py:51: trailing whitespace.
++            
+research/phase2-20261025/inputs/external-scratch/test_complete_n26.py:63: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/test_complete_n26.py:143: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/test_complete_n5_41.py:31: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/test_hook_and_full_n5.py:92: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/verify_a3_b0_universal.py:21: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/verify_a3_b0_universal.py:54: trailing whitespace.
++            
+research/phase2-20261025/inputs/external-scratch/verify_beta_bijection.py:26: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/verify_complete_roundtrip.py:28: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/verify_complete_roundtrip.py:34: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/verify_complete_roundtrip.py:66: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/verify_complete_roundtrip.py:116: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/verify_complete_roundtrip.py:120: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/verify_full_kr1_bijection.py:195: trailing whitespace.
++        
+research/phase2-20261025/inputs/external-scratch/verify_full_kr1_bijection.py:201: trailing whitespace.
++    
+research/phase2-20261025/inputs/external-scratch/verify_full_kr1_bijection.py:244: trailing whitespace.
++        

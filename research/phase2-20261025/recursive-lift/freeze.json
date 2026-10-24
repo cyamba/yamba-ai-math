@@ -1,0 +1,26 @@
+{
+  "frozen_utc": "2026-10-24T22:20:08.662626+00:00",
+  "files": {
+    "research/phase2-20261025/recursive-lift/author.md": "f2401476d01420296f7fc398c6ae6049bd54d88ea22a1d7467a2d74e2528fe2f",
+    "research/phase2-20261025/recursive-lift/candidate-rules.md": "aee114c04e2437eea208a7e81f638b195a33942973585e1c1beda34ba9dfd9c1",
+    "research/phase2-20261025/recursive-lift/cuts12.json": "aad7cc29f8845ef783db870e3b6963f764ac89d61c9d14ca714f4c0bf5d85853",
+    "research/phase2-20261025/recursive-lift/cuts30.json": "4fb3518c6b2af004433d407f362f858ddf7a329408e0a378c22ce3b27036d3ca",
+    "research/phase2-20261025/recursive-lift/cuts40.json": "f782948159f22ff67a903da1cc38e6759c31854b07a384ec063daf214b2ddec4",
+    "research/phase2-20261025/recursive-lift/grammar12.json": "ef9d0342b8f9231eeeabcfccebb57c5c615d2e43e9aaef9a1582ade1062e4598",
+    "research/phase2-20261025/recursive-lift/grammar30.json": "6329dc2ef775bd461b6a3bac77075b64b7c9748408a4333bc6118cb71bb29a2e",
+    "research/phase2-20261025/recursive-lift/grammar40.json": "5ed2ed2bb2573661e6539bd3db18e26b324cd08ab792625b1b2e738f965a5d5f",
+    "research/phase2-20261025/recursive-lift/notebook.md": "8424a4cecf0317531152b4c6ec01e4013c3414c60ff7bcaa26fb62b49578f92b",
+    "research/phase2-20261025/recursive-lift/prepilot-freeze.json": "e4e59c064d08aaca4868e052a291be8011a59a1fbc9fcf9bfcd36f96e13fb0c9",
+    "research/phase2-20261025/recursive-lift/triadic.py": "222662c28f9a261ef8f7c5b0450fa7f5da127a183a4865f5f866a9aaddc2bc4e",
+    "research/phase2-20261025/recursive-lift/u_candidates.py": "577f3713b324e4132fc5fcca5a7c7c0b18a1e11d75cff36c8c5098dd431f55da",
+    "research/phase2-20261025/recursive-lift/verify.py": "bc9eb7186d29742e8ebc06f6cec4c4545138ef70801b49030f2eab45613f9bba"
+  },
+  "prepilot_files_unchanged": true,
+  "status": "author handoff, distinct criticism pending",
+  "numerical_gate_order": [
+    12,
+    30,
+    40
+  ],
+  "no_full_U_C_claim": true
+}

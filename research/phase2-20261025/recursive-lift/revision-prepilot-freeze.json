@@ -1,0 +1,13 @@
+{
+  "frozen_utc": "2026-10-24T22:30:18.487605+00:00",
+  "files": {
+    "research/phase2-20261025/recursive-lift/revision.md": "bef75309c14b5538bf5fa9af97750a0c502f5636a5369686fb164b8ce36ff866",
+    "research/phase2-20261025/recursive-lift/revision-check.py": "a9bbde6a671cae9a3b1ae1d302c5e9a9b71c2947434d701de2f4ba0a369c00b4"
+  },
+  "original_handoff_files_unchanged": true,
+  "gates": [
+    12,
+    30,
+    40
+  ]
+}

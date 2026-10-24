@@ -1,0 +1,48 @@
+{
+  "bound": 12,
+  "independent_censuses": {
+    "C": 59,
+    "U": 59,
+    "A": 59,
+    "B": 59
+  },
+  "H1": 59,
+  "H2": 59,
+  "H2_rejected": 0,
+  "cohorts": {
+    "full_A": {
+      "distinct": 56,
+      "repeated": 3
+    },
+    "full_B": {
+      "repeated": 44,
+      "distinct": 15
+    },
+    "H1_A": {
+      "repeated": 3,
+      "distinct": 56
+    },
+    "H1_B": {
+      "repeated": 44,
+      "distinct": 15
+    },
+    "H2_A": {
+      "repeated": 3,
+      "distinct": 56
+    },
+    "H2_B": {
+      "repeated": 44,
+      "distinct": 15
+    }
+  },
+  "independent_reverse_reduction_language": {
+    "3": 7
+  },
+  "independent_grammar_trees": 59,
+  "max_depth": 3,
+  "max_H1_forward_steps": 0,
+  "first_missing_C": null,
+  "first_rejected_U": null,
+  "above40_tail_objects_constructed": 0,
+  "status": "finite reconstruction pass; universal tail assessed symbolically"
+}

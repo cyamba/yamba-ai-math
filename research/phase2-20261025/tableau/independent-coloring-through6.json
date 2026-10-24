@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "status": "finite_exact_comparison_passed",
+  "claim_scope": "All natural unit interval Hessenberg vectors with 0 <= n <= max_n",
+  "maximum_n": 6,
+  "methods": {
+    "direct": "Proper colorings with prescribed named-color multiplicities; elementary subset expansion; exact rational matrix inversion",
+    "tableaux": "P-tableau enumeration; graph inversion weights; dual Jacobi--Trudi determinant"
+  },
+  "q_convention": "asc counts graph edges i < j with color(i) < color(j)",
+  "coefficient_arithmetic": "Exact Python integers and fractions; standard library only",
+  "sizes": [
+    {
+      "n": 0,
+      "hessenberg_vectors": 1,
+      "independent_expansion_agreements": 1,
+      "nonnegative_expansions": 1,
+      "height_at_most_two_vectors": 1,
+      "height_at_most_two_nonnegative_expansions": 1
+    },
+    {
+      "n": 1,
+      "hessenberg_vectors": 1,
+      "independent_expansion_agreements": 1,
+      "nonnegative_expansions": 1,
+      "height_at_most_two_vectors": 1,
+      "height_at_most_two_nonnegative_expansions": 1
+    },
+    {
+      "n": 2,
+      "hessenberg_vectors": 2,
+      "independent_expansion_agreements": 2,
+      "nonnegative_expansions": 2,
+      "height_at_most_two_vectors": 2,
+      "height_at_most_two_nonnegative_expansions": 2
+    },
+    {
+      "n": 3,
+      "hessenberg_vectors": 5,
+      "independent_expansion_agreements": 5,
+      "nonnegative_expansions": 5,
+      "height_at_most_two_vectors": 4,
+      "height_at_most_two_nonnegative_expansions": 4
+    },
+    {
+      "n": 4,
+      "hessenberg_vectors": 14,
+      "independent_expansion_agreements": 14,
+      "nonnegative_expansions": 14,
+      "height_at_most_two_vectors": 8,
+      "height_at_most_two_nonnegative_expansions": 8
+    },
+    {
+      "n": 5,
+      "hessenberg_vectors": 42,
+      "independent_expansion_agreements": 42,
+      "nonnegative_expansions": 42,
+      "height_at_most_two_vectors": 16,
+      "height_at_most_two_nonnegative_expansions": 16
+    },
+    {
+      "n": 6,
+      "hessenberg_vectors": 132,
+      "independent_expansion_agreements": 132,
+      "nonnegative_expansions": 132,
+      "height_at_most_two_vectors": 32,
+      "height_at_most_two_nonnegative_expansions": 32
+    }
+  ],
+  "total_hessenberg_vectors": 197,
+  "bubble_maximum_n": 0,
+  "bubble_scope": "All height-at-most-two Hessenberg vectors and source shapes (2^(k+1),1^(n-2k-2)), 0 <= k < floor(n/2)",
+  "bubble_sizes": [],
+  "bubble_total_sources": 0,
+  "failures": [],
+  "general_conjecture_status": "Not settled by this finite computation"
+}

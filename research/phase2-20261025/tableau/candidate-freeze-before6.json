@@ -1,0 +1,19 @@
+{
+  "frozen_utc": "2026-10-24T22:17:25.821706+00:00",
+  "gate": "n<=5 complete; no n=6 execution yet",
+  "candidate_versions": {
+    "family1": "one-label relocation plus row permutation",
+    "family2-v1": "whole-row recut augmentation, refuted at n=5",
+    "family2-v2": "at most3 relocated labels preserving retained row blocks",
+    "family3": "unrestricted inversion-fiber matching diagnostic, never structural"
+  },
+  "source_assurance": "v1 reconstructed by exact reverse edit after its run; no v1 pre-run pin claimed",
+  "sha256": {
+    "inventory.py": "ce6c13dd8b0eb7d1e294c30c3c042d64f9e1ab6bf91d9c3d3ab2bc747eb030b5",
+    "cancellation.py": "a776a359f82235716c97a1cb63b360a09013e0d6bfc747c91ce2d5966eebf048",
+    "cancellation-v1.py": "d41c1fbaa6816a865afe3ff40a0837c4195ee132a288e94d14c97ab7bfddd5c2",
+    "inventory-through5.json": "50349df689e724d66d8b290f29aa9e534068f9c08f008046153057fd68cd7217",
+    "candidates-through5.json": "7787886244c8cea6ba13d4458ba39a53210ad0801a80b138fe3873343b16e85d",
+    "candidates-through5-v2.json": "b4bc91e99fb55f92c004c68bd832ef6ff8a6afef163fc6f50fa356d741b3ca34"
+  }
+}

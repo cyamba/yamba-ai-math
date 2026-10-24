@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-10-24T22:16:50.556674+00:00",
+  "files": {
+    "research/phase2-20261025/recursive-lift/candidate-rules.md": "aee114c04e2437eea208a7e81f638b195a33942973585e1c1beda34ba9dfd9c1",
+    "research/phase2-20261025/recursive-lift/triadic.py": "222662c28f9a261ef8f7c5b0450fa7f5da127a183a4865f5f866a9aaddc2bc4e",
+    "research/phase2-20261025/recursive-lift/u_candidates.py": "577f3713b324e4132fc5fcca5a7c7c0b18a1e11d75cff36c8c5098dd431f55da",
+    "research/phase2-20261025/recursive-lift/verify.py": "bc9eb7186d29742e8ebc06f6cec4c4545138ef70801b49030f2eab45613f9bba"
+  },
+  "gates": [
+    12,
+    30,
+    40
+  ],
+  "candidate_families": 3
+}

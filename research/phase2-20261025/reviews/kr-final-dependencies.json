@@ -1,0 +1,662 @@
+{
+  "checked_utc": "2026-10-24T22:44:38.178764+00:00",
+  "all_pins_match": true,
+  "snapshots": [
+    {
+      "freeze": "research/phase2-20261025/kr-sectors/revision-freeze.json",
+      "sha256": "5ea85a8a232d72e004bcd80a80171bf4d418bfd1d29004d9f1d82e942ce82a99",
+      "before_review_matched": true,
+      "after_review_matched": true,
+      "pin_groups": {
+        "files": {
+          "research/phase2-20261025/kr-sectors/freeze.json": {
+            "expected": "2726b54ebc29f57b0286c09cb3a660bf008c84ced94f9051256ebceee7342653",
+            "actual": "2726b54ebc29f57b0286c09cb3a660bf008c84ced94f9051256ebceee7342653"
+          },
+          "research/phase2-20261025/kr-sectors/revision-bridge.py": {
+            "expected": "29d64553916b4a4da140b4d7de5278ff6b05b9c289a17d64e6a783b4b7708750",
+            "actual": "29d64553916b4a4da140b4d7de5278ff6b05b9c289a17d64e6a783b4b7708750"
+          },
+          "research/phase2-20261025/kr-sectors/revision-check.py": {
+            "expected": "970913cbb7f67aa2025f14e571e1cfac915b690987be12f8884a5159e03bdc18",
+            "actual": "970913cbb7f67aa2025f14e571e1cfac915b690987be12f8884a5159e03bdc18"
+          },
+          "research/phase2-20261025/kr-sectors/revision-pretest-freeze.json": {
+            "expected": "0067f7959987de5a0a975713f70f3c3c5147a2130cecdf24a91867987360faac",
+            "actual": "0067f7959987de5a0a975713f70f3c3c5147a2130cecdf24a91867987360faac"
+          },
+          "research/phase2-20261025/kr-sectors/revision-resource-use.json": {
+            "expected": "c725504ba2e61ec07d8ac2e51c801373c2a1de61b18759f0599c520baa6c92ca",
+            "actual": "c725504ba2e61ec07d8ac2e51c801373c2a1de61b18759f0599c520baa6c92ca"
+          },
+          "research/phase2-20261025/kr-sectors/revision-result-12.json": {
+            "expected": "30a095057c23a5a99fcb9189d925bc297ac87175de67a87020ed6e26d114d9d4",
+            "actual": "30a095057c23a5a99fcb9189d925bc297ac87175de67a87020ed6e26d114d9d4"
+          },
+          "research/phase2-20261025/kr-sectors/revision-result-30.json": {
+            "expected": "0fbf8c1ba0ffa30fda4e1ce3c82d3b3c4eef83d67798faeb6d17fac221cff26a",
+            "actual": "0fbf8c1ba0ffa30fda4e1ce3c82d3b3c4eef83d67798faeb6d17fac221cff26a"
+          },
+          "research/phase2-20261025/kr-sectors/revision-result-40.json": {
+            "expected": "8a5c167e0be3aa954d87bf4a9d39417aa680d88d70ba23adc5074f634da3556d",
+            "actual": "8a5c167e0be3aa954d87bf4a9d39417aa680d88d70ba23adc5074f634da3556d"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v2-bridge.py": {
+            "expected": "9327d31f2dcffa12e3be20112ebdb724f8cdf7699c98a900a19b3398d530c43e",
+            "actual": "9327d31f2dcffa12e3be20112ebdb724f8cdf7699c98a900a19b3398d530c43e"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v2-check.py": {
+            "expected": "e11dd681dd1021d35370c6cd2c42cb19e52fc4b4e186999b1f34036130e70e03",
+            "actual": "e11dd681dd1021d35370c6cd2c42cb19e52fc4b4e186999b1f34036130e70e03"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v2-pretest-freeze.json": {
+            "expected": "e5640b271adb2e66ea18968073ca2533c1ddf1c14a9d3de7a4d2ec5feb6e4774",
+            "actual": "e5640b271adb2e66ea18968073ca2533c1ddf1c14a9d3de7a4d2ec5feb6e4774"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v2-result-12.json": {
+            "expected": "5525e88010e37a83376545b35285fb2ce85312cbabacef89f4f218cfe3e55937",
+            "actual": "5525e88010e37a83376545b35285fb2ce85312cbabacef89f4f218cfe3e55937"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v2-result-30.json": {
+            "expected": "24c4b976c8adb7165f9d5eabd8a6600712846566d3b892c3b39edbc6bb715b74",
+            "actual": "24c4b976c8adb7165f9d5eabd8a6600712846566d3b892c3b39edbc6bb715b74"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v2-result-40.json": {
+            "expected": "8f99754b0b29768e210914de92d98824cb2135485347bc2f016f4b3a6f276797",
+            "actual": "8f99754b0b29768e210914de92d98824cb2135485347bc2f016f4b3a6f276797"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v3-bridge.py": {
+            "expected": "c08dcffe88f0f8424c226a51d50a23ed56cdac2b8d2c368abcf3ce6662d09f9b",
+            "actual": "c08dcffe88f0f8424c226a51d50a23ed56cdac2b8d2c368abcf3ce6662d09f9b"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v3-check.py": {
+            "expected": "e8f6686744ed3ebc9174bfd54e37ce7ed9699ca2e3ee585c663c4ad265a24a49",
+            "actual": "e8f6686744ed3ebc9174bfd54e37ce7ed9699ca2e3ee585c663c4ad265a24a49"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v3-pretest-freeze.json": {
+            "expected": "8455a34927729c8a8443366eb8e6eb9c5f59c1148a5dd206ffb9408e70863b24",
+            "actual": "8455a34927729c8a8443366eb8e6eb9c5f59c1148a5dd206ffb9408e70863b24"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v3-result-12.json": {
+            "expected": "69a01a6580cf5548b801c4c3594cb68d93586317a1e93c3fede34c7d1ece5a4e",
+            "actual": "69a01a6580cf5548b801c4c3594cb68d93586317a1e93c3fede34c7d1ece5a4e"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v3-result-30.json": {
+            "expected": "a065feaecd8cb13e50f42a9188e198162da43973809196228dea703212c36262",
+            "actual": "a065feaecd8cb13e50f42a9188e198162da43973809196228dea703212c36262"
+          },
+          "research/phase2-20261025/kr-sectors/revision-v3-result-40.json": {
+            "expected": "7ba5584bd5653f9ff3e8f11ea2b86bf10d417f3d66d77f7e83ada85177fae2a6",
+            "actual": "7ba5584bd5653f9ff3e8f11ea2b86bf10d417f3d66d77f7e83ada85177fae2a6"
+          },
+          "research/phase2-20261025/kr-sectors/revision.md": {
+            "expected": "e2584df26ddfc691afc1183648e5b99e0f60798f4cefa8c44c7d2017ed6180ed",
+            "actual": "e2584df26ddfc691afc1183648e5b99e0f60798f4cefa8c44c7d2017ed6180ed"
+          },
+          "research/phase2-20261025/kr-sectors/author.md": {
+            "expected": "9bea7b7be8f8a93bcd72b395f68cda034e43fc13b5dac7c3c4e05942627b607e",
+            "actual": "9bea7b7be8f8a93bcd72b395f68cda034e43fc13b5dac7c3c4e05942627b607e"
+          },
+          "research/phase2-20261025/kr-sectors/bridge.py": {
+            "expected": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac",
+            "actual": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac"
+          },
+          "research/phase2-20261025/kr-sectors/check_extension.py": {
+            "expected": "d0fe13db35ec8eadaa7b6eb484a989c052e8faaca44c434fbbac3b462d4c8d6a",
+            "actual": "d0fe13db35ec8eadaa7b6eb484a989c052e8faaca44c434fbbac3b462d4c8d6a"
+          },
+          "research/phase2-20261025/kr-sectors/check_sectors.py": {
+            "expected": "bf09944cbfb293594254291f3014d61f1c892369da25a54e1b8d005b6616d2c9",
+            "actual": "bf09944cbfb293594254291f3014d61f1c892369da25a54e1b8d005b6616d2c9"
+          },
+          "research/phase2-20261025/kr-sectors/extension-freeze.json": {
+            "expected": "3fb5acb91f0c3578ebb9a19d593244339f2cb23993f433508432d5a50f1c0acd",
+            "actual": "3fb5acb91f0c3578ebb9a19d593244339f2cb23993f433508432d5a50f1c0acd"
+          },
+          "research/phase2-20261025/kr-sectors/extension-result-12.json": {
+            "expected": "4bb00939d44f3a9a80f4acfa8ef9ec4d12986776fda9ab173b738e41cfea02ad",
+            "actual": "4bb00939d44f3a9a80f4acfa8ef9ec4d12986776fda9ab173b738e41cfea02ad"
+          },
+          "research/phase2-20261025/kr-sectors/extension-result-30.json": {
+            "expected": "6e63f4c7cdd208083279df06100988fa6638b22ffe18cb592aa8f06f4c8b6f82",
+            "actual": "6e63f4c7cdd208083279df06100988fa6638b22ffe18cb592aa8f06f4c8b6f82"
+          },
+          "research/phase2-20261025/kr-sectors/extension-result-40.json": {
+            "expected": "af6148bdfec781e6669ce6965c162af9d6c52b69126bcc5b3c7c22cc560df4b5",
+            "actual": "af6148bdfec781e6669ce6965c162af9d6c52b69126bcc5b3c7c22cc560df4b5"
+          },
+          "research/phase2-20261025/kr-sectors/extension.py": {
+            "expected": "72e7af3437ee5dd445819b3af519d3f2e21fddc6f2d558e312fd42e6c41ef280",
+            "actual": "72e7af3437ee5dd445819b3af519d3f2e21fddc6f2d558e312fd42e6c41ef280"
+          },
+          "research/phase2-20261025/kr-sectors/initial-freeze.json": {
+            "expected": "96a5b21253799b3b28a96ebfa3987e43598990996bcd26d37d7c70935097c243",
+            "actual": "96a5b21253799b3b28a96ebfa3987e43598990996bcd26d37d7c70935097c243"
+          },
+          "research/phase2-20261025/kr-sectors/notebook-progress.md": {
+            "expected": "0f1cc9ac236ca2437bcff10c4f2cebc221aa5b31bf9f8248ea094729253992c7",
+            "actual": "0f1cc9ac236ca2437bcff10c4f2cebc221aa5b31bf9f8248ea094729253992c7"
+          },
+          "research/phase2-20261025/kr-sectors/notebook.md": {
+            "expected": "b0d7d270bd557845e35bc938965bdb0820c679cff04e5f6ab35254f97576d152",
+            "actual": "b0d7d270bd557845e35bc938965bdb0820c679cff04e5f6ab35254f97576d152"
+          },
+          "research/phase2-20261025/kr-sectors/reductions.py": {
+            "expected": "81544339f17c09fd5836d8b3d33c81daffb8f5d5dc2ec690255d579753ead273",
+            "actual": "81544339f17c09fd5836d8b3d33c81daffb8f5d5dc2ec690255d579753ead273"
+          },
+          "research/phase2-20261025/kr-sectors/resource-use.json": {
+            "expected": "e6a2cfbfadad405d3d9fea9bd7b5a3b52feff94d37d8a4560c1add1454c5e14f",
+            "actual": "e6a2cfbfadad405d3d9fea9bd7b5a3b52feff94d37d8a4560c1add1454c5e14f"
+          },
+          "research/phase2-20261025/kr-sectors/result-12.json": {
+            "expected": "2a47b5aa09d6f6a9a2d79f5f59c500e3f8661458a9b4e98d5ade4c30869bc22c",
+            "actual": "2a47b5aa09d6f6a9a2d79f5f59c500e3f8661458a9b4e98d5ade4c30869bc22c"
+          },
+          "research/phase2-20261025/kr-sectors/result-30.json": {
+            "expected": "9f53055c923eab383e7cfecd763f549ee008d913c53edb6a741c99e15b5ab4f9",
+            "actual": "9f53055c923eab383e7cfecd763f549ee008d913c53edb6a741c99e15b5ab4f9"
+          },
+          "research/phase2-20261025/kr-sectors/result-40.json": {
+            "expected": "ae5e450c84a69c10555fc4379207a8309c726de56c8c37b18c11755e5eceaaab",
+            "actual": "ae5e450c84a69c10555fc4379207a8309c726de56c8c37b18c11755e5eceaaab"
+          },
+          "research/rogers-ramanujan/checks/kr1.py": {
+            "expected": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+            "actual": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+          },
+          "research/rogers-ramanujan/checks/rr003_a2.py": {
+            "expected": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+            "actual": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909"
+          },
+          "research/rogers-ramanujan/checks/rr003_revision.py": {
+            "expected": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+            "actual": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9"
+          },
+          "research/rogers-ramanujan/checks/rr003_columns.py": {
+            "expected": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+            "actual": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9"
+          },
+          "research/rogers-ramanujan/checks/rr003_cluster_merge.py": {
+            "expected": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+            "actual": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19"
+          },
+          "research/rogers-ramanujan/checks/rr003_stockhofe.py": {
+            "expected": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+            "actual": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2"
+          },
+          "research/rogers-ramanujan/rr007/fleet-a/checks/critic-a-literal.py": {
+            "expected": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984",
+            "actual": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984"
+          },
+          "research/rogers-ramanujan/rr007/fleet-a/revision.md": {
+            "expected": "c2fc80eacbeaf86fce4245459ceaf9faca8a4d37a813a11a6d7151fab9f6281a",
+            "actual": "c2fc80eacbeaf86fce4245459ceaf9faca8a4d37a813a11a6d7151fab9f6281a"
+          },
+          "research/rogers-ramanujan/rr007/fleet-a/review-2.md": {
+            "expected": "026d0cc960e0e93d1ad0dd1fefc58bfb487e5119f7543660017d51f455a49f72",
+            "actual": "026d0cc960e0e93d1ad0dd1fefc58bfb487e5119f7543660017d51f455a49f72"
+          },
+          "research/phase2-20261025/inputs/external-scratch/verify_a3_b0_universal.py": {
+            "expected": "ad45aa3e978f992cad975a79da3de5969403b640b9b18bd79f0af1154a1b04f1",
+            "actual": "ad45aa3e978f992cad975a79da3de5969403b640b9b18bd79f0af1154a1b04f1"
+          },
+          "research/phase2-20261025/inputs/external-scratch/test_complete_n26.py": {
+            "expected": "a5245322c44b7a3f779a17d91c27414ea9b2e47156df87955cb53f88f61c9e26",
+            "actual": "a5245322c44b7a3f779a17d91c27414ea9b2e47156df87955cb53f88f61c9e26"
+          }
+        }
+      }
+    },
+    {
+      "freeze": "research/phase2-20261025/recursive-lift/revision-freeze.json",
+      "sha256": "edd18b65d4ec5c05ebe5288ac07d4616b5af1cc79989fa3e5a9f627c8677cf07",
+      "before_review_matched": true,
+      "after_review_matched": true,
+      "pin_groups": {
+        "files": {
+          "research/phase2-20261025/recursive-lift/revision-check.py": {
+            "expected": "a9bbde6a671cae9a3b1ae1d302c5e9a9b71c2947434d701de2f4ba0a369c00b4",
+            "actual": "a9bbde6a671cae9a3b1ae1d302c5e9a9b71c2947434d701de2f4ba0a369c00b4"
+          },
+          "research/phase2-20261025/recursive-lift/revision-prepilot-freeze.json": {
+            "expected": "4e9061cf850f7fcdae9b0fe8cef8e13b7745ee8a713349725edbe3187aec566b",
+            "actual": "4e9061cf850f7fcdae9b0fe8cef8e13b7745ee8a713349725edbe3187aec566b"
+          },
+          "research/phase2-20261025/recursive-lift/revision-resources.json": {
+            "expected": "f8af85daa6a520af9574439c43e54694566ee95094ca15599c6a18072fd6fad5",
+            "actual": "f8af85daa6a520af9574439c43e54694566ee95094ca15599c6a18072fd6fad5"
+          },
+          "research/phase2-20261025/recursive-lift/revision.md": {
+            "expected": "bef75309c14b5538bf5fa9af97750a0c502f5636a5369686fb164b8ce36ff866",
+            "actual": "bef75309c14b5538bf5fa9af97750a0c502f5636a5369686fb164b8ce36ff866"
+          },
+          "research/phase2-20261025/recursive-lift/revision12.json": {
+            "expected": "1b86977fade994a120484ada999b5abb8bcb8bf8a1e78100fd3f45acb8a71147",
+            "actual": "1b86977fade994a120484ada999b5abb8bcb8bf8a1e78100fd3f45acb8a71147"
+          },
+          "research/phase2-20261025/recursive-lift/revision30.json": {
+            "expected": "8d7c42af3e359715af725865776a32de9dfbfc56abc430e8ca5b35f6b65d4180",
+            "actual": "8d7c42af3e359715af725865776a32de9dfbfc56abc430e8ca5b35f6b65d4180"
+          },
+          "research/phase2-20261025/recursive-lift/revision40.json": {
+            "expected": "262306df799b1663f1f01fd8b0e3b0127bac7a1fde6909a50f549db084602130",
+            "actual": "262306df799b1663f1f01fd8b0e3b0127bac7a1fde6909a50f549db084602130"
+          }
+        },
+        "upstream_dependency_sha256": {
+          "research/phase2-20261025/kr-sectors/bridge.py": {
+            "expected": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac",
+            "actual": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac"
+          },
+          "research/rogers-ramanujan/checks/kr1.py": {
+            "expected": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+            "actual": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+          },
+          "research/rogers-ramanujan/checks/rr003_a2.py": {
+            "expected": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+            "actual": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909"
+          },
+          "research/rogers-ramanujan/checks/rr003_a2_verify.py": {
+            "expected": "b7cf523108757f270b320d284258ebd6a1ca34c84844a5435f521688b2ee416b",
+            "actual": "b7cf523108757f270b320d284258ebd6a1ca34c84844a5435f521688b2ee416b"
+          },
+          "research/rogers-ramanujan/checks/rr003_charge_extension.py": {
+            "expected": "d0ef57f94b87c4f4a0e1b6e18ad957d14e5150f106f0623425ec9e39af1bbf66",
+            "actual": "d0ef57f94b87c4f4a0e1b6e18ad957d14e5150f106f0623425ec9e39af1bbf66"
+          },
+          "research/rogers-ramanujan/checks/rr003_charge_extension_verify.py": {
+            "expected": "4e6eb904178e09d3c9cdb85b5440972eaf804a298a457c60b0b82b4ca57750b2",
+            "actual": "4e6eb904178e09d3c9cdb85b5440972eaf804a298a457c60b0b82b4ca57750b2"
+          },
+          "research/rogers-ramanujan/checks/rr003_charge_verify.py": {
+            "expected": "0acbe908b9d2beaf8b9fe70510bd3b1beaf501924e6bede09b9324f5e3b5600c",
+            "actual": "0acbe908b9d2beaf8b9fe70510bd3b1beaf501924e6bede09b9324f5e3b5600c"
+          },
+          "research/rogers-ramanujan/checks/rr003_cluster_merge.py": {
+            "expected": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+            "actual": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19"
+          },
+          "research/rogers-ramanujan/checks/rr003_cluster_verify.py": {
+            "expected": "9ad76f3d57c2f0cefd13c16f1e5b9ce1a7821a94af55d47c86551044d1e14a18",
+            "actual": "9ad76f3d57c2f0cefd13c16f1e5b9ce1a7821a94af55d47c86551044d1e14a18"
+          },
+          "research/rogers-ramanujan/checks/rr003_clusters.py": {
+            "expected": "de61ecfe7bb3280b8304f4954ea3f9a24460d4c975f1c869f853cef4dda0420e",
+            "actual": "de61ecfe7bb3280b8304f4954ea3f9a24460d4c975f1c869f853cef4dda0420e"
+          },
+          "research/rogers-ramanujan/checks/rr003_columns.py": {
+            "expected": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+            "actual": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9"
+          },
+          "research/rogers-ramanujan/checks/rr003_cut_branch.py": {
+            "expected": "78661c29a37e26f5ccf7ec9c2c73ebc16842ca1d6773212eb08136c95b52840f",
+            "actual": "78661c29a37e26f5ccf7ec9c2c73ebc16842ca1d6773212eb08136c95b52840f"
+          },
+          "research/rogers-ramanujan/checks/rr003_cut_branch_verify.py": {
+            "expected": "069325c00d4d246ca23aa1e40614aa80c03b7fe4ecd68701e44e5433e21b0b9f",
+            "actual": "069325c00d4d246ca23aa1e40614aa80c03b7fe4ecd68701e44e5433e21b0b9f"
+          },
+          "research/rogers-ramanujan/checks/rr003_endpoint_verify.py": {
+            "expected": "ccfd238ffc3cd945f36f74d76bb010625d5d6f4230e69a0ef6763f78b779ae60",
+            "actual": "ccfd238ffc3cd945f36f74d76bb010625d5d6f4230e69a0ef6763f78b779ae60"
+          },
+          "research/rogers-ramanujan/checks/rr003_merge_verify.py": {
+            "expected": "15e746de4326c8d1b2c6f38d5a281d2bee1fca167a87c988bf47780efd78ec8a",
+            "actual": "15e746de4326c8d1b2c6f38d5a281d2bee1fca167a87c988bf47780efd78ec8a"
+          },
+          "research/rogers-ramanujan/checks/rr003_meter.py": {
+            "expected": "fff9dcc19c978e47705cc1b92bf003b7f1f758b1b4cf866c399e616947f7ff94",
+            "actual": "fff9dcc19c978e47705cc1b92bf003b7f1f758b1b4cf866c399e616947f7ff94"
+          },
+          "research/rogers-ramanujan/checks/rr003_partial.py": {
+            "expected": "6d47cdc695f5f5a04db827efd9ce3795823fe3fce535c7b299623b1ab8e73eb8",
+            "actual": "6d47cdc695f5f5a04db827efd9ce3795823fe3fce535c7b299623b1ab8e73eb8"
+          },
+          "research/rogers-ramanujan/checks/rr003_partial_verify.py": {
+            "expected": "b4a24b7595f530b226743e597512cd3d82759e8e46694ef8d089bbdca4068a67",
+            "actual": "b4a24b7595f530b226743e597512cd3d82759e8e46694ef8d089bbdca4068a67"
+          },
+          "research/rogers-ramanujan/checks/rr003_product_involution.py": {
+            "expected": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0",
+            "actual": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0"
+          },
+          "research/rogers-ramanujan/checks/rr003_product_verify.py": {
+            "expected": "0dd93fe8777892151352555f3ee8891ee5ab2c21062d7bfa1287b37061b29c93",
+            "actual": "0dd93fe8777892151352555f3ee8891ee5ab2c21062d7bfa1287b37061b29c93"
+          },
+          "research/rogers-ramanujan/checks/rr003_recursive.py": {
+            "expected": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7",
+            "actual": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7"
+          },
+          "research/rogers-ramanujan/checks/rr003_recursive_seed.py": {
+            "expected": "10a550057e4d924fa9b3b58b12b13e9397724574d5b1a98e1c81b6bb41e29d56",
+            "actual": "10a550057e4d924fa9b3b58b12b13e9397724574d5b1a98e1c81b6bb41e29d56"
+          },
+          "research/rogers-ramanujan/checks/rr003_revision.py": {
+            "expected": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+            "actual": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9"
+          },
+          "research/rogers-ramanujan/checks/rr003_round2_verify.py": {
+            "expected": "128bcba5ee3ccd75e30749aab9c70dc5bb21a76e9cd4692773a726e1057136d5",
+            "actual": "128bcba5ee3ccd75e30749aab9c70dc5bb21a76e9cd4692773a726e1057136d5"
+          },
+          "research/rogers-ramanujan/checks/rr003_second_product.py": {
+            "expected": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9",
+            "actual": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9"
+          },
+          "research/rogers-ramanujan/checks/rr003_second_product_verify.py": {
+            "expected": "23fb77310cbf085b20c6394f25370bee21e824963d1ba079d8383a713d8b8ec2",
+            "actual": "23fb77310cbf085b20c6394f25370bee21e824963d1ba079d8383a713d8b8ec2"
+          },
+          "research/rogers-ramanujan/checks/rr003_seed_verify.py": {
+            "expected": "b2b5faabb94d2c309867e10bfb3cca23516b7f36fc9261099985a1f14dac61a9",
+            "actual": "b2b5faabb94d2c309867e10bfb3cca23516b7f36fc9261099985a1f14dac61a9"
+          },
+          "research/rogers-ramanujan/checks/rr003_small_charge.py": {
+            "expected": "c74aa6f155682b0afe92592caa8d79cf0a35e148909b95e89c05a4cebbe58d71",
+            "actual": "c74aa6f155682b0afe92592caa8d79cf0a35e148909b95e89c05a4cebbe58d71"
+          },
+          "research/rogers-ramanujan/checks/rr003_stockhofe.py": {
+            "expected": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+            "actual": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2"
+          },
+          "research/rogers-ramanujan/checks/rr003_verify.py": {
+            "expected": "37a4f347d17a356d0260e4d1977aeebbd517a2c6110194064d26e0a9233b85ef",
+            "actual": "37a4f347d17a356d0260e4d1977aeebbd517a2c6110194064d26e0a9233b85ef"
+          },
+          "research/rogers-ramanujan/checks/rr004_finite_certificate.py": {
+            "expected": "2865f16ba147594dbcfac84875c19ab94a8b26ac8e8c986247f00a9f20a66715",
+            "actual": "2865f16ba147594dbcfac84875c19ab94a8b26ac8e8c986247f00a9f20a66715"
+          },
+          "research/rogers-ramanujan/checks/rr004_meter.py": {
+            "expected": "77949fc2dce853b6c73932fd482720a9ed8fe54e39d7c9e203b40a3460c152bd",
+            "actual": "77949fc2dce853b6c73932fd482720a9ed8fe54e39d7c9e203b40a3460c152bd"
+          },
+          "research/rogers-ramanujan/checks/rr004_verify.py": {
+            "expected": "80cf0ec22940b23b02ac49cd6143961af177f5a57f664a52bb7affa079550909",
+            "actual": "80cf0ec22940b23b02ac49cd6143961af177f5a57f664a52bb7affa079550909"
+          },
+          "research/rogers-ramanujan/checks/rr005_chains.py": {
+            "expected": "96378a9b872373af115164ea6176b04e5b513c45322e42c23a512c8dc4b21ca2",
+            "actual": "96378a9b872373af115164ea6176b04e5b513c45322e42c23a512c8dc4b21ca2"
+          },
+          "research/rogers-ramanujan/checks/rr005_meter.py": {
+            "expected": "3159b3e0964634e1e52934814b7ad2d416421db342b493fda3b2bfc6916bb67a",
+            "actual": "3159b3e0964634e1e52934814b7ad2d416421db342b493fda3b2bfc6916bb67a"
+          },
+          "research/rogers-ramanujan/checks/rr005_six.py": {
+            "expected": "4546f837f606a4d45725b05533e4a39d8a29bbc551327fe98660d69947713cb9",
+            "actual": "4546f837f606a4d45725b05533e4a39d8a29bbc551327fe98660d69947713cb9"
+          },
+          "research/rogers-ramanujan/checks/rr005_six_verify.py": {
+            "expected": "1bcf79e115f9f791a247ddd6aba105ccdaa1d553415221052016b72e7bcfa087",
+            "actual": "1bcf79e115f9f791a247ddd6aba105ccdaa1d553415221052016b72e7bcfa087"
+          },
+          "research/rogers-ramanujan/checks/rr005_verify.py": {
+            "expected": "2dd46930c61aeae4cd8fa7762d724b82ba0644300efc17d120894b03ff3f7359",
+            "actual": "2dd46930c61aeae4cd8fa7762d724b82ba0644300efc17d120894b03ff3f7359"
+          },
+          "research/rogers-ramanujan/checks/verify.py": {
+            "expected": "196042af27be6c4850b4b5af0b8bd18d692363632c69daa3b185520ab364394e",
+            "actual": "196042af27be6c4850b4b5af0b8bd18d692363632c69daa3b185520ab364394e"
+          },
+          "research/rogers-ramanujan/rr007/fleet-a/checks/critic-a-literal.py": {
+            "expected": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984",
+            "actual": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984"
+          }
+        }
+      }
+    },
+    {
+      "freeze": "research/phase2-20261025/kr-sectors/freeze.json",
+      "sha256": "2726b54ebc29f57b0286c09cb3a660bf008c84ced94f9051256ebceee7342653",
+      "before_review_matched": true,
+      "after_review_matched": true,
+      "pin_groups": {
+        "files": {
+          "research/phase2-20261025/kr-sectors/author.md": {
+            "expected": "9bea7b7be8f8a93bcd72b395f68cda034e43fc13b5dac7c3c4e05942627b607e",
+            "actual": "9bea7b7be8f8a93bcd72b395f68cda034e43fc13b5dac7c3c4e05942627b607e"
+          },
+          "research/phase2-20261025/kr-sectors/bridge.py": {
+            "expected": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac",
+            "actual": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac"
+          },
+          "research/phase2-20261025/kr-sectors/check_extension.py": {
+            "expected": "d0fe13db35ec8eadaa7b6eb484a989c052e8faaca44c434fbbac3b462d4c8d6a",
+            "actual": "d0fe13db35ec8eadaa7b6eb484a989c052e8faaca44c434fbbac3b462d4c8d6a"
+          },
+          "research/phase2-20261025/kr-sectors/check_sectors.py": {
+            "expected": "bf09944cbfb293594254291f3014d61f1c892369da25a54e1b8d005b6616d2c9",
+            "actual": "bf09944cbfb293594254291f3014d61f1c892369da25a54e1b8d005b6616d2c9"
+          },
+          "research/phase2-20261025/kr-sectors/extension-freeze.json": {
+            "expected": "3fb5acb91f0c3578ebb9a19d593244339f2cb23993f433508432d5a50f1c0acd",
+            "actual": "3fb5acb91f0c3578ebb9a19d593244339f2cb23993f433508432d5a50f1c0acd"
+          },
+          "research/phase2-20261025/kr-sectors/extension-result-12.json": {
+            "expected": "4bb00939d44f3a9a80f4acfa8ef9ec4d12986776fda9ab173b738e41cfea02ad",
+            "actual": "4bb00939d44f3a9a80f4acfa8ef9ec4d12986776fda9ab173b738e41cfea02ad"
+          },
+          "research/phase2-20261025/kr-sectors/extension-result-30.json": {
+            "expected": "6e63f4c7cdd208083279df06100988fa6638b22ffe18cb592aa8f06f4c8b6f82",
+            "actual": "6e63f4c7cdd208083279df06100988fa6638b22ffe18cb592aa8f06f4c8b6f82"
+          },
+          "research/phase2-20261025/kr-sectors/extension-result-40.json": {
+            "expected": "af6148bdfec781e6669ce6965c162af9d6c52b69126bcc5b3c7c22cc560df4b5",
+            "actual": "af6148bdfec781e6669ce6965c162af9d6c52b69126bcc5b3c7c22cc560df4b5"
+          },
+          "research/phase2-20261025/kr-sectors/extension.py": {
+            "expected": "72e7af3437ee5dd445819b3af519d3f2e21fddc6f2d558e312fd42e6c41ef280",
+            "actual": "72e7af3437ee5dd445819b3af519d3f2e21fddc6f2d558e312fd42e6c41ef280"
+          },
+          "research/phase2-20261025/kr-sectors/initial-freeze.json": {
+            "expected": "96a5b21253799b3b28a96ebfa3987e43598990996bcd26d37d7c70935097c243",
+            "actual": "96a5b21253799b3b28a96ebfa3987e43598990996bcd26d37d7c70935097c243"
+          },
+          "research/phase2-20261025/kr-sectors/notebook-progress.md": {
+            "expected": "0f1cc9ac236ca2437bcff10c4f2cebc221aa5b31bf9f8248ea094729253992c7",
+            "actual": "0f1cc9ac236ca2437bcff10c4f2cebc221aa5b31bf9f8248ea094729253992c7"
+          },
+          "research/phase2-20261025/kr-sectors/notebook.md": {
+            "expected": "b0d7d270bd557845e35bc938965bdb0820c679cff04e5f6ab35254f97576d152",
+            "actual": "b0d7d270bd557845e35bc938965bdb0820c679cff04e5f6ab35254f97576d152"
+          },
+          "research/phase2-20261025/kr-sectors/reductions.py": {
+            "expected": "81544339f17c09fd5836d8b3d33c81daffb8f5d5dc2ec690255d579753ead273",
+            "actual": "81544339f17c09fd5836d8b3d33c81daffb8f5d5dc2ec690255d579753ead273"
+          },
+          "research/phase2-20261025/kr-sectors/resource-use.json": {
+            "expected": "e6a2cfbfadad405d3d9fea9bd7b5a3b52feff94d37d8a4560c1add1454c5e14f",
+            "actual": "e6a2cfbfadad405d3d9fea9bd7b5a3b52feff94d37d8a4560c1add1454c5e14f"
+          },
+          "research/phase2-20261025/kr-sectors/result-12.json": {
+            "expected": "2a47b5aa09d6f6a9a2d79f5f59c500e3f8661458a9b4e98d5ade4c30869bc22c",
+            "actual": "2a47b5aa09d6f6a9a2d79f5f59c500e3f8661458a9b4e98d5ade4c30869bc22c"
+          },
+          "research/phase2-20261025/kr-sectors/result-30.json": {
+            "expected": "9f53055c923eab383e7cfecd763f549ee008d913c53edb6a741c99e15b5ab4f9",
+            "actual": "9f53055c923eab383e7cfecd763f549ee008d913c53edb6a741c99e15b5ab4f9"
+          },
+          "research/phase2-20261025/kr-sectors/result-40.json": {
+            "expected": "ae5e450c84a69c10555fc4379207a8309c726de56c8c37b18c11755e5eceaaab",
+            "actual": "ae5e450c84a69c10555fc4379207a8309c726de56c8c37b18c11755e5eceaaab"
+          },
+          "research/rogers-ramanujan/checks/kr1.py": {
+            "expected": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+            "actual": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+          },
+          "research/rogers-ramanujan/checks/rr003_a2.py": {
+            "expected": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+            "actual": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909"
+          },
+          "research/rogers-ramanujan/checks/rr003_revision.py": {
+            "expected": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+            "actual": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9"
+          },
+          "research/rogers-ramanujan/checks/rr003_columns.py": {
+            "expected": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+            "actual": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9"
+          },
+          "research/rogers-ramanujan/checks/rr003_cluster_merge.py": {
+            "expected": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+            "actual": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19"
+          },
+          "research/rogers-ramanujan/checks/rr003_stockhofe.py": {
+            "expected": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+            "actual": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2"
+          },
+          "research/rogers-ramanujan/rr007/fleet-a/checks/critic-a-literal.py": {
+            "expected": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984",
+            "actual": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984"
+          },
+          "research/rogers-ramanujan/rr007/fleet-a/revision.md": {
+            "expected": "c2fc80eacbeaf86fce4245459ceaf9faca8a4d37a813a11a6d7151fab9f6281a",
+            "actual": "c2fc80eacbeaf86fce4245459ceaf9faca8a4d37a813a11a6d7151fab9f6281a"
+          },
+          "research/rogers-ramanujan/rr007/fleet-a/review-2.md": {
+            "expected": "026d0cc960e0e93d1ad0dd1fefc58bfb487e5119f7543660017d51f455a49f72",
+            "actual": "026d0cc960e0e93d1ad0dd1fefc58bfb487e5119f7543660017d51f455a49f72"
+          },
+          "research/phase2-20261025/inputs/external-scratch/verify_a3_b0_universal.py": {
+            "expected": "ad45aa3e978f992cad975a79da3de5969403b640b9b18bd79f0af1154a1b04f1",
+            "actual": "ad45aa3e978f992cad975a79da3de5969403b640b9b18bd79f0af1154a1b04f1"
+          },
+          "research/phase2-20261025/inputs/external-scratch/test_complete_n26.py": {
+            "expected": "a5245322c44b7a3f779a17d91c27414ea9b2e47156df87955cb53f88f61c9e26",
+            "actual": "a5245322c44b7a3f779a17d91c27414ea9b2e47156df87955cb53f88f61c9e26"
+          }
+        }
+      }
+    },
+    {
+      "freeze": "research/phase2-20261025/recursive-lift/freeze.json",
+      "sha256": "6007a54c5a8e33fb4d10a6e021ad6ff6257b7dbb4b6e077733316c600e92b972",
+      "before_review_matched": true,
+      "after_review_matched": true,
+      "pin_groups": {
+        "files": {
+          "research/phase2-20261025/recursive-lift/author.md": {
+            "expected": "f2401476d01420296f7fc398c6ae6049bd54d88ea22a1d7467a2d74e2528fe2f",
+            "actual": "f2401476d01420296f7fc398c6ae6049bd54d88ea22a1d7467a2d74e2528fe2f"
+          },
+          "research/phase2-20261025/recursive-lift/candidate-rules.md": {
+            "expected": "aee114c04e2437eea208a7e81f638b195a33942973585e1c1beda34ba9dfd9c1",
+            "actual": "aee114c04e2437eea208a7e81f638b195a33942973585e1c1beda34ba9dfd9c1"
+          },
+          "research/phase2-20261025/recursive-lift/cuts12.json": {
+            "expected": "aad7cc29f8845ef783db870e3b6963f764ac89d61c9d14ca714f4c0bf5d85853",
+            "actual": "aad7cc29f8845ef783db870e3b6963f764ac89d61c9d14ca714f4c0bf5d85853"
+          },
+          "research/phase2-20261025/recursive-lift/cuts30.json": {
+            "expected": "4fb3518c6b2af004433d407f362f858ddf7a329408e0a378c22ce3b27036d3ca",
+            "actual": "4fb3518c6b2af004433d407f362f858ddf7a329408e0a378c22ce3b27036d3ca"
+          },
+          "research/phase2-20261025/recursive-lift/cuts40.json": {
+            "expected": "f782948159f22ff67a903da1cc38e6759c31854b07a384ec063daf214b2ddec4",
+            "actual": "f782948159f22ff67a903da1cc38e6759c31854b07a384ec063daf214b2ddec4"
+          },
+          "research/phase2-20261025/recursive-lift/grammar12.json": {
+            "expected": "ef9d0342b8f9231eeeabcfccebb57c5c615d2e43e9aaef9a1582ade1062e4598",
+            "actual": "ef9d0342b8f9231eeeabcfccebb57c5c615d2e43e9aaef9a1582ade1062e4598"
+          },
+          "research/phase2-20261025/recursive-lift/grammar30.json": {
+            "expected": "6329dc2ef775bd461b6a3bac77075b64b7c9748408a4333bc6118cb71bb29a2e",
+            "actual": "6329dc2ef775bd461b6a3bac77075b64b7c9748408a4333bc6118cb71bb29a2e"
+          },
+          "research/phase2-20261025/recursive-lift/grammar40.json": {
+            "expected": "5ed2ed2bb2573661e6539bd3db18e26b324cd08ab792625b1b2e738f965a5d5f",
+            "actual": "5ed2ed2bb2573661e6539bd3db18e26b324cd08ab792625b1b2e738f965a5d5f"
+          },
+          "research/phase2-20261025/recursive-lift/notebook.md": {
+            "expected": "8424a4cecf0317531152b4c6ec01e4013c3414c60ff7bcaa26fb62b49578f92b",
+            "actual": "8424a4cecf0317531152b4c6ec01e4013c3414c60ff7bcaa26fb62b49578f92b"
+          },
+          "research/phase2-20261025/recursive-lift/prepilot-freeze.json": {
+            "expected": "e4e59c064d08aaca4868e052a291be8011a59a1fbc9fcf9bfcd36f96e13fb0c9",
+            "actual": "e4e59c064d08aaca4868e052a291be8011a59a1fbc9fcf9bfcd36f96e13fb0c9"
+          },
+          "research/phase2-20261025/recursive-lift/triadic.py": {
+            "expected": "222662c28f9a261ef8f7c5b0450fa7f5da127a183a4865f5f866a9aaddc2bc4e",
+            "actual": "222662c28f9a261ef8f7c5b0450fa7f5da127a183a4865f5f866a9aaddc2bc4e"
+          },
+          "research/phase2-20261025/recursive-lift/u_candidates.py": {
+            "expected": "577f3713b324e4132fc5fcca5a7c7c0b18a1e11d75cff36c8c5098dd431f55da",
+            "actual": "577f3713b324e4132fc5fcca5a7c7c0b18a1e11d75cff36c8c5098dd431f55da"
+          },
+          "research/phase2-20261025/recursive-lift/verify.py": {
+            "expected": "bc9eb7186d29742e8ebc06f6cec4c4545138ef70801b49030f2eab45613f9bba",
+            "actual": "bc9eb7186d29742e8ebc06f6cec4c4545138ef70801b49030f2eab45613f9bba"
+          }
+        }
+      }
+    },
+    {
+      "freeze": "research/phase2-20261025/reviews/kr-initial-freeze.json",
+      "sha256": "85ead20cdf75b85bca9ef29568ea5ec5c0c1c936f154770bb37bd2115324f317",
+      "before_review_matched": true,
+      "after_review_matched": true,
+      "pin_groups": {
+        "files": {
+          "research/phase2-20261025/reviews/kr-dependencies.json": {
+            "expected": "f293860d8c7a55dd348914f77bc7bff2b27231ab7a73d1dfd5e1ef727a123e6f",
+            "actual": "f293860d8c7a55dd348914f77bc7bff2b27231ab7a73d1dfd5e1ef727a123e6f"
+          },
+          "research/phase2-20261025/reviews/kr-geometric-result-12.json": {
+            "expected": "a0d1bff96797edccbfe87802d316efbd857c4f17286326d1aee9416eab48da7d",
+            "actual": "a0d1bff96797edccbfe87802d316efbd857c4f17286326d1aee9416eab48da7d"
+          },
+          "research/phase2-20261025/reviews/kr-geometric-result-v2-12.json": {
+            "expected": "099d15f6f8a9299b837c8c3116f9dfe45edd3e898ea181a57b872945a3711c15",
+            "actual": "099d15f6f8a9299b837c8c3116f9dfe45edd3e898ea181a57b872945a3711c15"
+          },
+          "research/phase2-20261025/reviews/kr-geometric-result-v2-30.json": {
+            "expected": "bb52c4afebf346621623fcc401bf46e8791a27edcd82f7c9d4723ac777b23d96",
+            "actual": "bb52c4afebf346621623fcc401bf46e8791a27edcd82f7c9d4723ac777b23d96"
+          },
+          "research/phase2-20261025/reviews/kr-geometric-result-v2-40.json": {
+            "expected": "c9dede3ed45f63b5362a66049874871e3e3845317fb62138eb86356713fb35f2",
+            "actual": "c9dede3ed45f63b5362a66049874871e3e3845317fb62138eb86356713fb35f2"
+          },
+          "research/phase2-20261025/reviews/kr-geometric-v1-failure.json": {
+            "expected": "8ba52000cd67f45724ee83dc10b643113580350536e45823856bbe6e88d7fb3d",
+            "actual": "8ba52000cd67f45724ee83dc10b643113580350536e45823856bbe6e88d7fb3d"
+          },
+          "research/phase2-20261025/reviews/kr-geometriccheck-v1.py": {
+            "expected": "7f1fcbbdbccafef32e7896e73dc4f0ea71bbad8dfd87b22cd940429d79a6ef2d",
+            "actual": "7f1fcbbdbccafef32e7896e73dc4f0ea71bbad8dfd87b22cd940429d79a6ef2d"
+          },
+          "research/phase2-20261025/reviews/kr-geometriccheck.py": {
+            "expected": "e8e3c36a3419c4ed9128f0ad21b754c5b7d674aef61ef8ed816ca7da258d7b2c",
+            "actual": "e8e3c36a3419c4ed9128f0ad21b754c5b7d674aef61ef8ed816ca7da258d7b2c"
+          },
+          "research/phase2-20261025/reviews/kr-independent-result-12.json": {
+            "expected": "56d1e23b3a71e9effc276be587686435bb34f1ba1920c692b116149d4db5d92d",
+            "actual": "56d1e23b3a71e9effc276be587686435bb34f1ba1920c692b116149d4db5d92d"
+          },
+          "research/phase2-20261025/reviews/kr-independent-result-30.json": {
+            "expected": "b3b82ac12c2e5e70feab311a6ba67c7e17b2e0f34a5f4b9ac52bb09056b4f0c2",
+            "actual": "b3b82ac12c2e5e70feab311a6ba67c7e17b2e0f34a5f4b9ac52bb09056b4f0c2"
+          },
+          "research/phase2-20261025/reviews/kr-independent-result-40.json": {
+            "expected": "bebee4b0983c0fa36b2d8df2cff8172c58bc330dd689464995f3484fff796507",
+            "actual": "bebee4b0983c0fa36b2d8df2cff8172c58bc330dd689464995f3484fff796507"
+          },
+          "research/phase2-20261025/reviews/kr-independentcheck.py": {
+            "expected": "9a886583c8070113c6884be3197293e3dfbd5f1078723723d039cbc66a65c125",
+            "actual": "9a886583c8070113c6884be3197293e3dfbd5f1078723723d039cbc66a65c125"
+          },
+          "research/phase2-20261025/reviews/kr-resource-use.json": {
+            "expected": "329bf524545a3c10a15d69ad21414a2a963d7b9213bf1ef7ece5be693a519abc",
+            "actual": "329bf524545a3c10a15d69ad21414a2a963d7b9213bf1ef7ece5be693a519abc"
+          },
+          "research/phase2-20261025/reviews/kr-review.md": {
+            "expected": "eeaf256d8a2094a9ef9844b78e065dfe57549816fa8f9eb8008441d877cef129",
+            "actual": "eeaf256d8a2094a9ef9844b78e065dfe57549816fa8f9eb8008441d877cef129"
+          }
+        }
+      }
+    }
+  ]
+}

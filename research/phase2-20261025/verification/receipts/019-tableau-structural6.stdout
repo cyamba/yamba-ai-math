@@ -1,0 +1,16 @@
+{
+  "status": "finite_exact_passed",
+  "n": 6,
+  "hessenberg_vectors": 132,
+  "totals": {
+    "sources": 115,
+    "source_hook": 19,
+    "destination_row1": 1,
+    "destination_row0": 1,
+    "destination_411": 99,
+    "source_two": 96,
+    "destination_321": 14,
+    "recognized_images": 115
+  },
+  "failures": []
+}

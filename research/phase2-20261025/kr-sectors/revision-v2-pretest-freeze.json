@@ -1,0 +1,9 @@
+{
+  "stage": "reserved-H-family-refinement-v2-before-pilot",
+  "date_utc": "2026-10-24T22:35:15.159778+00:00",
+  "files": {
+    "research/phase2-20261025/kr-sectors/revision-v2-bridge.py": "9327d31f2dcffa12e3be20112ebdb724f8cdf7699c98a900a19b3398d530c43e",
+    "research/phase2-20261025/kr-sectors/revision-v2-check.py": "e11dd681dd1021d35370c6cd2c42cb19e52fc4b4e186999b1f34036130e70e03"
+  },
+  "note": "Broadens same reserved refinement to full delta2=0/1 slabs; all prior files and successful checks preserved. No new candidate family."
+}

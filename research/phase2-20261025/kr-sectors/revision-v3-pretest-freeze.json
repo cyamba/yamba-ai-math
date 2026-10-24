@@ -1,0 +1,9 @@
+{
+  "stage": "reserved-H-family-refinement-final-v3-before-pilot",
+  "date_utc": "2026-10-24T22:37:32.957823+00:00",
+  "files": {
+    "research/phase2-20261025/kr-sectors/revision-v3-bridge.py": "c08dcffe88f0f8424c226a51d50a23ed56cdac2b8d2c368abcf3ce6662d09f9b",
+    "research/phase2-20261025/kr-sectors/revision-v3-check.py": "e8f6686744ed3ebc9174bfd54e37ce7ed9699ca2e3ee585c663c4ad265a24a49"
+  },
+  "note": "Adds symbolic large delta2>=18 a4,b0 theorem. Its minimum52 is not numerically instantiated. Existing versions preserved; same head/marker candidate family."
+}

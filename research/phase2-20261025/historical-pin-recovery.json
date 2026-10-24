@@ -1,0 +1,22 @@
+{
+  "kind": "historical_version_recovery_not_retroactive_prefreeze",
+  "records": [
+    {
+      "historical_name": "structural.py",
+      "historical_sha256": "ae58d6ef7ccba8bb09ff8d6e7b6876e7a903588bb39adaaa7f44b10e06828e08",
+      "recovered_file": "research/phase2-20261025/tableau/structural-initial.py",
+      "sha256": "ae58d6ef7ccba8bb09ff8d6e7b6876e7a903588bb39adaaa7f44b10e06828e08",
+      "recovery_timing": "initial source retained before finalhandoff"
+    },
+    {
+      "historical_name": "verify_structural.py",
+      "historical_sha256": "71918602f2f6f8da0fceea5dd1e9af3adce3a230e3ff9ef9eaeea44db8746098",
+      "recovered_file": "research/phase2-20261025/tableau/revision-recovered-initial-verifier.py",
+      "sha256": "71918602f2f6f8da0fceea5dd1e9af3adce3a230e3ff9ef9eaeea44db8746098",
+      "recovery_timing": "source saved before finalhandoff; verifier reconstructed after initialcritic during reserved refinement"
+    }
+  ],
+  "preliminary_manifest_unchanged": "ab63370a9324cc714b03b49d53666b010d0ed11af15712a96f3691a7203c19be",
+  "accepted_snapshot": "tableau/freeze.json",
+  "note": "Final handoff added36 conditional triangle sources to preliminary115-source TheoremA implementation. The comprehensive historical comparison fails against final filenames as preserved in integrity-progress.json."
+}

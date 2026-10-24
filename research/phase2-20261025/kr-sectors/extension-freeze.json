@@ -1,0 +1,12 @@
+{
+  "stage": "H-family-v2-and-reductions-v2-before-pilot",
+  "date_utc": "2026-10-24T22:22:47.207496+00:00",
+  "note": "Same H-family, explicit auxiliary marker extension; original version1 scripts and results unchanged. Large-b tail is paper-only, no above40 instances.",
+  "files": {
+    "research/phase2-20261025/kr-sectors/bridge.py": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac",
+    "research/phase2-20261025/kr-sectors/check_sectors.py": "bf09944cbfb293594254291f3014d61f1c892369da25a54e1b8d005b6616d2c9",
+    "research/phase2-20261025/kr-sectors/extension.py": "72e7af3437ee5dd445819b3af519d3f2e21fddc6f2d558e312fd42e6c41ef280",
+    "research/phase2-20261025/kr-sectors/reductions.py": "81544339f17c09fd5836d8b3d33c81daffb8f5d5dc2ec690255d579753ead273",
+    "research/phase2-20261025/kr-sectors/check_extension.py": "d0fe13db35ec8eadaa7b6eb484a989c052e8faaca44c434fbbac3b462d4c8d6a"
+  }
+}

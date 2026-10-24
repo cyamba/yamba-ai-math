@@ -1,0 +1,73 @@
+{
+  "kind": "file_integrity_only_not_mathematical_verification",
+  "status": "pass",
+  "checked_entries": 752,
+  "manifests": [
+    {
+      "manifest": "research/phase2-20261025/baseline-pins.json",
+      "sha256": "00f05598a908194c3947380d78b1fb1890331a845c866ba83112d031bf049edd",
+      "checked_entries": 132
+    },
+    {
+      "manifest": "research/phase2-20261025/supplemental-input-pins.json",
+      "sha256": "02363c73b94a3f0d27e1dbc094047b7db4eaeacc36be1da1313a94258eca63c6",
+      "checked_entries": 240
+    },
+    {
+      "manifest": "research/phase2-20261025/attempt-input-freeze.json",
+      "sha256": "96a71506e78d0c9d0ee5d169edb935d519ef579433caa08861a989e1baad0e17",
+      "checked_entries": 4
+    },
+    {
+      "manifest": "research/phase2-20261025/kr-sectors/freeze.json",
+      "sha256": "2726b54ebc29f57b0286c09cb3a660bf008c84ced94f9051256ebceee7342653",
+      "checked_entries": 28
+    },
+    {
+      "manifest": "research/phase2-20261025/kr-sectors/revision-freeze.json",
+      "sha256": "5ea85a8a232d72e004bcd80a80171bf4d418bfd1d29004d9f1d82e942ce82a99",
+      "checked_entries": 49
+    },
+    {
+      "manifest": "research/phase2-20261025/recursive-lift/freeze.json",
+      "sha256": "6007a54c5a8e33fb4d10a6e021ad6ff6257b7dbb4b6e077733316c600e92b972",
+      "checked_entries": 13
+    },
+    {
+      "manifest": "research/phase2-20261025/recursive-lift/revision-freeze.json",
+      "sha256": "edd18b65d4ec5c05ebe5288ac07d4616b5af1cc79989fa3e5a9f627c8677cf07",
+      "checked_entries": 47
+    },
+    {
+      "manifest": "research/phase2-20261025/tableau/freeze.json",
+      "sha256": "4493afa8ab22d3ecbcb7079181f4b7269ab8c4cbc837ce2a818c3059a8216e44",
+      "checked_entries": 17
+    },
+    {
+      "manifest": "research/phase2-20261025/tableau/revision-freeze.json",
+      "sha256": "4916798c10b6d26d5fad6abe3691f5aa6a97156a986f7db6e055ce6482b392d4",
+      "checked_entries": 80
+    },
+    {
+      "manifest": "research/phase2-20261025/reviews/kr-initial-freeze.json",
+      "sha256": "85ead20cdf75b85bca9ef29568ea5ec5c0c1c936f154770bb37bd2115324f317",
+      "checked_entries": 14
+    },
+    {
+      "manifest": "research/phase2-20261025/reviews/kr-final-freeze.json",
+      "sha256": "57a6bacfc5b05e1bc05e4a184e9e062aaa804c7f33c370602c943c846d4c4815",
+      "checked_entries": 9
+    },
+    {
+      "manifest": "research/phase2-20261025/reviews/tableau-review-final-pins.json",
+      "sha256": "4f18de73ceabfed5f6bf2af347657396c4739bf4fd7296d0441816b5ff49c970",
+      "checked_entries": 28
+    },
+    {
+      "manifest": "research/phase2-20261025/reviews/tableau-final-pins.json",
+      "sha256": "4f0cc965833f992daa53325089f2e604e798a1624616de233d6bf89d05ab3c26",
+      "checked_entries": 91
+    }
+  ],
+  "failures": []
+}
