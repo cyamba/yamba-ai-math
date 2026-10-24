@@ -5,6 +5,12 @@ This exposition explains the established Cho–Huh height-two positivity theorem
 and the project's completed all-finite-alphabet Lean formalization. It makes
 no claim to a new general-height open-problem solution.
 
+The companion's full technical article, **From a Failed Corner Slide to a
+Verified Tableau Injection**, is available as an [11-page PDF](../paper/height-two-positivity.pdf)
+with [editable LaTeX source](../paper/main.tex). It includes the exact theorem,
+proofs, counterexamples, diagrams and formalization scope. The PDF has SHA-256
+`5667d989303df2d82dd524b58f166bfd51cf799ab0a45f68366da6789c9cf546`.
+
 - `article.html`: canonical accessible article body, shared by three websites.
 - `metadata.json`: title, date, canonical URL and attribution scope.
 - `assets/`: two conceptual artworks (hero and portrait cover), three exact

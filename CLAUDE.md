@@ -1,21 +1,60 @@
-# KR1 research supervision
+# CLAUDE.md
+
+@AGENTS.md
+
+## Claude Code in this repository
+
+Two domains share this checkout:
+
+- **Research**: everything AGENTS.md routes. Research sessions work there.
+- **Meta-harness**: `.claude/bench/`, its bench agents and operator commands measure and improve the framework itself. It runs
+  only when the user invokes `/bench-run`, `/bench-snapshot`, `/bench-dashboard`, `/bench-compare` or
+  `/harness-retro`. See [.claude/README.md](.claude/README.md).
+
+The KR1 supervisory skill links in `.claude/skills/` point to `.agents/skills/`
+and follow the separate KR1 guidance below. They do not invoke the benchmark instrument.
+
+Rules:
+
+- During research work, do not open `.claude/bench/` or the bench agents, and do not optimize for any
+  measurement. Research quality is defined by AGENTS.md and `docs/research-protocol.md`.
+- During meta work, never copy rubric text, canary strings, metric definitions or scores into research
+  files, briefs, programs, worker packets or AGENTS.md.
+- Framework changes still follow `meta/protocol.md`. A benchmark result never authorizes promotion.
+
+## Commands
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 scripts/check_repository.py
+python3 -m unittest discover -s .claude/bench/tests -v   # meta-harness
+python3 .claude/bench/bench.py validate                  # meta-harness
+```
+
+## Parallel sessions
+
+Claude Code and Codex sessions share this repository. Start new work on a branch in its own worktree
+(`git worktree add ../yamba-ai-math-<topic> -b <branch> main`) instead of switching the main checkout.
+
+## KR1 research supervision
 
 Read [AGENTS.md](AGENTS.md) for repository standards. For KR1, begin with the
-[current result](research/rogers-ramanujan/rr003/result.md),
-[regroup note](research/rogers-ramanujan/rr003/regroup.md), and
+[current result](research/rogers-ramanujan/rr004/result.md),
+[historical RR003 regroup note](research/rogers-ramanujan/rr003/regroup.md), and
 [pending feedback](research/rogers-ramanujan/feedback.md). Other projects retain
 their own instructions; these KR1 details do not redefine their objectives.
 
 Fresh-session entry: [NEXT_SESSION.md](research/rogers-ramanujan/NEXT_SESSION.md).
 
-## Mathematical agents versus meta agents
+### Mathematical agents versus meta agents
 
 - `agents/` is the mathematics problem-solving layer: discovery, constructions,
   proofs, mathematical criticism and research experiments.
 - `.agents/` is the meta-level system and supervisory layer. Its skills live in
   `.agents/skills/`; future meta agents belong under this layer. Use it for system
   work, reflection, coordination, feedback and authorized framework improvement.
-- `.claude/skills/` links to the shared meta-level skills in `.agents/skills/`.
+- KR1 entries in `.claude/skills/` link to the shared meta-level skills in `.agents/skills/`;
+  benchmark operator commands retain the separate boundaries above.
 
 Meta skills may use mathematical evidence to steer the work; the problem-solving
 roles execute the mathematics and its semantic review. Follow the full
@@ -23,7 +62,7 @@ roles execute the mathematics and its semantic review. Follow the full
 historical registry exceptions. Framework changes remain governed by the user's
 scope and [meta protocol](meta/protocol.md), with unchanged proof and review standards.
 
-## Governing objective
+### Governing objective
 
 Construct explicit, weight-preserving, mutually inverse algorithms between
 partitions with parts congruent to 1,3,6,8 modulo 9 and ascending positive gap
@@ -38,7 +77,7 @@ are progress. Finite agreement, enumeration, rank matching and hidden lookup
 tables cannot define or certify the final bijection. Preserve attribution;
 **Novelty status: NOT VERIFIED** until the closest constructions are inspected.
 
-## Supervisory skills
+### Supervisory skills
 
 | Skill | Use |
 | --- | --- |
@@ -57,10 +96,12 @@ canonical source. Keep new skills there and link them from `.claude/skills/<name
 for Claude Code. In Codex use `$skill-name` or `/skills`; Claude Code uses
 `/skill-name`. See [official Codex discovery guidance](https://learn.chatgpt.com/docs/build-skills).
 
-RR003 is closed; its clock, computation ledger and two review rounds are spent.
+RR003 and RR004 are closed; their clocks, computation ledgers and two review rounds per attempt are spent.
 A later investigation needs its own declared contract and resource ledger within
 the user's authorization. Reflection does not silently start another run.
-Retain local-only work, no pushing, no new dependencies or paid providers, and
-binding resource safeguards. Skills do not grant permission to send messages or
-publish. Broader harness changes require separate evaluation; workflow hypotheses
+Respect the active contract's resource and external-action limits, including
+dependency/provider restrictions. Christopher subsequently authorized the
+[remote progress checkpoint](research/rogers-ramanujan/REMOTE_CHECKPOINT.md)
+and synchronization with main; those actions do not reopen a research run.
+Skills do not grant permission to send messages or publish. Broader harness changes require separate evaluation; workflow hypotheses
 remain unvalidated. Keep durable mathematics and feedback in the research folder.

@@ -33,6 +33,11 @@ supplied positivity proofs, a reproduced height-two theorem with an end-to-end
 Lean proof for every finite alphabet, and an illustrated article. It does not claim a general open-problem
 solution or an improvement to an AI architecture.
 
+Read the [full illustrated technical article (PDF, 11 pages)](research/partitions/paper/height-two-positivity.pdf),
+with [editable LaTeX source](research/partitions/paper/main.tex). The article
+formalizes the established Cho–Huh height-two theorem; it does not announce a
+new solution of an unsolved problem.
+
 The [Parikh matrix research](research/parikh/README.md) continues Christopher Yamba's 2006
 thesis on Parikh matrices and permutation statistics. It contains two articles with their
 LaTeX sources, Lean 4 proofs and verification checks. That directory is **all rights
@@ -111,5 +116,6 @@ Those records are synthetic fixtures. The comparison reports descriptive outcome
 | `meta/` | Controlled improvement of the research harness |
 | `docs/` | Research standards, architecture, and adapter contract |
 | `tests/`, `examples/` | Behavioral checks and explicitly synthetic examples |
+| `.claude/`, `CLAUDE.md` | Operator meta-harness for Claude Code: benchmarks of framework versions on open problems and change proposals, outside research scope |
 
 Contribute through [the contribution guide](CONTRIBUTING.md). Code and original repository material use the [MIT license](LICENSE); linked third-party research retains its own terms.
