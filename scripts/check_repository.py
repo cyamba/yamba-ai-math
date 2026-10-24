@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import unquote, urlparse
@@ -13,6 +14,18 @@ sys.path.insert(0, str(ROOT))
 
 from harness.catalog import ContractError, load_catalog, load_program
 from harness.planner import assemble
+
+LOCAL_DIRS = {".git", ".runs", ".venv", "venv", "__pycache__", ".pytest_cache", "dist", "build"}
+
+
+def top_level_directories() -> set[str]:
+    """Tracked top-level directories; the filesystem stands in when git is unavailable."""
+    try:
+        listed = subprocess.run(["git", "-C", str(ROOT), "ls-files", "-z"], capture_output=True, check=True).stdout
+        names = {path.split("/", 1)[0] for path in listed.decode().split("\0") if "/" in path}
+    except (OSError, subprocess.CalledProcessError):
+        names = {p.name for p in ROOT.iterdir() if p.is_dir()}
+    return {name for name in names if name not in LOCAL_DIRS and not name.endswith(".egg-info")}
 
 
 def check() -> list[str]:
@@ -54,7 +67,16 @@ def check() -> list[str]:
         elif not re.search(r"^description:\s*\S", header[1], re.M) or not re.search(rf"^name:\s*{re.escape(path.parent.name)}\s*$", header[1], re.M):
             failures.append(f"{path.relative_to(ROOT)}: invalid skill name or description")
 
-    documents = [path for path in ROOT.rglob("*.md")
+    repository_map = re.search(r"^## Repository map\n(.*?)(?=^## |\Z)", (ROOT / "AGENTS.md").read_text(encoding="utf-8"),
+                               re.S | re.M)
+    if not repository_map:
+        failures.append("AGENTS.md: missing Repository map section")
+    else:
+        for name in sorted(top_level_directories()):
+            if f"`{name}/" not in repository_map[1]:
+                failures.append(f"AGENTS.md: Repository map omits top-level directory {name}/")
+
+    documents =[path for path in ROOT.rglob("*.md")
                  if not any(part.startswith(".") for part in path.relative_to(ROOT).parts)]
     for path in documents:
         text = re.sub(r"```.*?```", "", path.read_text(encoding="utf-8"), flags=re.S)
@@ -73,5 +95,5 @@ if __name__ == "__main__":
     if errors:
         print("\n".join(errors), file=sys.stderr)
         raise SystemExit(1)
-    print("Repository checks passed: registries, feasible programs, brief/skill metadata, and local file links.")
+    print("Repository checks passed: registries, feasible programs, brief/skill metadata, repository map, and local file links.")
     print("These checks do not establish citation accuracy, novelty, mathematical validity, or model performance.")

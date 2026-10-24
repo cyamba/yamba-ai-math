@@ -106,5 +106,6 @@ Those records are synthetic fixtures. The comparison reports descriptive outcome
 | `meta/` | Controlled improvement of the research harness |
 | `docs/` | Research standards, architecture, and adapter contract |
 | `tests/`, `examples/` | Behavioral checks and explicitly synthetic examples |
+| `.claude/`, `CLAUDE.md` | Operator meta-harness for Claude Code: benchmarks of framework versions on open problems and change proposals, outside research scope |
 
 Contribute through [the contribution guide](CONTRIBUTING.md). Code and original repository material use the [MIT license](LICENSE); linked third-party research retains its own terms.
