@@ -1,0 +1,16 @@
+{
+  "candidate": "A1",
+  "scope": "Exact partial two-single C bijection only; not full KR1",
+  "frozen_utc": "2026-10-24T20:54:20Z",
+  "initial_bound": 12,
+  "extension_authorized": false,
+  "definition": "research/rogers-ramanujan/rr007/fleet-a/candidates/a1-two-singles.md",
+  "script": ".runs/rr007/a1-two-singles.py",
+  "sha256": {
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a1-two-singles.md": "04f173e5ce84151e3b5fd0c56782006df38584980df6b8396d88f483d675c747",
+    ".runs/rr007/a1-two-singles.py": "41081d4a5a4a7ec873e8de0b4d2521c667fbd911b33bea817565ff14bc3cac88",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr005_chains.py": "96378a9b872373af115164ea6176b04e5b513c45322e42c23a512c8dc4b21ca2",
+    "research/rogers-ramanujan/checks/rr005_six.py": "4546f837f606a4d45725b05533e4a39d8a29bbc551327fe98660d69947713cb9"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "record_date": "2026-10-24 Europe/Stockholm",
+  "status": "planning_complete_research_stopped",
+  "authorization": "Local plan, proposed resource contract and integrity/assignment validation only; wait for renewed research instruction.",
+  "worktree": "/private/tmp/yamba-ai-math-rr006",
+  "branch": "codex/kr1-rr006-family-search",
+  "preparation_head": "03d46d9db79cbdc2f77159defa5fc0bafcc8f5fd",
+  "contract_status": "proposed_not_accepted_for_execution",
+  "proposed_charged_minutes": {
+    "preparation_conservative": 30,
+    "future_execution_max": 120,
+    "total": 150
+  },
+  "research_execution_started": false,
+  "research_start_utc": null,
+  "research_deadline_utc": null,
+  "research_ledger_created": false,
+  "research_agents_spawned": 0,
+  "oeis_or_web_searches": 0,
+  "new_enumerations": 0,
+  "new_rule_trials": 0,
+  "new_3d_experiments": 0,
+  "mathematical_semantic_review_performed": false,
+  "historical_preparation_status_preserved": true,
+  "closed_prior_ledgers_extended": false,
+  "functional_repository_changes": false,
+  "tests": "No unittest suite or mathematical verifier run for documentation-only planning.",
+  "external_actions": "None: no push, publication, message, Drive action, provider or dependency addition.",
+  "validation_artifact": "planning-validation.json",
+  "next_action": "Wait for Christopher to renew execution instruction; then recheck accepted limits and input pins before initializing any fresh execution ledger."
+}

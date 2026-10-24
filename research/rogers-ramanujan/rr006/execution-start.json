@@ -1,0 +1,32 @@
+{
+  "attempt": "RR006",
+  "status": "executing",
+  "authorization": "2026-10-24 renewed user instruction accepts proposed contract unchanged; 30 min charged preparation + 120 execution min; local only",
+  "execution_start_utc": "2026-10-24T20:16:20+00:00",
+  "deadline_utc": "2026-10-24T22:16:20+00:00",
+  "initial_branches_deadline_utc": "2026-10-24T21:01:20+00:00",
+  "discovery_end_latest_utc": "2026-10-24T21:21:20+00:00",
+  "head": "03d46d9db79cbdc2f77159defa5fc0bafcc8f5fd",
+  "preparation_charged_minutes": 30,
+  "contract_sha256": "f86ab031eb0eb9aa5daeb2de224cf66e887648b073e72e5c413edc074dced3cc",
+  "baseline_source_bytes": 21471649,
+  "baseline_free_bytes": 17367040000,
+  "baseline_total_worktree_bytes": 21471649,
+  "compute_limit_seconds": 600,
+  "compute_used_seconds": 10.0,
+  "bootstrap_charge_note": "10 seconds conservative charge covers pre-ledger inventory/read commands and bootstrap; no mathematical inputs executed",
+  "bootstrap_reservation_seconds": 30,
+  "dispatches": [],
+  "retrieval_queries": [],
+  "retrieval_opens": [],
+  "candidate_variants": [],
+  "phase_caps_minutes": [
+    10,
+    35,
+    20,
+    35,
+    20
+  ],
+  "prior_ledgers": "preserved; not accessed for mutation",
+  "measurement_limits": "Model tokens/runtime unavailable; model memory unknown. Child RSS monitoring and storage observations cannot guarantee transient peaks. No held-out evidence; <=30 previously exposed."
+}

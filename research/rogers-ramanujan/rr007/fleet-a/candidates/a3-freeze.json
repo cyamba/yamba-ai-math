@@ -1,0 +1,15 @@
+{
+  "candidate": "A3",
+  "scope": "Proper universal restricted map: A1+A2+all a3b0+entire a2 first-mu-zero wall; not full KR1",
+  "frozen_utc": "2026-10-24T21:10:27.037501+00:00",
+  "initial_bound": 12,
+  "extension_authorized": false,
+  "sha256": {
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a3-hook-and-wall.md": "6aa398f54b6365bb66dd2f266e79462cb32ceefa2ed816aefeda8a155260d24d",
+    ".runs/rr007/a3-hook-and-wall.py": "0b600e100434244e90e0b4927dc82bba9a961967144cc1612c2eb27775deb467",
+    ".runs/rr007/a1-two-singles.py": "41081d4a5a4a7ec873e8de0b4d2521c667fbd911b33bea817565ff14bc3cac88",
+    ".runs/rr007/a2-zero-or-one-single.py": "b6693f37caf000052831622518704ec120d20c00f2133addb9d7b3e81eaba6ef",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr005_chains.py": "96378a9b872373af115164ea6176b04e5b513c45322e42c23a512c8dc4b21ca2"
+  }
+}

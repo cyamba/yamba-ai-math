@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-10-24T21:27:34.880123+00:00",
+  "completed_core_pin_manifest": ".runs/rr007/critic-b-final-pins.json",
+  "completed_core_pin_sha256": "264801437a2919d450539b0f3ab96f19baa8634a760624b02437518eaf44756f",
+  "core_artifacts_preserved": true,
+  "candidate_change": false,
+  "source_query_count": 8,
+  "source_open_count": 18,
+  "source_detailed_records": 3,
+  "artifact_sha256": {
+    "research/rogers-ramanujan/rr007/fleet-b/composition-review.md": "cd4e7a7c320d1c27f3b045a5680b22debf71ba576318d55bf01a3ccee2938463",
+    "research/rogers-ramanujan/rr007/fleet-b/composition-freeze.json": "96d828d8d5869d0670444559ecc70ec1af593dfff0a8a0b0a39b5005c0dffd43",
+    "research/rogers-ramanujan/rr007/fleet-b/checks/critic_b_composition.py": "c46a18dfdbb99c7ca543e2ac1df52bee40ed2afffa5d92f13a1736e35763ba6e",
+    "research/rogers-ramanujan/rr007/fleet-b/checks/critic_b_composition_12.json": "6d25f4673812ab1767afdc2b5c698c4bdf9bc4e15e2f1397e00e582e8ee26add",
+    "research/rogers-ramanujan/rr007/fleet-b/checks/critic_b_composition_30.json": "cc642710af46f08af2c58884bffd6ce4a251d7a598663c2b16674a6270f8f158",
+    ".runs/rr007/critic-b-composition-12-rows.json": "4bf7e1b9537fadf4f3929e74277eaa63adfb10a3fa2e80bf8a7777f5d27e8750",
+    ".runs/rr007/critic-b-composition-30-rows.json": "06beee46ac70dc28e962fc66236a44f812ca369b393857c296e8182ff11c6c16",
+    ".runs/rr007/critic-b-composition-pilot12.receipt.json": "fd20141dd389dac978a4bcc3f3bd6d718a84a56e677ca903c74fe5034284efc4",
+    ".runs/rr007/critic-b-composition-through30.receipt.json": "1a948b283a88dcba274cf4905da480b9cee0b36ca3fecd4b0de2c9d45f320722"
+  }
+}

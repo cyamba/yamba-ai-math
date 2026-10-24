@@ -1,0 +1,192 @@
+{
+  "status": "passed_assignment_only",
+  "mode": "planning_only_no_workers",
+  "record_date": "2026-10-24 Europe/Stockholm",
+  "base_head": "03d46d9db79cbdc2f77159defa5fc0bafcc8f5fd",
+  "method": "Existing harness.catalog validation and harness.planner.assemble, with attempt-local fleet supplied in memory; global registries unchanged.",
+  "checks": [
+    "Program required fields, positive resource constraints and referenced local briefs",
+    "Exact equality of fleet required capabilities and stage requirement union",
+    "Valid stage references and acyclic delivery dependencies",
+    "Capabilities, hard tags and all distinct-profile constraints",
+    "Four distinct child profiles, eight potential invocations, twenty dispatch proxy units",
+    "Topological groups fit three-child concurrency; root makes four active participants",
+    "One unrolled planner round; two review opportunities without repeated discovery"
+  ],
+  "topological_groups": [
+    [
+      "census",
+      "survey",
+      "geometry"
+    ],
+    [
+      "cross-search"
+    ],
+    [
+      "geometry-finish"
+    ],
+    [
+      "review-1"
+    ],
+    [
+      "revise"
+    ],
+    [
+      "review-final"
+    ]
+  ],
+  "solver_plan": {
+    "protocol_version": "1",
+    "program_id": "RR006-family-search",
+    "fleet_id": "rr006-family-search-local",
+    "objective": "minimum declared dispatch cost; then maximum declared preferred-tag matches; then distinct role count; then stable agent IDs",
+    "optimality_scope": "exact for this finite registry and constraints; capability tags and costs are declared proxies, not measured quality or money",
+    "cost_units": 20,
+    "distinct_agents": [
+      "critic",
+      "geometer",
+      "mathematician",
+      "scout"
+    ],
+    "rounds": 1,
+    "max_workers": 3,
+    "steps": [
+      {
+        "id": "census",
+        "stage_id": "census",
+        "round": 1,
+        "requires": [
+          "formalization"
+        ],
+        "depends_on": [],
+        "agent_id": "mathematician",
+        "cost_units": 3
+      },
+      {
+        "id": "survey",
+        "stage_id": "survey",
+        "round": 1,
+        "requires": [
+          "literature"
+        ],
+        "depends_on": [],
+        "agent_id": "scout",
+        "cost_units": 2
+      },
+      {
+        "id": "geometry",
+        "stage_id": "geometry",
+        "round": 1,
+        "requires": [
+          "geometry",
+          "formalization"
+        ],
+        "depends_on": [],
+        "agent_id": "geometer",
+        "cost_units": 3
+      },
+      {
+        "id": "cross-search",
+        "stage_id": "cross-search",
+        "round": 1,
+        "requires": [
+          "literature"
+        ],
+        "depends_on": [
+          "census",
+          "survey",
+          "geometry"
+        ],
+        "agent_id": "scout",
+        "cost_units": 2
+      },
+      {
+        "id": "geometry-finish",
+        "stage_id": "geometry-finish",
+        "round": 1,
+        "requires": [
+          "geometry",
+          "formalization"
+        ],
+        "depends_on": [
+          "census",
+          "geometry",
+          "cross-search"
+        ],
+        "agent_id": "geometer",
+        "cost_units": 3
+      },
+      {
+        "id": "review-1",
+        "stage_id": "review-1",
+        "round": 1,
+        "requires": [
+          "falsification"
+        ],
+        "depends_on": [
+          "census",
+          "cross-search",
+          "geometry-finish"
+        ],
+        "agent_id": "critic",
+        "cost_units": 2
+      },
+      {
+        "id": "revise",
+        "stage_id": "revise",
+        "round": 1,
+        "requires": [
+          "formalization"
+        ],
+        "depends_on": [
+          "review-1"
+        ],
+        "agent_id": "mathematician",
+        "cost_units": 3
+      },
+      {
+        "id": "review-final",
+        "stage_id": "review-final",
+        "round": 1,
+        "requires": [
+          "falsification"
+        ],
+        "depends_on": [
+          "revise",
+          "review-1"
+        ],
+        "agent_id": "critic",
+        "cost_units": 2
+      }
+    ]
+  },
+  "input_sha256": {
+    "research/rogers-ramanujan/rr006/plan.md": "b36da7d46e5338bbbc7442625dc6e274d546477b2fd70549d1a828511cafd743",
+    "research/rogers-ramanujan/rr006/contract.md": "f86ab031eb0eb9aa5daeb2de224cf66e887648b073e72e5c413edc074dced3cc",
+    "research/rogers-ramanujan/rr006/pre-run.md": "295d2612eebb6d3a44239900ea6f8ad7f7a9d6f92dbb22df71549af4d13cc97d",
+    "research/rogers-ramanujan/rr006/fleet-plan-input.json": "8cc5dd7303fd229fdbc8e62057fd85622be5430c0aa589d01238af672f9d818c",
+    "research/rogers-ramanujan/rr006/planning-status.json": "b2d7efaa07a6b66cadc8a608d876ec00709f5df7b817740d6ec682030cb3b765",
+    "research/rogers-ramanujan/rr006/SESSION_HANDOFF.md": "8d60113aeae6791d31987d71d374d976cfdbfa770640648bafefdd06514de3d2",
+    "research/rogers-ramanujan/rr006/preparation-status.json": "17086220eec45a04ed10830fa65db804eb31c4c701616158578696ced4bcbcc7",
+    "agents/registry.json": "3f2bc15f61aae28dcf79e04cda9d3b36dfa14356accae3f56f6212155d3c5e82",
+    "fleets/registry.json": "ec171ad378567c2c734dd3a300e95a4d4089a9b6e2ff2f14482c6fb5ab39bf77"
+  },
+  "limits": "Assignment optimality concerns declared finite costs/tags only. This is not research execution, resource-meter validation, citation inspection, mathematical review or proof.",
+  "documentation_checks": [
+    {
+      "command": "python3 -B scripts/check_repository.py",
+      "exit_code": 0,
+      "scope": "Catalog feasibility, metadata, repository map and local document links; no mathematical verifier."
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "scope": "Tracked whitespace check."
+    },
+    {
+      "check": "Planning input SHA-256 readback and tracked-change boundary",
+      "status": "passed",
+      "scope": "All recorded input hashes match; only the appended SESSION_HANDOFF.md section changed among previously tracked files."
+    }
+  ]
+}

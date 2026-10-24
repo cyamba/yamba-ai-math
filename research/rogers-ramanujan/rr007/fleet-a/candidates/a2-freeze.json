@@ -1,0 +1,14 @@
+{
+  "candidate": "A2",
+  "scope": "Exact alternative partial C a=0/1 bijection, disjoint from A1; not full KR1",
+  "frozen_utc": "2026-10-24T20:57:45Z",
+  "initial_bound": 12,
+  "extension_authorized": false,
+  "sha256": {
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a2-zero-or-one-single.md": "93486972f935e023c01ec87ca879b344316117b6dda0366417b95277bd89a5cb",
+    ".runs/rr007/a2-zero-or-one-single.py": "b6693f37caf000052831622518704ec120d20c00f2133addb9d7b3e81eaba6ef",
+    ".runs/rr007/a1-two-singles.py": "41081d4a5a4a7ec873e8de0b4d2521c667fbd911b33bea817565ff14bc3cac88",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr005_chains.py": "96378a9b872373af115164ea6176b04e5b513c45322e42c23a512c8dc4b21ca2"
+  }
+}

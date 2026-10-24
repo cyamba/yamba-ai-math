@@ -263,3 +263,22 @@ launching a full construction attempt from this handoff.
 
 CY-KR1-001/002 remains PENDING in the local feedback queue. Do not check or
 post to Drive automatically. This handoff is local and makes no delivery claim.
+
+## 8. Planning-only continuation — 24 October 2026
+
+Christopher subsequently requested a focused plan and fresh resource contract,
+explicitly retaining the research stop pending renewed instruction. Prepared
+[plan](plan.md), [proposed contract](contract.md), [pre-run reflection](pre-run.md)
+and [study-local fleet input](fleet-plan-input.json). These supersede the absence
+of planning documents described at the historical handoff above; that historical
+record and `preparation-status.json` remain unchanged.
+
+The proposed team has three distinct research branches and a separate critic,
+with at most three executing children plus root, eight invocations and twenty
+dispatch proxy units. The proposed fresh envelope is 150 charged minutes:
+30 conservative preparation plus at most 120 future elapsed execution minutes.
+Neither the budget nor execution is accepted by saving these documents.
+No research agents, searches, new enumerations, construction trials or 3D
+experiments have started. Read `planning-status.json` and
+`planning-validation.json` for the documentation/assignment check record;
+neither is a research execution receipt or mathematical review.
