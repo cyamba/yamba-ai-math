@@ -1,0 +1,52 @@
+{
+  "program": "RR005",
+  "recorded_utc": "2026-10-24T17:25:21.048042+00:00",
+  "repository": "cyamba/yamba-ai-math",
+  "base_commit": "98de713a3671520069c270b3f49216c066ae02fd",
+  "fresh_branch": "codex/kr1-rr005",
+  "old_checkout_clean_before_creation": true,
+  "protected_base_sources": {
+    "research/rogers-ramanujan/rr003/result.md": "906c714830aace6787bc786acfa6baf7cf1ed2e3b740ce7e0694c70acbb34c56",
+    "research/rogers-ramanujan/rr004/result.md": "034c3ca958321012d03075f726b4d1244b25cfa039e7670ef3e2bde68d9ad45d",
+    "research/rogers-ramanujan/feedback.md": "71aa8ac2770befdb58026210b63dcebe4b9c8ba5d02a305b1f1936ef9ada3c92",
+    "research/rogers-ramanujan/NEXT_SESSION.md": "266e6bb62ec6365200a3c7d538316c12b7934d6ec1ae37929069c32c2413b6c1"
+  },
+  "prior_ledgers": "Not copied, reset, or extended. Original checkout .runs/rr003 and .runs/rr004 left in place.",
+  "external_actions": "Read-only primary-source retrieval and authorized git fetch only; no messages, publication or push.",
+  "closing_protection_checks": {
+    "research/rogers-ramanujan/rr003/result.md": {
+      "unchanged": true,
+      "sha256": "906c714830aace6787bc786acfa6baf7cf1ed2e3b740ce7e0694c70acbb34c56"
+    },
+    "research/rogers-ramanujan/rr004/result.md": {
+      "unchanged": true,
+      "sha256": "034c3ca958321012d03075f726b4d1244b25cfa039e7670ef3e2bde68d9ad45d"
+    },
+    "research/rogers-ramanujan/feedback.md": {
+      "unchanged": true,
+      "sha256": "71aa8ac2770befdb58026210b63dcebe4b9c8ba5d02a305b1f1936ef9ada3c92"
+    },
+    "research/rogers-ramanujan/NEXT_SESSION.md": {
+      "historical_suffix_matches": true,
+      "current_sha256": "441a552ff93d6a8e4534b89fbe3935c138834043ea085116ff2e25310a9d48c0"
+    }
+  },
+  "frozen_sources_final_check": {
+    "round-1-freeze.json": {
+      "manifest_sha256": "feb241c9e3c852d4d939260ee699171ab3e48462c21698ac90de564f64e3d643",
+      "files_checked": 7,
+      "all_match": true
+    },
+    "round-2-freeze.json": {
+      "manifest_sha256": "ca1164c316efb851e6552e35b3317f3c56a13c28cfa52b18d3d7505a9b0c16c1",
+      "files_checked": 9,
+      "all_match": true
+    },
+    "round-2-review-freeze.json": {
+      "manifest_sha256": "17b9d3156faaa9503b7237ce6860d2c5bc5af73ebfa68af9a72dabfb2244c311",
+      "files_checked": 10,
+      "all_match": true
+    }
+  },
+  "closing_record_utc": "2026-10-24T17:39:31.857776+00:00"
+}

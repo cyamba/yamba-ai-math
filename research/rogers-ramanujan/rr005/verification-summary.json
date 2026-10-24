@@ -1,0 +1,340 @@
+{
+  "program": "RR005",
+  "status": "checks_passed_full_KR1_unresolved",
+  "recorded_utc": "2026-10-24T17:39:31.874519+00:00",
+  "assurance": "Exposed finite implementation checks. Universal retained claims have written arguments and two separately scoped informal reviews, not formal certification.",
+  "exhaustive_input_ceiling": 30,
+  "scope_deviations": [
+    "First-round raising edges from sweep inputs <=30 reached33.",
+    "First verifier frozen U control31, also replayed by engineering suite.",
+    "First critic isolated controls reached U input31/output34 and C input9081/output9084.",
+    "Second-round six verifier and independent critic bounded all inputs/raising endpoints <=30; C1 and weight38/infinite collision reviewed symbolically only."
+  ],
+  "round2_counts": {
+    "U": 1393,
+    "C": 1393,
+    "E_U": 65,
+    "E_C": 65,
+    "restricted_U": 411,
+    "restricted_C": 411,
+    "U_six_edges": 31,
+    "C_six_edges": 31
+  },
+  "repository_tests": {
+    "count": 98,
+    "status": "passed_after_final_functional_changes"
+  },
+  "repository_integrity": "passed",
+  "completion_gate": {
+    "expected_exit_code": 2,
+    "actual_exit_code": 2,
+    "reason": "Universal F_U/F_C root map and complete KR1 proof absent"
+  },
+  "computation": {
+    "limit_seconds": 600,
+    "used_seconds": 129.5324243309733,
+    "measured_child_wall_seconds": 9.5324243309733,
+    "conservative_maintenance_seconds": 120,
+    "peak_child_rss_bytes": 33718272,
+    "peak_rss_limit_bytes": 2147483648
+  },
+  "storage": {
+    "whole_new_worktree_logical_bytes_at_snapshot": 21971264,
+    "shared_git_increment_reserve_bytes": 16777216,
+    "conservative_accounted_bytes": 38748480,
+    "increment_limit_bytes": 1073741824,
+    "free_bytes_at_snapshot": 18841600000,
+    "free_floor_bytes": 5368709120
+  },
+  "measurement_limits": [
+    "Maintenance reads/writes, setup and final local Git operations use120 conservative seconds in addition to metered children.",
+    "Child wall duration and post-exit RUSAGE_CHILDREN peak RSS are measured; model runtime/RAM and simultaneous process-tree aggregate RSS are not measured.",
+    "RSS checks are post-exit, not OS reservations. Storage checks are snapshots, not hard transient quotas.",
+    "Whole worktree bytes include base files and bytecode;16MiB reserved for shared Git increments without a pre-fetch baseline. A final filesystem snapshot is recorded in execution.json."
+  ],
+  "freezes": {
+    "round-1-freeze.json": {
+      "manifest_sha256": "feb241c9e3c852d4d939260ee699171ab3e48462c21698ac90de564f64e3d643",
+      "files_checked": 7,
+      "all_match": true
+    },
+    "round-2-freeze.json": {
+      "manifest_sha256": "ca1164c316efb851e6552e35b3317f3c56a13c28cfa52b18d3d7505a9b0c16c1",
+      "files_checked": 9,
+      "all_match": true
+    },
+    "round-2-review-freeze.json": {
+      "manifest_sha256": "17b9d3156faaa9503b7237ce6860d2c5bc5af73ebfa68af9a72dabfb2244c311",
+      "files_checked": 10,
+      "all_match": true
+    }
+  },
+  "protected_sources": {
+    "research/rogers-ramanujan/rr003/result.md": {
+      "unchanged": true,
+      "sha256": "906c714830aace6787bc786acfa6baf7cf1ed2e3b740ce7e0694c70acbb34c56"
+    },
+    "research/rogers-ramanujan/rr004/result.md": {
+      "unchanged": true,
+      "sha256": "034c3ca958321012d03075f726b4d1244b25cfa039e7670ef3e2bde68d9ad45d"
+    },
+    "research/rogers-ramanujan/feedback.md": {
+      "unchanged": true,
+      "sha256": "71aa8ac2770befdb58026210b63dcebe4b9c8ba5d02a305b1f1936ef9ada3c92"
+    },
+    "research/rogers-ramanujan/NEXT_SESSION.md": {
+      "historical_suffix_matches": true,
+      "current_sha256": "441a552ff93d6a8e4534b89fbe3935c138834043ea085116ff2e25310a9d48c0"
+    }
+  },
+  "portable_critic_scripts": {
+    "research/rogers-ramanujan/rr005/reproduction/critic_round2_literal.py": "e79ddd7a58bed4a65a01c4e9146eaa8b23d345f3cddf9604e87a93c82b5aba94",
+    "research/rogers-ramanujan/rr005/reproduction/critic_round1_literal.py": "d66138f4218a30f8d9dce0f325146cd7d9b90b80575b56bef4a021e6fcb91b78"
+  },
+  "receipts": [
+    {
+      "label": "author-pilot",
+      "elapsed_seconds": 0.07024954102234915,
+      "peak_child_rss_bytes": 22740992,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/author-pilot.json",
+      "receipt_sha256": "53c6ef2c00619acde2f5fd848f86b9e3e5631d8e35bc5ecbb6f8d4491164880a",
+      "command": [
+        "python3",
+        "research/rogers-ramanujan/checks/rr005_verify.py",
+        "--ceiling",
+        "12",
+        "--output",
+        ".runs/rr005/author-pilot-result.json"
+      ],
+      "started_utc": "2026-10-24T17:24:05.698631+00:00"
+    },
+    {
+      "label": "author-through30",
+      "elapsed_seconds": 0.662134749989491,
+      "peak_child_rss_bytes": 23035904,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/author-through30.json",
+      "receipt_sha256": "949f0972ae6cebae81e3b3b7ff4649378c1850531e235898f23af78f1b715bdf",
+      "command": [
+        "python3",
+        "research/rogers-ramanujan/checks/rr005_verify.py",
+        "--ceiling",
+        "30",
+        "--output",
+        ".runs/rr005/author-through30-result.json"
+      ],
+      "started_utc": "2026-10-24T17:24:11.502184+00:00"
+    },
+    {
+      "label": "critic-r1-literal30",
+      "elapsed_seconds": 0.021707832987885922,
+      "peak_child_rss_bytes": 12894208,
+      "exit_code": 2,
+      "receipt": ".runs/rr005/critic-r1-literal30.json",
+      "receipt_sha256": "e6e9eb17a343ab2e96e28fc3cf61c3251c9f49ad2da5e926d7a5d004047bdc0d",
+      "command": [
+        "python3",
+        "research/rogers-ramanujan/rr005/reproduction/critic_round1_literal.py"
+      ],
+      "started_utc": "2026-10-24T17:25:52.580205+00:00"
+    },
+    {
+      "label": "critic-r1-literal30-retry",
+      "elapsed_seconds": 0.12837250001030043,
+      "peak_child_rss_bytes": 19808256,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/critic-r1-literal30-retry.json",
+      "receipt_sha256": "7af009960a7324dba63603d88ff3017b353cadf9aaee6dcac93017a96211d89e",
+      "command": [
+        "python3",
+        "research/rogers-ramanujan/rr005/reproduction/critic_round1_literal.py"
+      ],
+      "started_utc": "2026-10-24T17:26:14.934808+00:00",
+      "stdout": "{\"bound\": 30, \"counts\": {\"C\": 1393, \"C_D\": 195, \"C_restricted\": 293, \"U\": 1393, \"U_D\": 195, \"U_restricted\": 293}, \"first_unmatched_roots\": {\"C\": {\"object\": [2, 0, [2, 2], []], \"weight\": 8}, \"U\": {\"object\": [8], \"weight\": 8}}, \"frozen_hashes_match\": true, \"status\": \"passed; finite evidence only\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "repository-tests",
+      "elapsed_seconds": 4.496290957991732,
+      "peak_child_rss_bytes": 33718272,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/repository-tests.json",
+      "receipt_sha256": "411b5e2e4fa5c8afea1a848130ad2d613d83406867c247c1abb3d17e653974fc",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_utc": "2026-10-24T17:26:42.531962+00:00",
+      "test_result_tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 98 tests in 2.603s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "label": "program-plan",
+      "elapsed_seconds": 0.05661829098244198,
+      "peak_child_rss_bytes": 22790144,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/program-plan.json",
+      "receipt_sha256": "dcab7703b2ece8f45135e49796cbf265c0ea2e6b08c36eabf9c60be1df44431a",
+      "command": [
+        "python3",
+        "-m",
+        "harness",
+        "plan",
+        "programs/rogers-ramanujan-rr005.json"
+      ],
+      "started_utc": "2026-10-24T17:26:47.038981+00:00",
+      "stdout": "{\n  \"protocol_version\": \"1\",\n  \"program_id\": \"RR005\",\n  \"fleet_id\": \"pair\",\n  \"objective\": \"minimum declared dispatch cost; then maximum declared preferred-tag matches; then distinct role count; then stable agent IDs\",\n  \"optimality_scope\": \"exact for this finite registry and constraints; capability tags and costs are declared proxies, not measured quality or money\",\n  \"cost_units\": 16,\n  \"distinct_agents\": [\n    \"critic\",\n    \"mathematician\"\n  ],\n  \"rounds\": 2,\n  \"max_workers\": 1,\n  \"steps\": [\n    {\n      \"id\": \"r1--propose\",\n      \"stage_id\": \"propose\",\n      \"round\": 1,\n      \"requires\": [\n        \"formalization\"\n      ],\n      \"depends_on\": [],\n      \"agent_id\": \"mathematician\",\n      \"cost_units\": 3\n    },\n    {\n      \"id\": \"r1--challenge\",\n      \"stage_id\": \"challenge\",\n      \"round\": 1,\n      \"requires\": [\n        \"falsification\"\n      ],\n      \"depends_on\": [\n        \"r1--propose\"\n      ],\n      \"agent_id\": \"critic\",\n      \"cost_units\": 2\n    },\n    {\n      \"id\": \"r1--revise\",\n      \"stage_id\": \"revise\",\n      \"round\": 1,\n      \"requires\": [\n        \"formalization\"\n      ],\n      \"depends_on\": [\n        \"r1--challenge\"\n      ],\n      \"agent_id\": \"mathematician\",\n      \"cost_units\": 3\n    },\n    {\n      \"id\": \"r2--propose\",\n      \"stage_id\": \"propose\",\n      \"round\": 2,\n      \"requires\": [\n        \"formalization\"\n      ],\n      \"depends_on\": [\n        \"r1--revise\"\n      ],\n      \"agent_id\": \"mathematician\",\n      \"cost_units\": 3\n    },\n    {\n      \"id\": \"r2--challenge\",\n      \"stage_id\": \"challenge\",\n      \"round\": 2,\n      \"requires\": [\n        \"falsification\"\n      ],\n      \"depends_on\": [\n        \"r2--propose\"\n      ],\n      \"agent_id\": \"critic\",\n      \"cost_units\": 2\n    },\n    {\n      \"id\": \"r2--revise\",\n      \"stage_id\": \"revise\",\n      \"round\": 2,\n      \"requires\": [\n        \"formalization\"\n      ],\n      \"depends_on\": [\n        \"r2--challenge\"\n      ],\n      \"agent_id\": \"mathematician\",\n      \"cost_units\": 3\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "six-pilot",
+      "elapsed_seconds": 0.07805266600917093,
+      "peak_child_rss_bytes": 22429696,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/six-pilot.json",
+      "receipt_sha256": "b8ba590bfbb990aabc6b72c87df030d9dce3dbeab1589880829690cd35e615af",
+      "command": [
+        "python3",
+        "research/rogers-ramanujan/checks/rr005_six_verify.py",
+        "--ceiling",
+        "12",
+        "--output",
+        ".runs/rr005/six-pilot-result.json"
+      ],
+      "started_utc": "2026-10-24T17:31:30.174433+00:00"
+    },
+    {
+      "label": "six-through30",
+      "elapsed_seconds": 0.8012949169788044,
+      "peak_child_rss_bytes": 23265280,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/six-through30.json",
+      "receipt_sha256": "5b15c1d731e0e2c5bf3efa50fa6dbaffca8761b3f1d3aae24f16650c6a7ac336",
+      "command": [
+        "python3",
+        "research/rogers-ramanujan/checks/rr005_six_verify.py",
+        "--ceiling",
+        "30",
+        "--output",
+        ".runs/rr005/six-through30-result.json"
+      ],
+      "started_utc": "2026-10-24T17:33:08.663589+00:00"
+    },
+    {
+      "label": "final-tests",
+      "elapsed_seconds": 2.858820541005116,
+      "peak_child_rss_bytes": 32161792,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/final-tests.json",
+      "receipt_sha256": "149b91fb21ff8a48e63ab617852814b2dbb02349f1cd177da1d11f4c52fc1a61",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_utc": "2026-10-24T17:34:29.623293+00:00",
+      "test_result_tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 98 tests in 2.711s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "label": "critic-r2-literal30",
+      "elapsed_seconds": 0.1474341249850113,
+      "peak_child_rss_bytes": 20152320,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/critic-r2-literal30.json",
+      "receipt_sha256": "6b679c72b4736882f6219c40c4de80cc3f99e12b1c4d23b9fff7464d8a95881e",
+      "command": [
+        "python3",
+        "research/rogers-ramanujan/rr005/reproduction/critic_round2_literal.py"
+      ],
+      "started_utc": "2026-10-24T17:35:23.996371+00:00",
+      "stdout": "{\"E_U_types\": {\"A\": 50, \"B\": 9, \"C0\": 6}, \"all_computational_inputs_and_edge_endpoints_at_most\": 30, \"both_round_two_freezes_match\": true, \"bound\": 30, \"counts\": {\"C\": 1393, \"C_E\": 65, \"C_restricted\": 411, \"C_six_edges\": 31, \"U\": 1393, \"U_E\": 65, \"U_restricted\": 411, \"U_six_edges\": 31}, \"first_unmatched_F_roots\": {\"C\": {\"object\": [2, 0, [2, 2], []], \"weight\": 8}, \"U\": {\"object\": [8], \"weight\": 8}}, \"status\": \"passed; C1 and cost-eight family reviewed symbolically only\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "repository-integrity",
+      "elapsed_seconds": 0.11929191701347008,
+      "peak_child_rss_bytes": 18120704,
+      "exit_code": 0,
+      "receipt": ".runs/rr005/repository-integrity.json",
+      "receipt_sha256": "cc1bc88f7175bd2c21a52796ce010e078895c9cf73e2f5efa1c8421cbc932b18",
+      "command": [
+        "python3",
+        "scripts/check_repository.py"
+      ],
+      "started_utc": "2026-10-24T17:38:57.108932+00:00",
+      "stdout": "Repository checks passed: registries, feasible programs, brief/skill metadata, repository map, and local file links.\nThese checks do not establish citation accuracy, novelty, mathematical validity, or model performance.\n",
+      "stderr": ""
+    },
+    {
+      "label": "final-completion-gate",
+      "elapsed_seconds": 0.09215629199752584,
+      "peak_child_rss_bytes": 22364160,
+      "exit_code": 2,
+      "receipt": ".runs/rr005/final-completion-gate.json",
+      "receipt_sha256": "cc212bf0cfc349ca3b23bca1d6cb36c4da9ea6b128c4a58ffd6d53a0fd9b3a65",
+      "command": [
+        "python3",
+        "-O",
+        "research/rogers-ramanujan/checks/rr005_six_verify.py",
+        "--ceiling",
+        "12",
+        "--require-bijection",
+        "--output",
+        ".runs/rr005/final-completion-gate-result.json"
+      ],
+      "started_utc": "2026-10-24T17:38:58.051156+00:00",
+      "stdout": "{\"status\": \"six_strip_checks_passed_full_KR1_unresolved\"}\n",
+      "stderr": ""
+    }
+  ],
+  "result_artifacts": {
+    ".runs/rr005/author-through30-result.json": {
+      "bytes": 19380,
+      "sha256": "2c869a9244934519980d913e757ab37dc8f8333108a97b98b1e2cef6583b11f6"
+    },
+    ".runs/rr005/final-completion-gate-result.json": {
+      "bytes": 3795,
+      "sha256": "995825396d24c207bc7409fd7cd73b32379a3822732b95e375e0b8673b34189f"
+    },
+    ".runs/rr005/six-through30-result.json": {
+      "bytes": 12825,
+      "sha256": "1501a2254d5661bf89db5f5886875306e28acded47014555405a127b75aba7e0"
+    },
+    ".runs/rr005/six-pilot-result.json": {
+      "bytes": 3711,
+      "sha256": "7b38687a2c65c437ca20a38de2769337092b6d2fa107582f5f37d1b8da33ca75"
+    },
+    ".runs/rr005/author-pilot-result.json": {
+      "bytes": 3942,
+      "sha256": "c8ad61689a70c686ee129f889950cbf7e5991615d07ee2a73aeb62d3f986449c"
+    }
+  },
+  "ledger_sha256_at_snapshot": "ce3dc23ea36c0d4389c1710aa1119c57f403505ede0cb239406fede1a650bcfc",
+  "failed_runs_preserved": [
+    "critic-r1-literal30"
+  ],
+  "expected_nonzero_completion_runs": [
+    "final-completion-gate"
+  ]
+}

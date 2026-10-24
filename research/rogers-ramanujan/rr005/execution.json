@@ -1,0 +1,100 @@
+{
+  "program": "RR005",
+  "base_commit": "98de713",
+  "branch": "codex/kr1-rr005",
+  "worktree": "/private/tmp/yamba-ai-math-rr005",
+  "preparation_charge_seconds": 1200,
+  "execution_start_utc": "2026-10-24T17:13:52.185735+00:00",
+  "deadline_utc": "2026-10-24T18:53:52.185735+00:00",
+  "discovery_deadline_utc": "2026-10-24T17:53:52.185735+00:00",
+  "elapsed_limit_seconds": 7200,
+  "reviews_used": 2,
+  "dispatch_proxy_units_used": 16,
+  "computation_limit_seconds": 600,
+  "computational_bootstrap_and_maintenance_charge_seconds": 120,
+  "free_space_bytes_at_start": 22896640000,
+  "status": "closed_incomplete_full_KR1",
+  "stages": [
+    {
+      "round": 1,
+      "stage": "propose",
+      "cost": 3,
+      "frozen_utc": "2026-10-24T17:24:05.646709+00:00"
+    },
+    {
+      "round": 1,
+      "stage": "challenge_dispatched",
+      "cost": 2,
+      "profile": "rr005_critic"
+    },
+    {
+      "round": 1,
+      "stage": "challenge_completed",
+      "cost": 0,
+      "verdict": "supported for scoped claims"
+    },
+    {
+      "round": 1,
+      "stage": "revise",
+      "cost": 3
+    },
+    {
+      "round": 2,
+      "stage": "propose",
+      "cost": 3,
+      "frozen_utc": "2026-10-24T17:31:30.115461+00:00"
+    },
+    {
+      "round": 2,
+      "stage": "challenge_dispatched",
+      "cost": 2,
+      "profile": "rr005_critic"
+    },
+    {
+      "round": 2,
+      "stage": "challenge_completed",
+      "cost": 0,
+      "verdict": "supported for scoped normal forms/restricted theorem; specified P/Q union refuted"
+    },
+    {
+      "round": 2,
+      "stage": "revise",
+      "cost": 3,
+      "result": "accept scoped review; no frozen mathematical changes; close"
+    }
+  ],
+  "discovery_stopped_utc": "2026-10-24T17:34:08.080426+00:00",
+  "discovery_stop_reason": "Cost-six reduction frozen and checked; tentative cost-eight rules collide, no full residual root map selected. Final reusable claims frozen for second/last review.",
+  "mathematical_status": "full_KR1_unresolved",
+  "mathematics_closed_utc": "2026-10-24T17:38:49.974824+00:00",
+  "review_assurance": "Separate informal semantic reviews, not formal certification or independent-error guarantee",
+  "scope_deviations": [
+    "First-round input enumeration <=30 but raising-edge outputs up to33; isolated U input31/output34 and C input9081/output9084. Engineering tests replay frozen first-verifier weight31 control. Second-round six verifier/critic inputs and endpoints <=30."
+  ],
+  "closed_utc": "2026-10-24T17:39:57.515456+00:00",
+  "charged_total_elapsed_seconds": 2765.329721,
+  "stop_reason": "Two authorized semantic reviews and all16 dispatch proxy units spent; no complete residual-root map. Closing checks pass.",
+  "total_elapsed_accounting": "1200-second conservative preparation charge plus actual wall time from execution_start_utc through closed_utc. Local checkpoint commit follows as closure maintenance; allow120 additional seconds below cap.",
+  "closure_maintenance_reserve_seconds": 120,
+  "math_disagreement": "none on retained scoped claims",
+  "full_KR1": "unresolved",
+  "novelty": "NOT VERIFIED",
+  "formal_certification": "not performed",
+  "repository_tests": {
+    "count": 98,
+    "status": "passed"
+  },
+  "repository_integrity": "passed",
+  "completion_gate_exit_code": 2,
+  "final_resources": {
+    "computation_seconds": 129.5324243309733,
+    "computation_limit_seconds": 600,
+    "conservative_maintenance_seconds": 120,
+    "peak_child_rss_bytes": 33718272,
+    "whole_worktree_logical_bytes_before_commit": 21986438,
+    "shared_git_increment_reserve_bytes": 16777216,
+    "free_bytes_before_commit": 19906560000,
+    "limits_and_measurement_notes": "See verification-summary.json and contract.md"
+  },
+  "local_checkpoint": "All RR005 code, proofs, separate reviews and summary records retained on codex/kr1-rr005. Raw receipts remain ignored in the worktree. No push/publication authorized or performed."
+}

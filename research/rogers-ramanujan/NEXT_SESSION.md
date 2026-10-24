@@ -1,3 +1,21 @@
+# Current checkpoint: RR005 closed — 2026-10-24
+
+Complete KR1 remains unresolved. Read the [RR005 result](rr005/result.md) and
+[RR005 continuation plan](rr005/NEXT_SESSION.md). Two separate reviews support
+universal U/C unit–triple–six normal forms and the exact restricted source
+with columns in {1,3,6}. A uniform residual F-root bijection is still missing;
+the specified tentative cost-eight pair collides. Novelty is NOT VERIFIED.
+
+RR005 used fresh branch `codex/kr1-rr005` from origin/main `98de713`, in
+`/private/tmp/yamba-ai-math-rr005`; it did not reuse or switch the historical
+checkout below. Both review rounds and 16 dispatch proxies are spent. No
+further research run, push, publication or feedback delivery is authorized
+by this handoff. Earlier ledgers/evidence and pending feedback are preserved.
+
+All earlier handoff content follows verbatim and describes earlier states.
+
+---
+
 # Current checkpoint: RR004 closed — 2026-10-24
 
 RR004 has now executed and closed. Complete KR1 remains unresolved.
