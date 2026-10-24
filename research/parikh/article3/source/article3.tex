@@ -1,9 +1,9 @@
 \documentclass[11pt,a4paper]{article}
 \input{macros}
-\hypersetup{pdftitle={Four diagonals suffice: completeness of Parikh matrices when letters occur at most twice},pdfauthor={Christopher Yamba}}
-\title{\vspace{-9mm}Four diagonals suffice:\\[2pt] completeness of Parikh matrices when letters occur at most twice}
+\hypersetup{pdftitle={Four diagonals for doubled letters, five for tripled: completeness of Parikh matrices},pdfauthor={Christopher Yamba}}
+\title{\vspace{-9mm}Four diagonals for doubled letters, five for tripled:\\[2pt] completeness of Parikh matrices}
 \author{Christopher Yamba}
-\date{October 2026}
+\date{24 October 2026 (version 2)}
 \newcommand{\Lt}[1]{L_{#1}}
 \newcommand{\Umat}{U}
 \newcommand{\ee}[1]{\mathbf{e}_{#1}}
@@ -13,11 +13,11 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-The Parikh matrix of a word over an ordered alphabet records, diagonal by diagonal, the numbers of occurrences of the scattered subwords made of consecutive letters. For permutations the pair counts on the third diagonal determine the whole matrix (the completeness theorem of the author's 2006 thesis, and a special case of Salomaa's $\gamma$-property theorem of 2005), while Salomaa showed that in general no fixed number of diagonals suffices. We prove that if every letter other than the first and the last letter of the alphabet occurs at most twice, the first four diagonals determine the Parikh matrix, and we give the long counts explicitly: the count of $j(j+1)\cdots l$ factorises across every edge $e$ at which $w$ avoids the scattered subword $e(e+1)e(e+1)$, and along a chain of interleaved pairs it is a bilinear expression in four counts of length $2$ and $3$. This proves, for such words, a statement that Salomaa reports was sometimes conjectured in general, and it contains Simpson's result for palindromes in which every letter occurs twice; in particular, the Parikh classes of words in which each letter occurs twice are the sets of words with given third and fourth diagonals. Salomaa's construction shows that counts of length at most $n$ do not suffice when the inner letters occur $n$ times; we show that one copy of the first letter is enough, giving for every $n\ge2$ two words of content $(1,n,\dots,n)$ whose Parikh matrices differ only in the corner. Their window counts are ballot numbers, among them the Catalan number $C_n$, by a reflection argument. We conjecture that counts of length at most $n+1$ always suffice when the inner letters occur at most $n$ times, and support it by exhaustive computation for $n=3$ and $n=4$. The main theorem, the rectangle rule, the crossing chain and the corner statement of the sharpness family for $n=3,4$ are formalised in Lean~4 at the level of words.
+The Parikh matrix of a word over an ordered alphabet records, diagonal by diagonal, the numbers of occurrences of the scattered subwords made of consecutive letters. For permutations the pair counts on the third diagonal determine the whole matrix (the completeness theorem of the author's 2006 thesis, and a special case of Salomaa's $\gamma$-property theorem of 2005), while Salomaa showed that in general no fixed number of diagonals suffices. We prove that if every letter other than the first and the last occurs at most twice, the first four diagonals determine the Parikh matrix, and that if they occur at most three times, the first five do; both results come with explicit formulas. The second follows from a local pivot theorem: the number of occurrences of $j(j+1)\cdots l$ is determined by the shorter such counts as soon as one letter at distance at least $2$ from $j$ and from $l$ occurs at most twice, or it and its two neighbours occur at most three times. The proof factorises a block of the Parikh matrix through the copies of that letter and uses a finite chain lemma. Explicit words show that the distance condition and the neighbour bounds cannot be relaxed, and that the pivot may not occur five times; whether it may occur four times is open. In Salomaa's sharpness construction one copy of the first letter suffices: for every $n\ge2$ two words of content $(1,n,\dots,n)$ have Parikh matrices that differ only in the top right entry, with ballot numbers, among them the Catalan number $C_n$, as other entries. We conjecture that counts of length at most $n+1$ suffice when the inner letters occur at most $n$ times; this holds for $n\le3$, and exhaustive computation supports it for $n=4$. Both completeness theorems are formalised in Lean~4.
 \end{abstract}
 \medskip
-\noindent\textit{Keywords:} Parikh matrix; scattered subword; M-ambiguity; Cauchy inequality for words; ballot numbers; formal verification.\par
-\noindent\textit{Mathematics Subject Classification (2020):} 68R15, 05A05, 05A15.
+\noindent\textit{Keywords:} Parikh matrix; scattered subword; M-ambiguity; Cauchy inequality for words; total positivity; ballot numbers; formal verification.\par
+\noindent\textit{Mathematics Subject Classification (2020):} 68R15, 05A05, 05A15, 15B48.
 
 \section{Introduction}\label{sec:intro}
 
@@ -25,7 +25,7 @@ Let $w$ be a word over the ordered alphabet $1<2<\dots<k$. Its \emph{Parikh matr
 
 The author's 2006 thesis~\cite{Yamba06} read the Parikh matrix of a permutation diagonal by diagonal (``it seems natural to continue this procedure, investigating the entries by going through the diagonals in increasing order''~\cite[\thesisp{8}]{Yamba06}) and proved the \emph{Parikh matrix completeness theorem}: the third diagonal of the Parikh matrix of a permutation determines the whole matrix~\cite[Theorem~3.5, \thesispp{19}{20}]{Yamba06}. For words with repeated letters the third diagonal no longer suffices~\cite[p.~226]{Sal06}, and~\cite[Theorem~A]{Y26b} says exactly when it does. Salomaa's $\gamma$-property~\cite{Sal05i}, in the form quoted in~\cite[Theorem~3, p.~226]{Sal06}, gives a sufficient condition for the second and third diagonals to determine the matrix; it appeared the year before the thesis and already contains the permutation case, since the condition is empty when every letter occurs once; its condition fails as soon as two adjacent letters occur at least twice each and have a pair count other than $0$, $1$, $n_in_{i+1}-1$ and $n_in_{i+1}$. Salomaa then showed that \emph{no} fixed number of diagonals suffices in general: for every entry there are two Parikh matrices that differ only there~\cite[Theorem~4, p.~228]{Sal06}. He adds that it is ``not so easy to give examples of different Parikh matrices whose second, third and fourth diagonals coincide. (Indeed, it was sometimes conjectured that such examples do not exist.)''~\cite[p.~228]{Sal06}. His examples use many repeated letters: in his witnesses for a window of $n+1$ letters, the inner and last letters occur $n$ times and the first letter $2^{n-1}$ times (and $2^{n-1}t$ times when the two corners are to differ by~$t$)~\cite[Lemma~3, p.~227, and proof of Theorem~4]{Sal06}.
 
-This note asks what happens when the multiplicities are bounded, and answers the first case. For $j<l$ the \emph{window} $[j,l]$ is the set of letters $j,\dots,l$, its \emph{corner} is the count $\cntr{j}{l}$, and $j+1,\dots,l-1$ are its \emph{inner letters}.
+This note asks what happens when the multiplicities are bounded, and answers the first two cases. For $j<l$ the \emph{window} $[j,l]$ is the set of letters $j,\dots,l$, its \emph{corner} is the count $\cntr{j}{l}$, and $j+1,\dots,l-1$ are its \emph{inner letters}.
 
 \begin{maintheorem}{A}\label{thm:A}
 Let $j<l$ with $l-j\ge3$, and let $w$ be a word in which every inner letter of $[j,l]$ occurs at most twice. Then $\cntr{j}{l}$ is determined by the counts $\cntr{j'}{l'}$ with $j\le j'\le l'\le l$ and $l'-j'<l-j$: every word $w'$ with the same such counts has $\cntof{w'}{j\upto l}=\cntr{j}{l}$. The value is given explicitly by \cref{thm:main}.
@@ -37,7 +37,7 @@ By induction on the length of the window we obtain the completeness theorem for 
 If every letter other than $1$ and $k$ occurs at most twice in $w$, then the first four diagonals of $\Pmat{w}$ determine $\Pmat{w}$: every word with the same first four diagonals has the same Parikh matrix.
 \end{corollary}
 
-For permutations it is weaker by one diagonal than the thesis's theorem, and it contains Simpson's result for palindromes in which every letter occurs exactly twice~\cite[Corollary~4, p.~331]{Sim20}, on which the third diagonal is a function of the second~\cite[Theorem~3(b)]{Sim20}. It confirms, for these words, the statement reported in~\cite[p.~228]{Sal06}. The number of diagonals cannot be lowered, nor the multiplicity bound raised: the first three diagonals do not suffice (\cref{ex:fourth}), and ``twice'' cannot be replaced by ``three times'', by Salomaa's construction~\cite[Lemma~3 and proof of Theorem~4]{Sal06} with $n=3$, or by \cref{thm:B} (\cref{ex:fourth}). The proof (\cref{sec:rect,sec:main}) rests on two rules that extend the thesis's product rule. The \emph{rectangle rule} (\cref{lem:rect}) factorises a long count across any edge whose two letters meet as a rectangle; it gives a sufficient condition for equality in the Cauchy inequality for words~\cite{MSY04,Sal05}. The \emph{crossing chain} (\cref{prop:chain}) computes a long count along interleaved pairs $i(i+1)i(i+1)$. In particular the Parikh classes of the words in which each of $k$ letters occurs twice are the sets of words with given third and fourth diagonals (\cref{cor:doubled}).
+For permutations it is weaker by one diagonal than the thesis's theorem, and it contains Simpson's result for palindromes in which every letter occurs exactly twice~\cite[Corollary~4, p.~331]{Sim20}, on which the third diagonal is a function of the second~\cite[Theorem~3(b)]{Sim20}. It confirms, for these words, the statement reported in~\cite[p.~228]{Sal06}. Neither parameter of \cref{cor:A} can be improved: the first three diagonals do not suffice (\cref{ex:fourth}), and with four diagonals ``twice'' cannot be replaced by ``three times'', by Salomaa's construction~\cite[Lemma~3 and proof of Theorem~4]{Sal06} with $n=3$, or by \cref{thm:B} (\cref{ex:fourth}). The proof (\cref{sec:rect,sec:main}) rests on two rules that extend the cut rule (\cref{lem:cut}), the product form of the rule behind the thesis's completeness theorem. The \emph{rectangle rule} (\cref{lem:rect}) factorises a long count across any edge whose two letters meet as a rectangle; it gives a sufficient condition for equality in the Cauchy inequality for words~\cite{MSY04,Sal05}. The \emph{crossing chain} (\cref{prop:chain}) computes a long count along interleaved pairs $i(i+1)i(i+1)$. In particular the Parikh classes of the words in which each of $k$ letters occurs twice are the sets of words with given third and fourth diagonals (\cref{cor:doubled}).
 
 In the other direction, the following family shows that the first letter of Salomaa's witnesses can occur just once.
 
@@ -51,7 +51,36 @@ So, as Salomaa's construction already shows, when the inner letters occur $n$ ti
 Let $n\ge1$. If every inner letter of $[j,l]$ occurs at most $n$ times in $w$ and $l-j\ge n+1$, then $\cntr{j}{l}$ is determined by the shorter counts of the window. Hence, if every letter other than $1$ and $k$ occurs at most $n$ times, the first $n+2$ diagonals determine the Parikh matrix.
 \end{mainconj}
 
-The case $n=1$ is the cut rule of \cref{lem:cut}, and $n=2$ is \cref{thm:A}. \Cref{sec:conj} reports exhaustive evidence for $n=3$ and $n=4$; if true, the conjecture says that Salomaa's construction is optimal in its inner multiplicities. \Cref{sec:verify} describes a formalisation in Lean~4 of \cref{thm:A}, \cref{cor:A}, the rectangle rule, the crossing chain and the corner statement of \cref{thm:B} for $n=3,4$, together with the computer checks of every numerical statement; the supplementary files are on the article's web page and in the repository \url{https://github.com/cyamba/yamba-ai-math/tree/main/research/parikh}. Our companion articles~\cite{Y26a,Y26b} study the largest Parikh classes and the values of the fourth diagonal for words with repeated letters, and~\cite{Y26b} determines exactly when the first three diagonals suffice~\cite[Theorem~A]{Y26b}; the present note takes up the question of the further diagonals raised at the end of~\cite{Y26b}. Its preliminaries, the product formula~\eqref{eq:product}, the realisation of projections and the cut rule (\cref{lem:cut}) are repeated from~\cite[Section~2 and Lemma~3.1]{Y26b} to keep the note self-contained; no proof here depends on~\cite{Y26a,Y26b}.
+The case $n=1$ is the cut rule of \cref{lem:cut}, and $n=2$ is \cref{thm:A}. Our second main result proves the case $n=3$. It pivots on a letter instead of an edge, and it is local: it needs a bound on one letter and its two neighbours only.
+
+\begin{maintheorem}{D}\label{thm:D}
+Let $j<l$ with $l-j\ge4$, and let $m$ be a letter with $j+2\le m\le l-2$. Suppose that $m$ occurs at most twice in $w$, or that $m-1$, $m$ and $m+1$ each occur at most three times. Then $\cntr{j}{l}$ is determined by the shorter counts of the window $[j,l]$. In the first case the multiplicities of the other letters are arbitrary. The value is given explicitly by \cref{thm:pivot}.
+\end{maintheorem}
+
+\begin{corollary}\label{cor:C3}
+\Cref{conj:C} holds for $n=3$. In particular, if every letter other than $1$ and $k$ occurs at most three times in $w$, then the first five diagonals of $\Pmat{w}$ determine $\Pmat{w}$.
+\end{corollary}
+
+\begin{corollary}\label{cor:D2}
+If every letter $m$ with $3\le m\le k-2$ occurs at most twice in $w$, then the first five diagonals of $\Pmat{w}$ determine $\Pmat{w}$, whatever the multiplicities of the letters $1$, $2$, $k-1$ and $k$.
+\end{corollary}
+
+Unlike \cref{cor:A}, \cref{cor:C3} is not a case of the statement reported in~\cite[p.~228]{Sal06}: when letters occur three times, four diagonals do not suffice (\cref{ex:fourth}), and with five diagonals ``three times'' cannot be replaced by ``four times'' (\cref{thm:B} with $n=4$).
+
+Every occurrence of $j(j+1)\cdots l$ passes through exactly one letter $m$, so the block $(\cntr{i}{l'})_{i\le m\le l'}$ of $\Pmat{w}$ has rank at most the multiplicity of $m$ (\cref{lem:pivot}). A $2\times2$ minor decides whether the letters $m$ meet their neighbours as a rectangle (\cref{lem:letterrect}, known in substance); a $3\times3$ minor then gives the corner unless three letters $m$ lie in a \emph{rigid} position (\cref{lem:pminor,lem:chainsig}); and a finite chain lemma (\cref{lem:chainsig}) identifies the rigid positions from three short counts when the three letters occur at most three times. These minors count families of vertex-disjoint paths in a planar network, as in total positivity~\cite{FZ00} (\cref{rem:network}). The hypotheses of \cref{thm:D} cannot be relaxed, except possibly at a pivot that occurs four times (\cref{prop:sharpD}): for instance, there are two words of content $(1,3,3,4,8)$ whose Parikh matrices differ only in the corner, although, at the pivot $m=3$, the letters $2$ and $3$ occur three times and the letter $4$ occurs four times.
+
+\Cref{sec:conj} reports exhaustive evidence for $n=4$; if true, the conjecture says that Salomaa's construction is optimal in its inner multiplicities. \Cref{sec:verify} describes a formalisation in Lean~4 of \cref{thm:A,thm:D}, \cref{cor:A,cor:C3,cor:D2}, the rectangle rule, the crossing chain, the chain lemma and the corner statement of \cref{thm:B} for $n=3,4$, together with the computer checks of every numerical statement; the supplementary files are on the article's web page and in the repository \url{https://github.com/cyamba/yamba-ai-math/tree/main/research/parikh}. Our companion articles~\cite{Y26b,Y26a} study the largest Parikh classes and the values of the fourth diagonal for words with repeated letters, and~\cite{Y26b} determines exactly when the first three diagonals suffice~\cite[Theorem~A]{Y26b}; the present note takes up the question of the further diagonals raised at the end of~\cite{Y26b}. Its preliminaries, the product formula~\eqref{eq:product}, the realisation of projections and the cut rule (\cref{lem:cut}) are repeated from~\cite[Section~2 and Lemma~3.1]{Y26b} to keep the note self-contained; no proof here depends on~\cite{Y26a,Y26b}.
+
+\subsection*{What is new in version 2}
+
+Version~1 of this note (23~October 2026), titled \emph{Four diagonals suffice: completeness of Parikh matrices when letters occur at most twice}, contained \cref{thm:A,thm:B}, \cref{cor:A,cor:doubled} and \cref{conj:C}, with its sections numbered~1--7. Version~2 (24~October 2026) changes the following.
+\begin{itemize}
+\item \emph{New results:} \cref{thm:D} (the pivot theorem) and its explicit form \cref{thm:pivot}; \cref{cor:C3}, which proves \cref{conj:C} for $n=3$; \cref{cor:D2}; and \cref{prop:sharpD}, explicit words showing that the hypotheses of \cref{thm:D} cannot be relaxed, except possibly at a pivot that occurs four times.
+\item \emph{New section:} \cref{sec:pivot}, with the proofs and the chain lemma (\cref{lem:chainsig}, \cref{tab:chain}).
+\item \emph{Renumbering:} Sections~6 and~7 of version~1 are now \cref{sec:conj,sec:verify}, and its Table~1 is now \cref{tab:evidence}; all earlier numbers are unchanged.
+\item \emph{Corrections and additions:} \cref{rem:cauchy} now says that the equality case is known in full for single letters $x$, $y$, $z$ (version~1 said ``for $y$ a single letter''); \cref{ex:fourth} prints Salomaa's words; the evidence for $n=3$ in \cref{tab:evidence} is now a theorem; the Lean formalisation and the supplementary checks cover the new results; and \cref{rem:network} adds the planar-network picture of total positivity~\cite{FZ00,GV85}.
+\end{itemize}
+The title has changed accordingly. Corrections, comments, questions and feedback are welcome at \href{mailto:christopher.yamba@yambacode.com}{\texttt{christopher.yamba@yambacode.com}}.
 
 \section{Preliminaries}\label{sec:prelim}
 
@@ -105,7 +134,7 @@ By \cref{lem:rank}(ii), $\Bmat{e}=uv^{\top}$ for column vectors $u$, $v$. With $
 In words, $w$ avoids $e(e+1)e(e+1)$ exactly when its letters $e$ and $e+1$ appear in the order $(e+1)^{p_1}e^{q_1}(e+1)^{r_1}e^{s_1}$: the pairs of a letter $e$ before a letter $e+1$ form a rectangle, the first $q_1$ letters $e$ times the middle $r_1$ letters $e+1$, and every occurrence of $j\cdots l$ through edge $e$ is an occurrence of $j\cdots e$ ending in the rectangle followed by an occurrence of $(e+1)\cdots l$ starting in it. When $n_e=1$ or $n_{e+1}=1$, edge $e$ is always a rectangle, and \cref{lem:rect} follows from \cref{lem:cut}(ii) with $m=e$ or $m=e+1$, and is equivalent to it when $x_e\ne0$.
 
 \begin{remark}\label{rem:cauchy}
-\Cref{lem:rect} gives a sufficient condition for equality in the Cauchy inequality $\cnt{y}\cnt{xyz}\le\cnt{xy}\cnt{yz}$~\cite[Corollary~4, p.~12]{MSY04}, \cite[Theorem~4, p.~193]{Sal05}, with $y=e(e+1)$, $x=j\cdots(e-1)$ and $z=(e+2)\cdots l$; the condition is not necessary, as $w=\word{1112323444}$ with $(j,e,l)=(1,2,4)$ shows. For $y$ a single letter the equality case is known in full~\cite[Lemma~2, p.~12]{MSY04}. Salomaa notes that ``no general theory exists concerning the cases when the Cauchy inequality actually reduces to an equality''~\cite[p.~193]{Sal05}. For two letters $a$, $b$ the analogous statement is known: $\cnt{ab}\cnt{a^mb^n}\le\cnt{a^mb}\cnt{ab^n}$ for $m,n\ge2$, strict exactly when $w$ contains $abab$ and the right side is nonzero~\cite[Theorem~5, p.~195]{Sal05}, the case $m=n=2$ being~\cite[Lemma~3, p.~12]{MSY04}. We regard \cref{lem:rect} as the counterpart of that statement for consecutive letters, not as new in substance. We have not been able to consult~\cite{Sal15}, whose title and abstract announce a study of equality cases.
+\Cref{lem:rect} gives a sufficient condition for equality in the Cauchy inequality $\cnt{y}\cnt{xyz}\le\cnt{xy}\cnt{yz}$~\cite[Corollary~4, p.~12]{MSY04}, \cite[Theorem~4, p.~193]{Sal05}, with $y=e(e+1)$, $x=j\cdots(e-1)$ and $z=(e+2)\cdots l$; the condition is not necessary, as $w=\word{1112323444}$ with $(j,e,l)=(1,2,4)$ shows. For single letters $x$, $y$, $z$ the equality case is known in full~\cite[Lemma~2, p.~12]{MSY04}; for a single letter $y$ and longer words $x$, $z$ it is implicit in the proof of the Cauchy inequality~\cite[pp.~15--16]{MSY04} (see \cref{rem:letterrect}). Salomaa notes that ``no general theory exists concerning the cases when the Cauchy inequality actually reduces to an equality''~\cite[p.~193]{Sal05}. For two letters $a$, $b$ the analogous statement is known: $\cnt{ab}\cnt{a^mb^n}\le\cnt{a^mb}\cnt{ab^n}$ for $m,n\ge2$, strict exactly when $w$ contains $abab$ and the right side is nonzero~\cite[Theorem~5, p.~195]{Sal05}, the case $m=n=2$ being~\cite[Lemma~3, p.~12]{MSY04}. We regard \cref{lem:rect} as the counterpart of that statement for consecutive letters, not as new in substance. We have not been able to consult~\cite{Sal15}, whose title and abstract announce a study of equality cases.
 \end{remark}
 
 \section{Crossings, and the proof of Theorem~A}\label{sec:main}
@@ -164,7 +193,7 @@ Two special cases of \cref{cor:A} are known, and a third result overlaps it. For
 \end{remark}
 
 \begin{example}\label{ex:fourth}
-The words $\word{21332}$ and $\word{32123}$ of content $(1,2,2)$ have the same counts of length at most $2$ but $\cnt{123}=0$ and $1$; so the fourth diagonal cannot be omitted in \cref{cor:A}. For a three-letter window $(a,b,c)$ the corner is determined, for every word of that content, by the counts of length at most $2$ if and only if $b=1$ or $a=c=1$; this is the case $k=3$ of~\cite[Theorem~A(iii)]{Y26b}. Sufficiency is also the $\gamma$-property~\cite[Theorem~3]{Sal06}; directly, the corner is $x_1x_2$ if $b=1$ (\cref{lem:cut}(ii)) and $\max(0,x_1+x_2-b)$ if $a=c=1$, and that the corner is not determined in general is noted in~\cite[p.~226]{Sal06}. For necessity, when $b\ge2$ and $c\ge2$ put $2^{b-2}$ and then $1^{a-1}$ in front of both words $\word{21332}$, $\word{32123}$ and $3^{c-2}$ after them; this keeps the shorter counts equal and the corners different. Use the reverse-complement when $a\ge2$ and $c=1$. Raising ``twice'' to ``three times'' fails as well: Salomaa's construction~\cite[Lemma~3 and proof of Theorem~4]{Sal06} with $n=3$ gives two words of content $(4,3,3,3)$, and \cref{thm:B} with $n=3$ gives the words $\word{3221443234}$ and $\word{2343212443}$ of content $(1,3,3,3)$, which agree on every count of length at most $3$ and have $\cnt{1234}=1$ and $0$.
+The words $\word{21332}$ and $\word{32123}$ of content $(1,2,2)$ have the same counts of length at most $2$ but $\cnt{123}=0$ and $1$; so the fourth diagonal cannot be omitted in \cref{cor:A}. For a three-letter window $(a,b,c)$ the corner is determined, for every word of that content, by the counts of length at most $2$ if and only if $b=1$ or $a=c=1$; this is the case $k=3$ of~\cite[Theorem~A(iii)]{Y26b}. Sufficiency is also the $\gamma$-property~\cite[Theorem~3]{Sal06}; directly, the corner is $x_1x_2$ if $b=1$ (\cref{lem:cut}(ii)) and $\max(0,x_1+x_2-b)$ if $a=c=1$, and that the corner is not determined in general is noted in~\cite[p.~226]{Sal06}. For necessity, when $b\ge2$ and $c\ge2$ put $2^{b-2}$ and then $1^{a-1}$ in front of both words $\word{21332}$, $\word{32123}$ and $3^{c-2}$ after them; this keeps the shorter counts equal and the corners different. Use the reverse-complement when $a\ge2$ and $c=1$. Raising ``twice'' to ``three times'' fails as well: Salomaa's construction~\cite[Lemma~3 and proof of Theorem~4]{Sal06} with $n=3$ gives the words $\word{1432432111432}$ and $\word{4321114324321}$ of content $(4,3,3,3)$, and \cref{thm:B} with $n=3$ gives the words $\word{3221443234}$ and $\word{2343212443}$ of content $(1,3,3,3)$; both pairs agree on every count of length at most $3$ and have $\cnt{1234}=1$ and $0$. So the five diagonals of \cref{cor:C3} cannot be reduced to four.
 \end{example}
 
 For the words in which every letter occurs twice, the content $(2^k)$, \cref{cor:A} identifies the Parikh classes, the sets of words with a common Parikh matrix, whose sizes are Salomaa's degrees of ambiguity~\cite[Definition~6, p.~109]{Sal18}.
@@ -202,39 +231,219 @@ Over the letters $1,\dots,n+1$ with content $(1,n,\dots,n)$, take the projection
 
 For $n=2,3,4$ the words are $A_2=\word{32123}$, $B_2=\word{21332}$; $A_3=\word{3221443234}$, $B_3=\word{2343212443}$; and $A_4=\word{32245432132554345}$, $B_4=\word{23432215454323554}$. In Salomaa's construction~\cite[Theorem~4]{Sal06} the window has the same length and the inner letters the same multiplicity $n$, but the first letter occurs $2^{n-1}$ times. In $A_n$ and $B_n$ the last letter occurs $n$ times; we do not know the least possible end multiplicities in general (\cref{sec:conj}).
 
-\section{The conjecture for higher multiplicities}\label{sec:conj}
+\section{Pivot letters, and the proof of Theorem~D}\label{sec:pivot}
 
-By \cref{thm:B}, \cref{conj:C} would be sharp in its bound $l-j\ge n+1$. Its case $n=3$ cannot be proved as \cref{thm:A} was: an edge with three letters of each kind can have area $6$ with heights $(1,2,3)$, of rank $3$, or $(0,3,3)$, of rank $1$, so the area no longer tells which rule applies. The conjecture is a statement about finitely many objects for each window content, since the counts depend only on the projections, and every tuple of projections is realised. We call a window content \emph{independent} if two tuples of projections agree on every count of the window except the corner and differ there, and \emph{determined} otherwise. \Cref{tab:evidence} lists the window contents that we checked over all tuples of projections, by hashing the tuples according to their counts other than the corner; up to reversal of the content, which preserves the question by the reverse-complement symmetry (reverse the word and replace each letter $i$ by $k+1-i$, which permutes the counts), each listed content was found determined or, where so marked, independent.
+Throughout this section $l-j\ge4$, and the \emph{pivot} $m$ satisfies $j+2\le m\le l-2$, so that $m-1$, $m$ and $m+1$ are inner letters of $[j,l]$. For $i\le m\le l'$ put
+\[
+f_i=\one^{\top}\Bmat{i}\cdots\Bmat{m-1},\qquad g_{l'}=\Bmat{m}\cdots\Bmat{l'-1}\one,
+\]
+a row and a column vector of length $n_m$, with $f_m=\one^{\top}$ and $g_m=\one$. The $r$-th entry of $f_i$ is the number of occurrences of $i\cdots(m-1)$ before the $r$-th letter $m$, and that of $g_{l'}$ the number of occurrences of $(m+1)\cdots l'$ after it. Let $a=f_{m-1}$, $b=g_{m+1}$, $F=f_j$ and $G=g_l$. So $a_r=A^{(m-1)}_r$ is the number of letters $m-1$ before the $r$-th letter $m$, and $b_r$ the number of letters $m+1$ after it. We call $(a,b)$ the \emph{chain} of $w$ at $m$. (This $a$ is not the $a_s$ of \cref{prop:chain}.) If $n_m=0$, every count through $m$ vanishes, so $\cntr{j}{l}=0$ for $w$ and for every word with the same $n_m$; from now on $n_m\ge1$.
+
+\begin{lemma}[Pivot decomposition]\label{lem:pivot}
+\begin{parts}
+\item $\cntr{i}{l'}=f_i\,g_{l'}$ for $i\le m\le l'$. Hence the block $(\cntr{i}{l'})_{i\le m\le l'}$ of $\Pmat{w}$ has rank at most $n_m$, and
+\[
+M=\begin{pmatrix}\cntr{j}{m}&\cntr{j}{m+1}&\cntr{j}{l}\\ x_{m-1}&\cntr{m-1}{m+1}&\cntr{m-1}{l}\\ n_m&x_m&\cntr{m}{l}\end{pmatrix}=\sum_{r=1}^{n_m}\begin{pmatrix}F_r\\a_r\\1\end{pmatrix}\begin{pmatrix}1&b_r&G_r\end{pmatrix}.
+\]
+Every entry of $M$ other than $\cntr{j}{l}$ is a shorter count of $[j,l]$.
+\item $0\le a_1\le\dots\le a_{n_m}\le n_{m-1}$ and $n_{m+1}\ge b_1\ge\dots\ge b_{n_m}\ge0$.
+\item Let $\varphi=\one^{\top}\Bmat{j}\cdots\Bmat{m-2}$ and $\gamma=\Bmat{m+1}\cdots\Bmat{l-1}\one$. Then $F_r=\varphi_1+\dots+\varphi_{a_r}$, and $G_r$ is the sum of the last $b_r$ entries of $\gamma$. Hence $F_r=0$ if $a_r=0$, $F_r=\cntr{j}{m-1}$ if $a_r=n_{m-1}$, and $F_p=F_q$ if $a_p=a_q$; and $G_r=0$ if $b_r=0$, $G_r=\cntr{m+1}{l}$ if $b_r=n_{m+1}$, and $G_p=G_q$ if $b_p=b_q$.
+\end{parts}
+\end{lemma}
+
+\begin{proof}
+(i) is~\eqref{eq:product} split at the letter $m$; $M$ is the case $i\in\{j,m-1,m\}$, $l'\in\{m,m+1,l\}$, and $\cntr{j}{m+1}$ and $\cntr{m-1}{l}$ have lengths $m-j+2\le l-j$ and $l-m+2\le l-j$. (ii) The $a_r$ are the heights of $\Bmat{m-1}$, and $b_r$ is the number of $s$ with $A^{(m)}_s\ge r$. (iii) $F=\varphi\Bmat{m-1}$, and the $r$-th column of $\Bmat{m-1}$ is the indicator of its first $a_r$ rows. $G=\Bmat{m}\gamma$, and the $r$-th row of $\Bmat{m}$ has its ones in the columns $s$ with $A^{(m)}_s\ge r$, which are the last $b_r$ columns since $A^{(m)}$ is nondecreasing. Finally $\varphi\one=\cntr{j}{m-1}$ and $\one^{\top}\gamma=\cntr{m+1}{l}$ by~\eqref{eq:product}.
+\end{proof}
+
+Part (i) says that every occurrence of $i\cdots l'$ passes through exactly one letter $m$. This is the decomposition with which Mateescu, Salomaa and Yu prove the Cauchy inequality~\cite[p.~15]{MSY04}, taken here for all $i$ and $l'$ at once; for $n_m=1$ it is the cut rule (\cref{lem:cut}(ii)). The rank bound is an immediate consequence, but we have not found it stated.
+
+\begin{lemma}[Letter rectangle rule]\label{lem:letterrect}
+Let $D=x_{m-1}x_m-n_m\cntr{m-1}{m+1}$. Then
+\[
+D=\sum_{1\le p<q\le n_m}(a_q-a_p)(b_p-b_q)\ge0,
+\]
+and $D=0$ if and only if $a$ or $b$ is constant. If $D=0$, then $n_m\cntr{i}{l'}=\cntr{i}{m}\cntr{m}{l'}$ for all $i\le m\le l'$.
+\end{lemma}
+
+\begin{proof}
+By \cref{lem:pivot}(i), $x_{m-1}=\sum_ra_r$, $x_m=\sum_rb_r$ and $\cntr{m-1}{m+1}=\sum_ra_rb_r$. Expanding $D$ gives the sum on the right, whose terms are nonnegative by \cref{lem:pivot}(ii). Let $D=0$ and suppose $a_p\ne a_q$, so that $b_p=b_q$. For every $r$, if $a_r\ne a_p$ then $b_r=b_p$, and otherwise $a_r\ne a_q$ and $b_r=b_q$; so $b$ is constant. If $a$ is constant, all columns of $\Bmat{m-1}$ are equal, so $f_i=c_i\one^{\top}$ for every $i\le m-1$ and some numbers $c_i$, and then $\cntr{i}{l'}=c_i\cntr{m}{l'}$ and $\cntr{i}{m}=c_in_m$. If $b$ is constant, all rows of $\Bmat{m}$ are equal, and symmetrically every $g_{l'}$ is a multiple of $\one$.
+\end{proof}
+
+\begin{remark}\label{rem:letterrect}
+\Cref{lem:letterrect} is known in substance, and we claim nothing new for it. Its first part is~\cite[Lemma~2, p.~12]{MSY04} for the letters $m-1$, $m$, $m+1$: equality holds exactly when $w$ contains neither $m(m-1)(m+1)m$ nor $m(m+1)(m-1)m$, which is the condition that $a$ or $b$ be constant. The formula for $D$ is the identity in the proof of the Cauchy inequality~\cite[p.~15]{MSY04}, whose terms are nonnegative when the middle factor is a letter~\cite[p.~16]{MSY04}. Its second part is the rectangle rule (\cref{lem:rect}) at edge $m-1$ or $m$, whose rectangle then contains every letter $m$.
+\end{remark}
+
+\begin{lemma}[Pivot minor]\label{lem:pminor}
+Let $\Delta=\det M$. By the Cauchy--Binet formula,
+\[
+\Delta=\sum_{p<q<s}\det\begin{pmatrix}F_p&a_p&1\\F_q&a_q&1\\F_s&a_s&1\end{pmatrix}\det\begin{pmatrix}1&b_p&G_p\\1&b_q&G_q\\1&b_s&G_s\end{pmatrix}.
+\]
+Hence $\Delta=0$ if $n_m\le2$, and also if $n_m=3$ and two letters $m$ have equal $a$-values or equal $b$-values. If $\Delta=0$ and $D\ne0$, then
+\begin{multline}\label{eq:rule2}
+D\,\cntr{j}{l}=\cntr{j}{m}\,x_m\,\cntr{m-1}{l}+\cntr{j}{m+1}\,x_{m-1}\,\cntr{m}{l}\\
+-\cntr{j}{m}\,\cntr{m-1}{m+1}\,\cntr{m}{l}-n_m\,\cntr{j}{m+1}\,\cntr{m-1}{l}.
+\end{multline}
+\end{lemma}
+
+\begin{proof}
+The formula for $\Delta$ is the Cauchy--Binet formula for the factorisation of \cref{lem:pivot}(i). For $n_m\le2$ the sum is empty. For $n_m=3$ it has one term, and by \cref{lem:pivot}(iii) equal $a$-values give two equal rows of the first factor, and equal $b$-values two equal rows of the second. In the expansion of $\Delta$ along its first row the coefficient of $\cntr{j}{l}$ is $D$, and~\eqref{eq:rule2} is the equation $\Delta=0$.
+\end{proof}
+
+The second vanishing statement needs $n_m=3$: for $n_m\ge4$ other triples contribute. For instance, the word $\word{43342312515243}$, of content $(2,3,4,3,2)$, has the chain $a=(0,0,1,3)$, $b=(2,2,1,0)$ at $m=3$, and $\Delta=12$.
+
+\begin{remark}\label{rem:network}
+$\Delta$ is the minor of $\Pmat{w}$ on the rows $j,m-1,m$ and the columns $m+1,m+2,l+1$, so $\Delta\ge0$~\cite[Theorem~6, p.~12]{MSY04}, \cite[Theorem~6, p.~196]{Sal05}. There is a classical reason. $\Pmat{w}$ is the product of the elementary Jacobi matrices $I+E_{c,c+1}$ (written $x_c(1)$ in~\cite[p.~6]{FZ00}) over the letters $c$ of $w$, so it is the weight matrix of the planar network obtained by concatenating their elementary chips~\cite[p.~7]{FZ00}: levels $1,\dots,k+1$, time running from left to right, and a rising edge from level $c$ to level $c+1$ for each letter $c$ of $w$. A path from level $i$ to level $l'+1$ is an occurrence of $i\cdots l'$. By Lindstr\"om's lemma (the Lindstr\"om--Gessel--Viennot lemma) in the form of~\cite[Lemma~1, p.~2]{FZ00} (see~\cite[Section~10.13, Theorem~10.13.1 and Corollary~10.13.2]{Kra15} for the general statement and its history, and~\cite{GV85}), every minor of $\Pmat{w}$ counts the families of vertex-disjoint paths between the corresponding levels; its nonnegativity is~\cite[Corollary~2, p.~3]{FZ00}. In this picture, three disjoint paths from the levels $j$, $m-1$, $m$ to the levels $m+1$, $m+2$, $l+1$ rise from level $m$ to level $m+1$ through three different letters $m$. Since the paths stay strictly ordered, a letter $m-1$ and a letter $m+1$ lie between any two of these letters $m$, so their chain is rigid in the sense of \cref{lem:chainsig}. This explains every vanishing in \cref{lem:pminor}. We have not found this network used for Parikh matrices, or~\eqref{eq:rule2} stated; the vanishing statements of \cref{lem:pminor} are immediate from \cref{lem:pivot}, and we claim nothing for them.
+\end{remark}
+
+\begin{lemma}[Chain lemma]\label{lem:chainsig}
+A \emph{chain with bounds} $(\alpha,\beta)$ is a pair of triples $a=(a_1\le a_2\le a_3)$ with values in $\interval{0}{\alpha}$ and $b=(b_1\ge b_2\ge b_3)$ with values in $\interval{0}{\beta}$. Its \emph{signature} is $(\Sigma a,\Sigma b,\Sigma ab)$, where $\Sigma a=a_1+a_2+a_3$, $\Sigma b=b_1+b_2+b_3$ and $\Sigma ab=a_1b_1+a_2b_2+a_3b_3$, and it is \emph{rigid} if $a_1<a_2<a_3$ and $b_1>b_2>b_3$. If $\alpha,\beta\le3$, a rigid chain is the only chain with bounds $(\alpha,\beta)$ that has its signature.
+\end{lemma}
+
+\begin{proof}
+A chain with bounds $(\alpha,\beta)$ also has bounds $(3,3)$, so we may take $\alpha=\beta=3$. A rigid $a$ omits exactly one value of $\interval{0}{3}$, so $\Sigma a\in\interval{3}{6}$ determines it, and likewise $\Sigma b$ determines a rigid $b$. For each $s\in\interval{3}{6}$ there are exactly three nondecreasing triples in $\interval{0}{3}$ with sum $s$. So a rigid chain has the same $(\Sigma a,\Sigma b)$ as exactly nine chains, itself included, and \cref{tab:chain} lists $\Sigma ab$ for all of them: in each of the $16$ blocks the value of the rigid chain occurs once.
+\end{proof}
+
+\begin{table}[htb]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.6pt}
+\begin{tabular}{@{}c|ccc|ccc|ccc|ccc@{}}
+\toprule
+$a\backslash b$ & \texttt{300} & \texttt{210} & \texttt{111} & \texttt{310} & \texttt{220} & \texttt{211} & \texttt{320} & \texttt{311} & \texttt{221} & \texttt{330} & \texttt{321} & \texttt{222} \\
+\midrule
+\texttt{003} & $0$ & $0$ & $3$ & $0$ & $0$ & $3$ & $0$ & $3$ & $3$ & $0$ & $3$ & $6$ \\
+\texttt{012} & $0$ & $\mathbf{1}$ & $3$ & $\mathbf{1}$ & $2$ & $3$ & $\mathbf{2}$ & $3$ & $4$ & $3$ & $\mathbf{4}$ & $6$ \\
+\texttt{111} & $3$ & $3$ & $3$ & $4$ & $4$ & $4$ & $5$ & $5$ & $5$ & $6$ & $6$ & $6$ \\
+\midrule
+\texttt{013} & $0$ & $\mathbf{1}$ & $4$ & $\mathbf{1}$ & $2$ & $4$ & $\mathbf{2}$ & $4$ & $5$ & $3$ & $\mathbf{5}$ & $8$ \\
+\texttt{022} & $0$ & $2$ & $4$ & $2$ & $4$ & $4$ & $4$ & $4$ & $6$ & $6$ & $6$ & $8$ \\
+\texttt{112} & $3$ & $3$ & $4$ & $4$ & $4$ & $5$ & $5$ & $6$ & $6$ & $6$ & $7$ & $8$ \\
+\midrule
+\texttt{023} & $0$ & $\mathbf{2}$ & $5$ & $\mathbf{2}$ & $4$ & $5$ & $\mathbf{4}$ & $5$ & $7$ & $6$ & $\mathbf{7}$ & $10$ \\
+\texttt{113} & $3$ & $3$ & $5$ & $4$ & $4$ & $6$ & $5$ & $7$ & $7$ & $6$ & $8$ & $10$ \\
+\texttt{122} & $3$ & $4$ & $5$ & $5$ & $6$ & $6$ & $7$ & $7$ & $8$ & $9$ & $9$ & $10$ \\
+\midrule
+\texttt{033} & $0$ & $3$ & $6$ & $3$ & $6$ & $6$ & $6$ & $6$ & $9$ & $9$ & $9$ & $12$ \\
+\texttt{123} & $3$ & $\mathbf{4}$ & $6$ & $\mathbf{5}$ & $6$ & $7$ & $\mathbf{7}$ & $8$ & $9$ & $9$ & $\mathbf{10}$ & $12$ \\
+\texttt{222} & $6$ & $6$ & $6$ & $8$ & $8$ & $8$ & $10$ & $10$ & $10$ & $12$ & $12$ & $12$ \\
+\bottomrule
+\end{tabular}
+\caption{The values $\Sigma ab$ for the nondecreasing triples $a$ (rows) and the nonincreasing triples $b$ (columns) with values in $\interval{0}{3}$ and sums $3,\dots,6$, in blocks by $(\Sigma a,\Sigma b)$. The rigid chains are bold; in each block their value occurs once.}\label{tab:chain}
+\end{table}
+
+The lemma fails at the bounds $(3,4)$, $(4,3)$ and $(4,4)$; it still holds at $(2,4)$ and $(4,2)$. At bounds $(3,4)$ the rigid chain $((0,1,2),(4,3,0))$ has the signature $(3,7,3)$, and so do $((0,0,3),(3,3,1))$ and $((0,0,3),(4,2,1))$; at bounds $(4,4)$ there are $100$ rigid chains with $95$ distinct signatures, $19$ of which are shared with another chain.
+
+\begin{lemma}[Rigid recovery]\label{lem:rigid}
+Let $n_{m-1},n_{m+1}\le3$ and $n_m=3$, and let the chain $(a,b)$ of $w$ at $m$ be rigid. Then $F$ and $G$ are determined by $(a,b)$ and the counts $\cntr{j}{m-1}$, $\cntr{j}{m}$, $\cntr{j}{m+1}$, $\cntr{m-1}{l}$, $\cntr{m}{l}$ and $\cntr{m+1}{l}$:
+\begin{parts}
+\item if $a_1=0$, then $F_1=0$, $F_2+F_3=\cntr{j}{m}$ and $b_2F_2+b_3F_3=\cntr{j}{m+1}$;
+\item otherwise $a=(1,2,3)$, $n_{m-1}=3$, $F_3=\cntr{j}{m-1}$, $F_1+F_2=\cntr{j}{m}-F_3$ and $b_1F_1+b_2F_2=\cntr{j}{m+1}-b_3F_3$;
+\item if $b_3=0$, then $G_3=0$, $G_1+G_2=\cntr{m}{l}$ and $a_1G_1+a_2G_2=\cntr{m-1}{l}$;
+\item otherwise $b=(3,2,1)$, $n_{m+1}=3$, $G_1=\cntr{m+1}{l}$, $G_2+G_3=\cntr{m}{l}-G_1$ and $a_2G_2+a_3G_3=\cntr{m-1}{l}-a_1G_1$.
+\end{parts}
+The four linear systems have the nonzero determinants $b_3-b_2$, $b_2-b_1$, $a_2-a_1$ and $a_3-a_2$.
+\end{lemma}
+
+\begin{proof}
+By \cref{lem:pivot}(i), $\cntr{j}{m}=\sum_rF_r$, $\cntr{j}{m+1}=\sum_rb_rF_r$, $\cntr{m}{l}=\sum_rG_r$ and $\cntr{m-1}{l}=\sum_ra_rG_r$. A rigid $a$ has three distinct values in $\interval{0}{n_{m-1}}\subseteq\interval{0}{3}$, so $a_1=0$, or $a=(1,2,3)$ and $a_3=n_{m-1}=3$; by \cref{lem:pivot}(iii), $F_1=0$ in the first case and $F_3=\cntr{j}{m-1}$ in the second. The case of $b$ and $G$ is symmetric.
+\end{proof}
+
+\begin{theorem}\label{thm:pivot}
+Let $l-j\ge4$ and $j+2\le m\le l-2$, suppose that $n_m\ge1$, and that $n_m\le2$ or $n_{m-1},n_m,n_{m+1}\le3$, and let $D$ be as in \cref{lem:letterrect}.
+\begin{parts}
+\item If $D=0$, then $\cntr{j}{l}=\cntr{j}{m}\,\cntr{m}{l}/n_m$.
+\item If $D\ne0$, $n_m=3$, and $(x_{m-1},x_m,\cntr{m-1}{m+1})$ is the signature of a rigid chain $(a,b)$ with bounds $(n_{m-1},n_{m+1})$, then $\cntr{j}{l}=F_1G_1+F_2G_2+F_3G_3$, where $F$ and $G$ are given by \cref{lem:rigid} for this chain.
+\item Otherwise $\cntr{j}{l}$ is the right side of~\eqref{eq:rule2} divided by $D$.
+\end{parts}
+Which case applies is decided by $n_{m-1}$, $n_m$, $n_{m+1}$, $x_{m-1}$, $x_m$ and $\cntr{m-1}{m+1}$, and the right sides involve only shorter counts of $[j,l]$.
+\end{theorem}
+
+\begin{proof}
+(i) is \cref{lem:letterrect}. In (ii), $n_m=3$, so $n_{m-1},n_{m+1}\le3$ by hypothesis. The chain of $w$ at $m$ has bounds $(n_{m-1},n_{m+1})$ by \cref{lem:pivot}(ii) and signature $(x_{m-1},x_m,\cntr{m-1}{m+1})$ by \cref{lem:pivot}(i), so it is the given rigid chain by \cref{lem:chainsig}. Then \cref{lem:rigid} gives $F$ and $G$, and $\cntr{j}{l}=\sum_rF_rG_r$ by \cref{lem:pivot}(i). In (iii), first $\Delta=0$. If $n_m\le2$, this is \cref{lem:pminor}. Otherwise $n_m=3$, and the chain of $w$ at $m$ is not rigid, for its signature would then be that of a rigid chain with bounds $(n_{m-1},n_{m+1})$, which is case (ii); so two of its $a$-values or two of its $b$-values coincide, and \cref{lem:pminor} applies. Since $D\ne0$, \eqref{eq:rule2} gives $\cntr{j}{l}$. The counts used are the entries of $M$ other than the corner, which are shorter counts by \cref{lem:pivot}(i), and $\cntr{j}{m-1}$ and $\cntr{m+1}{l}$, of lengths $m-j$ and $l-m$, both at most $l-j-2$.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:D}]
+Let $w'$ have the same shorter counts as $w$ in the window. It has the same multiplicities, so it satisfies the same hypothesis. If $n_m=0$, both corners are $0$. Otherwise $w'$ also has the same $x_{m-1}$, $x_m$ and $\cntr{m-1}{m+1}$, so the same case of \cref{thm:pivot} applies to $w$ and $w'$, with the same right side.
+\end{proof}
+
+\begin{proof}[Proof of \cref{cor:C3,cor:D2}]
+The first statement of \cref{conj:C} for $n=3$ is \cref{thm:D} with $m=j+2$, which is admissible since $l-j\ge4$. The second follows by strong induction on $l-j$, as in the proof of \cref{cor:A}: the counts with $l-j\le3$ lie in the first five diagonals, and for $l-j\ge4$ the inner letters of $[j,l]$ lie in $\interval{2}{k-1}$. For \cref{cor:D2} the same induction applies, with the first hypothesis of \cref{thm:D} at the pivot $m=j+2$, which lies in $\interval{3}{k-2}$.
+\end{proof}
+
+The first hypothesis of \cref{thm:D} gives \cref{thm:A} again for windows of at least five letters. A four-letter window has no admissible pivot, and there the crossing analysis of \cref{sec:main} is needed. The hypothesis of \cref{thm:D} is local, while its formulas use counts that reach both ends of the window: for instance, the corner of every word of content $(1,9,3,3,3,9,1)$ is determined by its shorter counts, with pivot $m=4$.
+
+\Cref{thm:D}, its explicit form \cref{thm:pivot} and \cref{cor:C3,cor:D2} were not located in the literature we consulted. Salomaa showed that no fixed number of diagonals suffices in general~\cite[Theorem~4, p.~228]{Sal06}; \cref{cor:C3} shows that five suffice when the letters other than the first and the last occur at most three times, which is the case $n=3$ of \cref{conj:C}. We were not able to access~\cite{Sal15} or~\cite{Sal08}, which study equality in the Cauchy inequality and the matrices associated with subword histories; we would welcome access to them, and any comments on how they bear on this note, at \href{mailto:christopher.yamba@yambacode.com}{\texttt{christopher.yamba@yambacode.com}}.
+
+\section{Sharpness, and the conjecture for higher multiplicities}\label{sec:conj}
+
+\begin{proposition}\label{prop:sharpD}
+In each of the following pairs the two words have the stated content over the letters $1,\dots,k$, and Parikh matrices that differ only in the corner entry, where $\cntr{1}{k}$ takes the two stated values. In each five-letter window below, $m=3$ is the only admissible pivot.
+\begin{parts}
+\item The neighbour bounds in \cref{thm:D} are needed. The words
+\[
+\word{5432143255555543245},\qquad\word{4321555543243255554},
+\]
+of content $(1,3,3,4,8)$, have the values $1$ and $0$, although of the letters $m-1$, $m$, $m+1$ only $m+1=4$ occurs more than three times; the words
+\[
+\word{543212154321243545},\qquad\word{123214543255454321},
+\]
+of content $(3,4,3,4,4)$, have the values $9$ and $10$. Their reverse complements show the same for the letter $m-1$.
+\item The bound $3$ cannot be raised to $4$ for the three letters together: $A_4$ and $B_4$ of \cref{thm:B}, of content $(1,4,4,4,4)$, have the values $1$ and $0$. Nor can the pivot alone occur five times: the words
+\[
+\word{32543213325554345},\qquad\word{23343215555432354},
+\]
+of content $(1,3,5,3,5)$, in which $m$ occurs five times and its neighbours three times, have the values $1$ and $0$.
+\item A letter that occurs twice must be at distance at least $2$ from both ends. The words
+\[
+\word{543214325555554345},\qquad\word{432155554324355554},
+\]
+of content $(1,2,3,4,8)$, in which the letter $2$ occurs twice, have the values $1$ and $0$; in a four-letter window, $\word{4321324443}$ and $\word{3214443234}$, of content $(1,2,3,4)$, have the values $0$ and $1$.
+\end{parts}
+\end{proposition}
+
+\begin{proof}
+Direct count; the script \texttt{check\_c3.py} (\cref{sec:verify}) checks every pair and its reverse complement.
+\end{proof}
+
+We do not know whether \cref{thm:D} extends to a pivot that occurs four times when its neighbours occur at most three times. The first statement of part~(ii) already follows from Salomaa's construction~\cite[Lemma~3, p.~227, and proof of Theorem~4, pp.~228--229]{Sal06} with $n=4$, whose words have content $(8,4,4,4,4)$; $A_4$ and $B_4$ need only one letter~$1$. The other pairs were found by computer search during the review of this note. None of them contradicts \cref{cor:C3,cor:D2}: the four-letter pair differs in a count of length $4$, and the five-letter contents satisfy neither hypothesis.
+
+By \cref{thm:B}, \cref{conj:C} would be sharp in its bound $l-j\ge n+1$, and by \cref{lem:cut}(ii), \cref{thm:A} and \cref{cor:C3} it holds for $n\le3$. For $n=4$ the method of \cref{sec:pivot} does not suffice: the chain lemma fails at the bounds $(3,4)$ and $(4,4)$, the anchors of \cref{lem:rigid} need $n_{m\pm1}\le3$, and by \cref{prop:sharpD}(i) a five-letter window can be independent when only one of its inner letters occurs four times. (The method of \cref{sec:main} fails already at $n=3$: an edge with three letters of each kind can have area $6$ with heights $(1,2,3)$, of rank $3$, or $(0,3,3)$, of rank $1$, so the area no longer tells which rule applies.) The conjecture is a statement about finitely many objects for each window content, since the counts depend only on the projections, and every tuple of projections is realised. We call a window content \emph{independent} if two tuples of projections agree on every count of the window except the corner and differ there, and \emph{determined} otherwise. \Cref{tab:evidence} lists the window contents that we checked over all tuples of projections, by hashing the tuples according to their counts other than the corner; up to reversal of the content, which preserves the question by the reverse-complement symmetry (reverse the word and replace each letter $i$ by $k+1-i$, which permutes the counts), each listed content was found determined or, where so marked, independent.
 
 \begin{table}[htb]
 \centering
 \small
-\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{8.6cm}ll@{}}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{8.2cm}ll@{}}
 \toprule
 $n$ & window contents & $k$ & result\\
 \midrule
 $2$ & every content with $n_i\le2$ and $\sum n_i\le11$; $(2^k)$, $k\le8$ & $4$--$8$ & determined (\cref{thm:A})\\
-$3$ & $(a,x,y,z,c)$ with $x,y,z\le3$, $\max(x,y,z)=3$, $a,c\le6$ ($357$ contents) & $5$ & determined\\
-$3$ & $(a,3,3,3,3,c)$ with $a,c\le4$; $(a,x,y,z,t,c)$ with $x,y,z,t\in\{2,3\}$, $a,c\le2$ & $6$ & determined\\
+$3$ & $(a,x,y,z,c)$ with $x,y,z\le3$, $\max(x,y,z)=3$, $a,c\le6$ ($357$ contents) & $5$ & determined (\cref{cor:C3})\\
+$3$ & $(a,3,3,3,3,c)$ with $a,c\le4$; $(a,x,y,z,t,c)$ with $x,y,z,t\in\{2,3\}$, $a,c\le2$ & $6$ & determined (\cref{cor:C3})\\
 $4$ & $(1,4,4,4,4,1)$, $(1,4,4,4,4,2)$, $(2,4,4,4,4,2)$, $(1,4,4,4,4,4)$, $(2,4,4,4,4,3)$ & $6$ & determined\\
 $4$ & $(a,4,4,4,c)$ with $a,c\le4$ and $a+c\ge5$ & $5$ & independent\\
 $4$ & $(a,4,4,4,c)$ with $a,c\le4$ and $a+c\le4$ & $5$ & determined\\
 \bottomrule
 \end{tabular}
-\caption{Exhaustive tests of \cref{conj:C}. A six-letter window with $n=4$ is in its range; the contents $(1,4,4,4,4,4)$ and $(2,4,4,4,4,3)$ are sharp tests, as their five-letter subwindows are independent. The independent five-letter windows are consistent with it, being one letter short.}\label{tab:evidence}
+\caption{Exhaustive tests of \cref{conj:C}. The rows with $n=3$ were computed before \cref{cor:C3} was proved, and agree with it. A six-letter window with $n=4$ is in the range of the conjecture; the contents $(1,4,4,4,4,4)$ and $(2,4,4,4,4,3)$ are sharp tests, as their five-letter subwindows are independent. The independent five-letter windows are consistent with it, being one letter short.}\label{tab:evidence}
 \end{table}
 
-The end letters do not matter for the determination in \cref{thm:A}, but they do matter for independence below the bound: among the windows $(a,3,3,c)$ with $a,c\le6$ the corner is independent exactly when $\max(a,c)\ge3$, and among $(a,4,4,4,c)$ with $a,c\le4$ exactly when $a+c\ge5$. We have no conjecture for the least end multiplicities.
+The end letters do not matter for the determination in \cref{thm:A,thm:D}, but they do matter for independence below the bound: among the windows $(a,3,3,c)$ with $a,c\le6$ the corner is independent exactly when $\max(a,c)\ge3$, and among $(a,4,4,4,c)$ with $a,c\le4$ exactly when $a+c\ge5$. We have no conjecture for the least end multiplicities.
 
 \section{Formal and computer verification}\label{sec:verify}
 
-\paragraph{Lean.} The file \texttt{ParikhCompleteness.lean} (supplementary) formalises the statements of \cref{sec:rect,sec:main} at the level of words, in Lean~4.34.0 with its core library and no other dependency. Words are lists of natural numbers, $\cntr{j}{l}$ is defined by the usual recursion for scattered subwords, and no matrix model is used: the proofs are inductions on the word, following the morphism property of the Parikh matrix one letter at a time, together with splitting lemmas at the first copy of a letter. The formalised theorems are the rectangle rule (\cref{lem:rect}), the crossing chain, in a parametrised form from which \cref{thm:main}(iii) follows by solving two $2\times2$ systems, the consequence of \cref{lem:rank}(ii)--(iii) used in the proof (with at most two copies of $e$ and $e+1$, an edge that is not a crossing avoids $e(e+1)e(e+1)$), \cref{thm:A} and \cref{cor:A}, and, by evaluation in the kernel, \cref{ex:fourth} and the corner statement of \cref{thm:B} for $n=3,4$. They depend only on the standard axioms (propositional extensionality, choice and quotient soundness), and the rectangle rule on propositional extensionality and quotient soundness only, and the evaluated cases on none; there is no \texttt{sorry}. \Cref{lem:ballot} and \cref{thm:B} for general $n$ are proved on paper only.
+\paragraph{Lean.} The file \texttt{ParikhCompleteness.lean} (supplementary) formalises the statements of \cref{sec:rect,sec:main} at the level of words, in Lean~4.34.0 with its core library and no other dependency. Words are lists of natural numbers, $\cntr{j}{l}$ is defined by the usual recursion for scattered subwords, and no matrix model is used: the proofs are inductions on the word, following the morphism property of the Parikh matrix one letter at a time, together with splitting lemmas at the first copy of a letter. The formalised theorems are the rectangle rule (\cref{lem:rect}), the crossing chain, in a parametrised form from which \cref{thm:main}(iii) follows by solving two $2\times2$ systems, the consequence of \cref{lem:rank}(ii)--(iii) used in the proof (with at most two copies of $e$ and $e+1$, an edge that is not a crossing avoids $e(e+1)e(e+1)$), \cref{thm:A} and \cref{cor:A}, and, by evaluation in the kernel, \cref{ex:fourth} and the corner statement of \cref{thm:B} for $n=3,4$.
+
+The file \texttt{ParikhCompletenessThree.lean} formalises, in the same setting, the determination statements of \cref{sec:pivot}: \cref{thm:D} (\texttt{pivot\_theorem}, including the case $n_m=0$), \cref{cor:C3} (\texttt{complete\_three} and \texttt{determined\_by\_short\_three}) and \cref{cor:D2} (\texttt{determined\_by\_short\_doubled}). The pivot decomposition is proved by inserting a letter $m$ into a word; the identities behind \cref{lem:letterrect,lem:pminor} are polynomial identities over the integers; the chain lemma is checked by evaluation in the kernel over all $4^6$ sextuples with entries in $\interval{0}{3}$; and \cref{lem:rigid} enters as a sixteen-case arithmetic lemma saying that two words with the same rigid chain and the same short counts have the same corner. The explicit formulas of \cref{thm:pivot} are checked by computer (below), not in Lean.
+
+All these theorems depend only on the standard axioms (propositional extensionality, choice and quotient soundness); the rectangle rule and the chain lemma use propositional extensionality and quotient soundness only, and the evaluated cases of the first file none. There is no \texttt{sorry} and no \texttt{native\_decide}. \Cref{lem:ballot} and \cref{thm:B} for general $n$ are proved on paper only.
 
 \paragraph{Computation.} The script \texttt{check\_article3.py} (supplementary, standard-library Python) re-checks: \cref{lem:rect,thm:main} on every word of every content with $3\le k\le5$, $n_i\le3$ and at most $9$ letters; \cref{ex:fourth}; \cref{lem:ballot} for $n\le30$ and all $m$, $a$, and \cref{thm:B} for $n\le30$ by building the words and counting; the class numbers of \cref{cor:doubled}; the first row and the five-letter rows of \cref{tab:evidence}, and the windows $(a,3,3,c)$ of \cref{sec:conj}. The larger entries of \cref{tab:evidence} were computed by the supplementary C program \texttt{corner.c}, and most of them were reproduced by an independent Python program written for the review of this note; neither is part of any proof.
 
+The script \texttt{check\_c3.py} (supplementary, standard-library Python) re-checks \cref{sec:pivot,sec:conj}. On every tuple of projections of a list of window contents, and at every admissible pivot, it checks the entries of $M$, \cref{lem:letterrect}, the Cauchy--Binet formula and the sign of $\Delta$, the recovery of \cref{lem:rigid} against the true $F$ and $G$, and \cref{thm:pivot} ($465{,}040$ tuples by default and $4{,}308{,}830$ with \texttt{--full}). It also checks every literal word of a few small contents, \cref{lem:chainsig} for all bounds in $\interval{0}{3}^2$, \cref{tab:chain} and the examples after it, the example after \cref{lem:pminor}, \cref{cor:C3,cor:D2} on contents with six and seven letters, the words of \cref{ex:fourth} and \cref{prop:sharpD}, and \cref{thm:pivot} on the $27$ window contents $(1,x,y,z,1)$ with $x,y,z\le3$. The following reduction shows that the last check suffices for the second hypothesis. For fixed $\Bmat{m-1}$ and $\Bmat{m}$, the corner $\varphi\,\Bmat{m-1}\Bmat{m}\,\gamma$ and each right side of \cref{thm:pivot} are bilinear in $(\varphi,\gamma)$, since the case depends on $\Bmat{m-1}$ and $\Bmat{m}$ only. The entry $\varphi_s$ is the number of occurrences of $j\cdots(m-1)$ ending at the $s$-th letter $m-1$, so $\varphi$ is nondecreasing, and it is a nonnegative integer combination of the vectors $(0,\dots,0,1,\dots,1)$; dually $\gamma$ is nonincreasing. In a window with a single letter $j$ and a single letter $l$, $\varphi$ and $\gamma$ run over these vectors, jointly with every $\Bmat{m-1}$ and $\Bmat{m}$, by the realisation remark of \cref{sec:prelim}. So \cref{thm:pivot} holds under its second hypothesis for every window as soon as it holds on those $27$ contents. This gives a computer-assisted proof of that case, independent of the proofs of \cref{lem:pminor,lem:rigid}.
+
 \section*{Acknowledgements and disclosure}
 
-Generative AI tools, Anthropic's Claude (through Claude Code), assisted with the exploration, the drafting of proofs and of the Lean formalisation, the computational checks, the literature search and the drafting of this article. Mathematical responsibility and authorship rest with Christopher Yamba. The use of these tools is not an independent human peer review.
+These results were developed with the assistance of an agentic AI harness: Anthropic's Claude, working through Claude Code with several coordinated agents, assisted with the exploration, the drafting of proofs and of the Lean formalisation, the computational checks, the literature search, the drafting of this article, and rounds of internal review by AI agents acting as skeptics and referees. Mathematical responsibility and authorship rest with Christopher Yamba. The use of these tools is not an independent human peer review. Corrections, comments, questions and feedback are welcome at \href{mailto:christopher.yamba@yambacode.com}{\texttt{christopher.yamba@yambacode.com}}.
 
 \bibliographystyle{amsplain}
 {\small\bibliography{references}}
