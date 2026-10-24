@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parent
 ALLOWED_AXIOMS = {"propext", "Quot.sound", "Classical.choice"}
-SOURCES = ["CornerSlide.lean", "TableauFamilies.lean", "WeightedCancellation.lean", "SignedArrays.lean", "AlternantSubsets.lean"]
+SOURCES = ["CornerSlide.lean", "TableauFamilies.lean", "WeightedCancellation.lean", "SignedArrays.lean", "AlternantSubsets.lean", "MultidimensionalFerrers.lean"]
 CONFIGURATION = ["lean-toolchain", "lakefile.toml", "lake-manifest.json"]
 REQUIRED_THEOREMS = {
     "CornerSlide.demote_valid_iff",
@@ -78,6 +78,18 @@ ALTERNANT_DECLARATIONS = [
 REQUIRED_THEOREMS.update(
     "AlternantSubsets." + name for name in ALTERNANT_DECLARATIONS[4:]
 )
+MULTIDIM_DECLARATIONS = [
+    "NoLocalThreeChain", "promote32", "hookBefore", "hookBubbleEnd", "hookBubbleMid", "kr1Q",
+    "bubble_injective_local_fiber", "promote32_tableau_valid", "promote32_tableau_graph_inversions",
+    "collision_witness_promoted_valid", "hookBubbleEnd_tableau_valid",
+    "hookBubbleEnd_tableau_graph_inversions", "hookBubbleMid_tableau_valid",
+    "hookBubbleMid_tableau_graph_inversions", "cascade_split_preserves_all",
+    "kr1_scale3_self_similarity", "kr1_scale3_divisible", "kr1_head_offset_identity",
+    "kr1_a3_core_weight", "kr1_a3_b0_octant_weight",
+]
+REQUIRED_THEOREMS.update(
+    "MultidimensionalFerrers." + name for name in MULTIDIM_DECLARATIONS[6:]
+)
 
 
 def run(lake: str, arguments: list[str], workspace: Path) -> dict:
@@ -117,12 +129,14 @@ def main() -> None:
         if forbidden:
             raise SystemExit(f"Forbidden proof tokens in {filename}: {sorted(set(forbidden))}")
 
-    inventory = "import WeightedCancellation\nimport SignedArrays\nimport AlternantSubsets\n" + "\n".join(
+    inventory = "import WeightedCancellation\nimport SignedArrays\nimport AlternantSubsets\nimport MultidimensionalFerrers\n" + "\n".join(
         f"#check @CornerSlide.{name}" for name in STATEMENT_DECLARATIONS
     ) + "\n" + "\n".join(
         f"#check @SignedArrays.{name}" for name in SIGNED_DECLARATIONS
     ) + "\n" + "\n".join(
         f"#check @AlternantSubsets.{name}" for name in ALTERNANT_DECLARATIONS
+    ) + "\n" + "\n".join(
+        f"#check @MultidimensionalFerrers.{name}" for name in MULTIDIM_DECLARATIONS
     ) + "\n"
     with tempfile.TemporaryDirectory(prefix="partition-certificate-") as temporary:
         workspace = Path(temporary)
