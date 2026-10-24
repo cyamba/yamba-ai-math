@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yamba Harness Benchmarks</title>
+<style>
+/* Offline copy of the published dashboard: the page below plus stand-ins for the dashboard runtime's tokens. */
+:root {
+  --color-bg: #f7f7f5; --color-panel: #fcfcfb; --color-fg: #0b0b0b; --color-fg-muted: #52514e;
+  --color-border-line: #e2e1dc; --color-ok: #0a7d0a; --color-warn: #8a5a00; --color-bad: #c03030;
+  --yb-series-1: #2a78d6; --yb-series-2: #eb6834; --yb-series-3: #1baf7a; --yb-series-4: #eda100;
+  --yb-series-5: #e87ba4; --yb-series-6: #008300; --yb-series-7: #6250d6; --yb-series-8: #e34948;
+  --cds-chart-grid: #e7e6e1; --cds-chart-axis: #bdbcb5; --cds-chart-reference: #8f8e88;
+  --cds-surface-popover: #ffffff; --cds-border: #d9d8d2; --cds-text-secondary: #52514e;
+  --cds-shadow-popover: 0 4px 16px rgb(0 0 0 / 0.12);
+  --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-anthropic-serif: Georgia, "Times New Roman", serif;
+  --cds-font-size-caption: 0.78rem; --cds-font-size-body: 0.92rem; --cds-font-size-heading: 1rem; --cds-font-size-title: 1.75rem;
+  --cds-font-weight-medium: 560; --cds-radius: 8px;
+  --cds-gap-xs: 0.25rem; --cds-gap-sm: 0.5rem; --cds-gap-md: 1rem; --cds-gap-lg: 1.5rem;
+  --cds-pad-xs: 0.25rem; --cds-pad-sm: 0.5rem; --cds-pad-lg: 1.25rem; --cds-dur-slow: 240ms;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #121211; --color-panel: #1a1a19; --color-fg: #f0efec; --color-fg-muted: #c3c2b7;
+    --color-border-line: #33332f; --color-ok: #4cc94c; --color-warn: #f2b84b; --color-bad: #ef7676;
+    --yb-series-1: #3987e5; --yb-series-2: #d95926; --yb-series-3: #199e70; --yb-series-4: #c98500;
+    --yb-series-5: #d55181; --yb-series-6: #008300; --yb-series-7: #9085e9; --yb-series-8: #e66767;
+    --cds-chart-grid: #2c2c29; --cds-chart-axis: #4a4a45; --cds-chart-reference: #7c7b74;
+    --cds-surface-popover: #232321; --cds-border: #3a3a36; --cds-text-secondary: #c3c2b7;
+    color-scheme: dark;
+  }
+}
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font: 14px/1.4 var(--font-anthropic-sans); }
+#dash-root { max-width: 90rem; margin-inline: auto; padding-block: 1.5rem 3rem;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.dash-skeleton { color: transparent; background: var(--cds-chart-grid); border-radius: var(--cds-radius); }
+</style>
+</head>
+<body>
+<script id="yambench-data" type="application/json">/*YAMBENCH_DATA*/null</script>
+<script>
+(() => {
+  const DATA = JSON.parse(document.getElementById('yambench-data').textContent) || {};
+  const calcs = {};
+  const listeners = [];
+  const rows = (id) => (id in DATA ? DATA[id] : calcs[id] ? calcs[id].fn(...calcs[id].inputs.map(rows)) : null);
+  window.dash = {
+    colors: Array.from({ length: 8 }, (_, i) => `var(--yb-series-${i + 1})`),
+    data(id) {
+      const found = rows(id);
+      return found == null
+        ? { status: 'missing', data: [], columns: [], meta: [], refreshing: false }
+        : { status: 'ok', data: found, columns: Object.keys(found[0] || {}), meta: [], refreshing: false };
+    },
+    calc(id, spec) { calcs[id] = spec; },
+    loader() {},
+    onData(fn) { listeners.push(fn); fn(); },
+    params: () => ({}), setParams() {}, resetParams() {}, setLink() {}, refresh() {},
+  };
+  let timer;
+  window.addEventListener('resize', () => { clearTimeout(timer); timer = setTimeout(() => listeners.forEach((fn) => fn()), 120); });
+})();
+</script>
+<div id="dash-root">
+<!--YAMBENCH_PAGE-->
+</div>
+</body>
+</html>

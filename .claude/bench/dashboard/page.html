@@ -1,0 +1,612 @@
+<style>
+.yb { display: grid; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+.yb-head { display: grid; gap: var(--cds-gap-xs); }
+.yb-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.2; text-wrap: balance; }
+.yb-takeaway { margin: 0; max-width: 75ch; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); line-height: 1.5; }
+.yb .yb-takeaway b { font-weight: 600; color: var(--color-fg); }
+.yb-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: end; }
+.yb-control { display: grid; gap: var(--cds-gap-xs); flex: 1 1 14rem; max-width: 28rem; min-width: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.yb-select { width: 100%; min-width: 0; font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); }
+.yb-grid { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+.yb-main { grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); }
+.yb-stack { display: grid; gap: var(--cds-gap-md); align-content: start; min-width: 0; }
+.yb-card { position: relative; display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.yb-card-title { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.yb-note { margin: 0; max-width: 70ch; font-size: var(--cds-font-size-caption); line-height: 1.45; color: var(--color-fg-muted); }
+.yb-radar { min-height: 24rem; }
+.yb-radar svg, .yb-spark svg { display: block; overflow: visible; }
+.yb-axis-label { font-size: var(--cds-font-size-caption); fill: var(--color-fg); }
+.yb-axis-status { font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted); font-style: italic; }
+.yb-ring-label { font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted); }
+.yb-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.yb-key { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
+.yb-swatch { display: inline-block; width: 1.25rem; border-top: 2px solid; }
+.yb-swatch-dashed { border-top-style: dashed; }
+.yb-tip { position: absolute; z-index: 2; display: grid; gap: 2px; max-width: 18rem; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); }
+.yb-tip-head { color: var(--cds-text-secondary); }
+.yb-tip-row { display: flex; align-items: center; gap: var(--cds-gap-xs); font-variant-numeric: tabular-nums; }
+.yb-dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: var(--cds-gap-xs) var(--cds-gap-md); margin: 0; font-size: var(--cds-font-size-caption); }
+.yb-dl dt { color: var(--color-fg-muted); }
+.yb-dl dd { margin: 0; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.yb-table-wrap { max-height: 30rem; overflow: auto; }
+.yb-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.yb-table th { position: sticky; top: 0; z-index: 1; text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); background: var(--color-panel); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.yb-table td { vertical-align: top; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.yb .yb-num { text-align: right; white-space: nowrap; }
+.yb-pill { display: inline-flex; align-items: center; gap: 0.35em; white-space: nowrap; }
+.yb-pill::before { content: ""; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: currentColor; }
+.yb-pass, .yb-better { color: var(--color-ok); }
+.yb-review { color: var(--color-warn); }
+.yb-fail, .yb-worse { color: var(--color-bad); }
+.yb-unknown, .yb-equal, .yb-not-comparable { color: var(--color-fg-muted); }
+.yb-sparks { display: grid; gap: var(--cds-gap-sm) var(--cds-gap-md); grid-template-columns: repeat(auto-fill, minmax(min(100%, 10.5rem), 1fr)); }
+.yb-spark { display: grid; gap: 2px; min-width: 0; }
+.yb-spark-title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.yb-spark-label { font-size: var(--cds-font-size-caption); fill: var(--color-fg); font-variant-numeric: tabular-nums; }
+.yb-notes { display: grid; gap: var(--cds-gap-sm); margin: 0; padding: 0; list-style: none; font-size: var(--cds-font-size-caption); line-height: 1.45; }
+.yb-notes li { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: var(--cds-gap-sm); }
+.yb-kind { padding-top: 0.15em; font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-fg-muted); }
+.yb-empty { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.yb-failed { display: flex; align-items: center; justify-content: center; gap: 0.5em; min-height: 6rem; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.yb-failed::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); }
+.yb [data-dash-source-state=refreshing] { opacity: 0.5; transition: opacity var(--cds-dur-slow); }
+.yb [data-dash-source-state=empty] { color: transparent; }
+.yb [tabindex]:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+@media (max-width: 30rem) { .yb-notes li { grid-template-columns: minmax(0, 1fr); } }
+</style>
+
+<div class="yb" id="yb">
+  <header class="yb-head" id="overview">
+    <h1 class="yb-title">Yamba harness benchmarks</h1>
+    <p class="yb-takeaway" id="takeaway"><span class="dash-skeleton">—</span></p>
+  </header>
+
+  <div class="yb-controls" id="controls">
+    <label class="yb-control" for="yb-problem">Problem
+      <select class="yb-select" id="yb-problem" data-source="records"></select></label>
+    <label class="yb-control" for="yb-version">Version
+      <select class="yb-select" id="yb-version" data-source="records"></select></label>
+    <label class="yb-control" for="yb-baseline">Compare with
+      <select class="yb-select" id="yb-baseline" data-source="records"></select></label>
+  </div>
+
+  <section class="yb-grid yb-main" id="summary">
+    <article class="yb-card" id="radar-card">
+      <h2 class="yb-card-title">Twelve benchmarks</h2>
+      <p class="yb-note">Each axis scores 0 to 100. An axis that is pending independent judgment, not measured or not applicable is a gap with a dashed spoke, never a zero. Dashed rays separate the three families.</p>
+      <div class="yb-radar dash-skeleton" id="radar" data-source="scores records"></div>
+      <div class="yb-legend" id="radar-legend"></div>
+      <div class="yb-tip" id="radar-tip" hidden></div>
+    </article>
+    <div class="yb-stack">
+      <article class="yb-card" id="gates-card">
+        <h2 class="yb-card-title">Hard gates</h2>
+        <p class="yb-note">Checked before any axis. Unknown never counts as a pass; review means a computed excess waits for the auditor.</p>
+        <div class="yb-table-wrap">
+          <table class="yb-table" id="gates-table" data-source="gates" data-row-key="record_id,gate_id">
+            <thead><tr><th data-field="gate_id">Gate</th><th data-field="gate_name">Checks</th><th data-field="status">Status</th><th data-field="notes">Notes</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+      <article class="yb-card" id="provenance-card">
+        <h2 class="yb-card-title">What was benchmarked</h2>
+        <dl class="yb-dl" id="provenance">
+          <dt>Problem</dt><dd data-source="records" data-field="problem_title">—</dd>
+          <dt>Framework commit</dt><dd data-source="records" data-field="framework_short">—</dd>
+          <dt>Branch</dt><dd data-source="records" data-field="framework_branch">—</dd>
+          <dt>Commit subject</dt><dd data-source="records" data-field="framework_subject">—</dd>
+          <dt>Output commit</dt><dd data-source="records" data-field="output_short">—</dd>
+          <dt>Record</dt><dd data-source="records" data-field="kind">—</dd>
+          <dt>Benchmarked</dt><dd data-source="records" data-field="created_at">—</dd>
+          <dt>Program</dt><dd data-source="records" data-field="program_id">—</dd>
+          <dt>Client</dt><dd data-source="records" data-field="clients">—</dd>
+          <dt>Model</dt><dd data-source="records" data-field="models">—</dd>
+          <dt>Effort</dt><dd data-source="records" data-field="efforts">—</dd>
+          <dt>Working threads</dt><dd data-source="records" data-field="working_threads">—</dd>
+          <dt>Effective tokens</dt><dd data-source="records" data-field="effective_tokens">—</dd>
+          <dt>Cache-read tokens</dt><dd data-source="records" data-field="cache_read">—</dd>
+          <dt>Compactions</dt><dd data-source="records" data-field="compactions">—</dd>
+          <dt>Steering turns</dt><dd data-source="records" data-field="steering_turns">—</dd>
+          <dt>Assessor model</dt><dd data-source="records" data-field="assessor_model">—</dd>
+          <dt>Spec version</dt><dd data-source="records" data-field="spec_version">—</dd>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <section class="yb-grid" id="detail">
+    <article class="yb-card" id="compare-card">
+      <h2 class="yb-card-title">Compared with another version</h2>
+      <p class="yb-note" id="compare-summary">—</p>
+      <div class="yb-table-wrap">
+        <table class="yb-table" id="compare-table" data-source="axis_delta" data-row-key="pair_key">
+          <thead><tr><th data-field="metric_id">Axis</th><th data-field="outcome">Outcome</th><th class="yb-num" data-field="delta">Change</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </article>
+    <article class="yb-card" id="axes-card">
+      <h2 class="yb-card-title">Axis detail</h2>
+      <p class="yb-note">Coverage is the share of an axis's items that could be evaluated.</p>
+      <div class="yb-table-wrap">
+        <table class="yb-table" id="axes-table" data-source="scores" data-row-key="record_id,metric_id">
+          <thead><tr><th data-field="metric_id">Axis</th><th data-field="metric_name">Benchmark</th><th data-field="status">Status</th><th class="yb-num" data-field="score">Score</th><th class="yb-num" data-field="coverage">Coverage</th><th data-field="detail">Detail</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <section class="yb-grid" id="history">
+    <article class="yb-card" id="trend-card">
+      <h2 class="yb-card-title">Across versions</h2>
+      <p class="yb-note">Final records on this problem in benchmark order, each axis on the same 0 to 100 scale. The selected version is the larger dot.</p>
+      <div class="yb-sparks" id="trend" data-source="scores records"></div>
+    </article>
+    <article class="yb-card" id="trajectory-card">
+      <h2 class="yb-card-title">Within this run</h2>
+      <p class="yb-note">Intermediate snapshots taken during the run. Snapshots compute only the measured axes; judged axes stay pending.</p>
+      <div class="yb-sparks" id="trajectory" data-source="trajectory"></div>
+    </article>
+  </section>
+
+  <section class="yb-grid" id="reference">
+    <article class="yb-card" id="notes-card">
+      <h2 class="yb-card-title">Flags and limitations</h2>
+      <ul class="yb-notes" id="notes" data-source="notes"></ul>
+    </article>
+    <article class="yb-card" id="glossary-card">
+      <h2 class="yb-card-title">What each benchmark asks</h2>
+      <div class="yb-table-wrap">
+        <table class="yb-table" id="glossary-table" data-source="metrics" data-row-key="metric_id">
+          <thead><tr><th data-field="metric_id">Axis</th><th data-field="name">Benchmark</th><th data-field="family">Family</th><th data-field="mode">Mode</th><th data-field="question">Question</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="yb-note">Modes: C computed, K checklist, J judged by an independent assessor on anchors 0, 25, 50, 75, 100.</p>
+    </article>
+  </section>
+</div>
+
+<script>
+dash.calc('status_counts', {
+  inputs: ['scores'],
+  title: 'Axes by status',
+  description: 'Counts each record’s twelve axes as scored, pending judgment, or unmeasured (unknown or not applicable).',
+  fn: (scores) => {
+    const out = {};
+    for (const s of scores) {
+      const row = out[s.record_id] ??= { record_id: s.record_id, scored: 0, pending: 0, unmeasured: 0 };
+      if (s.status === 'scored') row.scored += 1;
+      else if (s.status === 'pending') row.pending += 1;
+      else row.unmeasured += 1;
+    }
+    return Object.values(out);
+  },
+});
+
+dash.calc('axis_delta', {
+  inputs: ['scores', 'records'],
+  title: 'Change per axis between versions',
+  description: 'For every ordered pair of records on the same problem, the score difference on each axis both scored; Resource efficiency only when client and model match.',
+  fn: (scores, records) => {
+    const by = {};
+    for (const s of scores) (by[s.record_id] ??= {})[s.metric_id] = s;
+    const rows = [];
+    for (const a of records) {
+      for (const b of records) {
+        if (a.record_id === b.record_id || a.problem_id !== b.problem_id) continue;
+        const sameRuntime = a.clients === b.clients && a.models === b.models;
+        for (const [metric, s] of Object.entries(by[a.record_id] ?? {})) {
+          const t = (by[b.record_id] ?? {})[metric];
+          const comparable = s.status === 'scored' && t?.status === 'scored' && (metric !== 'B09' || sameRuntime);
+          const delta = comparable ? Math.round((s.score - t.score) * 10) / 10 : null;
+          rows.push({
+            pair_key: `${a.record_id}|${b.record_id}|${metric}`, pair: `${a.record_id}|${b.record_id}`,
+            record_id: a.record_id, baseline_id: b.record_id, metric_id: metric, delta,
+            outcome: !comparable ? 'not comparable' : delta > 0 ? 'better' : delta < 0 ? 'worse' : 'equal',
+          });
+        }
+      }
+    }
+    return rows;
+  },
+});
+
+dash.calc('pair_summary', {
+  inputs: ['axis_delta', 'gates', 'records'],
+  title: 'Version comparison summary',
+  description: 'Axes better, worse, equal and not comparable per pair; observed dominance needs no worse axis, at least one better, and no gate regression.',
+  fn: (axis_delta, gates, records) => {
+    const order = { pass: 0, unknown: 1, review: 2, fail: 3 };
+    const gate = {};
+    for (const g of gates) (gate[g.record_id] ??= {})[g.gate_id] = g.status;
+    const rec = Object.fromEntries(records.map((r) => [r.record_id, r]));
+    const out = {};
+    for (const d of axis_delta) {
+      const p = out[d.pair] ??= { pair: d.pair, record_id: d.record_id, baseline_id: d.baseline_id, better: 0, worse: 0, equal: 0, not_comparable: 0 };
+      p[d.outcome === 'not comparable' ? 'not_comparable' : d.outcome] += 1;
+    }
+    return Object.values(out).map((p) => {
+      const a = gate[p.record_id] ?? {};
+      const b = gate[p.baseline_id] ?? {};
+      const regression = Object.keys(a).some((g) => order[a[g]] > order[b[g] ?? 'pass']);
+      const x = rec[p.record_id] ?? {};
+      const y = rec[p.baseline_id] ?? {};
+      const eligible = x.kind === 'final' && y.kind === 'final' && !x.retrospective && !y.retrospective && x.spec_version === y.spec_version;
+      return { ...p, gate_regression: regression, observed_dominance: p.worse === 0 && p.better > 0 && !regression, claim_eligible: eligible };
+    });
+  },
+});
+
+(() => {
+  const SVG = 'http://www.w3.org/2000/svg';
+  const IDS = ['records', 'scores', 'gates', 'notes', 'metrics', 'trajectory'];
+  const FAILED = ['error', 'connect', 'declined', 'missing'];
+  const STATUS = { scored: 'scored', pending: 'pending judgment', unknown: 'not measured', 'n/a': 'not applicable' };
+  const state = { problem: null, version: null, baseline: undefined };
+  const $ = (id) => document.getElementById(id);
+  const enc = (v) => encodeURIComponent(String(v));
+  const where = (pairs) => Object.entries(pairs).map(([k, v]) => `${enc(k)}=${enc(v)}`).join('&');
+  const key = (...parts) => parts.map(enc).join(',');
+  const plain = new Intl.NumberFormat('en');
+  const compact = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+  const score = (v) => (v == null ? '—' : (Math.round(v * 10) / 10).toFixed(Number.isInteger(Math.round(v * 10) / 10) ? 0 : 1));
+  const signed = (v) => (v == null ? '—' : `${v > 0 ? '+' : v < 0 ? '−' : '±'}${score(Math.abs(v))}`);
+  const count = (v) => (v == null ? '—' : v >= 10000 ? compact.format(v) : plain.format(v));
+  const share = (v) => (v == null ? '—' : `${Math.round(v * 100)}%`);
+  const date = (v) => (v ? new Date(v).toLocaleString('en', { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'UTC' }) + ' UTC' : '—');
+  const text = (v) => (v == null || v === '' ? '—' : String(v));
+  const FORMAT = { created_at: date, effective_tokens: count, cache_read: count, working_threads: count, compactions: count, steering_turns: count };
+
+  const node = (tag, attrs = {}, content) => {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) if (v != null) el.setAttribute(k, v);
+    if (content != null) el.textContent = content;
+    return el;
+  };
+  const svgNode = (tag, attrs = {}, content) => {
+    const el = document.createElementNS(SVG, tag);
+    for (const [k, v] of Object.entries(attrs)) if (v != null) el.setAttribute(k, v);
+    if (content != null) el.textContent = content;
+    return el;
+  };
+  const pill = (status, label) => node('span', { class: `yb-pill yb-${String(status).replace(/[^a-z]+/g, '-')}` }, label ?? status);
+
+  const label = (r) => [r.framework_short, r.kind, r.step, date(r.created_at).replace(/,? \d\d:\d\d UTC$/, ''), r.retrospective ? 'retrospective' : null].filter(Boolean).join(' · ');
+  const byTime = (a, b) => String(a.created_at ?? '').localeCompare(String(b.created_at ?? ''));
+
+  function syncSelection(records) {
+    const sorted = [...records].sort(byTime);
+    const problems = [...new Set(sorted.map((r) => r.problem_id))];
+    if (!problems.includes(state.problem)) state.problem = sorted.at(-1)?.problem_id ?? null;
+    const mine = sorted.filter((r) => r.problem_id === state.problem);
+    if (!mine.some((r) => r.record_id === state.version)) {
+      const finals = mine.filter((r) => r.kind === 'final');
+      state.version = (finals.at(-1) ?? mine.at(-1))?.record_id ?? null;
+      state.baseline = undefined;
+    }
+    if (state.baseline === undefined || state.baseline === state.version || (state.baseline && !mine.some((r) => r.record_id === state.baseline))) {
+      const index = mine.findIndex((r) => r.record_id === state.version);
+      state.baseline = mine.slice(0, index).filter((r) => r.kind === 'final').at(-1)?.record_id ?? '';
+    }
+    const titles = Object.fromEntries(sorted.map((r) => [r.problem_id, r.problem_title || r.problem_id]));
+    $('yb-problem').replaceChildren(...problems.map((p) => new Option(titles[p], p)));
+    $('yb-problem').value = state.problem ?? '';
+    $('yb-version').replaceChildren(...[...mine].reverse().map((r) => new Option(label(r), r.record_id)));
+    $('yb-version').value = state.version ?? '';
+    const others = [...mine].reverse().filter((r) => r.record_id !== state.version);
+    $('yb-baseline').replaceChildren(new Option('No comparison', ''), ...others.map((r) => new Option(label(r), r.record_id)));
+    $('yb-baseline').value = state.baseline ?? '';
+    return mine;
+  }
+
+  function scoresOf(scores, recordId) {
+    return Object.fromEntries(scores.filter((s) => s.record_id === recordId).map((s) => [s.metric_id, s]));
+  }
+
+  function drawRadar(metrics, chosen, base, records) {
+    const box = $('radar');
+    const tip = $('radar-tip');
+    tip.hidden = true;
+    box.replaceChildren();
+    const width = Math.max(box.clientWidth, 280);
+    const narrow = width < 560;
+    const height = Math.min(Math.max(width * 0.82, 320), 600);
+    const svg = svgNode('svg', { width: '100%', viewBox: `0 0 ${width} ${height}`, role: 'img' });
+    box.append(svg);
+    const names = metrics.map((m) => (narrow ? m.metric_id : `${m.metric_id} ${m.name}`));
+    const probe = svgNode('text', { class: 'yb-axis-label' });
+    svg.append(probe);
+    let widest = 0;
+    for (const name of names) { probe.textContent = name; widest = Math.max(widest, probe.getComputedTextLength()); }
+    probe.remove();
+    const cx = width / 2;
+    const cy = height / 2 + 4;
+    const radius = Math.max(70, Math.min(cx - widest - 20, cy - 44));
+    const n = metrics.length;
+    const angle = (i) => -Math.PI / 2 + (i * 2 * Math.PI) / n;
+    const at = (i, r) => [cx + r * Math.cos(angle(i)), cy + r * Math.sin(angle(i))];
+    const grid = svgNode('g');
+    svg.append(grid);
+    for (const level of [25, 50, 75, 100]) {
+      const pts = metrics.map((_, i) => at(i, (radius * level) / 100).join(',')).join(' ');
+      grid.append(svgNode('polygon', { points: pts, fill: 'none', stroke: 'var(--cds-chart-grid)', 'stroke-width': 1 }));
+      const [lx, ly] = at(0, (radius * level) / 100);
+      grid.append(svgNode('text', { x: lx + 4, y: ly - 3, class: 'yb-ring-label' }, String(level)));
+    }
+    metrics.forEach((m, i) => {
+      const [x, y] = at(i, radius);
+      const measured = chosen[m.metric_id]?.status === 'scored';
+      grid.append(svgNode('line', { x1: cx, y1: cy, x2: x, y2: y, stroke: measured ? 'var(--cds-chart-axis)' : 'var(--cds-chart-grid)', 'stroke-width': 1, 'stroke-dasharray': measured ? null : '3 3' }));
+    });
+    const families = metrics.map((m) => m.family);
+    families.forEach((family, i) => {
+      if (family === families[(i + 1) % n]) return;
+      const a = angle(i) + Math.PI / n;
+      grid.append(svgNode('line', { x1: cx, y1: cy, x2: cx + (radius + 6) * Math.cos(a), y2: cy + (radius + 6) * Math.sin(a), stroke: 'var(--cds-chart-reference)', 'stroke-width': 1, 'stroke-dasharray': '2 4' }));
+    });
+    metrics.forEach((m, i) => {
+      const [x, y] = at(i, radius + 12);
+      const c = Math.cos(angle(i));
+      const s = Math.sin(angle(i));
+      const anchor = c > 0.2 ? 'start' : c < -0.2 ? 'end' : 'middle';
+      const status = chosen[m.metric_id]?.status;
+      const top = s < -0.5;
+      const nameY = top ? y - (status && status !== 'scored' ? 16 : 2) : s > 0.5 ? y + 12 : y + 4;
+      svg.append(svgNode('text', { x, y: nameY, 'text-anchor': anchor, class: 'yb-axis-label' }, names[i]));
+      if (status && status !== 'scored') svg.append(svgNode('text', { x, y: nameY + 15, 'text-anchor': anchor, class: 'yb-axis-status' }, STATUS[status] ?? status));
+    });
+
+    const series = (map, color, baseline) => {
+      const pts = metrics.map((m, i) => (map[m.metric_id]?.status === 'scored' ? at(i, (radius * map[m.metric_id].score) / 100) : null));
+      let area = '';
+      let edges = '';
+      pts.forEach((p, i) => {
+        const q = pts[(i + 1) % n];
+        if (p && q) {
+          area += `M${cx},${cy}L${p.join(',')}L${q.join(',')}Z`;
+          edges += `M${p.join(',')}L${q.join(',')}`;
+        }
+      });
+      const g = svgNode('g');
+      if (area) g.append(svgNode('path', { d: area, style: `fill:${color};fill-opacity:${baseline ? 0.07 : 0.16};stroke:none` }));
+      if (edges) g.append(svgNode('path', { d: edges, fill: 'none', style: `stroke:${color}`, 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', 'stroke-dasharray': baseline ? '6 4' : null }));
+      pts.forEach((p) => {
+        if (p) g.append(svgNode('circle', { cx: p[0], cy: p[1], r: baseline ? 3 : 4.5, style: `fill:${baseline ? 'var(--color-panel)' : color};stroke:${baseline ? color : 'var(--color-panel)'}`, 'stroke-width': 2 }));
+      });
+      svg.append(g);
+    };
+    if (base) series(base, dash.colors[1], true);
+    series(chosen, dash.colors[0], false);
+
+    const scoredCount = metrics.filter((m) => chosen[m.metric_id]?.status === 'scored').length;
+    svg.setAttribute('aria-label', `Radar of twelve benchmark axes; ${scoredCount} scored for the selected version.`);
+    const card = $('radar-card');
+    metrics.forEach((m, i) => {
+      const s = chosen[m.metric_id];
+      const point = s?.status === 'scored' ? at(i, (radius * s.score) / 100) : at(i, radius);
+      const hit = svgNode('circle', { cx: point[0], cy: point[1], r: 14, fill: 'transparent', tabindex: 0, 'aria-label': `${m.metric_id} ${m.name}` });
+      const show = () => {
+        const b = base?.[m.metric_id];
+        tip.replaceChildren(node('div', { class: 'yb-tip-head' }, `${m.metric_id} · ${m.name}`));
+        const row = (color, dashed, name, entry) => {
+          const line = node('div', { class: 'yb-tip-row' });
+          line.append(node('span', { class: `yb-swatch${dashed ? ' yb-swatch-dashed' : ''}`, style: `border-color:${color}` }), node('span', {}, `${name}: ${entry?.status === 'scored' ? score(entry.score) : STATUS[entry?.status] ?? '—'}`));
+          tip.append(line);
+        };
+        row(dash.colors[0], false, 'This version', s);
+        if (base) row(dash.colors[1], true, 'Compared with', b);
+        if (base && s?.status === 'scored' && b?.status === 'scored') tip.append(node('div', { class: 'yb-tip-row' }, `Change ${signed(Math.round((s.score - b.score) * 10) / 10)}`));
+        tip.hidden = false;
+        const rect = hit.getBoundingClientRect();
+        const frame = card.getBoundingClientRect();
+        let left = rect.right - frame.left + 6;
+        if (left + tip.offsetWidth > frame.width - 8) left = rect.left - frame.left - tip.offsetWidth - 6;
+        tip.style.left = `${Math.max(8, left)}px`;
+        tip.style.top = `${Math.max(8, rect.top - frame.top - 8)}px`;
+      };
+      const hide = () => { tip.hidden = true; };
+      hit.addEventListener('mouseenter', show);
+      hit.addEventListener('focus', show);
+      hit.addEventListener('mouseleave', hide);
+      hit.addEventListener('blur', hide);
+      svg.append(hit);
+    });
+
+    const legend = $('radar-legend');
+    const chosenRecord = records.find((r) => r.record_id === state.version);
+    const baseRecord = records.find((r) => r.record_id === state.baseline);
+    const keyItem = (color, dashed, name) => {
+      const item = node('span', { class: 'yb-key' });
+      item.append(node('span', { class: `yb-swatch${dashed ? ' yb-swatch-dashed' : ''}`, style: `border-color:${color}` }), node('span', {}, name));
+      return item;
+    };
+    legend.replaceChildren(keyItem(dash.colors[0], false, chosenRecord ? label(chosenRecord) : 'This version'));
+    if (baseRecord) legend.append(keyItem(dash.colors[1], true, label(baseRecord)));
+    const groups = [];
+    for (const m of metrics) {
+      const last = groups.at(-1);
+      if (last && last.family === m.family) last.to = m.metric_id; else groups.push({ family: m.family, from: m.metric_id, to: m.metric_id });
+    }
+    legend.append(node('span', {}, groups.map((g) => `${g.family} ${g.from}–${g.to}`).join(' · ')));
+  }
+
+  function spark(box, title, points, highlight) {
+    const cell = node('div', { class: 'yb-spark' });
+    cell.append(node('div', { class: 'yb-spark-title', title }, title));
+    box.append(cell);
+    const width = Math.max(cell.clientWidth, 120);
+    const height = 44;
+    const right = 34;
+    const svg = svgNode('svg', { width: '100%', viewBox: `0 0 ${width} ${height}`, role: 'img', 'aria-label': title });
+    cell.append(svg);
+    const x = (i) => (points.length <= 1 ? (width - right) / 2 : 4 + (i * (width - right - 8)) / (points.length - 1));
+    const y = (v) => 4 + ((100 - v) / 100) * (height - 8);
+    for (const level of [0, 100]) svg.append(svgNode('line', { x1: 0, x2: width - right, y1: y(level), y2: y(level), stroke: 'var(--cds-chart-grid)', 'stroke-width': 1 }));
+    let d = '';
+    points.forEach((p, i) => {
+      const q = points[i + 1];
+      if (p.score != null && q?.score != null) d += `M${x(i)},${y(p.score)}L${x(i + 1)},${y(q.score)}`;
+    });
+    if (d) svg.append(svgNode('path', { d, fill: 'none', style: `stroke:${dash.colors[0]}`, 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }));
+    points.forEach((p, i) => {
+      if (p.score == null) return;
+      const big = i === highlight;
+      svg.append(svgNode('circle', { cx: x(i), cy: y(p.score), r: big ? 4 : 2.5, style: `fill:${dash.colors[0]};stroke:var(--color-panel)`, 'stroke-width': big ? 2 : 1 }));
+    });
+    const last = [...points.keys()].reverse().find((i) => points[i].score != null);
+    if (last != null) svg.append(svgNode('text', { x: x(last) + 7, y: y(points[last].score) + 4, class: 'yb-spark-label' }, score(points[last].score)));
+    else svg.append(svgNode('text', { x: 4, y: height / 2 + 4, class: 'yb-spark-label', style: 'fill:var(--color-fg-muted)' }, 'no score yet'));
+  }
+
+  function fillTable(table, rows) {
+    const body = table.tBodies[0];
+    body.replaceChildren(...rows.map(({ key: k, cells }) => {
+      const tr = node('tr', { 'data-key': k });
+      for (const c of cells) {
+        const td = node('td', c.num ? { class: 'yb-num' } : {});
+        if (c.el) td.append(c.el); else td.textContent = c.text;
+        tr.append(td);
+      }
+      return tr;
+    }));
+  }
+
+  function markedSpan(source, field, pairs, value, bold) {
+    return node(bold ? 'b' : 'span', { 'data-source': source, 'data-field': field, 'data-where': where(pairs) }, value);
+  }
+
+  function render() {
+    const sets = Object.fromEntries(IDS.map((id) => [id, dash.data(id)]));
+    const failed = Object.values(sets).some((d) => FAILED.includes(d.status));
+    const ready = Object.values(sets).every((d) => d.status === 'ok');
+    const loading = document.querySelectorAll('#yb .dash-skeleton');
+    if (!ready) {
+      for (const id of ['radar', 'trend', 'trajectory']) $(id).replaceChildren();
+      if (failed) {
+        loading.forEach((el) => el.classList.remove('dash-skeleton'));
+        for (const id of ['radar', 'trend', 'trajectory']) $(id).replaceChildren(node('div', { class: 'yb-failed' }, 'Failed to load'));
+      }
+      return;
+    }
+    loading.forEach((el) => el.classList.remove('dash-skeleton'));
+    const records = sets.records.data;
+    const scores = sets.scores.data;
+    const metrics = [...sets.metrics.data].sort((a, b) => a.metric_id.localeCompare(b.metric_id));
+    const mine = syncSelection(records);
+    const chosenRecord = records.find((r) => r.record_id === state.version);
+    if (!chosenRecord) {
+      $('takeaway').textContent = 'No benchmark records yet. Run /bench-run in Claude Code to benchmark the first version.';
+      for (const id of ['radar', 'trend', 'trajectory', 'notes', 'radar-legend']) $(id).replaceChildren();
+      for (const id of ['gates-table', 'axes-table', 'compare-table', 'glossary-table']) $(id).tBodies[0].replaceChildren();
+      return;
+    }
+    const rid = chosenRecord.record_id;
+    const chosen = scoresOf(scores, rid);
+    const base = state.baseline ? scoresOf(scores, state.baseline) : null;
+
+    const counts = dash.data('status_counts');
+    const takeaway = $('takeaway');
+    takeaway.replaceChildren(
+      'Framework ', markedSpan('records', 'framework_short', { record_id: rid }, text(chosenRecord.framework_short), true),
+      ' on ', markedSpan('records', 'problem_title', { record_id: rid }, text(chosenRecord.problem_title)), ': ');
+    if (counts.status === 'ok') {
+      const c = counts.data.find((row) => row.record_id === rid) ?? {};
+      takeaway.append(
+        markedSpan('status_counts', 'scored', { record_id: rid }, text(c.scored), true), ' of 12 benchmarks scored, ',
+        markedSpan('status_counts', 'pending', { record_id: rid }, text(c.pending), true), ' pending independent judgment, ',
+        markedSpan('status_counts', 'unmeasured', { record_id: rid }, text(c.unmeasured), true), ' not measured or not applicable.');
+    }
+    if (chosenRecord.retrospective) takeaway.append(' Retrospective record: the problem’s milestone ladder was registered after this run, so it cannot support a comparison claim.');
+
+    drawRadar(metrics, chosen, base, records);
+
+    fillTable($('gates-table'), sets.gates.data.filter((g) => g.record_id === rid).map((g) => ({
+      key: key(g.record_id, g.gate_id),
+      cells: [{ text: g.gate_id }, { text: text(g.gate_name) }, { el: pill(g.status) }, { text: text(g.notes) }],
+    })));
+
+    document.querySelectorAll('#provenance dd').forEach((dd) => {
+      const field = dd.dataset.field;
+      dd.dataset.where = where({ record_id: rid });
+      dd.textContent = (FORMAT[field] ?? text)(chosenRecord[field]);
+      if (field === 'framework_short' || field === 'output_short') dd.title = text(chosenRecord[field === 'framework_short' ? 'framework_commit' : 'output_commit']);
+    });
+
+    const summary = $('compare-summary');
+    if (state.baseline) {
+      const pair = `${rid}|${state.baseline}`;
+      const pairs = dash.data('pair_summary');
+      const p = pairs.status === 'ok' ? pairs.data.find((row) => row.pair === pair) : null;
+      const other = records.find((r) => r.record_id === state.baseline);
+      summary.replaceChildren('Against ', markedSpan('records', 'framework_short', { record_id: state.baseline }, text(other?.framework_short), true), ': ');
+      if (p) {
+        summary.append(
+          markedSpan('pair_summary', 'better', { pair }, String(p.better), true), ' better, ',
+          markedSpan('pair_summary', 'worse', { pair }, String(p.worse), true), ' worse, ',
+          markedSpan('pair_summary', 'equal', { pair }, String(p.equal), true), ' equal, ',
+          markedSpan('pair_summary', 'not_comparable', { pair }, String(p.not_comparable), true), ' not comparable. ',
+          `Observed dominance: ${p.observed_dominance ? 'yes' : 'no'}${p.gate_regression ? ' (a gate regressed)' : ''}. `,
+          p.claim_eligible ? 'Both are prospective final records on the same spec.' : 'Not claim-eligible: a retrospective or snapshot record, or a different spec. This is descriptive only; nothing here authorizes promotion.');
+      }
+      const deltas = dash.data('axis_delta');
+      const rows = deltas.status === 'ok' ? deltas.data.filter((d) => d.pair === pair).sort((a, b) => a.metric_id.localeCompare(b.metric_id)) : [];
+      fillTable($('compare-table'), rows.map((d) => ({
+        key: d.pair_key,
+        cells: [{ text: d.metric_id }, { el: pill(d.outcome) }, { text: signed(d.delta), num: true }],
+      })));
+    } else {
+      summary.textContent = 'Choose a version to compare with. Only versions benchmarked on the same problem are listed.';
+      fillTable($('compare-table'), []);
+    }
+
+    fillTable($('axes-table'), metrics.map((m) => chosen[m.metric_id]).filter(Boolean).map((s) => ({
+      key: key(s.record_id, s.metric_id),
+      cells: [{ text: s.metric_id }, { text: text(s.metric_name) }, { text: STATUS[s.status] ?? text(s.status) },
+              { text: score(s.score), num: true }, { text: share(s.coverage), num: true }, { text: text(s.detail) }],
+    })));
+
+    const finals = mine.filter((r) => r.kind === 'final');
+    const trend = $('trend');
+    trend.replaceChildren();
+    if (!finals.length) trend.append(node('p', { class: 'yb-empty' }, 'No final records on this problem yet.'));
+    const highlight = finals.findIndex((r) => r.record_id === rid);
+    const finalScores = finals.map((r) => scoresOf(scores, r.record_id));
+    for (const m of finals.length ? metrics : []) {
+      spark(trend, `${m.metric_id} ${m.name}`, finalScores.map((map) => ({ score: map[m.metric_id]?.status === 'scored' ? map[m.metric_id].score : null })), highlight);
+    }
+
+    const steps = sets.trajectory.data.filter((t) => t.record_id === rid);
+    const trajectory = $('trajectory');
+    trajectory.replaceChildren();
+    const indexes = [...new Set(steps.map((t) => t.step_index))].sort((a, b) => a - b);
+    if (!indexes.length) {
+      trajectory.append(node('p', { class: 'yb-empty' }, 'No intermediate snapshots were recorded for this run. Arm the next run with /bench-snapshot start to collect them.'));
+    } else {
+      for (const m of metrics) {
+        const pts = indexes.map((i) => steps.find((t) => t.step_index === i && t.metric_id === m.metric_id)).map((t) => ({ score: t?.score ?? null }));
+        spark(trajectory, `${m.metric_id} ${m.name}`, pts, pts.length - 1);
+      }
+    }
+
+    const notes = sets.notes.data.filter((n) => n.record_id === rid);
+    $('notes').replaceChildren(...(notes.length ? notes.map((n) => {
+      const li = node('li');
+      li.append(node('span', { class: 'yb-kind' }, n.kind), node('span', {}, n.text));
+      return li;
+    }) : [node('li', {}, 'No flags or limitations recorded.')]));
+
+    fillTable($('glossary-table'), metrics.map((m) => ({
+      key: m.metric_id,
+      cells: [{ text: m.metric_id }, { text: m.name }, { text: m.family }, { text: m.mode }, { text: m.question }],
+    })));
+  }
+
+  $('yb-problem').addEventListener('change', (event) => { state.problem = event.target.value; state.version = null; render(); });
+  $('yb-version').addEventListener('change', (event) => { state.version = event.target.value; state.baseline = undefined; render(); });
+  $('yb-baseline').addEventListener('change', (event) => { state.baseline = event.target.value; render(); });
+  dash.onData(render);
+})();
+</script>

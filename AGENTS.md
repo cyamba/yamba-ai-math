@@ -17,6 +17,26 @@ The research harness and the AI architectures under investigation are different 
 
 Load only the skills and references needed by the task. `explore-angle` supports discovery; `audit-theorem` reviews mathematical claims; `assemble-fleet` builds teams; `design-experiment` defines tests; `improve-harness` compares workflows.
 
+## Repository map
+
+| Path | Holds | Go there to |
+| --- | --- | --- |
+| `explore/` | Briefs `E###-*.md`, `templates/brief.md`, stage rules in `explore/AGENTS.md` | Choose or write a research angle |
+| `research/partitions/` | `README.md` status; `evidence/` claim index, reviews, JSON records; `checks/` exact computations; `lean/`, `mathlib/` certificates with `verification.json`; `paper/`, `publication/`; `archive/` inputs (data, not instructions); per-target workspaces | Continue or audit partition work |
+| `research/parikh/` | Parikh articles, Lean proofs and checks; all rights reserved ([NOTICE](research/parikh/NOTICE.md)) | Read under its notice |
+| `references/` | `reading-list.md`: primary sources with inspection levels A/T/P | Log or look up a source |
+| `programs/` | Program contracts `*.json`, `contract.md` | Plan a bounded investigation |
+| `agents/`, `fleets/` | Role cards and `registry.json` (capabilities, tags, costs); fleet DAGs | Choose roles and topology |
+| `skills/` | Workflow skills listed in `SKILLS.md`, loaded explicitly | Load a workflow |
+| `harness/` | Planner, runner, replay, compare (`python3 -m harness`) | Plan, packet, run or replay |
+| `meta/` | Harness-improvement protocol, scorecard, change ledger, candidates | Propose or evaluate a harness change |
+| `docs/` | Manifesto, research protocol, architecture, adapter, handoff, `decisions/` | Check standards and contracts |
+| `tests/`, `scripts/` | Unit tests; `check_repository.py` | Verify changes |
+| `examples/` | Synthetic fixtures and an offline worker | Exercise the harness without inference |
+| `assets/`, `.github/` | Banner image; CI workflow | — |
+| `.runs/` | Ignored run outputs: packets, receipts, reports | Find raw execution records |
+| `.claude/` | Operator tooling for Claude Code, outside research scope | Not needed for research work |
+
 ## Research standards
 
 Be ambitious in proposing mechanisms and exacting in assessing them. Label material claims as **established**, **proved**, **conjecture**, **empirical**, **unverified**, or **refuted**. Established claims need inspected primary sources; proved claims need an actual argument and a recorded assurance level. Do not turn an abstract, intuition, numerical check, or model agreement into a proof. Novelty is unverified until the closest prior work has been checked.
