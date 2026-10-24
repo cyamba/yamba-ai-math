@@ -1,0 +1,30 @@
+{
+  "id": "P012",
+  "title": "Height-three coefficient unimodality: bounded first investigation",
+  "objective": "Investigate constructive lower-half first differences of the elementary coefficient indexed by (n-4,3,1) for every height-three natural unit interval order, retaining complete determinant sectors and exact obstructions without claiming a new theorem from finite success.",
+  "fleet": "pair",
+  "briefs": ["research/partitions/height-three-unimodality/README.md"],
+  "constraints": {"max_agents": 2, "max_cost_units": 16, "max_workers": 2, "max_rounds": 2, "timeout_seconds": 120},
+  "rounds": 2,
+  "deliverables": [
+    "Primary-source frontier audit, exact target, written sector derivation and unresolved novelty questions",
+    "Frozen development and held-out cases, complete raw signed states and twelve deterministic selectors",
+    "Source-bound bounded execution records with failures, resource caps and independent coloring comparisons",
+    "At most two author-critic rounds; forest-triple comparison after a certified tableau grammar obstruction"
+  ],
+  "success_criteria": [
+    "Every determinant permutation is retained; negative indices vanish and zero indices mean e_0=1",
+    "First-difference states have sign sgn(sigma)(-1)^epsilon and degree inv+epsilon, restricted to the lower half",
+    "An explanatory universal proof, exact coloring bridge, placeholder-free Lean checking and separate semantic review are required to claim the theorem",
+    "A new proof of established positivity alone does not satisfy the user's unresolved-theorem novelty gate",
+    "Capped cases, failed rules and unresolved disagreement are preserved rather than scored as successes"
+  ],
+  "stop_conditions": [
+    "Two construction proposal/review rounds, no nested agents or fleets",
+    "Per round: 600 computation seconds, 5000000 enumeration extensions, 5000000 move candidates, one enumeration process",
+    "Per case: 120 seconds; memory at most 2 GiB and artifacts at most 250 MiB",
+    "No new dependencies, installations, paid compute or external certificate rebuild",
+    "No substantial Lean work before a credible universal mathematical argument"
+  ],
+  "preferred_tags": ["theorems", "constructive-skeptic"]
+}

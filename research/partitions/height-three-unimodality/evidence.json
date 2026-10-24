@@ -1,0 +1,4184 @@
+{
+  "assurance": {
+    "artifact_limit": "Aggregate report output-directory guard, not a global filesystem quota.",
+    "coefficient_checks": "Independent coloring oracle on eight development cases; held-out coefficients use tableaux only. Forest agreement is transitive through saved oracle result.",
+    "engineering_compute": "Unit tests and source inspection are separate from research enumeration counters; token usage unavailable.",
+    "forest_mark_step_obstruction": "Written finite proof plus complete finite comparison; not an obstruction to a larger forest grammar.",
+    "memory": "Sampled process high-water RSS; no hard OS reservation.",
+    "sector_identity": "Written proof using established Schur and determinant identities, not Lean.",
+    "tableau_grammar_obstruction": "Written finite proof plus complete finite enumeration at n=7; not a conjecture counterexample."
+  },
+  "base_revision": "dce60269fca1774ea8d5600d30f62dbc39c927a4",
+  "branch": "codex/height-three-coefficient-unimodality",
+  "date": "2026-10-23",
+  "engineering_amendments": [
+    "Candidate accounting corrected without grammar or case changes; disclosed same-round replay.",
+    "Report writer subsequently strengthened from per-file to aggregate output-directory artifact guard.",
+    "Forest reproduction subsequently permits a new input receipt hash only if all other protocol fields are identical; original frozen protocol is retained."
+  ],
+  "novelty_status": "unverified",
+  "program": "P012",
+  "protocol_sha256": "25f438466e506afc5c5e61ae9abe5b7bb5a8b503660c261ec8a924a82470016c",
+  "research_validated": false,
+  "round_one": {
+    "accounting_amendment": {
+      "candidate_inference": "Twice the deterministic accounted run; original full candidate count was not measured.",
+      "combined_complete_candidate_charges_inferred": 232878,
+      "combined_measured_extensions": 2046806,
+      "combined_wall_seconds": 18.025071083000512,
+      "description": "Original omitted bubble-generation candidate charges; same frozen scientific experiment replayed after counter correction. All mathematical outputs agree.",
+      "scientific_outputs_equal": true
+    },
+    "cases": [
+      {
+        "h": [
+          2,
+          4,
+          4,
+          6,
+          7,
+          7,
+          7
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 4,
+            "epsilon": 1,
+            "inversion": 3,
+            "rows": [
+              [
+                1,
+                3,
+                5
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                4,
+                7
+              ]
+            ],
+            "shape": [
+              3,
+              2,
+              2
+            ],
+            "sigma": [
+              0,
+              1,
+              2
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 4,
+                "epsilon": 1,
+                "inversion": 3,
+                "rows": [
+                  [
+                    1,
+                    3,
+                    5
+                  ],
+                  [
+                    2,
+                    6
+                  ],
+                  [
+                    4,
+                    7
+                  ]
+                ],
+                "shape": [
+                  3,
+                  2,
+                  2
+                ],
+                "sigma": [
+                  0,
+                  1,
+                  2
+                ],
+                "sign": -1
+              },
+              "target": null
+            }
+          ],
+          "negative_count": 1,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 1,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 2,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 3,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 4,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 5,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 6,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 7,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 8,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 9,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 10,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 11,
+              "negative": 1,
+              "paired": 0,
+              "unpaired": 1
+            }
+          ],
+          "state_count": 5,
+          "status": "complete"
+        },
+        "oracle": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "status": "agrees"
+        },
+        "resources": {
+          "candidates": 14,
+          "extensions": 22323,
+          "peak_rss_bytes": 25411584,
+          "process_seconds": 0.49562999999999996,
+          "wall_seconds": 0.49601291699218564
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "edges": 9,
+          "first_differences": [
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "3": 1,
+                "4": 3,
+                "5": 3,
+                "6": 1
+              },
+              "indices": [
+                3,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 8
+            },
+            {
+              "degrees": {},
+              "indices": [
+                3,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "h": [
+          3,
+          3,
+          4,
+          4,
+          7,
+          7,
+          7
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 2,
+            "epsilon": 1,
+            "inversion": 1,
+            "rows": [
+              [
+                1,
+                4,
+                5
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                7
+              ]
+            ],
+            "shape": [
+              3,
+              2,
+              2
+            ],
+            "sigma": [
+              0,
+              1,
+              2
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 2,
+                "epsilon": 1,
+                "inversion": 1,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    5
+                  ],
+                  [
+                    2,
+                    6
+                  ],
+                  [
+                    3,
+                    7
+                  ]
+                ],
+                "shape": [
+                  3,
+                  2,
+                  2
+                ],
+                "sigma": [
+                  0,
+                  1,
+                  2
+                ],
+                "sign": -1
+              },
+              "target": null
+            }
+          ],
+          "negative_count": 5,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 1,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 2,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 3,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 4,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 5,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 6,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 7,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 8,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 9,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 10,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 11,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            }
+          ],
+          "state_count": 17,
+          "status": "complete"
+        },
+        "oracle": {
+          "coefficient": [
+            0,
+            1,
+            4,
+            7,
+            7,
+            4,
+            1,
+            0
+          ],
+          "status": "agrees"
+        },
+        "resources": {
+          "candidates": 34,
+          "extensions": 23995,
+          "peak_rss_bytes": 25427968,
+          "process_seconds": 0.15367600000000003,
+          "wall_seconds": 0.1549733329884475
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            1,
+            4,
+            7,
+            7,
+            4,
+            1,
+            0
+          ],
+          "edges": 7,
+          "first_differences": [
+            0,
+            1,
+            3,
+            3
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "1": 1,
+                "2": 4,
+                "3": 7,
+                "4": 7,
+                "5": 4,
+                "6": 1
+              },
+              "indices": [
+                3,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 24
+            },
+            {
+              "degrees": {},
+              "indices": [
+                3,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "h": [
+          3,
+          4,
+          4,
+          4,
+          7,
+          7,
+          7
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 3,
+            "epsilon": 1,
+            "inversion": 2,
+            "rows": [
+              [
+                1,
+                4,
+                5
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                7
+              ]
+            ],
+            "shape": [
+              3,
+              2,
+              2
+            ],
+            "sigma": [
+              0,
+              1,
+              2
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 3,
+                "epsilon": 1,
+                "inversion": 2,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    5
+                  ],
+                  [
+                    2,
+                    6
+                  ],
+                  [
+                    3,
+                    7
+                  ]
+                ],
+                "shape": [
+                  3,
+                  2,
+                  2
+                ],
+                "sigma": [
+                  0,
+                  1,
+                  2
+                ],
+                "sign": -1
+              },
+              "target": null
+            }
+          ],
+          "negative_count": 4,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 1,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 2,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 3,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 4,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 5,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 6,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 7,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 8,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 9,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 10,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 11,
+              "negative": 4,
+              "paired": 0,
+              "unpaired": 4
+            }
+          ],
+          "state_count": 12,
+          "status": "complete"
+        },
+        "oracle": {
+          "coefficient": [
+            0,
+            0,
+            1,
+            3,
+            4,
+            3,
+            1,
+            0,
+            0
+          ],
+          "status": "agrees"
+        },
+        "resources": {
+          "candidates": 24,
+          "extensions": 22679,
+          "peak_rss_bytes": 25477120,
+          "process_seconds": 0.15429400000000004,
+          "wall_seconds": 0.15672508400166407
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            1,
+            3,
+            4,
+            3,
+            1,
+            0,
+            0
+          ],
+          "edges": 8,
+          "first_differences": [
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "2": 1,
+                "3": 3,
+                "4": 4,
+                "5": 3,
+                "6": 1
+              },
+              "indices": [
+                3,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 12
+            },
+            {
+              "degrees": {},
+              "indices": [
+                3,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "h": [
+          2,
+          6,
+          6,
+          6,
+          6,
+          6,
+          7
+        ],
+        "moves": {
+          "isolated_negative": null,
+          "minimal_failure_witnesses": [],
+          "negative_count": 0,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 0,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 1,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 2,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 3,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 4,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 5,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 6,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 7,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 8,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 9,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 10,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 11,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            }
+          ],
+          "state_count": 0,
+          "status": "complete"
+        },
+        "oracle": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "status": "agrees"
+        },
+        "resources": {
+          "candidates": 0,
+          "extensions": 19943,
+          "peak_rss_bytes": 25509888,
+          "process_seconds": 0.17945300000000008,
+          "wall_seconds": 0.1808027079969179
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "edges": 11,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {},
+              "indices": [
+                3,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 0
+            },
+            {
+              "degrees": {},
+              "indices": [
+                3,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "h": [
+          3,
+          5,
+          5,
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 6,
+            "epsilon": 1,
+            "inversion": 5,
+            "rows": [
+              [
+                1,
+                4,
+                8
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                5
+              ]
+            ],
+            "shape": [
+              3,
+              2,
+              2,
+              1
+            ],
+            "sigma": [
+              0,
+              1,
+              2
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 6,
+                "epsilon": 1,
+                "inversion": 5,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    8
+                  ],
+                  [
+                    2,
+                    6
+                  ],
+                  [
+                    3,
+                    7
+                  ],
+                  [
+                    5
+                  ]
+                ],
+                "shape": [
+                  3,
+                  2,
+                  2,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  1,
+                  2
+                ],
+                "sign": -1
+              },
+              "target": null
+            }
+          ],
+          "negative_count": 5,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 1,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 2,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 3,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 4,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 5,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 6,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 7,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 8,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 9,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 10,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 11,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            }
+          ],
+          "state_count": 16,
+          "status": "complete"
+        },
+        "oracle": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            6,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "status": "agrees"
+        },
+        "resources": {
+          "candidates": 68,
+          "extensions": 159705,
+          "peak_rss_bytes": 25821184,
+          "process_seconds": 2.8170870000000003,
+          "wall_seconds": 2.872615542000858
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            6,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "edges": 14,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "5": 1,
+                "6": 4,
+                "7": 6,
+                "8": 4,
+                "9": 1
+              },
+              "indices": [
+                4,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                1
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 16
+            },
+            {
+              "degrees": {},
+              "indices": [
+                4,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            },
+            {
+              "degrees": {},
+              "indices": [
+                3,
+                4,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                2
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "h": [
+          2,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          8
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 5,
+            "epsilon": 1,
+            "inversion": 4,
+            "rows": [
+              [
+                1,
+                3,
+                6
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                5
+              ]
+            ],
+            "shape": [
+              3,
+              2,
+              2,
+              1
+            ],
+            "sigma": [
+              0,
+              1,
+              2
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 5,
+                "epsilon": 1,
+                "inversion": 4,
+                "rows": [
+                  [
+                    1,
+                    3,
+                    6
+                  ],
+                  [
+                    2,
+                    7
+                  ],
+                  [
+                    4,
+                    8
+                  ],
+                  [
+                    5
+                  ]
+                ],
+                "shape": [
+                  3,
+                  2,
+                  2,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  1,
+                  2
+                ],
+                "sign": -1
+              },
+              "target": null
+            }
+          ],
+          "negative_count": 5,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 1,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 2,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 3,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 4,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 5,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 6,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 7,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 8,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 9,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 10,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 11,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            }
+          ],
+          "state_count": 17,
+          "status": "complete"
+        },
+        "oracle": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            7,
+            7,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "status": "agrees"
+        },
+        "resources": {
+          "candidates": 68,
+          "extensions": 170034,
+          "peak_rss_bytes": 25853952,
+          "process_seconds": 1.3650660000000001,
+          "wall_seconds": 1.3673527920036577
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            7,
+            7,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "edges": 13,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            3
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "4": 1,
+                "5": 4,
+                "6": 7,
+                "7": 7,
+                "8": 4,
+                "9": 1
+              },
+              "indices": [
+                4,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                1
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 24
+            },
+            {
+              "degrees": {},
+              "indices": [
+                4,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            },
+            {
+              "degrees": {},
+              "indices": [
+                3,
+                4,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                2
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "h": [
+          4,
+          6,
+          6,
+          6,
+          6,
+          6,
+          8,
+          8
+        ],
+        "moves": {
+          "isolated_negative": null,
+          "minimal_failure_witnesses": [],
+          "negative_count": 0,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 0,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 1,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 2,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 3,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 4,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 5,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 6,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 7,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 8,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 9,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 10,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 11,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            }
+          ],
+          "state_count": 0,
+          "status": "complete"
+        },
+        "oracle": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "status": "agrees"
+        },
+        "resources": {
+          "candidates": 0,
+          "extensions": 154744,
+          "peak_rss_bytes": 25870336,
+          "process_seconds": 1.049067,
+          "wall_seconds": 1.0672597090015188
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "edges": 14,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {},
+              "indices": [
+                4,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                1
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 0
+            },
+            {
+              "degrees": {},
+              "indices": [
+                4,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            },
+            {
+              "degrees": {},
+              "indices": [
+                3,
+                4,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                2
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "h": [
+          4,
+          5,
+          5,
+          5,
+          7,
+          7,
+          8,
+          8
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 5,
+            "epsilon": 1,
+            "inversion": 4,
+            "rows": [
+              [
+                1,
+                5,
+                8
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                4
+              ]
+            ],
+            "shape": [
+              3,
+              2,
+              2,
+              1
+            ],
+            "sigma": [
+              0,
+              1,
+              2
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 5,
+                "epsilon": 1,
+                "inversion": 4,
+                "rows": [
+                  [
+                    1,
+                    5,
+                    8
+                  ],
+                  [
+                    2,
+                    6
+                  ],
+                  [
+                    3,
+                    7
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "shape": [
+                  3,
+                  2,
+                  2,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  1,
+                  2
+                ],
+                "sign": -1
+              },
+              "target": null
+            }
+          ],
+          "negative_count": 5,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 1,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 2,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 3,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 4,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 5,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 6,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 7,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 8,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 9,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 10,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 11,
+              "negative": 5,
+              "paired": 0,
+              "unpaired": 5
+            }
+          ],
+          "state_count": 17,
+          "status": "complete"
+        },
+        "oracle": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            7,
+            7,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "status": "agrees"
+        },
+        "resources": {
+          "candidates": 56,
+          "extensions": 161842,
+          "peak_rss_bytes": 25870336,
+          "process_seconds": 1.1092649999999997,
+          "wall_seconds": 1.1109927910001716
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            7,
+            7,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "edges": 13,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            3
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "4": 1,
+                "5": 4,
+                "6": 7,
+                "7": 7,
+                "8": 4,
+                "9": 1
+              },
+              "indices": [
+                4,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                1
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 24
+            },
+            {
+              "degrees": {},
+              "indices": [
+                4,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            },
+            {
+              "degrees": {},
+              "indices": [
+                3,
+                4,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                2
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 0
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "h": [
+          3,
+          3,
+          3,
+          6,
+          6,
+          6,
+          9,
+          9,
+          9
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 0,
+            "epsilon": 0,
+            "inversion": 0,
+            "rows": [
+              [
+                1,
+                4,
+                7
+              ],
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                3
+              ],
+              [
+                6
+              ],
+              [
+                9
+              ]
+            ],
+            "shape": [
+              3,
+              3,
+              1,
+              1,
+              1
+            ],
+            "sigma": [
+              0,
+              2,
+              1
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    7
+                  ],
+                  [
+                    2,
+                    5,
+                    8
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    6
+                  ],
+                  [
+                    9
+                  ]
+                ],
+                "shape": [
+                  3,
+                  3,
+                  1,
+                  1,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  2,
+                  1
+                ],
+                "sign": -1
+              },
+              "target": null
+            }
+          ],
+          "negative_count": 504,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 504,
+              "paired": 250,
+              "unpaired": 254
+            }
+          ],
+          "state_count": 1008,
+          "status": "complete"
+        },
+        "oracle": {
+          "status": "not scheduled for held-out sizes"
+        },
+        "resources": {
+          "candidates": 4368,
+          "extensions": 28296,
+          "peak_rss_bytes": 25870336,
+          "process_seconds": 0.07617999999999991,
+          "wall_seconds": 0.07658616700791754
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "edges": 9,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "0": 3,
+                "1": 18,
+                "2": 54,
+                "3": 105,
+                "4": 144,
+                "5": 144,
+                "6": 105,
+                "7": 54,
+                "8": 18,
+                "9": 3
+              },
+              "indices": [
+                5,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 648
+            },
+            {
+              "degrees": {
+                "0": 1,
+                "1": 6,
+                "2": 18,
+                "3": 35,
+                "4": 48,
+                "5": 48,
+                "6": 35,
+                "7": 18,
+                "8": 6,
+                "9": 1
+              },
+              "indices": [
+                5,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                2
+              ],
+              "sigma": [
+                1,
+                0,
+                2
+              ],
+              "sign": -1,
+              "tableaux": 216
+            },
+            {
+              "degrees": {
+                "0": 1,
+                "1": 6,
+                "2": 18,
+                "3": 35,
+                "4": 48,
+                "5": 48,
+                "6": 35,
+                "7": 18,
+                "8": 6,
+                "9": 1
+              },
+              "indices": [
+                5,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 216
+            },
+            {
+              "degrees": {
+                "0": 1,
+                "1": 6,
+                "2": 18,
+                "3": 35,
+                "4": 48,
+                "5": 48,
+                "6": 35,
+                "7": 18,
+                "8": 6,
+                "9": 1
+              },
+              "indices": [
+                5,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                3
+              ],
+              "sigma": [
+                2,
+                1,
+                0
+              ],
+              "sign": -1,
+              "tableaux": 216
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "heldout",
+        "status": "complete"
+      },
+      {
+        "h": [
+          3,
+          3,
+          4,
+          6,
+          6,
+          7,
+          9,
+          9,
+          9
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 2,
+            "epsilon": 0,
+            "inversion": 2,
+            "rows": [
+              [
+                1,
+                4,
+                7
+              ],
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                3
+              ],
+              [
+                6
+              ],
+              [
+                9
+              ]
+            ],
+            "shape": [
+              3,
+              3,
+              1,
+              1,
+              1
+            ],
+            "sigma": [
+              0,
+              2,
+              1
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 2,
+                "epsilon": 0,
+                "inversion": 2,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    7
+                  ],
+                  [
+                    2,
+                    5,
+                    8
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    6
+                  ],
+                  [
+                    9
+                  ]
+                ],
+                "shape": [
+                  3,
+                  3,
+                  1,
+                  1,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  2,
+                  1
+                ],
+                "sign": -1
+              },
+              "target": null
+            }
+          ],
+          "negative_count": 353,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 353,
+              "paired": 205,
+              "unpaired": 148
+            }
+          ],
+          "state_count": 739,
+          "status": "complete"
+        },
+        "oracle": {
+          "status": "not scheduled for held-out sizes"
+        },
+        "resources": {
+          "candidates": 3835,
+          "extensions": 20400,
+          "peak_rss_bytes": 25870336,
+          "process_seconds": 0.06155499999999936,
+          "wall_seconds": 0.0616269170132
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            2,
+            10,
+            23,
+            33,
+            33,
+            23,
+            10,
+            2,
+            0,
+            0
+          ],
+          "edges": 11,
+          "first_differences": [
+            0,
+            0,
+            2,
+            8,
+            13,
+            10
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "2": 5,
+                "3": 33,
+                "4": 95,
+                "5": 155,
+                "6": 155,
+                "7": 95,
+                "8": 33,
+                "9": 5
+              },
+              "indices": [
+                5,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 576
+            },
+            {
+              "degrees": {
+                "2": 1,
+                "3": 9,
+                "4": 30,
+                "5": 52,
+                "6": 52,
+                "7": 30,
+                "8": 9,
+                "9": 1
+              },
+              "indices": [
+                5,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                2
+              ],
+              "sigma": [
+                1,
+                0,
+                2
+              ],
+              "sign": -1,
+              "tableaux": 184
+            },
+            {
+              "degrees": {
+                "2": 1,
+                "3": 8,
+                "4": 26,
+                "5": 45,
+                "6": 45,
+                "7": 26,
+                "8": 8,
+                "9": 1
+              },
+              "indices": [
+                5,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 160
+            },
+            {
+              "degrees": {
+                "2": 1,
+                "3": 6,
+                "4": 16,
+                "5": 25,
+                "6": 25,
+                "7": 16,
+                "8": 6,
+                "9": 1
+              },
+              "indices": [
+                5,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                3
+              ],
+              "sigma": [
+                2,
+                1,
+                0
+              ],
+              "sign": -1,
+              "tableaux": 96
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "heldout",
+        "status": "complete"
+      },
+      {
+        "h": [
+          3,
+          3,
+          3,
+          6,
+          6,
+          6,
+          10,
+          10,
+          10,
+          10
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 0,
+            "epsilon": 0,
+            "inversion": 0,
+            "rows": [
+              [
+                1,
+                4,
+                7
+              ],
+              [
+                2,
+                5,
+                8
+              ],
+              [
+                3
+              ],
+              [
+                6
+              ],
+              [
+                9
+              ],
+              [
+                10
+              ]
+            ],
+            "shape": [
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            "sigma": [
+              0,
+              2,
+              1
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    7
+                  ],
+                  [
+                    2,
+                    5,
+                    8
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    6
+                  ],
+                  [
+                    9
+                  ],
+                  [
+                    10
+                  ]
+                ],
+                "shape": [
+                  3,
+                  3,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  2,
+                  1
+                ],
+                "sign": -1
+              },
+              "target": null
+            },
+            {
+              "other": {
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 1,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    7
+                  ],
+                  [
+                    2,
+                    5,
+                    8
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    6
+                  ],
+                  [
+                    10
+                  ],
+                  [
+                    9
+                  ]
+                ],
+                "shape": [
+                  3,
+                  3,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  2,
+                  1
+                ],
+                "sign": -1
+              },
+              "source": {
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 1,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    7
+                  ],
+                  [
+                    2,
+                    5,
+                    8
+                  ],
+                  [
+                    3,
+                    6,
+                    10
+                  ],
+                  [
+                    9
+                  ]
+                ],
+                "shape": [
+                  3,
+                  3,
+                  3,
+                  1
+                ],
+                "sigma": [
+                  2,
+                  1,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    7
+                  ],
+                  [
+                    2,
+                    5,
+                    8
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    6
+                  ],
+                  [
+                    9
+                  ],
+                  [
+                    10
+                  ]
+                ],
+                "shape": [
+                  3,
+                  3,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  2,
+                  1
+                ],
+                "sign": 1
+              }
+            }
+          ],
+          "negative_count": 3456,
+          "selectors": [
+            {
+              "directed_collisions": 258,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 3456,
+              "paired": 2232,
+              "unpaired": 1224
+            }
+          ],
+          "state_count": 6912,
+          "status": "complete"
+        },
+        "oracle": {
+          "status": "not scheduled for held-out sizes"
+        },
+        "resources": {
+          "candidates": 53568,
+          "extensions": 136208,
+          "peak_rss_bytes": 30883840,
+          "process_seconds": 0.6988169999999991,
+          "wall_seconds": 0.7000930840004003
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "edges": 12,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "0": 3,
+                "1": 21,
+                "10": 75,
+                "11": 21,
+                "12": 3,
+                "2": 75,
+                "3": 180,
+                "4": 321,
+                "5": 447,
+                "6": 498,
+                "7": 447,
+                "8": 321,
+                "9": 180
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                1,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 2592
+            },
+            {
+              "degrees": {
+                "0": 2,
+                "1": 14,
+                "10": 50,
+                "11": 14,
+                "12": 2,
+                "2": 50,
+                "3": 120,
+                "4": 214,
+                "5": 298,
+                "6": 332,
+                "7": 298,
+                "8": 214,
+                "9": 120
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                2,
+                1
+              ],
+              "sigma": [
+                1,
+                0,
+                2
+              ],
+              "sign": -1,
+              "tableaux": 1728
+            },
+            {
+              "degrees": {
+                "0": 1,
+                "1": 7,
+                "10": 25,
+                "11": 7,
+                "12": 1,
+                "2": 25,
+                "3": 60,
+                "4": 107,
+                "5": 149,
+                "6": 166,
+                "7": 149,
+                "8": 107,
+                "9": 60
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1,
+                1,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 864
+            },
+            {
+              "degrees": {
+                "0": 1,
+                "1": 7,
+                "10": 25,
+                "11": 7,
+                "12": 1,
+                "2": 25,
+                "3": 60,
+                "4": 107,
+                "5": 149,
+                "6": 166,
+                "7": 149,
+                "8": 107,
+                "9": 60
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                2,
+                2
+              ],
+              "sigma": [
+                2,
+                0,
+                1
+              ],
+              "sign": 1,
+              "tableaux": 864
+            },
+            {
+              "degrees": {
+                "0": 1,
+                "1": 7,
+                "10": 25,
+                "11": 7,
+                "12": 1,
+                "2": 25,
+                "3": 60,
+                "4": 107,
+                "5": 149,
+                "6": 166,
+                "7": 149,
+                "8": 107,
+                "9": 60
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                3,
+                1
+              ],
+              "sigma": [
+                2,
+                1,
+                0
+              ],
+              "sign": -1,
+              "tableaux": 864
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "heldout",
+        "status": "complete"
+      },
+      {
+        "h": [
+          3,
+          3,
+          4,
+          7,
+          7,
+          7,
+          8,
+          10,
+          10,
+          10
+        ],
+        "moves": {
+          "isolated_negative": {
+            "degree": 2,
+            "epsilon": 0,
+            "inversion": 2,
+            "rows": [
+              [
+                1,
+                4,
+                8
+              ],
+              [
+                2,
+                5,
+                9
+              ],
+              [
+                3,
+                6,
+                10
+              ],
+              [
+                7
+              ]
+            ],
+            "shape": [
+              3,
+              3,
+              3,
+              1
+            ],
+            "sigma": [
+              2,
+              1,
+              0
+            ],
+            "sign": -1
+          },
+          "minimal_failure_witnesses": [
+            {
+              "reason": "no legal neighbor",
+              "reverse": null,
+              "source": {
+                "degree": 2,
+                "epsilon": 0,
+                "inversion": 2,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    8
+                  ],
+                  [
+                    2,
+                    5,
+                    9
+                  ],
+                  [
+                    3,
+                    6,
+                    10
+                  ],
+                  [
+                    7
+                  ]
+                ],
+                "shape": [
+                  3,
+                  3,
+                  3,
+                  1
+                ],
+                "sigma": [
+                  2,
+                  1,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": null
+            },
+            {
+              "other": {
+                "degree": 3,
+                "epsilon": 1,
+                "inversion": 2,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    9
+                  ],
+                  [
+                    2,
+                    5
+                  ],
+                  [
+                    3,
+                    6
+                  ],
+                  [
+                    7
+                  ],
+                  [
+                    8
+                  ],
+                  [
+                    10
+                  ]
+                ],
+                "shape": [
+                  3,
+                  2,
+                  2,
+                  1,
+                  1,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  1,
+                  2
+                ],
+                "sign": -1
+              },
+              "source": {
+                "degree": 3,
+                "epsilon": 0,
+                "inversion": 3,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    9
+                  ],
+                  [
+                    2,
+                    5
+                  ],
+                  [
+                    3,
+                    6
+                  ],
+                  [
+                    7,
+                    10
+                  ],
+                  [
+                    8
+                  ]
+                ],
+                "shape": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  1
+                ],
+                "sigma": [
+                  1,
+                  0,
+                  2
+                ],
+                "sign": -1
+              },
+              "target": {
+                "degree": 3,
+                "epsilon": 0,
+                "inversion": 3,
+                "rows": [
+                  [
+                    1,
+                    4,
+                    9
+                  ],
+                  [
+                    2,
+                    5
+                  ],
+                  [
+                    3,
+                    6
+                  ],
+                  [
+                    7
+                  ],
+                  [
+                    10
+                  ],
+                  [
+                    8
+                  ]
+                ],
+                "shape": [
+                  3,
+                  2,
+                  2,
+                  1,
+                  1,
+                  1
+                ],
+                "sigma": [
+                  0,
+                  1,
+                  2
+                ],
+                "sign": 1
+              }
+            }
+          ],
+          "negative_count": 2899,
+          "selectors": [
+            {
+              "directed_collisions": 169,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 2899,
+              "paired": 2164,
+              "unpaired": 735
+            }
+          ],
+          "state_count": 5904,
+          "status": "complete"
+        },
+        "oracle": {
+          "status": "not scheduled for held-out sizes"
+        },
+        "resources": {
+          "candidates": 54404,
+          "extensions": 103234,
+          "peak_rss_bytes": 32243712,
+          "process_seconds": 0.6537419999999994,
+          "wall_seconds": 0.6550195409945445
+        },
+        "signed_space": {
+          "coefficient": [
+            0,
+            0,
+            2,
+            12,
+            35,
+            67,
+            95,
+            106,
+            95,
+            67,
+            35,
+            12,
+            2,
+            0,
+            0
+          ],
+          "edges": 14,
+          "first_differences": [
+            0,
+            0,
+            2,
+            10,
+            23,
+            32,
+            28,
+            11
+          ],
+          "nonnegative_lower_differences": true,
+          "sectors": [
+            {
+              "degrees": {
+                "10": 137,
+                "11": 37,
+                "12": 5,
+                "2": 5,
+                "3": 37,
+                "4": 137,
+                "5": 326,
+                "6": 538,
+                "7": 634,
+                "8": 538,
+                "9": 326
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                1,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                1,
+                2
+              ],
+              "sign": 1,
+              "tableaux": 2720
+            },
+            {
+              "degrees": {
+                "10": 64,
+                "11": 16,
+                "12": 2,
+                "2": 2,
+                "3": 16,
+                "4": 64,
+                "5": 162,
+                "6": 278,
+                "7": 332,
+                "8": 278,
+                "9": 162
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                2,
+                2,
+                2,
+                1
+              ],
+              "sigma": [
+                1,
+                0,
+                2
+              ],
+              "sign": -1,
+              "tableaux": 1376
+            },
+            {
+              "degrees": {
+                "10": 38,
+                "11": 9,
+                "12": 1,
+                "2": 1,
+                "3": 9,
+                "4": 38,
+                "5": 98,
+                "6": 169,
+                "7": 202,
+                "8": 169,
+                "9": 98
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                1,
+                1,
+                1,
+                1
+              ],
+              "sigma": [
+                0,
+                2,
+                1
+              ],
+              "sign": -1,
+              "tableaux": 832
+            },
+            {
+              "degrees": {
+                "10": 25,
+                "11": 7,
+                "12": 1,
+                "2": 1,
+                "3": 7,
+                "4": 25,
+                "5": 59,
+                "6": 98,
+                "7": 116,
+                "8": 98,
+                "9": 59
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                2,
+                2
+              ],
+              "sigma": [
+                2,
+                0,
+                1
+              ],
+              "sign": 1,
+              "tableaux": 496
+            },
+            {
+              "degrees": {
+                "10": 25,
+                "11": 7,
+                "12": 1,
+                "2": 1,
+                "3": 7,
+                "4": 25,
+                "5": 58,
+                "6": 94,
+                "7": 110,
+                "8": 94,
+                "9": 58
+              },
+              "indices": [
+                6,
+                3,
+                1
+              ],
+              "shape": [
+                3,
+                3,
+                3,
+                1
+              ],
+              "sigma": [
+                2,
+                1,
+                0
+              ],
+              "sign": -1,
+              "tableaux": 480
+            }
+          ],
+          "status": "complete"
+        },
+        "split": "heldout",
+        "status": "complete"
+      }
+    ],
+    "original_report": {
+      "path": ".runs/h3-unimodality/r1.json",
+      "provenance": {
+        "base_revision": "dce60269fca1774ea8d5600d30f62dbc39c927a4",
+        "branch": "codex/height-three-coefficient-unimodality",
+        "execution": "manual orchestration; exact local computation",
+        "python": "3.11.9 (main, Oct  1 2025, 17:17:55) [Clang 17.0.0 (clang-1700.0.13.5)]",
+        "sources": {
+          "programs/partition-h3-unimodality.json": "7bdc4a89ee1bf6fd9ee0feb1ceb66fd75c9c242f244a266de03ac6b7f298a1c3",
+          "research/partitions/checks/coloring_oracle.py": "2eeceb10d1a0e5ec786912d217cca13b6988f3b58ace811754b0d1c509e2b0ef",
+          "research/partitions/checks/height_three.py": "f08290484f921cea6aa3ddb3b5248bb405e8d46229eb445706cdc3ceeaba2032",
+          "research/partitions/checks/tableaux.py": "ae2e52a8c795ce5e039a72fb5c326b419a40c95e8814d7ab7ed4238f0a2f0d46",
+          "research/partitions/height-three-unimodality/protocol.json": "25f438466e506afc5c5e61ae9abe5b7bb5a8b503660c261ec8a924a82470016c"
+        }
+      },
+      "resources": {
+        "candidates": 77468,
+        "extensions": 1023403,
+        "limits": {
+          "artifact_bytes": 262144000,
+          "candidates": 5000000,
+          "case_seconds": 120,
+          "extensions": 5000000,
+          "memory_bytes": 2147483648,
+          "round_seconds": 600
+        },
+        "peak_rss_bytes": 32260096,
+        "process_seconds": 8.960818,
+        "wall_seconds": 9.077614583002287
+      },
+      "sha256": "abd6c750e89e5cab78e6c158bff8cc71a89edc09468a345bb9071053f48004fa"
+    },
+    "provenance": {
+      "base_revision": "dce60269fca1774ea8d5600d30f62dbc39c927a4",
+      "branch": "codex/height-three-coefficient-unimodality",
+      "execution": "manual orchestration; exact local computation",
+      "python": "3.11.9 (main, Oct  1 2025, 17:17:55) [Clang 17.0.0 (clang-1700.0.13.5)]",
+      "sources": {
+        "programs/partition-h3-unimodality.json": "7bdc4a89ee1bf6fd9ee0feb1ceb66fd75c9c242f244a266de03ac6b7f298a1c3",
+        "research/partitions/checks/coloring_oracle.py": "2eeceb10d1a0e5ec786912d217cca13b6988f3b58ace811754b0d1c509e2b0ef",
+        "research/partitions/checks/height_three.py": "5774a14ab4848ac23c572b46e971854006d0ab796ed77b9a9b1ca3cf43c2c4d6",
+        "research/partitions/checks/tableaux.py": "ae2e52a8c795ce5e039a72fb5c326b419a40c95e8814d7ab7ed4238f0a2f0d46",
+        "research/partitions/height-three-unimodality/protocol.json": "25f438466e506afc5c5e61ae9abe5b7bb5a8b503660c261ec8a924a82470016c"
+      }
+    },
+    "report": {
+      "path": ".runs/h3-unimodality/r1-accounted.json",
+      "sha256": "3a49b79d32f6f08aba69893c7dd53fa426b87dc61c9eae593dcb7407809be54a"
+    },
+    "resources": {
+      "candidates": 116439,
+      "extensions": 1023403,
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "peak_rss_bytes": 32243712,
+      "process_seconds": 8.839289,
+      "wall_seconds": 8.947456499998225
+    },
+    "selection_lock": {
+      "development_scores": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "development_sha256": "0741cfd27b960d15258431404ab38dedd976bf442dca64a9c55ee8fbbb704135",
+      "eligible": false,
+      "note": "locked before held-out execution; no capped case counts as success",
+      "selector": 0
+    },
+    "source_stable": true
+  },
+  "round_two": {
+    "comparison": {
+      "block_centers": [
+        {
+          "blocks": 4,
+          "sign": -1,
+          "twice_center": 2
+        },
+        {
+          "blocks": 13,
+          "sign": -1,
+          "twice_center": 4
+        },
+        {
+          "blocks": 14,
+          "sign": -1,
+          "twice_center": 6
+        },
+        {
+          "blocks": 5,
+          "sign": -1,
+          "twice_center": 8
+        },
+        {
+          "blocks": 1,
+          "sign": 1,
+          "twice_center": 0
+        },
+        {
+          "blocks": 5,
+          "sign": 1,
+          "twice_center": 2
+        },
+        {
+          "blocks": 12,
+          "sign": 1,
+          "twice_center": 4
+        },
+        {
+          "blocks": 13,
+          "sign": 1,
+          "twice_center": 6
+        },
+        {
+          "blocks": 5,
+          "sign": 1,
+          "twice_center": 8
+        }
+      ],
+      "census": [
+        {
+          "sign": 1,
+          "trees": 1,
+          "triples": 56
+        },
+        {
+          "sign": -1,
+          "trees": 2,
+          "triples": 156
+        },
+        {
+          "sign": 1,
+          "trees": 3,
+          "triples": 108
+        }
+      ],
+      "coefficient": [
+        0,
+        0,
+        0,
+        1,
+        3,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coloring_agrees": true,
+      "composition_blocks": 72,
+      "first_differences": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "forest_triples": 320,
+      "forests_scanned": 110,
+      "h": [
+        2,
+        4,
+        4,
+        6,
+        7,
+        7,
+        7
+      ],
+      "lower_negative": [
+        6,
+        29,
+        64,
+        85,
+        74
+      ],
+      "lower_positive": [
+        6,
+        29,
+        64,
+        86,
+        76
+      ],
+      "rank_step_diagnostic": {
+        "enabled": true,
+        "first_isolated": {
+          "compositions": [
+            [
+              1
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "degree": 0,
+          "epsilon": 0,
+          "marks": [
+            1,
+            1
+          ],
+          "parents": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            0
+          ],
+          "sign": -1,
+          "weight": 0,
+          "word_inversions": 0,
+          "words": [
+            [
+              1
+            ],
+            [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ]
+        },
+        "interpretation": "r-step grammar only; no join/split moves or matching theorem",
+        "isolated_negatives": 52,
+        "negatives_with_neighbor": 206
+      },
+      "status": "complete",
+      "tableau_agrees": true,
+      "target": [
+        3,
+        3,
+        1
+      ]
+    },
+    "protocol": {
+      "diagnostic": "one mark changes by one with epsilon toggle; no join/split search",
+      "enumeration": "all decreasing parent forests, all compositions of target type, all marks",
+      "h": [
+        2,
+        4,
+        4,
+        6,
+        7,
+        7,
+        7
+      ],
+      "holdout_used_for_repair": false,
+      "input_sha256": "3a49b79d32f6f08aba69893c7dd53fa426b87dc61c9eae593dcb7407809be54a",
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "round": 2,
+      "selection": "lexicographically smallest complete development isolated tableau state",
+      "target": [
+        3,
+        3,
+        1
+      ]
+    },
+    "protocol_sha256": "c171e78b7d28e592b48fd35eddf726f6e5e607b619d9299b0beb4e67980abdbe",
+    "provenance": {
+      "base_revision": "dce60269fca1774ea8d5600d30f62dbc39c927a4",
+      "branch": "codex/height-three-coefficient-unimodality",
+      "execution": "manual orchestration; exact local computation",
+      "python": "3.11.9 (main, Oct  1 2025, 17:17:55) [Clang 17.0.0 (clang-1700.0.13.5)]",
+      "sources": {
+        "programs/partition-h3-unimodality.json": "7bdc4a89ee1bf6fd9ee0feb1ceb66fd75c9c242f244a266de03ac6b7f298a1c3",
+        "research/partitions/checks/coloring_oracle.py": "2eeceb10d1a0e5ec786912d217cca13b6988f3b58ace811754b0d1c509e2b0ef",
+        "research/partitions/checks/forest_triples.py": "98e674f05453f9b7990df5122ee77f73e028175b1c0b8b76dfd8d96d04f40daf",
+        "research/partitions/checks/height_three.py": "45ae739ed8c3ea25ee95198107d5c99ff6ed3c09d168b23bf3a45a134571dd67",
+        "research/partitions/checks/tableaux.py": "ae2e52a8c795ce5e039a72fb5c326b419a40c95e8814d7ab7ed4238f0a2f0d46",
+        "research/partitions/height-three-unimodality/protocol.json": "25f438466e506afc5c5e61ae9abe5b7bb5a8b503660c261ec8a924a82470016c"
+      }
+    },
+    "resources": {
+      "candidates": 539,
+      "extensions": 1290,
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "peak_rss_bytes": 23363584,
+      "process_seconds": 0.00248000000000001,
+      "wall_seconds": 0.0024921670119510964
+    },
+    "source_stable": true
+  },
+  "round_two_report": {
+    "path": ".runs/h3-unimodality/r2.json",
+    "sha256": "b90a0ff29a9f46329557b9651beb7ef33b8a689668ff5bb4507e86ac377682c2"
+  },
+  "schema_version": 1,
+  "scope": "Reviewed compact extract of exact finite runs; bulk receipts remain ignored. No universal theorem or Lean certificate.",
+  "target_status": "conjecture"
+}

@@ -1,5 +1,11 @@
 # Partition positivity: a proof attempt with checked boundaries
 
+The new [height-three coefficient-unimodality phase](height-three-unimodality/README.md)
+targets the coefficient indexed by `(n-4,3,1)`. Its first bounded investigation
+preserves a complete-grammar obstruction and compares forest triples; the
+universal theorem remains conjectural. It is separate from the completed
+height-two formalization and existing publication materials below.
+
 **H3 is closed for height two:** Lean proves the actual coloring-to-survivor
 formula for every finite alphabet, including zero, over integer and natural
 polynomial coefficients. Fresh source builds and separate reviews support
