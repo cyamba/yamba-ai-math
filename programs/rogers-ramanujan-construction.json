@@ -1,0 +1,41 @@
+{
+  "id": "RR002",
+  "title": "KR1: bounded weighted-to-cluster construction attempt",
+  "objective": "Develop and challenge one structural bridge from the Andrews–Keith weighted partitions to the Kurşungöz cluster data for KR1, or preserve exact counterexamples and the unresolved bridge. Do not substitute equal cardinalities or rank matching for a bijection.",
+  "fleet": "pair",
+  "briefs": [
+    "research/rogers-ramanujan/README.md",
+    "research/rogers-ramanujan/PLANNING_PROMPT.md",
+    "research/rogers-ramanujan/evidence/construction-contract.md",
+    "research/rogers-ramanujan/evidence/source-audit.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_workers": 2,
+    "max_cost_units": 16,
+    "max_rounds": 2
+  },
+  "rounds": 2,
+  "deliverables": [
+    "Independent enumerators and counts for the four actual finite sets, with empty and boundary cases",
+    "A frozen candidate ledger giving maps or exact restricted hypotheses, inverse obligations, cost convention and smallest falsifiers",
+    "Two author–critic review rounds, explicitly identified as manual execution",
+    "A source-bound execution receipt retaining negative and unresolved results without claiming a full proof"
+  ],
+  "success_criteria": [
+    "All definitions match the inspected primary sources, with zero padding and positional weight conventions explicit",
+    "Finite tests are reported as empirical, and candidate failures are separated from impossibility for an entire algorithm class",
+    "Any accepted bridge has executable forward and inverse maps and an unconditional universal argument; otherwise the bridge remains visibly incomplete",
+    "Known endpoint constructions and new proposals have separate attribution and assurance levels",
+    "Repository tests and checker pass after engineering changes"
+  ],
+  "stop_conditions": [
+    "Stop the entire bridge increment after 90 elapsed minutes from 2026-10-23T21:56:48Z, including reviews and testing",
+    "Stop after two review rounds or 16 dispatch proxy units; no nested fleets or automatic budget extension",
+    "Enumeration uses at most ten cumulative minutes and 2 GiB RAM; initial ceiling 12, then at most 30",
+    "Additional artifacts and dependencies use at most 1 GiB; no provisioning below 5 GiB free; delete no user files",
+    "A counterexample rejects its candidate only; exhausted search is inconclusive unless an actual impossibility proof is supplied",
+    "No theorem claim, Lean certification, article publication or wider candidate target without passing its mathematical gate"
+  ],
+  "preferred_tags": ["theorems", "constructive-skeptic"]
+}
