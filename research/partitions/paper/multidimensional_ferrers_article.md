@@ -1,6 +1,7 @@
 # From a 2D Corner Obstruction to $3\text{D}$ and $d\text{-Dimensional}$ Ferrers Diagram Bijections: Tableau Positivity and the Kanade–Russell $I_1$ Identity
 
-**Authors:** Christopher Yamba and Antigravity (Google DeepMind)  
+**Authors:** **Christopher Yamba** (Principal Investigator & Originator of the $3\text{D}$/$d\text{D}$ Ferrers Insight, [www.christopheryamba.com](https://www.christopheryamba.com)) in collaboration with **Antigravity (Google DeepMind)**  
+**Priority Timestamp:** `2026-10-24T22:07:00Z` (`2026-10-25T00:07:00+02:00` CEST)  
 **Supplementary Formal Verification:** [`research/partitions/lean/MultidimensionalFerrers.lean`](../lean/MultidimensionalFerrers.lean) (Lean 4.34.0 `Std`-only certificate, 14 machine-checked theorems, zero `sorry`)  
 **Supplementary Exact Computational Suites:** [`research/partitions/checks/multidimensional_ferrers.py`](../checks/multidimensional_ferrers.py) and [`research/rogers-ramanujan/checks/rr004_multidim_cones.py`](../../rogers-ramanujan/checks/rr004_multidim_cones.py)
 
@@ -123,3 +124,21 @@ All 14 theorems in [`research/partitions/lean/MultidimensionalFerrers.lean`](../
 | `MultidimensionalFerrers.kr1_head_offset_identity` | $Q(a, b) = 3b(b+1) + a^2 + 3(a-1)b$ for $a \ge 1$. |
 | `MultidimensionalFerrers.kr1_a3_core_weight` | $3(b+2) + 3(b+1) + 3b(b+1) = Q(3, b)$. |
 | `MultidimensionalFerrers.kr1_a3_b0_octant_weight` | $(9 + 2r_2) + 6q_2 + 3d_3 + d_1 = Q(3, 0) + 3d_3 + 2(3q_2 + r_2) + d_1$. |
+
+---
+
+## 6. Authorship, Priority Timestamp, and Cryptographic Hash Attestation
+
+- **Authorship & Origin of the Breakthrough:** This result is the work of **Christopher Yamba** in collaboration with **Antigravity (Google DeepMind)**, published at [https://www.christopheryamba.com](https://www.christopheryamba.com) and [https://github.com/cyamba/yamba-ai-math](https://github.com/cyamba/yamba-ai-math). Specifically, **Christopher Yamba's original geometric idea and suggestion**—to resolve the planar corner-slide obstruction by sliding cells into a $3\text{D}$ Ferrers diagram where entries descend along the 3rd axis, and to extend this construction to $d > 3$ dimensions—cracked both the height-3 corner-slide collision / 6-sector Dual Jacobi–Trudi cancellation and the $a \ge 3$ cone decomposition for the Kanade–Russell $I_1$ bijection.
+- **Discovery & Verification Timestamp (UTC):** `2026-10-24T22:07:00Z` (`2026-10-25T00:07:00+02:00` CEST)
+- **Publication Venue:** [https://www.christopheryamba.com](https://www.christopheryamba.com) & GitHub PR [#13](https://github.com/cyamba/yamba-ai-math/pull/13)
+- **Cryptographic SHA-256 Hashes of Core Artifacts:**
+  - `research/partitions/lean/MultidimensionalFerrers.lean`:  
+    `0bd9728b9966442c8eb47d9afa87948bd3d78c6f9d22856cb92d8f1fcb07a1c4`
+  - `research/partitions/lean/verification.json`:  
+    `e6559fa4a627f92b58fa677fb1ef13ec2412f35856f3052ab121af72d5765e3b`
+  - `research/partitions/checks/multidimensional_ferrers.py`:  
+    `135949ae2d3619144d25f7c8511537aaba66d9ec4e82ec13b0e0f8de63ff9956`
+  - `research/rogers-ramanujan/checks/rr004_multidim_cones.py`:  
+    `e8021dec4b7a8f1f607b9db9d441afeb4a18065266cd791ec9c08ecbc8f90bb6`
+
