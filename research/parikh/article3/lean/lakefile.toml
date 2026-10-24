@@ -1,6 +1,9 @@
 name = "parikh_completeness"
 version = "0.1.0"
-defaultTargets = ["ParikhCompleteness"]
+defaultTargets = ["ParikhCompleteness", "ParikhCompletenessThree"]
 
 [[lean_lib]]
 name = "ParikhCompleteness"
+
+[[lean_lib]]
+name = "ParikhCompletenessThree"
