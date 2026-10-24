@@ -1,11 +1,13 @@
 # Rogers–Ramanujan bijections: research setup
 
-**Status: bounded construction attempt; KR1 bridge unresolved.** Independent
-finite checks reach weight 30. Two construction proposals were challenged;
-the tested 16-profile local straightening family is refuted by exact
-collisions. No complete new bijection, full KR1 Lean certificate or novel
-count theorem is claimed. This investigation is separate from the completed
-formalization of the established height-two positivity theorem.
+**Status: RR003 completed as a bounded attempt; complete KR1 bijection unresolved.**
+The [RR003 result](rr003/result.md) distinguishes two separately reviewed
+restricted theorems from later author-only proofs, executable endpoints,
+partial compositions, auxiliary source decompositions and exact counterexamples.
+Ninety repository tests pass; finite checks reach actual weight30. No full
+KR1 Lean certificate, novel complete bijection or new counting theorem is
+claimed. See [execution](rr003/execution.md) for the actual timing, resources
+and two-review limit. Work remains local with no push.
 
 The branch `codex/rogers-ramanujan-bijections` starts at synchronized
 `origin/main`, commit `dce60269fca1774ea8d5600d30f62dbc39c927a4`.
@@ -106,3 +108,26 @@ the copied brief with the archive. A separate setup critic supported the
 scope and requested explicit source re-inspection and estimated-budget
 labels; both clarifications were incorporated. This is a setup review,
 not a literature audit or a Lean proof check.
+
+
+## RR003 discovery and next session
+
+[RR003 contract](../../programs/rogers-ramanujan-discovery.json) governs the
+three-hour attempt. Start with the [result and exact next lemmas](rr003/result.md),
+[two mechanism record](rr003/mechanisms.md), [first review](rr003/round-1-review.md)
+and [second review](rr003/round-2-review.md). The final author auxiliary proofs
+have not received a third review. The governing objective remains complete
+explicit weight-preserving residue-to-gap algorithms and universal proofs.
+
+The core route still lacks a canonical exhaustive U–C decomposition for
+arbitrary a. The recursive route now has positive literal cut models and one
+intrinsic branch, but lacks the phase-preserving L match and later recursions.
+The [local L obstruction](rr003/l-branch-boundary-obstruction.md) and
+[explicit erratum](rr003/cut-branch-erratum.md) should be read before extending
+that proposal. Established methods retain their attribution; novelty is unverified.
+
+The frozen maps/verifiers live in checks/rr003_*.py. Raw receipts are ignored
+in .runs/rr003; [compact evidence](rr003/verification-summary.json) is durable.
+Reproduction needs fresh output paths and its own authorized resource budget;
+do not reset RR003's original elapsed-time or enumeration ledger. Lean
+certification and exposition remain explicit subsequent obligations.

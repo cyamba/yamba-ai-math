@@ -1,0 +1,13 @@
+{
+  "program": "RR003",
+  "stage": "classical mechanism A comparison sector",
+  "frozen_utc": "2026-10-24T11:50:07.851458+00:00",
+  "discovery_exposure": "all actual domains through30, classical Glaisher sector already exposed",
+  "claim": "classical U3<->A3 with intrinsic C coordinates, not an accepted global bridge",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_cluster_merge.py": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+    "research/rogers-ramanujan/rr003/three-divisible-foothold.md": "c2fd1872c54f7d1fe572c1bd30cc5cb90e2c976b85cce9d8507e983868a59266",
+    "research/rogers-ramanujan/rr003/reproduction/three_sector.py": "a93091aaeba391729ad7c03b9149eb70836f1c96d014a70beb8e1066c140007a"
+  }
+}

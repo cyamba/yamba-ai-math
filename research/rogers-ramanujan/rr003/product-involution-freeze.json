@@ -1,0 +1,12 @@
+{
+  "program": "RR003",
+  "stage": "mechanism B final author full auxiliary P2 split",
+  "frozen_utc": "2026-10-24T12:08:23.329746+00:00",
+  "claim": "P2 <-> P3 disjoint-union K, universal author argument only; full KR1 unresolved",
+  "priority": "smallest eligible cancellation value; telescope and local singleton edges as written",
+  "discovery_exposure": "RR003 original domains through30; prior auxiliary seed through30; direct fixed-count obstruction34, no involution verification yet",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/rr003_product_involution.py": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0",
+    "research/rogers-ramanujan/rr003/product-involution.md": "550e4a7bc0dacdde8c3b2cf0d501412fb5df74269918fdd9ba12951c266303a4"
+  }
+}

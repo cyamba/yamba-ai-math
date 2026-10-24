@@ -1,0 +1,15 @@
+{
+  "program": "RR003",
+  "stage": "mechanism B final author revision",
+  "frozen_utc": "2026-10-24T10:50:04.365071+00:00",
+  "discovery_exposure": "all actual A,B through 30, exact old collision43",
+  "claim": "restricted B_small bijection only, author argument, no separate review",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_recursive.py": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7",
+    "research/rogers-ramanujan/checks/rr003_cluster_merge.py": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+    "research/rogers-ramanujan/checks/rr003_small_charge.py": "c74aa6f155682b0afe92592caa8d79cf0a35e148909b95e89c05a4cebbe58d71",
+    "research/rogers-ramanujan/rr003/recursive-repair.md": "bb812f5dc25fa71b4eec4047d74fdcbd59505c8a9f61c7a29b142868c46fa006",
+    "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc"
+  }
+}

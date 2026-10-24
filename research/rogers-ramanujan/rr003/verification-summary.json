@@ -1,0 +1,5634 @@
+{
+  "program": "RR003",
+  "generated_utc": "2026-10-24T12:48:40.780416+00:00",
+  "governing_objective": "complete explicit weight-preserving mutually inverse KR1 residue-gap algorithms with universal proofs",
+  "complete_bijection": false,
+  "accepted_universal_U_C_bridge": false,
+  "novelty": "unverified",
+  "lean_certification": "not run; subsequent obligation",
+  "assurance_limits": [
+    "Finite enumeration checks implementation and exposes failures; it is not a universal proof.",
+    "Only the two original frozen restricted proposals received separate semantic reviews. Final author extensions and auxiliary maps require future review.",
+    "Discovery exposed weights through30. These are not held-out observations.",
+    "Partial image counts cannot be added: the two proposed endpoint maps conflict.",
+    "Source claims are attributed at the inspection depths recorded in primary-source comparison documents."
+  ],
+  "frozen_integrity": {
+    "status": "pass",
+    "checked_hash_bindings": 71,
+    "distinct_paths": 41,
+    "raw_receipt_sha256": "67e6a4c9597eb62948288b2df2d4a59c79d70ece549a67e6462b5145bf76fa57",
+    "freezes": [
+      {
+        "file": "charge-separated-core-freeze.json",
+        "sha256": "b9d276e160650c48f08dc726a90754fcd94d88212a86091498ba2238585e587f",
+        "frozen_utc": "2026-10-24T11:53:33.181944+00:00"
+      },
+      {
+        "file": "cut-branch-freeze.json",
+        "sha256": "514a8317e9bdef227e6cc8d26ed2632aa0a4b195ccb6f76b7464a4e4a61571c1",
+        "frozen_utc": "2026-10-24T12:14:58.717823+00:00"
+      },
+      {
+        "file": "endpoint-cluster-merge-freeze.json",
+        "sha256": "a5be0359f3e135a86bf3a8aa3583eeb4f4966f6a7063e2dd2700118aa08ceef8",
+        "frozen_utc": "2026-10-24T10:46:34.211440+00:00"
+      },
+      {
+        "file": "endpoint-clusters-freeze.json",
+        "sha256": "849ecd902ba0660853d1b8d8966153eef9b930bdd9853b764135a3baca5825f3",
+        "frozen_utc": "2026-10-24T10:43:14.163187+00:00"
+      },
+      {
+        "file": "endpoint-stockhofe-freeze.json",
+        "sha256": "d877bc0773fe4ccc20c29417a25b5c251c4c348719194faea3d3475264ad664e",
+        "frozen_utc": "2026-10-24T10:41:13.275395+00:00"
+      },
+      {
+        "file": "middle-source-freeze.json",
+        "sha256": "8375c535e64b39df156be87cce809a2a7d27c6b6a35ce2ef41ea847e443e5028",
+        "frozen_utc": "2026-10-24T12:40:45.607485+00:00"
+      },
+      {
+        "file": "partial-composition-freeze.json",
+        "sha256": "f98b35147e9d2e8c7399f37460c71a8be9e672dbcece3204e38e9d9d12a9a2b2",
+        "frozen_utc": "2026-10-24T11:43:59.550276+00:00"
+      },
+      {
+        "file": "product-involution-freeze.json",
+        "sha256": "d67deca1c4c4a409ae97590023cd605b7fbd40b2631c0d043f57b4bd4ed832c1",
+        "frozen_utc": "2026-10-24T12:08:23.329746+00:00"
+      },
+      {
+        "file": "recursive-repair-freeze.json",
+        "sha256": "046cf9584ddbaf0a726c79c7b4a8150012ea1db73bba8a1a59176730f0aebecf",
+        "frozen_utc": "2026-10-24T10:50:04.365071+00:00"
+      },
+      {
+        "file": "recursive-source-seed-freeze.json",
+        "sha256": "500d6f3a148a38ed87b5e3f9b6f1ccf1725775bbd047440450ae3bc4ca01c2db",
+        "frozen_utc": "2026-10-24T12:01:46.662579+00:00"
+      },
+      {
+        "file": "round-1-freeze.json",
+        "sha256": "ec4d33e7e386d8b510355e162a191577e7411104352b5e84e28e1e3e4be4e3a8",
+        "frozen_utc": "2026-10-24T10:10:32.191189+00:00"
+      },
+      {
+        "file": "round-2-freeze.json",
+        "sha256": "0bce7b2b5addcea2cf0188f300f40a836dbf9b00b9ad650b009d3836871c094a",
+        "frozen_utc": "2026-10-24T10:26:29.358327+00:00"
+      },
+      {
+        "file": "round-2-revision-freeze.json",
+        "sha256": "4dfc32db38f520c67f313793b7194647ef45f70c5a72835f526842736e65c0b2",
+        "frozen_utc": "2026-10-24T10:35:34.487148+00:00"
+      },
+      {
+        "file": "second-product-freeze.json",
+        "sha256": "9c9d79fa62eba60a184e11dd7fa06d89e2e65ed390420870a3dbeaa592a314a8",
+        "frozen_utc": "2026-10-24T12:11:41.236538+00:00"
+      },
+      {
+        "file": "three-divisible-freeze.json",
+        "sha256": "b58441d5854875d3c5ebfd80ae98b9e0e30ad7c935eee2fccc1607e40de9f32c",
+        "frozen_utc": "2026-10-24T11:50:07.851458+00:00"
+      }
+    ],
+    "erratum_file": "cut-branch-erratum.md",
+    "critic_provenance": "reproduction/provenance.json",
+    "critic_provenance_sha256": "1074cae855ff369ada5a45c712a482af49dfa73bab69bfefcdf748bbb573921f"
+  },
+  "verification_source_note": "The round-one verifier later replaced ordinary assertions by explicit checks. Its two historical result hashes therefore differ from current verifier code; frozen mathematical rules remain intact. Earlier receipts are preserved.",
+  "independent_critic_computations": [
+    {
+      "round": 1,
+      "execution": {
+        "label": "critic1-independent",
+        "command": [
+          "python3",
+          "/private/tmp/rr003_critic1_independent.py"
+        ],
+        "started_utc": "2026-10-24T10:12:49.829155+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.23365224999724887,
+        "peak_child_rss_bytes": 24641536,
+        "sha256": "d2264c43fa7eec88c215325ebf48e3126c4b1a5ef0f9f9e1ad22deb8408a3eb0"
+      },
+      "evidence": {
+        "verdict": "independent restricted checks passed; universal bridge incomplete",
+        "ceiling": 30,
+        "counts": {
+          "cluster_roundtrips": 376,
+          "column_roundtrips": 376,
+          "mu_last_operations": 347,
+          "nu_operations": 356,
+          "merge_split_operations": 93
+        },
+        "first_uncovered": [
+          {
+            "weight": 8,
+            "u": [
+              8
+            ]
+          }
+        ],
+        "at_30": {
+          "n": 30,
+          "actual_U": 195,
+          "restricted": 37,
+          "uncovered": 158
+        },
+        "elapsed_seconds": 0.1826940829923842,
+        "script_sha256": "d54a069ae6ab040cd89d899f5d7285a5fb948681346bbc4f3ca1590dad2b5437"
+      },
+      "review": "round-1-review.md",
+      "assurance": "separate ordinary semantic review of this frozen restricted stage only"
+    },
+    {
+      "round": 2,
+      "execution": {
+        "label": "critic2-independent",
+        "command": [
+          "python3",
+          "/private/tmp/rr003_critic2_independent.py"
+        ],
+        "started_utc": "2026-10-24T10:29:12.911633+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.418949667000561,
+        "peak_child_rss_bytes": 27410432,
+        "sha256": "0fc89d791c6a42a5fcb1adfc9d89fe783938e2222a35d0563986ba69e0128188"
+      },
+      "evidence": {
+        "verdict": "restricted extension supported; universal objective incomplete; insertion refuted",
+        "counts": {
+          "C_roundtrips": 606,
+          "U_roundtrips": 606,
+          "zero_pair_common_carries": 196,
+          "lower_branches": 298,
+          "mixed_common_carries": 172,
+          "unsupported_successor_rejected": 32,
+          "unsupported_predecessor_rejected": 9,
+          "links_checked": 49,
+          "gap_grammar_roundtrips": 1393,
+          "Glaisher_A_roundtrips": 82,
+          "insertion_small_cores": 60,
+          "residue_grammar_roundtrips": 1393,
+          "Glaisher_B_roundtrips": 82
+        },
+        "first_uncovered_U": [
+          9,
+          [
+            6,
+            3
+          ]
+        ],
+        "first_unsupported_C": [
+          9,
+          [
+            3,
+            0,
+            [
+              0,
+              0,
+              0
+            ],
+            []
+          ]
+        ],
+        "at_30": {
+          "n": 30,
+          "actual_U": 195,
+          "restricted": 63,
+          "uncovered": 132
+        },
+        "high_k_direct_witnesses": [
+          {
+            "C": [
+              2,
+              1,
+              [
+                13,
+                13
+              ],
+              [
+                0
+              ]
+            ],
+            "U": [
+              10,
+              10,
+              10,
+              3,
+              3,
+              3
+            ],
+            "raised_U": [
+              8,
+              8,
+              8,
+              8,
+              3,
+              3,
+              3
+            ],
+            "weight": 39
+          },
+          {
+            "C": [
+              2,
+              1,
+              [
+                13,
+                16
+              ],
+              [
+                2
+              ]
+            ],
+            "U": [
+              10,
+              10,
+              10,
+              3,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1
+            ],
+            "raised_U": [
+              8,
+              8,
+              8,
+              8,
+              3,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1
+            ],
+            "weight": 48
+          },
+          {
+            "C": [
+              2,
+              2,
+              [
+                13,
+                13
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "U": [
+              10,
+              10,
+              10,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              3
+            ],
+            "raised_U": [
+              8,
+              8,
+              8,
+              8,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              3
+            ],
+            "weight": 60
+          },
+          {
+            "C": [
+              2,
+              1,
+              [
+                14,
+                14
+              ],
+              [
+                0
+              ]
+            ],
+            "U": [
+              8,
+              8,
+              8,
+              8,
+              3,
+              3,
+              3
+            ],
+            "raised_U": [
+              10,
+              8,
+              8,
+              8,
+              3,
+              3,
+              3
+            ],
+            "weight": 41
+          },
+          {
+            "C": [
+              2,
+              1,
+              [
+                17,
+                18
+              ],
+              [
+                1
+              ]
+            ],
+            "U": [
+              10,
+              10,
+              10,
+              8,
+              3,
+              3,
+              3,
+              3,
+              1
+            ],
+            "raised_U": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              3,
+              3,
+              3,
+              3,
+              1
+            ],
+            "weight": 51
+          }
+        ],
+        "insertion_collision": {
+          "cores": [
+            [
+              3,
+              3,
+              6,
+              9,
+              9,
+              12
+            ],
+            [
+              3,
+              3,
+              6,
+              6,
+              12,
+              12
+            ]
+          ],
+          "image": [
+            3,
+            6,
+            9,
+            9,
+            16
+          ],
+          "rule_words": [
+            [
+              "double",
+              "single",
+              "single",
+              "single"
+            ],
+            [
+              "double",
+              "single",
+              "double"
+            ]
+          ]
+        },
+        "elapsed_seconds": 0.3684811249986524,
+        "script_sha256": "b273f220607a1db239ff5715972e2d394c8878026f95fe7e10a4c857dd0d35dd"
+      },
+      "review": "round-2-review.md",
+      "assurance": "separate ordinary semantic review of this frozen restricted stage only"
+    }
+  ],
+  "frozen_candidate_results": [
+    {
+      "result_file": ".runs/rr003/cluster-endpoint-pilot12-result.json",
+      "result_sha256": "312ccb44fe48445a634719f39fe68184f9d90cd01a969c2ef34af9b95c096320",
+      "execution": {
+        "label": "cluster-endpoint-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_cluster_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/cluster-endpoint-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T10:43:38.008423+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.05429170899151359,
+        "peak_child_rss_bytes": 21626880,
+        "sha256": "b7fed322e03db940a9ceeadc139fd64041b175a87ca22b65255f52ea8bc9fa78"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_clusters.py",
+          "executed_sha256": "de61ecfe7bb3280b8304f4954ea3f9a24460d4c975f1c869f853cef4dda0420e",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-clusters.md",
+          "executed_sha256": "2eed913ed727a1923b60e6893d40c995bbd2de315a0bef4d60510f37dcf0f7ff",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_verify.py",
+          "executed_sha256": "9ad76f3d57c2f0cefd13c16f1e5b9ce1a7821a94af55d47c86551044d1e14a18",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-clusters-freeze.json",
+          "executed_sha256": "849ecd902ba0660853d1b8d8966153eef9b930bdd9853b764135a3baca5825f3",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "candidate attributed cluster endpoint",
+        "ceiling": 12,
+        "status": "finite_candidate_endpoint_checks_passed_universal_conformance_unproved",
+        "attribution": "Kursungoz arXiv:1808.01432v1 Theorem 7; uniform obstacle interpreter proposed here",
+        "assurance": "finite implementation checks, no universal interpreter proof or separate semantic review",
+        "full_bijection": "unresolved",
+        "novelty": "unverified, endpoint theorem established",
+        "totals": {
+          "cluster_round_trips": 59,
+          "gap_round_trips": 59
+        },
+        "elapsed_seconds": 0.002694166003493592,
+        "finished_utc": "2026-10-24T10:43:38.063723+00:00",
+        "terminal_case": {
+          "weight": 12,
+          "actual_A": 13,
+          "actual_C": 13
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/cluster-endpoint-verify30-result.json",
+      "result_sha256": "9bbbc036bbefe7752f1d53db6bd0c520ed267f34ac01cd3bc9b3b49d3c384b4b",
+      "execution": {
+        "label": "cluster-endpoint-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_cluster_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/cluster-endpoint-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T10:43:46.077220+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.1061147079890361,
+        "peak_child_rss_bytes": 22052864,
+        "sha256": "1f63087e4f3080a83a7564558ab007be636953fa2dccb6290fa59afc1f7ac459"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_clusters.py",
+          "executed_sha256": "de61ecfe7bb3280b8304f4954ea3f9a24460d4c975f1c869f853cef4dda0420e",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-clusters.md",
+          "executed_sha256": "2eed913ed727a1923b60e6893d40c995bbd2de315a0bef4d60510f37dcf0f7ff",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_verify.py",
+          "executed_sha256": "9ad76f3d57c2f0cefd13c16f1e5b9ce1a7821a94af55d47c86551044d1e14a18",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-clusters-freeze.json",
+          "executed_sha256": "849ecd902ba0660853d1b8d8966153eef9b930bdd9853b764135a3baca5825f3",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "candidate attributed cluster endpoint",
+        "ceiling": 30,
+        "status": "finite_candidate_endpoint_checks_passed_universal_conformance_unproved",
+        "attribution": "Kursungoz arXiv:1808.01432v1 Theorem 7; uniform obstacle interpreter proposed here",
+        "assurance": "finite implementation checks, no universal interpreter proof or separate semantic review",
+        "full_bijection": "unresolved",
+        "novelty": "unverified, endpoint theorem established",
+        "totals": {
+          "cluster_round_trips": 1393,
+          "gap_round_trips": 1393
+        },
+        "elapsed_seconds": 0.06023625000671018,
+        "finished_utc": "2026-10-24T10:43:46.180618+00:00",
+        "terminal_case": {
+          "weight": 30,
+          "actual_A": 195,
+          "actual_C": 195
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/cut-branch-pilot12-result.json",
+      "result_sha256": "8ccb5c9184229608c3617e12ce9f0a5b5bbcf4ccc7eb0f4f5e88de8c84d0f2af",
+      "execution": {
+        "label": "cut-branch-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_cut_branch_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/cut-branch-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T12:15:47.422461+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.053852124998229556,
+        "peak_child_rss_bytes": 21512192,
+        "sha256": "96cbed6dc7368089a35c79e73ea92e6913a810bcb3ca3d133ae58b8ded14e0c0"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cut_branch.py",
+          "executed_sha256": "78661c29a37e26f5ccf7ec9c2c73ebc16842ca1d6773212eb08136c95b52840f",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/cut-branch.md",
+          "executed_sha256": "85019ee512e197a541de3c1ac28b79b36b2e19528bef2d66b3958166fadfefd4",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_product_involution.py",
+          "executed_sha256": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "intrinsic_K_branch_checks_passed_complete_KR1_unresolved",
+        "actual_cut_weight_ceiling": 12,
+        "P3_weight_ceiling": 10,
+        "cut_round_trips": 10,
+        "P3_round_trips": 10,
+        "assurance": "universal author interval proof; no separate semantic review",
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "direct_large_sample_not_sweep": {
+          "cut_j": 3,
+          "cut_parts": [
+            6,
+            7,
+            11,
+            12,
+            16,
+            29,
+            31,
+            32,
+            34
+          ],
+          "image": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            12,
+            13,
+            23,
+            31,
+            31,
+            32
+          ]
+        },
+        "direct_failed_L_proposal_not_sweep": {
+          "source_weight": 49,
+          "normalized_source_weight": 42,
+          "target_weight": 48,
+          "image": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        "terminal_case": {
+          "cut_weight": 12,
+          "P3_weight": 10,
+          "actual_cuts": 2,
+          "actual_P3": 3,
+          "restricted_images": 2
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/cut-branch-verify30-result.json",
+      "result_sha256": "d8626a3c2767f9b7712337b56f5516e303ba6310c67ceffbde32346b69de73b1",
+      "execution": {
+        "label": "cut-branch-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_cut_branch_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/cut-branch-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T12:16:29.800684+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.12165191699750721,
+        "peak_child_rss_bytes": 21626880,
+        "sha256": "4ed9e08722d8d2fbdd5ae1b3e3b04d791a4969c641cc9d4a2b7e6aa3daec4427"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cut_branch.py",
+          "executed_sha256": "78661c29a37e26f5ccf7ec9c2c73ebc16842ca1d6773212eb08136c95b52840f",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/cut-branch.md",
+          "executed_sha256": "85019ee512e197a541de3c1ac28b79b36b2e19528bef2d66b3958166fadfefd4",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_product_involution.py",
+          "executed_sha256": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "intrinsic_K_branch_checks_passed_complete_KR1_unresolved",
+        "actual_cut_weight_ceiling": 30,
+        "P3_weight_ceiling": 28,
+        "cut_round_trips": 245,
+        "P3_round_trips": 245,
+        "assurance": "universal author interval proof; no separate semantic review",
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "direct_large_sample_not_sweep": {
+          "cut_j": 3,
+          "cut_parts": [
+            6,
+            7,
+            11,
+            12,
+            16,
+            29,
+            31,
+            32,
+            34
+          ],
+          "image": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6,
+            12,
+            13,
+            23,
+            31,
+            31,
+            32
+          ]
+        },
+        "direct_corrected_failed_L_variant_not_sweep": {
+          "source_weight": 49,
+          "normalized_source_weight": 42,
+          "target_weight": 48,
+          "image": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        "terminal_case": {
+          "cut_weight": 30,
+          "P3_weight": 28,
+          "actual_cuts": 34,
+          "actual_P3": 55,
+          "restricted_images": 34
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/endpoint-pilot12-result.json",
+      "result_sha256": "16bda3b728b1562f18830bfa4b1cc06ed32038017479af99f834c9121ea1396e",
+      "execution": {
+        "label": "endpoint-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_endpoint_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/endpoint-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T10:41:37.601048+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.05605933300103061,
+        "peak_child_rss_bytes": 22364160,
+        "sha256": "470060b5378ae6a57deb451ce55fb5f23125b6d8c82c70267ff1dfa85db10e4b"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_stockhofe.py",
+          "executed_sha256": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-stockhofe.md",
+          "executed_sha256": "4e79d433f1faa8cfc86bb701aa7bd7a18b89739de8336ed5895ec18e87d471be",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_endpoint_verify.py",
+          "executed_sha256": "ccfd238ffc3cd945f36f74d76bb010625d5d6f4230e69a0ef6763f78b779ae60",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-stockhofe-freeze.json",
+          "executed_sha256": "d877bc0773fe4ccc20c29417a25b5c251c4c348719194faea3d3475264ad664e",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "attributed Stockhofe endpoint",
+        "ceiling": 12,
+        "status": "finite_endpoint_checks_passed_full_KR1_bijection_unresolved",
+        "attribution": "Stockhofe as presented by Andrews--Keith arXiv:2203.05202v2 section 2/Theorem 6",
+        "assurance": "author-only written endpoint audit and finite checks, no separate review of this code",
+        "full_bijection": "unresolved",
+        "novelty": "established construction, no novelty claim",
+        "totals": {
+          "column_round_trips": 59,
+          "residue_round_trips": 59
+        },
+        "direct_published_example_not_sweep": {
+          "heights": [
+            26,
+            25,
+            22,
+            19,
+            15,
+            13,
+            11,
+            7,
+            5,
+            5,
+            3
+          ],
+          "regular": [
+            41,
+            27,
+            24,
+            23,
+            21,
+            12,
+            3
+          ]
+        },
+        "elapsed_seconds": 0.003540000005159527,
+        "finished_utc": "2026-10-24T10:41:37.657147+00:00",
+        "terminal_case": {
+          "weight": 12,
+          "actual_U": 13,
+          "actual_B": 13
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/endpoint-verify30-result.json",
+      "result_sha256": "5a3a21a0ad0eb14e477e775e1e67cce978202d7d2b8f0e24986f73945fc49301",
+      "execution": {
+        "label": "endpoint-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_endpoint_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/endpoint-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T10:41:43.968020+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.1547541670006467,
+        "peak_child_rss_bytes": 24346624,
+        "sha256": "0bf110177eb3206ea485476e7e60540a4fde4f98a4e5401910f344f764787df4"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_stockhofe.py",
+          "executed_sha256": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-stockhofe.md",
+          "executed_sha256": "4e79d433f1faa8cfc86bb701aa7bd7a18b89739de8336ed5895ec18e87d471be",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_endpoint_verify.py",
+          "executed_sha256": "ccfd238ffc3cd945f36f74d76bb010625d5d6f4230e69a0ef6763f78b779ae60",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-stockhofe-freeze.json",
+          "executed_sha256": "d877bc0773fe4ccc20c29417a25b5c251c4c348719194faea3d3475264ad664e",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "attributed Stockhofe endpoint",
+        "ceiling": 30,
+        "status": "finite_endpoint_checks_passed_full_KR1_bijection_unresolved",
+        "attribution": "Stockhofe as presented by Andrews--Keith arXiv:2203.05202v2 section 2/Theorem 6",
+        "assurance": "author-only written endpoint audit and finite checks, no separate review of this code",
+        "full_bijection": "unresolved",
+        "novelty": "established construction, no novelty claim",
+        "totals": {
+          "column_round_trips": 1393,
+          "residue_round_trips": 1393
+        },
+        "direct_published_example_not_sweep": {
+          "heights": [
+            26,
+            25,
+            22,
+            19,
+            15,
+            13,
+            11,
+            7,
+            5,
+            5,
+            3
+          ],
+          "regular": [
+            41,
+            27,
+            24,
+            23,
+            21,
+            12,
+            3
+          ]
+        },
+        "elapsed_seconds": 0.10715874999004882,
+        "finished_utc": "2026-10-24T10:41:44.119250+00:00",
+        "terminal_case": {
+          "weight": 30,
+          "actual_U": 195,
+          "actual_B": 195
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/l-boundary-obstruction24-result.json",
+      "result_sha256": "f425c15edaab7929b6508c661290d7828a9168a84f6f1651199b3aa447893547",
+      "execution": {
+        "label": "l-boundary-obstruction24",
+        "command": [
+          "python3",
+          "-"
+        ],
+        "started_utc": "2026-10-24T12:18:10.256558+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.04214716699789278,
+        "peak_child_rss_bytes": 17661952,
+        "sha256": "1c5124932c27b2d852725901149c6e0b1bfe1e78578aa558c3864b2a424a60ae"
+      },
+      "executed_sources": [],
+      "evidence": {
+        "program": "RR003",
+        "status": "corrected_L_conversion_refuted_at_boundary",
+        "source_weight": 25,
+        "normalized_source_weight": 18,
+        "sources": [
+          {
+            "j": 0,
+            "parts": [
+              7,
+              11
+            ]
+          },
+          {
+            "j": 0,
+            "parts": [
+              8,
+              10
+            ]
+          }
+        ],
+        "image": [
+          3,
+          3,
+          3,
+          4,
+          5,
+          6
+        ],
+        "target_weight": 24,
+        "proof_obligation": "recover whether the local full pair is (7,11) or (8,10); their weights coincide"
+      }
+    },
+    {
+      "result_file": ".runs/rr003/l-k-overlap26-corrected-check-result.json",
+      "result_sha256": "60ad7dc6ccb01b4193d89403746e8289bea6757f0155e18e5becc28bf31389f0",
+      "execution": {
+        "label": "l-k-overlap26-corrected-check",
+        "command": [
+          "python3",
+          "-"
+        ],
+        "started_utc": "2026-10-24T12:23:26.906620+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.04394091700669378,
+        "peak_child_rss_bytes": 17678336,
+        "sha256": "75e65f34d117518c38066a9f80c0fc235cb16104949984bef0cb254d3f837e64"
+      },
+      "executed_sources": [],
+      "evidence": {
+        "program": "RR003",
+        "status": "corrected_L_branch_disjointness_refuted",
+        "L": {
+          "j": 0,
+          "parts": [
+            10,
+            10
+          ],
+          "actual_weight": 27
+        },
+        "K": {
+          "j": 0,
+          "parts": [
+            6,
+            6,
+            7,
+            7
+          ],
+          "actual_weight": 28
+        },
+        "P3_image": [
+          3,
+          3,
+          4,
+          4,
+          6,
+          6
+        ],
+        "target_weight": 26,
+        "weight_equation": "Lweight-7+6=Kweight-2=26",
+        "verification_correction": "separate equality checks replace the earlier inline chained-inequality guard; witness and candidate unchanged; prior receipt retained"
+      }
+    },
+    {
+      "result_file": ".runs/rr003/l-k-overlap26-result.json",
+      "result_sha256": "e198d3dc677df976c70563031bc260494cc402b679838a440b10510f534dd9ec",
+      "execution": {
+        "label": "l-k-overlap26",
+        "command": [
+          "python3",
+          "-"
+        ],
+        "started_utc": "2026-10-24T12:23:04.062641+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.042320499997003935,
+        "peak_child_rss_bytes": 17530880,
+        "sha256": "db56abcf25a700fef28f2094914cef17da9460d834b47e8efe5c4b721f368c40"
+      },
+      "executed_sources": [],
+      "evidence": {
+        "program": "RR003",
+        "status": "corrected_L_branch_disjointness_refuted",
+        "L": {
+          "j": 0,
+          "parts": [
+            10,
+            10
+          ],
+          "actual_weight": 27
+        },
+        "K": {
+          "j": 0,
+          "parts": [
+            6,
+            6,
+            7,
+            7
+          ],
+          "actual_weight": 28
+        },
+        "P3_image": [
+          3,
+          3,
+          4,
+          4,
+          6,
+          6
+        ],
+        "target_weight": 26,
+        "weight_equation": "Lweight-7+6=Kweight-2=26"
+      }
+    },
+    {
+      "result_file": ".runs/rr003/l-phase-local-repair-obstruction-result.json",
+      "result_sha256": "4955191ff1da66d4de92b8e488cde2ccc43321516021da936e2506ff4c281afc",
+      "execution": {
+        "label": "l-phase-local-repair-obstruction",
+        "command": [
+          "python3",
+          "-"
+        ],
+        "started_utc": "2026-10-24T12:33:38.012111+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.04592433299694676,
+        "peak_child_rss_bytes": 17924096,
+        "sha256": "2e88c9e44b0ed587f917c4edb1dff5432d05f0be4da3742443879c0cb90837f8"
+      },
+      "executed_sources": [],
+      "evidence": {
+        "program": "RR003",
+        "status": "two exact conditional obstructions, not a full-mechanism refutation",
+        "discovery_mode": "direct symbolic witnesses, not a sweep above30",
+        "local_phase_repair": {
+          "rule": "Corrected simple L conversion plus, at each suffix level, min(count8,count10) replacements 6->3+3.",
+          "sources": [
+            [
+              8,
+              10,
+              10,
+              11
+            ],
+            [
+              6,
+              7,
+              7,
+              8,
+              11
+            ]
+          ],
+          "actual_L_weight": 46,
+          "normalized_L_weight": 39,
+          "common_P3_image": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6
+          ],
+          "target_weight": 45
+        },
+        "fixed_target_counts_obstruction": {
+          "actual_L_weight": 67,
+          "normalized_L_weight": 60,
+          "target_weight": 66,
+          "sources": [
+            [
+              8,
+              10,
+              10,
+              10,
+              11,
+              11
+            ],
+            [
+              6,
+              8,
+              8,
+              8,
+              10,
+              10,
+              10
+            ],
+            [
+              7,
+              10,
+              10,
+              11,
+              11,
+              11
+            ],
+            [
+              6,
+              7,
+              8,
+              8,
+              10,
+              10,
+              11
+            ],
+            [
+              6,
+              7,
+              7,
+              8,
+              10,
+              11,
+              11
+            ],
+            [
+              6,
+              6,
+              7,
+              7,
+              8,
+              8,
+              8,
+              10
+            ],
+            [
+              6,
+              7,
+              7,
+              7,
+              11,
+              11,
+              11
+            ],
+            [
+              6,
+              6,
+              7,
+              7,
+              7,
+              8,
+              8,
+              11
+            ]
+          ],
+          "required_target_count4": 3,
+          "required_target_count5": 3,
+          "target_parts_restricted_to": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "exhaustive_targets": [
+            [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5
+            ],
+            [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6
+            ],
+            [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6
+            ],
+            [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6,
+              6
+            ],
+            [
+              3,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6,
+              6,
+              6
+            ],
+            [
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            [
+              3,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ]
+          ],
+          "exhaustion_argument": "After the three4s and three5s, remaining weight39 forces count3+2count6=13, with exactly seven nonnegative solutions.",
+          "claim": "No cost6 injection on this source fiber can preserve these target counts and levels; it must move another target statistic."
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/merge-endpoint-pilot12-result.json",
+      "result_sha256": "6d5a66f17c54b3ab0d481a733791f2950156b10616adbd25768a19364d955df8",
+      "execution": {
+        "label": "merge-endpoint-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_merge_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/merge-endpoint-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T10:46:49.590004+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.057209834005334415,
+        "peak_child_rss_bytes": 22216704,
+        "sha256": "f79b3c2f51de555aa0023f54d289ad797ea7fe008859570a0f67903519a013dd"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md",
+          "executed_sha256": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_merge_verify.py",
+          "executed_sha256": "15e746de4326c8d1b2c6f38d5a281d2bee1fca167a87c988bf47780efd78ec8a",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-cluster-merge-freeze.json",
+          "executed_sha256": "a5be0359f3e135a86bf3a8aa3583eeb4f4966f6a7063e2dd2700118aa08ceef8",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "direct attributed cluster endpoint",
+        "ceiling": 12,
+        "status": "finite_direct_merge_checks_passed_separate_review_outstanding",
+        "attribution": "Kursungoz arXiv:1808.01432v1 Theorem 7; direct inverse-derived merge formulation",
+        "assurance": "finite implementation checks and universal author argument; separate semantic review outstanding",
+        "full_bijection": "unresolved",
+        "novelty": "unverified, endpoint theorem established",
+        "totals": {
+          "cluster_round_trips": 59,
+          "gap_round_trips": 59
+        },
+        "elapsed_seconds": 0.0024146659998223186,
+        "finished_utc": "2026-10-24T10:46:49.649026+00:00",
+        "terminal_case": {
+          "weight": 12,
+          "actual_A": 13,
+          "actual_C": 13
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/merge-endpoint-verify30-result.json",
+      "result_sha256": "4ad257c2411f44f27a7bce7a9be15e26c8719c2802761807f29061968ceac5be",
+      "execution": {
+        "label": "merge-endpoint-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_merge_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/merge-endpoint-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T10:46:57.277782+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.09504920900508296,
+        "peak_child_rss_bytes": 22167552,
+        "sha256": "f9f23313c7205068abb40410b282fa9f16440baefecf9c5b43e28b9a0c65994d"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md",
+          "executed_sha256": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_merge_verify.py",
+          "executed_sha256": "15e746de4326c8d1b2c6f38d5a281d2bee1fca167a87c988bf47780efd78ec8a",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-cluster-merge-freeze.json",
+          "executed_sha256": "a5be0359f3e135a86bf3a8aa3583eeb4f4966f6a7063e2dd2700118aa08ceef8",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "direct attributed cluster endpoint",
+        "ceiling": 30,
+        "status": "finite_direct_merge_checks_passed_separate_review_outstanding",
+        "attribution": "Kursungoz arXiv:1808.01432v1 Theorem 7; direct inverse-derived merge formulation",
+        "assurance": "finite implementation checks and universal author argument; separate semantic review outstanding",
+        "full_bijection": "unresolved",
+        "novelty": "unverified, endpoint theorem established",
+        "totals": {
+          "cluster_round_trips": 1393,
+          "gap_round_trips": 1393
+        },
+        "elapsed_seconds": 0.04534966699429788,
+        "finished_utc": "2026-10-24T10:46:57.370127+00:00",
+        "terminal_case": {
+          "weight": 30,
+          "actual_A": 195,
+          "actual_C": 195
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/middle-source-pilot12-result.json",
+      "result_sha256": "febbfabdb7d6c5a837e48396f2726b2fad247e90ccd20bc3731555fe9ccea577",
+      "execution": {
+        "label": "middle-source-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/rr003/reproduction/middle_source.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/middle-source-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T12:40:53.678403+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.05534329199872445,
+        "peak_child_rss_bytes": 21741568,
+        "sha256": "9d0d819d0375018f99a598e3d6b63a2c62e0c9dcf355b5b4addbad9b7cb199c6"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/rr003/reproduction/middle_source.py",
+          "executed_sha256": "3756435cd00e13de3de78fddd1b934d9fdc2e673bc7e6531ff7aa027204884f7",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/middle-source-model.md",
+          "executed_sha256": "306b46a09ec842d72c10f57048b796fec6321648d91e532fc9552e59093ddaf3",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_second_product.py",
+          "executed_sha256": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "source_model_coefficients_checked_no_branch_bijection",
+        "actual_source_weight_ceiling": 12,
+        "middle_normalized_weight_ceiling": 5,
+        "two_cut_objects": 7,
+        "middle_objects": 2,
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "assurance": "finite coefficient checks and attributed author algebraic interpretation; no separate semantic review or branch map",
+        "finished_utc": "2026-10-24T12:40:53.745990+00:00",
+        "terminal_case": {
+          "weight": 12,
+          "two_cut_objects": 1,
+          "S_6_12_cluster_objects": 1
+        },
+        "middle_terminal_case": {
+          "weight": 5,
+          "two_cut_objects": 0,
+          "S_6_12_cluster_objects": 0,
+          "normalized_L_objects": 0,
+          "middle_objects": 1,
+          "S_4_9_cluster_objects": 1
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/middle-source-verify30-result.json",
+      "result_sha256": "5beffe2114ce0d89b22c19e30fb6db2757be5399dfb86ddd6e8d71456b20e1d1",
+      "execution": {
+        "label": "middle-source-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/rr003/reproduction/middle_source.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/middle-source-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T12:41:03.135380+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.15902054100297391,
+        "peak_child_rss_bytes": 21872640,
+        "sha256": "9ce2e37de2fbfdd29eb5cf810bd1e66f7451b4e7b32a00619e89b1605a960b6c"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/rr003/reproduction/middle_source.py",
+          "executed_sha256": "3756435cd00e13de3de78fddd1b934d9fdc2e673bc7e6531ff7aa027204884f7",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/middle-source-model.md",
+          "executed_sha256": "306b46a09ec842d72c10f57048b796fec6321648d91e532fc9552e59093ddaf3",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_second_product.py",
+          "executed_sha256": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "source_model_coefficients_checked_no_branch_bijection",
+        "actual_source_weight_ceiling": 30,
+        "middle_normalized_weight_ceiling": 23,
+        "two_cut_objects": 111,
+        "middle_objects": 75,
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "assurance": "finite coefficient checks and attributed author algebraic interpretation; no separate semantic review or branch map",
+        "finished_utc": "2026-10-24T12:41:03.293574+00:00",
+        "terminal_case": {
+          "weight": 30,
+          "two_cut_objects": 15,
+          "S_6_12_cluster_objects": 15
+        },
+        "middle_terminal_case": {
+          "weight": 23,
+          "two_cut_objects": 5,
+          "S_6_12_cluster_objects": 5,
+          "normalized_L_objects": 7,
+          "middle_objects": 11,
+          "S_4_9_cluster_objects": 11
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/partial-composition-pilot12-result.json",
+      "result_sha256": "460843e6092ebf3c58aa48bfafbaa61f4247c272c815de37dfb2d8569ad9bccf",
+      "execution": {
+        "label": "partial-composition-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_partial_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/partial-composition-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T11:44:32.330806+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.05604374999529682,
+        "peak_child_rss_bytes": 21610496,
+        "sha256": "3113198a155cab9135e829d071b8d1b9c7b7ef217af602242c64c054dd0a516c"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_partial.py",
+          "executed_sha256": "6d47cdc695f5f5a04db827efd9ce3795823fe3fce535c7b299623b1ab8e73eb8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_a2.py",
+          "executed_sha256": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_columns.py",
+          "executed_sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_revision.py",
+          "executed_sha256": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_stockhofe.py",
+          "executed_sha256": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/partial-composition.md",
+          "executed_sha256": "df5b8c3161df881c406b639a95e6e22e96bd0d6a7cdb8a7abe51cc2c61002e54",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-stockhofe.md",
+          "executed_sha256": "4e79d433f1faa8cfc86bb701aa7bd7a18b89739de8336ed5895ec18e87d471be",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md",
+          "executed_sha256": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-revision.md",
+          "executed_sha256": "0310ac52fe59173994a185af514e01c665de6ddf1871c2681e366a06b3d63b34",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_partial_verify.py",
+          "executed_sha256": "b4a24b7595f530b226743e597512cd3d82759e8e46694ef8d089bbdca4068a67",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/partial-composition-freeze.json",
+          "executed_sha256": "f98b35147e9d2e8c7399f37460c71a8be9e672dbcece3204e38e9d9d12a9a2b2",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "final restricted endpoint composition",
+        "ceiling": 12,
+        "status": "restricted_end_to_end_checks_passed_complete_KR1_unresolved",
+        "assurance": "finite implementation checks plus universal author arguments; final extensions lack separate review",
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "totals": {
+          "residue_round_trips": 52,
+          "gap_round_trips": 52
+        },
+        "first_unsupported_residue": {
+          "weight": 9,
+          "residue": [
+            3,
+            6
+          ]
+        },
+        "first_uncovered_gap": {
+          "weight": 9,
+          "gap": [
+            1,
+            3,
+            5
+          ]
+        },
+        "elapsed_seconds": 0.005860416000359692,
+        "finished_utc": "2026-10-24T11:44:32.391118+00:00",
+        "terminal_case": {
+          "weight": 12,
+          "actual_A": 13,
+          "actual_B": 13,
+          "restricted_images": 10
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/partial-composition-verify30-result.json",
+      "result_sha256": "a342bd6f12d2f1132e016e72e33bbec91dd76f8dc7ff9de45239d9b8a4cb0bf3",
+      "execution": {
+        "label": "partial-composition-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_partial_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/partial-composition-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T11:44:41.172918+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.16447270799835678,
+        "peak_child_rss_bytes": 23724032,
+        "sha256": "baf01bb2fac7e1cc59db8a630708af2eb6101d4517ff21567bf4ce0b7fe644bd"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_partial.py",
+          "executed_sha256": "6d47cdc695f5f5a04db827efd9ce3795823fe3fce535c7b299623b1ab8e73eb8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_a2.py",
+          "executed_sha256": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_columns.py",
+          "executed_sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_revision.py",
+          "executed_sha256": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_stockhofe.py",
+          "executed_sha256": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/partial-composition.md",
+          "executed_sha256": "df5b8c3161df881c406b639a95e6e22e96bd0d6a7cdb8a7abe51cc2c61002e54",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-stockhofe.md",
+          "executed_sha256": "4e79d433f1faa8cfc86bb701aa7bd7a18b89739de8336ed5895ec18e87d471be",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md",
+          "executed_sha256": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-revision.md",
+          "executed_sha256": "0310ac52fe59173994a185af514e01c665de6ddf1871c2681e366a06b3d63b34",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_partial_verify.py",
+          "executed_sha256": "b4a24b7595f530b226743e597512cd3d82759e8e46694ef8d089bbdca4068a67",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/partial-composition-freeze.json",
+          "executed_sha256": "f98b35147e9d2e8c7399f37460c71a8be9e672dbcece3204e38e9d9d12a9a2b2",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "final restricted endpoint composition",
+        "ceiling": 30,
+        "status": "restricted_end_to_end_checks_passed_complete_KR1_unresolved",
+        "assurance": "finite implementation checks plus universal author arguments; final extensions lack separate review",
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "totals": {
+          "residue_round_trips": 643,
+          "gap_round_trips": 643
+        },
+        "first_unsupported_residue": {
+          "weight": 9,
+          "residue": [
+            3,
+            6
+          ]
+        },
+        "first_uncovered_gap": {
+          "weight": 9,
+          "gap": [
+            1,
+            3,
+            5
+          ]
+        },
+        "elapsed_seconds": 0.11821183298889082,
+        "finished_utc": "2026-10-24T11:44:41.334889+00:00",
+        "terminal_case": {
+          "weight": 30,
+          "actual_A": 195,
+          "actual_B": 195,
+          "restricted_images": 70
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/partial-overlay-obstruction-result.json",
+      "result_sha256": "8ede355959a4c78c06d5a8148b4462383d1c22a3d2aa3f3120379f95b9b132d3",
+      "execution": {
+        "label": "partial-overlay-obstruction",
+        "command": [
+          "python3",
+          "-"
+        ],
+        "started_utc": "2026-10-24T11:58:30.720446+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.045396292000077665,
+        "peak_child_rss_bytes": 17973248,
+        "sha256": "366e7817c5e9cc544b67d7c77427ad05de1a19cd3bed4ab0e78eb3773bfe5c0f"
+      },
+      "executed_sources": [],
+      "evidence": {
+        "program": "RR003",
+        "status": "naive_partial_overlay_refuted",
+        "discovery_exposure": "all objects through30 previously exposed; new exploration stops at first collision9",
+        "conflicting_assignments4": [
+          {
+            "source": [
+              1,
+              3
+            ],
+            "A": [
+              1,
+              3
+            ],
+            "B": [
+              4
+            ]
+          },
+          {
+            "source": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "A": [
+              4
+            ],
+            "B": [
+              1,
+              3
+            ]
+          }
+        ],
+        "first_fallback_collision": {
+          "weight": 9,
+          "first": {
+            "source": [
+              3,
+              6
+            ],
+            "route": "B"
+          },
+          "second": {
+            "source": [
+              1,
+              8
+            ],
+            "route": "A"
+          },
+          "image": [
+            3,
+            6
+          ]
+        },
+        "explicit_collision": {
+          "sources": [
+            [
+              1,
+              8
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "image": [
+            3,
+            6
+          ]
+        },
+        "claim": "These two restricted maps cannot be combined by A-first unsupported fallback to B; neither complete mechanism is refuted."
+      }
+    },
+    {
+      "result_file": ".runs/rr003/product-involution-pilot12-result.json",
+      "result_sha256": "87e393e046d9925f34c77da9d92461a10cd5d1ed45cff34c3813d749e72ec25f",
+      "execution": {
+        "label": "product-involution-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_product_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/product-involution-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T12:09:05.320068+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.06856779201189056,
+        "peak_child_rss_bytes": 21970944,
+        "sha256": "66f83e3ea91cde5087cc4cf06249840e02bc136c7ec3ddee8bbfac8f0de6c338"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_product_involution.py",
+          "executed_sha256": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/product-involution.md",
+          "executed_sha256": "550e4a7bc0dacdde8c3b2cf0d501412fb5df74269918fdd9ba12951c266303a4",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_product_verify.py",
+          "executed_sha256": "0dd93fe8777892151352555f3ee8891ee5ab2c21062d7bfa1287b37061b29c93",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "auxiliary_product_bijection_checks_passed_complete_KR1_unresolved",
+        "ceiling": 12,
+        "P2_round_trips": 34,
+        "P3_round_trips": 24,
+        "cut_round_trips": 10,
+        "maximum_walk_steps": 64,
+        "audited_walk_steps": 3122,
+        "assurance": "universal author finite-path argument; no separate semantic review",
+        "novelty": "unverified",
+        "full_bijection": "unresolved",
+        "complexity": "conservative exponential work bound exceeds preferred quartic; binding investigation limits unchanged",
+        "direct_weight34_samples_not_sweep": {
+          "sources": [
+            [
+              3,
+              5,
+              5,
+              21
+            ],
+            [
+              5,
+              5,
+              12,
+              12
+            ],
+            [
+              3,
+              3,
+              5,
+              23
+            ],
+            [
+              3,
+              3,
+              14,
+              14
+            ],
+            [
+              3,
+              5,
+              12,
+              14
+            ]
+          ],
+          "images": [
+            [
+              3,
+              3,
+              7,
+              21
+            ],
+            [
+              3,
+              7,
+              12,
+              12
+            ],
+            [
+              3,
+              3,
+              3,
+              25
+            ],
+            [
+              3,
+              3,
+              3,
+              3,
+              11,
+              11
+            ],
+            [
+              3,
+              3,
+              12,
+              16
+            ]
+          ]
+        },
+        "elapsed_seconds": 0.014535207999870181,
+        "terminal_case": {
+          "weight": 12,
+          "actual_P2": 8,
+          "actual_P3": 6,
+          "actual_K": 2
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/product-involution-verify30-result.json",
+      "result_sha256": "a7feff9f9f5af7f1d1cb6f99105229785b59b76246f8e52cc48d86e5023290a9",
+      "execution": {
+        "label": "product-involution-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_product_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/product-involution-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T12:09:13.556170+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 1.4457454170042183,
+        "peak_child_rss_bytes": 23003136,
+        "sha256": "23554f4b444981156a27a1116d3c0adc682509ba05be9495e3b65c8d3b0e9863"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_product_involution.py",
+          "executed_sha256": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/product-involution.md",
+          "executed_sha256": "550e4a7bc0dacdde8c3b2cf0d501412fb5df74269918fdd9ba12951c266303a4",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_product_verify.py",
+          "executed_sha256": "0dd93fe8777892151352555f3ee8891ee5ab2c21062d7bfa1287b37061b29c93",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "auxiliary_product_bijection_checks_passed_complete_KR1_unresolved",
+        "ceiling": 30,
+        "P2_round_trips": 780,
+        "P3_round_trips": 535,
+        "cut_round_trips": 245,
+        "maximum_walk_steps": 736,
+        "audited_walk_steps": 298486,
+        "assurance": "universal author finite-path argument; no separate semantic review",
+        "novelty": "unverified",
+        "full_bijection": "unresolved",
+        "complexity": "conservative exponential work bound exceeds preferred quartic; binding investigation limits unchanged",
+        "direct_weight34_samples_not_sweep": {
+          "sources": [
+            [
+              3,
+              5,
+              5,
+              21
+            ],
+            [
+              5,
+              5,
+              12,
+              12
+            ],
+            [
+              3,
+              3,
+              5,
+              23
+            ],
+            [
+              3,
+              3,
+              14,
+              14
+            ],
+            [
+              3,
+              5,
+              12,
+              14
+            ]
+          ],
+          "images": [
+            [
+              3,
+              3,
+              7,
+              21
+            ],
+            [
+              3,
+              7,
+              12,
+              12
+            ],
+            [
+              3,
+              3,
+              3,
+              25
+            ],
+            [
+              3,
+              3,
+              3,
+              3,
+              11,
+              11
+            ],
+            [
+              3,
+              3,
+              12,
+              16
+            ]
+          ]
+        },
+        "elapsed_seconds": 1.3997686249931576,
+        "terminal_case": {
+          "weight": 30,
+          "actual_P2": 111,
+          "actual_P3": 77,
+          "actual_K": 34
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/recursive-repair-pilot12-result.json",
+      "result_sha256": "0dd0469a8feac2a88a5d40dd75b2f64d93620809be40bc3b1b43cc9a2d36b1b8",
+      "execution": {
+        "label": "recursive-repair-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_charge_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/recursive-repair-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T10:50:27.951323+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.058064542012289166,
+        "peak_child_rss_bytes": 22085632,
+        "sha256": "43e978110816f86beb1b16a44a63e3d42d62ccc268390fde4fac31ca8e955c7d"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_recursive.py",
+          "executed_sha256": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_small_charge.py",
+          "executed_sha256": "c74aa6f155682b0afe92592caa8d79cf0a35e148909b95e89c05a4cebbe58d71",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/recursive-repair.md",
+          "executed_sha256": "bb812f5dc25fa71b4eec4047d74fdcbd59505c8a9f61c7a29b142868c46fa006",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md",
+          "executed_sha256": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_charge_verify.py",
+          "executed_sha256": "0acbe908b9d2beaf8b9fe70510bd3b1beaf501924e6bede09b9324f5e3b5600c",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/recursive-repair-freeze.json",
+          "executed_sha256": "046cf9584ddbaf0a726c79c7b4a8150012ea1db73bba8a1a59176730f0aebecf",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "mechanism B final author repair",
+        "ceiling": 12,
+        "status": "restricted_charge_checks_passed_full_KR1_unresolved",
+        "assurance": "universal author argument and finite checks; separate semantic review outstanding",
+        "full_bijection": "unresolved",
+        "novelty": "unverified, Glaisher and cluster endpoint attributed",
+        "totals": {
+          "residue_round_trips": 22,
+          "gap_round_trips": 22
+        },
+        "first_uncovered_gap": {
+          "weight": 3,
+          "gap": [
+            1,
+            2
+          ]
+        },
+        "first_unsupported_residue": {
+          "weight": 3,
+          "residue": [
+            1,
+            1,
+            1
+          ]
+        },
+        "direct_repaired_witness43_not_sweep": {
+          "inputs": [
+            [
+              1,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              6,
+              12
+            ],
+            [
+              1,
+              3,
+              3,
+              6,
+              6,
+              12,
+              12
+            ]
+          ],
+          "outputs": [
+            [
+              3,
+              3,
+              6,
+              9,
+              9,
+              13
+            ],
+            [
+              1,
+              2,
+              4,
+              5,
+              7,
+              12,
+              12
+            ]
+          ]
+        },
+        "elapsed_seconds": 0.0021825000003445894,
+        "finished_utc": "2026-10-24T10:50:28.011150+00:00",
+        "terminal_case": {
+          "weight": 12,
+          "actual_A": 13,
+          "actual_B": 13,
+          "restricted_images": 4
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/recursive-repair-verify30-result.json",
+      "result_sha256": "b4a72002ba2a75ac5a0b5685c7496fb663253948f90534f6d602d4cc05305b10",
+      "execution": {
+        "label": "recursive-repair-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_charge_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/recursive-repair-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T10:50:36.193608+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.08509166700241622,
+        "peak_child_rss_bytes": 21807104,
+        "sha256": "e76546175c4d1ad9752faa2c312a09e67b64c7eae32601e63d407579a913d0af"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_recursive.py",
+          "executed_sha256": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_small_charge.py",
+          "executed_sha256": "c74aa6f155682b0afe92592caa8d79cf0a35e148909b95e89c05a4cebbe58d71",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/recursive-repair.md",
+          "executed_sha256": "bb812f5dc25fa71b4eec4047d74fdcbd59505c8a9f61c7a29b142868c46fa006",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md",
+          "executed_sha256": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_charge_verify.py",
+          "executed_sha256": "0acbe908b9d2beaf8b9fe70510bd3b1beaf501924e6bede09b9324f5e3b5600c",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/recursive-repair-freeze.json",
+          "executed_sha256": "046cf9584ddbaf0a726c79c7b4a8150012ea1db73bba8a1a59176730f0aebecf",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "mechanism B final author repair",
+        "ceiling": 30,
+        "status": "restricted_charge_checks_passed_full_KR1_unresolved",
+        "assurance": "universal author argument and finite checks; separate semantic review outstanding",
+        "full_bijection": "unresolved",
+        "novelty": "unverified, Glaisher and cluster endpoint attributed",
+        "totals": {
+          "residue_round_trips": 202,
+          "gap_round_trips": 202
+        },
+        "first_uncovered_gap": {
+          "weight": 3,
+          "gap": [
+            1,
+            2
+          ]
+        },
+        "first_unsupported_residue": {
+          "weight": 3,
+          "residue": [
+            1,
+            1,
+            1
+          ]
+        },
+        "direct_repaired_witness43_not_sweep": {
+          "inputs": [
+            [
+              1,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              6,
+              12
+            ],
+            [
+              1,
+              3,
+              3,
+              6,
+              6,
+              12,
+              12
+            ]
+          ],
+          "outputs": [
+            [
+              3,
+              3,
+              6,
+              9,
+              9,
+              13
+            ],
+            [
+              1,
+              2,
+              4,
+              5,
+              7,
+              12,
+              12
+            ]
+          ]
+        },
+        "elapsed_seconds": 0.038155417001689784,
+        "finished_utc": "2026-10-24T10:50:36.276221+00:00",
+        "terminal_case": {
+          "weight": 30,
+          "actual_A": 195,
+          "actual_B": 195,
+          "restricted_images": 22
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/recursive-seed-lift-obstruction34-result.json",
+      "result_sha256": "223da01ab8f9d25bd9802d1a659cd60f33a541d9213ed29fdf8963e701d86c53",
+      "execution": {
+        "label": "recursive-seed-lift-obstruction34",
+        "command": [
+          "python3",
+          "-"
+        ],
+        "started_utc": "2026-10-24T12:03:43.608382+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.03107262498815544,
+        "peak_child_rss_bytes": 15319040,
+        "sha256": "0d95203d376b0771538993698cd57c802e4e955c914e73cad3f7ae6cd474d0a8"
+      },
+      "executed_sources": [],
+      "evidence": {
+        "program": "RR003",
+        "status": "fixed_residue_count_lift_refuted",
+        "weight": 34,
+        "discovery_mode": "nine explicit structured objects, not a sweep above30",
+        "source_residue_counts": {
+          "3": 2,
+          "5": 2
+        },
+        "target_residue_counts": {
+          "3": 3,
+          "7": 1
+        },
+        "sources": [
+          [
+            3,
+            5,
+            5,
+            21
+          ],
+          [
+            5,
+            5,
+            12,
+            12
+          ],
+          [
+            3,
+            3,
+            5,
+            23
+          ],
+          [
+            3,
+            3,
+            14,
+            14
+          ],
+          [
+            3,
+            5,
+            12,
+            14
+          ]
+        ],
+        "exhaustive_targets": [
+          [
+            3,
+            3,
+            3,
+            25
+          ],
+          [
+            3,
+            3,
+            12,
+            16
+          ],
+          [
+            3,
+            3,
+            7,
+            21
+          ],
+          [
+            3,
+            7,
+            12,
+            12
+          ]
+        ],
+        "exhaustion_argument": "Base target weight16 leaves quotient weight2 in one 7-row and three 3-rows: 2+0,1+1,0+2 with two partitions in the last case, exactly four.",
+        "claim": "Any lift retaining the seed residue-count rule on this quotient-decorated fiber is noninjective; an arbitrary lift changing residue counts is not refuted."
+      }
+    },
+    {
+      "result_file": ".runs/rr003/recursive-seed-pilot12-result.json",
+      "result_sha256": "0284537c0e2189a13d5045a792567eeb1cb02e896a860bdb345ceab0060a9797",
+      "execution": {
+        "label": "recursive-seed-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_seed_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/recursive-seed-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T12:02:12.942775+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.05446308299724478,
+        "peak_child_rss_bytes": 21315584,
+        "sha256": "1bfca098b9675d2b65b065f570ed4ed999f16272b7e17236dfafcd7630fd3116"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_recursive_seed.py",
+          "executed_sha256": "10a550057e4d924fa9b3b58b12b13e9397724574d5b1a98e1c81b6bb41e29d56",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/recursive-source-seed.md",
+          "executed_sha256": "0cfc1e8bd87161b296d6c239d8634145a128404d9672e491d826b46e9f77980c",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "restricted_auxiliary_seed_checks_passed_full_KR1_unresolved",
+        "ceiling": 12,
+        "source_round_trips": 24,
+        "target_round_trips": 24,
+        "assurance": "universal author argument and finite checks; separate review outstanding",
+        "novelty": "unverified",
+        "terminal_case": {
+          "weight": 12,
+          "actual_P3": 6,
+          "actual_P2": 8,
+          "restricted_images": 6
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/recursive-seed-verify30-result.json",
+      "result_sha256": "c2eb9e00c700c9187a3c4265687fa3c9ec7213805b02018ba642d033f12cd0b2",
+      "execution": {
+        "label": "recursive-seed-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_seed_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/recursive-seed-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T12:02:32.410835+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.11032958299620077,
+        "peak_child_rss_bytes": 22478848,
+        "sha256": "aa6831882274b3b332d32778ea50a4251cee34bd6a84cd480a2b729d6cd35d64"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_recursive_seed.py",
+          "executed_sha256": "10a550057e4d924fa9b3b58b12b13e9397724574d5b1a98e1c81b6bb41e29d56",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/recursive-source-seed.md",
+          "executed_sha256": "0cfc1e8bd87161b296d6c239d8634145a128404d9672e491d826b46e9f77980c",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "restricted_auxiliary_seed_checks_passed_full_KR1_unresolved",
+        "ceiling": 30,
+        "source_round_trips": 405,
+        "target_round_trips": 405,
+        "assurance": "universal author argument and finite checks; separate review outstanding",
+        "novelty": "unverified",
+        "terminal_case": {
+          "weight": 30,
+          "actual_P3": 77,
+          "actual_P2": 111,
+          "restricted_images": 56
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/revision-pilot12-result.json",
+      "result_sha256": "099aef13e69e8f78c3e64695b32c1c392bfe1a3de75bca2381c14d3071fdce8d",
+      "execution": {
+        "label": "revision-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_a2_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/revision-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T10:36:02.049709+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.06601633298851084,
+        "peak_child_rss_bytes": 22888448,
+        "sha256": "16743d071da345d40589d4d08ddab112eac1fe1365fc5f8f4666b57ef6bfaf79"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_columns.py",
+          "executed_sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_revision.py",
+          "executed_sha256": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_a2.py",
+          "executed_sha256": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-revision.md",
+          "executed_sha256": "0310ac52fe59173994a185af514e01c665de6ddf1871c2681e366a06b3d63b34",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-freeze.json",
+          "executed_sha256": "0bce7b2b5addcea2cf0188f300f40a836dbf9b00b9ad650b009d3836871c094a",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_a2_verify.py",
+          "executed_sha256": "b7cf523108757f270b320d284258ebd6a1ca34c84844a5435f521688b2ee416b",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-revision-freeze.json",
+          "executed_sha256": "4dfc32db38f520c67f313793b7194647ef45f70c5a72835f526842736e65c0b2",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "round-two final author revision",
+        "ceiling": 12,
+        "status": "restricted_finite_checks_passed_full_bijection_unresolved",
+        "assurance": "finite implementation checks; author-only written argument, no separate review of this extension",
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "totals": {
+          "cluster_round_trips": 52,
+          "column_round_trips": 52,
+          "unit_operations": 46,
+          "nu_operations": 15,
+          "common_operations": 25,
+          "direct_structured_samples": 13
+        },
+        "first_uncovered_U": {
+          "weight": 9,
+          "columns": [
+            6,
+            3
+          ]
+        },
+        "first_unsupported_C": {
+          "weight": 9,
+          "cluster": {
+            "a": 3,
+            "b": 0,
+            "mu": [
+              0,
+              0,
+              0
+            ],
+            "nu": []
+          }
+        },
+        "direct_structured_samples_not_enumeration_sweep": [
+          {
+            "cluster": {
+              "a": 2,
+              "b": 1,
+              "mu": [
+                4,
+                6
+              ],
+              "nu": [
+                3
+              ]
+            },
+            "weight": 32,
+            "columns": [
+              9,
+              6,
+              3,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 2,
+              "mu": [
+                4,
+                6
+              ],
+              "nu": [
+                0,
+                1
+              ]
+            },
+            "weight": 41,
+            "columns": [
+              17,
+              9,
+              6,
+              3,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 3,
+              "mu": [
+                4,
+                6
+              ],
+              "nu": [
+                0,
+                1,
+                2
+              ]
+            },
+            "weight": 68,
+            "columns": [
+              17,
+              9,
+              9,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 1,
+              "mu": [
+                5,
+                7
+              ],
+              "nu": [
+                3
+              ]
+            },
+            "weight": 34,
+            "columns": [
+              10,
+              6,
+              6,
+              6,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 2,
+              "mu": [
+                5,
+                7
+              ],
+              "nu": [
+                0,
+                1
+              ]
+            },
+            "weight": 43,
+            "columns": [
+              19,
+              12,
+              6,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 3,
+              "mu": [
+                5,
+                7
+              ],
+              "nu": [
+                0,
+                1,
+                2
+              ]
+            },
+            "weight": 70,
+            "columns": [
+              19,
+              12,
+              9,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 4,
+              "mu": [
+                5,
+                7
+              ],
+              "nu": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            "weight": 106,
+            "columns": [
+              19,
+              12,
+              12,
+              9,
+              9,
+              9,
+              6,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 1,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                3
+              ]
+            },
+            "weight": 42,
+            "columns": [
+              10,
+              10,
+              6,
+              6,
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 2,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1
+              ]
+            },
+            "weight": 51,
+            "columns": [
+              17,
+              17,
+              9,
+              3,
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 3,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1,
+                2
+              ]
+            },
+            "weight": 78,
+            "columns": [
+              26,
+              18,
+              10,
+              6,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 4,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            "weight": 114,
+            "columns": [
+              26,
+              26,
+              18,
+              10,
+              9,
+              6,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 5,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            "weight": 159,
+            "columns": [
+              26,
+              26,
+              26,
+              18,
+              12,
+              10,
+              9,
+              6,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 6,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "weight": 213,
+            "columns": [
+              26,
+              18,
+              18,
+              15,
+              15,
+              15,
+              12,
+              12,
+              12,
+              12,
+              9,
+              9,
+              9,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "elapsed_seconds": 0.00863704200310167,
+        "finished_utc": "2026-10-24T10:36:02.113268+00:00",
+        "terminal_case": {
+          "weight": 12,
+          "actual_U": 13,
+          "restricted_C": 10,
+          "uncovered_U": 3
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/revision-verify30-result.json",
+      "result_sha256": "12c64b1b4b6313fb1b59c12b817fca7797d661d6d98737577b3c6b33b81cb2eb",
+      "execution": {
+        "label": "revision-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_a2_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/revision-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T10:36:08.483517+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.16600687499158084,
+        "peak_child_rss_bytes": 23248896,
+        "sha256": "f3f4a8855b6746d8af9bf8ddec4e429670a475a71146add4413cde8966ff200b"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_columns.py",
+          "executed_sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_revision.py",
+          "executed_sha256": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_a2.py",
+          "executed_sha256": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-revision.md",
+          "executed_sha256": "0310ac52fe59173994a185af514e01c665de6ddf1871c2681e366a06b3d63b34",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-freeze.json",
+          "executed_sha256": "0bce7b2b5addcea2cf0188f300f40a836dbf9b00b9ad650b009d3836871c094a",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_a2_verify.py",
+          "executed_sha256": "b7cf523108757f270b320d284258ebd6a1ca34c84844a5435f521688b2ee416b",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-revision-freeze.json",
+          "executed_sha256": "4dfc32db38f520c67f313793b7194647ef45f70c5a72835f526842736e65c0b2",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "round-two final author revision",
+        "ceiling": 30,
+        "status": "restricted_finite_checks_passed_full_bijection_unresolved",
+        "assurance": "finite implementation checks; author-only written argument, no separate review of this extension",
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "totals": {
+          "cluster_round_trips": 643,
+          "column_round_trips": 643,
+          "unit_operations": 614,
+          "nu_operations": 479,
+          "common_operations": 437,
+          "direct_structured_samples": 13
+        },
+        "first_uncovered_U": {
+          "weight": 9,
+          "columns": [
+            6,
+            3
+          ]
+        },
+        "first_unsupported_C": {
+          "weight": 9,
+          "cluster": {
+            "a": 3,
+            "b": 0,
+            "mu": [
+              0,
+              0,
+              0
+            ],
+            "nu": []
+          }
+        },
+        "direct_structured_samples_not_enumeration_sweep": [
+          {
+            "cluster": {
+              "a": 2,
+              "b": 1,
+              "mu": [
+                4,
+                6
+              ],
+              "nu": [
+                3
+              ]
+            },
+            "weight": 32,
+            "columns": [
+              9,
+              6,
+              3,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 2,
+              "mu": [
+                4,
+                6
+              ],
+              "nu": [
+                0,
+                1
+              ]
+            },
+            "weight": 41,
+            "columns": [
+              17,
+              9,
+              6,
+              3,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 3,
+              "mu": [
+                4,
+                6
+              ],
+              "nu": [
+                0,
+                1,
+                2
+              ]
+            },
+            "weight": 68,
+            "columns": [
+              17,
+              9,
+              9,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 1,
+              "mu": [
+                5,
+                7
+              ],
+              "nu": [
+                3
+              ]
+            },
+            "weight": 34,
+            "columns": [
+              10,
+              6,
+              6,
+              6,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 2,
+              "mu": [
+                5,
+                7
+              ],
+              "nu": [
+                0,
+                1
+              ]
+            },
+            "weight": 43,
+            "columns": [
+              19,
+              12,
+              6,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 3,
+              "mu": [
+                5,
+                7
+              ],
+              "nu": [
+                0,
+                1,
+                2
+              ]
+            },
+            "weight": 70,
+            "columns": [
+              19,
+              12,
+              9,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 4,
+              "mu": [
+                5,
+                7
+              ],
+              "nu": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            "weight": 106,
+            "columns": [
+              19,
+              12,
+              12,
+              9,
+              9,
+              9,
+              6,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 1,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                3
+              ]
+            },
+            "weight": 42,
+            "columns": [
+              10,
+              10,
+              6,
+              6,
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 2,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1
+              ]
+            },
+            "weight": 51,
+            "columns": [
+              17,
+              17,
+              9,
+              3,
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 3,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1,
+                2
+              ]
+            },
+            "weight": 78,
+            "columns": [
+              26,
+              18,
+              10,
+              6,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 4,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            "weight": 114,
+            "columns": [
+              26,
+              26,
+              18,
+              10,
+              9,
+              6,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 5,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            "weight": 159,
+            "columns": [
+              26,
+              26,
+              26,
+              18,
+              12,
+              10,
+              9,
+              6,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cluster": {
+              "a": 2,
+              "b": 6,
+              "mu": [
+                9,
+                11
+              ],
+              "nu": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "weight": 213,
+            "columns": [
+              26,
+              18,
+              18,
+              15,
+              15,
+              15,
+              12,
+              12,
+              12,
+              12,
+              9,
+              9,
+              9,
+              6,
+              6,
+              6,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "elapsed_seconds": 0.11921416599943768,
+        "finished_utc": "2026-10-24T10:36:08.646159+00:00",
+        "terminal_case": {
+          "weight": 30,
+          "actual_U": 195,
+          "restricted_C": 70,
+          "uncovered_U": 125
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/round1-pilot12-result.json",
+      "result_sha256": "5b84cc95babf22ac741401f95766cc486c10df434c860aeee948b1afc03f2b59",
+      "execution": {
+        "label": "round1-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/round1-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T10:11:16.371270+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.1407772910024505,
+        "peak_child_rss_bytes": 22773760,
+        "sha256": "3d5f76506197eabe1c7bc6801b2252c66b2907fced6278de9e3901a9b81d322c"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_verify.py",
+          "executed_sha256": "8e7bd1c1d444dadc1f6a4352b4bb1c32c3ff367563d931754899e70723fd0188",
+          "current_matches": false
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_columns.py",
+          "executed_sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-1-proposal.md",
+          "executed_sha256": "2f8992e6375517905cc82506cb1f165f2442bfd36c1bcd7fd9531aeba0450623",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-1-freeze.json",
+          "executed_sha256": "ec4d33e7e386d8b510355e162a191577e7411104352b5e84e28e1e3e4be4e3a8",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "round": 1,
+        "ceiling": 12,
+        "claim_status": "empirical finite verification; written theorem separate",
+        "full_bijection": "unresolved",
+        "started_utc": "2026-10-24T10:11:16.485758+00:00",
+        "status": "restricted_finite_checks_passed_full_bridge_unresolved",
+        "totals": {
+          "cluster_round_trips": 43,
+          "column_round_trips": 43,
+          "unit_operation_checks": 37,
+          "nu_operation_checks": 15,
+          "merge_operation_checks": 9
+        },
+        "first_uncovered_U": {
+          "weight": 8,
+          "columns": [
+            8
+          ]
+        },
+        "first_unsupported_C": {
+          "weight": 8,
+          "cluster": {
+            "a": 2,
+            "b": 0,
+            "mu": [
+              2,
+              2
+            ],
+            "nu": []
+          }
+        },
+        "elapsed_seconds": 0.01202883300720714,
+        "terminal_case": {
+          "weight": 12,
+          "actual_U": 13,
+          "supported_C": 7,
+          "recognized_U": 7,
+          "uncovered_U": 6
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/round1-verify30-result.json",
+      "result_sha256": "1c17ed3accc6bc1d4e859efcd8fe6ede55f1b1a3d775702f85b3a3c5caec3636",
+      "execution": {
+        "label": "round1-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/round1-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T10:11:39.108541+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.19586725000408478,
+        "peak_child_rss_bytes": 23478272,
+        "sha256": "e0dd381b18f35fe1a21b89ed814787077cd55f8da0aeea6dd0bb479699d9b42d"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_verify.py",
+          "executed_sha256": "8e7bd1c1d444dadc1f6a4352b4bb1c32c3ff367563d931754899e70723fd0188",
+          "current_matches": false
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_columns.py",
+          "executed_sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-1-proposal.md",
+          "executed_sha256": "2f8992e6375517905cc82506cb1f165f2442bfd36c1bcd7fd9531aeba0450623",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-1-freeze.json",
+          "executed_sha256": "ec4d33e7e386d8b510355e162a191577e7411104352b5e84e28e1e3e4be4e3a8",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "round": 1,
+        "ceiling": 30,
+        "claim_status": "empirical finite verification; written theorem separate",
+        "full_bijection": "unresolved",
+        "started_utc": "2026-10-24T10:11:39.164301+00:00",
+        "status": "restricted_finite_checks_passed_full_bridge_unresolved",
+        "totals": {
+          "cluster_round_trips": 376,
+          "column_round_trips": 376,
+          "unit_operation_checks": 347,
+          "nu_operation_checks": 356,
+          "merge_operation_checks": 93
+        },
+        "first_uncovered_U": {
+          "weight": 8,
+          "columns": [
+            8
+          ]
+        },
+        "first_unsupported_C": {
+          "weight": 8,
+          "cluster": {
+            "a": 2,
+            "b": 0,
+            "mu": [
+              2,
+              2
+            ],
+            "nu": []
+          }
+        },
+        "elapsed_seconds": 0.13212737499270588,
+        "terminal_case": {
+          "weight": 30,
+          "actual_U": 195,
+          "supported_C": 37,
+          "recognized_U": 37,
+          "uncovered_U": 158
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/round2-pilot12-result.json",
+      "result_sha256": "6a71cf438f4fa9eae211e5720c8d9f565e15f5874680b095b6b428950f7a6352",
+      "execution": {
+        "label": "round2-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_round2_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/round2-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T10:27:02.023544+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.0627921669947682,
+        "peak_child_rss_bytes": 23429120,
+        "sha256": "362dc0ce28e0dffbfff23d47eae1f1964ff136954651213cf68257ec17aaf810"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_columns.py",
+          "executed_sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_revision.py",
+          "executed_sha256": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_recursive.py",
+          "executed_sha256": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-1-proposal.md",
+          "executed_sha256": "2f8992e6375517905cc82506cb1f165f2442bfd36c1bcd7fd9531aeba0450623",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-1-freeze.json",
+          "executed_sha256": "ec4d33e7e386d8b510355e162a191577e7411104352b5e84e28e1e3e4be4e3a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-proposal.md",
+          "executed_sha256": "3a00ac1627b50fd9a3ad93b2440fcc3da1c69553c257d5d2e6a0fd2f0b37c3f8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/recursive-discovery.md",
+          "executed_sha256": "6ed8be0345c15981d145f595c968bbc3879e3e3980c6027815dbc619a1314f34",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/sources.md",
+          "executed_sha256": "d73210bb1b0b6984ef5fa4bf6d12dd98af04b78ef279882145a2a995019f8e6c",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_round2_verify.py",
+          "executed_sha256": "128bcba5ee3ccd75e30749aab9c70dc5bb21a76e9cd4692773a726e1057136d5",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-freeze.json",
+          "executed_sha256": "0bce7b2b5addcea2cf0188f300f40a836dbf9b00b9ad650b009d3836871c094a",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "round": 2,
+        "ceiling": 12,
+        "started_claim": "frozen before verification",
+        "status": "restricted_finite_checks_passed_full_bijection_unresolved",
+        "assurance": "finite empirical implementation check; written proofs and separate review required",
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "totals": {
+          "cluster_round_trips": 52,
+          "column_round_trips": 52,
+          "gap_grammar_round_trips": 59,
+          "residue_grammar_round_trips": 59,
+          "glaisher_source_round_trips": 10,
+          "glaisher_target_round_trips": 10,
+          "unit_operations": 46,
+          "nu_operations": 15,
+          "zero_pair_common_operations": 25,
+          "literal_link_checks": 49
+        },
+        "first_uncovered_U": {
+          "weight": 9,
+          "columns": [
+            6,
+            3
+          ]
+        },
+        "first_unsupported_C": {
+          "weight": 9,
+          "cluster": {
+            "a": 3,
+            "b": 0,
+            "mu": [
+              0,
+              0,
+              0
+            ],
+            "nu": []
+          }
+        },
+        "direct_refutation_not_enumeration_sweep": {
+          "weight": 43,
+          "cores": [
+            [
+              3,
+              3,
+              6,
+              9,
+              9,
+              12
+            ],
+            [
+              3,
+              3,
+              6,
+              6,
+              12,
+              12
+            ]
+          ],
+          "residue_inputs": [
+            [
+              1,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              6,
+              12
+            ],
+            [
+              1,
+              3,
+              3,
+              6,
+              6,
+              12,
+              12
+            ]
+          ],
+          "outcomes_and_traces": [
+            [
+              [
+                3,
+                6,
+                9,
+                9,
+                16
+              ],
+              [
+                [
+                  "double",
+                  [
+                    0,
+                    [
+                      [
+                        1,
+                        2
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    2,
+                    [
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "single",
+                  [
+                    2,
+                    [
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    3,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "single",
+                  [
+                    3,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    4,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        1
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "single",
+                  [
+                    4,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        1
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    5,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            [
+              [
+                3,
+                6,
+                9,
+                9,
+                16
+              ],
+              [
+                [
+                  "double",
+                  [
+                    0,
+                    [
+                      [
+                        1,
+                        2
+                      ],
+                      [
+                        2,
+                        2
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ],
+                  [
+                    2,
+                    [
+                      [
+                        2,
+                        2
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "single",
+                  [
+                    2,
+                    [
+                      [
+                        2,
+                        2
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ],
+                  [
+                    3,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "double",
+                  [
+                    3,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ],
+                  [
+                    5,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        },
+        "elapsed_seconds": 0.005691459009540267,
+        "finished_utc": "2026-10-24T10:27:02.084763+00:00",
+        "terminal_case": {
+          "weight": 12,
+          "actual_U": 13,
+          "restricted_C": 10,
+          "uncovered_U": 3,
+          "gap": 13,
+          "residue": 13,
+          "glaisher_sector": 4
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/round2-verify30-result.json",
+      "result_sha256": "fa4aec3ac5f13d9154ff8982f3b73cb07956e667937ebdafd504d289febc9dad",
+      "execution": {
+        "label": "round2-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_round2_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/round2-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T10:27:10.598066+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.17799679198651575,
+        "peak_child_rss_bytes": 24379392,
+        "sha256": "bd60267b8cff1798a973ec3c2b1a05d11b0f1ab22eb6692ce171a35bc339380f"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_columns.py",
+          "executed_sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_revision.py",
+          "executed_sha256": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_recursive.py",
+          "executed_sha256": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-1-proposal.md",
+          "executed_sha256": "2f8992e6375517905cc82506cb1f165f2442bfd36c1bcd7fd9531aeba0450623",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-1-freeze.json",
+          "executed_sha256": "ec4d33e7e386d8b510355e162a191577e7411104352b5e84e28e1e3e4be4e3a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-proposal.md",
+          "executed_sha256": "3a00ac1627b50fd9a3ad93b2440fcc3da1c69553c257d5d2e6a0fd2f0b37c3f8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/recursive-discovery.md",
+          "executed_sha256": "6ed8be0345c15981d145f595c968bbc3879e3e3980c6027815dbc619a1314f34",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/sources.md",
+          "executed_sha256": "d73210bb1b0b6984ef5fa4bf6d12dd98af04b78ef279882145a2a995019f8e6c",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_round2_verify.py",
+          "executed_sha256": "128bcba5ee3ccd75e30749aab9c70dc5bb21a76e9cd4692773a726e1057136d5",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/round-2-freeze.json",
+          "executed_sha256": "0bce7b2b5addcea2cf0188f300f40a836dbf9b00b9ad650b009d3836871c094a",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "round": 2,
+        "ceiling": 30,
+        "started_claim": "frozen before verification",
+        "status": "restricted_finite_checks_passed_full_bijection_unresolved",
+        "assurance": "finite empirical implementation check; written proofs and separate review required",
+        "full_bijection": "unresolved",
+        "novelty": "unverified",
+        "totals": {
+          "cluster_round_trips": 606,
+          "column_round_trips": 606,
+          "gap_grammar_round_trips": 1393,
+          "residue_grammar_round_trips": 1393,
+          "glaisher_source_round_trips": 82,
+          "glaisher_target_round_trips": 82,
+          "unit_operations": 577,
+          "nu_operations": 442,
+          "zero_pair_common_operations": 196,
+          "mixed_common_operations": 172,
+          "unresolved_carry_rejections": 32,
+          "literal_link_checks": 49
+        },
+        "first_uncovered_U": {
+          "weight": 9,
+          "columns": [
+            6,
+            3
+          ]
+        },
+        "first_unsupported_C": {
+          "weight": 9,
+          "cluster": {
+            "a": 3,
+            "b": 0,
+            "mu": [
+              0,
+              0,
+              0
+            ],
+            "nu": []
+          }
+        },
+        "direct_refutation_not_enumeration_sweep": {
+          "weight": 43,
+          "cores": [
+            [
+              3,
+              3,
+              6,
+              9,
+              9,
+              12
+            ],
+            [
+              3,
+              3,
+              6,
+              6,
+              12,
+              12
+            ]
+          ],
+          "residue_inputs": [
+            [
+              1,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              6,
+              12
+            ],
+            [
+              1,
+              3,
+              3,
+              6,
+              6,
+              12,
+              12
+            ]
+          ],
+          "outcomes_and_traces": [
+            [
+              [
+                3,
+                6,
+                9,
+                9,
+                16
+              ],
+              [
+                [
+                  "double",
+                  [
+                    0,
+                    [
+                      [
+                        1,
+                        2
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    2,
+                    [
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "single",
+                  [
+                    2,
+                    [
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    3,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "single",
+                  [
+                    3,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    4,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        1
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "single",
+                  [
+                    4,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        1
+                      ],
+                      [
+                        4,
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    5,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            [
+              [
+                3,
+                6,
+                9,
+                9,
+                16
+              ],
+              [
+                [
+                  "double",
+                  [
+                    0,
+                    [
+                      [
+                        1,
+                        2
+                      ],
+                      [
+                        2,
+                        2
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ],
+                  [
+                    2,
+                    [
+                      [
+                        2,
+                        2
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "single",
+                  [
+                    2,
+                    [
+                      [
+                        2,
+                        2
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ],
+                  [
+                    3,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "double",
+                  [
+                    3,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        4,
+                        2
+                      ]
+                    ]
+                  ],
+                  [
+                    5,
+                    [
+                      [
+                        1,
+                        1
+                      ],
+                      [
+                        2,
+                        1
+                      ],
+                      [
+                        3,
+                        2
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        },
+        "elapsed_seconds": 0.12166537500161212,
+        "finished_utc": "2026-10-24T10:27:10.769449+00:00",
+        "terminal_case": {
+          "weight": 30,
+          "actual_U": 195,
+          "restricted_C": 63,
+          "uncovered_U": 132,
+          "gap": 195,
+          "residue": 195,
+          "glaisher_sector": 22
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/second-product-pilot12-result.json",
+      "result_sha256": "19e8ffcf523b8fa54d16d8d73b3cf09d1d0a5b332155573e605d8a12148e742a",
+      "execution": {
+        "label": "second-product-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_second_product_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/second-product-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T12:12:12.167726+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.0624133749952307,
+        "peak_child_rss_bytes": 22069248,
+        "sha256": "759d9e56775aaad8281a40992077834227a887017207d08c66d46a2bac27c836"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_second_product.py",
+          "executed_sha256": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/second-product-involution.md",
+          "executed_sha256": "a18daf33a424e56a91b87a5c311fa9203801b2f39599309150f233fb19881e14",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/product-involution.md",
+          "executed_sha256": "550e4a7bc0dacdde8c3b2cf0d501412fb5df74269918fdd9ba12951c266303a4",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_second_product_verify.py",
+          "executed_sha256": "23fb77310cbf085b20c6394f25370bee21e824963d1ba079d8383a713d8b8ec2",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "second_auxiliary_product_checks_passed_complete_KR1_unresolved",
+        "ceiling": 12,
+        "packet_round_trips": 60,
+        "P1_round_trips": 59,
+        "cut_round_trips": 1,
+        "maximum_walk_steps": 19,
+        "audited_walk_steps": 1572,
+        "assurance": "universal author finite-path argument; no separate semantic review",
+        "novelty": "unverified",
+        "full_bijection": "unresolved",
+        "complexity": "conservative exponential work bound exceeds preferred quartic; binding investigation limits unchanged",
+        "elapsed_seconds": 0.008774207992246374,
+        "terminal_case": {
+          "weight": 12,
+          "actual_packets": 13,
+          "actual_P1": 13,
+          "actual_L": 0
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/second-product-verify30-result.json",
+      "result_sha256": "f85a96eb503bd818f8931d52283012d593d5c3970e871b7e53cdfea03af3fe09",
+      "execution": {
+        "label": "second-product-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_second_product_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/second-product-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T12:12:19.991692+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.747314375010319,
+        "peak_child_rss_bytes": 25526272,
+        "sha256": "5f9a4726974572231add83a7c84b492ce913799972f7b9ad7ffc147f9454b120"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_second_product.py",
+          "executed_sha256": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/second-product-involution.md",
+          "executed_sha256": "a18daf33a424e56a91b87a5c311fa9203801b2f39599309150f233fb19881e14",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/product-involution.md",
+          "executed_sha256": "550e4a7bc0dacdde8c3b2cf0d501412fb5df74269918fdd9ba12951c266303a4",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_second_product_verify.py",
+          "executed_sha256": "23fb77310cbf085b20c6394f25370bee21e824963d1ba079d8383a713d8b8ec2",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "second_auxiliary_product_checks_passed_complete_KR1_unresolved",
+        "ceiling": 30,
+        "packet_round_trips": 1449,
+        "P1_round_trips": 1393,
+        "cut_round_trips": 56,
+        "maximum_walk_steps": 163,
+        "audited_walk_steps": 138964,
+        "assurance": "universal author finite-path argument; no separate semantic review",
+        "novelty": "unverified",
+        "full_bijection": "unresolved",
+        "complexity": "conservative exponential work bound exceeds preferred quartic; binding investigation limits unchanged",
+        "elapsed_seconds": 0.6994622079946566,
+        "terminal_case": {
+          "weight": 30,
+          "actual_packets": 202,
+          "actual_P1": 195,
+          "actual_L": 7
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/separated-charge-pilot12-result.json",
+      "result_sha256": "dccc8eaa18c460e13f7e1c50c2f8e09cd0a139f3dcfe73b2dfbae2ad89882cb7",
+      "execution": {
+        "label": "separated-charge-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_charge_extension_verify.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/separated-charge-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T11:55:37.088672+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.05520033300854266,
+        "peak_child_rss_bytes": 21921792,
+        "sha256": "b6a12c40e18d7d2f20e27a681f6522c2cf85529bafe537aaa6185ae670ab2811"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_recursive.py",
+          "executed_sha256": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_small_charge.py",
+          "executed_sha256": "c74aa6f155682b0afe92592caa8d79cf0a35e148909b95e89c05a4cebbe58d71",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_charge_extension.py",
+          "executed_sha256": "d0ef57f94b87c4f4a0e1b6e18ad957d14e5150f106f0623425ec9e39af1bbf66",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/charge-separated-core.md",
+          "executed_sha256": "f29dfe8a79ed7e960e6a51f3765c7a35211c6c598be2da411788106be3139c10",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_charge_extension_verify.py",
+          "executed_sha256": "4e6eb904178e09d3c9cdb85b5440972eaf804a298a457c60b0b82b4ca57750b2",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/charge-separated-core-freeze.json",
+          "executed_sha256": "b9d276e160650c48f08dc726a90754fcd94d88212a86091498ba2238585e587f",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "mechanism B separated-core final author extension",
+        "ceiling": 12,
+        "status": "restricted_charge_checks_passed_full_KR1_unresolved",
+        "assurance": "universal author argument and finite checks; separate semantic review outstanding",
+        "full_bijection": "unresolved",
+        "novelty": "unverified, Glaisher and cluster endpoint attributed",
+        "totals": {
+          "residue_round_trips": 34,
+          "gap_round_trips": 34
+        },
+        "first_uncovered_gap": {
+          "weight": 6,
+          "gap": [
+            2,
+            4
+          ]
+        },
+        "first_unsupported_residue": {
+          "weight": 6,
+          "residue": [
+            1,
+            1,
+            1,
+            3
+          ]
+        },
+        "direct_repaired_witness43_not_sweep": {
+          "inputs": [
+            [
+              1,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              6,
+              12
+            ],
+            [
+              1,
+              3,
+              3,
+              6,
+              6,
+              12,
+              12
+            ]
+          ],
+          "outputs": [
+            [
+              3,
+              3,
+              6,
+              9,
+              9,
+              13
+            ],
+            [
+              1,
+              2,
+              4,
+              5,
+              7,
+              12,
+              12
+            ]
+          ]
+        },
+        "elapsed_seconds": 0.0033900000125868246,
+        "finished_utc": "2026-10-24T11:55:37.149792+00:00",
+        "terminal_case": {
+          "weight": 12,
+          "actual_A": 13,
+          "actual_B": 13,
+          "restricted_images": 5
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/separated-charge-verify30-result.json",
+      "result_sha256": "60768381080dab5daf8e395fe7768e716ebc93118225703ff58d894c5c848369",
+      "execution": {
+        "label": "separated-charge-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/checks/rr003_charge_extension_verify.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/separated-charge-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T11:55:44.833022+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.10561533400323242,
+        "peak_child_rss_bytes": 21626880,
+        "sha256": "f92e784fe7fd1beb54ca479b2a8be6e6efb7d4ddec7ab562a95da101cfc41fca"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_recursive.py",
+          "executed_sha256": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_small_charge.py",
+          "executed_sha256": "c74aa6f155682b0afe92592caa8d79cf0a35e148909b95e89c05a4cebbe58d71",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_charge_extension.py",
+          "executed_sha256": "d0ef57f94b87c4f4a0e1b6e18ad957d14e5150f106f0623425ec9e39af1bbf66",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/charge-separated-core.md",
+          "executed_sha256": "f29dfe8a79ed7e960e6a51f3765c7a35211c6c598be2da411788106be3139c10",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_charge_extension_verify.py",
+          "executed_sha256": "4e6eb904178e09d3c9cdb85b5440972eaf804a298a457c60b0b82b4ca57750b2",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/charge-separated-core-freeze.json",
+          "executed_sha256": "b9d276e160650c48f08dc726a90754fcd94d88212a86091498ba2238585e587f",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "stage": "mechanism B separated-core final author extension",
+        "ceiling": 30,
+        "status": "restricted_charge_checks_passed_full_KR1_unresolved",
+        "assurance": "universal author argument and finite checks; separate semantic review outstanding",
+        "full_bijection": "unresolved",
+        "novelty": "unverified, Glaisher and cluster endpoint attributed",
+        "totals": {
+          "residue_round_trips": 324,
+          "gap_round_trips": 324
+        },
+        "first_uncovered_gap": {
+          "weight": 6,
+          "gap": [
+            2,
+            4
+          ]
+        },
+        "first_unsupported_residue": {
+          "weight": 6,
+          "residue": [
+            1,
+            1,
+            1,
+            3
+          ]
+        },
+        "direct_repaired_witness43_not_sweep": {
+          "inputs": [
+            [
+              1,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              6,
+              12
+            ],
+            [
+              1,
+              3,
+              3,
+              6,
+              6,
+              12,
+              12
+            ]
+          ],
+          "outputs": [
+            [
+              3,
+              3,
+              6,
+              9,
+              9,
+              13
+            ],
+            [
+              1,
+              2,
+              4,
+              5,
+              7,
+              12,
+              12
+            ]
+          ]
+        },
+        "elapsed_seconds": 0.06015254199155606,
+        "finished_utc": "2026-10-24T11:55:44.937570+00:00",
+        "terminal_case": {
+          "weight": 30,
+          "actual_A": 195,
+          "actual_B": 195,
+          "restricted_images": 31
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/three-sector-pilot12-result.json",
+      "result_sha256": "05776f632db1c46f35278675286949c33285755ca5d2307d009a6b18388f89cb",
+      "execution": {
+        "label": "three-sector-pilot12",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/rr003/reproduction/three_sector.py",
+          "--ceiling",
+          "12",
+          "--output",
+          ".runs/rr003/three-sector-pilot12-result.json"
+        ],
+        "started_utc": "2026-10-24T11:50:07.904866+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.05652779199590441,
+        "peak_child_rss_bytes": 21692416,
+        "sha256": "575df70f23cf4d898d88ff38ee0fcced7fc6a21621fd15d785cc418cab3da59a"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/three-divisible-foothold.md",
+          "executed_sha256": "c2fd1872c54f7d1fe572c1bd30cc5cb90e2c976b85cce9d8507e983868a59266",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/reproduction/three_sector.py",
+          "executed_sha256": "a93091aaeba391729ad7c03b9149eb70836f1c96d014a70beb8e1066c140007a",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "classical_sector_finite_checks_passed_full_bridge_unresolved",
+        "ceiling": 12,
+        "assurance": "universal classical conjugation argument and author coordinates, no separate review of this specialization",
+        "column_round_trips": 10,
+        "gap_round_trips": 10,
+        "coupled_operations": 10,
+        "direct_all_parameter_sample_not_sweep": {
+          "a": 5,
+          "b": 3,
+          "gap": [
+            3,
+            3,
+            6,
+            6,
+            9,
+            9,
+            12,
+            15,
+            18,
+            21,
+            24
+          ],
+          "columns": [
+            33,
+            27,
+            21,
+            15,
+            12,
+            9,
+            6,
+            3
+          ]
+        },
+        "terminal_case": {
+          "weight": 12,
+          "actual_U3": 4,
+          "actual_A3": 4
+        }
+      }
+    },
+    {
+      "result_file": ".runs/rr003/three-sector-verify30-result.json",
+      "result_sha256": "7e8e1fe1a6c4b104fba07e7ddde52fbe5a8fe7da01143f0aebd2c7ad8008fa8a",
+      "execution": {
+        "label": "three-sector-verify30",
+        "command": [
+          "python3",
+          "research/rogers-ramanujan/rr003/reproduction/three_sector.py",
+          "--ceiling",
+          "30",
+          "--output",
+          ".runs/rr003/three-sector-verify30-result.json"
+        ],
+        "started_utc": "2026-10-24T11:50:18.081773+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.07014441600767896,
+        "peak_child_rss_bytes": 21659648,
+        "sha256": "9d3489c25fcf78cca5513cf793ebdfcb069ca4bfe980810f1c2c8129e5f84518"
+      },
+      "executed_sources": [
+        {
+          "path": "research/rogers-ramanujan/checks/kr1.py",
+          "executed_sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+          "executed_sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/three-divisible-foothold.md",
+          "executed_sha256": "c2fd1872c54f7d1fe572c1bd30cc5cb90e2c976b85cce9d8507e983868a59266",
+          "current_matches": true
+        },
+        {
+          "path": "research/rogers-ramanujan/rr003/reproduction/three_sector.py",
+          "executed_sha256": "a93091aaeba391729ad7c03b9149eb70836f1c96d014a70beb8e1066c140007a",
+          "current_matches": true
+        }
+      ],
+      "evidence": {
+        "program": "RR003",
+        "status": "classical_sector_finite_checks_passed_full_bridge_unresolved",
+        "ceiling": 30,
+        "assurance": "universal classical conjugation argument and author coordinates, no separate review of this specialization",
+        "column_round_trips": 82,
+        "gap_round_trips": 82,
+        "coupled_operations": 82,
+        "direct_all_parameter_sample_not_sweep": {
+          "a": 5,
+          "b": 3,
+          "gap": [
+            3,
+            3,
+            6,
+            6,
+            9,
+            9,
+            12,
+            15,
+            18,
+            21,
+            24
+          ],
+          "columns": [
+            33,
+            27,
+            21,
+            15,
+            12,
+            9,
+            6,
+            3
+          ]
+        },
+        "terminal_case": {
+          "weight": 30,
+          "actual_U3": 22,
+          "actual_A3": 22
+        }
+      }
+    }
+  ],
+  "engineering": {
+    "unit_tests": {
+      "count": 90,
+      "status": "passed",
+      "execution": {
+        "label": "closing-functional-tests-final",
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "started_utc": "2026-10-24T12:41:41.669784+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 2.3369619590084767,
+        "peak_child_rss_bytes": 27262976,
+        "sha256": "fe3d94d845365e4f1bef0c465a7347f94395e07cc745fafd8721482e3d6d4043"
+      },
+      "reported_duration_seconds": 2.238,
+      "prior_pass_receipt_sha256": "cccfce9a89319c34a093630f4a036141f0167fc861b5edabbedfdcaa248f4e46"
+    },
+    "initial_closing_repository_check": {
+      "execution": {
+        "label": "closing-repository-check",
+        "command": [
+          "python3",
+          "scripts/check_repository.py"
+        ],
+        "started_utc": "2026-10-24T12:27:50.110257+00:00",
+        "exit_code": 1,
+        "elapsed_seconds": 0.07306216699362267,
+        "peak_child_rss_bytes": 16220160,
+        "sha256": "57f39a35d2b06f09837696c1f41b92789e3a696d053159a159a5ba3281cfd6a0"
+      },
+      "reason_for_failure": "Final execution.json and verification-summary.json did not yet exist; links were intentionally completed during handoff."
+    },
+    "planner": {
+      "execution": {
+        "label": "closing-pair-plan",
+        "command": [
+          "python3",
+          "-m",
+          "harness",
+          "plan",
+          "programs/rogers-ramanujan-discovery.json"
+        ],
+        "started_utc": "2026-10-24T12:27:57.356717+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.05743329199322034,
+        "peak_child_rss_bytes": 22036480,
+        "sha256": "e4bc48ab9468ff4950a5e56754bdbdc9cf029c2b0901b778ab60166dc55b1d88"
+      },
+      "profiles": [
+        "mathematician",
+        "critic"
+      ],
+      "rounds": 2,
+      "sequential_stages": 6,
+      "declared_dispatch_proxy_units": 16
+    },
+    "completed_repository_check": {
+      "execution": {
+        "label": "closing-repository-check-complete",
+        "command": [
+          "python3",
+          "scripts/check_repository.py"
+        ],
+        "started_utc": "2026-10-24T12:29:04.386839+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.07944683400273789,
+        "peak_child_rss_bytes": 16990208,
+        "sha256": "cc4924dee2c13eb3347cc029d6445c6689aeb7f09f4ee4fe76a1d92f5dcbd8da"
+      },
+      "note": "Passed after initial missing handoff files were written; a final check follows the late source-model documents."
+    },
+    "staged_content_audit": {
+      "program": "RR003",
+      "observed_utc": "2026-10-24T12:42:38.681194+00:00",
+      "staged_files": 88,
+      "staged_bytes": 517540,
+      "scope_violations": [],
+      "credential_pattern_hits": [],
+      "diff_check_exit_code": 0,
+      "ignored_bulk_verified": true,
+      "receipt_sha256": "992c665564c9558594293965320dda3291cc34047c669455ca17df87456d4052"
+    },
+    "final_repository_check": {
+      "status": "passed",
+      "execution": {
+        "label": "closing-repository-check-final",
+        "command": [
+          "python3",
+          "scripts/check_repository.py"
+        ],
+        "started_utc": "2026-10-24T12:46:38.025981+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 0.07333233299141284,
+        "peak_child_rss_bytes": 16105472,
+        "sha256": "2a05e35c4541f688819723a18af0cccfb9c0a792e5bfdb2a88bb4dcbfb62b4e5"
+      }
+    }
+  },
+  "preserved_direct_obstruction_records": [
+    "recursive-discovery.md",
+    "third-one-obstruction.md",
+    "partial-overlay-obstruction.md",
+    "recursive-seed-lift-obstruction.md",
+    "cut-branch-erratum.md",
+    "l-branch-boundary-obstruction.md",
+    "l-branch-phase-obstruction.md"
+  ],
+  "next_unresolved_lemmas": {
+    "leading_route": "One disjoint exhaustive U decomposition for arbitrary a, with intrinsic a,b and recovered ordered zero-padded increments.",
+    "recursive_alternative": "A phase-preserving cost6 L[-7] branch into the complement of the intrinsic K[-2] image, allowing count/level carries where the eight-to-seven obstruction requires them, followed by a cost3 match for the positive middle source model and compatible decreasing all-n inverse branches."
+  },
+  "workflow_hypothesis": {
+    "statement": "Intrinsic inverse statistics and explicit local cancellation may reveal which information a failed map discards.",
+    "status": "unvalidated; no broader harness comparison performed"
+  },
+  "closing_source_comparison": "closing-source-comparison.md",
+  "source_model_limit": "The two-cut enumerator checks an attributed positive source model, not validity/collision/round-trip claims for a nonexistent branch map.",
+  "final_resource_snapshot": {
+    "receipt_sha256": "26cf1bba4b1f5ac1940f36409a2864b4616be037c2ffbe75345347fa2452cee8",
+    "observed": {
+      "observed_utc": "2026-10-24T12:47:22.751789+00:00",
+      "elapsed_seconds": 9887.751789,
+      "remaining_elapsed_seconds": 912.248211,
+      "charged_computation_seconds": 21.508843002971844,
+      "peak_recorded_child_rss_bytes": 28770304,
+      "ignored_run_artifact_bytes": 694922,
+      "staged_working_file_bytes": 544604,
+      "related_python_cache_bytes": 321374,
+      "entire_existing_git_common_store_bytes": 19632125,
+      "free_disk_bytes": 29571158016,
+      "closing_reserve_bytes": 8388608,
+      "conservative_local_artifact_ceiling_bytes": 29581633,
+      "scope_note": "Conservative local artifact ceiling includes the entire existing Git common store and whole changed files, thus overcounts task increments; includes an 8MiB closing reserve. It excludes unrelated user activity and unobservable provider storage/memory."
+    },
+    "checks": {
+      "elapsed": true,
+      "computation": true,
+      "recorded_child_rss": true,
+      "conservative_local_artifacts": true,
+      "free_disk": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "program": "RR003",
+  "stage": "attributed endpoint in final author revision",
+  "frozen_utc": "2026-10-24T10:41:13.275395+00:00",
+  "discovery_exposure": "all objects through 30 already exposed; direct published worked example",
+  "separate_semantic_review": "not performed on this endpoint implementation",
+  "claim": "Established U<->residue endpoint only; full KR1 unresolved",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_stockhofe.py": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+    "research/rogers-ramanujan/rr003/endpoint-stockhofe.md": "4e79d433f1faa8cfc86bb701aa7bd7a18b89739de8336ed5895ec18e87d471be"
+  }
+}

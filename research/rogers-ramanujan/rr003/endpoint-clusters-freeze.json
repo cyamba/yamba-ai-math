@@ -1,0 +1,12 @@
+{
+  "program": "RR003",
+  "stage": "candidate attributed cluster endpoint in final author revision",
+  "frozen_utc": "2026-10-24T10:43:14.163187+00:00",
+  "claim": "Candidate executable endpoint only, universal interpreter conformance unproved",
+  "discovery_exposure": "all actual domains through 30",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_clusters.py": "de61ecfe7bb3280b8304f4954ea3f9a24460d4c975f1c869f853cef4dda0420e",
+    "research/rogers-ramanujan/rr003/endpoint-clusters.md": "2eed913ed727a1923b60e6893d40c995bbd2de315a0bef4d60510f37dcf0f7ff"
+  }
+}

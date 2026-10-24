@@ -1,0 +1,12 @@
+{
+  "program": "RR003",
+  "stage": "mechanism B final author intrinsic K branch",
+  "frozen_utc": "2026-10-24T12:14:58.717823+00:00",
+  "claim": "K normalized by minus2 <-> intrinsic subset of P3; universal author argument; full KR1 unresolved",
+  "discovery_exposure": "original and auxiliary objects through30; symbolic cut intervals; direct failed L witness48, no K branch verification yet",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/rr003_cut_branch.py": "78661c29a37e26f5ccf7ec9c2c73ebc16842ca1d6773212eb08136c95b52840f",
+    "research/rogers-ramanujan/rr003/cut-branch.md": "85019ee512e197a541de3c1ac28b79b36b2e19528bef2d66b3958166fadfefd4",
+    "research/rogers-ramanujan/checks/rr003_product_involution.py": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0"
+  }
+}
