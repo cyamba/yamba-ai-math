@@ -1,0 +1,110 @@
+{
+  "spec_version": "2026.10.24-1",
+  "anchors": [0, 25, 50, 75, 100],
+  "statuses": ["scored", "pending", "unknown", "n/a"],
+  "families": [
+    {"id": "progress", "name": "Progress", "question": "Did this version move the problem?"},
+    {"id": "rigor", "name": "Rigor", "question": "Can the movement be trusted?"},
+    {"id": "operations", "name": "Operations", "question": "What did the movement cost and how much help did it need?"}
+  ],
+  "metrics": [
+    {
+      "id": "B01", "family": "progress", "name": "Frontier depth", "mode": "K",
+      "question": "How far up the problem's preregistered milestone ladder does the output commit stand?",
+      "formula": "100 * contiguous milestones met / branch length, best of the prove and refute branches. A milestone is met only when every check passes; depth stops at the first unmet milestone.",
+      "unknown_policy": "A milestone whose checks are pending or unknown stops the depth and marks the score provisional.",
+      "gaming_risk": "Easy milestones and inherited progress. Depth is contiguous, depth_start is recorded from the framework commit, and rungs at or above a universal argument require a distinct-thread review or a judgment."
+    },
+    {
+      "id": "B02", "family": "progress", "name": "Formal assurance", "mode": "C",
+      "question": "Which maintainer-registered formal targets are machine-checked at the output commit?",
+      "formula": "100 * targets present in a passed verification record, depending only on allowed axioms, with every recorded source hash current / registered targets.",
+      "unknown_policy": "n/a when the problem registers no formal target. A judged statement-fidelity failure removes a target from the numerator.",
+      "gaming_risk": "A trivial lemma with the target's name. Targets are registered by the maintainer only and statement fidelity can be judged."
+    },
+    {
+      "id": "B03", "family": "progress", "name": "Decisive finding", "mode": "C+J",
+      "question": "What is the single most decisive finding off the ladder: counterexample, method refutation, obstruction or extended exact bound?",
+      "formula": "Judged anchor for the best sha-bound, rechecked finding. The computed inventory is evidence only; 0 is computed when the inventory is empty.",
+      "unknown_policy": "pending in snapshots unless the inventory is empty.",
+      "judged": {"type": "anchor", "rubric": "rubrics/B03.md"},
+      "gaming_risk": "Padding with many weak findings. Only the best counts; counts are not scored."
+    },
+    {
+      "id": "B04", "family": "progress", "name": "Contract fulfilment", "mode": "K/J",
+      "question": "Were the program's deliverables and success criteria met?",
+      "formula": "Completion record present: 100 * (met criteria + delivered items) / (criteria + deliverables). Otherwise the judged anchor. Capped at 50 unless the program hash is recorded in run provenance at start.",
+      "unknown_policy": "pending in snapshots without a completion record.",
+      "judged": {"type": "anchor", "rubric": "rubrics/B04.md"},
+      "gaming_risk": "The agent writes its own contract or completion record. The cap and the auditor's claim checks apply."
+    },
+    {
+      "id": "B05", "family": "rigor", "name": "Claim integrity", "mode": "C+J",
+      "question": "Are material claims labeled correctly, scoped, and supported by the cited artifacts?",
+      "formula": "Judged anchor from an audit sample with at least one claim per label used. Computed flags (label disagreement across records, unreviewed proved claims, hash mismatches, undisclosed agents) are evidence and feed gate review.",
+      "unknown_policy": "pending in snapshots.",
+      "judged": {"type": "anchor", "rubric": "rubrics/B05.md"},
+      "gaming_risk": "Hedging every claim to avoid errors. The rubric rewards precise labels, not weak ones."
+    },
+    {
+      "id": "B06", "family": "rigor", "name": "Adversarial review", "mode": "K/J",
+      "question": "Did an independent challenge test the work in every round?",
+      "formula": "100 * passed items / evaluated items over: review per round, verdict recorded, inputs sha-bound, distinct role, distinct thread, independent check run, objections resolved or preserved, reviewer did not co-author the reviewed material.",
+      "unknown_policy": "Judged items are pending in snapshots; coverage reports the evaluated share.",
+      "judged": {"type": "items", "rubric": "rubrics/B06.md", "items": ["independent_check", "objections_resolved", "no_coauthorship"]},
+      "gaming_risk": "A friendly critic. Verdicts earn nothing; survival is not rewarded."
+    },
+    {
+      "id": "B07", "family": "rigor", "name": "Reproducibility", "mode": "K",
+      "question": "Do the recorded artifacts re-verify from hashed sources?",
+      "formula": "Mean of evaluated items: recorded hashes verify, source_stable flags true, recorded checks exited 0, repository checker passes at commit, run directory complete, preregistration order, and in deep mode unit tests and declared reproduction commands.",
+      "unknown_policy": "Unevaluated items are unknown, never failures; coverage reports the evaluated share.",
+      "gaming_risk": "Recording few hashes. Coverage is shown beside the score."
+    },
+    {
+      "id": "B08", "family": "rigor", "name": "Literature grounding", "mode": "C+J",
+      "question": "Was the closest prior work inspected and is the novelty label honest?",
+      "formula": "Mean of: share of registered closest work recorded at inspection level T or higher in the reading list; share cited in the workspace; novelty label present and judged honest.",
+      "unknown_policy": "The honesty item is pending in snapshots.",
+      "judged": {"type": "items", "rubric": "rubrics/B08.md", "items": ["novelty_label_honest"]},
+      "gaming_risk": "Citing without inspecting. Only reading-list inspection levels count."
+    },
+    {
+      "id": "B09", "family": "operations", "name": "Resource efficiency", "mode": "C",
+      "question": "How much measured compute did the progress cost relative to the problem's reference budget?",
+      "formula": "100 * min(1, reference effective tokens / measured effective tokens), effective = uncached input + cache write + output over lead and child sessions. Overhead sessions are reported separately.",
+      "unknown_policy": "unknown without telemetry or a reference budget; n/a when the run made no progress (no new depth and no decisive finding).",
+      "gaming_risk": "Cheap empty runs. No progress means n/a, and quality is compared beside cost, never multiplied into it."
+    },
+    {
+      "id": "B10", "family": "operations", "name": "Context economy", "mode": "C",
+      "question": "How efficiently did the agents orient themselves and manage context?",
+      "formula": "Mean of available banded sub-scores: tool calls before the first file-modifying call, peak context fraction, compactions, redundant reads.",
+      "unknown_policy": "unknown without telemetry; redundant reads are unavailable for Codex.",
+      "bands": {
+        "orientation_tool_calls": [[5, 100], [10, 75], [20, 50], [40, 25]],
+        "peak_context_fraction": [[0.5, 100], [0.7, 75], [0.85, 50], [0.95, 25]],
+        "compactions": [[0, 100], [1, 75], [2, 50], [4, 25]],
+        "redundant_read_ratio": [[0.05, 100], [0.1, 75], [0.2, 50], [0.35, 25]]
+      },
+      "gaming_risk": "Writing a placeholder file early. Orientation is a diagnostic for the repository map, not a target."
+    },
+    {
+      "id": "B11", "family": "operations", "name": "Operational autonomy", "mode": "C",
+      "question": "How much of the planned work ran through the harness without human steering?",
+      "formula": "Weighted mean: harness-executed stage share (weight 2), agent-executed stage share (1), failure-free share (1), banded steering and correction turns (1).",
+      "unknown_policy": "Human turns are unknown without telemetry; the remaining items still score.",
+      "bands": {"steering_turns": [[0, 100], [1, 75], [2, 50], [4, 25]]},
+      "weights": {"harness_executed": 2, "agent_executed": 1, "failure_free": 1, "human_steering": 1},
+      "gaming_risk": "Hiding steering in the initial prompt. Approval and status turns are not penalized; classification is heuristic and recorded."
+    },
+    {
+      "id": "B12", "family": "operations", "name": "Continuity", "mode": "K/J",
+      "question": "Can the next session resume from what this run left behind?",
+      "formula": "100 * passed items / evaluated items over: next step stated, remaining obligations listed, no evidence deleted, status page updated, status record present, and in deep mode a judged cold-start resume test.",
+      "unknown_policy": "The cold-start item is unknown outside deep assessment.",
+      "judged": {"type": "items", "rubric": "rubrics/B12.md", "items": ["cold_start"]},
+      "gaming_risk": "Boilerplate next steps. The cold-start test checks that a fresh reader reaches the same next action."
+    }
+  ]
+}
