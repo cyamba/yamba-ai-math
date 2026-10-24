@@ -1,0 +1,29 @@
+{
+  "h": [
+    3,
+    5,
+    5,
+    7,
+    7,
+    7,
+    8,
+    8
+  ],
+  "heldout_executed": false,
+  "heldout_used_for_repair": false,
+  "input_sha256": "f0d4a08c2c026f54ab04c857a8b08576fefa45394d7092f52b3e40c0f32b456e",
+  "limits": {
+    "artifact_bytes": 262144000,
+    "candidates": 5000000,
+    "case_seconds": 120,
+    "extensions": 5000000,
+    "memory_bytes": 2147483648,
+    "round_seconds": 600
+  },
+  "mode": "direct Hall certificate verification only",
+  "primitive": "one Tom maximum-insertion digit step and epsilon toggle",
+  "reason": "Both saved negatives have zero digits and minimal marks, so repair adds no neighbor",
+  "repair": true,
+  "round": 2,
+  "selection": "first complete development Hall deficiency by n,h; saved first failed augmentation subset"
+}

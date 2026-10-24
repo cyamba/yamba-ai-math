@@ -1,0 +1,42 @@
+{
+  "id": "P015",
+  "title": "Height-three coefficient unimodality: recoverable vertex exchanges",
+  "objective": "Test composition-preserving vertex-label exchange across forest components against the retained two-to-one obstruction, and isolate the next universal cancellation obligation.",
+  "fleet": "pair",
+  "briefs": [
+    "research/partitions/height-three-forest-exchange/README.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_cost_units": 16,
+    "max_workers": 2,
+    "max_rounds": 2,
+    "timeout_seconds": 120
+  },
+  "rounds": 2,
+  "deliverables": [
+    "Explicit P014 failure entry with unchanged source-bound evidence",
+    "Written universal partial exchange inverse and adjacent-label inversion defect formula",
+    "Frozen complete signed-space development tests, at most one all-pairs repair, minimal failure certificates and untouched held-out accounting",
+    "Two separate critic reviews, resource/dispatch ledger and exact universal-proof gate"
+  ],
+  "success_criteria": [
+    "Retain every forest, ordered composition assignment, mark and epsilon before lower-half restriction; compare full coefficient with independent saved coloring-checked evidence",
+    "Transport component payloads exactly; check actual parent edges, type, sign, full degree, same-primitive inverse, selector recovery and collisions",
+    "Separate repair of the retained example, finite grammar matching and a universal covering construction",
+    "Retain isolated negatives or fully verified Hall deficiencies; no unrestricted matching as proof",
+    "No substantial Lean work without a credible universal argument and actual-coloring bridge"
+  ],
+  "stop_conditions": [
+    "Two formal proposal/review rounds, one predeclared extension from adjacent to arbitrary label pairs; no pre-contract critic dispatch or nested agents",
+    "Per round: 600 computation seconds, 5000000 enumeration extensions, 5000000 move candidate charges; per case 120 seconds",
+    "One enumeration process; sampled RSS at most 2 GiB; output-directory artifacts at most 250 MiB",
+    "Capped cases stay incomplete and are never silently replaced or rerun",
+    "Held-out cases run only after a development-perfect reciprocal selector is locked; otherwise remain untouched",
+    "No installations, new dependencies, paid compute or Lean before the universal proof gate"
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

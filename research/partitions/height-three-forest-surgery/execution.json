@@ -1,0 +1,317 @@
+{
+  "base_revision": "a0c897fb7bcb0d01a9ccff5593c0471424255b96",
+  "branch": "codex/height-three-coefficient-unimodality",
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "log": ".runs/h3-forest-surgery/unit-tests.log",
+      "sha256": "ed26696fc3c208591c4a2003696766ca8bce502126ece29db2adb2659362a460",
+      "tests": 81
+    },
+    {
+      "command": "python3 scripts/check_repository.py",
+      "exit_code": 0,
+      "log": ".runs/h3-forest-surgery/repository-check.log",
+      "sha256": "13786a2815dd072d6b5194a2cfed3b2ac205284e0eba3656b05219d952e15de1"
+    },
+    {
+      "command": "python3 -m harness validate",
+      "status": "valid"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "coverage": {
+    "empty_development": "The disjoint-clique n8 target forest space is empty and does not close earlier nonempty exceptional-sector coverage.",
+    "round_one": {
+      "complete_development": 4,
+      "heldout_tested": 0,
+      "new_coloring_comparisons": 4
+    },
+    "round_two": {
+      "capped_during_moves": 1,
+      "complete_development": 4,
+      "complete_heldout": 1,
+      "new_tableau_comparisons": 1,
+      "saved_coloring_checked_comparisons": 4,
+      "unstarted_heldout": 2
+    }
+  },
+  "current_engineering_sources_sha256": {
+    "research/partitions/checks/forest_surgery.py": "7920ad3a5725bdf01250eedf1c5d7f3606431a69fde4e6c669ed7af9af7987d3",
+    "tests/test_forest_surgery.py": "fc4400d0f46f36a8d201084c72ec2a48995cc25f7ec364f1d690bc72cacaaa83"
+  },
+  "date": "2026-10-24",
+  "evidence_sha256": "e6a2c63d33e3f49d792d3184c39f00dd2dab7548b72a9e5d06f38e7a1a8801e5",
+  "gates": {
+    "complete_signed_space": "Written inherited expansion plus exact finite enumeration and representation comparisons",
+    "conditional_inverse_relations": "Written arguments separately reviewed; not globally covering selectors",
+    "final_target_semantic_acceptance": "not met; no universal theorem",
+    "fixed_grammar": "Refuted by a written seven-vertex isolate in each round",
+    "lean_formalization": "not started",
+    "source_comparison": "Tom existing path/clique moves inspected; target novelty unverified",
+    "universal_mathematical_argument": "not met"
+  },
+  "harness": {
+    "actual_stage_artifacts": [
+      {
+        "artifacts": [
+          "research/partitions/height-three-forest-surgery/README.md",
+          "research/partitions/height-three-forest-surgery/protocol.json"
+        ],
+        "depends_on": [],
+        "role": "mathematician",
+        "saved_summary": ".runs/h3-forest-surgery/manual-results/r1--propose.json",
+        "saved_summary_sha256": "470c70dcb5b067663ec6a70617b69e09eb463cde326479f2ef4de6045708007d",
+        "stage": "r1--propose"
+      },
+      {
+        "artifacts": [
+          "research/partitions/height-three-forest-surgery/review-r1.md"
+        ],
+        "depends_on": [
+          "r1--propose"
+        ],
+        "role": "critic",
+        "saved_summary": ".runs/h3-forest-surgery/manual-results/r1--challenge.json",
+        "saved_summary_sha256": "89791da28246904346820cb106a733c62eb896e4c468257e8fc4f8bd09385b92",
+        "stage": "r1--challenge"
+      },
+      {
+        "artifacts": [
+          "research/partitions/height-three-forest-surgery/repair.md"
+        ],
+        "depends_on": [
+          "r1--challenge"
+        ],
+        "role": "mathematician",
+        "saved_summary": ".runs/h3-forest-surgery/manual-results/r1--revise.json",
+        "saved_summary_sha256": "58a79c27b953786d9ae4476309460e2026b5f3c88cdea9acffa7226b269081bc",
+        "stage": "r1--revise"
+      },
+      {
+        "artifacts": [
+          "research/partitions/height-three-forest-surgery/round-two-protocol.json",
+          "research/partitions/height-three-forest-surgery/evidence.json"
+        ],
+        "depends_on": [
+          "r1--revise"
+        ],
+        "role": "mathematician",
+        "saved_summary": ".runs/h3-forest-surgery/manual-results/r2--propose.json",
+        "saved_summary_sha256": "cb90ba69a0fb093869d7857864986df9ec59642b03c3a09bdedf36d267a78931",
+        "stage": "r2--propose"
+      },
+      {
+        "artifacts": [
+          "research/partitions/height-three-forest-surgery/review-r2.md"
+        ],
+        "depends_on": [
+          "r2--propose"
+        ],
+        "role": "critic",
+        "saved_summary": ".runs/h3-forest-surgery/manual-results/r2--challenge.json",
+        "saved_summary_sha256": "468865992b34fc84fd272fdc0364f1b2400aa6a591e4eb73206afa01d139d820",
+        "stage": "r2--challenge"
+      },
+      {
+        "artifacts": [
+          "research/partitions/height-three-forest-surgery/results.md",
+          "research/partitions/height-three-forest-surgery/evidence.json"
+        ],
+        "depends_on": [
+          "r2--challenge"
+        ],
+        "role": "mathematician",
+        "saved_summary": ".runs/h3-forest-surgery/manual-results/r2--revise.json",
+        "saved_summary_sha256": "3ea9e6bdd5e7ec392fb1ca2fb4c7776e25270b59c9076cc44c4f136c13eddee8",
+        "stage": "r2--revise"
+      }
+    ],
+    "contract": "programs/partition-h3-forest-surgery.json",
+    "fleet": "pair",
+    "manual_packet": {
+      "attempted_cost_units": 0,
+      "meaning": "Prepared instructions only; original pending receipt preserved.",
+      "receipt": ".runs/h3-forest-surgery/harness-packet/receipt.json",
+      "sha256": "6d55449e7b57650ddda2a47b1df23c86935cc49b5eb46c8ea2d6f6708592580c",
+      "status": "awaiting_execution"
+    },
+    "offline_replay": {
+      "meaning": "Saved lead-written post-hoc stage summaries accepted as response protocol. Not a fresh worker dispatch or scientific verification.",
+      "receipt": ".runs/h3-forest-surgery/harness-replay/receipt.json",
+      "reported_usage": null,
+      "research_validated": false,
+      "sha256": "2883322b0c2854fc9b1e6d3c524e2a8f1dff942b87e8c785c7fe1565130bb89c",
+      "status": "completed_execution"
+    },
+    "plan": {
+      "cost_units": 16,
+      "distinct_agents": [
+        "critic",
+        "mathematician"
+      ],
+      "fleet_id": "pair",
+      "max_workers": 2,
+      "objective": "minimum declared dispatch cost; then maximum declared preferred-tag matches; then distinct role count; then stable agent IDs",
+      "optimality_scope": "exact for this finite registry and constraints; capability tags and costs are declared proxies, not measured quality or money",
+      "program_id": "P013",
+      "protocol_version": "1",
+      "rounds": 2,
+      "steps": [
+        {
+          "agent_id": "mathematician",
+          "cost_units": 3,
+          "depends_on": [],
+          "id": "r1--propose",
+          "requires": [
+            "formalization"
+          ],
+          "round": 1,
+          "stage_id": "propose"
+        },
+        {
+          "agent_id": "critic",
+          "cost_units": 2,
+          "depends_on": [
+            "r1--propose"
+          ],
+          "id": "r1--challenge",
+          "requires": [
+            "falsification"
+          ],
+          "round": 1,
+          "stage_id": "challenge"
+        },
+        {
+          "agent_id": "mathematician",
+          "cost_units": 3,
+          "depends_on": [
+            "r1--challenge"
+          ],
+          "id": "r1--revise",
+          "requires": [
+            "formalization"
+          ],
+          "round": 1,
+          "stage_id": "revise"
+        },
+        {
+          "agent_id": "mathematician",
+          "cost_units": 3,
+          "depends_on": [
+            "r1--revise"
+          ],
+          "id": "r2--propose",
+          "requires": [
+            "formalization"
+          ],
+          "round": 2,
+          "stage_id": "propose"
+        },
+        {
+          "agent_id": "critic",
+          "cost_units": 2,
+          "depends_on": [
+            "r2--propose"
+          ],
+          "id": "r2--challenge",
+          "requires": [
+            "falsification"
+          ],
+          "round": 2,
+          "stage_id": "challenge"
+        },
+        {
+          "agent_id": "mathematician",
+          "cost_units": 3,
+          "depends_on": [
+            "r2--challenge"
+          ],
+          "id": "r2--revise",
+          "requires": [
+            "formalization"
+          ],
+          "round": 2,
+          "stage_id": "revise"
+        }
+      ]
+    }
+  },
+  "next_obligation": "A richer tree transformation handling saturated marks and missing composition-sized one-edge cuts, with exact inverse transport and universal pivot/survivor proof. No further repair executed.",
+  "novelty_status": "unverified",
+  "preservation": {
+    "commit_or_push_performed": false,
+    "existing_publication_lean_p012_files_unchanged": true,
+    "tracked_changes_outside_new_phase": [
+      "programs/README.md",
+      "research/partitions/README.md"
+    ]
+  },
+  "program": "P013",
+  "research_validated": false,
+  "resources": {
+    "additional_compute_services": false,
+    "artifact_directory_bytes_at_closure": 594405,
+    "cap": "Round-two 5000000 candidate charges exhausted during second n9 move analysis; both n10 cases immediately capped before enumeration.",
+    "caveats": [
+      "Sampled RSS, not an OS reservation.",
+      "Aggregate output-directory guard, not a global filesystem quota.",
+      "RSS per case carries the process high-water mark."
+    ],
+    "engineering_compute": "Focused tests, 81 full repository tests, checks, planner/packets/replay and source inspection, outside research enumeration counters.",
+    "enumeration_processes_concurrent_max": 1,
+    "grammar_repairs": 1,
+    "installations": false,
+    "model_tokens_and_cost": "Not independently metered; no invented counts.",
+    "new_dependencies": false,
+    "research_rounds": 2,
+    "round_one": {
+      "candidates": 102855,
+      "extensions": 449218,
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "peak_rss_bytes": 33128448,
+      "process_seconds": 5.33312,
+      "wall_seconds": 5.5278424590069335
+    },
+    "round_two": {
+      "candidates": 5000000,
+      "extensions": 292909,
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "peak_rss_bytes": 200196096,
+      "process_seconds": 13.400076,
+      "wall_seconds": 14.041129624994937
+    }
+  },
+  "review_sha256": {
+    "review-r1.md": "66885c76a8471144bacf01c52e3f85fa1d6a1fb1c683153b665d785ff2c86198",
+    "review-r2.md": "37de6622b091394f87ba4eae7d8974242b6df63cf89b4b0668e195a712128174"
+  },
+  "schema_version": 1,
+  "status": "two-round bounded phase complete; universal target not achieved",
+  "target_status": "conjecture",
+  "team": {
+    "critic": "frontier_critic, separate critic profile",
+    "independence": "Distinct roles, not independent models or errors.",
+    "lead": "root, manual work under mathematician profile",
+    "lean_specialist_used": false,
+    "nested_agents": false
+  }
+}

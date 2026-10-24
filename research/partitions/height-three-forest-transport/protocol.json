@@ -1,0 +1,126 @@
+{
+  "coordinate_order": "ascending nonminimum vertices within components ordered by minima; then all marks",
+  "development": [
+    [
+      2,
+      4,
+      4,
+      6,
+      7,
+      7,
+      7
+    ],
+    [
+      3,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7
+    ],
+    [
+      3,
+      3,
+      4,
+      6,
+      6,
+      7,
+      8,
+      8
+    ],
+    [
+      3,
+      5,
+      5,
+      7,
+      7,
+      7,
+      8,
+      8
+    ]
+  ],
+  "heldout": [
+    [
+      3,
+      5,
+      5,
+      6,
+      6,
+      9,
+      9,
+      9,
+      9
+    ],
+    [
+      4,
+      4,
+      5,
+      7,
+      7,
+      8,
+      8,
+      10,
+      10,
+      10
+    ]
+  ],
+  "heldout_rule": "round two only, after development-only repair and selector lock",
+  "limits": {
+    "artifact_bytes": 262144000,
+    "candidates": 5000000,
+    "case_seconds": 120,
+    "extensions": 5000000,
+    "memory_bytes": 2147483648,
+    "round_seconds": 600
+  },
+  "matching": "complete grammar only, diagnostic; verify Hall witness if augmentation fails",
+  "order": "n,h,degree,(parents,compositions,marks,epsilon)",
+  "primitives": [
+    "all three preserved P013 primitives",
+    "sibling-fork split/join with exact scalar mark compensation"
+  ],
+  "program": "P014",
+  "repair": "one maximum-insertion digit step with epsilon toggle, otherwise unchanged",
+  "schema_version": 1,
+  "selectors": [
+    [
+      [
+        3,
+        2,
+        1,
+        0
+      ],
+      0
+    ],
+    [
+      [
+        3,
+        2,
+        1,
+        0
+      ],
+      -1
+    ],
+    [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      0
+    ],
+    [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      -1
+    ]
+  ],
+  "stop": "two rounds, one repair; no capped-case replacements or research reruns",
+  "target": "height=3; lambda=(n-4,3,1)"
+}

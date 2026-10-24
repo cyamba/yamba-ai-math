@@ -1,0 +1,386 @@
+{
+  "base_revision": "a0c897fb7bcb0d01a9ccff5593c0471424255b96",
+  "branch": "codex/height-three-coefficient-unimodality",
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "log": {
+        "path": ".runs/h3-forest-transport/unit-tests.log",
+        "sha256": "9d2a905d3e52b66aad03120b6bdf22f1f2bc93fa996eb90700e3ebed88a051c0"
+      },
+      "result": "OK",
+      "seconds": 2.975,
+      "tests": 90
+    },
+    {
+      "command": "python3 scripts/check_repository.py",
+      "exit_code": 0,
+      "log": {
+        "path": ".runs/h3-forest-transport/repository-check.log",
+        "sha256": "13786a2815dd072d6b5194a2cfed3b2ac205284e0eba3656b05219d952e15de1"
+      }
+    },
+    {
+      "command": "python3 -m harness validate",
+      "exit_code": 0,
+      "log": {
+        "path": ".runs/h3-forest-transport/harness-validation.log",
+        "sha256": "e0aa3d6f42890bfea73d7e0c7130119b6e1024362c208bfcaf6e277a09ed8cad"
+      },
+      "status": "valid"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "log": {
+        "path": ".runs/h3-forest-transport/diff-check.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "coverage": {
+    "heldout_executed": false,
+    "no_silent_replacements_or_research_reruns": true,
+    "round_one": {
+      "capped_cases": 0,
+      "complete_development_cases": 4,
+      "complete_grammar_inverse_checks": true,
+      "exceptional_n8_tableaux_in_new_comparison": 32,
+      "inherited_saved_coloring_checked_values": 3,
+      "new_coloring_and_complete_tableau_comparisons": 1
+    },
+    "round_two": {
+      "capped_cases": 0,
+      "certificate_negative_sources": 2,
+      "complete_neighbor_union_size": 1,
+      "full_repaired_development_enumeration": false,
+      "mode": "direct Hall certificate verification only",
+      "selector_locked": false
+    },
+    "unrun_heldout": [
+      [
+        3,
+        5,
+        5,
+        6,
+        6,
+        9,
+        9,
+        9,
+        9
+      ],
+      [
+        4,
+        4,
+        5,
+        7,
+        7,
+        8,
+        8,
+        10,
+        10,
+        10
+      ]
+    ]
+  },
+  "current_engineering_sources_sha256": {
+    "research/partitions/checks/forest_transport.py": "f2595de7e9c704ce8edeb8563ab3c4009f2b6db6d883c30b412c5c28f0f9286e",
+    "tests/test_forest_transport.py": "aec472a2d8f9877978b953e092a216a485c191ee55099373d44c173887bf25f5"
+  },
+  "date": "2026-10-24",
+  "evidence": {
+    "path": "research/partitions/height-three-forest-transport/evidence.json",
+    "sha256": "31d3e6f59b033b1e2cbbf1fc81d7c7601476164acd69357e3f3481b6608435e0"
+  },
+  "exact_target": {
+    "coefficient": "c_h(q)=[e_(n-4,3,1)] X_inc(P_h)(x;q)",
+    "posets": "Every natural unit interval poset of height exactly three on n>=7 vertices",
+    "proposed_result": "[q^d]((1-q)c_h(q))>=0 for 0<=d<=floor(|E|/2)",
+    "result": "not proved"
+  },
+  "executed_source_versions": {
+    "meaning": "Historical and final executed snapshots retained. Later verifier/CLI addition did not change frozen candidate generators.",
+    "round_one": "f866bc0074ec95219a10ba5f78ff16152e23f28e1e0f72c96928072df5ad1cf0",
+    "round_two": "f2595de7e9c704ce8edeb8563ab3c4009f2b6db6d883c30b412c5c28f0f9286e"
+  },
+  "gates": {
+    "block_deficit": "Written exact block calculation -7 at degree6, below global midpoint7; within-block cancellation cannot suffice.",
+    "complete_signed_space": "Inherited complete forest expansion plus complete finite enumeration; one fresh coloring and full tableau comparison, three saved coloring-checked values.",
+    "conditional_inverse_relations": "Written universal partial fork/digit inverse arguments, separately reviewed; not covering selectors.",
+    "final_target_semantic_acceptance": "not met; no universal unresolved theorem",
+    "frozen_direct_neighbor_grammar": "Refuted by exact two-negative/one-positive Hall deficiency; not a refutation of a future composite-move relation or coefficient unimodality.",
+    "lean_formalization": "not started",
+    "source_comparison": "Tom inspected existing results and inherited frontier audit; target novelty unverified.",
+    "universal_mathematical_argument": "not met"
+  },
+  "harness": {
+    "actual_stage_artifacts": [
+      {
+        "artifacts": [
+          {
+            "path": "research/partitions/height-three-forest-transport/README.md",
+            "sha256": "32134439f3395b7859e1edb4d94e1f3dea8ed66de4f032695a3176211533ad4e"
+          },
+          {
+            "path": "research/partitions/height-three-forest-transport/protocol.json",
+            "sha256": "4aa14240af040cc78a71067135a02df84a48a6157d4a795626c728d18dfb3a82"
+          }
+        ],
+        "depends_on": [],
+        "role": "mathematician",
+        "saved_summary": {
+          "path": ".runs/h3-forest-transport/manual-results/r1--propose.json",
+          "sha256": "19c594a5faeb64d7ffb0ff0b8988ace9c759f1013bd40254cfa679237c5da532"
+        },
+        "stage": "r1--propose"
+      },
+      {
+        "artifacts": [
+          {
+            "path": "research/partitions/height-three-forest-transport/review-r1.md",
+            "sha256": "2680a65580fed026e52be0fb4b6e838f93390a64e77ecd429d319e82cba81020"
+          }
+        ],
+        "depends_on": [
+          "r1--propose"
+        ],
+        "role": "critic",
+        "saved_summary": {
+          "path": ".runs/h3-forest-transport/manual-results/r1--challenge.json",
+          "sha256": "ecf3bbcbda21e06fe38eb59b7f903323f65c134a1a3efe0f1a329f63be7373c2"
+        },
+        "stage": "r1--challenge"
+      },
+      {
+        "artifacts": [
+          {
+            "path": "research/partitions/height-three-forest-transport/repair.md",
+            "sha256": "72eb9894fd025c8de8464484bdce025e8d67c348d13b2bab433f09c5f6c13b6f"
+          }
+        ],
+        "depends_on": [
+          "r1--challenge"
+        ],
+        "role": "mathematician",
+        "saved_summary": {
+          "path": ".runs/h3-forest-transport/manual-results/r1--revise.json",
+          "sha256": "818639c93066d6fb6d42dec30c2f6e756dca116aee97b0dbce0effc8e2d59378"
+        },
+        "stage": "r1--revise"
+      },
+      {
+        "artifacts": [
+          {
+            "path": "research/partitions/height-three-forest-transport/round-two-protocol.json",
+            "sha256": "286139e2e9c4bc5d824eca57acf69187a6a153d7c279d2d1e740ff5caea320d8"
+          },
+          {
+            "path": "research/partitions/height-three-forest-transport/evidence.json",
+            "sha256": "31d3e6f59b033b1e2cbbf1fc81d7c7601476164acd69357e3f3481b6608435e0"
+          }
+        ],
+        "depends_on": [
+          "r1--revise"
+        ],
+        "role": "mathematician",
+        "saved_summary": {
+          "path": ".runs/h3-forest-transport/manual-results/r2--propose.json",
+          "sha256": "73285bc15ad1383958f669926355e025bcebd19f6ae79d43d5527b87e62248aa"
+        },
+        "stage": "r2--propose"
+      },
+      {
+        "artifacts": [
+          {
+            "path": "research/partitions/height-three-forest-transport/review-r2.md",
+            "sha256": "38faa6d64dc65a8247df909a39b5303be808f3bc892fdcd13873682ca3a68d36"
+          }
+        ],
+        "depends_on": [
+          "r2--propose"
+        ],
+        "role": "critic",
+        "saved_summary": {
+          "path": ".runs/h3-forest-transport/manual-results/r2--challenge.json",
+          "sha256": "debaad42d22fa1840880774cd1172ac05cb059184921f874bdd9ca3d91c5ccab"
+        },
+        "stage": "r2--challenge"
+      },
+      {
+        "artifacts": [
+          {
+            "path": "research/partitions/height-three-forest-transport/results.md",
+            "sha256": "41871a506bffd7ce5fcf8d469f4d128a4f8b5a0d4b8534ba79ac902abd2c6385"
+          },
+          {
+            "path": "research/partitions/height-three-forest-transport/obstruction.md",
+            "sha256": "2d70414bf7f7cd040c4c125a2a0c423566d3e37f0b1480ccc35cf231c44a09f2"
+          }
+        ],
+        "depends_on": [
+          "r2--challenge"
+        ],
+        "role": "mathematician",
+        "saved_summary": {
+          "path": ".runs/h3-forest-transport/manual-results/r2--revise.json",
+          "sha256": "2d39d9b148d9f29fd5704d6b5aa30299424ebe72459ea9e500bfb1779bff1aa0"
+        },
+        "stage": "r2--revise"
+      }
+    ],
+    "contract": {
+      "path": "programs/partition-h3-forest-transport.json",
+      "sha256": "a7568e09cf202d16e564233a4ab9a57773183d9e173cde849bc676b382125718"
+    },
+    "fleet": "pair",
+    "formal_plan_cost_units": 16,
+    "manual_packet": {
+      "attempted_cost_units": 0,
+      "meaning": "Prepared instructions only; pending receipt preserved.",
+      "receipt": {
+        "path": ".runs/h3-forest-transport/harness-packet/receipt.json",
+        "sha256": "6d55449e7b57650ddda2a47b1df23c86935cc49b5eb46c8ea2d6f6708592580c"
+      },
+      "status": "awaiting_execution"
+    },
+    "offline_replay": {
+      "attempted_cost_units": 16,
+      "meaning": "Post-hoc lead-written summaries accepted as saved response protocol; not fresh worker dispatches or mathematical validation.",
+      "planned_cost_units": 16,
+      "receipt": {
+        "path": ".runs/h3-forest-transport/harness-replay/receipt.json",
+        "sha256": "b09c2824bb3ce0cffcc0acd44e7527b6541bc88e53356918728b01c293e8d8d5"
+      },
+      "reported_usage": null,
+      "research_validated": false,
+      "status": "completed_execution"
+    },
+    "plan": {
+      "path": ".runs/h3-forest-transport/harness-packet/plan.json",
+      "sha256": "c51289913fecdb025858f90438f3e957fef105458b6e9efbf53dac57b29f0dff"
+    },
+    "workflow_cost_deviation": {
+      "broader_manual_total_proxy_units": 18,
+      "extra_conservative_proxy_units": 2,
+      "extra_pre_contract_critic_preflight_calls": 1,
+      "formal_stage_proxy_units": 16,
+      "meaning": "Disclosed pre-contract preparation/review deviation. The six-stage replay is not complete manual dispatch accounting. This is not an additional research execution, formal construction round or repair. Proxy units are not money or measured tokens.",
+      "planned_formal_stages": 6,
+      "within_all_inclusive_16_unit_limit": false
+    }
+  },
+  "next_obligation": "Find a recoverable component-membership transport that distinguishes the two composition orders for minimal-weight path blocks; supply a universal validity, degree, inverse, collision and survivor argument. No third repair or new search performed.",
+  "novelty_status": "unverified",
+  "origin": "https://github.com/cyamba/yamba-ai-math.git",
+  "preservation": {
+    "commit_or_push_performed": false,
+    "integrity_check": {
+      "path": ".runs/h3-forest-transport/integrity-check.json",
+      "sha256": "3cb3d20d2b0aaa56236851b0e3c4e67a8845866bab8bc1a27873d0908e2d3bde"
+    },
+    "inventory": {
+      "path": "research/partitions/height-three-forest-transport/upstream.json",
+      "sha256": "c74ee044861b11fe9f8dee1b734ef0196c9bdfb3439ab65f6894483b33956c71"
+    },
+    "protected_files_verified_unchanged": 141,
+    "publication_lean_p012_and_p013_content_preserved": true,
+    "recorded_status_caveat": "upstream.json original_status was captured at freeze and includes P014 scaffolding as well as prior uncommitted P013 work. It is not a pristine before-edit status.",
+    "staged_paths": [],
+    "tracked_modified_paths": [
+      "programs/README.md",
+      "research/partitions/README.md"
+    ]
+  },
+  "program": "P014",
+  "research_receipts": [
+    {
+      "path": ".runs/h3-forest-transport/r1.json",
+      "sha256": "f0d4a08c2c026f54ab04c857a8b08576fefa45394d7092f52b3e40c0f32b456e"
+    },
+    {
+      "path": ".runs/h3-forest-transport/r2.json",
+      "sha256": "effd44d23a9494e2296cb0b9a66ad9c1565486dd70956d8ec2e4738aa65e474e"
+    }
+  ],
+  "research_validated": false,
+  "resources": {
+    "artifact_directory": ".runs/h3-forest-transport",
+    "artifact_directory_bytes_at_closure": 725235,
+    "caps_exceeded": false,
+    "caveats": [
+      "Sampled RSS, not an OS reservation.",
+      "Artifact guard covers the output directory, not a global filesystem quota.",
+      "Certificate extension charges count two source visits, not full forest enumerations.",
+      "Receipt timers exclude initial source hashing/input parsing and final source checking/output writing; they are not total session wall time."
+    ],
+    "engineering_compute": "Focused tests, 90 full repository tests, validation, planning/packets/replay and read-only source/preservation checks are separate from research counters.",
+    "enumeration_processes_concurrent_max": 1,
+    "grammar_repairs": 1,
+    "installations": false,
+    "model_tokens_and_money": "Not independently metered; no invented usage or monetary counts.",
+    "new_dependencies": false,
+    "paid_compute": false,
+    "research_rounds": 2,
+    "round_one": {
+      "candidates": 1243264,
+      "extensions": 252890,
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "peak_rss_bytes": 57098240,
+      "process_seconds": 4.8267109999999995,
+      "wall_seconds": 4.879618499981007
+    },
+    "round_two": {
+      "candidates": 228,
+      "extensions": 2,
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "peak_rss_bytes": 24297472,
+      "process_seconds": 0.43691199999999997,
+      "wall_seconds": 0.46150054200552404
+    }
+  },
+  "results": {
+    "path": "research/partitions/height-three-forest-transport/results.md",
+    "sha256": "41871a506bffd7ce5fcf8d469f4d128a4f8b5a0d4b8534ba79ac902abd2c6385"
+  },
+  "reviews": [
+    {
+      "path": "research/partitions/height-three-forest-transport/review-r1.md",
+      "sha256": "2680a65580fed026e52be0fb4b6e838f93390a64e77ecd429d319e82cba81020"
+    },
+    {
+      "path": "research/partitions/height-three-forest-transport/review-r2.md",
+      "sha256": "38faa6d64dc65a8247df909a39b5303be808f3bc892fdcd13873682ca3a68d36"
+    }
+  ],
+  "schema_version": 1,
+  "status": "two-round bounded phase complete with disclosed workflow-cost deviation; universal target not achieved",
+  "target_status": "conjecture",
+  "team": {
+    "critic": "frontier_critic, separate critic role",
+    "critic_calls_including_pre_contract_preflight": 3,
+    "formal_review_rounds": 2,
+    "independence": "Distinct role profiles; not independent models or errors.",
+    "lead": "root, manual lead work corresponding to mathematician profile",
+    "lean_specialist_used": false,
+    "nested_agents": false
+  },
+  "written_obstruction": {
+    "path": "research/partitions/height-three-forest-transport/obstruction.md",
+    "sha256": "2d70414bf7f7cd040c4c125a2a0c423566d3e37f0b1480ccc35cf231c44a09f2"
+  }
+}

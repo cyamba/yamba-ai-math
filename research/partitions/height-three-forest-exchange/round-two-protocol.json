@@ -1,0 +1,22 @@
+{
+  "diagnostic_adaptation": "declared after R1, before R2; not an originally preregistered outcome or new move",
+  "heldout_executed": false,
+  "independent_verification": "in each deficient case choose least (D,A); recompute its sector polynomial by component sets and insertion factors",
+  "input_sha256": "e2048852a9befc4f5dbac7ff34fe410ae2fe40a433ac9434995659f8bf228690",
+  "limits": {
+    "artifact_bytes": 262144000,
+    "candidates": 5000000,
+    "case_seconds": 120,
+    "extensions": 5000000,
+    "memory_bytes": 2147483648,
+    "round_seconds": 600
+  },
+  "mode": "direct all-pairs selector certificates and ordered-partword capacity census",
+  "partword_diagnostic": "complete original four development lower-half signed spaces, grouped by flattened ordered composition parts",
+  "primitive": "all label pairs; unchanged payload, validity, sign and full-degree filters",
+  "program": "P015",
+  "repair": true,
+  "round": 2,
+  "selector_certificates": "first completed development vector by n,h; first failure for each of four selectors, all degree zero",
+  "selector_locked": false
+}

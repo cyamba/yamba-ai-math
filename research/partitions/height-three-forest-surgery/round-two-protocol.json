@@ -1,0 +1,41 @@
+{
+  "heldout_used_for_repair": false,
+  "input_sha256": "d2d032da37f170a95d52ec21b59906d473beca45fd0e7e91837c52c34eb3b112",
+  "primitive": "single parent-edge cut/join; both composition concatenation orders; exact scalar mark compensation",
+  "repair": true,
+  "round": 2,
+  "selector_orders": [
+    [
+      [
+        0,
+        1,
+        2
+      ],
+      0
+    ],
+    [
+      [
+        0,
+        1,
+        2
+      ],
+      -1
+    ],
+    [
+      [
+        2,
+        1,
+        0
+      ],
+      0
+    ],
+    [
+      [
+        2,
+        1,
+        0
+      ],
+      -1
+    ]
+  ]
+}

@@ -1,0 +1,5150 @@
+{
+  "base_revision": "a0c897fb7bcb0d01a9ccff5593c0471424255b96",
+  "branch": "codex/height-three-coefficient-unimodality",
+  "bulk_reports": [
+    {
+      "path": ".runs/h3-forest-surgery/r1.json",
+      "sha256": "d2d032da37f170a95d52ec21b59906d473beca45fd0e7e91837c52c34eb3b112"
+    },
+    {
+      "path": ".runs/h3-forest-surgery/r2.json",
+      "sha256": "4b44a5c8e863a1e22dc2fbe9590b28353d8f27b791dde6a46442239b0d0ca206"
+    },
+    {
+      "path": ".runs/h3-forest-surgery/r2-selection-lock.json",
+      "sha256": "708b942ad7bc2e190d0c035d343095637964bb1fd9bf513b10f6a144c2787758"
+    }
+  ],
+  "date": "2026-10-24",
+  "frozen_protocols": [
+    {
+      "path": "research/partitions/height-three-forest-surgery/protocol.json",
+      "sha256": "538832456b04895b18a199ffa5fea9b9148137a7ce1f3ea87dcbba3c6eeea047"
+    },
+    {
+      "path": "research/partitions/height-three-forest-surgery/round-two-protocol.json",
+      "sha256": "b97fcd264c9100279e0a2d765526103d2d8d421c7e23095d00bd3f89317a3447"
+    }
+  ],
+  "novelty_status": "unverified",
+  "program": "P013",
+  "proof_assurance": {
+    "caps": "Second n9 case retains full forest census only; both n10 cases unstarted. No replacement or rerun after cap.",
+    "conditional_relations": "Written partial inverse arguments, separately reviewed; not global selectors or Lean certificates.",
+    "grammar_obstructions": "Written explicit isolated states plus complete finite neighbor enumeration; refute grammars, not unimodality.",
+    "independent_checks": "R1: four new coloring-oracle comparisons. R2: saved R1 values for development, complete tableau comparison for first n9 only.",
+    "matching": "Restricted to frozen grammar and diagnostic only. No unrestricted degreewise matching offered as proof.",
+    "novelty": "Prior audit and Tom v2 inspected; not an exhaustive new literature survey.",
+    "resources": "Sampled RSS and output-directory artifact guard, not OS memory or global filesystem quotas.",
+    "source_versions": "Historical code snapshots retained for both rounds. R2 adds the sole edge primitive plus disclosed engineering amendments."
+  },
+  "research_validated": false,
+  "round_one": {
+    "cases": [
+      {
+        "comparison": {
+          "mode": "independent coloring/subset oracle",
+          "status": "agrees"
+        },
+        "h": [
+          2,
+          4,
+          4,
+          6,
+          7,
+          7,
+          7
+        ],
+        "moves": {
+          "grammar_diagnostic": {
+            "matched": 258,
+            "scope": "finite diagnostic matching; no explanatory rule or theorem",
+            "status": "grammar saturates negatives"
+          },
+          "mark_only_isolates": 52,
+          "minimal_failure_witnesses": [
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  2
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  2,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            }
+          ],
+          "negative": 258,
+          "primitive_inverse_checked": true,
+          "selectors": [
+            {
+              "directed_collisions": 56,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 258,
+              "paired": 160,
+              "unpaired": 98
+            },
+            {
+              "directed_collisions": 40,
+              "first_collision_ref": 3,
+              "first_failure_ref": 2,
+              "id": 1,
+              "negative": 258,
+              "paired": 163,
+              "unpaired": 95
+            },
+            {
+              "directed_collisions": 43,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 2,
+              "negative": 258,
+              "paired": 177,
+              "unpaired": 81
+            },
+            {
+              "directed_collisions": 38,
+              "first_collision_ref": 4,
+              "first_failure_ref": 2,
+              "id": 3,
+              "negative": 258,
+              "paired": 176,
+              "unpaired": 82
+            }
+          ],
+          "states": 519,
+          "status": "complete"
+        },
+        "resources": {
+          "candidates": 4730,
+          "extensions": 24533,
+          "peak_rss_bytes": 24035328,
+          "process_seconds": 0.563475,
+          "wall_seconds": 0.5832842499949038
+        },
+        "signed_space": {
+          "census": [
+            {
+              "sign": 1,
+              "trees": 1,
+              "triples": 56
+            },
+            {
+              "sign": -1,
+              "trees": 2,
+              "triples": 156
+            },
+            {
+              "sign": 1,
+              "trees": 3,
+              "triples": 108
+            }
+          ],
+          "coefficient": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 72,
+          "edges": 9,
+          "first_differences": [
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "forest_triples": 320,
+          "forests_scanned": 110,
+          "nonnegative_lower_differences": true
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "comparison": {
+          "mode": "independent coloring/subset oracle",
+          "status": "agrees"
+        },
+        "h": [
+          3,
+          6,
+          6,
+          6,
+          7,
+          7,
+          7
+        ],
+        "moves": {
+          "grammar_diagnostic": {
+            "state": {
+              "compositions": [
+                [
+                  1
+                ],
+                [
+                  3,
+                  3
+                ]
+              ],
+              "degree": 2,
+              "epsilon": 0,
+              "inversion": 2,
+              "marks": [
+                1,
+                1
+              ],
+              "parents": [
+                0,
+                3,
+                5,
+                5,
+                7,
+                7,
+                0
+              ],
+              "sign": -1
+            },
+            "status": "isolated negative"
+          },
+          "mark_only_isolates": 515,
+          "minimal_failure_witnesses": [
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  2
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  2,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            }
+          ],
+          "negative": 2091,
+          "primitive_inverse_checked": true,
+          "selectors": [
+            {
+              "directed_collisions": 356,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 2091,
+              "paired": 1309,
+              "unpaired": 782
+            },
+            {
+              "directed_collisions": 318,
+              "first_collision_ref": 3,
+              "first_failure_ref": 2,
+              "id": 1,
+              "negative": 2091,
+              "paired": 1358,
+              "unpaired": 733
+            },
+            {
+              "directed_collisions": 366,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 2,
+              "negative": 2091,
+              "paired": 1313,
+              "unpaired": 778
+            },
+            {
+              "directed_collisions": 334,
+              "first_collision_ref": 4,
+              "first_failure_ref": 2,
+              "id": 3,
+              "negative": 2091,
+              "paired": 1361,
+              "unpaired": 730
+            }
+          ],
+          "states": 4182,
+          "status": "complete"
+        },
+        "resources": {
+          "candidates": 29897,
+          "extensions": 35270,
+          "peak_rss_bytes": 26738688,
+          "process_seconds": 0.395957,
+          "wall_seconds": 0.48012691701296717
+        },
+        "signed_space": {
+          "census": [
+            {
+              "sign": 1,
+              "trees": 1,
+              "triples": 672
+            },
+            {
+              "sign": -1,
+              "trees": 2,
+              "triples": 1176
+            },
+            {
+              "sign": 1,
+              "trees": 3,
+              "triples": 504
+            }
+          ],
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 624,
+          "edges": 14,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "forest_triples": 2352,
+          "forests_scanned": 756,
+          "nonnegative_lower_differences": true
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "comparison": {
+          "mode": "independent coloring/subset oracle",
+          "status": "agrees"
+        },
+        "h": [
+          3,
+          3,
+          3,
+          6,
+          6,
+          6,
+          8,
+          8
+        ],
+        "moves": {
+          "grammar_diagnostic": {
+            "matched": 0,
+            "scope": "finite diagnostic matching; no explanatory rule or theorem",
+            "status": "grammar saturates negatives"
+          },
+          "mark_only_isolates": 0,
+          "minimal_failure_witnesses": [],
+          "negative": 0,
+          "primitive_inverse_checked": true,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 0,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 1,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 2,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 3,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            }
+          ],
+          "states": 0,
+          "status": "complete"
+        },
+        "resources": {
+          "candidates": 0,
+          "extensions": 196316,
+          "peak_rss_bytes": 26738688,
+          "process_seconds": 2.727582,
+          "wall_seconds": 2.7843592500139493
+        },
+        "signed_space": {
+          "census": [],
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 0,
+          "edges": 7,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "forest_triples": 0,
+          "forests_scanned": 4,
+          "nonnegative_lower_differences": true
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "comparison": {
+          "mode": "independent coloring/subset oracle",
+          "status": "agrees"
+        },
+        "h": [
+          3,
+          5,
+          5,
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "moves": {
+          "grammar_diagnostic": {
+            "state": {
+              "compositions": [
+                [
+                  1
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "degree": 2,
+              "epsilon": 0,
+              "inversion": 2,
+              "marks": [
+                1,
+                1
+              ],
+              "parents": [
+                0,
+                3,
+                4,
+                7,
+                7,
+                7,
+                8,
+                0
+              ],
+              "sign": -1
+            },
+            "status": "isolated negative"
+          },
+          "mark_only_isolates": 862,
+          "minimal_failure_witnesses": [
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  2
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  2,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            }
+          ],
+          "negative": 4485,
+          "primitive_inverse_checked": true,
+          "selectors": [
+            {
+              "directed_collisions": 711,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 4485,
+              "paired": 2762,
+              "unpaired": 1723
+            },
+            {
+              "directed_collisions": 623,
+              "first_collision_ref": 3,
+              "first_failure_ref": 2,
+              "id": 1,
+              "negative": 4485,
+              "paired": 2855,
+              "unpaired": 1630
+            },
+            {
+              "directed_collisions": 776,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 2,
+              "negative": 4485,
+              "paired": 2971,
+              "unpaired": 1514
+            },
+            {
+              "directed_collisions": 655,
+              "first_collision_ref": 4,
+              "first_failure_ref": 2,
+              "id": 3,
+              "negative": 4485,
+              "paired": 3038,
+              "unpaired": 1447
+            }
+          ],
+          "states": 8976,
+          "status": "complete"
+        },
+        "resources": {
+          "candidates": 68228,
+          "extensions": 193099,
+          "peak_rss_bytes": 33128448,
+          "process_seconds": 1.640228000000001,
+          "wall_seconds": 1.656024207972223
+        },
+        "signed_space": {
+          "census": [
+            {
+              "sign": 1,
+              "trees": 1,
+              "triples": 1152
+            },
+            {
+              "sign": -1,
+              "trees": 2,
+              "triples": 2504
+            },
+            {
+              "sign": 1,
+              "trees": 3,
+              "triples": 1368
+            }
+          ],
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            6,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 1058,
+          "edges": 14,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+          ],
+          "forest_triples": 5024,
+          "forests_scanned": 890,
+          "nonnegative_lower_differences": true
+        },
+        "split": "development",
+        "status": "complete"
+      }
+    ],
+    "program": "P013",
+    "provenance": {
+      "base_revision": "a0c897fb7bcb0d01a9ccff5593c0471424255b96",
+      "branch": "codex/height-three-coefficient-unimodality",
+      "execution": "manual orchestration; exact local computation",
+      "python": "3.11.9 (main, Oct  1 2025, 17:17:55) [Clang 17.0.0 (clang-1700.0.13.5)]",
+      "sources": {
+        "programs/partition-h3-forest-surgery.json": "b05d492c5768d6d91276a62e5376bfd03478acf64197e1ae9476e8f75d841b64",
+        "programs/partition-h3-unimodality.json": "7bdc4a89ee1bf6fd9ee0feb1ceb66fd75c9c242f244a266de03ac6b7f298a1c3",
+        "research/partitions/checks/coloring_oracle.py": "2eeceb10d1a0e5ec786912d217cca13b6988f3b58ace811754b0d1c509e2b0ef",
+        "research/partitions/checks/forest_surgery.py": "4c351ba740544420460b6b111a3952a7cd4a8f0529e48d2c0d6ab0a6a9eb6afb",
+        "research/partitions/checks/forest_triples.py": "da0a87a2a79c0ae84f40c46d73b80b051c43d22414effb3cc01abb3ef73a1287",
+        "research/partitions/checks/height_three.py": "45ae739ed8c3ea25ee95198107d5c99ff6ed3c09d168b23bf3a45a134571dd67",
+        "research/partitions/checks/tableaux.py": "ae2e52a8c795ce5e039a72fb5c326b419a40c95e8814d7ab7ed4238f0a2f0d46",
+        "research/partitions/height-three-forest-surgery/protocol.json": "538832456b04895b18a199ffa5fea9b9148137a7ce1f3ea87dcbba3c6eeea047",
+        "research/partitions/height-three-unimodality/protocol.json": "25f438466e506afc5c5e61ae9abe5b7bb5a8b503660c261ec8a924a82470016c"
+      }
+    },
+    "repair": false,
+    "research_validated": false,
+    "resources": {
+      "candidates": 102855,
+      "extensions": 449218,
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "peak_rss_bytes": 33128448,
+      "process_seconds": 5.33312,
+      "wall_seconds": 5.5278424590069335
+    },
+    "round": 1,
+    "source_stable": true,
+    "started_utc": "2026-10-24T20:37:56.857837+00:00",
+    "status": "finite-exact-evidence"
+  },
+  "round_two": {
+    "cases": [
+      {
+        "comparison": {
+          "mode": "saved round-one coloring-checked coefficient",
+          "status": "agrees"
+        },
+        "h": [
+          2,
+          4,
+          4,
+          6,
+          7,
+          7,
+          7
+        ],
+        "moves": {
+          "grammar_diagnostic": {
+            "matched": 258,
+            "scope": "finite diagnostic matching; no explanatory rule or theorem",
+            "status": "grammar saturates negatives"
+          },
+          "mark_only_isolates": 52,
+          "minimal_failure_witnesses": [
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  2
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  2,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    3,
+                    3
+                  ],
+                  [
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  0,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3,
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3,
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            }
+          ],
+          "negative": 258,
+          "primitive_inverse_checked": true,
+          "selectors": [
+            {
+              "directed_collisions": 56,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 258,
+              "paired": 160,
+              "unpaired": 98
+            },
+            {
+              "directed_collisions": 40,
+              "first_collision_ref": 3,
+              "first_failure_ref": 2,
+              "id": 1,
+              "negative": 258,
+              "paired": 163,
+              "unpaired": 95
+            },
+            {
+              "directed_collisions": 130,
+              "first_collision_ref": 5,
+              "first_failure_ref": 4,
+              "id": 2,
+              "negative": 258,
+              "paired": 75,
+              "unpaired": 183
+            },
+            {
+              "directed_collisions": 165,
+              "first_collision_ref": 7,
+              "first_failure_ref": 6,
+              "id": 3,
+              "negative": 258,
+              "paired": 52,
+              "unpaired": 206
+            }
+          ],
+          "states": 519,
+          "status": "complete"
+        },
+        "resources": {
+          "candidates": 17606,
+          "extensions": 2669,
+          "peak_rss_bytes": 24936448,
+          "process_seconds": 0.049949999999999994,
+          "wall_seconds": 0.050150791998021305
+        },
+        "signed_space": {
+          "census": [
+            {
+              "sign": 1,
+              "trees": 1,
+              "triples": 56
+            },
+            {
+              "sign": -1,
+              "trees": 2,
+              "triples": 156
+            },
+            {
+              "sign": 1,
+              "trees": 3,
+              "triples": 108
+            }
+          ],
+          "coefficient": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 72,
+          "edges": 9,
+          "first_differences": [
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "forest_triples": 320,
+          "forests_scanned": 110,
+          "nonnegative_lower_differences": true
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "comparison": {
+          "mode": "saved round-one coloring-checked coefficient",
+          "status": "agrees"
+        },
+        "h": [
+          3,
+          6,
+          6,
+          6,
+          7,
+          7,
+          7
+        ],
+        "moves": {
+          "grammar_diagnostic": {
+            "state": {
+              "compositions": [
+                [
+                  3,
+                  1,
+                  3
+                ]
+              ],
+              "degree": 6,
+              "epsilon": 1,
+              "inversion": 3,
+              "marks": [
+                3
+              ],
+              "parents": [
+                2,
+                5,
+                5,
+                5,
+                7,
+                7,
+                0
+              ],
+              "sign": -1
+            },
+            "status": "isolated negative"
+          },
+          "mark_only_isolates": 515,
+          "minimal_failure_witnesses": [
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  2
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  2,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  0,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    3,
+                    3
+                  ],
+                  [
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  0,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3,
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3,
+                    3,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0
+                ],
+                "sign": 1
+              }
+            }
+          ],
+          "negative": 2091,
+          "primitive_inverse_checked": true,
+          "selectors": [
+            {
+              "directed_collisions": 440,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 2091,
+              "paired": 1324,
+              "unpaired": 767
+            },
+            {
+              "directed_collisions": 395,
+              "first_collision_ref": 3,
+              "first_failure_ref": 2,
+              "id": 1,
+              "negative": 2091,
+              "paired": 1358,
+              "unpaired": 733
+            },
+            {
+              "directed_collisions": 1113,
+              "first_collision_ref": 5,
+              "first_failure_ref": 4,
+              "id": 2,
+              "negative": 2091,
+              "paired": 545,
+              "unpaired": 1546
+            },
+            {
+              "directed_collisions": 1085,
+              "first_collision_ref": 7,
+              "first_failure_ref": 6,
+              "id": 3,
+              "negative": 2091,
+              "paired": 670,
+              "unpaired": 1421
+            }
+          ],
+          "states": 4182,
+          "status": "complete"
+        },
+        "resources": {
+          "candidates": 143959,
+          "extensions": 16705,
+          "peak_rss_bytes": 35094528,
+          "process_seconds": 0.3941650000000001,
+          "wall_seconds": 0.40127566701266915
+        },
+        "signed_space": {
+          "census": [
+            {
+              "sign": 1,
+              "trees": 1,
+              "triples": 672
+            },
+            {
+              "sign": -1,
+              "trees": 2,
+              "triples": 1176
+            },
+            {
+              "sign": 1,
+              "trees": 3,
+              "triples": 504
+            }
+          ],
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 624,
+          "edges": 14,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "forest_triples": 2352,
+          "forests_scanned": 756,
+          "nonnegative_lower_differences": true
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "comparison": {
+          "mode": "saved round-one coloring-checked coefficient",
+          "status": "agrees"
+        },
+        "h": [
+          3,
+          3,
+          3,
+          6,
+          6,
+          6,
+          8,
+          8
+        ],
+        "moves": {
+          "grammar_diagnostic": {
+            "matched": 0,
+            "scope": "finite diagnostic matching; no explanatory rule or theorem",
+            "status": "grammar saturates negatives"
+          },
+          "mark_only_isolates": 0,
+          "minimal_failure_witnesses": [],
+          "negative": 0,
+          "primitive_inverse_checked": true,
+          "selectors": [
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 0,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 1,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 2,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            },
+            {
+              "directed_collisions": 0,
+              "first_collision_ref": null,
+              "first_failure_ref": null,
+              "id": 3,
+              "negative": 0,
+              "paired": 0,
+              "unpaired": 0
+            }
+          ],
+          "states": 0,
+          "status": "complete"
+        },
+        "resources": {
+          "candidates": 0,
+          "extensions": 172,
+          "peak_rss_bytes": 35094528,
+          "process_seconds": 0.00021800000000005149,
+          "wall_seconds": 0.0002181250019930303
+        },
+        "signed_space": {
+          "census": [],
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 0,
+          "edges": 7,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "forest_triples": 0,
+          "forests_scanned": 4,
+          "nonnegative_lower_differences": true
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "comparison": {
+          "mode": "saved round-one coloring-checked coefficient",
+          "status": "agrees"
+        },
+        "h": [
+          3,
+          5,
+          5,
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "moves": {
+          "grammar_diagnostic": {
+            "state": {
+              "compositions": [
+                [
+                  3,
+                  1,
+                  4
+                ]
+              ],
+              "degree": 6,
+              "epsilon": 1,
+              "inversion": 3,
+              "marks": [
+                3
+              ],
+              "parents": [
+                2,
+                4,
+                5,
+                5,
+                7,
+                7,
+                8,
+                0
+              ],
+              "sign": -1
+            },
+            "status": "isolated negative"
+          },
+          "mark_only_isolates": 862,
+          "minimal_failure_witnesses": [
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  2
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  2,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    4,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  0,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3,
+                    4,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    4,
+                    1
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    4
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    4,
+                    1,
+                    3
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  0
+                ],
+                "sign": 1
+              }
+            }
+          ],
+          "negative": 4485,
+          "primitive_inverse_checked": true,
+          "selectors": [
+            {
+              "directed_collisions": 876,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 0,
+              "negative": 4485,
+              "paired": 2768,
+              "unpaired": 1717
+            },
+            {
+              "directed_collisions": 790,
+              "first_collision_ref": 3,
+              "first_failure_ref": 2,
+              "id": 1,
+              "negative": 4485,
+              "paired": 2855,
+              "unpaired": 1630
+            },
+            {
+              "directed_collisions": 2704,
+              "first_collision_ref": 5,
+              "first_failure_ref": 4,
+              "id": 2,
+              "negative": 4485,
+              "paired": 647,
+              "unpaired": 3838
+            },
+            {
+              "directed_collisions": 2472,
+              "first_collision_ref": 7,
+              "first_failure_ref": 6,
+              "id": 3,
+              "negative": 4485,
+              "paired": 1547,
+              "unpaired": 2938
+            }
+          ],
+          "states": 8976,
+          "status": "complete"
+        },
+        "resources": {
+          "candidates": 363493,
+          "extensions": 34499,
+          "peak_rss_bytes": 50692096,
+          "process_seconds": 1.000431,
+          "wall_seconds": 1.0736683340219315
+        },
+        "signed_space": {
+          "census": [
+            {
+              "sign": 1,
+              "trees": 1,
+              "triples": 1152
+            },
+            {
+              "sign": -1,
+              "trees": 2,
+              "triples": 2504
+            },
+            {
+              "sign": 1,
+              "trees": 3,
+              "triples": 1368
+            }
+          ],
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            6,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 1058,
+          "edges": 14,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+          ],
+          "forest_triples": 5024,
+          "forests_scanned": 890,
+          "nonnegative_lower_differences": true
+        },
+        "split": "development",
+        "status": "complete"
+      },
+      {
+        "comparison": {
+          "mode": "complete tableau expansion; no new coloring check",
+          "status": "agrees"
+        },
+        "h": [
+          4,
+          6,
+          6,
+          7,
+          7,
+          8,
+          8,
+          9,
+          9
+        ],
+        "moves": {
+          "grammar_diagnostic": {
+            "state": {
+              "compositions": [
+                [
+                  3,
+                  1,
+                  5
+                ]
+              ],
+              "degree": 6,
+              "epsilon": 1,
+              "inversion": 3,
+              "marks": [
+                3
+              ],
+              "parents": [
+                2,
+                3,
+                6,
+                6,
+                6,
+                8,
+                8,
+                9,
+                0
+              ],
+              "sign": -1
+            },
+            "status": "isolated negative"
+          },
+          "mark_only_isolates": 4550,
+          "minimal_failure_witnesses": [
+            {
+              "reason": "nonreciprocal selection",
+              "reverse": {
+                "compositions": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  9,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3,
+                    5
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    1
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ],
+                "degree": 0,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1,
+                  1
+                ],
+                "parents": [
+                  0,
+                  3,
+                  4,
+                  0,
+                  6,
+                  7,
+                  8,
+                  9,
+                  0
+                ],
+                "sign": 1
+              }
+            },
+            {
+              "other": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    5,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  2
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  0
+                ],
+                "sign": -1
+              },
+              "source": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    5,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 0,
+                "inversion": 0,
+                "marks": [
+                  2,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  0
+                ],
+                "sign": -1
+              },
+              "target": {
+                "compositions": [
+                  [
+                    3
+                  ],
+                  [
+                    5,
+                    1
+                  ]
+                ],
+                "degree": 1,
+                "epsilon": 1,
+                "inversion": 0,
+                "marks": [
+                  1,
+                  1
+                ],
+                "parents": [
+                  2,
+                  3,
+                  0,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  0
+                ],
+                "sign": 1
+              }
+            }
+          ],
+          "negative": 25818,
+          "primitive_inverse_checked": true,
+          "selectors": [
+            {
+              "directed_collisions": 4311,
+              "first_collision_ref": 1,
+              "first_failure_ref": 0,
+              "id": 1,
+              "negative": 25818,
+              "paired": 16428,
+              "unpaired": 9390
+            }
+          ],
+          "states": 51653,
+          "status": "complete"
+        },
+        "resources": {
+          "candidates": 2295478,
+          "extensions": 134358,
+          "peak_rss_bytes": 185925632,
+          "process_seconds": 6.006654999999999,
+          "wall_seconds": 6.342867250001291
+        },
+        "signed_space": {
+          "census": [
+            {
+              "sign": 1,
+              "trees": 1,
+              "triples": 7776
+            },
+            {
+              "sign": -1,
+              "trees": 2,
+              "triples": 16120
+            },
+            {
+              "sign": 1,
+              "trees": 3,
+              "triples": 8400
+            }
+          ],
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            9,
+            17,
+            17,
+            9,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 5952,
+          "edges": 19,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            7,
+            8
+          ],
+          "forest_triples": 32296,
+          "forests_scanned": 5544,
+          "nonnegative_lower_differences": true
+        },
+        "split": "heldout",
+        "status": "complete"
+      },
+      {
+        "cap_reason": "round candidates",
+        "h": [
+          4,
+          4,
+          4,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9
+        ],
+        "resources": {
+          "candidates": 2179464,
+          "extensions": 104506,
+          "peak_rss_bytes": 200196096,
+          "process_seconds": 5.797259,
+          "wall_seconds": 5.991857457993319
+        },
+        "signed_space": {
+          "census": [
+            {
+              "sign": 1,
+              "trees": 1,
+              "triples": 7776
+            },
+            {
+              "sign": -1,
+              "trees": 2,
+              "triples": 16704
+            },
+            {
+              "sign": 1,
+              "trees": 3,
+              "triples": 9000
+            }
+          ],
+          "coefficient": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5,
+            12,
+            18,
+            18,
+            12,
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "composition_blocks": 6000,
+          "edges": 19,
+          "first_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            7,
+            6
+          ],
+          "forest_triples": 33480,
+          "forests_scanned": 5544,
+          "nonnegative_lower_differences": true
+        },
+        "split": "heldout",
+        "status": "capped"
+      },
+      {
+        "cap_reason": "round candidates exhausted before case",
+        "h": [
+          4,
+          5,
+          6,
+          7,
+          7,
+          9,
+          10,
+          10,
+          10,
+          10
+        ],
+        "resources": {
+          "candidates": 0,
+          "extensions": 0,
+          "peak_rss_bytes": 200196096,
+          "process_seconds": 9.999999999621423e-06,
+          "wall_seconds": 1.0583025868982077e-05
+        },
+        "split": "heldout",
+        "status": "capped"
+      },
+      {
+        "cap_reason": "round candidates exhausted before case",
+        "h": [
+          2,
+          7,
+          7,
+          8,
+          9,
+          9,
+          9,
+          10,
+          10,
+          10
+        ],
+        "resources": {
+          "candidates": 0,
+          "extensions": 0,
+          "peak_rss_bytes": 200196096,
+          "process_seconds": 3.999999998782755e-06,
+          "wall_seconds": 2.9999937396496534e-06
+        },
+        "split": "heldout",
+        "status": "capped"
+      }
+    ],
+    "program": "P013",
+    "provenance": {
+      "base_revision": "a0c897fb7bcb0d01a9ccff5593c0471424255b96",
+      "branch": "codex/height-three-coefficient-unimodality",
+      "execution": "manual orchestration; exact local computation",
+      "python": "3.11.9 (main, Oct  1 2025, 17:17:55) [Clang 17.0.0 (clang-1700.0.13.5)]",
+      "sources": {
+        "programs/partition-h3-forest-surgery.json": "b05d492c5768d6d91276a62e5376bfd03478acf64197e1ae9476e8f75d841b64",
+        "programs/partition-h3-unimodality.json": "7bdc4a89ee1bf6fd9ee0feb1ceb66fd75c9c242f244a266de03ac6b7f298a1c3",
+        "research/partitions/checks/coloring_oracle.py": "2eeceb10d1a0e5ec786912d217cca13b6988f3b58ace811754b0d1c509e2b0ef",
+        "research/partitions/checks/forest_surgery.py": "7920ad3a5725bdf01250eedf1c5d7f3606431a69fde4e6c669ed7af9af7987d3",
+        "research/partitions/checks/forest_triples.py": "da0a87a2a79c0ae84f40c46d73b80b051c43d22414effb3cc01abb3ef73a1287",
+        "research/partitions/checks/height_three.py": "45ae739ed8c3ea25ee95198107d5c99ff6ed3c09d168b23bf3a45a134571dd67",
+        "research/partitions/checks/tableaux.py": "ae2e52a8c795ce5e039a72fb5c326b419a40c95e8814d7ab7ed4238f0a2f0d46",
+        "research/partitions/height-three-forest-surgery/README.md": "e34af5e3056f691bdf60394b4a8725320d32eb2cafb43f1a510b715a271b2483",
+        "research/partitions/height-three-forest-surgery/protocol.json": "538832456b04895b18a199ffa5fea9b9148137a7ce1f3ea87dcbba3c6eeea047",
+        "research/partitions/height-three-forest-surgery/repair.md": "16ed915f8ea139a17f3f3e3de58c8d1b26626ca97b0e96bba238cd97c39739cb",
+        "research/partitions/height-three-forest-surgery/round-two-protocol.json": "b97fcd264c9100279e0a2d765526103d2d8d421c7e23095d00bd3f89317a3447",
+        "research/partitions/height-three-unimodality/protocol.json": "25f438466e506afc5c5e61ae9abe5b7bb5a8b503660c261ec8a924a82470016c"
+      }
+    },
+    "repair": true,
+    "research_validated": false,
+    "resources": {
+      "candidates": 5000000,
+      "extensions": 292909,
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "peak_rss_bytes": 200196096,
+      "process_seconds": 13.400076,
+      "wall_seconds": 14.041129624994937
+    },
+    "round": 2,
+    "round_two_spec": {
+      "heldout_used_for_repair": false,
+      "input_sha256": "d2d032da37f170a95d52ec21b59906d473beca45fd0e7e91837c52c34eb3b112",
+      "primitive": "single parent-edge cut/join; both composition concatenation orders; exact scalar mark compensation",
+      "repair": true,
+      "round": 2,
+      "selector_orders": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          0
+        ],
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          -1
+        ],
+        [
+          [
+            2,
+            1,
+            0
+          ],
+          0
+        ],
+        [
+          [
+            2,
+            1,
+            0
+          ],
+          -1
+        ]
+      ]
+    },
+    "selection_lock": {
+      "development_scores": [
+        2582,
+        2458,
+        5567,
+        4565
+      ],
+      "development_sha256": "865cec4c8eb4152a778a9e2eca296a2253a0404e7827ce7168be53bc6f32f55d",
+      "eligible": false,
+      "selector": 1
+    },
+    "source_stable": true,
+    "started_utc": "2026-10-24T20:40:46.367902+00:00",
+    "status": "finite-exact-evidence"
+  },
+  "schema_version": 1,
+  "scope": "Compact source-bound extract of actual finite runs; not a universal theorem or Lean certificate.",
+  "target_status": "conjecture"
+}
