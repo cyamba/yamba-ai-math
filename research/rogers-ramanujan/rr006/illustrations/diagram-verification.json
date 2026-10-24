@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "displayed_mapped_pairs": 20,
+  "separate_unassigned_pair": {
+    "A": [
+      3,
+      5
+    ],
+    "B": [
+      8
+    ],
+    "N": 8
+  },
+  "checks": [
+    "HTML read back as literal fragment",
+    "20 displayed cases agree exactly with computed endpoint round trips",
+    "same number of unit cells on both sides of each mapped pair",
+    "all referenced element IDs present and unique",
+    "JavaScript syntax passed node --check"
+  ],
+  "source_sha256": "45b10266f3f22656485e53325255860df4f3501967a92ed1e67b9bc746b336c1",
+  "browser_preview": "Unavailable: no browser providers enabled; no screenshot inspection claimed.",
+  "research_status": "Illustration only; closed RR005 research ledger unchanged."
+}

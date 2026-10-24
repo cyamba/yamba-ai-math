@@ -1,3 +1,17 @@
+# Current discussion handoff: RR006 preparation stopped — 2026-10-24
+
+Read the [discussion handoff](rr006/SESSION_HANDOFF.md). Full KR1 remains
+unresolved. Christopher proposed a parallel family census, OEIS cross-search,
+and Ferrers/3D exploration, then explicitly stopped before execution.
+Only a fresh worktree had been created; no new agents/searches/rules ran.
+The later handoff request authorizes documentation only. Renew execution
+instructions and save a fresh contract before starting research.
+
+The handoff preserves finite RR005 coverage figures and the two sets of
+Ferrers pictures. All earlier content below remains verbatim and historical.
+
+---
+
 # Current checkpoint: RR005 closed — 2026-10-24
 
 Complete KR1 remains unresolved. Read the [RR005 result](rr005/result.md) and

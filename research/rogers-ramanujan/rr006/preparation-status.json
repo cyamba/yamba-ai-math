@@ -1,0 +1,45 @@
+{
+  "program_label": "RR006 preparation only",
+  "recorded_utc": "2026-10-24T19:36:33.643404+00:00",
+  "user_facing_date": "2026-10-24 Europe/Stockholm",
+  "base_commit": "692c65d",
+  "branch": "codex/kr1-rr006-family-search",
+  "worktree": "/private/tmp/yamba-ai-math-rr006",
+  "research_execution": "stopped_by_user_before_start",
+  "research_contract_saved": false,
+  "research_ledger_created": false,
+  "agents_spawned": 0,
+  "oeis_searches_performed": 0,
+  "new_construction_rules_tested": 0,
+  "new_3d_experiments": 0,
+  "later_authorization": "Documentation handoff only; does not revoke the research stop.",
+  "coverage_note": "Read saved RR005 data and computed displayed percentages arithmetically; no new enumeration.",
+  "copied_artifacts": {
+    "research/rogers-ramanujan/rr006/illustrations/ferrers-twenty-cases.html": {
+      "sha256": "45b10266f3f22656485e53325255860df4f3501967a92ed1e67b9bc746b336c1",
+      "copied_from": "/Users/christopheryamba/YambaCode/yamba-ai-math/.runs/kr1-ferrers-pictures/ferrers-twenty-cases.html",
+      "unchanged_copy": true
+    },
+    "research/rogers-ramanujan/rr006/illustrations/preview.html": {
+      "sha256": "745a87660f73cf41428819abc9c7b44b391a9b0e6a4ccc3cc07dbc614397b5f2",
+      "copied_from": "/Users/christopheryamba/YambaCode/yamba-ai-math/.runs/kr1-ferrers-pictures/preview.html",
+      "unchanged_copy": true
+    },
+    "research/rogers-ramanujan/rr006/illustrations/cases.json": {
+      "sha256": "e0b5434cb289ef0ce4c2e817d6e8f490443267144c22d93ef66d2bc28f0d0cae",
+      "copied_from": "/Users/christopheryamba/YambaCode/yamba-ai-math/.runs/kr1-ferrers-pictures/cases.json",
+      "unchanged_copy": true
+    },
+    "research/rogers-ramanujan/rr006/illustrations/diagram-verification.json": {
+      "sha256": "b0845f43db13f285e0d2342d29dc7a2b9926ebc964af62ec658c7c3875a8c91d",
+      "copied_from": "/Users/christopheryamba/YambaCode/yamba-ai-math/.runs/kr1-ferrers-pictures/diagram-verification.json",
+      "unchanged_copy": true
+    },
+    "research/rogers-ramanujan/rr006/illustrations/rr005-six-through30-result.json": {
+      "sha256": "1501a2254d5661bf89db5f5886875306e28acded47014555405a127b75aba7e0",
+      "copied_from": "/private/tmp/yamba-ai-math-rr005/.runs/rr005/six-through30-result.json",
+      "unchanged_copy": true
+    }
+  },
+  "publishing": "local only; no push or external delivery"
+}
