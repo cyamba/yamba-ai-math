@@ -1,24 +1,25 @@
 {
   "title": "From a 2D Corner Obstruction to 3D and d-Dimensional Ferrers Diagram Bijections: Tableau Positivity and the Kanade-Russell I_1 Identity",
-  "principal_author": "Christopher Yamba",
-  "collaborating_agent": "Antigravity (Google DeepMind)",
+  "author": "Christopher Yamba",
+  "collaborator": "Antigravity (Google DeepMind)",
   "publication_portals": [
     "https://www.christopheryamba.com",
-    "https://github.com/cyamba/yamba-ai-math/pull/13"
+    "https://github.com/cyamba/yamba-ai-math/pull/13",
+    "https://github.com/cyamba/yamba-ai-math"
   ],
-  "originating_insight_attribution": "Christopher Yamba's original geometric insight and suggestion to resolve the planar 2D corner-slide obstruction by sliding cells into a 3D Ferrers diagram where entries strictly descend along the 3rd axis, and extending the construction to d > 3 dimensions, cracked both the height-3 corner-slide collision / 6-sector Dual Jacobi-Trudi cancellation and the a >= 3 cone decomposition for the Kanade-Russell I_1 bijection.",
-  "priority_timestamp_utc": "2026-10-24T22:07:00Z",
-  "priority_timestamp_local": "2026-10-25T00:07:00+02:00",
+  "originating_insight_attribution": "Christopher Yamba's original geometric insight and suggestion to resolve the planar 2D corner-slide obstruction by sliding cells into a 3D Ferrers diagram where entries strictly descend along the 3rd axis, and extending the construction to d > 3 dimensions, cracked both the height-3 corner-slide collision / multi-sector Dual Jacobi-Trudi cancellation (n = 5, 6) and the a >= 3 cone and universal 3D octant operator decomposition for the Kanade-Russell I_1 bijection (0 <= N <= 40).",
+  "priority_timestamp_utc": "2026-10-24T22:42:00Z",
+  "priority_timestamp_local": "2026-10-25T00:42:00+02:00",
   "repository": "https://github.com/cyamba/yamba-ai-math",
-  "branch": "feat/multidimensional-ferrers-bijections",
+  "branch": "feat/phase2-uniform-d-dim-recursion",
   "sha256_attestation": {
-    "research/partitions/lean/MultidimensionalFerrers.lean": "0bd9728b9966442c8eb47d9afa87948bd3d78c6f9d22856cb92d8f1fcb07a1c4",
-    "research/partitions/lean/verification.json": "e6559fa4a627f92b58fa677fb1ef13ec2412f35856f3052ab121af72d5765e3b",
-    "research/partitions/checks/multidimensional_ferrers.py": "135949ae2d3619144d25f7c8511537aaba66d9ec4e82ec13b0e0f8de63ff9956",
-    "research/rogers-ramanujan/checks/rr004_multidim_cones.py": "e8021dec4b7a8f1f607b9db9d441afeb4a18065266cd791ec9c08ecbc8f90bb6",
-    "research/partitions/paper/multidimensional_ferrers_article.tex": "31bbc489fbfd6dbeec1e463751222388b4c91da4e1d37dba32f2c4ee0f943569",
-    "research/partitions/paper/multidimensional_ferrers_article.pdf": "c91ea76dcee4260fecdcd5272eb474a6e7980ccb4c3c0a5b05a8c5f5612385ea",
-    "research/partitions/paper/multidimensional_ferrers_article.md": "6f8db5bb0a4ab62c9ff09e15e5d7913d336fecd4525cc3332f6446ecb2707524",
+    "research/partitions/lean/MultidimensionalFerrers.lean": "5cac97afaf92c2cbaad088764101c06a77ec1e1591aebaec76f9a71f66959e66",
+    "research/partitions/lean/verification.json": "eabd669546db9c41d8899a7b98ee59deec697b3960bdba011a286a17040d8bf8",
+    "research/partitions/checks/multidimensional_ferrers.py": "c4654874def0957a8bde0bd8b316cabd618e02386c20004799cfc9ffabc57d18",
+    "research/rogers-ramanujan/checks/rr004_multidim_cones.py": "87623c89d2680fde090a88e9c214286dfcb0d90691e610e289ca5f27b8127f0d",
+    "research/partitions/paper/multidimensional_ferrers_article.tex": "686221e0fdc3dd117a517c22e9af3db667cee13f930bb17a92ce54f1e201a326",
+    "research/partitions/paper/multidimensional_ferrers_article.pdf": "f2d16e346999dd1cebafcdca942f41ae8fb3bb053adc2a656f8534ffe54a37e5",
+    "research/partitions/paper/multidimensional_ferrers_article.md": "104a0e218042be4ab91dca566426a0886edc1777046549cbf08b6408793796c9",
     "research/rogers-ramanujan/rr004/UNIFORM_D_DIM_RECURSION_PROGRAM.md": "17f39821f4acf7a686dc9ece4b49b557710d625345975240c433244dcbebd463"
   }
 }

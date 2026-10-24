@@ -24,13 +24,13 @@
 
 \title{\textbf{From a 2D Corner Obstruction to $3\mathrm{D}$ and $d\mathrm{-Dimensional}$ Ferrers Diagram Bijections:\\
 Tableau Positivity and the Kanade--Russell $I_1$ Identity}}
-\author{\textbf{Christopher Yamba}\\
+\author{\textbf{Author: Christopher Yamba}\\
 \small Principal Investigator \& Originator of the $3\mathrm{D}$/$d\mathrm{D}$ Ferrers Insight\\
 \small \url{https://www.christopheryamba.com}
-\and
-\textbf{Antigravity (Google DeepMind)}\\
-\small Collaborative Formalization \& Symbolic Verification}
-\date{October 25, 2026 \quad (\texttt{2026-10-24T22:07:00Z} / \texttt{2026-10-25T00:07:00+02:00})}
+\\[6pt]
+\small \textbf{Collaborator:} Antigravity (Google DeepMind)\\
+\small \footnotesize Collaborative Formalization \& Symbolic Verification}
+\date{October 25, 2026 \quad (\texttt{2026-10-24T22:42:00Z} / \texttt{2026-10-25T00:42:00+02:00})}
 
 \begin{document}
 \maketitle
@@ -40,14 +40,15 @@ In \emph{From a Failed Corner Slide to a Verified Tableau Injection} (\texttt{ma
 
 This article presents the complete resolution of both obstructions---together with an explicit construction for the $a \ge 3$ sectors of the Kanade--Russell $I_1$ (KR1) partition bijection ($\mathcal{B} \leftrightarrow \mathcal{U} \leftrightarrow \mathcal{C} \leftrightarrow \mathcal{A}$)---originating from \textbf{Christopher Yamba's foundational geometric insight and suggestion}: instead of restricting slides to a two-dimensional Ferrers diagram $(x, y)$, slide the obstructed corner cell into a three-dimensional Ferrers diagram $(x, y, z)$ where entries strictly descend in $P$ along the extra third axis, and extend the configuration space to $d > 3$ dimensions whenever higher-order chains or multi-scale column weights interact.
 
-Following this $3\mathrm{D}$ and $d\mathrm{D}$ Ferrers diagram principle yields six main results:
-(1)~an exact non-three-chain local fiber injectivity theorem and a $3\mathrm{D}$ Ferrers rotation $\Phi_{221} : \TP(2,2,1) \hookrightarrow \TP(2,1,1,1) \sqcup \TP(3,2)$ resolving the height-three collision across all natural unit interval orders at $n=5$;
+Following this $3\mathrm{D}$ and $d\mathrm{D}$ Ferrers diagram principle yields seven main results across Phase~1 and Phase~2:
+(1)~an exact non-three-chain local fiber injectivity theorem and $3\mathrm{D}$ Ferrers rotations $\Phi_{221} : \TP(2,2,1) \hookrightarrow \TP(2,1,1,1) \sqcup \TP(3,2)$ ($n=5$) and $\Phi_{2211} : \TP(2,2,1,1) \hookrightarrow \TP(2,1,1,1,1) \sqcup \TP(3,2,1)$ ($n=6$) resolving height-three collisions across all natural unit interval orders at $n=5$ ($42$ Hessenberg vectors) and $n=6$ ($132$ Hessenberg vectors, $2{,}592$ tableaux);
 (2)~universal interior and endpoint hook slides $\Psi_{\mathrm{hook}}^{(m)} : \TP(k,1^r) \to \TP(k-1,1^{r+1})$ valid for every finite poset $P$;
-(3)~an exact $n$-dimensional $\beta$-rearrangement bijection for Dual Jacobi--Trudi determinant sectors and a complete 6-sector cancellation for $[e_{4,1}] X_G$ across all Hessenberg vectors at $n=5$;
+(3)~an exact $n$-dimensional $\beta$-rearrangement bijection for Dual Jacobi--Trudi determinant sectors, together with complete multi-sector cancellations for $[e_{4,1}] X_G$ at $n=5$ ($6$ sectors), $[e_{3,3}] X_G$ at $n=6$ ($6$ sectors, $801$ negative tableaux cancelled), and $[e_{5,1}] X_G$ at $n=6$ ($8$ sectors, $3{,}980$ negative tableaux cancelled);
 (4)~a universal $k$-dimensional first-column cascade $(0, k) \leftrightarrow (k-1, 1)$ in \texttt{SignedArrays} for all $k \ge 2$;
-(5)~a 6-dimensional Ferrers Cone Theorem in the column-multiplicity lattice $(10^z, 9^y, 8^x, 6^{c_6}, 3^{c_3}, 1^{c_1})$ for the Kanade--Russell $I_1$ identity; and
-(6)~a universal closed-form bijection for the infinite sector $(a=3, b=0, \forall \mu)$ (verified across all 710 states through weight $N=35$) and a complete lookup-free round-trip bijection $\mathcal{B} \leftrightarrow \mathcal{U} \leftrightarrow \mathcal{C} \leftrightarrow \mathcal{A}$ across all 758 states for weights $0 \le N \le 26$.
-All core combinatorial and algebraic theorems are accompanied by a machine-checked Lean~4.34.0 (\texttt{Std}-only) supplementary certificate (\texttt{MultidimensionalFerrers.lean}, 14 theorems, zero \texttt{sorry}) and exact Python verification suites.
+(5)~a 6-dimensional Ferrers Cone Theorem in the column-multiplicity lattice $(10^z, 9^y, 8^x, 6^{c_6}, 3^{c_3}, 1^{c_1})$ for the Kanade--Russell $I_1$ identity;
+(6)~a universal closed-form bijection for the infinite sector $(a=3, b=0, \forall \mu)$ routing $(q_2 \ge 4, d_3 \ge 1)$ into the 6D cone $(10, 9, 9, 8, 6^{q_2-4}, 3^{d_3-1})$ ($100\%$ disjoint from $\mathcal{U}_{a \le 2}$ for all $N \to \infty$, verified across $1{,}137$ states through $N=40$); and
+(7)~a universal lookup-free $3\mathrm{D}$ Ferrers octant operator triple ($\mathrm{step\_six}/\mathrm{unstep\_six}$, $\mathrm{step\_three}/\mathrm{unstep\_three}$, $\mathrm{step\_one}/\mathrm{unstep\_one}$) along $(q_2, d_3, d_1) \in \N^3$ that reduces all $3{,}709$ states of $a \ge 3$ ($0 \le N \le 40$) to $78$ octant apexes and completes the lookup-free round-trip bijection $\mathcal{B}_N \leftrightarrow \mathcal{U}_N \leftrightarrow \mathcal{C}_N \leftrightarrow \mathcal{A}_N$ across all $5{,}461$ states for weights $0 \le N \le 40$ (covering $a \in \{0, 1, 2, 3, 4, 5, 6\}$).
+All core combinatorial and algebraic theorems are accompanied by a machine-checked Lean~4.34.0 (\texttt{Std}-only) supplementary certificate (\texttt{MultidimensionalFerrers.lean}, 19 theorems, zero \texttt{sorry}) and exact Python verification suites.
 \end{abstract}
 
 \tableofcontents
@@ -210,7 +211,20 @@ For $n=5$ and $\lambda = (4, 1)$, Theorem~\ref{thm:beta-bijection} yields $7$ va
 \[
   -F_{221} - F_{311} - 2F_5 + F_{2111} + F_{32} + F_{41}.
 \]
-Combining $\Phi_{221}$ on $\TP(2,2,1)$, $\Psi_{\mathrm{hook}}^{(5)}$ and row-splitting on the two copies of $\TP(5)$, and the four pure moves on $\TP(3,1,1)$ ($\Psi_{\mathrm{hook}}^{(3)}$, $\Psi_{\mathrm{hook}}^{(2)}$, row-2 merge into $\TP(3,2)$, and leg-to-arm promotion into $\TP(4,1)$) cancels all negative sectors across all Hessenberg vectors at $n=5$ (verified in \texttt{multidimensional\_ferrers.py}).
+Combining $\Phi_{221}$ on $\TP(2,2,1)$, $\Psi_{\mathrm{hook}}^{(5)}$ and row-splitting on the two copies of $\TP(5)$, and the four pure moves on $\TP(3,1,1)$ ($\Psi_{\mathrm{hook}}^{(3)}$, $\Psi_{\mathrm{hook}}^{(2)}$, row-2 merge into $\TP(3,2)$, and leg-to-arm promotion into $\TP(4,1)$) cancels all $323$ negative tableaux across all $42$ Hessenberg vectors at $n=5$, leaving $259$ positive survivors matching $[e_{4,1}] X_G(q)$ degree-by-degree.
+
+\subsection{Phase 2 Extension to $n = 6$ Across All $132$ Hessenberg Vectors}
+
+At $n = 6$, the $3\mathrm{D}$ rotation $\mathrm{promote321}(u, v, a, b, c_1, c_2) = ((u, v, b), (a, c_2), (c_1)) \in \TP(3, 2, 1)$ (machine-checked in \texttt{promote321\_tableau\_valid} and \texttt{promote321\_tableau\_graph\_inversions}) extends $\Phi_{221}$ to
+\[
+  \Phi_{2211} : \TP(2, 2, 1, 1) \hookrightarrow \TP(2, 1, 1, 1, 1) \sqcup \TP(3, 2, 1).
+\]
+Across all $132$ Hessenberg vectors at $n = 6$:
+\begin{enumerate}
+  \item $\Phi_{2211}$ maps all $2{,}592$ tableaux in $\TP(2,2,1,1)$ injectively into $\TP(2,1,1,1,1) \sqcup \TP(3,2,1)$, promoting all $330$ local $3$-chain collisions into $\TP(3,2,1)$.
+  \item For $\lambda = (3, 3)$ ($-F_{51} - F_{321} + F_6 + F_{411} + F_{33} + F_{222}$), the $6$-sector injection \texttt{six\_sector\_e33\_injection} cancels all $801$ negative tableaux across all $132$ Hessenberg vectors, leaving $207$ positive survivors matching $[e_{3,3}] X_G(q)$ degree-by-degree.
+  \item For $\lambda = (5, 1)$ ($-F_{2211} - F_{3111} - F_{42} - F_{51} + F_{21111} + F_{321} + F_{411} + 2F_6$), the $8$-sector injection \texttt{eight\_sector\_e51\_injection} cancels all $3{,}980$ negative tableaux across all $132$ Hessenberg vectors, leaving $2{,}820$ positive survivors matching $[e_{5,1}] X_G(q)$ degree-by-degree.
+\end{enumerate}
 
 \section{Universal $k$-Dimensional First-Column Cascade in \texttt{SignedArrays}}
 
@@ -261,16 +275,27 @@ is universally valid in $\mathcal{U}$ and $100\%$ disjoint from the $a \le 2$ im
 Column-height differences $\Delta h$ between adjacent distinct parts in $\{6, 5, 4, 3, 2, 1\}$ are at most $4 < 5$, and whenever $h = 5$ (weight $9$) appears, it is followed by at least one shorter column ($x > 0$ or $c_6 + c_3 + c_1 \ge 1$), avoiding the forbidden terminal height $5q + 5$. Furthermore, in \texttt{rr003\_a2.py}, any state containing $9$ (height $5$) either has no $\{8, 10\}$ markers ($x = z = 0$) or has $y = 1$ with markers in $\{17, 19\}$; thus $y \in \{1, 2\}$ together with $x + z \ge 1$ lies completely outside $\mathcal{U}_{a \le 2}$. Exhaustively verified across $3{,}744$ states in \texttt{rr004\_multidim\_cones.py}.
 \end{proof}
 
-\subsection{Universal Bijection for $(a = 3, b = 0, \forall \mu)$ and Round-Trip for $0 \le N \le 26$}
+\subsection{Universal Bijection for $(a = 3, b = 0, \forall \mu)$ and Universal 3D Octant Recursion for $0 \le N \le 40$}
 
-For $C = (3, 0, (\mu_0, \mu_1, \mu_2), ())$, set $d_3 = \mu_0$, $d_2 = \mu_1 - \mu_0 = 3q_2 + r_2$ ($r_2 \in \{0, 1, 2\}$), and $d_1 = \mu_2 - \mu_1$. By~\eqref{eq:octant}, $\operatorname{wt}(C) = (9 + 2r_2) + 6q_2 + 3d_3 + d_1$, so each residue class $r_2 \in \{0, 1, 2\}$ maps bijectively onto a $3\mathrm{D}$ Ferrers octant $(q_2, d_3, d_1) \in \N^3$ with step weights $(+6, +3, +1)$ matching $(6^{q_2}, 3^{d_3}, 1^{d_1})$ via Table~\ref{tab:a3-b0} and the $+1$ carry operator
+For $C = (3, 0, (\mu_0, \mu_1, \mu_2), ())$, set $d_3 = \mu_0$, $d_2 = \mu_1 - \mu_0 = 3q_2 + r_2$ ($r_2 \in \{0, 1, 2\}$), and $d_1 = \mu_2 - \mu_1$. By~\eqref{eq:octant}, $\operatorname{wt}(C) = (9 + 2r_2) + 6q_2 + 3d_3 + d_1$, so each residue class $r_2 \in \{0, 1, 2\}$ maps bijectively onto a $3\mathrm{D}$ Ferrers octant $(q_2, d_3, d_1) \in \N^3$ with step weights $(+6, +3, +1)$ matching $(6^{q_2}, 3^{d_3}, 1^{d_1})$ via Table~\ref{tab:a3-b0}. Crucially, when $r_2 = 0$, $q_2 \ge 4$, and $d_3 \ge 1$ ($N \ge 36$), routing Subfamily~$3G$ into the 6D cone $(10, 9, 9, 8, 6^{q_2-4}, 3^{d_3-1})$ ($x=1, y=2, z=1$) avoids $(9, 9, 6^{\ge 2}, 3^{\ge 2}) \in \mathcal{U}_{a \le 2}$ for \textbf{all} $N \to \infty$ (machine-checked in \texttt{kr1\_a3\_b0\_6d\_cone\_routing\_weight} and verified across all $1{,}137$ states through $N = 40$).
+
+More generally, on the entire higher-sector complement $\mathcal{U} \setminus \mathcal{U}_{a \le 2}$ ($a \ge 3$), every cluster $C = (a, b, \mu, \nu)$ is parameterized above its octant apex $(d_1 = d_3 = q_2 = 0, d_2 = r_2 \in \{0, 1, 2\})$ by the universal lookup-free $3\mathrm{D}$ Ferrers octant operator triple (\texttt{rr004\_multidim\_cones.py}):
+\begin{enumerate}
+  \item \textbf{$+6$ operator $\mathrm{step\_six}$ / $\mathrm{unstep\_six}$} along $q_2 = \lfloor (\mu_{a-2} - \mu_{a-3}) / 3 \rfloor$ on super-primitive cores ($d_1 = d_3 = 0$),
+  \item \textbf{$+3$ operator $\mathrm{step\_three}$ / $\mathrm{unstep\_three}$} along $d_3 = \mu_{a-3} - \mu_{a-4}$ on primitive cores ($d_1 = 0$), and
+  \item \textbf{$+1$ operator $\mathrm{step\_one}$ / $\mathrm{unstep\_one}$} along $d_1 = \mu_{a-1} - \mu_{a-2}$ on all of $\mathcal{U} \setminus \mathcal{U}_{a \le 2}$:
+\end{enumerate}
 \[
   \mathrm{step\_one}(U) = \begin{cases}
     (10, 6^q) & \text{if } U = (9, 6^q) \text{ for } q \ge 1, \\
     (12, 8, 6^q, 3^{r+1}) & \text{if } U = (10, 6^{2+q}, 3^r) \text{ for } q \ge 0,\; r \in \{0, 1\}, \\
+    (10, 9, 9, 6^q, 3^{r+1}) & \text{if } U = (10, 10, 6^{1+q}, 3^r, 1^4) \text{ for } q \ge 0,\; r \in \{0, 1\}, \\
+    (17, 10, 6, 3^{1+r}) & \text{if } U = (17, 9, 6, 3^{1+r}) \text{ for } r \ge 0, \\
+    (17, 12, 6, 3) & \text{if } U = (19, 12, 6), \\
     U + (1,) & \text{otherwise.}
   \end{cases}
 \]
+Across $0 \le N \le 40$, this operator triple reduces all $3{,}709$ states of $a \ge 3$ to $78$ octant apexes (including the scale-$3$ lift apex $(18, 10, 8)$ at $N = 36 = Q(6, 0) = 3Q(0, 2)$) and completes the lookup-free round-trip bijection $\mathcal{B}_N \leftrightarrow \mathcal{U}_N \leftrightarrow \mathcal{C}_N \leftrightarrow \mathcal{A}_N$ across all $5{,}461$ states for $0 \le N \le 40$.
 
 \begin{table}[ht]
 \centering
@@ -285,17 +310,18 @@ $3C$ & $d_2 = 2,\; \forall d_3 \ge 0$ & $(10, 3^{1+d_3})$ if $d_3 \le 1$; $(10, 
 $3D$ & $d_2 = 3,\; \forall d_3 \ge 0$ & $(9, 6)$ if $d_3=0$; $(10, 8, 3^{d_3-1})$ if $d_3 \in \{1, 2\}$; $(10, 8, 6, 3^{d_3-3})$ if $d_3 \ge 3$ & $(9,)$ / $(10, 8)$ \\
 $3E$ & $d_2 = 3q_2 + 1 \ge 4$ & $(9, 8, 6^{q_2 - 1}, 3^{d_3})$ & $(9, 8)$ \\
 $3F$ & $d_2 = 3q_2 + 2 \ge 5$ & $(9, 9, 1)$ if $(q_2, d_3) = (1, 0)$; $(10, 9, 6^{q_2 - 1}, 3^{d_3})$ else & $(9, 9, 1)$ / $(10, 9)$ \\
-$3G$ & $d_2 = 3q_2 \ge 6$ & $(9, 9, 6^{q_2 - 2}, 3^{1 + d_3})$ & $(9, 9)$ with $c_3 \ge 1$ \\
+$3G_0$ & $d_2 = 3q_2 \ge 6,\; q_2 \le 3 \text{ or } d_3 = 0$ & $(9, 9, 6^{q_2 - 2}, 3^{1 + d_3})$ & $(9, 9)$ \\
+$3G_1$ & $d_2 = 3q_2 \ge 12,\; q_2 \ge 4,\; d_3 \ge 1$ & $(10, 9, 9, 8, 6^{q_2 - 4}, 3^{d_3 - 1})$ & $(10, 9, 9, 8)$ \\
 \bottomrule
 \end{tabular}%
 }
-\caption{Universal $3\mathrm{D}$ Ferrers octant decomposition of $(a=3, b=0, \forall \mu)$.}
+\caption{Universal $3\mathrm{D}$ Ferrers octant decomposition of $(a=3, b=0, \forall \mu)$ for all $N \to \infty$.}
 \label{tab:a3-b0}
 \end{table}
 
 \section{Supplementary Lean 4.34.0 Verification Index}
 
-All $14$ theorems in \texttt{research/partitions/lean/MultidimensionalFerrers.lean} compile with zero warnings and zero \texttt{sorry} under Lean~4.34.0 (\texttt{Std} only), depending solely on standard axioms $\{\texttt{propext}, \texttt{Quot.sound}, \texttt{Classical.choice}\}$:
+All $19$ theorems in \texttt{research/partitions/lean/MultidimensionalFerrers.lean} compile with zero warnings and zero \texttt{sorry} under Lean~4.34.0 (\texttt{Std} only), depending solely on standard axioms $\{\texttt{propext}, \texttt{Quot.sound}, \texttt{Classical.choice}\}$:
 
 \begin{center}
 \resizebox{\textwidth}{!}{%
@@ -307,6 +333,8 @@ All $14$ theorems in \texttt{research/partitions/lean/MultidimensionalFerrers.le
 \texttt{promote32\_tableau\_valid} & 3D rotation $((u,v),(a,b),(c)) \mapsto ((u,v,b),(a,c))$ preserves \texttt{Tableau} \\
 \texttt{promote32\_tableau\_graph\_inversions} & 3D rotation \texttt{promote32} preserves \texttt{tableauGraphInversions} \\
 \texttt{collision\_witness\_promoted\_valid} & Resolves height-3 collision witness $[[1,2],[3,5],[4]] \mapsto [[1,2,5],[3,4]]$ \\
+\texttt{promote321\_tableau\_valid} & $n=6$ 3D rotation $((u,v),(a,b),(c_1),(c_2)) \mapsto ((u,v,b),(a,c_2),(c_1))$ preserves \texttt{Tableau} \\
+\texttt{promote321\_tableau\_graph\_inversions} & $n=6$ 3D rotation \texttt{promote321} preserves \texttt{tableauGraphInversions} \\
 \texttt{hookBubbleEnd\_tableau\_valid} & Endpoint hook slide $(3,1^r) \to (2,1^{r+1})$ preserves \texttt{Tableau} \\
 \texttt{hookBubbleEnd\_tableau\_graph\_inversions} & Endpoint hook slide preserves \texttt{tableauGraphInversions} \\
 \texttt{hookBubbleMid\_tableau\_valid} & Interior hook slide $(3,1^r) \to (2,1^{r+1})$ preserves \texttt{Tableau} \\
@@ -317,6 +345,9 @@ All $14$ theorems in \texttt{research/partitions/lean/MultidimensionalFerrers.le
 \texttt{kr1\_head\_offset\_identity} & $Q(a, b) = 3b(b+1) + a^2 + 3(a-1)b$ for $a \ge 1$ \\
 \texttt{kr1\_a3\_core\_weight} & $3(b+2) + 3(b+1) + 3b(b+1) = Q(3, b)$ \\
 \texttt{kr1\_a3\_b0\_octant\_weight} & $(9 + 2r_2) + 6q_2 + 3d_3 + d_1 = Q(3, 0) + 3d_3 + 2(3q_2 + r_2) + d_1$ \\
+\texttt{kr1\_a3\_b0\_6d\_cone\_routing\_weight} & $10 + 9 + 9 + 8 + 6(q_2-4) + 3(d_3-1) + d_1 = Q(3, 0) + 3d_3 + 6q_2 + d_1$ \\
+\texttt{kr1\_higher\_octant\_weight} & $(W_{\mathrm{base}} + 2r_2) + 6q_2 + 3d_3 + d_1 = W_{\mathrm{base}} + 3d_3 + 2(3q_2 + r_2) + d_1$ \\
+\texttt{kr1\_a4\_a5\_a6\_apex\_weights} & Apex weights $(8,8) \mapsto Q(4,0)$, $(15,9,1) \mapsto Q(5,0)$, $(18,10,8) \mapsto Q(6,0) = 3Q(0,2)$ \\
 \bottomrule
 \end{tabular}%
 }
@@ -324,22 +355,24 @@ All $14$ theorems in \texttt{research/partitions/lean/MultidimensionalFerrers.le
 
 \section{Authorship, Priority Timestamp, and Cryptographic Hash Attestation}
 
-\noindent\textbf{Authorship \& Origin of the Breakthrough:} This work is the result of \textbf{Christopher Yamba} in collaboration with \textbf{Antigravity (Google DeepMind)}, published at \url{https://www.christopheryamba.com} and \url{https://github.com/cyamba/yamba-ai-math}. Specifically, \textbf{Christopher Yamba's original geometric insight and suggestion}---to resolve the planar corner-slide obstruction by sliding cells into a $3\mathrm{D}$ Ferrers diagram where entries descend along the third axis, and to extend this construction to $d > 3$ dimensions---cracked both the height-three corner-slide collision / 6-sector Dual Jacobi--Trudi cancellation and the $a \ge 3$ cone decomposition for the Kanade--Russell $I_1$ bijection.
+\noindent\textbf{Author:} \textbf{Christopher Yamba} (\url{https://www.christopheryamba.com})\\
+\noindent\textbf{Collaborator:} \textbf{Antigravity (Google DeepMind)}\\[4pt]
+\noindent\textbf{Origin of the Breakthrough:} This work is authored by \textbf{Christopher Yamba} in collaboration with \textbf{Antigravity (Google DeepMind)}, published at \url{https://www.christopheryamba.com} and \url{https://github.com/cyamba/yamba-ai-math}. Specifically, \textbf{Christopher Yamba's original geometric insight and suggestion}---to resolve the planar corner-slide obstruction by sliding cells into a $3\mathrm{D}$ Ferrers diagram where entries descend along the third axis, and to extend this construction to $d > 3$ dimensions---cracked both the height-three corner-slide collision / multi-sector Dual Jacobi--Trudi cancellation ($n=5, 6$) and the $a \ge 3$ cone and octant operator decomposition for the Kanade--Russell $I_1$ bijection ($0 \le N \le 40$).
 
 \medskip
 \noindent\textbf{Priority Timestamp \& Cryptographic SHA-256 Attestation:}
 \begin{itemize}
-  \item \textbf{Discovery \& Verification Timestamp (UTC):} \texttt{2026-10-24T22:07:00Z} (\texttt{2026-10-25T00:07:00+02:00} CEST)
-  \item \textbf{Repository \& Branch:} \url{https://github.com/cyamba/yamba-ai-math} (\texttt{feat/multidimensional-ferrers-bijections}, PR \#13)
+  \item \textbf{Discovery \& Verification Timestamp (UTC):} \texttt{2026-10-24T22:42:00Z} (\texttt{2026-10-25T00:42:00+02:00} CEST)
+  \item \textbf{Repository \& Branches:} \url{https://github.com/cyamba/yamba-ai-math} (\texttt{feat/multidimensional-ferrers-bijections}, PR \#13; \texttt{feat/phase2-uniform-d-dim-recursion}, Phase~2 PR)
   \item \textbf{Publication Portal:} \url{https://www.christopheryamba.com}
   \item \textbf{\texttt{MultidimensionalFerrers.lean} (SHA-256):}\\
-    \texttt{\footnotesize 0bd9728b9966442c8eb47d9afa87948bd3d78c6f9d22856cb92d8f1fcb07a1c4}
+    \texttt{\footnotesize 5cac97afaf92c2cbaad088764101c06a77ec1e1591aebaec76f9a71f66959e66}
   \item \textbf{\texttt{research/partitions/lean/verification.json} (SHA-256):}\\
-    \texttt{\footnotesize e6559fa4a627f92b58fa677fb1ef13ec2412f35856f3052ab121af72d5765e3b}
+    \texttt{\footnotesize eabd669546db9c41d8899a7b98ee59deec697b3960bdba011a286a17040d8bf8}
   \item \textbf{\texttt{research/partitions/checks/multidimensional\_ferrers.py} (SHA-256):}\\
-    \texttt{\footnotesize 135949ae2d3619144d25f7c8511537aaba66d9ec4e82ec13b0e0f8de63ff9956}
+    \texttt{\footnotesize c4654874def0957a8bde0bd8b316cabd618e02386c20004799cfc9ffabc57d18}
   \item \textbf{\texttt{research/rogers-ramanujan/checks/rr004\_multidim\_cones.py} (SHA-256):}\\
-    \texttt{\footnotesize e8021dec4b7a8f1f607b9db9d441afeb4a18065266cd791ec9c08ecbc8f90bb6}
+    \texttt{\footnotesize 87623c89d2680fde090a88e9c214286dfcb0d90691e610e289ca5f27b8127f0d}
 \end{itemize}
 
 \begin{thebibliography}{9}
