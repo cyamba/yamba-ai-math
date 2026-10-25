@@ -1,0 +1,114 @@
+{
+  "status": "restricted_checks_pass_full_KR1_unresolved",
+  "elapsed_seconds": 3.5438415840035304,
+  "ordinary_tableaux": [
+    {
+      "n": 5,
+      "sources": 5,
+      "positive_targets": 9,
+      "recognized_images": 5,
+      "max_bubble_fiber": 2
+    },
+    {
+      "n": 6,
+      "sources": 9,
+      "positive_targets": 21,
+      "recognized_images": 9,
+      "max_bubble_fiber": 3
+    },
+    {
+      "n": 7,
+      "sources": 14,
+      "positive_targets": 41,
+      "recognized_images": 14,
+      "max_bubble_fiber": 4
+    },
+    {
+      "n": 8,
+      "sources": 20,
+      "positive_targets": 71,
+      "recognized_images": 20,
+      "max_bubble_fiber": 5
+    }
+  ],
+  "naive_P_generalization_refuted": {
+    "h": [
+      1,
+      2,
+      4,
+      4,
+      5
+    ],
+    "source": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4
+      ]
+    ],
+    "output": [
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "reason": "invalid_target",
+    "earlier_source": null,
+    "source_inv": 0,
+    "output_inv": 0
+  },
+  "y2_grid": {
+    "x_range": [
+      0,
+      17
+    ],
+    "t_range": [
+      0,
+      9
+    ],
+    "z_range": [
+      0,
+      10
+    ],
+    "checked": 1980,
+    "distinct_images": 1980
+  },
+  "large_parameter_stress_cases": 6,
+  "funded_y3_to_17": {
+    "checked": 5400,
+    "max_tested_weight": 317
+  },
+  "through_weight_40": {
+    "all_C_U": 5461,
+    "H3_preserved": 3498,
+    "new_y2": 202,
+    "combined": 3700,
+    "new_inverse_exact_images": 202,
+    "first_missing_C": {
+      "a": 3,
+      "b": 1,
+      "mu": [
+        0,
+        0,
+        0
+      ],
+      "nu": [
+        0
+      ]
+    }
+  },
+  "candidate_sha256": "acf73bf1f0cfba796591d354a70c2e9dfa07eac1b2c8335c6b0d7f0ccd4f3fc1",
+  "test_script_sha256": "7a29580149d5bedabb84e3ff276337986e7f43c6ff13436a9eeb5ed73cf377ff",
+  "discovery_not_held_out": true
+}

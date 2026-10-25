@@ -15,6 +15,7 @@ The research harness and the AI architectures under investigation are different 
 - Fleet dependencies, separate reviewers, and bounded topologies: [fleets/registry.json](fleets/registry.json).
 - Bounded investigation specifications: [programs/](programs/README.md).
 - Harness improvement trials: [meta/](meta/README.md).
+- KR1 next actions: [working TODO](research/rogers-ramanujan/TODO.md). At KR1 session start, new intuition/evidence, or a natural pause, apply its two-minute triage rule; record one next action at handoff. Preserve existing execution/resource limits.
 
 Load only the skills and references needed by the task. `explore-angle` supports discovery; `audit-theorem` reviews mathematical claims; `assemble-fleet` builds teams; `design-experiment` defines tests; `improve-harness` compares workflows.
 

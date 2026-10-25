@@ -1,0 +1,32 @@
+{
+  "status": "V4_restricted_checks_pass_full_KR1_unresolved",
+  "elapsed_seconds": 2.3988741250068415,
+  "y4_grid": {
+    "x": [
+      0,
+      17
+    ],
+    "t": [
+      0,
+      9
+    ],
+    "z": [
+      0,
+      10
+    ],
+    "checked": 1980,
+    "distinct": 1980
+  },
+  "stress_cases": 7,
+  "through_weight40": {
+    "V3_preserved": 3856,
+    "new_y4": 118,
+    "combined": 3974,
+    "exactly_recognized_targets": 3974,
+    "all_C_U": 5461
+  },
+  "funded_y5_to17_cases": 351,
+  "alternate_funded_y2_y3_y4_targets_rejected": true,
+  "candidate_sha256": "865620dbf1784547840372f702712b714253b9d752a5d6174c1c8653a84b581a",
+  "discovery_not_held_out": true
+}
