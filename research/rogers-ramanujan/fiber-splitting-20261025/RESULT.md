@@ -45,6 +45,18 @@ Examples at the first points of these infinite slabs:
     y=3: (0,0,3,3)  -> U=(8,8,6),    weight 22.
     y=4: (0,0,4,4)  -> U=(12,9,3),   weight 24.
 
+U is the intermediate weighted-column object. Composing the established
+endpoint translators gives these literal partition examples (ascending):
+
+| Gap partition A | Residue partition B | Weight |
+| --- | --- | --- |
+| (1,3,7,9) | (10,10) | 20 |
+| (1,3,8,10) | (6,8,8) | 22 |
+| (1,3,9,11) | (12,12) | 24 |
+
+All three endpoint traces were executed and roundtripped in both directions.
+They illustrate the three infinite-family rules; they are not their proofs.
+
 The formulas use column multiplicities and reversible carries rather than
 free labels or a finite apex matching. [Y2 proof](proof-candidate.md),
 [Y3 proof for x>=1](y3-proof-candidate.md),
@@ -85,7 +97,9 @@ All are discovery/regression evidence, not held-out validation. Their exact
 scopes and hashes are in [first-result.json](first-result.json),
 [composition-result.json](composition-result.json), and
 [y3-repair-result.json](y3-repair-result.json), and [y4-result.json](y4-result.json).
-A critic separately checked 47 small y2 boundary cases. Root math subprocess time totaled 9.581 seconds;
+A critic separately checked 47 small y2 boundary cases. Four root mathematical
+check bodies totaled 9.581 seconds; an additional three-example endpoint trace
+took 0.706 seconds of command wall time.
 the critic used 0.88 seconds. Memory was not measured. No paid providers,
 installations, broad fleet, publication or push occurred.
 
@@ -143,3 +157,6 @@ No claim of a self-contained replacement for that baseline is made. Its
 commit identity is given above; restore that checkout before replay if it
 has been removed. Do not accidentally substitute Argon's other bridge.
 The [illustration](fiber-progress.png) is explanatory, not proof evidence.
+
+First pass checkpointed on 2026-10-25 before the 11:45 UTC lead deadline;
+no new numerical sweep is active. The next y=5 formula remains untested.
