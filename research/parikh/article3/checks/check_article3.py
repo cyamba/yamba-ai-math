@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-"""Checks for Article 3 (paper3/article3.tex): completeness of Parikh matrices when letters
-occur at most twice.
+"""Checks for Article 3 (paper3/article3.tex, version 2): completeness of Parikh matrices when
+letters occur at most twice or three times. Sections 6 and 7 are checked by check_c3.py.
 
 Copyright (c) 2026 Christopher Yamba. All rights reserved.
 
 Standard library only. Exits non-zero on the first failure.
 
-  [1] Lemma 3.1 (rectangle rule) and Theorem 4.2 (cases (a)-(c)) on every word of every
+  [1] Lemma 3.1 (rectangle rule) and Theorem 4.2 (cases (i)-(iii)) on every word of every
       content with 3 <= k <= 5, n_i <= 3 and at most 9 letters.
   [2] Example 4.5: 21332 / 32123, and the three-letter criterion for a, b, c <= 4.
   [3] Lemma 5.1 (ballot numbers) and Theorem B for n <= 30, the Catalan value, and the
       printed words A_n, B_n for n = 2, 3, 4.
   [4] Corollary 4.6: the Parikh classes of (2^k) are the fibres of the third and fourth
       diagonals, with the printed numbers, for 3 <= k <= 8 (k <= 7 by default).
-  [5] Table 1, small entries: contents with n_i <= 2, sum <= 11 and k <= 8; the (a,3,3,c) rule
-      of Section 6 (a, c <= 3; <= 6 with --full); and
+  [5] Table 2, small entries: contents with n_i <= 2, sum <= 11 and k <= 8; the (a,3,3,c) rule
+      of Section 7 (a, c <= 3; <= 6 with --full); and
       five-letter windows with n = 3, 4 and small ends; --full adds every content of the
       first two n = 3 rows and the n = 4 five-letter rows. The six-letter rows are computed
       by notes/completeness-scripts/c/corner.c (ancillary corner.c).
@@ -249,7 +249,7 @@ def check_5() -> None:
     for c in n2:
         # every window of length >= 4 with inner letters <= 2 is determined (Theorem A)
         if len(c) >= 4 and corner_independent(c):
-            fail(f"Table 1, n = 2: {c}")
+            fail(f"Table 2, n = 2: {c}")
     ends = range(1, 7) if FULL else range(1, 3)
     n3 = 0
     for x, y, z in itertools.product((1, 2, 3), repeat=3):
@@ -259,20 +259,20 @@ def check_5() -> None:
             if (a, x, y, z, c) > (c, z, y, x, a):
                 continue
             if corner_independent((a, x, y, z, c)):
-                fail(f"Table 1, n = 3: {(a, x, y, z, c)}")
+                fail(f"Table 2, n = 3: {(a, x, y, z, c)}")
             n3 += 1
     for a, c in itertools.product(range(1, 7 if FULL else 4), repeat=2):
         if corner_independent((a, 3, 3, c)) != (max(a, c) >= 3):
-            fail(f"Section 6, (a,3,3,c) at {(a, c)}")
+            fail(f"Section 7, (a,3,3,c) at {(a, c)}")
     n4 = 0
     if FULL:
         for a, c in itertools.product(range(1, 5), repeat=2):
             if a > c:
                 continue
             if corner_independent((a, 4, 4, 4, c)) != (a + c >= 5):
-                fail(f"Table 1, n = 4: {(a, 4, 4, 4, c)}")
+                fail(f"Table 2, n = 4: {(a, 4, 4, 4, c)}")
             n4 += 1
-    print(f"[5] Table 1: {len(n2)} contents with n_i <= 2; (a,3,3,c) rule; {n3} five-letter n = 3 windows"
+    print(f"[5] Table 2: {len(n2)} contents with n_i <= 2; (a,3,3,c) rule; {n3} five-letter n = 3 windows"
           + (f"; {n4} five-letter n = 4 windows" if FULL else "") + " -- ok")
 
 
