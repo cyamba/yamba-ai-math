@@ -1,0 +1,27 @@
+{
+  "bound": 12,
+  "independent_U_count": 59,
+  "invalid_children": [
+    7,
+    0,
+    0
+  ],
+  "first_failures": [
+    [
+      [
+        8
+      ],
+      [
+        2
+      ]
+    ],
+    null,
+    null
+  ],
+  "ternary_quotient_both_arithmetic_identities": true,
+  "first_parent_of_ternary_child_3": null,
+  "ternary_child_terminal_height_at_most": 2,
+  "weight9_parent_child_3_impossible": true,
+  "inclusion_obstruction_targets": null,
+  "residual_nonnegative": "finite observation only"
+}

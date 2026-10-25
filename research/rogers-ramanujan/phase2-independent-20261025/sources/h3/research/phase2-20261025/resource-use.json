@@ -1,0 +1,57 @@
+{
+  "status": "closed_with_scoped_results",
+  "captured_utc": "2026-10-24T22:49:54.420083+00:00",
+  "start_utc": "2026-10-24T22:11:44+00:00",
+  "elapsed_seconds_to_accounting": 2290.420083,
+  "elapsed_limit_seconds": 7200,
+  "elapsed_includes_preparation": true,
+  "old_30_minute_preparation_charge_not_reused": true,
+  "child_invocations": 10,
+  "invocation_cap": 10,
+  "dispatch_proxy_units": 26,
+  "proxy_cap": 30,
+  "distinct_child_profiles": 5,
+  "maximum_observed_concurrent_children": 3,
+  "numeric_subprocesses": 76,
+  "subprocess_wall_seconds": 89.32810125508695,
+  "subprocess_cpu_seconds": 82.039958,
+  "subprocess_wall_limit_seconds": 1200,
+  "peak_observed_numeric_process_rss_bytes": 72482816,
+  "rss_note": "Post-exit observation, not a hard transient memory guarantee; excludes model/service memory.",
+  "failed_subprocesses": [
+    {
+      "index": 34,
+      "label": "kr-critic-geometry30",
+      "exit_code": 1,
+      "wall_seconds": 0.1304705000075046
+    },
+    {
+      "index": 74,
+      "label": "closure-repository-check",
+      "exit_code": 1,
+      "wall_seconds": 0.18669062500703149
+    }
+  ],
+  "incremental_artifact_bytes_at_capture": 6073075,
+  "artifact_capture_note": "Includes canonical copied receipts and ignored fresh raw receipts; excludes copied closed RR007 baseline and caches. Final small accounting/manifest writes follow capture.",
+  "incremental_artifact_cap_bytes": 1073741824,
+  "model_service_compute_tokens_and_cost": "unmeasured",
+  "paid_providers_or_new_dependencies": false,
+  "raw_ledger": ".runs/phase2-20261025/subprocess.jsonl",
+  "raw_ledger_sha256": "6f49cb46be61a461a02897e6556c1e6d7286e25a4e71f1bfc1558a2cb800016e",
+  "archived_ledger": "research/phase2-20261025/verification/receipts/subprocess.jsonl",
+  "existing_engineering_tests_passed": {
+    "harness": 29,
+    "partition_positivity": 15,
+    "verification_protocol": 10
+  },
+  "full_legacy_suite_run": false,
+  "full_suite_qualification": "Contains explicit KR fixtures above40; no harness behavior was changed.",
+  "mathematical_bounds": "KR<=40, tableau<=6; infinite high-b/high-gap families symbolic only.",
+  "pilot_qualification": "Recursive author correction bound12 additionally constructed the already-exposed fixed C18 witness; critic final pilot is strict12.",
+  "formal_checker_run": false,
+  "new_external_source_or_novelty_certification": false,
+  "administrative_finalization_utc": "2026-10-24T22:50:47.354901+00:00",
+  "elapsed_seconds_to_administrative_finalization": 2343.354901,
+  "no_numerical_calls_after_capture": true
+}

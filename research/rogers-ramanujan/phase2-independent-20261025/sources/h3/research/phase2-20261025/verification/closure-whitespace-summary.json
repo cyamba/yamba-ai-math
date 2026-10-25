@@ -1,0 +1,15 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    "research/phase2-20261025",
+    ":(exclude)research/phase2-20261025/inputs",
+    ":(exclude)research/phase2-20261025/verification/receipts",
+    ":(exclude)research/phase2-20261025/verification/*whitespace.txt"
+  ],
+  "exit_code": 0,
+  "qualification": "Verbatim inputs, raw receipts and whitespace transcripts excluded; original evidence bytes retained."
+}

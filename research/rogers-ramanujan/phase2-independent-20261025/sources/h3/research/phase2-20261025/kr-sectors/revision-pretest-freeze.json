@@ -1,0 +1,9 @@
+{
+  "stage": "single-reserved-H-family-refinement-before-pilot",
+  "date_utc": "2026-10-24T22:33:29.276477+00:00",
+  "files": {
+    "research/phase2-20261025/kr-sectors/revision-bridge.py": "29d64553916b4a4da140b4d7de5278ff6b05b9c289a17d64e6a783b4b7708750",
+    "research/phase2-20261025/kr-sectors/revision-check.py": "970913cbb7f67aa2025f14e571e1cfac915b690987be12f8884a5159e03bdc18"
+  },
+  "note": "Initial freezes unchanged. H3 adds exact a4 middle-equality slab plus first-equality y1 plane; proposed maps frozen before all12/30/40 tests."
+}

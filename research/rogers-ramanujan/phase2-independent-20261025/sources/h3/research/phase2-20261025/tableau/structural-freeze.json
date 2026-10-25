@@ -1,0 +1,8 @@
+{
+  "frozen_utc": "2026-10-24T22:19:49.839209+00:00",
+  "scope": "structural refinement within family2; n6 inputs already exposed, discovery not held out",
+  "sha256": {
+    "structural.py": "ae58d6ef7ccba8bb09ff8d6e7b6876e7a903588bb39adaaa7f44b10e06828e08",
+    "verify_structural.py": "71918602f2f6f8da0fceea5dd1e9af3adce3a230e3ff9ef9eaeea44db8746098"
+  }
+}

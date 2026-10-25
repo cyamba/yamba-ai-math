@@ -1,0 +1,21 @@
+{
+  "stage": "kr-distinct-initial-review-complete",
+  "verdict": "conditional: recursive geometric claim refuted; T1/T2 and C grammar accepted within stated scopes",
+  "files": {
+    "research/phase2-20261025/reviews/kr-dependencies.json": "f293860d8c7a55dd348914f77bc7bff2b27231ab7a73d1dfd5e1ef727a123e6f",
+    "research/phase2-20261025/reviews/kr-geometric-result-12.json": "a0d1bff96797edccbfe87802d316efbd857c4f17286326d1aee9416eab48da7d",
+    "research/phase2-20261025/reviews/kr-geometric-result-v2-12.json": "099d15f6f8a9299b837c8c3116f9dfe45edd3e898ea181a57b872945a3711c15",
+    "research/phase2-20261025/reviews/kr-geometric-result-v2-30.json": "bb52c4afebf346621623fcc401bf46e8791a27edcd82f7c9d4723ac777b23d96",
+    "research/phase2-20261025/reviews/kr-geometric-result-v2-40.json": "c9dede3ed45f63b5362a66049874871e3e3845317fb62138eb86356713fb35f2",
+    "research/phase2-20261025/reviews/kr-geometric-v1-failure.json": "8ba52000cd67f45724ee83dc10b643113580350536e45823856bbe6e88d7fb3d",
+    "research/phase2-20261025/reviews/kr-geometriccheck-v1.py": "7f1fcbbdbccafef32e7896e73dc4f0ea71bbad8dfd87b22cd940429d79a6ef2d",
+    "research/phase2-20261025/reviews/kr-geometriccheck.py": "e8e3c36a3419c4ed9128f0ad21b754c5b7d674aef61ef8ed816ca7da258d7b2c",
+    "research/phase2-20261025/reviews/kr-independent-result-12.json": "56d1e23b3a71e9effc276be587686435bb34f1ba1920c692b116149d4db5d92d",
+    "research/phase2-20261025/reviews/kr-independent-result-30.json": "b3b82ac12c2e5e70feab311a6ba67c7e17b2e0f34a5f4b9ac52bb09056b4f0c2",
+    "research/phase2-20261025/reviews/kr-independent-result-40.json": "bebee4b0983c0fa36b2d8df2cff8172c58bc330dd689464995f3484fff796507",
+    "research/phase2-20261025/reviews/kr-independentcheck.py": "9a886583c8070113c6884be3197293e3dfbd5f1078723723d039cbc66a65c125",
+    "research/phase2-20261025/reviews/kr-resource-use.json": "329bf524545a3c10a15d69ad21414a2a963d7b9213bf1ef7ece5be693a519abc",
+    "research/phase2-20261025/reviews/kr-review.md": "eeaf256d8a2094a9ef9844b78e065dfe57549816fa8f9eb8008441d877cef129"
+  },
+  "original_author_files_unchanged": true
+}

@@ -20,10 +20,12 @@ item and its revisit trigger; keep deferred items visible rather than copying
 the whole queue. This is a user-requested documentation workflow, not an
 evaluated harness improvement or a background scheduler.
 
-Last triage: **2026-10-25**. Next: **KR1-03**, starting with the remaining
-y=5 boundary. Revisit at the next authorized KR1 work window. Christopher's
-fiber intuition has produced reviewed extensions to the entire y=2/3/4 slabs;
-the first isolated attempt is checkpointed, and earlier runs remain closed.
+Last triage: **2026-10-25**, after Christopher clarified the construction.
+Next: **KR1-08**, existence of the literal extra-dimension procedure; minimum
+dimension is optional. Earlier variants
+produced reviewed extensions to the entire y=2/3/4 slabs, but did not test
+that procedure. KR1-03 remains available after this clarification is addressed.
+The first isolated attempt is checkpointed, and earlier runs remain closed.
 
 ## Choices
 
@@ -88,6 +90,37 @@ the first isolated attempt is checkpointed, and earlier runs remain closed.
   distinguish Mizuno's counting proof, established endpoints, our partial
   bridge, and elementary weight algebra. Deliverable: a short source-backed
   scope/novelty assessment, with unknowns retained.
+
+- [ ] **KR1-08 — READY 2026-10-25: investigate Christopher's literal extra-dimension construction, existence first.**
+  For a fiber of m inputs, arrange the actual numbered yellow entries in
+  generalized tableaux. First seek existence of a uniform procedure in some
+  finite dimension; optimal dimension and uniqueness of the procedure are
+  unnecessary. Start with his ten-input/ten-extra-dimensions example, then
+  seek a compatible selection rule and an intrinsic inverse for all fibers.
+  A coordinate tag alone separates a decorated class; connecting that class
+  to the original targets is a separate obligation. First define admissibility,
+  axis conventions and the statistic; then trace the pictured two-input
+  fiber before a ten-input example. Prove finite-dimensional existence,
+  separation between fibers, and exact target coverage. A bijection to an
+  intermediate higher-dimensional class alone leaves the target translation
+  open. This exact procedure has not been implemented or tested.
+  [Faithful specification and scope](ideas/CY-KR1-FIBER-001.md).
+  Latest outline, 2026-10-25: represent placements as explicit reversible
+  permutations in a discrete cube/box; log every assignment and inverse;
+  analyze arrangements for a general selection/decoding rule. First deliver
+  a small coordinate trace and compare its endpoints. Distinguish a reversible
+  logged history from an inverse recoverable from the final target itself.
+  [Suggested outline, recorded before an attempt](ideas/CY-KR1-FIBER-001-OUTLINE.md).
+  Revisit at the next authorized KR1 work window, before further carry variants;
+  preserve closed contracts and set a fresh boundary for any new proof run.
+
+- [x] **KR1-09 — DONE 2026-10-25: prepare independent Claude Code handoff.**
+  Includes Christopher's full idea progression, exact Argon/H3/extension source
+  map, known failures and assurance boundaries, a copyable starting prompt,
+  and portable source snapshots with hashes. Independent research itself is
+  not marked complete or executed by this preparation.
+  [Handoff](phase2-independent-20261025/HANDOFF.md),
+  [launch guidance](phase2-independent-20261025/LAUNCH.md).
 
 - [ ] **TAB-01 — QUEUED, separate problem: explain tableau totality.**
   Seek a structural case split explaining the reviewed n=6 cancellation
