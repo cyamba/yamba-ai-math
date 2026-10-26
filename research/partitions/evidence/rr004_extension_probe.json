@@ -1,0 +1,213 @@
+{
+  "assurance": "finite exact counterexample search, not a new general theorem",
+  "full_candidate_extension": "refuted_at_N41",
+  "first_weight_beyond_verified_bound": 41,
+  "failures_at_41": [
+    {
+      "cluster": {
+        "a": 3,
+        "b": 1,
+        "mu": [
+          0,
+          1,
+          1
+        ],
+        "nu": [
+          6
+        ]
+      },
+      "kind": "missing_apex",
+      "detail": "Unrecognized octant apex ClusterData(a=3, b=1, mu=(0, 1, 1), nu=(6,))"
+    },
+    {
+      "cluster": {
+        "a": 3,
+        "b": 2,
+        "mu": [
+          0,
+          1,
+          1
+        ],
+        "nu": [
+          0,
+          0
+        ]
+      },
+      "kind": "missing_apex",
+      "detail": "Unrecognized octant apex ClusterData(a=3, b=2, mu=(0, 1, 1), nu=(0, 0))"
+    },
+    {
+      "cluster": {
+        "a": 4,
+        "b": 1,
+        "mu": [
+          2,
+          2,
+          3,
+          3
+        ],
+        "nu": [
+          0
+        ]
+      },
+      "kind": "missing_apex",
+      "detail": "Unrecognized octant apex ClusterData(a=4, b=1, mu=(2, 2, 3, 3), nu=(0,))"
+    },
+    {
+      "cluster": {
+        "a": 4,
+        "b": 1,
+        "mu": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "nu": [
+          2
+        ]
+      },
+      "kind": "missing_apex",
+      "detail": "Unrecognized octant apex ClusterData(a=4, b=1, mu=(0, 0, 2, 2), nu=(2,))"
+    },
+    {
+      "cluster": {
+        "a": 4,
+        "b": 1,
+        "mu": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "nu": [
+          2
+        ]
+      },
+      "kind": "missing_apex",
+      "detail": "Unrecognized octant apex ClusterData(a=4, b=1, mu=(1, 1, 1, 1), nu=(2,))"
+    },
+    {
+      "cluster": {
+        "a": 5,
+        "b": 0,
+        "mu": [
+          0,
+          1,
+          2,
+          6,
+          7
+        ],
+        "nu": []
+      },
+      "kind": "roundtrip_collision",
+      "image": [
+        19,
+        12,
+        6,
+        3,
+        1
+      ]
+    },
+    {
+      "cluster": {
+        "a": 5,
+        "b": 0,
+        "mu": [
+          0,
+          3,
+          3,
+          5,
+          5
+        ],
+        "nu": []
+      },
+      "kind": "missing_apex",
+      "detail": "Unrecognized octant apex ClusterData(a=5, b=0, mu=(0, 3, 3, 5, 5), nu=())"
+    },
+    {
+      "cluster": {
+        "a": 5,
+        "b": 0,
+        "mu": [
+          0,
+          4,
+          4,
+          4,
+          4
+        ],
+        "nu": []
+      },
+      "kind": "missing_apex",
+      "detail": "Unrecognized octant apex ClusterData(a=5, b=0, mu=(0, 4, 4, 4, 4), nu=())"
+    },
+    {
+      "cluster": {
+        "a": 5,
+        "b": 0,
+        "mu": [
+          2,
+          3,
+          3,
+          4,
+          4
+        ],
+        "nu": []
+      },
+      "kind": "missing_apex",
+      "detail": "Unrecognized octant apex ClusterData(a=5, b=0, mu=(2, 3, 3, 4, 4), nu=())"
+    },
+    {
+      "cluster": {
+        "a": 6,
+        "b": 0,
+        "mu": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "nu": []
+      },
+      "kind": "missing_apex",
+      "detail": "Unrecognized octant apex ClusterData(a=6, b=0, mu=(0, 1, 1, 1, 1, 1), nu=())"
+    }
+  ],
+  "collision": {
+    "higher": {
+      "a": 5,
+      "b": 0,
+      "mu": [
+        0,
+        1,
+        2,
+        6,
+        7
+      ],
+      "nu": []
+    },
+    "lower": {
+      "a": 2,
+      "b": 2,
+      "mu": [
+        5,
+        5
+      ],
+      "nu": [
+        0,
+        1
+      ]
+    },
+    "common_U": [
+      19,
+      12,
+      6,
+      3,
+      1
+    ]
+  },
+  "a3_b0_states_verified_through_60": 4491,
+  "next_target": "Repair +6,+3,+1 orbit of (19,12,6); establish invariant excluding lower-sector images and unique inverse, before extending apex table."
+}

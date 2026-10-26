@@ -7,7 +7,7 @@
     "https://github.com/cyamba/yamba-ai-math/pull/13",
     "https://github.com/cyamba/yamba-ai-math"
   ],
-  "originating_insight_attribution": "Christopher Yamba's original geometric insight and suggestion to resolve the planar 2D corner-slide obstruction by sliding cells into a 3D Ferrers diagram where entries strictly descend along the 3rd axis, and extending the construction to d > 3 dimensions, cracked both the height-3 corner-slide collision / multi-sector Dual Jacobi-Trudi cancellation (n = 5, 6) and the a >= 3 cone and universal 3D octant operator decomposition for the Kanade-Russell I_1 bijection (0 <= N <= 40).",
+  "originating_insight_attribution": "Christopher Yamba proposed exploring a third Ferrers coordinate and higher-dimensional extensions. The revised article preserves conditional local results and finite computations; no unrestricted KR1 bijection or verified novelty is claimed.",
   "priority_timestamp_utc": "2026-10-24T22:42:00Z",
   "priority_timestamp_local": "2026-10-25T00:42:00+02:00",
   "repository": "https://github.com/cyamba/yamba-ai-math",
@@ -15,11 +15,22 @@
   "sha256_attestation": {
     "research/partitions/lean/MultidimensionalFerrers.lean": "5cac97afaf92c2cbaad088764101c06a77ec1e1591aebaec76f9a71f66959e66",
     "research/partitions/lean/verification.json": "eabd669546db9c41d8899a7b98ee59deec697b3960bdba011a286a17040d8bf8",
-    "research/partitions/checks/multidimensional_ferrers.py": "c4654874def0957a8bde0bd8b316cabd618e02386c20004799cfc9ffabc57d18",
-    "research/rogers-ramanujan/checks/rr004_multidim_cones.py": "87623c89d2680fde090a88e9c214286dfcb0d90691e610e289ca5f27b8127f0d",
-    "research/partitions/paper/multidimensional_ferrers_article.tex": "686221e0fdc3dd117a517c22e9af3db667cee13f930bb17a92ce54f1e201a326",
-    "research/partitions/paper/multidimensional_ferrers_article.pdf": "f2d16e346999dd1cebafcdca942f41ae8fb3bb053adc2a656f8534ffe54a37e5",
-    "research/partitions/paper/multidimensional_ferrers_article.md": "104a0e218042be4ab91dca566426a0886edc1777046549cbf08b6408793796c9",
-    "research/rogers-ramanujan/rr004/UNIFORM_D_DIM_RECURSION_PROGRAM.md": "17f39821f4acf7a686dc9ece4b49b557710d625345975240c433244dcbebd463"
-  }
+    "research/partitions/checks/multidimensional_ferrers.py": "ac3163fcedae18ff03eccc85941831325ae22d0e17c2dfd8d9770960b71b44aa",
+    "research/rogers-ramanujan/checks/rr004_multidim_cones.py": "bbea4930088406dcca96876d8714e7272f5b9c89914d42f2da818441814f20b2",
+    "research/partitions/paper/multidimensional_ferrers_article.tex": "e2814acca876367d2201c28c09ff9ad63b025ad3898ccdda799e3c142265be34",
+    "research/partitions/paper/multidimensional_ferrers_article.pdf": "2aaec74a6640b1ee69e75575c21fab68783ba968af6f694ac967f777457e6e96",
+    "research/partitions/paper/multidimensional_ferrers_article.md": "40a6a617689d279bc1b83ee4d443fed2bcce1524e0ae116d9115f839ec03ec22",
+    "research/rogers-ramanujan/rr004/UNIFORM_D_DIM_RECURSION_PROGRAM.md": "17f39821f4acf7a686dc9ece4b49b557710d625345975240c433244dcbebd463",
+    "research/rogers-ramanujan/checks/rr004_extension_probe.py": "2766cfbbf9081a32d15335eb944a698879adbb2e78145e08719f351fc329b659",
+    "tests/test_multidimensional_review.py": "54dab905339d3d094459d07d8fe2c9015f72b23d684502e90ee6e82d671873db",
+    "research/partitions/evidence/PR15_CORRECTIONS_2026-10-26.md": "089d5badc5aec08976bdef47c334166827960f05be6b324280e8c6f0c4acfa88",
+    "research/partitions/evidence/multidimensional_ferrers_review_verification.json": "47e5db4850eda9d469124c134e1f6745a896836a2bbc7f307b256a36a96d0511",
+    "research/partitions/evidence/rr004_multidim_review_verification.json": "c07c85daed154d7e7dd4686ffb613b310464b44f76fbe328e356f3639349c24a",
+    "research/partitions/evidence/rr004_extension_probe.json": "f730492437e3d5e9e60604985ea617ee57a54f8d1724dabe5d029d394e46bef2"
+  },
+  "revision": 2,
+  "revision_date": "2026-10-26",
+  "status": "corrected research draft; full KR1 candidate refuted at weight 41",
+  "revision_prepared_by": "Codex; separate mathematical critic",
+  "lean_revision_run": "not run: pinned Lean 4.34.0/lake unavailable; unchanged sources match historical record"
 }

@@ -1,0 +1,35 @@
+{
+  "status": "passed_finite_checks",
+  "full_bijection_all_weights": "refuted_for_current_rules_at_N41",
+  "apex_summary": {
+    "max_weight": 40,
+    "higher_states": 3709,
+    "distinct_cluster_apexes": 85,
+    "special_a3_b0_apexes": 3,
+    "explicit_lookup_entries": 82
+  },
+  "uses_finite_apex_lookup": true,
+  "cone_bounds": {
+    "y": [
+      1,
+      2
+    ],
+    "z": [
+      0,
+      3
+    ],
+    "x": [
+      0,
+      3
+    ],
+    "c6_c3_c1_each": [
+      0,
+      4
+    ]
+  },
+  "six_dim_cone_states_verified": 3744,
+  "a3_b0_states_verified_up_to_n35": 710,
+  "a3_b0_states_verified_up_to_n40": 1137,
+  "complete_kr1_roundtrip_states_n0_to_26": 758,
+  "complete_kr1_roundtrip_states_n0_to_40": 5461
+}

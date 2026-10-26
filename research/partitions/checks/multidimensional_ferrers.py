@@ -6,7 +6,7 @@ constructions on P-tableaux and Dual Jacobi--Trudi sectors:
    corner-slide collision on T_P(2,2,1) -> T_P(2,1,1,1) (+) T_P(3,2).
 2. Universal interior and endpoint hook slides `hook_bubble` on T_P(k, 1^r) -> T_P(k-1, 1^{r+1}).
 3. Complete 6-sector Dual Jacobi--Trudi injection for [e_{4,1}] X_G across all
-   65 Hessenberg vectors at n = 5 (where c_{(5),(4,1)} = -2), with degree-by-degree
+   42 Hessenberg vectors at n = 5 (where c_{(5),(4,1)} = -2), with degree-by-degree
    survivor verification.
 4. Exact n-dimensional beta-rearrangement characterization of Dual Jacobi--Trudi
    determinant sectors across 2 <= n <= 6.
@@ -48,6 +48,8 @@ def promote_32_candidates(rows):
 
 def phi_221(h, rows):
     """3D-augmented corner slide Phi_{221} : T_P(2,2,1) -> T_P(2,1,1,1) (+) T_P(3,2)."""
+    if len(h) != 5 or not tableaux.validates(h, rows, (2, 2, 1)):
+        raise ValueError("Phi221 requires a valid n=5 tableau of shape (2,2,1)")
     if is_local_three_chain_witness(h, rows):
         k = tableaux.inv_g(h, rows)
         for cand in promote_32_candidates(rows):
@@ -389,43 +391,76 @@ def six_sector_e41_injection(h):
     return mapping, survivors
 
 
-def verify_beta_rearrangement_bijection(max_n=6):
-    """Verify that DJT determinant sectors (mu, sigma) for [e_lambda] X_G biject with
-    rearrangements beta of (lambda_1, ..., lambda_k, 0^{n-k}) with distinct keys beta_j - j.
+def beta_to_djt(beta):
+    """Recover padded conjugate columns and sigma (row -> column), zero-based.
+
+    Valid inputs have length n, nonnegative entries summing to n and distinct
+    keys beta[j]-j. The decreasing key order IS sigma, not sigma inverse.
     """
+    n = len(beta)
+    if not n or any(x < 0 for x in beta) or sum(beta) != n:
+        raise ValueError("Expected nonnegative beta of length n and sum n")
+    keys = tuple(beta[j] - j for j in range(n))
+    if len(set(keys)) != n:
+        raise ValueError("Repeated shifted keys")
+    sigma = tuple(sorted(range(n), key=lambda j: keys[j], reverse=True))
+    cols = tuple(keys[sigma[i]] + i for i in range(n))
+    return cols, sigma
+
+
+def djt_to_beta(cols, sigma):
+    """Forward convention beta[sigma[i]]=cols[i]-i+sigma[i]."""
+    n = len(cols)
+    if len(sigma) != n or sorted(sigma) != list(range(n)):
+        raise ValueError("Expected a permutation of column indices")
+    beta = [0] * n
+    for i, j in enumerate(sigma):
+        beta[j] = cols[i] - i + j
+    return tuple(beta)
+
+
+def permutation_sign(sigma):
+    return (-1) ** sum(sigma[i] > sigma[j]
+                       for i in range(len(sigma)) for j in range(i + 1, len(sigma)))
+
+
+def verify_beta_rearrangement_bijection(max_n=6):
+    """Check both maps, recovered permutations and signed multiplicities, 1<=n<=max_n."""
     summary = []
-    for n in range(2, max_n + 1):
-        lambda_checked = 0
+    for n in range(1, max_n + 1):
         total_sectors = 0
         for lam in tableaux.partitions(n):
-            lambda_checked += 1
             padded = lam + (0,) * (n - len(lam))
-            betas = set()
+            recovered = {}
             for beta in set(permutations(padded)):
-                keys = [beta[j] - (j + 1) for j in range(n)]
-                if len(set(keys)) == n:
-                    betas.add(beta)
-
-            djt_reconstructed = set()
+                if len({beta[j] - j for j in range(n)}) != n:
+                    continue
+                cols, sigma = beta_to_djt(beta)
+                assert min(cols) >= 0 and sum(cols) == n
+                assert all(x >= y for x, y in zip(cols, cols[1:]))
+                assert djt_to_beta(cols, sigma) == beta
+                recovered[beta] = (cols, sigma)
+            enumerated = {}
+            signed_by_shape = Counter()
             for mu in tableaux.partitions(n):
-                cols = tuple(sum(x > j for x in mu) for j in range(mu[0]))
-                cols_padded = cols + (0,) * (n - len(cols))
+                cols = tuple(sum(x > j for x in mu) for j in range(n))
                 for sigma in permutations(range(n)):
-                    beta = tuple(cols_padded[i] - i + sigma[i] for i in range(n))
-                    if any(x < 0 for x in beta):
+                    beta = djt_to_beta(cols, sigma)
+                    if min(beta) < 0 or tuple(sorted(beta, reverse=True)) != padded:
                         continue
-                    target = tuple(sorted((x for x in beta if x > 0), reverse=True))
-                    if target == lam:
-                        beta_by_col = [0] * n
-                        for i in range(n):
-                            beta_by_col[sigma[i]] = beta[i]
-                        keys = [beta_by_col[j] - (j + 1) for j in range(n)]
-                        assert len(set(keys)) == n
-                        djt_reconstructed.add(tuple(beta_by_col))
-
-            assert betas == djt_reconstructed, f"Mismatch at n={n}, lam={lam}"
-            total_sectors += len(betas)
-        summary.append({"n": n, "partitions_checked": lambda_checked, "total_valid_betas": total_sectors})
+                    assert beta_to_djt(beta) == (cols, sigma)
+                    assert beta not in enumerated
+                    enumerated[beta] = (cols, sigma)
+                    signed_by_shape[cols] += permutation_sign(sigma)
+            assert recovered == enumerated, (n, lam)
+            recovered_signs = Counter()
+            for cols, sigma in recovered.values():
+                recovered_signs[cols] += permutation_sign(sigma)
+            assert recovered_signs == signed_by_shape
+            total_sectors += len(recovered)
+        summary.append({"n": n, "partitions_checked": len(tuple(tableaux.partitions(n))),
+                        "total_valid_betas": total_sectors,
+                        "assurance": "finite exact two-sided roundtrip including sigma and sign"})
     return summary
 
 
@@ -529,6 +564,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
+    if not __debug__:
+        raise SystemExit("Verification requires assertions enabled; omit -O")
     report = run_verification()
     rendered = json.dumps(report, indent=2) + "\n"
     if args.output:

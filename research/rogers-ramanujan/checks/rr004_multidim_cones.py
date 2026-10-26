@@ -1,20 +1,10 @@
-"""RR004: 6D Ferrers Cone Decomposition and Universal 3D Octant Recursion (a >= 3).
+"""RR004 candidate Ferrers cone and octant constructions.
 
-Implements Christopher Yamba's d-dimensional Ferrers diagram insight for the
-Kanade--Russell I_1 (KR1) identity (B <-> U <-> C <-> A):
-1. The 6D Cone Theorem on (10^z, 9^y, 8^x, 6^{c_6}, 3^{c_3}, 1^{c_1}), proving
-   that every head (x, y, z) with y in {1, 2} and x + z >= 1 (0 <= z <= 3) spans
-   a 3D Ferrers octant (c_6, c_3, c_1) in N^3 inside U \\ U_{a <= 2}.
-2. Universal closed-form forward (`reconstruct_a3_b0`) and inverse (`decompose_a3_b0`)
-   bijections for the entire infinite sector (a = 3, b = 0, forall mu in Par(<=3)),
-   routing (q_2 >= 4, d_3 >= 1) into the 6D cone (10, 9, 9, 8, 6^{q_2-4}, 3^{d_3-1})
-   so it is 100% disjoint from U_{a <= 2} for all N -> infinity.
-3. Universal lookup-free 3D Ferrers octant operator triple:
-   - `step_one` / `unstep_one` (weight +1 along d_1 = mu_{a-1} - mu_{a-2}),
-   - `step_three` / `unstep_three` (weight +3 along d_3 = mu_{a-3} - mu_{a-4}),
-   - `step_six` / `unstep_six` (weight +6 along q_2 = floor((mu_{a-2} - mu_{a-3}) / 3)),
-   reducing all 3,709 states of a >= 3 across 0 <= N <= 40 to 78 octant apexes and
-   verifying the complete round-trip bijection B <-> U <-> C <-> A across 0 <= N <= 40.
+Exact finite evidence only: full roundtrips verified for 0<=N<=40.
+The higher-sector construction uses the explicit OCTANT_APEX_PAIRS table.
+The present rules fail at N=41 (both missing apexes and a lower-sector collision).
+The a=3,b=0 formulas and arithmetic identities remain useful separate targets;
+finite checks of their maps do not establish an all-weight KR1 bijection.
 """
 from __future__ import annotations
 
@@ -102,7 +92,7 @@ def unstep_one(u: tuple[int, ...]) -> tuple[int, ...] | None:
 
 
 def reconstruct_a3_b0(c: kr1.ClusterData) -> tuple[int, ...]:
-    """Universal forward map for the infinite 3D sector (a = 3, b = 0, forall mu in Par(<=3))."""
+    """Candidate forward map for a=3,b=0; finite assurance is reported separately."""
     if not (c.a == 3 and c.b == 0):
         raise OutsideRestrictedDomain()
     d3 = c.mu[0]
@@ -145,7 +135,7 @@ def reconstruct_a3_b0(c: kr1.ClusterData) -> tuple[int, ...]:
 
 
 def decompose_a3_b0(u: tuple[int, ...]) -> kr1.ClusterData:
-    """Universal closed-form inverse of reconstruct_a3_b0(c)."""
+    """Candidate inverse of reconstruct_a3_b0; not an all-weight proof."""
     d1 = 0
     core = u
     while True:
@@ -616,6 +606,25 @@ def verify_roundtrip_n26(max_n: int = 26) -> int:
     return verify_roundtrip(max_n)
 
 
+def higher_sector_apex_summary(max_n=40):
+    """Count reached cluster-coordinate apexes, including the special a3,b0 sector."""
+    apexes = set()
+    states = 0
+    for n in range(max_n + 1):
+        for c in kr1.cluster_data(n):
+            if c.a < 3:
+                continue
+            states += 1
+            a = c.a
+            prev = c.mu[a - 4] if a >= 4 else 0
+            r = (c.mu[a - 2] - c.mu[a - 3]) % 3
+            apexes.add(kr1.ClusterData(a, c.b, c.mu[:a-3] + (prev, prev+r, prev+r), c.nu))
+    return {"max_weight": max_n, "higher_states": states,
+            "distinct_cluster_apexes": len(apexes),
+            "special_a3_b0_apexes": sum(c.a == 3 and c.b == 0 for c in apexes),
+            "explicit_lookup_entries": len(OCTANT_APEX_PAIRS)}
+
+
 def run_verification():
     cone_states = verify_6d_cone_theorem()
     a3_b0_states_n35 = verify_a3_b0_sector(35)
@@ -623,7 +632,11 @@ def run_verification():
     roundtrip_states_n26 = verify_roundtrip(26)
     roundtrip_states_n40 = verify_roundtrip(40)
     return {
-        "status": "passed",
+        "status": "passed_finite_checks",
+        "full_bijection_all_weights": "refuted_for_current_rules_at_N41",
+        "apex_summary": higher_sector_apex_summary(),
+        "uses_finite_apex_lookup": True,
+        "cone_bounds": {"y": [1, 2], "z": [0, 3], "x": [0, 3], "c6_c3_c1_each": [0, 4]},
         "six_dim_cone_states_verified": cone_states,
         "a3_b0_states_verified_up_to_n35": a3_b0_states_n35,
         "a3_b0_states_verified_up_to_n40": a3_b0_states_n40,
@@ -636,6 +649,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
+    if not __debug__:
+        raise SystemExit("Verification requires assertions enabled; omit -O")
     report = run_verification()
     rendered = json.dumps(report, indent=2) + "\n"
     if args.output:
