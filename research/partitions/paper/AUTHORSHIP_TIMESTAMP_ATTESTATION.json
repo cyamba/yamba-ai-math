@@ -19,7 +19,7 @@
     "research/rogers-ramanujan/checks/rr004_multidim_cones.py": "bbea4930088406dcca96876d8714e7272f5b9c89914d42f2da818441814f20b2",
     "research/partitions/paper/multidimensional_ferrers_article.tex": "b1460e7ceadb4fa466750c2a86a3259f45bb9d23579d8fde884508abe33e9be1",
     "research/partitions/paper/multidimensional_ferrers_article.pdf": "c107c193ad9308f3ce0a6fcaa50c58e0a93e268679c9b28cf23f9878b856df79",
-    "research/partitions/paper/multidimensional_ferrers_article.md": "75fa8d7fef32932553ccf728d0a24ddbb871b1a98b5905406754caebd57bb9aa",
+    "research/partitions/paper/multidimensional_ferrers_article.md": "61c0672097fcada1d380fa0f79f2a7f283e0568e63e02f512e06e7a3df5c56d0",
     "research/rogers-ramanujan/rr004/UNIFORM_D_DIM_RECURSION_PROGRAM.md": "17f39821f4acf7a686dc9ece4b49b557710d625345975240c433244dcbebd463",
     "research/rogers-ramanujan/checks/rr004_extension_probe.py": "2766cfbbf9081a32d15335eb944a698879adbb2e78145e08719f351fc329b659",
     "tests/test_multidimensional_review.py": "54dab905339d3d094459d07d8fe2c9015f72b23d684502e90ee6e82d671873db",
@@ -27,11 +27,12 @@
     "research/partitions/evidence/multidimensional_ferrers_review_verification.json": "47e5db4850eda9d469124c134e1f6745a896836a2bbc7f307b256a36a96d0511",
     "research/partitions/evidence/rr004_multidim_review_verification.json": "c07c85daed154d7e7dd4686ffb613b310464b44f76fbe328e356f3639349c24a",
     "research/partitions/evidence/rr004_extension_probe.json": "f730492437e3d5e9e60604985ea617ee57a54f8d1724dabe5d029d394e46bef2",
-    "research/partitions/evidence/lean_std_ci_2026-10-26.json": "1c404bd66791b006a7ebf7d90486e570d7e91acd667962ef4579c107aafacc28"
+    "research/partitions/evidence/lean_std_ci_2026-10-26.json": "1c404bd66791b006a7ebf7d90486e570d7e91acd667962ef4579c107aafacc28",
+    "research/partitions/paper/ERRATA_2026-10-26.md": "453eebbe1a82efd50a6f9925a4bc2a913c4e85c28c3bfed2750afbb580aaa9ac"
   },
   "revision": 2,
   "revision_date": "2026-10-26",
-  "status": "corrected research draft; full KR1 candidate refuted at weight 41",
+  "status": "corrected research preprint with erratum; full KR1 candidate refuted at weight 41",
   "revision_prepared_by": "Codex; separate mathematical critic",
   "lean_revision_run": "fresh GitHub CI Std rebuild passed: 73 theorem reports, run40395785453/job121828317025; local toolchain unavailable"
 }

@@ -83,7 +83,7 @@ The $n=6$ algorithm processes tableaux in the implementation's fixed enumeration
 
 ## 3. Universal signed-array cascade
 
-The Lean theorem `cascade_split_preserves_all` proves the specified local toggle
+The Lean theorem `cascade_split_preserves_all` states the specified local toggle
 
 $$((p,[]),(q,b::as))\longleftrightarrow((q,as),(p,[b]))$$
 
@@ -149,7 +149,7 @@ The existing verification record reports 19 theorems in [`research/partitions/le
 | `MultidimensionalFerrers.kr1_head_offset_identity` | $Q(a, b) = 3b(b+1) + a^2 + 3(a-1)b$ for $a \ge 1$. |
 | `MultidimensionalFerrers.kr1_a3_core_weight` | $3(b+2) + 3(b+1) + 3b(b+1) = Q(3, b)$. |
 | `MultidimensionalFerrers.kr1_a3_b0_octant_weight` | $(9 + 2r_2) + 6q_2 + 3d_3 + d_1 = Q(3, 0) + 3d_3 + 2(3q_2 + r_2) + d_1$. |
-| `MultidimensionalFerrers.kr1_a3_b0_6d_cone_routing_weight` | $10 + 9 + 9 + 8 + 6(q_2-4) + 3(d_3-1) + d_1 = Q(3, 0) + 3d_3 + 6q_2 + d_1$. |
+| `MultidimensionalFerrers.kr1_a3_b0_6d_cone_routing_weight` | $10 + 9 + 9 + 8 + 6(q_2-4) + 3(d_3-1) + d_1 = Q(3, 0) + 3d_3 + 6q_2 + d_1$ for $q_2\ge4,d_3\ge1$. |
 | `MultidimensionalFerrers.kr1_higher_octant_weight` | $(W_{\mathrm{base}} + 2r_2) + 6q_2 + 3d_3 + d_1 = W_{\mathrm{base}} + 3d_3 + 2(3q_2 + r_2) + d_1$. |
 | `MultidimensionalFerrers.kr1_a4_a5_a6_apex_weights` | Apex weights $(8,8) \mapsto Q(4,0)$, $(15,9,1) \mapsto Q(5,0)$, $(18,10,8) \mapsto Q(6,0) = 3Q(0,2)$. |
 
@@ -157,6 +157,8 @@ The existing verification record reports 19 theorems in [`research/partitions/le
 
 
 ## 7. Revision and artifact provenance
+
+A public correction notice accompanies this edition: [ERRATA_2026-10-26.md](ERRATA_2026-10-26.md).
 
 Christopher Yamba's original geometric proposal motivated this investigation; novelty of the constructions has not been established by a systematic prior-work audit. Revision 2 corrects the rotation selection and determinant permutation recovery while preserving valid local lemmas and finite results. The original timestamp records provenance, not a claim that these corrections or checks existed then.
 
