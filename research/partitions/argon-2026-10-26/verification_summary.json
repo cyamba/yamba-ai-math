@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "assurance": "written proofs with separate semantic review; finite checks support implementation/transcription; no new Lean certificate",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.4013,
+      "output_tail": "\n----------------------------------------------------------------------\nRan 107 tests in 3.303s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_repository.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.053,
+      "output_tail": "passed"
+    },
+    {
+      "command": [
+        "python3",
+        "research/partitions/argon-2026-10-26/cone_author.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.3491,
+      "output_tail": "passed"
+    },
+    {
+      "command": [
+        "python3",
+        "research/partitions/argon-2026-10-26/sector_checks.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.9626,
+      "output_tail": "passed"
+    },
+    {
+      "command": [
+        "python3",
+        "research/partitions/argon-2026-10-26/probe_repair.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.0409,
+      "output_tail": "passed"
+    },
+    {
+      "command": [
+        "python3",
+        "research/partitions/argon-2026-10-26/critic_checks.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.1291,
+      "output_tail": "passed"
+    }
+  ],
+  "source_sha256": {
+    "research/partitions/argon-2026-10-26/capacity_proof.md": "822da465f8cc884b0c6acd70a16595435f129604d5846006c94197fcacd31b44",
+    "research/partitions/argon-2026-10-26/cone_author.py": "9a09600cd3daf0e653937e0059fad53c67f5cb7741e1f9f738b9fc878732a2a7",
+    "research/partitions/argon-2026-10-26/cone_evidence.json": "c5b0115223c31129bc6e6de9fb9fb0e91143be08f4680d52f697c1928d97fa9d",
+    "research/partitions/argon-2026-10-26/cone_proof.md": "e72c37a4534701b04635515a492808c5621db8590e8ec55de01c51869d79712e",
+    "research/partitions/argon-2026-10-26/contract.md": "e21ceae80b4a3eb79cdc3f1fb20e366c3d903121dedd6bfbaf230e4dfaf025e0",
+    "research/partitions/argon-2026-10-26/critic-evidence.json": "9a5a6777b31e861e1aab9ce55525c7bb2d380bcabc1a4f31dfabbc565b2d8e0e",
+    "research/partitions/argon-2026-10-26/critic_checks.py": "b55f4f70593849cd39312988071f3810354de4d272ab7de1f6e17ec6701f8a3d",
+    "research/partitions/argon-2026-10-26/input_provenance.json": "3b81a38dc261276ad56ca2608908008a03f8938635fa884e15fe1755c85e072b",
+    "research/partitions/argon-2026-10-26/probe_repair.py": "1e359c984f7370ffaf79ea4f2f78ce0665ad448d0f45e44d858044c3fe2a5d61",
+    "research/partitions/argon-2026-10-26/repair_audit.md": "6c4f1d04d291800d1aa79d4eaf012a105f4e67032f45a627f73231d9d32ff145",
+    "research/partitions/argon-2026-10-26/repair_probe.json": "fd598815cdaaa3a44c39c29409f2e2892e9de3215a60d1beee6dccb77f07bf86",
+    "research/partitions/argon-2026-10-26/restricted_sector_proof.md": "e8ca0f2f7a553c65f4460ff16d9913a989766afe7eaa13e1ec0c1b9a7f38baa8",
+    "research/partitions/argon-2026-10-26/result.md": "2b0bb2c6404531253bbc92d4c758941bef75cd241656d756a79a36871c0b831f",
+    "research/partitions/argon-2026-10-26/review-round1.md": "b9c5e4102ee0a99b7a6dd991ac60c15665af67130b6e146bd43370fd9c92f459",
+    "research/partitions/argon-2026-10-26/sector_checks.py": "dd06c1090d974fd35be7cbd30688eba4591a62e7166797aea1af691d93049001",
+    "research/partitions/argon-2026-10-26/sector_evidence.json": "1198ede80a662c54612aca30aeb247f2440a38a242c83d7e5e3116c5e5bf0522",
+    "research/rogers-ramanujan/checks/six_weight_cones.py": "4a2df4fb996da4ee5cc23c39c7a24b8726eca336201734af64fe2d301de28d57",
+    "tests/test_argon_cones.py": "9d59e529751f2a0b16ff24107f005fc8b4d2d917bff336e8b75eb9556b46dd94"
+  },
+  "original_input_sha256": "5c86926416fce825c8ff8e68471a1918493ddf0f248dc57f15a12ebe8afbd9a9",
+  "original_input_pages": 15,
+  "repository_tests_passed": 107,
+  "global_KR1": "unresolved; previous N41 refutation preserved",
+  "early_nonmathematical_failure": "Repository link checker initially saw absent review-round1.md while reviewer was still writing; passed after review artifact was completed.",
+  "post_review_followup": "Assurance wording updated after review; critic CLI rejects -O. Both affected finite scripts rerun successfully; repository checker passed. No theorem or algorithm changed."
+}

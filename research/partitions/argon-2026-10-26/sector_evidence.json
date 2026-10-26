@@ -1,0 +1,20 @@
+{
+  "status": "passed_bounded_transcription_checks",
+  "checks": 4329,
+  "coordinate_bounds": {
+    "s": [
+      0,
+      12
+    ],
+    "t": [
+      0,
+      36
+    ],
+    "d": [
+      0,
+      8
+    ]
+  },
+  "all_parameter_theorem_assurance": "written proof, not established by this finite check",
+  "max_weight_in_box": 125
+}
