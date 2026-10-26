@@ -53,7 +53,12 @@ prove all terminal and lower-image exclusions. No general KR1 bijection is claim
   additional scope corrections cover the n6 rotation hypotheses and cascade.
 - Existing Lean files are unchanged. Their historical verification record is
   retained; all listed source hashes were checked for correspondence.
-- Fresh Lean verification could not run: Lean 4.34.0 / lake is not installed.
+- Fresh local Lean verification could not run: Lean 4.34.0 / lake is not installed.
+- Subsequently GitHub CI freshly rebuilt the unchanged Lean Std certificate: 73
+  theorem reports, successful job 121828317025, run 40395785453, merge checkout
+  b1510c5be1fc65553015d6c25815bd7037ba1b05 including research head f344f7c.
+  The downloaded CI record lean_std_ci_2026-10-26.json matches all 10 source hashes.
+  CI artifact ID: 12686498136. The separate mathlib job was still in progress.
 - PDF rebuilt with pdflatex and visually inspected; no overfull boxes after layout repair.
 - Website Astro production build passes (49 pages). Publication PR remains draft.
 - New finite reports live beside this note. Run Python without -O; verifier CLIs

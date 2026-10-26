@@ -127,7 +127,7 @@ Promising next steps are to classify image signatures so higher-sector operators
 
 ## 6. Supplementary Lean 4 Formal Verification Index
 
-Lean 4.34.0 was unavailable for a fresh run in this revision environment. The unchanged Lean sources retain their historical source-bound verification record.
+Lean was unavailable locally. GitHub CI subsequently rebuilt the unchanged Lean 4.34.0 certificate (73 theorem reports); the fresh source-bound record is [lean_std_ci_2026-10-26.json](../evidence/lean_std_ci_2026-10-26.json).
 
 The existing verification record reports 19 theorems in [`research/partitions/lean/MultidimensionalFerrers.lean`](../lean/MultidimensionalFerrers.lean) verified with Lean 4.34.0 (`Std` only, zero external dependencies, zero `sorry`, standard axioms `{propext, Quot.sound, Classical.choice}` recorded in [`research/partitions/lean/verification.json`](../lean/verification.json)):
 
