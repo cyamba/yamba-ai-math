@@ -1,5 +1,19 @@
 # Rogers–Ramanujan bijections: research setup
 
+Small incoming results go in the [contribution ledger](contributions.md), using
+the [intake guide](../../.agents/kr1-contribution-intake.md). Reviewed supporting
+lemmas remain separate from integrated progress toward the complete bijection.
+
+## 27 October 2026: exact separated compiler component
+
+The [supplied lookup-free compiler audit](separated-2026-10-27/result.md)
+proves its exact valid domain, a bijection onto intrinsic separated
+singleton/pair blocks, and a positive generating function for that image.
+The unrestricted formula is refuted at weight10 despite being injective.
+Written proofs received separate semantic review; checks cover weights0..60.
+This restricted cluster endpoint does not resolve the residue-to-cluster bridge.
+Novelty is not verified and no new Lean certificate is claimed.
+
 ## Current checkpoint — RR004
 
 **RR004 closed; complete KR1 unresolved.** The

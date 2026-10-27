@@ -1,0 +1,607 @@
+{
+  "date": "2026-10-27",
+  "scope": "finite audit of restricted cluster-to-gap endpoint",
+  "novelty": "NOT VERIFIED",
+  "formal_certificate": false,
+  "maximum_weight": 60,
+  "first_invalid_literal_output": {
+    "weight": 10,
+    "a": 1,
+    "b": 1,
+    "mu": [
+      0
+    ],
+    "nu": [
+      3
+    ],
+    "output": [
+      4,
+      3,
+      3
+    ]
+  },
+  "totals": {
+    "cluster_count": 55403,
+    "gap_count": 55403,
+    "invalid_literal_outputs": 13727,
+    "raw_collisions": 0,
+    "separated_count": 41676,
+    "nonseparated_target_count": 13727
+  },
+  "window_41_60": {
+    "cluster_count": 49942,
+    "invalid_literal_outputs": 12787,
+    "raw_collisions": 0,
+    "separated_count": 37155
+  },
+  "exact_checks": [
+    "literal compiler vs attachment",
+    "three independent counts B, C, gap targets",
+    "exact validity iff boundary inequality",
+    "raw injectivity",
+    "both restricted inverse identities",
+    "intrinsic image coverage",
+    "positive series per (a,b) sector",
+    "safe restriction equals existing merge; broad merge finite roundtrip"
+  ],
+  "elapsed_seconds": 2.702648,
+  "peak_rss_kib": 18696,
+  "source_sha256": {
+    "research/rogers-ramanujan/separated-2026-10-27/audit.py": "407aee70d264b17ac58a30837910a26ccf123d105c3fa542baf0c6efac12976c",
+    "research/rogers-ramanujan/checks/separated_pairs.py": "722fdba8edd9f06f28ec62599ba0f9acb71d84022d92de1f5e1ab86edb5bbb6b",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_cluster_merge.py": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19"
+  },
+  "reports": [
+    {
+      "n": 0,
+      "cluster_count": 1,
+      "gap_count": 1,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 1,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 1,
+      "cluster_count": 1,
+      "gap_count": 1,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 1,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 2,
+      "cluster_count": 1,
+      "gap_count": 1,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 1,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 3,
+      "cluster_count": 2,
+      "gap_count": 2,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 2,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 4,
+      "cluster_count": 2,
+      "gap_count": 2,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 2,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 5,
+      "cluster_count": 2,
+      "gap_count": 2,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 2,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 6,
+      "cluster_count": 4,
+      "gap_count": 4,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 4,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 7,
+      "cluster_count": 4,
+      "gap_count": 4,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 4,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 8,
+      "cluster_count": 5,
+      "gap_count": 5,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 5,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 9,
+      "cluster_count": 7,
+      "gap_count": 7,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 7,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 10,
+      "cluster_count": 8,
+      "gap_count": 8,
+      "invalid_literal_outputs": 1,
+      "raw_collisions": 0,
+      "separated_count": 7,
+      "nonseparated_target_count": 1
+    },
+    {
+      "n": 11,
+      "cluster_count": 9,
+      "gap_count": 9,
+      "invalid_literal_outputs": 1,
+      "raw_collisions": 0,
+      "separated_count": 8,
+      "nonseparated_target_count": 1
+    },
+    {
+      "n": 12,
+      "cluster_count": 13,
+      "gap_count": 13,
+      "invalid_literal_outputs": 0,
+      "raw_collisions": 0,
+      "separated_count": 13,
+      "nonseparated_target_count": 0
+    },
+    {
+      "n": 13,
+      "cluster_count": 14,
+      "gap_count": 14,
+      "invalid_literal_outputs": 1,
+      "raw_collisions": 0,
+      "separated_count": 13,
+      "nonseparated_target_count": 1
+    },
+    {
+      "n": 14,
+      "cluster_count": 16,
+      "gap_count": 16,
+      "invalid_literal_outputs": 1,
+      "raw_collisions": 0,
+      "separated_count": 15,
+      "nonseparated_target_count": 1
+    },
+    {
+      "n": 15,
+      "cluster_count": 21,
+      "gap_count": 21,
+      "invalid_literal_outputs": 1,
+      "raw_collisions": 0,
+      "separated_count": 20,
+      "nonseparated_target_count": 1
+    },
+    {
+      "n": 16,
+      "cluster_count": 24,
+      "gap_count": 24,
+      "invalid_literal_outputs": 2,
+      "raw_collisions": 0,
+      "separated_count": 22,
+      "nonseparated_target_count": 2
+    },
+    {
+      "n": 17,
+      "cluster_count": 27,
+      "gap_count": 27,
+      "invalid_literal_outputs": 2,
+      "raw_collisions": 0,
+      "separated_count": 25,
+      "nonseparated_target_count": 2
+    },
+    {
+      "n": 18,
+      "cluster_count": 35,
+      "gap_count": 35,
+      "invalid_literal_outputs": 3,
+      "raw_collisions": 0,
+      "separated_count": 32,
+      "nonseparated_target_count": 3
+    },
+    {
+      "n": 19,
+      "cluster_count": 39,
+      "gap_count": 39,
+      "invalid_literal_outputs": 5,
+      "raw_collisions": 0,
+      "separated_count": 34,
+      "nonseparated_target_count": 5
+    },
+    {
+      "n": 20,
+      "cluster_count": 45,
+      "gap_count": 45,
+      "invalid_literal_outputs": 5,
+      "raw_collisions": 0,
+      "separated_count": 40,
+      "nonseparated_target_count": 5
+    },
+    {
+      "n": 21,
+      "cluster_count": 55,
+      "gap_count": 55,
+      "invalid_literal_outputs": 5,
+      "raw_collisions": 0,
+      "separated_count": 50,
+      "nonseparated_target_count": 5
+    },
+    {
+      "n": 22,
+      "cluster_count": 62,
+      "gap_count": 62,
+      "invalid_literal_outputs": 8,
+      "raw_collisions": 0,
+      "separated_count": 54,
+      "nonseparated_target_count": 8
+    },
+    {
+      "n": 23,
+      "cluster_count": 70,
+      "gap_count": 70,
+      "invalid_literal_outputs": 9,
+      "raw_collisions": 0,
+      "separated_count": 61,
+      "nonseparated_target_count": 9
+    },
+    {
+      "n": 24,
+      "cluster_count": 86,
+      "gap_count": 86,
+      "invalid_literal_outputs": 10,
+      "raw_collisions": 0,
+      "separated_count": 76,
+      "nonseparated_target_count": 10
+    },
+    {
+      "n": 25,
+      "cluster_count": 96,
+      "gap_count": 96,
+      "invalid_literal_outputs": 13,
+      "raw_collisions": 0,
+      "separated_count": 83,
+      "nonseparated_target_count": 13
+    },
+    {
+      "n": 26,
+      "cluster_count": 109,
+      "gap_count": 109,
+      "invalid_literal_outputs": 15,
+      "raw_collisions": 0,
+      "separated_count": 94,
+      "nonseparated_target_count": 15
+    },
+    {
+      "n": 27,
+      "cluster_count": 130,
+      "gap_count": 130,
+      "invalid_literal_outputs": 17,
+      "raw_collisions": 0,
+      "separated_count": 113,
+      "nonseparated_target_count": 17
+    },
+    {
+      "n": 28,
+      "cluster_count": 146,
+      "gap_count": 146,
+      "invalid_literal_outputs": 22,
+      "raw_collisions": 0,
+      "separated_count": 124,
+      "nonseparated_target_count": 22
+    },
+    {
+      "n": 29,
+      "cluster_count": 164,
+      "gap_count": 164,
+      "invalid_literal_outputs": 25,
+      "raw_collisions": 0,
+      "separated_count": 139,
+      "nonseparated_target_count": 25
+    },
+    {
+      "n": 30,
+      "cluster_count": 195,
+      "gap_count": 195,
+      "invalid_literal_outputs": 29,
+      "raw_collisions": 0,
+      "separated_count": 166,
+      "nonseparated_target_count": 29
+    },
+    {
+      "n": 31,
+      "cluster_count": 217,
+      "gap_count": 217,
+      "invalid_literal_outputs": 37,
+      "raw_collisions": 0,
+      "separated_count": 180,
+      "nonseparated_target_count": 37
+    },
+    {
+      "n": 32,
+      "cluster_count": 245,
+      "gap_count": 245,
+      "invalid_literal_outputs": 41,
+      "raw_collisions": 0,
+      "separated_count": 204,
+      "nonseparated_target_count": 41
+    },
+    {
+      "n": 33,
+      "cluster_count": 285,
+      "gap_count": 285,
+      "invalid_literal_outputs": 48,
+      "raw_collisions": 0,
+      "separated_count": 237,
+      "nonseparated_target_count": 48
+    },
+    {
+      "n": 34,
+      "cluster_count": 319,
+      "gap_count": 319,
+      "invalid_literal_outputs": 58,
+      "raw_collisions": 0,
+      "separated_count": 261,
+      "nonseparated_target_count": 58
+    },
+    {
+      "n": 35,
+      "cluster_count": 357,
+      "gap_count": 357,
+      "invalid_literal_outputs": 65,
+      "raw_collisions": 0,
+      "separated_count": 292,
+      "nonseparated_target_count": 65
+    },
+    {
+      "n": 36,
+      "cluster_count": 415,
+      "gap_count": 415,
+      "invalid_literal_outputs": 75,
+      "raw_collisions": 0,
+      "separated_count": 340,
+      "nonseparated_target_count": 75
+    },
+    {
+      "n": 37,
+      "cluster_count": 461,
+      "gap_count": 461,
+      "invalid_literal_outputs": 90,
+      "raw_collisions": 0,
+      "separated_count": 371,
+      "nonseparated_target_count": 90
+    },
+    {
+      "n": 38,
+      "cluster_count": 517,
+      "gap_count": 517,
+      "invalid_literal_outputs": 101,
+      "raw_collisions": 0,
+      "separated_count": 416,
+      "nonseparated_target_count": 101
+    },
+    {
+      "n": 39,
+      "cluster_count": 592,
+      "gap_count": 592,
+      "invalid_literal_outputs": 114,
+      "raw_collisions": 0,
+      "separated_count": 478,
+      "nonseparated_target_count": 114
+    },
+    {
+      "n": 40,
+      "cluster_count": 660,
+      "gap_count": 660,
+      "invalid_literal_outputs": 136,
+      "raw_collisions": 0,
+      "separated_count": 524,
+      "nonseparated_target_count": 136
+    },
+    {
+      "n": 41,
+      "cluster_count": 735,
+      "gap_count": 735,
+      "invalid_literal_outputs": 153,
+      "raw_collisions": 0,
+      "separated_count": 582,
+      "nonseparated_target_count": 153
+    },
+    {
+      "n": 42,
+      "cluster_count": 840,
+      "gap_count": 840,
+      "invalid_literal_outputs": 173,
+      "raw_collisions": 0,
+      "separated_count": 667,
+      "nonseparated_target_count": 173
+    },
+    {
+      "n": 43,
+      "cluster_count": 931,
+      "gap_count": 931,
+      "invalid_literal_outputs": 203,
+      "raw_collisions": 0,
+      "separated_count": 728,
+      "nonseparated_target_count": 203
+    },
+    {
+      "n": 44,
+      "cluster_count": 1038,
+      "gap_count": 1038,
+      "invalid_literal_outputs": 228,
+      "raw_collisions": 0,
+      "separated_count": 810,
+      "nonseparated_target_count": 228
+    },
+    {
+      "n": 45,
+      "cluster_count": 1175,
+      "gap_count": 1175,
+      "invalid_literal_outputs": 259,
+      "raw_collisions": 0,
+      "separated_count": 916,
+      "nonseparated_target_count": 259
+    },
+    {
+      "n": 46,
+      "cluster_count": 1304,
+      "gap_count": 1304,
+      "invalid_literal_outputs": 300,
+      "raw_collisions": 0,
+      "separated_count": 1004,
+      "nonseparated_target_count": 300
+    },
+    {
+      "n": 47,
+      "cluster_count": 1446,
+      "gap_count": 1446,
+      "invalid_literal_outputs": 336,
+      "raw_collisions": 0,
+      "separated_count": 1110,
+      "nonseparated_target_count": 336
+    },
+    {
+      "n": 48,
+      "cluster_count": 1634,
+      "gap_count": 1634,
+      "invalid_literal_outputs": 380,
+      "raw_collisions": 0,
+      "separated_count": 1254,
+      "nonseparated_target_count": 380
+    },
+    {
+      "n": 49,
+      "cluster_count": 1805,
+      "gap_count": 1805,
+      "invalid_literal_outputs": 436,
+      "raw_collisions": 0,
+      "separated_count": 1369,
+      "nonseparated_target_count": 436
+    },
+    {
+      "n": 50,
+      "cluster_count": 2002,
+      "gap_count": 2002,
+      "invalid_literal_outputs": 488,
+      "raw_collisions": 0,
+      "separated_count": 1514,
+      "nonseparated_target_count": 488
+    },
+    {
+      "n": 51,
+      "cluster_count": 2246,
+      "gap_count": 2246,
+      "invalid_literal_outputs": 549,
+      "raw_collisions": 0,
+      "separated_count": 1697,
+      "nonseparated_target_count": 549
+    },
+    {
+      "n": 52,
+      "cluster_count": 2482,
+      "gap_count": 2482,
+      "invalid_literal_outputs": 626,
+      "raw_collisions": 0,
+      "separated_count": 1856,
+      "nonseparated_target_count": 626
+    },
+    {
+      "n": 53,
+      "cluster_count": 2742,
+      "gap_count": 2742,
+      "invalid_literal_outputs": 697,
+      "raw_collisions": 0,
+      "separated_count": 2045,
+      "nonseparated_target_count": 697
+    },
+    {
+      "n": 54,
+      "cluster_count": 3070,
+      "gap_count": 3070,
+      "invalid_literal_outputs": 785,
+      "raw_collisions": 0,
+      "separated_count": 2285,
+      "nonseparated_target_count": 785
+    },
+    {
+      "n": 55,
+      "cluster_count": 3381,
+      "gap_count": 3381,
+      "invalid_literal_outputs": 890,
+      "raw_collisions": 0,
+      "separated_count": 2491,
+      "nonseparated_target_count": 890
+    },
+    {
+      "n": 56,
+      "cluster_count": 3734,
+      "gap_count": 3734,
+      "invalid_literal_outputs": 989,
+      "raw_collisions": 0,
+      "separated_count": 2745,
+      "nonseparated_target_count": 989
+    },
+    {
+      "n": 57,
+      "cluster_count": 4158,
+      "gap_count": 4158,
+      "invalid_literal_outputs": 1107,
+      "raw_collisions": 0,
+      "separated_count": 3051,
+      "nonseparated_target_count": 1107
+    },
+    {
+      "n": 58,
+      "cluster_count": 4578,
+      "gap_count": 4578,
+      "invalid_literal_outputs": 1250,
+      "raw_collisions": 0,
+      "separated_count": 3328,
+      "nonseparated_target_count": 1250
+    },
+    {
+      "n": 59,
+      "cluster_count": 5039,
+      "gap_count": 5039,
+      "invalid_literal_outputs": 1388,
+      "raw_collisions": 0,
+      "separated_count": 3651,
+      "nonseparated_target_count": 1388
+    },
+    {
+      "n": 60,
+      "cluster_count": 5602,
+      "gap_count": 5602,
+      "invalid_literal_outputs": 1550,
+      "raw_collisions": 0,
+      "separated_count": 4052,
+      "nonseparated_target_count": 1550
+    }
+  ],
+  "original_harness_sha256": "10895bbc59aaaa925c57ed8bb0288594d508ac1e49661848369b380932925364"
+}

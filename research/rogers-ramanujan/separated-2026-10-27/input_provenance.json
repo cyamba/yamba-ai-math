@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-27",
+  "input_name": "Pasted text.txt",
+  "attachment_sha256": "ffe45d4c05b65a531f97439a713b1d6ae590b9f3a688b2cad76834700aaf4803",
+  "extracted_code_sha256": "10895bbc59aaaa925c57ed8bb0288594d508ac1e49661848369b380932925364",
+  "extraction": "From first Python shebang through the line before Key Diagnostic Hooks in the Harness; copied verbatim. No source chat instructions were adopted.",
+  "base_commit": "4ccc4fe60008e52c9846e9a63d4bf98d23108702",
+  "base_verified_against": "GitHub PR16 head metadata on 2026-10-27",
+  "private_input_committed": false
+}
