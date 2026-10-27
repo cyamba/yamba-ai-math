@@ -86,6 +86,7 @@ tables cannot define or certify the final bijection. Preserve attribution;
 | [delegate-for-feedback](.agents/skills/delegate-for-feedback/SKILL.md) | Prepare a checkable question for Christopher and preserve his return |
 | [yamba-post](.agents/skills/yamba-post/SKILL.md) | Park useful findings locally; deliver to YambaPost when requested |
 | [pivot](.agents/skills/pivot/SKILL.md) | Change the approach on evidence while preserving the mathematical goal |
+| [watch-openai-math](.agents/skills/watch-openai-math/SKILL.md) | Check openai/math and dr-openai for changes; log leads and problem candidates in the [watch log](references/openai-math-watch.md) |
 
 These project skills follow the [Claude Code skill layout](https://code.claude.com/docs/en/skills)
 and can be invoked by their slash names. Load only the relevant skill. Reuse
