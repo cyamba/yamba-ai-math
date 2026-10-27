@@ -1,0 +1,216 @@
+{
+  "started_utc": "2026-10-27T18:31:58.624492+00:00",
+  "scope": "Selected universal Lean lemmas and finite mathematical regressions",
+  "full_kr1_bijection": false,
+  "full_word_encoding_formalized": false,
+  "novelty_verified": false,
+  "runner_sha256": "20262f852d56ebb9378e3e54edc4a464b9bbac2fa4bdd3dc1bfcc63f56e758a5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "mode": "all",
+  "full_finite_check_requested": false,
+  "runs": [
+    {
+      "name": "lean-version",
+      "command": [
+        "/tmp/lean-4.34.0-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.035774,
+      "log": "lean-version.log",
+      "log_sha256": "cf6e65bfc214882b1c13717aae89d383a03f6bcf5c96dfbae13368cd3e07ff9d",
+      "source_sha256": {}
+    },
+    {
+      "name": "lean-Blocks",
+      "command": [
+        "/tmp/lean-4.34.0-linux/bin/lean",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/lean/Blocks.lean"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.939289,
+      "log": "lean-Blocks.log",
+      "log_sha256": "06a0ad65cd994eaf9181850daff58b5917c6cf32090dff77e6117cbea902e4b8",
+      "source_sha256": {
+        "lean/Blocks.lean": "230ad08890236797de73c7e1634aebc55e7e7c1a8a7491f4c9db8d109cb01cdc"
+      },
+      "sorryAx_in_output": false
+    },
+    {
+      "name": "lean-Cancellation",
+      "command": [
+        "/tmp/lean-4.34.0-linux/bin/lean",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/lean/Cancellation.lean"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.452435,
+      "log": "lean-Cancellation.log",
+      "log_sha256": "ec17a208dff57b924167c822691b730c48c1a2e3447d14b378caa27a07a31445",
+      "source_sha256": {
+        "lean/Cancellation.lean": "baa9fb7874c5fec739631ab3137dee59e36d1c3befc7c635a41be3002685c2a5"
+      },
+      "sorryAx_in_output": false
+    },
+    {
+      "name": "lean-Entropy",
+      "command": [
+        "/tmp/lean-4.34.0-linux/bin/lean",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/lean/Entropy.lean"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.57201,
+      "log": "lean-Entropy.log",
+      "log_sha256": "a4d6036fb93b47cf28aef43928954617a1f20c6902b0e309da3ef6b61615ed5a",
+      "source_sha256": {
+        "lean/Entropy.lean": "9cc8fee5dfe19b425756d9f9dbdd006a66203e1c9cc5381963408e53973c763a"
+      },
+      "sorryAx_in_output": false
+    },
+    {
+      "name": "lean-MergeBounds",
+      "command": [
+        "/tmp/lean-4.34.0-linux/bin/lean",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/lean/MergeBounds.lean"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.611771,
+      "log": "lean-MergeBounds.log",
+      "log_sha256": "b7c407300853f62d50570a2e7df607bf0387345c46ebf017f10362b87edc427c",
+      "source_sha256": {
+        "lean/MergeBounds.lean": "e0fb3928a1b6cee451f29c1f90bd5ea5389856bd5058a6b8db1fbbde8d2a7578"
+      },
+      "sorryAx_in_output": false
+    },
+    {
+      "name": "local-surgery",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/theory/local_surgery.py"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.057629,
+      "log": "local-surgery.log",
+      "log_sha256": "d75e35380f68e4aae675dbc90a12d1732051eee702cd0f0da7f601751b495939",
+      "source_sha256": {
+        "theory/local_surgery.py": "b0ecccc30e440172872653f4c064e48d0c0b6e137fe17047173846cfe1bc0a67"
+      }
+    },
+    {
+      "name": "staircase-toggle",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/theory/staircase_toggle.py"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.534243,
+      "log": "staircase-toggle.log",
+      "log_sha256": "8b753727349710c383e14d229d20deca7649de105339700217f3ff62b8d9653d",
+      "source_sha256": {
+        "theory/staircase_toggle.py": "97c7972750292cc109ca41cd78c875ae982439b2455bfd729cf155d88b195a14"
+      }
+    },
+    {
+      "name": "lane-carries",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/construction/check_lane_carries.py"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.25429,
+      "log": "lane-carries.log",
+      "log_sha256": "4f6554670e90867c4e9d11e8c72f160d40f8a0f29c1bd49c8a7b58245d39c9e2",
+      "source_sha256": {
+        "construction/check_lane_carries.py": "ac0167bdafa3d33b2227a84145c154ba894016f5284757acf68194e68fdaa6d9",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+      }
+    },
+    {
+      "name": "height-blocks",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/construction/check_blocks.py"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.10846,
+      "log": "height-blocks.log",
+      "log_sha256": "f6ceecd63e4591e169d722a6af247ee4a4ca5e2c7d166c5a85500fc823dafad1",
+      "source_sha256": {
+        "construction/check_blocks.py": "5d0c8e3d37d4f475db3f6e77d768803a82c5881d2bdae8aa073316aebe020207",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+      }
+    },
+    {
+      "name": "recurrence-final",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/construction/check_recurrence_final.py"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 0.011758,
+      "log": "recurrence-final.log",
+      "log_sha256": "8bb8e9bb975b17109fff24700fdb3850bdd9f6c06d4ee4b2de55c773cbb4a978",
+      "source_sha256": {
+        "construction/check_recurrence_final.py": "0880793bc8de3098a07176f46b8d49f89007844c18d529f3d396ebc4dd1bb50f"
+      }
+    },
+    {
+      "name": "positive-coefficients",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/positive_coefficients.py",
+        "--output",
+        "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/verification/positive-coefficients.json"
+      ],
+      "cwd": "/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026",
+      "returncode": 0,
+      "seconds": 2.70877,
+      "log": "positive-coefficients.log",
+      "log_sha256": "8fd1f4f0883f7e2344832ce58483e4f57981a09acdc5c062905740929f01baa2",
+      "source_sha256": {
+        "positive_coefficients.py": "9b0f486d68bb5695c65811c23a1c8e844f3f74f57b776e0cfce355d64ce509a8"
+      }
+    }
+  ],
+  "lean_sources": {
+    "Blocks": {
+      "sha256": "230ad08890236797de73c7e1634aebc55e7e7c1a8a7491f4c9db8d109cb01cdc",
+      "theorem_declarations": 7,
+      "axiom_report_commands": 7,
+      "sorry_or_admit_token": false,
+      "added_axiom_declaration": false
+    },
+    "Cancellation": {
+      "sha256": "baa9fb7874c5fec739631ab3137dee59e36d1c3befc7c635a41be3002685c2a5",
+      "theorem_declarations": 12,
+      "axiom_report_commands": 7,
+      "sorry_or_admit_token": false,
+      "added_axiom_declaration": false
+    },
+    "Entropy": {
+      "sha256": "9cc8fee5dfe19b425756d9f9dbdd006a66203e1c9cc5381963408e53973c763a",
+      "theorem_declarations": 8,
+      "axiom_report_commands": 3,
+      "sorry_or_admit_token": false,
+      "added_axiom_declaration": false
+    },
+    "MergeBounds": {
+      "sha256": "e0fb3928a1b6cee451f29c1f90bd5ea5389856bd5058a6b8db1fbbde8d2a7578",
+      "theorem_declarations": 9,
+      "axiom_report_commands": 9,
+      "sorry_or_admit_token": false,
+      "added_axiom_declaration": false
+    }
+  },
+  "passed": true,
+  "finished_utc": "2026-10-27T18:32:04.914519+00:00"
+}

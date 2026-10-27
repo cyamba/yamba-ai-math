@@ -1,0 +1,624 @@
+{
+  "purpose": "Publication source and artifact inventory. Hashes attest to bytes, not mathematical validity.",
+  "base_commit": "39a4354524e15567037b913a8ad618b20815ed46",
+  "base_tree": "085db84d410044add3dba7bd365652d85f87f007",
+  "source_research_commit": "cc22667",
+  "manifest_path": "research/rogers-ramanujan/terra2026/publication-manifest.json",
+  "manifest_original_blob_sha": null,
+  "manifest_excluded_from_file_list": "Self excluded to avoid a recursive hash.",
+  "files": [
+    {
+      "path": "README.md",
+      "operation": "update",
+      "original_blob_sha": "fb84df63e9f0912ef2732e0cba821ccd0e3efca3",
+      "new_blob_sha": "fb3aeaf8c419e06902f06c9fc268f2299ca5f9b6",
+      "new_sha256": "4d6c8a92bb2e4626054fdc69664d25aa230765e18654d06ca1017b47d12fad87",
+      "bytes": 8964
+    },
+    {
+      "path": "research/rogers-ramanujan/publication/2026-10-27-positive-cut-words/README.md",
+      "operation": "update",
+      "original_blob_sha": "90c7d389e6e1d276b4f0c0ceeb4c87a0fd1b163b",
+      "new_blob_sha": "a24108a13ed8686dc45ca63156ef4d13d17cfc56",
+      "new_sha256": "1a037ce9ea0b2c000a0547610367b58e27a53b8196ee4e82796162295e7f434a",
+      "bytes": 406
+    },
+    {
+      "path": "research/rogers-ramanujan/publication/2026-10-27-positive-cut-words/article.md",
+      "operation": "update",
+      "original_blob_sha": "90ee77adb55153cce0b693614f9b2d0409fcd2f5",
+      "new_blob_sha": "2c47c4c39dbfa9f659b60e486989a6bfb523c406",
+      "new_sha256": "709f1d862854076b6b820a6b245aebd8bc4e77080f3a7179064eb0cf60bdbf86",
+      "bytes": 4355
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/KR1_Research_and_Lean_Supplement.zip",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "08400d287a21305e228863b95e37ebc081b1bd07",
+      "new_sha256": "5ed0bbb7dc24c9205efdb66984712df711884272a9f03ed7e84247bcc8ca5903",
+      "bytes": 1038821
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/README.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "f5dde19cd3d463eae33744f7c44bf99be6a2fa40",
+      "new_sha256": "a04f57491139d2316c53a7a1c4b2761194862ae7ed1605f6ecf2962b68c359dd",
+      "bytes": 6717
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/article-build.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "efb268f8b37700d0f8a4b9d9b8e35de18f96dae8",
+      "new_sha256": "5c83076f38357cd52f4ba74feff97d9a6e2b80c421ed0e9ebe4130b6abb71a2d",
+      "bytes": 17232
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/alln_word_review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "0779ebee1e5258ad6b12d3862c60d072a2547ed3",
+      "new_sha256": "b7027c325c2db759b570042307e81786b42b39c2dc653a89452a782d8c3123d4",
+      "bytes": 4580
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/block_reduction.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "16fde98058fb3b87f24457e6a80f67d39e1f5ef5",
+      "new_sha256": "8f49f9d6ab747ddbe0818d25d24da2bf9abba8569ec6bfa1aebc5b47ba1c568a",
+      "bytes": 6245
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/check_alln_word.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "acaf1777d62d2e5b7c963694d4b1c52c84340b26",
+      "new_sha256": "bf764c18909540da801d5e3c5d882c9551d733ac6f3f4117a30002e6728f1c47",
+      "bytes": 2512
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/check_blocks.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "2f7906ce82c9ed9a5420acd8ffe40f6f571e0471",
+      "new_sha256": "5d0c8e3d37d4f475db3f6e77d768803a82c5881d2bdae8aa073316aebe020207",
+      "bytes": 2497
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/check_lane_carries.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "f520fea6b2c185a332a1485fdd87b5d3c872e4e2",
+      "new_sha256": "ac0167bdafa3d33b2227a84145c154ba894016f5284757acf68194e68fdaa6d9",
+      "bytes": 3046
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/check_recurrence_final.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "39d94d454e9fb389e309115b02d1b363daf97615",
+      "new_sha256": "0880793bc8de3098a07176f46b8d49f89007844c18d529f3d396ebc4dd1bb50f",
+      "bytes": 670
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/check_terminal_bump.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "d1fc563d1906ddeb2ade440cc1b3cec3f7c08f43",
+      "new_sha256": "fe5d26042f8a1f5146bdd3a4a145cde3b50faa2885c418a4f84f0307cfdde208",
+      "bytes": 2294
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/lane_carries.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "3c6ff7fa7bde91032d218450f24f0ee7f01986a9",
+      "new_sha256": "9f443cad2cc7b7aa3e0669027cc1d36fc37a30dc99ed8e003d7da4f16eb43c4c",
+      "bytes": 6810
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/recurrence_final_pass.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "ef51d4d83e3d83a34d787e9c39d815cb37207259",
+      "new_sha256": "4d393a591eb3cfdeae246918b3968b3f5661ae510138547cc1ead7a0c38b5661",
+      "bytes": 3585
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/recurrence_obstruction.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "e9e11a9e70cef5fbbb266948518de00a63c95785",
+      "new_sha256": "822ff8b054a96737e058947238b50965d2b994f00b995f8f015c2a1d86bc0096",
+      "bytes": 5947
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/surgery_review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "f5bb95d1dc9e987a7b5ec6ee2aeb6ad1432e9a5d",
+      "new_sha256": "e1b78975f018701275ae86aa65e69d5e71268c40288415973b79fea7fbeb1aec",
+      "bytes": 3014
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/construction/terminal_bump_review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "7a29e021e4a2780a0c41ca7f8900cfe213d46c0e",
+      "new_sha256": "a4067de9490b82f60b810ecf268645ef37ba9ce0bcdfbc7e9f033b32c9f0ef33",
+      "bytes": 3496
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/contract.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "002922041a913543b65eab0856f3341e46dcffb0",
+      "new_sha256": "d457faf2ca0dd2ebecf2e19609e31eb956e29b1ee49e2dda292835b82d6732da",
+      "bytes": 3613
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/entropy-independent-review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "b98454dbe987b79f2b6e01bca47c7d8208ba4435",
+      "new_sha256": "df431030a517b74f902bf7c678f3643a877f9b5a96be8c0fe399336f7a2a962f",
+      "bytes": 5580
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/failure-ledger.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "bb5b3da63824c58fa99a8cc47be023009c5dfb20",
+      "new_sha256": "d60eca5036e822dc0b96019cc9a471f81172c05b0ffc1e13e7cabd0e3263610c",
+      "bytes": 11724
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/final-math-review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "64e9181a33600ed6c25047539ca48882c03b238b",
+      "new_sha256": "bbc8eab344ff74e312eac38385f079f904e298e74390afc08f42b2dadd87117f",
+      "bytes": 8034
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/fleet-plan.json",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "728acb1ded8b5392a9e6d92f1de019f75b28b45e",
+      "new_sha256": "5a6aaa31f3e86aa91c3f8df8b0260908e41989c583f092f8bdd0fe090d1bf0b6",
+      "bytes": 5326
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/formal-review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "92756bcbda76417925d4a07f7cfcc43e701202aa",
+      "new_sha256": "fab547c3b5565e804b91c1a688010ddee901109c9b5eb7c48e35d8323a36dd6a",
+      "bytes": 4273
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/formal/verification-scope.json",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "0cee56da02af9d2d678b817682f96b6cac113ad2",
+      "new_sha256": "cbd6bf64d5a4ea00f57490431509f4f0f8687ba97b45b20f1e3a97b09d21dcf8",
+      "bytes": 4967
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/kr1-positive-models.pdf",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "c605437a4610c3dbc37b717d63c3c7c003817b6f",
+      "new_sha256": "24cddea0d3abb0b2c6efdc8c66a0e6f9520d05ebf93e17e03bcdf71c9debfa23",
+      "bytes": 391437
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/kr1-positive-models.tex",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "2ad591355fcc6adf6eccc8e2ea8bdfc9727ccb1e",
+      "new_sha256": "3ba6f83ee55ddffd30c565037a262ac69f7bd28c099bcbf35181411f5b6082c4",
+      "bytes": 38081
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/lean/Blocks.lean",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "8329f1ab4f02e83775c964059f960ba4c3cc45a9",
+      "new_sha256": "230ad08890236797de73c7e1634aebc55e7e7c1a8a7491f4c9db8d109cb01cdc",
+      "bytes": 4545
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/lean/Cancellation.lean",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "df939afcd7d224e36aa18a82386a2ac7ba2b0891",
+      "new_sha256": "baa9fb7874c5fec739631ab3137dee59e36d1c3befc7c635a41be3002685c2a5",
+      "bytes": 3603
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/lean/Entropy.lean",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "8b4bf0305f02e2aab27307b93367fca1aff20e43",
+      "new_sha256": "9cc8fee5dfe19b425756d9f9dbdd006a66203e1c9cc5381963408e53973c763a",
+      "bytes": 2540
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/lean/MergeBounds.lean",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "b3f0d42872fdbb33a2b82cad9d94d02f3461f0a4",
+      "new_sha256": "e0fb3928a1b6cee451f29c1f90bd5ea5389856bd5058a6b8db1fbbde8d2a7578",
+      "bytes": 2077
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/local-constructions-review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "a960ed36be68d17b98688e36023067cdb35336d2",
+      "new_sha256": "62d9d071fde298a9f5efd5c1f2eb2a54c96c87645ac80d529a51f2202be2a582",
+      "bytes": 5141
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/merge-check-20.json",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "79c7a84c4265d879904e0fcdb7efe450ea38e1e7",
+      "new_sha256": "6a964fb379318941faf409915d5085a8923b70d8b6e552075c4a6254241f08d0",
+      "bytes": 2904
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/merge-independent-review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "6015ca6bd3cf53a3f3717bd61cc025ae515c9ec7",
+      "new_sha256": "0b44c177f2800f9d72445194e85afbdbdcaf51da3b733f6890a520d698b0882b",
+      "bytes": 5887
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/positive-coefficients.json",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "8c67acc3c4817bd2fa48dfa50331ac03c2d48ace",
+      "new_sha256": "2f5a963c00479ce753fc3653fa1ef0e9b86343c78630259a651b64e7d54c3eb7",
+      "bytes": 12541
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/positive_coefficients.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "6a7ec22bff66d045c51dff07b59aace532304fca",
+      "new_sha256": "9b0f486d68bb5695c65811c23a1c8e844f3f74f57b776e0cfce355d64ce509a8",
+      "bytes": 4502
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/article.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "c5f6b1e903b1ecec5b5b4603f72a6ffe091a3f81",
+      "new_sha256": "f5428e77e980b384f2d64320e328d63ebb3b3761a0a139d7d7c78a7e6a403d8c",
+      "bytes": 15019
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/01_problem_route.png",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "b9a590392537c70d4ae85ec34575be082a4c03a2",
+      "new_sha256": "b8b7c57b43b818b3496410a8191c8c97a8cd7af96bad2b219ba9a7c59e360f15",
+      "bytes": 185578
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/01_problem_route.svg",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "6e4665b5a6477b13b0c4f1d0b372d286f7509a4c",
+      "new_sha256": "e58bf21593c95cc1d8893a23914d3eac5c4f344315eee6d6f6933c6fa5d7c568",
+      "bytes": 3124
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/02_marker_cancellation.png",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "4f2a4b0f6f9ece774ae2043b41273382e2129739",
+      "new_sha256": "bf48085353b153cb8c92927874cf863b1e8be85f5f5945ebe23e262088bb5436",
+      "bytes": 118787
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/02_marker_cancellation.svg",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "ad7bfd5aa0d223109de3ab853c2da3bd5f8f896d",
+      "new_sha256": "f0a75d5981ec3c91ce213a46ab13962df002edf104757a3e04155e26836da45f",
+      "bytes": 5645
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/03_particle_count_obstruction.png",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "44bcd950efde9a009f599b624b6678d3271fb0b9",
+      "new_sha256": "f98f441273c8660ea11671fdd537ab6fedecf5a0a80cb3cc87805757867730d2",
+      "bytes": 190685
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/03_particle_count_obstruction.svg",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "ff3831533032dc90e7f2e090a3024249fc37ec0b",
+      "new_sha256": "5c323ce742d1fa898f1f56024eef0e65cc427b303d4a4ac35f8585751d49f42e",
+      "bytes": 3032
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/04_evidence_scope.png",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "66ae38b2409df0c6edbb9bbde33bbf74d2f39e6a",
+      "new_sha256": "edb6f150291bdac3c2c916a9f1bd21b996dfd38a2775177dab6544231e9d07d5",
+      "bytes": 214181
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/04_evidence_scope.svg",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "686eb5dd35e3c38525a18bc0091fd7b56a68cd3f",
+      "new_sha256": "3869a75d65bc2f97178c610478291172d1c0294fc733b0b3d6ebcd54903081d8",
+      "bytes": 3366
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/README.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "74e7dd72be0438dfeb9fd482a5c269440383954c",
+      "new_sha256": "6e61bab762ca8dfd2c10be5d0c99cd544b70d64f415beed323e65d49c2fdaf54",
+      "bytes": 2883
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/assets/render_figures.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "4daf24bfaa5c66f93403373b72fe75510630d5ec",
+      "new_sha256": "d59622011c976f77a6d10c70d291c98074abf9c122e62596d8b6ef571c821228",
+      "bytes": 6119
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/publication/editorial-review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "2b7ea00e91d4625153ea05e7095ffa1692a53db3",
+      "new_sha256": "a18b31789678ee8ae2df0e5df6e9d0e092d3fe69b7a4636e67b9f9022c1d1c11",
+      "bytes": 4046
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/repository-baseline.json",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "94d23378f43bb55443a4c6a86efd25740f828ed9",
+      "new_sha256": "cc73378beadec1f5ce8865fd1f56e5cf1b11b60688f6406949519150fc59f61f",
+      "bytes": 3140
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/staircase-independent-review.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "63cda58c85a1fcee12a3d162497b19c4566817c7",
+      "new_sha256": "f32887129a12c1eb4f256cedc58b7e1ee2ebe59168ed0f94aa9344f90fab0551",
+      "bytes": 4935
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/theory/all_n_positive_staircase.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "1bfebba052d3433015101df3887ddb7cd169b4d4",
+      "new_sha256": "d3022533ab6fb130c9e189740f01fc86eff7df2f914e494f8a5945a0ddce4891",
+      "bytes": 9914
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/theory/general_positive_divided_differences.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "a74d7ae92d0b7d82169f89736584401de4f3f4c2",
+      "new_sha256": "46581d8668b8ab670c2f1ae4de1bb7a87f569fcd28f7c1c27f414090bc04574c",
+      "bytes": 7084
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/theory/local_surgery.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "91d7e763a1bc2aa25e863eec3ad643fcd1aa657f",
+      "new_sha256": "9c0deca1ef79b8d1cc62d918349cfba88772226794a13d65a25f97a4fcc1334d",
+      "bytes": 26079
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/theory/local_surgery.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "49a9afbea678d855ad0c2ea404360e9fab4c2c24",
+      "new_sha256": "b0ecccc30e440172872653f4c064e48d0c0b6e137fe17047173846cfe1bc0a67",
+      "bytes": 1574
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/theory/mizuno_formal_source.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "12f08f40d12000c3207c3a5cd91fe2ac62f79254",
+      "new_sha256": "fd5314033ca34c55ab49fbf4d8ed91087b3a0b756d25ab2631b280857f1a8796",
+      "bytes": 2567
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/theory/recurrence-experiments.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "b182262967ce7bb3c910e2e2359217205368fe9c",
+      "new_sha256": "3fdf40bb61d031747bd4194d372a04cd0f5262b4246835fb03e1d237e0923924",
+      "bytes": 4347
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/theory/recurrence_final_pass.md",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "3abfb50f5af45e05eea32529d943c493079472b5",
+      "new_sha256": "28ed1f911edff8f504d2bbb44bb9fe3914d7b1bb75b49b1ddc6e8d1f5ae26dff",
+      "bytes": 4459
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/theory/staircase_toggle.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "9d7d64a4a375f3d977a82dbd4ccb5ab05db224b1",
+      "new_sha256": "97c7972750292cc109ca41cd78c875ae982439b2455bfd729cf155d88b195a14",
+      "bytes": 1838
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/theory/terminal_cancellation.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "6e8f25fe44e75fc5ced6eb80200cb7eee79eae6a",
+      "new_sha256": "078f04d6a687a197cb81b49f4b098a2d79c3b49ccfb41552731448f192bd8e7e",
+      "bytes": 2066
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/article-qa.json",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "ca0e9db264c47b8d8dbd35e8ec1ebb76a7331d8c",
+      "new_sha256": "8ba2ea4e4e2b7adc43bc4ec5d189dd0aeca1b4dbbf236ccf78200fb3a3c9df09",
+      "bytes": 811
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/height-blocks.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "704a7b38b973b8a5489a59add57600535da832ec",
+      "new_sha256": "f6ceecd63e4591e169d722a6af247ee4a4ca5e2c7d166c5a85500fc823dafad1",
+      "bytes": 69
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/lane-carries.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "2c17288a26e9a47fccfb11ff6eaa9b7b369f9f8f",
+      "new_sha256": "4f6554670e90867c4e9d11e8c72f160d40f8a0f29c1bd49c8a7b58245d39c9e2",
+      "bytes": 239
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/lean-Blocks.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "a36dce1d76d0e461916b975e269f4599163b80c6",
+      "new_sha256": "06a0ad65cd994eaf9181850daff58b5917c6cf32090dff77e6117cbea902e4b8",
+      "bytes": 1610
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/lean-Cancellation.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "05f552f8b587fba115c383811ac6c698b7e56745",
+      "new_sha256": "ec17a208dff57b924167c822691b730c48c1a2e3447d14b378caa27a07a31445",
+      "bytes": 480
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/lean-Entropy.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "8fcd2ba7897d8f4c338c4a7085e795b14398c600",
+      "new_sha256": "a4d6036fb93b47cf28aef43928954617a1f20c6902b0e309da3ef6b61615ed5a",
+      "bytes": 495
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/lean-MergeBounds.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "ccdbfbf8d34d22bd2cd09985698a4364ca6fc858",
+      "new_sha256": "b7c407300853f62d50570a2e7df607bf0387345c46ebf017f10362b87edc427c",
+      "bytes": 995
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/lean-version.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "c3e51a7357f798e41d1963b84a3e636c3af75451",
+      "new_sha256": "cf6e65bfc214882b1c13717aae89d383a03f6bcf5c96dfbae13368cd3e07ff9d",
+      "bytes": 106
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/local-surgery.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "94e0ad5c0fd3f3960e25eed78e1ae933bbd226cc",
+      "new_sha256": "d75e35380f68e4aae675dbc90a12d1732051eee702cd0f0da7f601751b495939",
+      "bytes": 79
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/positive-coefficients.json",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "8c67acc3c4817bd2fa48dfa50331ac03c2d48ace",
+      "new_sha256": "2f5a963c00479ce753fc3653fa1ef0e9b86343c78630259a651b64e7d54c3eb7",
+      "bytes": 12541
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/positive-coefficients.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "227b2b7dd452fc377db82769e8207f84aaccf69c",
+      "new_sha256": "8fd1f4f0883f7e2344832ce58483e4f57981a09acdc5c062905740929f01baa2",
+      "bytes": 901
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/recurrence-final.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "340936e6cb419aaf2c8b07e5e9734b2e50a093f9",
+      "new_sha256": "8bb8e9bb975b17109fff24700fdb3850bdd9f6c06d4ee4b2de55c773cbb4a978",
+      "bytes": 74
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/repository-checks.json",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "2335f8681530950902c191dbc623e1b99eb99e3d",
+      "new_sha256": "e6da18d286beaca7b1eca0014ff265d9b3e016ac686a46ed8c5ed639fc9928c9",
+      "bytes": 546
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/staircase-toggle.log",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "1665ff227fec1ea3b63b0ffb6126353454c94ce6",
+      "new_sha256": "8b753727349710c383e14d229d20deca7649de105339700217f3ff62b8d9653d",
+      "bytes": 45
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verification/verification.json",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "177527c9bd7a5c86e4bf0fa2cd8d6df122a33529",
+      "new_sha256": "947947aa00055353fb449a650c98e19cab0e13c0a4de6917ed2651de2a386300",
+      "bytes": 9209
+    },
+    {
+      "path": "research/rogers-ramanujan/terra2026/verify.py",
+      "operation": "create",
+      "original_blob_sha": null,
+      "new_blob_sha": "f8357333aef478b52c489b66e6019ad7679b1682",
+      "new_sha256": "20262f852d56ebb9378e3e54edc4a464b9bbac2fa4bdd3dc1bfcc63f56e758a5",
+      "bytes": 6103
+    }
+  ],
+  "verification": {
+    "research_runner": "all 11 jobs passed including Lean 4.34.0 and six finite Python checks",
+    "repository_checker": "passed",
+    "unit_tests": "102 passed",
+    "dependency": "research/rogers-ramanujan/checks/kr1.py exists in baseline with expected sha256 6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+  },
+  "intended_public_locations": {
+    "research": "https://github.com/cyamba/yamba-ai-math/tree/main/research/rogers-ramanujan/terra2026",
+    "site": "https://christopheryamba.com/math/kr1-positive-cut-words/",
+    "archive": "https://autodidactic-math-traveler.vercel.app/archive/kr1-positive-cut-words/"
+  },
+  "global_kr1_bijection": "unresolved",
+  "novelty": "unverified"
+}

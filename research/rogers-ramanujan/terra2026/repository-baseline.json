@@ -1,0 +1,94 @@
+{
+  "inspected_on": "2026-10-27",
+  "remote": "https://github.com/cyamba/yamba-ai-math",
+  "base": "4ccc4fe60008e52c9846e9a63d4bf98d23108702",
+  "refs": [
+    {
+      "ref": "origin",
+      "sha": "4e2492d2f7ed1c9b595a1577b34340f473a639af",
+      "commit_date": "2026-10-25 00:08:24 +0200"
+    },
+    {
+      "ref": "origin/claude/meta-harness-benchmark",
+      "sha": "4717d077d2a285a315d033032edab519d26829b1",
+      "commit_date": "2026-10-24 18:38:22 +0200"
+    },
+    {
+      "ref": "origin/claude/publish-parikh",
+      "sha": "f9d1fdc575c2ca65dcee4bba6e3ed6a34e579fc4",
+      "commit_date": "2026-10-23 17:27:35 +0200"
+    },
+    {
+      "ref": "origin/codex/h3-technical-pdf",
+      "sha": "c75c200cd610556894633a8a9d919d0fe48c6b8f",
+      "commit_date": "2026-10-23 23:53:29 +0200"
+    },
+    {
+      "ref": "origin/codex/h3-visual-publication",
+      "sha": "4657a447090b991249119621e92059d221111044",
+      "commit_date": "2026-10-23 22:24:51 +0200"
+    },
+    {
+      "ref": "origin/codex/height-three-coefficient-unimodality",
+      "sha": "f6349ea486ef405fcf26272e84167d495ac0d33b",
+      "commit_date": "2026-10-24 23:45:31 +0200"
+    },
+    {
+      "ref": "origin/codex/kr1-claude-phase2-cube",
+      "sha": "90087565ecd49e59b64f3850d0cc3cd20bfd8b42",
+      "commit_date": "2026-10-25 14:56:49 +0100"
+    },
+    {
+      "ref": "origin/codex/partition-gap-closure",
+      "sha": "4989584441509579f7db1ff9b4641ec1d5a0be59",
+      "commit_date": "2026-10-21 21:19:45 +0200"
+    },
+    {
+      "ref": "origin/codex/partition-h3-article-status",
+      "sha": "fc3d59d1f5591bc15e7e55e8b914ec988654f3d2",
+      "commit_date": "2026-10-23 21:56:33 +0200"
+    },
+    {
+      "ref": "origin/codex/partition-h3-complete",
+      "sha": "04992798fb12fc88de6328c049006a8598ee717d",
+      "commit_date": "2026-10-23 21:53:06 +0200"
+    },
+    {
+      "ref": "origin/codex/partition-positivity",
+      "sha": "389e31456e5c6785380810f1d14736f6d59dd6c0",
+      "commit_date": "2026-10-21 08:40:40 +0200"
+    },
+    {
+      "ref": "origin/codex/phase2-kr1-djt-n40",
+      "sha": "5cbc2440aab896d3f7de9e45bba2bac027f9c5cb",
+      "commit_date": "2026-10-25 00:51:30 +0200"
+    },
+    {
+      "ref": "origin/feat/multidimensional-ferrers-bijections",
+      "sha": "3bd9b905535c6f84b27a632445d8a92a034354e2",
+      "commit_date": "2026-10-25 00:08:50 +0200"
+    },
+    {
+      "ref": "origin/feat/phase2-uniform-d-dim-recursion",
+      "sha": "2ccf9c52023de23a44aacdcff8a46f2f15b9e91d",
+      "commit_date": "2026-10-26 21:58:16 +0100"
+    },
+    {
+      "ref": "origin/main",
+      "sha": "4e2492d2f7ed1c9b595a1577b34340f473a639af",
+      "commit_date": "2026-10-25 00:08:24 +0200"
+    },
+    {
+      "ref": "origin/research/argon-tableau-continuation",
+      "sha": "4ccc4fe60008e52c9846e9a63d4bf98d23108702",
+      "commit_date": "2026-10-26 22:25:46 +0100"
+    },
+    {
+      "ref": "origin/watch/openai-math",
+      "sha": "d6efb9f6e2422bfe6835d856c72735bf02a98cda",
+      "commit_date": "2026-10-27 19:04:30 +0100"
+    }
+  ],
+  "method": "read-only GitHub metadata plus local clone of all branch refs",
+  "remote_writes_performed": false
+}
