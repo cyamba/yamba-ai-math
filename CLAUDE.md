@@ -106,3 +106,7 @@ dependency/provider restrictions. Christopher subsequently authorized the
 and synchronization with main; those actions do not reopen a research run.
 Skills do not grant permission to send messages or publish. Broader harness changes require separate evaluation; workflow hypotheses
 remain unvalidated. Keep durable mathematics and feedback in the research folder.
+
+## Authored prose punctuation
+
+Read [.claude/skills/no-em-dash/SKILL.md](.claude/skills/no-em-dash/SKILL.md) before composing publishable material. This is a user preference, not a change to mathematical proof standards.

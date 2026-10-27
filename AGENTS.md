@@ -66,7 +66,7 @@ objective, proof standards or separate-review requirements.
 | `assets/`, `.github/` | Banner image; CI workflow | — |
 | `.runs/` | Ignored run outputs: packets, receipts, reports | Find raw execution records |
 | `.agents/` | Shared supervisory skills and meta-level support, distinct from mathematical roles in `agents/` | Load the relevant authorized support workflow |
-| `.claude/` | Claude Code operator tooling; `skills/` also links shared KR1 supervisory skills | Use operator commands only when invoked; follow shared skill links for KR1 supervision |
+| `.codex/` | Codex publication and research skills; use no-em-dash for author-facing writing | Load specific Codex editorial skills |\n| `.claude/` | Claude Code operator tooling; `skills/` also links shared KR1 supervisory skills | Use operator commands only when invoked; follow shared skill links for KR1 supervision |
 
 ## Research standards
 
@@ -100,3 +100,7 @@ python3 scripts/check_repository.py
 ```
 
 Test meaningful behavior: budgets, dependencies, role separation, malformed outputs, failures, and evaluation comparability. Keep run artifacts in ignored `.runs/` unless an intentionally reviewed evidence artifact belongs in the public record. Check staged content before publishing. Avoid new provider dependencies until a concrete research task requires them.
+
+## Authored prose punctuation
+
+Use [.agents/skills/no-em-dash/SKILL.md](.agents/skills/no-em-dash/SKILL.md) for new publications, abstracts, captions, posts, source comments intended for readers and site metadata. Avoid U+2014 and doubled hyphens in prose punctuation.
