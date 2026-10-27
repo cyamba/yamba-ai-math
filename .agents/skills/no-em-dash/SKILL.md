@@ -1,6 +1,6 @@
 ---
 name: no-em-dash
-description: Avoid em dashes in publications, articles, abstracts, posts and captions.
+description: Avoid em dashes in publications, articles, abstracts, posts and captions for the current project's author.
 ---
 # Publication punctuation rule
 
