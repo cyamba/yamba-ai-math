@@ -32,3 +32,4 @@ framework improvements still follow the [meta protocol](meta/protocol.md).
 | [delegate-for-feedback](.agents/skills/delegate-for-feedback/SKILL.md) | Preparing a bounded question for Christopher and recording his return |
 | [yamba-post](.agents/skills/yamba-post/SKILL.md) | Parking side findings locally or delivering them when requested |
 | [pivot](.agents/skills/pivot/SKILL.md) | Changing the mathematical approach while preserving the objective |
+| [watch-openai-math](.agents/skills/watch-openai-math/SKILL.md) | Checking openai/math and its maintainer for new results, withdrawals and problem candidates |

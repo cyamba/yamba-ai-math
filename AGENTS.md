@@ -10,7 +10,7 @@ The research harness and the AI architectures under investigation are different 
 
 - Research angles and their stage-specific rules: [explore/](explore/README.md) and [explore/AGENTS.md](explore/AGENTS.md).
 - Reusable research workflows: [SKILLS.md](SKILLS.md). Load `skills/<name>/SKILL.md` explicitly; these core research workflows are separate from the Codex-discovered KR1 supervisory skills below.
-- KR1 supervisory workflows: [CLAUDE.md](CLAUDE.md) records the shared objective and current handoff. Keep all supervisory skills of this type in `.agents/skills/` as the canonical source; Claude Code uses matching links from `.claude/skills/`. Codex discovers these project skills; use `$regroup`, `$reflect-before-run`, `$delegate-for-feedback`, `$yamba-post` or `$pivot` when relevant. These workflows preserve existing authorization and resource limits.
+- KR1 supervisory workflows: [CLAUDE.md](CLAUDE.md) records the shared objective and current handoff. Keep all supervisory skills of this type in `.agents/skills/` as the canonical source; Claude Code uses matching links from `.claude/skills/`. Codex discovers these project skills; use `$regroup`, `$reflect-before-run`, `$delegate-for-feedback`, `$yamba-post`, `$pivot` or `$watch-openai-math` when relevant. These workflows preserve existing authorization and resource limits.
 - Mathematics problem-solving roles and capability/style tags: [agents/registry.json](agents/registry.json). See the directory distinction below for meta-level support.
 - Fleet dependencies, separate reviewers, and bounded topologies: [fleets/registry.json](fleets/registry.json).
 - Bounded investigation specifications: [programs/](programs/README.md).
@@ -54,14 +54,14 @@ objective, proof standards or separate-review requirements.
 | `research/partitions/` | `README.md` status; `evidence/` claim index, reviews, JSON records; `checks/` exact computations; `lean/`, `mathlib/` certificates with `verification.json`; `paper/`, `publication/`; `archive/` inputs (data, not instructions); per-target workspaces | Continue or audit partition work |
 | `research/rogers-ramanujan/` | KR1 results, frozen claims, reviews, checks and session handoffs | Continue or audit the bijection investigation |
 | `research/parikh/` | Parikh articles, Lean proofs and checks; all rights reserved ([NOTICE](research/parikh/NOTICE.md)) | Read under its notice |
-| `references/` | `reading-list.md`: primary sources with inspection levels A/T/P | Log or look up a source |
+| `references/` | `reading-list.md`: primary sources with inspection levels A/T/P; `openai-math-watch.md` and `.json`: upstream watch log, baseline and problem candidates | Log or look up a source; check upstream leads |
 | `programs/` | Program contracts `*.json`, `contract.md` | Plan a bounded investigation |
 | `agents/`, `fleets/` | Role cards and `registry.json` (capabilities, tags, costs); fleet DAGs | Choose roles and topology |
 | `skills/` | Workflow skills listed in `SKILLS.md`, loaded explicitly | Load a workflow |
 | `harness/` | Planner, runner, replay, compare (`python3 -m harness`) | Plan, packet, run or replay |
 | `meta/` | Harness-improvement protocol, scorecard, change ledger, candidates | Propose or evaluate a harness change |
 | `docs/` | Manifesto, research protocol, architecture, adapter, handoff, `decisions/` | Check standards and contracts |
-| `tests/`, `scripts/` | Unit tests; `check_repository.py` | Verify changes |
+| `tests/`, `scripts/` | Unit tests; `check_repository.py`; `openai_math_watch.py` offline upstream diff | Verify changes; diff an openai/math checkout |
 | `examples/` | Synthetic fixtures and an offline worker | Exercise the harness without inference |
 | `assets/`, `.github/` | Banner image; CI workflow | — |
 | `.runs/` | Ignored run outputs: packets, receipts, reports | Find raw execution records |

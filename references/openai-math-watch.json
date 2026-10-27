@@ -1,0 +1,1623 @@
+{
+  "sources": {
+    "repository": "https://github.com/openai/math",
+    "maintainer": {
+      "github": "dr-openai",
+      "profile": "https://github.com/dr-openai",
+      "identity": "Merges the openai/math update pull requests; the update commits are authored by Dan Roberts <dr@openai.com>. The account had no public repositories when checked on 2026-10-27.",
+      "follow": "Follow on GitHub is an account action Christopher takes himself; the harness tracks the account's merges and authored commits in openai/math and its public repositories."
+    },
+    "license": "Apache-2.0 (code, Lean and manuscripts as stated by the upstream README; check each artifact before reuse)",
+    "status": "Upstream manuscripts are model-produced. Unformalized results may contain errors; three were withdrawn on 2026-10-07. Treat every family as unverified until audited here."
+  },
+  "interests": [
+    {
+      "id": "partitions",
+      "target": "research/partitions, research/rogers-ramanujan (KR1)",
+      "keywords": [
+        "partition",
+        "Rogers",
+        "Ramanujan identit",
+        "q-series",
+        "Ferrers",
+        "tableau",
+        "Young",
+        "plane partition",
+        "Durfee"
+      ]
+    },
+    {
+      "id": "symmetric-functions",
+      "target": "research/partitions H3 and chromatic work",
+      "keywords": [
+        "chromatic",
+        "quasisymmetric",
+        "symmetric function",
+        "Schur",
+        "Kronecker",
+        "Shareshian",
+        "Stanley",
+        "Kazhdan",
+        "unimodal",
+        "log-concave sequence",
+        "e-positiv",
+        "Schur-positiv",
+        "h-positiv"
+      ]
+    },
+    {
+      "id": "combinatorics",
+      "target": "explore-angle candidates",
+      "keywords": [
+        "bijection",
+        "Ramsey",
+        "perfect matching",
+        "permutation",
+        "Coxeter",
+        "Bruhat",
+        "graph coloring"
+      ]
+    },
+    {
+      "id": "ai-compute",
+      "target": "E001, E014, E015",
+      "keywords": [
+        "matrix multiplication",
+        "Exponential Time Hypothesis",
+        "satisf",
+        "circuit lower bound",
+        "query complexity"
+      ]
+    },
+    {
+      "id": "ai-learning-theory",
+      "target": "E002, E003, E004, E011, E013",
+      "keywords": [
+        "Weisfeiler",
+        "spin glass",
+        "sampling",
+        "sharp threshold",
+        "influence",
+        "random graph",
+        "learning"
+      ]
+    },
+    {
+      "id": "bioinformatics",
+      "target": "Christopher's genome-analysis interests (no repo project yet)",
+      "keywords": [
+        "trace reconstruction",
+        "deletion channel",
+        "DNA",
+        "sequence alignment",
+        "edit distance",
+        "phylogen",
+        "genom",
+        "protein"
+      ]
+    },
+    {
+      "id": "formal-methods",
+      "target": "Lean pipelines in research/partitions/lean and mathlib",
+      "keywords": [
+        "type system",
+        "normalization",
+        "proof assistant"
+      ]
+    }
+  ],
+  "watched_families": {
+    "169": "Shareshian-Wachs elementary positivity. Already cited as R038 and used by research/partitions; watch for revisions, formalization changes and follow-on Schur or h-positivity work.",
+    "168": "Combinatorial invariance of Kazhdan-Lusztig polynomials. Bruhat-interval combinatorics next to the positivity programme.",
+    "122": "Trace reconstruction bounds. Deletion-channel decoding with DNA-storage and sequencing relevance.",
+    "107": "Matrix multiplication omega <= 9/4. Compute-cost foothold for E001 and E014.",
+    "378": "Disproof of the Exponential Time Hypothesis. Under external expert review; record its review state before relying on it.",
+    "133": "Complexity of Weisfeiler-Leman refinement. Graph-network expressivity and E003/E004.",
+    "139": "Subpolynomial query complexity for log-concave sampling. Sampling cost for E011 and E014.",
+    "186": "Uniform influence and sharp thresholds. Phase-transition tools for E013."
+  },
+  "baseline": {
+    "commit": "7ef5c0cc5",
+    "date": "2026-10-26",
+    "manuscripts": 721,
+    "families_total": 373,
+    "families": {
+      "001": {
+        "title": "Milne’s rationality conjecture and algebraic specialization",
+        "lean": false
+      },
+      "002": {
+        "title": "The full BSD formula from low Selmer corank",
+        "lean": false
+      },
+      "003": {
+        "title": "The quasi-Riemann hypothesis",
+        "lean": true
+      },
+      "004": {
+        "title": "Hilbert’s tenth problem over ℚ",
+        "lean": false
+      },
+      "005": {
+        "title": "Irrationality of Catalan’s constant",
+        "lean": true
+      },
+      "006": {
+        "title": "Goldfeld’s conjecture: densities and mean analytic rank",
+        "lean": false
+      },
+      "007": {
+        "title": "Ordinary two-point correlations and the corrected Elliott conjecture",
+        "lean": true
+      },
+      "008": {
+        "title": "The Deligne–Drinfeld conjecture",
+        "lean": true
+      },
+      "009": {
+        "title": "Function-field reconstruction from Milnor K-theory and Galois data",
+        "lean": true
+      },
+      "010": {
+        "title": "Unrestricted pro-modularity at the prime two",
+        "lean": false
+      },
+      "011": {
+        "title": "Prime-factor statistics of $`p-1`$",
+        "lean": false
+      },
+      "012": {
+        "title": "Independent largest prime factors of consecutive integers",
+        "lean": true
+      },
+      "013": {
+        "title": "Ostmann’s inverse Goldbach conjecture",
+        "lean": true
+      },
+      "014": {
+        "title": "Restricted geometric Langlands, global Arthur enhancements, and generic Ramanujan",
+        "lean": false
+      },
+      "015": {
+        "title": "Torus-packet equidistribution in prime, quartic, and sextic degrees",
+        "lean": true
+      },
+      "016": {
+        "title": "Zilber–Pink in abelian varieties and the Siegel threefold",
+        "lean": false
+      },
+      "017": {
+        "title": "The irrationality exponent of π is 2",
+        "lean": true
+      },
+      "018": {
+        "title": "The Margulis–Platonov conjecture over global fields",
+        "lean": false
+      },
+      "019": {
+        "title": "The local p-adic section conjecture and global consequences",
+        "lean": false
+      },
+      "020": {
+        "title": "Squarefree quartics and power-free polynomial values",
+        "lean": true
+      },
+      "021": {
+        "title": "A quadratic bound for Jacobsthal’s function",
+        "lean": true
+      },
+      "022": {
+        "title": "The weak inhomogeneous Duffin–Schaeffer conjecture",
+        "lean": false
+      },
+      "023": {
+        "title": "Patterson's first moment for cubic Gauss sums",
+        "lean": true
+      },
+      "024": {
+        "title": "An asymptotic formula for the number of totients",
+        "lean": true
+      },
+      "025": {
+        "title": "Short Egyptian fractions",
+        "lean": true
+      },
+      "026": {
+        "title": "Positive lower density of large prime gaps",
+        "lean": true
+      },
+      "027": {
+        "title": "Potential integral density on curve character varieties",
+        "lean": true
+      },
+      "028": {
+        "title": "Uniformly bounded components of Gaussian-prime graphs",
+        "lean": true
+      },
+      "029": {
+        "title": "Primitive roots for every admissible integer base",
+        "lean": false
+      },
+      "030": {
+        "title": "Modularity of elliptic curves over imaginary quadratic fields",
+        "lean": false
+      },
+      "031": {
+        "title": "Uchida’s conjecture for open homomorphisms of Galois groups",
+        "lean": false
+      },
+      "032": {
+        "title": "The rational Hodge conjecture for CM abelian varieties",
+        "lean": true
+      },
+      "033": {
+        "title": "Iitaka subadditivity, variation, and logarithmic additivity",
+        "lean": true
+      },
+      "034": {
+        "title": "Log abundance for compact Kähler spaces under logarithmic Iitaka subadditivity",
+        "lean": false
+      },
+      "035": {
+        "title": "Log-canonical threefold abundance in numerical dimension one",
+        "lean": false
+      },
+      "036": {
+        "title": "Numerical semiampleness and generalized minimal models",
+        "lean": false
+      },
+      "037": {
+        "title": "The ordinary-double-point volume gap",
+        "lean": false
+      },
+      "038": {
+        "title": "Fujita’s freeness conjecture",
+        "lean": false
+      },
+      "039": {
+        "title": "Nagata’s conjecture and maximal Seshadri constants",
+        "lean": true
+      },
+      "040": {
+        "title": "Bloch’s conjecture for complex surfaces",
+        "lean": false
+      },
+      "041": {
+        "title": "Hyperkähler SYZ and projective-space bases",
+        "lean": false
+      },
+      "042": {
+        "title": "Oka classification for minimal compact complex surfaces: Kodaira dimension zero and class VII",
+        "lean": false
+      },
+      "043": {
+        "title": "P = W for fixed-determinant SLn moduli spaces",
+        "lean": false
+      },
+      "044": {
+        "title": "The equivariant cohomological Hikita conjecture",
+        "lean": false
+      },
+      "046": {
+        "title": "Shafarevich counterexamples in dimension two and with large fundamental group",
+        "lean": false
+      },
+      "047": {
+        "title": "Zariski cancellation and affine fibrations over the complex numbers",
+        "lean": true
+      },
+      "048": {
+        "title": "A characteristic-zero counterexample to Lipman–Zariski",
+        "lean": false
+      },
+      "049": {
+        "title": "A stable-coordinate counterexample in four variables",
+        "lean": true
+      },
+      "050": {
+        "title": "A counterexample to Griffiths’ positivity conjecture",
+        "lean": true
+      },
+      "051": {
+        "title": "Kobayashi’s canonical-ampleness conjecture",
+        "lean": false
+      },
+      "052": {
+        "title": "Tangent splittings and product decompositions",
+        "lean": true
+      },
+      "053": {
+        "title": "A counterexample to Pixton completeness in Chow",
+        "lean": false
+      },
+      "054": {
+        "title": "Irrational cubic fourfolds with Hodge-theoretic and categorical K3 associations",
+        "lean": false
+      },
+      "055": {
+        "title": "Gepner symmetry and large-volume stability on threefolds",
+        "lean": false
+      },
+      "056": {
+        "title": "Termination of projective and Kähler fourfold minimal model programs",
+        "lean": false
+      },
+      "057": {
+        "title": "Fundamental groups of special complex varieties and root orbifolds",
+        "lean": false
+      },
+      "058": {
+        "title": "Semialgebraic universal covers and bounded domains",
+        "lean": true
+      },
+      "059": {
+        "title": "Counterexamples to Zariski’s multiplicity conjecture",
+        "lean": false
+      },
+      "060": {
+        "title": "The Global Spherical Shell conjecture",
+        "lean": false
+      },
+      "062": {
+        "title": "Projective contact classification and the LeBrun–Salamon conjecture",
+        "lean": false
+      },
+      "063": {
+        "title": "The generalized Mukai conjecture",
+        "lean": false
+      },
+      "064": {
+        "title": "Topological triviality of μ-constant surface singularities",
+        "lean": false
+      },
+      "065": {
+        "title": "Virasoro constraints for complete intersections and projective-bundle towers",
+        "lean": false
+      },
+      "066": {
+        "title": "Bounded klt complements for Fano contractions",
+        "lean": true
+      },
+      "067": {
+        "title": "The Campana–Peternell conjecture in dimension six",
+        "lean": false
+      },
+      "068": {
+        "title": "Anticanonical nonvanishing in every dimension",
+        "lean": false
+      },
+      "069": {
+        "title": "Global quantum geometric Langlands at irrational level",
+        "lean": false
+      },
+      "071": {
+        "title": "Koebe’s circle-domain conjecture",
+        "lean": true
+      },
+      "072": {
+        "title": "Brennan's conjecture and the integral-means spectrum",
+        "lean": true
+      },
+      "073": {
+        "title": "The Falconer distance conjecture",
+        "lean": true
+      },
+      "074": {
+        "title": "Kakeya in three and four dimensions",
+        "lean": false
+      },
+      "075": {
+        "title": "The $`L\\log L`$ Fourier-convergence conjecture",
+        "lean": true
+      },
+      "076": {
+        "title": "Real ultraflat Littlewood polynomials and unbounded binary merit factors",
+        "lean": true
+      },
+      "077": {
+        "title": "Fourier restriction for positively curved surfaces",
+        "lean": false
+      },
+      "078": {
+        "title": "The three-dimensional Bochner–Riesz conjecture",
+        "lean": false
+      },
+      "079": {
+        "title": "Local smoothing for the Euclidean wave equation",
+        "lean": true
+      },
+      "080": {
+        "title": "The exact Sobolev endpoint for Schrödinger convergence",
+        "lean": false
+      },
+      "081": {
+        "title": "Riesz transforms and rectifiability in higher codimension",
+        "lean": true
+      },
+      "082": {
+        "title": "Annular variation and dyadic absolute bounds for the triangular Hilbert transform",
+        "lean": true
+      },
+      "083": {
+        "title": "Hilbert transforms along Lipschitz directions",
+        "lean": true
+      },
+      "084": {
+        "title": "The geometric case of the Erdős similarity conjecture",
+        "lean": true
+      },
+      "085": {
+        "title": "Endpoint Sobolev regularity of centered disk averages",
+        "lean": true
+      },
+      "086": {
+        "title": "An L3 bound for the trilinear Hilbert transform",
+        "lean": false
+      },
+      "087": {
+        "title": "The Mahler conjectures, functional inequalities and polar-product symplectic width",
+        "lean": true
+      },
+      "088": {
+        "title": "Sharp projection-body inequalities and a counterexample to simplex maximization",
+        "lean": true
+      },
+      "089": {
+        "title": "Bounded-distortion L1 embeddings of planar and bounded-treewidth graphs",
+        "lean": true
+      },
+      "090": {
+        "title": "Triangular-lattice optimality, long-range Riesz and Coulomb energies, and spherical logarithmic energy",
+        "lean": true
+      },
+      "091": {
+        "title": "Logarithmic and Lp Brunn–Minkowski inequalities and the B-conjecture",
+        "lean": true
+      },
+      "092": {
+        "title": "The optimal order of convex-body covering density",
+        "lean": true
+      },
+      "093": {
+        "title": "Dimension-free logarithmic Sobolev inequality for subgaussian log-concave measures",
+        "lean": false
+      },
+      "094": {
+        "title": "Subpolynomial dimension reduction in Lp",
+        "lean": true
+      },
+      "095": {
+        "title": "Hyperbolicity cones without semidefinite lifts",
+        "lean": true
+      },
+      "096": {
+        "title": "The Gaussian propeller conjecture in every dimension",
+        "lean": true
+      },
+      "097": {
+        "title": "The Euclidean Steinitz–Bergström bound",
+        "lean": true
+      },
+      "098": {
+        "title": "Compact counterexamples to bi-Lipschitz dimension reduction",
+        "lean": true
+      },
+      "099": {
+        "title": "The sharp exponential scale of edit-distance distortion",
+        "lean": true
+      },
+      "100": {
+        "title": "Cylinder coverings below the half-area bound",
+        "lean": true
+      },
+      "101": {
+        "title": "The sharp simplex conjecture for isotropic constants",
+        "lean": false
+      },
+      "102": {
+        "title": "The Unique Games Conjecture and optimal approximation thresholds",
+        "lean": true
+      },
+      "103": {
+        "title": "Exact derandomization of logarithmic space: $`\\mathsf L=\\mathsf{RL}=\\mathsf{BPL}`$",
+        "lean": true
+      },
+      "104": {
+        "title": "Quasipolynomial algorithms for mean-payoff, stochastic and parity games",
+        "lean": true
+      },
+      "105": {
+        "title": "Perfect completeness for 2-to-1 games",
+        "lean": true
+      },
+      "106": {
+        "title": "Hardness of coloring three-colorable graphs",
+        "lean": true
+      },
+      "107": {
+        "title": "Matrix multiplication with exponent at most 9/4",
+        "lean": true
+      },
+      "108": {
+        "title": "A cubic permanent–determinant lower bound",
+        "lean": true
+      },
+      "109": {
+        "title": "Integer multiplication below $`n\\log n`$",
+        "lean": false
+      },
+      "110": {
+        "title": "Optimal-order randomized k-server on arbitrary metrics",
+        "lean": true
+      },
+      "111": {
+        "title": "One-sample matroid prophet inequalities against an almighty adversary",
+        "lean": true
+      },
+      "112": {
+        "title": "Beyond the square-root exponent for depth-three circuits",
+        "lean": true
+      },
+      "113": {
+        "title": "Approximate counting and entropy of perfect matchings",
+        "lean": true
+      },
+      "114": {
+        "title": "Approximate counting of common integer polymatroid bases",
+        "lean": true
+      },
+      "115": {
+        "title": "Sampling and counting contingency tables with arbitrary margins",
+        "lean": true
+      },
+      "116": {
+        "title": "Uniform black-box noncommutative identity testing across characteristics",
+        "lean": true
+      },
+      "117": {
+        "title": "Uniform sparsest cut: hardness and semidefinite gaps",
+        "lean": true
+      },
+      "118": {
+        "title": "Bin packing and unbounded configuration-LP gaps",
+        "lean": true
+      },
+      "119": {
+        "title": "The Courtade–Kumar and Hellinger conjectures",
+        "lean": true
+      },
+      "120": {
+        "title": "Almost-linear-time exact matching and prescribed-degree factors in general graphs",
+        "lean": false
+      },
+      "121": {
+        "title": "Almost-linear approximation of edit distance",
+        "lean": true
+      },
+      "122": {
+        "title": "Quantitative trace-reconstruction bounds with a uniform decoder",
+        "lean": true
+      },
+      "124": {
+        "title": "Polynomial-time scheduling on three identical machines",
+        "lean": true
+      },
+      "125": {
+        "title": "The metric k-median approximation threshold and recovery",
+        "lean": true
+      },
+      "126": {
+        "title": "Exponential semidefinite complexity of perfect matching",
+        "lean": true
+      },
+      "127": {
+        "title": "Average sensitivity of polynomial threshold functions",
+        "lean": true
+      },
+      "128": {
+        "title": "A factor-two approximation for shortest common superstring",
+        "lean": true
+      },
+      "129": {
+        "title": "Exponential state costs for two-way automata",
+        "lean": true
+      },
+      "130": {
+        "title": "Exact Fourier transforms below $`n\\log n`$",
+        "lean": true
+      },
+      "131": {
+        "title": "Rapid mixing of graph switches for every degree sequence",
+        "lean": true
+      },
+      "132": {
+        "title": "A superquadratic separation of sensitivity and block sensitivity",
+        "lean": true
+      },
+      "133": {
+        "title": "The computational complexity of Weisfeiler–Leman refinement",
+        "lean": true
+      },
+      "134": {
+        "title": "Generalized star height at most three",
+        "lean": true
+      },
+      "135": {
+        "title": "Homogeneous depth-five lower bounds for iterated matrix multiplication",
+        "lean": true
+      },
+      "136": {
+        "title": "A quasilinear PCP theorem for PPAD",
+        "lean": false
+      },
+      "137": {
+        "title": "One-tape time simulation in two-fifths-power space",
+        "lean": true
+      },
+      "138": {
+        "title": "Subset Sum in $`O(2^{0.49n})`$ time",
+        "lean": false
+      },
+      "139": {
+        "title": "Subpolynomial query complexity for log-concave sampling",
+        "lean": true
+      },
+      "140": {
+        "title": "Memory–sample lower bounds for noiseless Gaussian regression",
+        "lean": true
+      },
+      "141": {
+        "title": "Existential–universal real sentences in the counting hierarchy",
+        "lean": false
+      },
+      "142": {
+        "title": "Deterministic polynomial factorization over prime fields",
+        "lean": false
+      },
+      "143": {
+        "title": "Hilbert's sixteenth problem: uniform bounds for limit cycles",
+        "lean": true
+      },
+      "144": {
+        "title": "Banach’s simple Lebesgue-spectrum problem",
+        "lean": true
+      },
+      "145": {
+        "title": "Rokhlin’s multiple-mixing problem",
+        "lean": true
+      },
+      "146": {
+        "title": "Positive metric entropy for the standard map",
+        "lean": true
+      },
+      "147": {
+        "title": "The near-boundary Birkhoff conjecture",
+        "lean": false
+      },
+      "148": {
+        "title": "The entropy-rate dimension formula for self-similar measures",
+        "lean": true
+      },
+      "149": {
+        "title": "Classwise permanence for weakly reversible mass-action systems",
+        "lean": true
+      },
+      "150": {
+        "title": "Weak mixing of triangular billiards with an irrational angle",
+        "lean": true
+      },
+      "151": {
+        "title": "A C1 counterexample to the entropy conjecture",
+        "lean": true
+      },
+      "152": {
+        "title": "Zero entropy does not guarantee a smooth positive-volume model",
+        "lean": true
+      },
+      "153": {
+        "title": "Arithmetic classification and non-Pisot singularity for Bernoulli convolutions",
+        "lean": false
+      },
+      "154": {
+        "title": "Pointwise multiple ergodic averages for mixing transformations",
+        "lean": false
+      },
+      "155": {
+        "title": "A counterexample to periodic tiling in dimension three",
+        "lean": true
+      },
+      "156": {
+        "title": "Borsuk's conjecture fails in dimension nine",
+        "lean": true
+      },
+      "157": {
+        "title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+        "lean": true
+      },
+      "158": {
+        "title": "The Euclidean plane cannot be colored with five colors",
+        "lean": true
+      },
+      "159": {
+        "title": "Erdős’s reciprocal-sum conjecture and quasipolynomial Szemerédi bounds",
+        "lean": true
+      },
+      "160": {
+        "title": "Superexponential van der Waerden numbers",
+        "lean": true
+      },
+      "161": {
+        "title": "Counterexamples to Sidorenko’s conjecture and the forcing conjecture",
+        "lean": true
+      },
+      "162": {
+        "title": "Counterexamples to Ryser’s covering conjecture",
+        "lean": true
+      },
+      "164": {
+        "title": "Hindman’s finite sums and products conjecture",
+        "lean": false
+      },
+      "165": {
+        "title": "The Harary–Hill and Zarankiewicz crossing-number formulas",
+        "lean": true
+      },
+      "166": {
+        "title": "The higher-dimensional Erdős distinct-distances conjecture",
+        "lean": false
+      },
+      "167": {
+        "title": "Planar distinct distances and unit-distance bounds",
+        "lean": true
+      },
+      "168": {
+        "title": "Combinatorial invariance of Kazhdan–Lusztig polynomials",
+        "lean": true
+      },
+      "169": {
+        "title": "Shareshian–Wachs elementary positivity",
+        "lean": true
+      },
+      "170": {
+        "title": "Sharp logarithmic exponents for off-diagonal Ramsey numbers",
+        "lean": true
+      },
+      "171": {
+        "title": "The hypercube Ramsey conjecture",
+        "lean": false
+      },
+      "172": {
+        "title": "Classification of finite Euclidean Ramsey configurations",
+        "lean": true
+      },
+      "173": {
+        "title": "Seymour’s second-neighborhood conjecture",
+        "lean": true
+      },
+      "174": {
+        "title": "Deterministic construction of strong thin spanning trees",
+        "lean": true
+      },
+      "175": {
+        "title": "Talagrand’s expectation thresholds, discrete convexity, and graph decompositions",
+        "lean": true
+      },
+      "176": {
+        "title": "The second Kahn–Kalai conjecture with an edge-count bound",
+        "lean": true
+      },
+      "177": {
+        "title": "Bounded-degree coboundary expanders",
+        "lean": true
+      },
+      "178": {
+        "title": "Deterministic nonbipartite Ramanujan graphs in every fixed degree",
+        "lean": false
+      },
+      "179": {
+        "title": "The circulant Hadamard and Barker-sequence conjectures",
+        "lean": true
+      },
+      "180": {
+        "title": "Barnette’s Hamiltonian-cycle conjecture",
+        "lean": true
+      },
+      "181": {
+        "title": "The Erdős–Gallai cycle-decomposition conjecture",
+        "lean": true
+      },
+      "182": {
+        "title": "Power savings for intersective polynomial differences and prime arguments",
+        "lean": true
+      },
+      "183": {
+        "title": "Power savings for planar halving lines and k-sets",
+        "lean": true
+      },
+      "184": {
+        "title": "Correspondence coloring with a fixed forbidden subgraph",
+        "lean": true
+      },
+      "185": {
+        "title": "Counterexamples to infinite matroid intersection and packing/covering",
+        "lean": true
+      },
+      "186": {
+        "title": "Uniform influence and sharp thresholds for graph and hypergraph properties",
+        "lean": true
+      },
+      "187": {
+        "title": "Snaky in 21 Maker moves",
+        "lean": true
+      },
+      "188": {
+        "title": "The sharp terminal leave in random triangle removal",
+        "lean": true
+      },
+      "189": {
+        "title": "Cycle–clique Ramsey numbers",
+        "lean": true
+      },
+      "190": {
+        "title": "Polynomial removal fails for ordered binary matrices",
+        "lean": true
+      },
+      "191": {
+        "title": "A power improvement in the Heilbronn triangle lower bound",
+        "lean": true
+      },
+      "192": {
+        "title": "Boolean functions violate the square-root degree bound by arbitrary factors",
+        "lean": true
+      },
+      "193": {
+        "title": "Serre’s intersection-multiplicity conjecture",
+        "lean": false
+      },
+      "194": {
+        "title": "Lech’s multiplicity conjecture",
+        "lean": true
+      },
+      "195": {
+        "title": "A counterexample to the small Cohen–Macaulay module conjecture",
+        "lean": true
+      },
+      "196": {
+        "title": "A counterexample to Kaplansky’s zero-divisor conjecture",
+        "lean": true
+      },
+      "197": {
+        "title": "A torsion-free group algebra that is not directly finite",
+        "lean": true
+      },
+      "198": {
+        "title": "A counterexample to finitistic-dimension finiteness",
+        "lean": true
+      },
+      "199": {
+        "title": "Counterexamples to Auslander–Reiten, Tachikawa and related homological conjectures",
+        "lean": true
+      },
+      "200": {
+        "title": "Eisenbud–Green–Harris and lex-plus-powers",
+        "lean": false
+      },
+      "201": {
+        "title": "A counterexample to Kurosh’s division-ring problem",
+        "lean": false
+      },
+      "202": {
+        "title": "The blockwise Alperin weight conjecture",
+        "lean": false
+      },
+      "203": {
+        "title": "Donovan's conjecture over fields and complete mixed-characteristic DVRs",
+        "lean": false
+      },
+      "204": {
+        "title": "Tensor saturation for even spin groups",
+        "lean": false
+      },
+      "205": {
+        "title": "Saxl’s conjecture and universal tensor squares",
+        "lean": true
+      },
+      "206": {
+        "title": "Finite lattice representation and undecidability",
+        "lean": true
+      },
+      "207": {
+        "title": "The ℓ¹-Bass conjecture for all discrete groups",
+        "lean": true
+      },
+      "208": {
+        "title": "Finite symmetric tensor categories and the Verlinde tower",
+        "lean": false
+      },
+      "209": {
+        "title": "Integral counterexamples to Gersten’s conjecture",
+        "lean": false
+      },
+      "210": {
+        "title": "Foulkes' conjecture for sixth powers and quadratic stabilization",
+        "lean": true
+      },
+      "211": {
+        "title": "The geometric phase diagram, diffusion, and spectra of random planar maps",
+        "lean": true
+      },
+      "212": {
+        "title": "Planar first-passage geometry and the absence of bigeodesics",
+        "lean": true
+      },
+      "213": {
+        "title": "Critical percolation on every quasi-transitive graph",
+        "lean": true
+      },
+      "214": {
+        "title": "The Benjamini–Schramm nonuniqueness conjecture",
+        "lean": true
+      },
+      "215": {
+        "title": "Canonical $`O(3)`$ continuum limit and exact $`O(4)`$ mass asymptotics",
+        "lean": true
+      },
+      "216": {
+        "title": "Critical and near-critical XY scaling and BKT universality",
+        "lean": false
+      },
+      "217": {
+        "title": "The low-temperature Sherrington–Kirkpatrick fluctuation law",
+        "lean": false
+      },
+      "218": {
+        "title": "Conformal universality for weakly interacting and random-bond Ising models",
+        "lean": true
+      },
+      "219": {
+        "title": "GOE bulk universality for regular graphs with weak Anderson disorder",
+        "lean": false
+      },
+      "220": {
+        "title": "Directional zero–one laws beyond iid environments and iid ballisticity",
+        "lean": true
+      },
+      "221": {
+        "title": "The Mézard–Parisi formula for diluted spin glasses",
+        "lean": true
+      },
+      "222": {
+        "title": "Perceptron free energies and microscopic jamming exponents",
+        "lean": true
+      },
+      "223": {
+        "title": "Random-cluster interfaces: critical, disordered, thermal, and natural-time scaling",
+        "lean": false
+      },
+      "224": {
+        "title": "Critical and quenched near-critical universality for Poisson–Voronoi percolation",
+        "lean": false
+      },
+      "225": {
+        "title": "Gaussian free field limits throughout the balanced six-vertex regime",
+        "lean": false
+      },
+      "226": {
+        "title": "The double-dimer loop ensemble converges to CLE4",
+        "lean": false
+      },
+      "227": {
+        "title": "Critical SK autocorrelation processes and dynamics across the temperature transition",
+        "lean": true
+      },
+      "228": {
+        "title": "Continuum phase transitions for radial pair potentials",
+        "lean": true
+      },
+      "229": {
+        "title": "Exact three- and four-state reconstruction thresholds and four-state tree capacity",
+        "lean": true
+      },
+      "230": {
+        "title": "Exact Hausdorff gauges for SLE",
+        "lean": true
+      },
+      "231": {
+        "title": "The free uniform spanning forest is a factor of IID",
+        "lean": true
+      },
+      "232": {
+        "title": "Gaussian fields and interfaces for triangular-lattice Lipschitz heights",
+        "lean": false
+      },
+      "233": {
+        "title": "The joint critical Ashkin–Teller current limit",
+        "lean": false
+      },
+      "234": {
+        "title": "All-temperature pressure of orthogonally invariant Ising spin glasses",
+        "lean": true
+      },
+      "235": {
+        "title": "Limiting random SAT thresholds, sharp variance and computability",
+        "lean": true
+      },
+      "236": {
+        "title": "The exact factor-of-IID threshold for free Ising spins on trees",
+        "lean": true
+      },
+      "237": {
+        "title": "The three-quarter exponent for honeycomb self-avoiding walk",
+        "lean": true
+      },
+      "238": {
+        "title": "Optimal logarithmic mixing of the Thorp shuffle",
+        "lean": true
+      },
+      "239": {
+        "title": "Sharp singularity rates for symmetric random sign matrices",
+        "lean": false
+      },
+      "240": {
+        "title": "Shelah's eventual categoricity and the prescribed-threshold obstruction",
+        "lean": true
+      },
+      "241": {
+        "title": "Rigidity of the Turing degrees",
+        "lean": true
+      },
+      "242": {
+        "title": "Single-fold Diophantine representations and undecidability under an at-most-one-solution promise",
+        "lean": true
+      },
+      "243": {
+        "title": "Separating choiceless counting from polynomial time and witnessed choice",
+        "lean": true
+      },
+      "244": {
+        "title": "The Partition Principle does not imply Choice",
+        "lean": true
+      },
+      "245": {
+        "title": "Weak normalization implies strong normalization in pure type systems",
+        "lean": true
+      },
+      "246": {
+        "title": "Cannon's conjecture",
+        "lean": true
+      },
+      "247": {
+        "title": "An infinite finitely presented residually finite 2-group and a finitely presented nil algebra",
+        "lean": true
+      },
+      "248": {
+        "title": "Thompson's group F is nonamenable",
+        "lean": true
+      },
+      "249": {
+        "title": "A finitely generated Eilenberg–Ganea counterexample",
+        "lean": true
+      },
+      "250": {
+        "title": "Boone–Higman embeddings with higher finiteness",
+        "lean": true
+      },
+      "251": {
+        "title": "Amenability, unitarizability, and strong Ulam stability",
+        "lean": true
+      },
+      "252": {
+        "title": "A torsion-free hyperbolic group that is neither residually finite nor linear over any field",
+        "lean": true
+      },
+      "253": {
+        "title": "An infinite finitely presented simple amenable group",
+        "lean": true
+      },
+      "254": {
+        "title": "Classifying spaces and geometric obstructions for Artin groups",
+        "lean": true
+      },
+      "255": {
+        "title": "Quasi-isometric recognition of virtually polycyclic groups",
+        "lean": true
+      },
+      "256": {
+        "title": "Nonsingular systems of equations over arbitrary groups",
+        "lean": true
+      },
+      "257": {
+        "title": "A hyperbolic group without a geometric CAT(0) action",
+        "lean": true
+      },
+      "258": {
+        "title": "Gersten’s conjecture and virtual compact specialness of one-relator groups",
+        "lean": false
+      },
+      "259": {
+        "title": "A group without fixed price",
+        "lean": false
+      },
+      "260": {
+        "title": "Spacetime Penrose inequalities: enclosing area, charge, rotation, and anti-de Sitter extensions",
+        "lean": true
+      },
+      "261": {
+        "title": "Localization and delocalization in the Anderson model",
+        "lean": true
+      },
+      "262": {
+        "title": "Sharp finite-matrix Lieb–Thirring inequalities and all equality cases",
+        "lean": true
+      },
+      "263": {
+        "title": "The ionization and generalized ionization conjectures",
+        "lean": true
+      },
+      "264": {
+        "title": "Strong cosmic censorship near two-ended Kerr data",
+        "lean": false
+      },
+      "265": {
+        "title": "Area laws and tensor networks for two-dimensional gapped systems",
+        "lean": false
+      },
+      "266": {
+        "title": "Exactly three mutually unbiased bases in dimension six",
+        "lean": true
+      },
+      "267": {
+        "title": "Positive-temperature Bose–Einstein condensation and exact quantum depletion",
+        "lean": true
+      },
+      "268": {
+        "title": "The spin-one Haldane gap",
+        "lean": false
+      },
+      "269": {
+        "title": "Uniform Laughlin gap and stability under bounded scalar disorder",
+        "lean": true
+      },
+      "270": {
+        "title": "Threshold and positive-energy bound states of the BFSS matrix model",
+        "lean": false
+      },
+      "271": {
+        "title": "Bloch's law, its lattice correction, and the spherical magnetization law",
+        "lean": true
+      },
+      "272": {
+        "title": "Entanglement without distillable secret key",
+        "lean": true
+      },
+      "273": {
+        "title": "The entropy photon-number inequality",
+        "lean": true
+      },
+      "274": {
+        "title": "Parity is not in QAC0",
+        "lean": true
+      },
+      "275": {
+        "title": "QMA-hardness of continuum Coulomb energy",
+        "lean": true
+      },
+      "276": {
+        "title": "Classical capacity of generalized amplitude damping",
+        "lean": true
+      },
+      "277": {
+        "title": "Threshold repetition for entangled games",
+        "lean": true
+      },
+      "278": {
+        "title": "Failure of Kohn–Sham ensemble representation",
+        "lean": false
+      },
+      "279": {
+        "title": "Exact quantum factoring over a fixed finite gate set",
+        "lean": true
+      },
+      "280": {
+        "title": "Unitary vertex operator algebras and conformal nets",
+        "lean": true
+      },
+      "281": {
+        "title": "QAOA attains the SK optimum in the thermodynamic-first limit",
+        "lean": true
+      },
+      "282": {
+        "title": "From scale symmetry to local conformal symmetry in four-dimensional QFT",
+        "lean": false
+      },
+      "283": {
+        "title": "Polynomial-time unitary synthesis from a Boolean oracle",
+        "lean": false
+      },
+      "284": {
+        "title": "The optimal quartic separation between randomized and quantum queries",
+        "lean": false
+      },
+      "285": {
+        "title": "Counterexamples to Baum–Connes and Kadison–Kaplansky",
+        "lean": false
+      },
+      "286": {
+        "title": "Rigidity and arithmetic of lattice von Neumann algebras",
+        "lean": false
+      },
+      "287": {
+        "title": "Isomorphism of the free group factors",
+        "lean": true
+      },
+      "288": {
+        "title": "Kadison's similarity conjecture",
+        "lean": true
+      },
+      "289": {
+        "title": "Strong Kadison–Kastler stability and its spatial boundaries",
+        "lean": true
+      },
+      "290": {
+        "title": "Relative bicentralizers and modular spectral recovery",
+        "lean": true
+      },
+      "291": {
+        "title": "Cuntz comparison, nuclear dimension, and equivariant Jiang–Su stability",
+        "lean": true
+      },
+      "292": {
+        "title": "Kirchberg's $`\\mathcal O_2`$ norm-ultrapower embedding problem",
+        "lean": true
+      },
+      "293": {
+        "title": "Invariant projections, hyperinvariant subspaces, and transitive algebras",
+        "lean": true
+      },
+      "294": {
+        "title": "Kaplansky's quasitrace conjecture and failure of tensor-product stable finiteness",
+        "lean": true
+      },
+      "295": {
+        "title": "The Kadison–Ringrose cohomology conjecture",
+        "lean": true
+      },
+      "296": {
+        "title": "The generator problem for finite factors",
+        "lean": true
+      },
+      "297": {
+        "title": "A ZFC counterexample to Naimark's problem",
+        "lean": true
+      },
+      "298": {
+        "title": "Two notions of free entropy differ even when both are finite",
+        "lean": true
+      },
+      "299": {
+        "title": "The Kirchberg–Rørdam character criterion and infinite tensor-power Jiang–Su stability",
+        "lean": true
+      },
+      "300": {
+        "title": "Approximation and quadratic strong-operator paving",
+        "lean": false
+      },
+      "301": {
+        "title": "Trace cones and Razak–Jacelon stabilization",
+        "lean": true
+      },
+      "302": {
+        "title": "Radius of comparison equals half the mean dimension",
+        "lean": false
+      },
+      "303": {
+        "title": "Weak pure infiniteness and Cuntz-algebra absorption",
+        "lean": true
+      },
+      "304": {
+        "title": "The Hilbert–Smith conjecture in every dimension",
+        "lean": false
+      },
+      "305": {
+        "title": "Four-dimensional disk embedding and Wall's conjecture",
+        "lean": false
+      },
+      "306": {
+        "title": "The purely cosmetic surgery conjecture",
+        "lean": false
+      },
+      "307": {
+        "title": "Failure of rational injectivity for maximal coarse assembly",
+        "lean": true
+      },
+      "308": {
+        "title": "Finite Smith–Toda complexes at every height",
+        "lean": false
+      },
+      "309": {
+        "title": "The Kervaire invariant problem at the prime three",
+        "lean": false
+      },
+      "310": {
+        "title": "Quillen's conjecture in rational homology",
+        "lean": false
+      },
+      "311": {
+        "title": "The Hovey–Strickland and Chai conjectures",
+        "lean": false
+      },
+      "312": {
+        "title": "The Grothendieck homotopy hypothesis",
+        "lean": true
+      },
+      "313": {
+        "title": "Finite generation for the $`K(n)`$-local sphere",
+        "lean": false
+      },
+      "314": {
+        "title": "Cyclic length and chromatic fixed-point loss",
+        "lean": false
+      },
+      "315": {
+        "title": "The four-dimensional Singer conjecture",
+        "lean": false
+      },
+      "316": {
+        "title": "Curtis’s conjecture",
+        "lean": false
+      },
+      "317": {
+        "title": "Thomason model structures in all strict higher dimensions",
+        "lean": true
+      },
+      "318": {
+        "title": "Chromatic splitting: filtrations and counterexamples",
+        "lean": false
+      },
+      "319": {
+        "title": "Counterexamples to finite generation at chromatic height two",
+        "lean": false
+      },
+      "320": {
+        "title": "Nonhomeomorphic closed aspherical four-manifolds",
+        "lean": false
+      },
+      "321": {
+        "title": "A counterexample to Wall's finite D(2) problem",
+        "lean": false
+      },
+      "322": {
+        "title": "Tingley’s sphere-isometry problem",
+        "lean": true
+      },
+      "323": {
+        "title": "Independence of the separable quotient problem",
+        "lean": true
+      },
+      "324": {
+        "title": "Lipschitz equivalent Banach spaces need not be linearly isomorphic",
+        "lean": true
+      },
+      "325": {
+        "title": "The complete Crouzeix conjecture",
+        "lean": true
+      },
+      "326": {
+        "title": "The cotype–cotype conjecture under the approximation property",
+        "lean": true
+      },
+      "327": {
+        "title": "Markov type characterizes superreflexivity",
+        "lean": true
+      },
+      "328": {
+        "title": "Nonexpansive fixed points in reflexive Banach spaces",
+        "lean": true
+      },
+      "329": {
+        "title": "A counterexample to metric-entropy duality",
+        "lean": true
+      },
+      "330": {
+        "title": "A uniformly discrete counterexample to bounded approximation in Lipschitz-free spaces",
+        "lean": true
+      },
+      "331": {
+        "title": "Reflexive midpoint convexity and diamond distortion",
+        "lean": true
+      },
+      "332": {
+        "title": "Metric Markov cotype of ℓ1 and Hilbert-space Lipschitz extension",
+        "lean": false
+      },
+      "333": {
+        "title": "Smooth isometric immersions of surfaces into ℝ4",
+        "lean": true
+      },
+      "334": {
+        "title": "A smooth surface metric with no local isometric immersion in ℝ3",
+        "lean": true
+      },
+      "335": {
+        "title": "Gromov’s integral scalar-curvature bound for simplicial volume",
+        "lean": false
+      },
+      "336": {
+        "title": "Spectral scalar curvature, Urysohn width, and macroscopic dimension",
+        "lean": false
+      },
+      "337": {
+        "title": "Sharp Cartan–Hadamard isoperimetry and rigidity",
+        "lean": true
+      },
+      "338": {
+        "title": "Yau's uniformization conjecture",
+        "lean": false
+      },
+      "339": {
+        "title": "Katok's entropy rigidity conjecture",
+        "lean": false
+      },
+      "340": {
+        "title": "A counterexample to the nearby Lagrangian conjecture",
+        "lean": false
+      },
+      "341": {
+        "title": "Donaldson's hypersymplectic deformation conjecture",
+        "lean": false
+      },
+      "342": {
+        "title": "Donaldson's tamed-to-compatible conjecture",
+        "lean": true
+      },
+      "343": {
+        "title": "Symplectic ball packing in higher dimensions",
+        "lean": true
+      },
+      "344": {
+        "title": "The metric Blaschke conjecture",
+        "lean": false
+      },
+      "345": {
+        "title": "Infinitely many closed geodesics on Riemannian spheres and closed three-manifolds",
+        "lean": false
+      },
+      "346": {
+        "title": "Sharp singular-set bounds for stationary integral varifolds",
+        "lean": false
+      },
+      "347": {
+        "title": "Counterexamples to stable-Morse and strong Arnold fixed-point bounds",
+        "lean": true
+      },
+      "348": {
+        "title": "Nonnegative-curvature Einstein classification and an L2 topological gap",
+        "lean": true
+      },
+      "349": {
+        "title": "The Solomon–Yau least-volume conjecture",
+        "lean": false
+      },
+      "350": {
+        "title": "Yau’s nodal bounds: surfaces and higher dimensions",
+        "lean": true
+      },
+      "351": {
+        "title": "Scalar curvature and finite-time Ricci-flow singularities",
+        "lean": false
+      },
+      "352": {
+        "title": "A finite-time singularity of Calabi flow",
+        "lean": false
+      },
+      "353": {
+        "title": "Affine Bernstein rigidity through dimension nine and a smooth dimension-ten counterexample",
+        "lean": true
+      },
+      "354": {
+        "title": "The isoperimetric profile of the cubic three-torus",
+        "lean": true
+      },
+      "355": {
+        "title": "Unique tangent flows at the first surface singularity",
+        "lean": false
+      },
+      "356": {
+        "title": "Gigli’s characterization of Alexandrov curvature",
+        "lean": true
+      },
+      "357": {
+        "title": "Bi-Lipschitz coordinates at every regular RCD point",
+        "lean": false
+      },
+      "358": {
+        "title": "A three-manifold without conjugate points or nonpositive curvature",
+        "lean": true
+      },
+      "359": {
+        "title": "Negative Kähler curvature without bounded holomorphic coordinates",
+        "lean": true
+      },
+      "360": {
+        "title": "Weak MTW curvature gives convexity and regular optimal transport",
+        "lean": true
+      },
+      "361": {
+        "title": "Failure of integer-degree harmonic dimension comparison",
+        "lean": true
+      },
+      "362": {
+        "title": "Global smoothness for relativistic Vlasov–Maxwell",
+        "lean": true
+      },
+      "363": {
+        "title": "Nonuniqueness with local conservation for the hard-sphere Boltzmann equation",
+        "lean": true
+      },
+      "364": {
+        "title": "Kinetic limits and fluctuations over the Boltzmann lifespan",
+        "lean": false
+      },
+      "365": {
+        "title": "Joint metric and connection recovery from one boundary patch",
+        "lean": true
+      },
+      "366": {
+        "title": "The planar Mumford–Shah regularity conjecture and local weak-L4 gradient bounds",
+        "lean": false
+      },
+      "367": {
+        "title": "The critical dimension for the one-phase Bernoulli problem",
+        "lean": true
+      },
+      "368": {
+        "title": "The three-dimensional Ball–Evans approximation problem",
+        "lean": false
+      },
+      "369": {
+        "title": "The hot spots conjecture for simply connected planar domains",
+        "lean": true
+      },
+      "370": {
+        "title": "The Lane–Emden and Hénon–Lane–Emden conjectures",
+        "lean": true
+      },
+      "371": {
+        "title": "Stable blowup for the defocusing Schrödinger equation",
+        "lean": true
+      },
+      "372": {
+        "title": "Global uniqueness in smooth isotropic elasticity",
+        "lean": true
+      },
+      "373": {
+        "title": "Nonattainment of the three-marginal Coulomb Monge problem",
+        "lean": true
+      },
+      "374": {
+        "title": "Sharp one-third stability of Brenier maps",
+        "lean": true
+      },
+      "375": {
+        "title": "De Giorgi's conjecture in dimension eight",
+        "lean": false
+      },
+      "376": {
+        "title": "Universal computation in forced Navier–Stokes flows",
+        "lean": true
+      },
+      "377": {
+        "title": "Interior $`C^{1,\\alpha}`$ regularity for infinity-harmonic functions",
+        "lean": false
+      },
+      "378": {
+        "title": "Disproof of the Exponential Time Hypothesis",
+        "lean": true
+      }
+    },
+    "history_sections": [
+      "October 26, 2026",
+      "October 7, 2026"
+    ]
+  }
+}
