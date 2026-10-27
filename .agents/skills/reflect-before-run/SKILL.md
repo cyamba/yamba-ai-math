@@ -5,7 +5,7 @@ description: Before the next KR1 attempt, turn lessons and returned feedback int
 
 # Reflect on improvements before the next run
 
-Use when preparing to restart research or when Christopher requests pre-run tweaks.
+Use when preparing to restart research or when the operator requests pre-run tweaks.
 Read root CLAUDE.md, the latest regroup/result, relevant review findings, pending
 feedback and the proposed run contract. Distinguish feedback actually received
 from questions merely queued. Keep this reflection short and count it within the

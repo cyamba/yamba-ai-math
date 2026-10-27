@@ -6,7 +6,7 @@ description: Reflect on a KR1 research checkpoint, distinguish proved progress f
 # Regroup around the objective
 
 Use at a scheduled review or handoff, after a decisive obstruction, or when
-Christopher asks to pause and reflect. Keep the reflection proportionate to the
+the operator asks to pause and reflect. Keep the reflection proportionate to the
 remaining budget. It does not add critic rounds or restart a closed investigation.
 
 Read root CLAUDE.md and AGENTS.md, the current result, applicable contract, and

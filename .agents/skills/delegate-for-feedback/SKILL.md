@@ -1,20 +1,20 @@
 ---
 name: delegate-for-feedback
-description: Prepare a bounded mathematical question for Christopher Yamba to investigate elsewhere, track pending feedback, and integrate a checkable return.
+description: Prepare a bounded mathematical question for the operator to investigate elsewhere, track pending feedback, and integrate a checkable return.
 ---
 
 # Delegate a question and preserve its return
 
 Choose a subproblem whose answer would change the next decision: a narrow lemma,
 invariant, inverse audit, counterexample or source comparison. Explain the
-connection to the complete KR1 bijection without assigning Christopher the whole
-open problem. Match the scope to his chosen time and tools; do not invent a
+connection to the complete KR1 bijection without assigning the operator the whole
+open problem. Match the scope to their chosen time and tools; do not invent a
 commitment or assume that external work has occurred.
 
 Create or update a packet in
 [feedback.md](../../../research/rogers-ramanujan/feedback.md):
 
-- Stable ID, project, kind, PENDING status, proposed owner Christopher Yamba,
+- Stable ID, project, kind, PENDING status, proposed owner (the operator),
   and source/result links (mark the result as not yet returned).
 - Exact objects, assumptions and question; known rules and failed witnesses.
 - Why the answer matters, smallest useful falsifier, requested artifact and a
