@@ -1,6 +1,6 @@
 ---
 name: no-em-dash
-description: Avoid em dashes in publications, articles, abstracts, posts and captions for Christopher Yamba.
+description: Avoid em dashes in publications, articles, abstracts, posts and captions.
 ---
 # Publication punctuation rule
 
