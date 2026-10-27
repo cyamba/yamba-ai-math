@@ -100,3 +100,7 @@ python3 scripts/check_repository.py
 ```
 
 Test meaningful behavior: budgets, dependencies, role separation, malformed outputs, failures, and evaluation comparability. Keep run artifacts in ignored `.runs/` unless an intentionally reviewed evidence artifact belongs in the public record. Check staged content before publishing. Avoid new provider dependencies until a concrete research task requires them.
+
+## Authored prose punctuation
+
+Use [.agents/skills/no-em-dash/SKILL.md](.agents/skills/no-em-dash/SKILL.md) for new publications, abstracts, captions, posts, source comments intended for readers and site metadata. Avoid U+2014 and doubled hyphens in prose punctuation.
