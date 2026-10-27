@@ -1,0 +1,15 @@
+/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/lean/MergeBounds.lean:61:50: warning: Variable name `hh` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hh
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'KR1Merge.key_identity' depends on axioms: [propext, Quot.sound]
+'KR1Merge.pair_step' depends on axioms: [propext, Quot.sound]
+'KR1Merge.left_step' depends on axioms: [propext, Quot.sound]
+'KR1Merge.left_step_upper' depends on axioms: [propext, Quot.sound]
+'KR1Merge.right_left_gap' depends on axioms: [propext, Quot.sound]
+'KR1Merge.left_lipschitz' depends on axioms: [propext, Quot.sound]
+'KR1Merge.right_repeated' depends on axioms: [propext, Quot.sound]
+'KR1Merge.choose_single' depends on axioms: [propext, Quot.sound]
+'KR1Merge.choose_pair' depends on axioms: [propext, Quot.sound]

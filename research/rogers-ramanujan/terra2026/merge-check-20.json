@@ -1,0 +1,130 @@
+{
+  "program": "RR003",
+  "stage": "direct attributed cluster endpoint",
+  "ceiling": 20,
+  "status": "finite_direct_merge_checks_passed_separate_review_outstanding",
+  "attribution": "Kursungoz arXiv:1808.01432v1 Theorem 7; direct inverse-derived merge formulation",
+  "assurance": "finite implementation checks and universal author argument; separate semantic review outstanding",
+  "full_bijection": "unresolved",
+  "novelty": "unverified, endpoint theorem established",
+  "totals": {
+    "cluster_round_trips": 280,
+    "gap_round_trips": 280
+  },
+  "cases": [
+    {
+      "weight": 0,
+      "actual_A": 1,
+      "actual_C": 1
+    },
+    {
+      "weight": 1,
+      "actual_A": 1,
+      "actual_C": 1
+    },
+    {
+      "weight": 2,
+      "actual_A": 1,
+      "actual_C": 1
+    },
+    {
+      "weight": 3,
+      "actual_A": 2,
+      "actual_C": 2
+    },
+    {
+      "weight": 4,
+      "actual_A": 2,
+      "actual_C": 2
+    },
+    {
+      "weight": 5,
+      "actual_A": 2,
+      "actual_C": 2
+    },
+    {
+      "weight": 6,
+      "actual_A": 4,
+      "actual_C": 4
+    },
+    {
+      "weight": 7,
+      "actual_A": 4,
+      "actual_C": 4
+    },
+    {
+      "weight": 8,
+      "actual_A": 5,
+      "actual_C": 5
+    },
+    {
+      "weight": 9,
+      "actual_A": 7,
+      "actual_C": 7
+    },
+    {
+      "weight": 10,
+      "actual_A": 8,
+      "actual_C": 8
+    },
+    {
+      "weight": 11,
+      "actual_A": 9,
+      "actual_C": 9
+    },
+    {
+      "weight": 12,
+      "actual_A": 13,
+      "actual_C": 13
+    },
+    {
+      "weight": 13,
+      "actual_A": 14,
+      "actual_C": 14
+    },
+    {
+      "weight": 14,
+      "actual_A": 16,
+      "actual_C": 16
+    },
+    {
+      "weight": 15,
+      "actual_A": 21,
+      "actual_C": 21
+    },
+    {
+      "weight": 16,
+      "actual_A": 24,
+      "actual_C": 24
+    },
+    {
+      "weight": 17,
+      "actual_A": 27,
+      "actual_C": 27
+    },
+    {
+      "weight": 18,
+      "actual_A": 35,
+      "actual_C": 35
+    },
+    {
+      "weight": 19,
+      "actual_A": 39,
+      "actual_C": 39
+    },
+    {
+      "weight": 20,
+      "actual_A": 45,
+      "actual_C": 45
+    }
+  ],
+  "source_sha256": {
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_cluster_merge.py": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+    "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc",
+    "research/rogers-ramanujan/checks/rr003_merge_verify.py": "15e746de4326c8d1b2c6f38d5a281d2bee1fca167a87c988bf47780efd78ec8a",
+    "research/rogers-ramanujan/rr003/endpoint-cluster-merge-freeze.json": "a5be0359f3e135a86bf3a8aa3583eeb4f4966f6a7063e2dd2700118aa08ceef8"
+  },
+  "elapsed_seconds": 0.01149785799862002,
+  "finished_utc": "2026-10-27T18:12:22.235378+00:00"
+}

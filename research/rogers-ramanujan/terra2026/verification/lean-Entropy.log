@@ -1,0 +1,10 @@
+/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/lean/Entropy.lean:63:15: warning: This simp argument is unused:
+  walks
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [he, scale] at hm
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'KR1Entropy.witness' does not depend on any axioms
+'KR1Entropy.walks_bound' depends on axioms: [propext, Quot.sound]
+'KR1Entropy.root_bound' depends on axioms: [propext, Quot.sound]

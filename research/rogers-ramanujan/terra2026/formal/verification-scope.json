@@ -1,0 +1,162 @@
+{
+  "purpose": "Scope inventory of Lean source; not a substitute for execution logs.",
+  "compiler_version": "Lean 4.34.0",
+  "source_imports": [
+    "Std"
+  ],
+  "theorem_declaration_count": 36,
+  "printed_axiom_report_count": 26,
+  "modules": [
+    {
+      "file": "lean/Blocks.lean",
+      "sha256": "230ad08890236797de73c7e1634aebc55e7e7c1a8a7491f4c9db8d109cb01cdc",
+      "theorem_declaration_count": 7,
+      "theorem_declarations": [
+        "block_classification",
+        "transition_table",
+        "adjacent_blocks",
+        "counts_injective",
+        "sequence_encode",
+        "sequence_decode",
+        "realization_unique"
+      ],
+      "principal_theorems": [
+        "block_classification",
+        "transition_table",
+        "adjacent_blocks",
+        "counts_injective",
+        "sequence_encode",
+        "sequence_decode",
+        "realization_unique"
+      ],
+      "printed_axiom_report_count": 7,
+      "printed_axiom_reports": [
+        "block_classification",
+        "transition_table",
+        "adjacent_blocks",
+        "counts_injective",
+        "sequence_encode",
+        "sequence_decode",
+        "realization_unique"
+      ],
+      "limitations": [
+        "Sorted-list partition semantics, finite support, weight preservation, and a product-to-gap bijection are not formalized.",
+        "sequence_encode uses classical choice."
+      ]
+    },
+    {
+      "file": "lean/Cancellation.lean",
+      "sha256": "baa9fb7874c5fec739631ab3137dee59e36d1c3befc7c635a41be3002685c2a5",
+      "theorem_declaration_count": 12,
+      "theorem_declarations": [
+        "toggle_eligible",
+        "toggle_involution",
+        "toggle_weight",
+        "toggle_marker",
+        "cancel_involution",
+        "cancel_weight",
+        "cancel_parity",
+        "cancel_fixed",
+        "inactive_is_zero",
+        "no_eligible_iff",
+        "fixed_iff_all_zero",
+        "cancel_weight_nine"
+      ],
+      "principal_theorems": [
+        "cancel_involution",
+        "cancel_weight",
+        "cancel_weight_nine",
+        "cancel_parity",
+        "fixed_iff_all_zero"
+      ],
+      "printed_axiom_report_count": 7,
+      "printed_axiom_reports": [
+        "toggle_involution",
+        "cancel_involution",
+        "cancel_weight",
+        "cancel_parity",
+        "cancel_fixed",
+        "fixed_iff_all_zero",
+        "cancel_weight_nine"
+      ],
+      "limitations": [
+        "The divided-difference source identity, flattening into cut words, and the full KR1 bijection are not formalized."
+      ]
+    },
+    {
+      "file": "lean/Entropy.lean",
+      "sha256": "9cc8fee5dfe19b425756d9f9dbdd006a66203e1c9cc5381963408e53973c763a",
+      "theorem_declaration_count": 8,
+      "theorem_declarations": [
+        "v_positive",
+        "witness",
+        "step_mono",
+        "step3_mono",
+        "step_scale",
+        "step3_scale",
+        "walks_bound",
+        "root_bound"
+      ],
+      "principal_theorems": [
+        "witness",
+        "walks_bound",
+        "root_bound"
+      ],
+      "printed_axiom_report_count": 3,
+      "printed_axiom_reports": [
+        "witness",
+        "walks_bound",
+        "root_bound"
+      ],
+      "limitations": [
+        "The gap-partition-to-path encoding, source counting, and real logarithmic asymptotics are not formalized.",
+        "root_bound uses constant 10000; the sharper 10000/3473 constant is a written argument."
+      ]
+    },
+    {
+      "file": "lean/MergeBounds.lean",
+      "sha256": "e0fb3928a1b6cee451f29c1f90bd5ea5389856bd5058a6b8db1fbbde8d2a7578",
+      "theorem_declaration_count": 9,
+      "theorem_declarations": [
+        "key_identity",
+        "pair_step",
+        "left_step",
+        "left_step_upper",
+        "right_left_gap",
+        "left_lipschitz",
+        "right_repeated",
+        "choose_single",
+        "choose_pair"
+      ],
+      "principal_theorems": [
+        "key_identity",
+        "left_lipschitz",
+        "right_repeated",
+        "choose_single",
+        "choose_pair"
+      ],
+      "printed_axiom_report_count": 9,
+      "printed_axiom_reports": [
+        "key_identity",
+        "pair_step",
+        "left_step",
+        "left_step_upper",
+        "right_left_gap",
+        "left_lipschitz",
+        "right_repeated",
+        "choose_single",
+        "choose_pair"
+      ],
+      "limitations": [
+        "The full cluster merge, atomization, executable implementation, inverses, and weight theorem are not formalized.",
+        "The nonadjacent-choice lemmas assume the stated boundary estimates."
+      ]
+    }
+  ],
+  "global_limitations": [
+    "No complete structural KR1 residue-to-gap bijection is formalized.",
+    "No theorem in these modules formalizes the full general positive divided-difference result.",
+    "Axiom reports apply only to explicitly printed theorem declarations; consult actual compiler logs."
+  ],
+  "validation_note": "Counts and SHA-256 values are derived from source text; execution outcomes are recorded separately."
+}

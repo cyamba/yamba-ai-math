@@ -52,6 +52,6 @@ Every output must reveal its branch. Combine it with the other auxiliary recurre
 ## Verification boundary and artifact handoff
 The originating research session recorded 36 Lean 4.34.0 Std theorem declarations over four modules, 26 axiom reports, 813 positive-coefficient comparisons across 18 comparisons, larger bounded exact checks, and separate critiques. The Lean declarations certify specified combinatorial and arithmetic lemmas; they do **not** formalize this entire positive-series theorem or the complete KR1 bijection.
 
-The 12-page illustrated PDF, 38 kB LaTeX source and research-and-Lean archive remain separately provided in the originating session. **Their exact bytes have not yet been uploaded to this GitHub repo**, so no public download URL is claimed here. This page is a transparent publication companion, not a replacement for the research archive.
+The [research folder](../../terra2026/) contains the illustrated PDF, LaTeX source, research and Lean archive, detailed reviews, and verification records. This page is a publication companion to that research archive.
 
 © 2026 Christopher Yamba.

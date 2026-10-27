@@ -1,0 +1,17 @@
+# Independent review: complete single-marker terminal bump
+
+Reviewed the section “A complete cancellation of one q⁹ marker; positive C3, C4, C5” in `theory/local_surgery.md`, SHA256 `0149c46f25516c71f85861179bd39c6e8171efb469149f6ddb0c1979f552bcfb`. The author is the theory agent; this reviewer did not author the candidate. **Result: the sign-reversing pairing and survivor characterization are sound conditional on the stated labeled cut expansion and on each terminal species increasing in weight by 9 when its index increases by one.** I have not independently inspected Xia's lemma or checked that its specialization gives precisely that model. Thus the positive-C3/C4/C5 consequence remains conditional on those source/model hypotheses in this review; it is not a KR1 bijection.
+
+## Pairing proof
+
+For a marked state, if the terminal layer has any particles, its finite support has a largest occupied index j≥t. Choose β there if present, else α, and move one chosen particle to j+1. The target maximum is j+1 and is singly occupied. Incrementing the index adds 9 to the particle's weight, exactly offsetting deletion of the q⁹ marker; cuts and all other cells stay legal. The source can be reconstructed uniquely: move the unique particle at the target maximum back. To characterize exactly the image, when that particle is α the target must have zero β particles at j−1; β needs no such condition. This condition is necessary and sufficient for the forward tie selection to have chosen the moved color.
+
+If the terminal layer is empty, increase t by one and remove the marker. The old terminal boundary cells are vacant; the new layer n−1 boundary cells can be taken vacant, while all other occupations stay fixed. The inverse is defined exactly when the terminal layer is empty, t>k_(n−1), and both layer n−1 cells at t are vacant. Then lowering t preserves weak order and removes only vacant cells. Increasing the cut charge by 9 offsets deletion of the marker. The two positive images are disjoint because one has a nonempty terminal layer and the other has an empty terminal layer. Every marked object falls into exactly one case. Swapping each marked object with its image is therefore a weight-preserving sign-reversing involution; all positive objects failing the branch inverse predicate are fixed points.
+
+The extra color test is essential: with t=0, a positive terminal configuration containing one α at index 1 and one β at index 0 has a unique maximum but is not a forward image. Moving α back would yield a source with α and β at index 0, from which the rule would move β instead.
+
+For n=3,4,5, a single factor (1−q⁹) makes the unpaired positive states a positive model provided the other factors and node model have the stated interpretation. For n≥6 the remaining marked factors are inert context, so the residual model is still signed; no conclusion about subsequent cancellation follows.
+
+## Bounded independent check
+
+`python3 research/rogers-ramanujan/terra2026/construction/check_terminal_bump.py` produced `8704 negative states: exact inverse, unique images; tie obstruction confirmed`. It tests all binary particle occupations in finite terminal and boundary-layer windows over cuts 0≤k1≤k2≤k3≤2; the tie obstruction is also directly checked. This is corroboration of the transcription, not an all-parameter proof. The script's SHA256 at review time was `fe5d26042f8a1f5146bdd3a4a145cde3b50faa2885c418a4f84f0307cfdde208`.

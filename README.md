@@ -49,6 +49,8 @@ preserves the original problem brief and supplies a Plan-mode prompt and bounded
 harness contract. Its first task is to verify one precise unresolved constructive
 target; no new bijection or theorem is claimed by this setup.
 
+The [KR1 positive cut-word research package](research/rogers-ramanujan/terra2026/README.md) includes the manuscript, Lean evidence, and the unresolved bijection.
+
 ## Run the harness
 
 Clone the repository and work from its root. Python **3.11+** is the only dependency; no model account is required for planning, handoffs, replay, or tests.

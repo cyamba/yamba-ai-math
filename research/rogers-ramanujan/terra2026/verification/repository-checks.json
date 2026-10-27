@@ -1,0 +1,18 @@
+{
+  "scope": "Repository engineering checks, not mathematical proofs",
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests": 107,
+      "reported_seconds": 3.255,
+      "full_stdout_retained": false
+    },
+    {
+      "command": "python3 scripts/check_repository.py",
+      "exit_code": 0,
+      "reported_result": "Repository checks passed: registries, feasible programs, brief/skill metadata, repository map, and local file links.",
+      "full_stdout_retained": true
+    }
+  ]
+}
