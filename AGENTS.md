@@ -66,7 +66,7 @@ objective, proof standards or separate-review requirements.
 | `assets/`, `.github/` | Banner image; CI workflow | — |
 | `.runs/` | Ignored run outputs: packets, receipts, reports | Find raw execution records |
 | `.agents/` | Shared supervisory skills and meta-level support, distinct from mathematical roles in `agents/` | Load the relevant authorized support workflow |
-| `.claude/` | Claude Code operator tooling; `skills/` also links shared KR1 supervisory skills | Use operator commands only when invoked; follow shared skill links for KR1 supervision |
+| `.codex/` | Codex publication and research skills; use no-em-dash for author-facing writing | Load specific Codex editorial skills |\n| `.claude/` | Claude Code operator tooling; `skills/` also links shared KR1 supervisory skills | Use operator commands only when invoked; follow shared skill links for KR1 supervision |
 
 ## Research standards
 
