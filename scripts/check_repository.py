@@ -17,6 +17,27 @@ from harness.planner import assemble
 
 LOCAL_DIRS = {".git", ".runs", ".venv", "venv", "__pycache__", ".pytest_cache", "dist", "build"}
 
+# Shared agent skills ship with every clone, so operator identity and delivery targets
+# (for example a private Google Drive inbox) must come from untracked local configuration.
+OPERATOR_SPECIFIC = re.compile(r"(?:drive|docs)\.google\.com|\bChristopher\b", re.I)
+
+
+def operator_specific_lines(root: Path = ROOT) -> list[str]:
+    """Tracked shared-skill lines that hardcode an operator's name or Drive location."""
+    found = []
+    base = root / ".agents"
+    for path in sorted(base.rglob("*")) if base.is_dir() else []:
+        if not path.is_file() or "local" in path.relative_to(base).parts:
+            continue
+        try:
+            lines = path.read_text(encoding="utf-8").splitlines()
+        except UnicodeDecodeError:
+            continue
+        for number, line in enumerate(lines, 1):
+            if OPERATOR_SPECIFIC.search(line):
+                found.append(f"{path.relative_to(root)}:{number}: operator-specific value; use local configuration")
+    return found
+
 
 def top_level_directories() -> set[str]:
     """Tracked top-level directories; the filesystem stands in when git is unavailable."""
@@ -87,6 +108,7 @@ def check() -> list[str]:
             relative = unquote(target.split("#", 1)[0])
             if relative and not (path.parent / relative).exists():
                 failures.append(f"{path.relative_to(ROOT)}: broken local link {target}")
+    failures.extend(operator_specific_lines())
     return failures
 
 
@@ -95,5 +117,5 @@ if __name__ == "__main__":
     if errors:
         print("\n".join(errors), file=sys.stderr)
         raise SystemExit(1)
-    print("Repository checks passed: registries, feasible programs, brief/skill metadata, repository map, and local file links.")
+    print("Repository checks passed: registries, feasible programs, brief/skill metadata, repository map, local file links, and operator-neutral shared skills.")
     print("These checks do not establish citation accuracy, novelty, mathematical validity, or model performance.")

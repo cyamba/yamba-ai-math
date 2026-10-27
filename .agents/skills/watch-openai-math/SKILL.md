@@ -1,6 +1,6 @@
 ---
 name: watch-openai-math
-description: Check openai/math and the dr-openai maintainer account for changes since the recorded baseline, triage results that touch Christopher's interests, and log problem candidates without starting research.
+description: Check openai/math and the dr-openai maintainer account for changes since the recorded baseline, triage results that touch the operator's interests, and log problem candidates without starting research.
 ---
 
 # Watch openai/math
@@ -8,7 +8,7 @@ description: Check openai/math and the dr-openai maintainer account for changes 
 Keep the [watch log](../../../references/openai-math-watch.md) current for
 [openai/math](https://github.com/openai/math) and the account
 [dr-openai](https://github.com/dr-openai), which merges its update pull requests.
-Run when Christopher asks for a check, or when a scheduled task he created invokes it.
+Run when the operator asks for a check, or when a scheduled task they created invokes it.
 Watching is meta-level work: it finds and routes leads. It does not audit proofs, start
 an investigation or cite anything as established.
 
@@ -36,8 +36,8 @@ an investigation or cite anything as established.
    `python3 scripts/openai_math_watch.py snapshot <checkout> --commit <sha> --date <YYYY-MM-DD>`.
 6. **Hand off.** Report in a few lines: upstream commit, what changed, new candidates and
    any risk to existing citations. Promoting a candidate means writing an `explore/` brief
-   with the `explore-angle` workflow or a program contract, and only with Christopher's
-   authorization. Use [yamba-post](../yamba-post/SKILL.md) only when he asks for delivery.
+   with the `explore-angle` workflow or a program contract, and only with the operator's
+   authorization. Use [yamba-post](../yamba-post/SKILL.md) only when they ask for delivery.
 
 ## Boundaries
 
@@ -47,5 +47,5 @@ an investigation or cite anything as established.
 - Do not copy manuscripts into this repository; link to them. Respect each artifact's
   license.
 - Following an account on GitHub, starring, commenting or opening issues upstream are
-  Christopher's actions. This skill grants no permission to post, publish or spend
+  the operator's actions. This skill grants no permission to post, publish or spend
   research budget, and does not reopen closed runs.
