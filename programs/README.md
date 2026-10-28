@@ -8,6 +8,7 @@ A program turns research briefs into one bounded assignment. The JSON files are 
 | `decision-sufficient-world-models.json` | Examine identifiability and decision sufficiency beyond prediction alone | `world-model` |
 | `agent-topology-and-correlation.json` | Formulate resource-matched comparisons of team topologies | `topology` |
 | `harness-improvement.json` | Design a controlled evaluation of one harness change | `meta` |
+| [goldbach-parity-bridge.json](goldbach-parity-bridge.json) | Investigate pointwise rough-pair parity with explicit falsifiers and an independent critic | `theorem` |
 | [partition-positivity.json](partition-positivity.json) | Record the initial partition-construction audit and scoped repair | `theorem` |
 | [partition-gap-closure.json](partition-gap-closure.json) | Prove finite weighted cancellation and audit the claimed general certificate | `pair` |
 | [rogers-ramanujan-bijections.json](rogers-ramanujan-bijections.json) | Audit the actual bijection gap and plan one precise Rogers–Ramanujan-type target | `pair` |
