@@ -18,3 +18,7 @@ python3 -m harness run programs/goldbach-parity-bridge.json --backend command --
 ```
 
 Use the local Python path on systems without `/usr/bin/python3`. The actual model-backed research run requires a trusted provider adapter implementing [the adapter contract](../../docs/adapter.md), an explicit budget and independent substantive critique. Do not replace it with a synthetic demonstration and present that as research.
+
+## First host-agent proof attempt
+
+A host-orchestrated proposer and critic investigated the cube-root target after the deterministic harness run. Their [prover report](host-first-attempt/host_prover.md) and [independent critique](host-first-attempt/host_critic.md) develop a sparse prime-deletion countermodel: the model retains the leading signed average but fails pointwise negativity at infinitely many targets. A third host agent reviewed the argument; it remains unverified by Lean and external mathematicians, and its novelty is unknown. The [finite check](host-first-attempt/host_critic_check.py) and [output](host-first-attempt/host_critic_results.txt) are evidence only for stated finite inputs. This was host-agent research guided by the program, not an LLM run through the harness command backend and not a proof or disproof of Goldbach.

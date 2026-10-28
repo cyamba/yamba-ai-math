@@ -1,0 +1,8 @@
+Python 3.12.14, platform linux
+cube-root reflection identity: 998 even targets from 6 through 2000
+adjacent-target progression 30k+8: exact checks through 2000 passed
+quarter-root half-interval tie examples N=8 and N=12 passed
+N=98: ordered prime pairs [(19, 79), (31, 67), (37, 61), (61, 37), (67, 31), (79, 19)]
+removed larger endpoints [61, 67, 79]
+model counts {'PP': 0, 'PS': 4, 'SP': 4, 'SS': 1} T_A= 1 remaining semiprime square 49=7*7
+These finite checks do not prove a statement for all N.
