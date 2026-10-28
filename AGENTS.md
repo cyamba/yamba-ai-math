@@ -15,6 +15,9 @@ The research harness and the AI architectures under investigation are different 
 - Fleet dependencies, separate reviewers, and bounded topologies: [fleets/registry.json](fleets/registry.json).
 - Bounded investigation specifications: [programs/](programs/README.md).
 - Harness improvement trials: [meta/](meta/README.md).
+- Understanding and teaching the mathematics (intuition, visualizations, verified examples, step-by-step explanations, levels of abstraction, applications, articles): [understanding/](understanding/README.md), entry skill `understand-math`. It explains results; it does not establish them.
+- Explaining the framework itself (tutorials, diagrams, artifact walkthroughs, questions): the `understanding` skill in [.agents/skills/understanding/](.agents/skills/understanding/SKILL.md).
+- External developments to triage (new results, methods, venues): [novelty_radar/](novelty_radar/README.md).
 
 Load only the skills and references needed by the task. `explore-angle` supports discovery; `audit-theorem` reviews mathematical claims; `assemble-fleet` builds teams; `design-experiment` defines tests; `improve-harness` compares workflows.
 
@@ -27,6 +30,7 @@ Load only the skills and references needed by the task. `explore-angle` supports
 | `agents/` | The mathematics problem-solving layer: role prompts and registry for mathematical discovery, constructions, proofs, substantive criticism and research experiments. |
 | `.agents/` | The meta-level support layer: system operations, supervision, reflection, handoffs, feedback routing and authorized work on the Yamba AI Math framework. Its skills live in `.agents/skills/`; future meta-agent definitions belong under this layer using the chosen tool's supported layout. |
 | `.claude/skills/` | KR1 supervisory skills link to the canonical files in `.agents/skills/`; benchmark operator commands are separate and user-invoked. |
+| `understanding/` | The mathematics understanding layer: explanation, illustration and teaching of results produced elsewhere. It establishes no results and routes questions and suspected errors back to the problem-solving layer. Claude Code and Codex reach it through the links `.claude/skills/understand-math` and `.agents/skills/understand-math`; the framework explainer `understanding` lives in `.agents/skills/understanding/`. |
 
 Meta-level skills may inspect mathematical evidence, frame a question, choose a
 workflow or recommend a pivot. They route actual mathematical discovery, proof
@@ -55,9 +59,11 @@ objective, proof standards or separate-review requirements.
 | `research/rogers-ramanujan/` | KR1 results, frozen claims, reviews, checks and session handoffs | Continue or audit the bijection investigation |
 | `research/parikh/` | Parikh articles, Lean proofs and checks; all rights reserved ([NOTICE](research/parikh/NOTICE.md)) | Read under its notice |
 | `references/` | `reading-list.md`: primary sources with inspection levels A/T/P; `openai-math-watch.md` and `.json`: upstream watch log, baseline and problem candidates | Log or look up a source; check upstream leads |
+| `novelty_radar/` | `README.md` (standing instruction, states, index) and `NR-###-*.md` entries on external developments | Log or triage a new result, method or venue |
 | `programs/` | Program contracts `*.json`, `contract.md` | Plan a bounded investigation |
 | `agents/`, `fleets/` | Role cards and `registry.json` (capabilities, tags, costs); fleet DAGs | Choose roles and topology |
 | `skills/` | Workflow skills listed in `SKILLS.md`, loaded explicitly | Load a workflow |
+| `understanding/` | Entry skill `SKILL.md` (`understand-math`), `skills/` exposition workflows, `references/` levels, styles and checklist, `templates/`, local `AGENTS.md` | Explain, illustrate or teach a result; digest a new one |
 | `harness/` | Planner, runner, replay, compare (`python3 -m harness`) | Plan, packet, run or replay |
 | `meta/` | Harness-improvement protocol, scorecard, change ledger, candidates | Propose or evaluate a harness change |
 | `docs/` | Manifesto, research protocol, architecture, adapter, handoff, `decisions/` | Check standards and contracts |
@@ -65,8 +71,9 @@ objective, proof standards or separate-review requirements.
 | `examples/` | Synthetic fixtures and an offline worker | Exercise the harness without inference |
 | `assets/`, `.github/` | Banner image; CI workflow | — |
 | `.runs/` | Ignored run outputs: packets, receipts, reports | Find raw execution records |
-| `.agents/` | Shared supervisory skills and meta-level support, distinct from mathematical roles in `agents/` | Load the relevant authorized support workflow |
-| `.codex/` | Codex publication and research skills; use no-em-dash for author-facing writing | Load specific Codex editorial skills |\n| `.claude/` | Claude Code operator tooling; `skills/` also links shared KR1 supervisory skills | Use operator commands only when invoked; follow shared skill links for KR1 supervision |
+| `.agents/` | Shared supervisory skills, the framework explainer `understanding` and meta-level support, distinct from mathematical roles in `agents/` | Load the relevant authorized support workflow |
+| `.codex/` | Codex publication and research skills; use no-em-dash for author-facing writing | Load specific Codex editorial skills |
+| `.claude/` | Claude Code operator tooling; `skills/` also links shared KR1 supervisory skills | Use operator commands only when invoked; follow shared skill links for KR1 supervision |
 
 ## Research standards
 
