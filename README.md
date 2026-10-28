@@ -51,6 +51,16 @@ target; no new bijection or theorem is claimed by this setup.
 
 The [KR1 positive cut-word research package](research/rogers-ramanujan/terra2026/README.md) includes the manuscript, Lean evidence, and the unresolved bijection.
 
+## Understand the work
+
+- [The understanding layer](understanding/README.md) explains, illustrates and teaches the
+  mathematics: intuition, verified examples, figures, step-by-step walkthroughs, several levels
+  of abstraction, applications and articles. It explains results; it does not establish them.
+- [The framework explainer](.agents/skills/understanding/SKILL.md) gives tutorials, diagrams and
+  walkthroughs of the harness itself.
+- [The novelty radar](novelty_radar/README.md) logs external developments worth a look, starting
+  with the [Lean formalization of the Classification of Finite Simple Groups](novelty_radar/NR-001-cfsg-lean-agent-swarm.md).
+
 ## Run the harness
 
 Clone the repository and work from its root. Python **3.11+** is the only dependency; no model account is required for planning, handoffs, replay, or tests.
@@ -110,6 +120,8 @@ Those records are synthetic fixtures. The comparison reports descriptive outcome
 | --- | --- |
 | `explore/` | Mathematical research angles and brief template |
 | `references/` | Primary-source reading and inspection ledger |
+| `novelty_radar/` | External developments to triage: new results, methods and venues |
+| `understanding/` | Explanation, illustration and teaching of the mathematics (skill `understand-math`) |
 | `research/partitions/` | Partition research, exact counterexamples, formal proofs, and article |
 | `agents/`, `fleets/` | Role cards, categories, tags, and workflow registries |
 | `skills/`, `SKILLS.md` | Reusable research workflows |
