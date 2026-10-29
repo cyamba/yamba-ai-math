@@ -1,0 +1,79 @@
+{
+  "status": "V3_restricted_checks_pass_full_KR1_unresolved",
+  "elapsed_seconds": 2.331884915998671,
+  "rejected_V2_witness": {
+    "old": {
+      "a": 3,
+      "b": 0,
+      "mu": [
+        2,
+        5,
+        6
+      ],
+      "nu": []
+    },
+    "new": {
+      "a": 4,
+      "b": 0,
+      "mu": [
+        0,
+        0,
+        3,
+        3
+      ],
+      "nu": []
+    },
+    "output": [
+      12,
+      6,
+      3,
+      1
+    ],
+    "weight": 22
+  },
+  "V3_retains_old_witness_and_repairs_new": true,
+  "y3_grid": {
+    "x": [
+      0,
+      17
+    ],
+    "t": [
+      0,
+      9
+    ],
+    "z": [
+      0,
+      10
+    ],
+    "checked": 1980,
+    "distinct": 1980
+  },
+  "large_parameter_stress_cases": 7,
+  "through_weight40": {
+    "H3_preserved": 3498,
+    "new_y2": 202,
+    "new_y3": 156,
+    "all_C_U": 5461,
+    "combined": 3856,
+    "exactly_recognized_targets": 3856,
+    "first_missing": {
+      "weight": 21,
+      "C": {
+        "a": 3,
+        "b": 1,
+        "mu": [
+          0,
+          0,
+          0
+        ],
+        "nu": [
+          0
+        ]
+      }
+    }
+  },
+  "alternate_funded_y2_y3_targets_rejected": true,
+  "funded_y4_to17_composition_cases": 378,
+  "V3_sha256": "b621d9d32d2b06bce793b2a703d3d4579080fc3aaf4c3377556a70427bb3ea5a",
+  "discovery_not_held_out": true
+}

@@ -1,0 +1,2232 @@
+{
+  "status": "selected_source_snapshots_not_new_mathematical_execution",
+  "date": "2026-10-25",
+  "original_revisions": {
+    "/private/tmp/yamba-ai-math-phase2-review-20261025": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+    "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e"
+  },
+  "file_count": 317,
+  "total_bytes": 2612999,
+  "selection": "Phase2 md/py and json <=128KiB; Python endpoint/check sources; Argon Lean sources/receipt, program, article; documentary review sources; original user collision image. Not every raw receipt or linked artifact is included.",
+  "files": [
+    {
+      "path": "sources/h3/research/phase2-20261025/NEXT_SESSION.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/NEXT_SESSION.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3041,
+      "sha256": "5b48f32299954b4cba5fe358855e93892f629291e32ce6409b9ce01560581347"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/attempt-input-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/attempt-input-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 537,
+      "sha256": "96a71506e78d0c9d0ee5d169edb935d519ef579433caa08861a989e1baad0e17"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/baseline-pins.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/baseline-pins.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 18345,
+      "sha256": "00f05598a908194c3947380d78b1fb1890331a845c866ba83112d031bf049edd"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/checks/close_record.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/checks/close_record.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7347,
+      "sha256": "67e02dc10a0cf742587208b6d3eb172c2ae3426dc4922e58bf91a1075641eda9"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/checks/integrity.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/checks/integrity.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2831,
+      "sha256": "cecf4ac061be204c7873210218ea1f68600ec47e8e9f53d93a2fbef309eea118"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/checks/meter.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/checks/meter.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3213,
+      "sha256": "92ad924e6fe68b2ab1e62b848917ee8c6963d2c55a334ca5f0dda3bb446a3868"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/claim-index.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/claim-index.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3973,
+      "sha256": "ffb82f73edac6f8e718f9ccc67c6b3284bfbf2150acca4bfa5faed3ae94512ce"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/completion-manifest.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/completion-manifest.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 75338,
+      "sha256": "ad9ffb2b067fa681e9909ab9dc8b719cfa341284970770079b508818d8dffad3"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/contract.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/contract.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5115,
+      "sha256": "ad1f10ed31f980e0bc80886c9ac670b53103e626c110dbd773622f247969837a"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/execution.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/execution.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5200,
+      "sha256": "068ad29d9042e39d11e398739cb1e30a2420a6e57be0ec467e846fb7b420296a"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/historical-pin-recovery.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/historical-pin-recovery.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1322,
+      "sha256": "206902bf6b345273b746c9109f179371065c1c8e0e40bf4cd06f0a40c8e9d114"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-report.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-report.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 21979,
+      "sha256": "1e23882820c59fa967b7259e4230711078d96067063dcf31bc3e7930965e4115"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/analyze_d_dim_kr1.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/analyze_d_dim_kr1.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1402,
+      "sha256": "44c0cfafdfe0a7f0fca5ea92eb7f5b226bcc7855a2df16729a32bff1b66af99c"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/analyze_kr1_structure.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/analyze_kr1_structure.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 960,
+      "sha256": "eda88b38a516e8d8da9ebdb12a7742c98ca3bf8274afcf8f9700d0791fb9b1c9"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/analyze_phi_221_cases.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/analyze_phi_221_cases.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 828,
+      "sha256": "16110fa9433488b49606dbbe15a5f7af035d93c28162cf0fc56c20871b52d72c"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/analyze_u_rem_structure.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/analyze_u_rem_structure.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1676,
+      "sha256": "4ebd69ffd3877d3014846cd27821c470b14016066f9b80f18d390e01ce003555"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/build_complete_kr1_families.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/build_complete_kr1_families.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3030,
+      "sha256": "ee27b1e411364a39810b9d306e90e62666f678f26d483cb8fac46c41d68cdea6"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/explore_3d.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/explore_3d.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 168,
+      "sha256": "ed356b0a6a850f1b668e1c117e60e0616eddcaa564dedb8b5113450dca9dcd77"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/explore_a3_multidim.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/explore_a3_multidim.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 289,
+      "sha256": "bc3d3fd165ed84869ae065ee957c559f1365407aef60d80aee892386224ea3ee"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/explore_cores.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/explore_cores.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1822,
+      "sha256": "b32ad554f9c88b3006113934ba631202cfb01375ad2b8b36f8287c50d0c6884f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/explore_d_dim.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/explore_d_dim.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3404,
+      "sha256": "8ebe7092e835e505b26fc352d6ec6cf45badc225111642e066477bbafbe9fcb8"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/explore_kr1_and_tableaux.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/explore_kr1_and_tableaux.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 379,
+      "sha256": "9d010db460d48276d3374bda16b4b62c471493c6c0a27ac12c3c370bdcf13a27"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/explore_phase2_n40.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/explore_phase2_n40.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 763,
+      "sha256": "83eae175e2e3b9df8eb4de205f3b3254f8f76b94c545007031e86a050db471d1"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/find_all_universal_cones.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/find_all_universal_cones.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1673,
+      "sha256": "055db82050eb5f163243248cbe1205362cf37a4e9a6837042e183e2e968478f8"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/find_dead_ends_n40.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/find_dead_ends_n40.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 433,
+      "sha256": "9785bf6b436010ba536a34397a5507ebf613d51d2ed3bb56466df7de2152cf2e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/group_prim_u_by_head.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/group_prim_u_by_head.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1233,
+      "sha256": "6faef58c99c69ab4e44f27e299e79fbd5e2115e12706fea17e019ddecac76b40"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/helpers.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/helpers.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7163,
+      "sha256": "32989f8b8432d049806940aecae0283e51107a7b8c9a0420ab71dceb142be7ff"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/inspect_a3_a4_exact.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/inspect_a3_a4_exact.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3360,
+      "sha256": "b649a458e75536cedae5363f2cc83a47958af522a60a8fc0ebcf5ad6439dce12"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/inspect_after_a3_b0.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/inspect_after_a3_b0.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1519,
+      "sha256": "1901bfbede2eb9d768bcbc44020236c8ae4a7c620ccce8041e78e65c45bb1791"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/inspect_complement.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/inspect_complement.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4287,
+      "sha256": "d317eb24e7d12914de9259059ff6b0a402f103cec9dccd40383e56bb2872c9b2"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/inspect_kr1.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/inspect_kr1.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 733,
+      "sha256": "ed38d47f0aa64bf236dab93beb8be134af6e4326f6cef4f9a1d102e565db00d1"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/inspect_phase2_gaps.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/inspect_phase2_gaps.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2413,
+      "sha256": "33ba7cd2062d45ff7b7cec229a1d46aa4c50cb512440fdc021f988ee373ed230"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/print_betas.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/print_betas.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 657,
+      "sha256": "74e9ad2c1111c789211f959ac07bd55054b3d89ab3175a4aac7115f7214f21b9"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_all_65_h.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_all_65_h.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4238,
+      "sha256": "7eb9cb54427608c129a7bdb853c691111f5cc03721e260a3b78d01e008453319"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_balanced_ternary_kr1.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_balanced_ternary_kr1.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 537,
+      "sha256": "75cb20d030ca46eb8464670e93649f1fbd129e5a6c878e0b292b2aa8e150dd38"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_clean_6sector.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_clean_6sector.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3409,
+      "sha256": "42bd4d0da0e487c5958d43076276870488c299f66b6cdb9e49e196d6d4653b0e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_collision_exact.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_collision_exact.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2106,
+      "sha256": "71cfcb5ec94044fe99c4381513029fa66508a74a08494dd780948a7d0edbb28b"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_complete_n26.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_complete_n26.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6552,
+      "sha256": "a5245322c44b7a3f779a17d91c27414ea9b2e47156df87955cb53f88f61c9e26"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_complete_n5_41.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_complete_n5_41.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2223,
+      "sha256": "93a2ae5434bb64fd72c3d2c4a9dbb19a8810d80e7bd6567d9c7558902a44e07f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_d3_to_32.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_d3_to_32.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2885,
+      "sha256": "425a1e9b6d3bb1deaa64c4bae215bb08e2f1a6e5aa32b8f9dc54b2c0482262e8"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_djt_3d.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_djt_3d.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2147,
+      "sha256": "840bdc77b719faa650d498d930037f0083c76cd38367359e32e5737bd4ca719e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_hook_and_full_n5.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_hook_and_full_n5.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5071,
+      "sha256": "33e6f31ebc876a1436d58a41164cd7f4c84beba8c4db41fd3c5db8bec9d1bce1"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_injective_221.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_injective_221.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2485,
+      "sha256": "015186283322336e44e315362f01328ec4600a6571648efb2ece31645b935055"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_primitive_cores.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_primitive_cores.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1205,
+      "sha256": "095edaf8b445293b63fea12849b5a066078ddd9bddd7b40209e062503e72b9f6"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_step_one_v2.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_step_one_v2.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3704,
+      "sha256": "503608c5b4d5ff330ad4a0a95aecc97a8d45d51c9a58b07f642d0571ff857f78"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/test_words.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/test_words.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 564,
+      "sha256": "beca57433cc34b183efe2e8ee4ed97ec542bb178167c6deb7fbff0996222f0a9"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/verify_6d_cone_theorem.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/verify_6d_cone_theorem.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1387,
+      "sha256": "17b44298160b7f4f5f0ec138425fa99c041d00c4cb3d1506b95cbbe0079adfae"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/verify_a3_b0_universal.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/verify_a3_b0_universal.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2902,
+      "sha256": "ad45aa3e978f992cad975a79da3de5969403b640b9b18bd79f0af1154a1b04f1"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/verify_beta_bijection.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/verify_beta_bijection.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1842,
+      "sha256": "49c0fd92f0dd1cd4bacd012b53c872222dc12cb0e24f00514f8d8b0262d824fb"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/verify_complete_roundtrip.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/verify_complete_roundtrip.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 9354,
+      "sha256": "22ffc35cb64c9928154fb7346061676cca0926821daa4f2753b3940f58270824"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/verify_full_kr1_bijection.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/verify_full_kr1_bijection.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 8985,
+      "sha256": "4b960630c47516ace7efac60df515110e248083bdf2b9da8dfba2d1609bd9ae9"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/inputs/external-scratch/verify_prim_families.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/inputs/external-scratch/verify_prim_families.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1914,
+      "sha256": "5e4ef7ddc4eb33e21e54c42d619e282ddeb642fbda5b07e46cba6c0af2b87c6f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/integrity-final.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/integrity-final.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2746,
+      "sha256": "829c68ca89632849663aa526ed8d103e18aa6f230a62747e6921c014921ec234"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/integrity-progress.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/integrity-progress.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3980,
+      "sha256": "d6998efa8d65bd46d905699980eefc77abe5d8f3425e5be312c588de93a9cee5"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/journal.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/journal.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7130,
+      "sha256": "d1dff9a1642a333f57d40e7a4a7843964c580df74a1a0e6d73f4a0b4bb420e89"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/author.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/author.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 16037,
+      "sha256": "9bea7b7be8f8a93bcd72b395f68cda034e43fc13b5dac7c3c4e05942627b607e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/bridge.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/bridge.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7048,
+      "sha256": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/check_extension.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/check_extension.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4529,
+      "sha256": "d0fe13db35ec8eadaa7b6eb484a989c052e8faaca44c434fbbac3b462d4c8d6a"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/check_sectors.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/check_sectors.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7187,
+      "sha256": "bf09944cbfb293594254291f3014d61f1c892369da25a54e1b8d005b6616d2c9"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/extension-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/extension-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 919,
+      "sha256": "3fb5acb91f0c3578ebb9a19d593244339f2cb23993f433508432d5a50f1c0acd"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/extension-result-12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/extension-result-12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 935,
+      "sha256": "4bb00939d44f3a9a80f4acfa8ef9ec4d12986776fda9ab173b738e41cfea02ad"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/extension-result-30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/extension-result-30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1250,
+      "sha256": "6e63f4c7cdd208083279df06100988fa6638b22ffe18cb592aa8f06f4c8b6f82"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/extension-result-40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/extension-result-40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1316,
+      "sha256": "af6148bdfec781e6669ce6965c162af9d6c52b69126bcc5b3c7c22cc560df4b5"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/extension.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/extension.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5815,
+      "sha256": "72e7af3437ee5dd445819b3af519d3f2e21fddc6f2d558e312fd42e6c41ef280"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3867,
+      "sha256": "2726b54ebc29f57b0286c09cb3a660bf008c84ced94f9051256ebceee7342653"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/initial-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/initial-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 625,
+      "sha256": "96a5b21253799b3b28a96ebfa3987e43598990996bcd26d37d7c70935097c243"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/notebook-progress.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/notebook-progress.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2827,
+      "sha256": "0f1cc9ac236ca2437bcff10c4f2cebc221aa5b31bf9f8248ea094729253992c7"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/notebook.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/notebook.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2393,
+      "sha256": "b0d7d270bd557845e35bc938965bdb0820c679cff04e5f6ab35254f97576d152"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/reductions.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/reductions.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1770,
+      "sha256": "81544339f17c09fd5836d8b3d33c81daffb8f5d5dc2ec690255d579753ead273"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/resource-use.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/resource-use.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4937,
+      "sha256": "e6a2cfbfadad405d3d9fea9bd7b5a3b52feff94d37d8a4560c1add1454c5e14f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/result-12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/result-12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1040,
+      "sha256": "2a47b5aa09d6f6a9a2d79f5f59c500e3f8661458a9b4e98d5ade4c30869bc22c"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/result-30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/result-30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4689,
+      "sha256": "9f53055c923eab383e7cfecd763f549ee008d913c53edb6a741c99e15b5ab4f9"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/result-40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/result-40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6218,
+      "sha256": "ae5e450c84a69c10555fc4379207a8309c726de56c8c37b18c11755e5eceaaab"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-bridge.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-bridge.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2285,
+      "sha256": "29d64553916b4a4da140b4d7de5278ff6b05b9c289a17d64e6a783b4b7708750"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4994,
+      "sha256": "970913cbb7f67aa2025f14e571e1cfac915b690987be12f8884a5159e03bdc18"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7088,
+      "sha256": "5ea85a8a232d72e004bcd80a80171bf4d418bfd1d29004d9f1d82e942ce82a99"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-pretest-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-pretest-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 547,
+      "sha256": "0067f7959987de5a0a975713f70f3c3c5147a2130cecdf24a91867987360faac"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-resource-use.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-resource-use.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7647,
+      "sha256": "c725504ba2e61ec07d8ac2e51c801373c2a1de61b18759f0599c520baa6c92ca"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-result-12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-result-12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 731,
+      "sha256": "30a095057c23a5a99fcb9189d925bc297ac87175de67a87020ed6e26d114d9d4"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-result-30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-result-30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6457,
+      "sha256": "0fbf8c1ba0ffa30fda4e1ce3c82d3b3c4eef83d67798faeb6d17fac221cff26a"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-result-40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-result-40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 12852,
+      "sha256": "8a5c167e0be3aa954d87bf4a9d39417aa680d88d70ba23adc5074f634da3556d"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v2-bridge.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v2-bridge.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2002,
+      "sha256": "9327d31f2dcffa12e3be20112ebdb724f8cdf7699c98a900a19b3398d530c43e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v2-check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v2-check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5080,
+      "sha256": "e11dd681dd1021d35370c6cd2c42cb19e52fc4b4e186999b1f34036130e70e03"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v2-pretest-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v2-pretest-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 541,
+      "sha256": "e5640b271adb2e66ea18968073ca2533c1ddf1c14a9d3de7a4d2ec5feb6e4774"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v2-result-12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v2-result-12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 731,
+      "sha256": "5525e88010e37a83376545b35285fb2ce85312cbabacef89f4f218cfe3e55937"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v2-result-30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v2-result-30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 10195,
+      "sha256": "24c4b976c8adb7165f9d5eabd8a6600712846566d3b892c3b39edbc6bb715b74"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v2-result-40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v2-result-40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 22521,
+      "sha256": "8f99754b0b29768e210914de92d98824cb2135485347bc2f016f4b3a6f276797"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v3-bridge.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v3-bridge.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2063,
+      "sha256": "c08dcffe88f0f8424c226a51d50a23ed56cdac2b8d2c368abcf3ce6662d09f9b"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v3-check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v3-check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5307,
+      "sha256": "e8f6686744ed3ebc9174bfd54e37ce7ed9699ca2e3ee585c663c4ad265a24a49"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v3-pretest-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v3-pretest-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 570,
+      "sha256": "8455a34927729c8a8443366eb8e6eb9c5f59c1148a5dd206ffb9408e70863b24"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v3-result-12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v3-result-12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 807,
+      "sha256": "69a01a6580cf5548b801c4c3594cb68d93586317a1e93c3fede34c7d1ece5a4e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v3-result-30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v3-result-30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 10273,
+      "sha256": "a065feaecd8cb13e50f42a9188e198162da43973809196228dea703212c36262"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision-v3-result-40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision-v3-result-40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 22599,
+      "sha256": "7ba5584bd5653f9ff3e8f11ea2b86bf10d417f3d66d77f7e83ada85177fae2a6"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/kr-sectors/revision.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/kr-sectors/revision.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 17057,
+      "sha256": "e2584df26ddfc691afc1183648e5b99e0f60798f4cefa8c44c7d2017ed6180ed"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/plan.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/plan.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1410,
+      "sha256": "6f3be692d62e5a591f12b89f7a9d9cb4cb77afe0dc15c64ff6f6109a2d8f9f82"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/pre-run.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/pre-run.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1064,
+      "sha256": "4bfddd95cb316d3e476accdf8ac37458981d9f492d873df9d75834fd227ecf56"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/prior-context.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/prior-context.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2601,
+      "sha256": "2e7d099bb8347e741540eee73c3b11bfa42b1bf58c51fe7d08e7ceb19a984e19"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/author.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/author.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 10891,
+      "sha256": "f2401476d01420296f7fc398c6ae6049bd54d88ea22a1d7467a2d74e2528fe2f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/candidate-rules.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/candidate-rules.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1912,
+      "sha256": "aee114c04e2437eea208a7e81f638b195a33942973585e1c1beda34ba9dfd9c1"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/cuts12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/cuts12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1153,
+      "sha256": "aad7cc29f8845ef783db870e3b6963f764ac89d61c9d14ca714f4c0bf5d85853"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/cuts30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/cuts30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1555,
+      "sha256": "4fb3518c6b2af004433d407f362f858ddf7a329408e0a378c22ce3b27036d3ca"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/cuts40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/cuts40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1559,
+      "sha256": "f782948159f22ff67a903da1cc38e6759c31854b07a384ec063daf214b2ddec4"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1926,
+      "sha256": "6007a54c5a8e33fb4d10a6e021ad6ff6257b7dbb4b6e077733316c600e92b972"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/grammar12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/grammar12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2121,
+      "sha256": "ef9d0342b8f9231eeeabcfccebb57c5c615d2e43e9aaef9a1582ade1062e4598"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/grammar30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/grammar30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4255,
+      "sha256": "6329dc2ef775bd461b6a3bac77075b64b7c9748408a4333bc6118cb71bb29a2e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/grammar40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/grammar40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5462,
+      "sha256": "5ed2ed2bb2573661e6539bd3db18e26b324cd08ab792625b1b2e738f965a5d5f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/notebook.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/notebook.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2924,
+      "sha256": "8424a4cecf0317531152b4c6ec01e4013c3414c60ff7bcaa26fb62b49578f92b"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/prepilot-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/prepilot-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 656,
+      "sha256": "e4e59c064d08aaca4868e052a291be8011a59a1fbc9fcf9bfcd36f96e13fb0c9"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/revision-check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/revision-check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3567,
+      "sha256": "a9bbde6a671cae9a3b1ae1d302c5e9a9b71c2947434d701de2f4ba0a369c00b4"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/revision-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/revision-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6596,
+      "sha256": "edd18b65d4ec5c05ebe5288ac07d4616b5af1cc79989fa3e5a9f627c8677cf07"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/revision-prepilot-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/revision-prepilot-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 417,
+      "sha256": "4e9061cf850f7fcdae9b0fe8cef8e13b7745ee8a713349725edbe3187aec566b"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/revision-resources.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/revision-resources.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3518,
+      "sha256": "f8af85daa6a520af9574439c43e54694566ee95094ca15599c6a18072fd6fad5"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/revision.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/revision.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4991,
+      "sha256": "bef75309c14b5538bf5fa9af97750a0c502f5636a5369686fb164b8ce36ff866"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/revision12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/revision12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 625,
+      "sha256": "1b86977fade994a120484ada999b5abb8bcb8bf8a1e78100fd3f45acb8a71147"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/revision30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/revision30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 752,
+      "sha256": "8d7c42af3e359715af725865776a32de9dfbfc56abc430e8ca5b35f6b65d4180"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/revision40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/revision40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 754,
+      "sha256": "262306df799b1663f1f01fd8b0e3b0127bac7a1fde6909a50f549db084602130"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/triadic.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/triadic.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6631,
+      "sha256": "222662c28f9a261ef8f7c5b0450fa7f5da127a183a4865f5f866a9aaddc2bc4e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/u_candidates.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/u_candidates.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4270,
+      "sha256": "577f3713b324e4132fc5fcca5a7c7c0b18a1e11d75cff36c8c5098dd431f55da"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/recursive-lift/verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/recursive-lift/verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3765,
+      "sha256": "bc9eb7186d29742e8ebc06f6cec4c4545138ef70801b49030f2eab45613f9bba"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reproduction.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reproduction.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3142,
+      "sha256": "2c4dc7d18ef2d07c30525c226603657b16071118f123517d002c0e63f8dd7ced"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/resource-use.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/resource-use.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2561,
+      "sha256": "6da978809c2bc3ba03e36550025cc5a0c5afbc80d661346fbea09eb9b7667d5c"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/resource-use.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/resource-use.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2928,
+      "sha256": "ab3faedfb6ab48831f95e195ebefb42e6f2554848c589c06e364b1c3bd7e8d5e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/result.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/result.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 9325,
+      "sha256": "9b4177f35f8300c4ab39a05b4f99e9cbf02cbed3dfceff1302c71fd05c2d9cea"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-dependencies.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-dependencies.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 11106,
+      "sha256": "f293860d8c7a55dd348914f77bc7bff2b27231ab7a73d1dfd5e1ef727a123e6f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7610,
+      "sha256": "e78309e6c62a780a19c99a89530fe3329ddfe20872983cdbfa01425ac1d862fd"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-dependencies.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-dependencies.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 41588,
+      "sha256": "0f6a1b2ea120e52affa9b7711492d7caa070e10467c919f6c0203f3a1a5ec5c4"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1502,
+      "sha256": "57a6bacfc5b05e1bc05e4a184e9e062aaa804c7f33c370602c943c846d4c4815"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-naive-audit.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-naive-audit.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2265,
+      "sha256": "9beb96bf58a53bda875d0f5d3bfd05d1d8883fab596e6fd0573e1d9cce6ebf1f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-naive-audit.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-naive-audit.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1562,
+      "sha256": "3f8709503b9189438d9cad9e6cb98bd8287ae0a3ea6131f7d225894800abca0d"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-resource-use.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-resource-use.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3449,
+      "sha256": "8e47805900fdc192f8602d63aa8a86f03c5042b2a9966db7f592319b67f8a816"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-result-12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-result-12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 801,
+      "sha256": "a0c9f593ff782aedcb01e36659e44ce70ea2ed390bd7f6a7f66bdf5b602f98d3"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-result-30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-result-30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 959,
+      "sha256": "1417533afe02d054f95f4c42ba445cc8be54e94c847f227450a2402a57cdfbf3"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-result-40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-result-40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 963,
+      "sha256": "0179708935ec10ebd9fa775497da0e05d52e247b3e26db0c09e40d68cd3c3fa4"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-final-review.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-final-review.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 12074,
+      "sha256": "0545db534505eac41eaa3704fb99dff1eda70f3e159ba4c5056a683fbb344f00"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-geometric-result-12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-geometric-result-12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 391,
+      "sha256": "a0d1bff96797edccbfe87802d316efbd857c4f17286326d1aee9416eab48da7d"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-geometric-result-v2-12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-geometric-result-v2-12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 491,
+      "sha256": "099d15f6f8a9299b837c8c3116f9dfe45edd3e898ea181a57b872945a3711c15"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-geometric-result-v2-30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-geometric-result-v2-30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 761,
+      "sha256": "bb52c4afebf346621623fcc401bf46e8791a27edcd82f7c9d4723ac777b23d96"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-geometric-result-v2-40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-geometric-result-v2-40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 764,
+      "sha256": "c9dede3ed45f63b5362a66049874871e3e3845317fb62138eb86356713fb35f2"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-geometric-v1-failure.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-geometric-v1-failure.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 630,
+      "sha256": "8ba52000cd67f45724ee83dc10b643113580350536e45823856bbe6e88d7fb3d"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-geometriccheck-v1.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-geometriccheck-v1.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2822,
+      "sha256": "7f1fcbbdbccafef32e7896e73dc4f0ea71bbad8dfd87b22cd940429d79a6ef2d"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-geometriccheck.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-geometriccheck.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3289,
+      "sha256": "e8e3c36a3419c4ed9128f0ad21b754c5b7d674aef61ef8ed816ca7da258d7b2c"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-independent-result-12.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-independent-result-12.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 870,
+      "sha256": "56d1e23b3a71e9effc276be587686435bb34f1ba1920c692b116149d4db5d92d"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-independent-result-30.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-independent-result-30.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 989,
+      "sha256": "b3b82ac12c2e5e70feab311a6ba67c7e17b2e0f34a5f4b9ac52bb09056b4f0c2"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-independent-result-40.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-independent-result-40.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 996,
+      "sha256": "bebee4b0983c0fa36b2d8df2cff8172c58bc330dd689464995f3484fff796507"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-independentcheck.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-independentcheck.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 9131,
+      "sha256": "9a886583c8070113c6884be3197293e3dfbd5f1078723723d039cbc66a65c125"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-initial-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-initial-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2102,
+      "sha256": "85ead20cdf75b85bca9ef29568ea5ec5c0c1c936f154770bb37bd2115324f317"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-resource-use.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-resource-use.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6568,
+      "sha256": "329bf524545a3c10a15d69ad21414a2a963d7b9213bf1ef7ece5be693a519abc"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/kr-review.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/kr-review.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 12343,
+      "sha256": "eeaf256d8a2094a9ef9844b78e065dfe57549816fa8f9eb8008441d877cef129"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 10414,
+      "sha256": "ec101a9599700a2a74dd7f610a4b98b7708904f54eadd951ff820049f58fcf07"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-close-review.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-close-review.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2453,
+      "sha256": "9cab466e8023fc89f453937162aefd9011200b5ec1507a7679aaaf8c8a2f42d6"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-dependencies.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-dependencies.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2530,
+      "sha256": "34c1d0715347bfba127dd44076544f3333171545f9d986cf900c291431410108"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-final-check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-final-check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 10207,
+      "sha256": "b505d0ce67e05ec27d12f4358e450b7e8285551dff62c6b95bfa61e994faa9f8"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-final-close.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-final-close.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2253,
+      "sha256": "b8be1c9a5035e952080ceb894b98cd092b96d590bee0d140b2740c2bc6015e00"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-final-dependencies.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-final-dependencies.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 11389,
+      "sha256": "433750d946462e53555a8de5c0a723e7ae29da4116860d66ecc2e0eeb8af8082"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-final-pins.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-final-pins.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 12760,
+      "sha256": "4f0cc965833f992daa53325089f2e604e798a1624616de233d6bf89d05ab3c26"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-final-result.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-final-result.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 36193,
+      "sha256": "42453c2e3050eb2bff83d3c6b6e4031352a97baf4b4699286e6de58212ed2f38"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-final-review.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-final-review.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 12153,
+      "sha256": "5ce27498e52d41cd549587c23fa209301915c90a66a2a8aa7d525e2379fd7cd1"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-hall-check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-hall-check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2412,
+      "sha256": "cd9d9cf4c175c436ad3a58651cbad7559b31387617c9460c4644d8c329efcbdf"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-hall-result.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-hall-result.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1543,
+      "sha256": "5dd71bc27e3768b8b45b184a1311da2fe38572caa78f4830b890dd6c42f62a56"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-result.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-result.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4043,
+      "sha256": "89c3bc16d5b060320ddfaaf338a38f8b1afdd3874d0fff8a433f3e97125b09ca"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-review-final-pins.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-review-final-pins.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4220,
+      "sha256": "4f18de73ceabfed5f6bf2af347657396c4739bf4fd7296d0441816b5ff49c970"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/reviews/tableau-review.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/reviews/tableau-review.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 10221,
+      "sha256": "203a4e695af192d6804d81ed07814cac92dd8c13b283a91f118d11d63caa92aa"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/supplemental-input-pins.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/supplemental-input-pins.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 28804,
+      "sha256": "02363c73b94a3f0d27e1dbc094047b7db4eaeacc36be1da1313a94258eca63c6"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/author.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/author.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 14013,
+      "sha256": "9e02329dfc61090275361070503328219a287d9f1f5f720de2e1842a71c3dd42"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/cancellation-v1.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/cancellation-v1.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 9554,
+      "sha256": "d41c1fbaa6816a865afe3ff40a0837c4195ee132a288e94d14c97ab7bfddd5c2"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/cancellation.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/cancellation.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 10813,
+      "sha256": "a776a359f82235716c97a1cb63b360a09013e0d6bfc747c91ce2d5966eebf048"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/candidate-freeze-before6.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/candidate-freeze-before6.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1121,
+      "sha256": "c76754bb961f935a8a39b6f8f679d100e91b36734a969be4673bf9f17858c023"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/candidates-through5-v2.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/candidates-through5-v2.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 91275,
+      "sha256": "b4bc91e99fb55f92c004c68bd832ef6ff8a6afef163fc6f50fa356d741b3ca34"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/candidates-through5.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/candidates-through5.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 103229,
+      "sha256": "7787886244c8cea6ba13d4458ba39a53210ad0801a80b138fe3873343b16e85d"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2047,
+      "sha256": "4493afa8ab22d3ecbcb7079181f4b7269ab8c4cbc837ce2a818c3059a8216e44"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/independent-coloring-through6.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/independent-coloring-through6.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2565,
+      "sha256": "8b43b6c9e8bab0e2eee0b86c78cd39c89b2818513a6f62ab3798f44ab4d03a54"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/inventory-through5.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/inventory-through5.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 24924,
+      "sha256": "50349df689e724d66d8b290f29aa9e534068f9c08f008046153057fd68cd7217"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/inventory-through6.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/inventory-through6.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 60034,
+      "sha256": "19a41ac5afc4318689c20c8a7baac4aa649df231535ed7603dad93a0a61d4fd7"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/inventory.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/inventory.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2300,
+      "sha256": "ce6c13dd8b0eb7d1e294c30c3c042d64f9e1ab6bf91d9c3d3ab2bc747eb030b5"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/notebook.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/notebook.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2999,
+      "sha256": "7121f7e1e68105c3a74363c2ec796ed3abfa51e96e5e187515d0705ae086e83c"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-3971-results.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-3971-results.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 41136,
+      "sha256": "8d0c187f9ab706565840f6a3c3d2de21410fd9d00916bc0213a2a9d52fbdab76"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-cornerpromotion-results.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-cornerpromotion-results.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 53781,
+      "sha256": "93a0f0297b095590b5393ad1cb590877e87ebe357fd7e5b36d0256722d88d8c0"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-extension-layers-results.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-extension-layers-results.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 26873,
+      "sha256": "9fa0e6084f6c435e2cf2c8b6cb9d29526052056195b54e727c3d37852c39c844"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-extension-results.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-extension-results.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 26984,
+      "sha256": "04b666824264cfc1e0d094db5083bdf49fec8686b2b2de9e266383f67879212b"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-final-results.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-final-results.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 32309,
+      "sha256": "aa662c3a5e13b75b0ff35e8397f25cee725684e5b0c4bd6f16be50c835f61532"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 12027,
+      "sha256": "4916798c10b6d26d5fad6abe3691f5aa6a97156a986f7db6e055ce6482b392d4"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-layers-results.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-layers-results.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 31659,
+      "sha256": "69928b02ddbf8475e45055e53eaba168fcf3b557a92386892b083e7e871d505d"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-notebook.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-notebook.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3238,
+      "sha256": "ee82c0881f9e461364ee2e34730e8d29914b9dcd6c1ad67f89022717fbac1401"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-pattern-discovery.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-pattern-discovery.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 10200,
+      "sha256": "1c60bf71ca5e9a94469651b1280d995f891d67260c3831cc6953b37c2721d1db"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-patterns-112.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-patterns-112.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 116138,
+      "sha256": "e2b50f5177f6ef63e84e66d100a06ee91224d4edb9f9afaa10ef1f92e26889fa"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-patterns-21.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-patterns-21.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 20848,
+      "sha256": "f51812b494f0505db8ff40acc95122734d84cabd6af377a601489d207f27a03a"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-patterns-42.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-patterns-42.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 40760,
+      "sha256": "58cf73c03f23e28d1f5e5f0a3b14b6af3ec7f2f351080e64889a526d29f75baf"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-recovered-initial-verifier.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-recovered-initial-verifier.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2974,
+      "sha256": "71918602f2f6f8da0fceea5dd1e9af3adce3a230e3ff9ef9eaeea44db8746098"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-secondarm-results.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-secondarm-results.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 48268,
+      "sha256": "4046998c1f9c050950a1fb9c85ed623bb64e1f91cf82285c840e5c89b6161094"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision-triangle-results.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision-triangle-results.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 75000,
+      "sha256": "c8081b19da4692bd7c684e3866583a961d86a623db873f777ff0ce89abe5df99"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 16041,
+      "sha256": "93cbe4b0d36d6fb4ed2a120bb672a2f24897b213f16c9644c02c58415824e5cd"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3503,
+      "sha256": "48d23bfd337cc4bea47f51f9755e25ac10704d68a1dfa50ba8f5e15e1cd79e72"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_extension.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_extension.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2692,
+      "sha256": "66e1e23bda7211fdd00ec384eb020a58a959ce7ac88d5658eef692dc15f1f10c"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_extension_layers.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_extension_layers.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 356,
+      "sha256": "d8ef129740313cfe42dc05d39de22f8b96ec3906d6488071685da0da5e68a2e0"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_final_check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_final_check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2435,
+      "sha256": "1ce0a3d030acbdc9dfded81c545a3047756b89deee6f93bde4a2aea20903091e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_freeze.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_freeze.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2377,
+      "sha256": "e2d22177cc46034729a2548fdc549b1422af53df792018ba35e337fd59780590"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_inspect.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_inspect.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 329,
+      "sha256": "3eddfc9a463f1fb69b5db7b337a4e558bf0ce90311bf127cbc256fe37a63e6ee"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_layers-eight.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_layers-eight.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6135,
+      "sha256": "7b47118f8b1e55327e466cb533b10a182e6d42837c7316ea4d302bcee475674b"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_layers-four.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_layers-four.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3609,
+      "sha256": "0e06bc564801ccd7c961210c2d2346423f9a5d4b57afba8644d97c127e9dbf2a"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_layers-seventeen.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_layers-seventeen.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 10152,
+      "sha256": "71a2c57d170dc24a55d131506c59e1388ca7cbcc857cd1951d6572d4bed796e5"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_layers.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_layers.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 12044,
+      "sha256": "39a37987f9d0989b45d79381365f238aa64810177acc30883d044ef04fa75996"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_layers_check.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_layers_check.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 589,
+      "sha256": "f3530d09a06340438e6c1dc64af31c9926d772e626f6eb841a37d65df66debe3"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_local.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_local.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3995,
+      "sha256": "ac5bbd21beb39d6a5c864e5cb749f9e68faa4acdcb4f21091b120513b5a32dff"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_local_firsteligible.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_local_firsteligible.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2981,
+      "sha256": "3da3a2c602193a76cec47feffd26215eb0ee131fd7aee48dfb5334d125bf30be"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_local_merge-first.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_local_merge-first.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3735,
+      "sha256": "6738503afdffe09bad7668176df836baae035501d6c96e577d2d75b4133ab052"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/revision_patterns.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/revision_patterns.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1872,
+      "sha256": "d14c5a07b679c04e56f8d8c2d4e4b7954b72156e605020edc7f89c7211bd9e6b"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/structural-freeze.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/structural-freeze.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 360,
+      "sha256": "ab63370a9324cc714b03b49d53666b010d0ed11af15712a96f3691a7203c19be"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/structural-initial.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/structural-initial.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2770,
+      "sha256": "ae58d6ef7ccba8bb09ff8d6e7b6876e7a903588bb39adaaa7f44b10e06828e08"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/structural-results.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/structural-results.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 17725,
+      "sha256": "f1a9ecd3008762b7a3d6a868b7b94eec266c8198cbe443c553ca4e8f8ac4759e"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/structural.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/structural.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4463,
+      "sha256": "84bb47956a243777f18c0872cf16ffea75b874ef942081088b9803d12c68d40f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/tableau/verify_structural.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/tableau/verify_structural.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3351,
+      "sha256": "aeeb3cdc7a04cfe8d4f63db9754febf47ca4c7e4effd7b1407db22ceb118339a"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/verification/README.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/verification/README.md",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1107,
+      "sha256": "cba6d76e03236c18692ff767b5596544481b3ccac0dd7b4aaf730ecfb2ace432"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/verification/closure-whitespace-summary.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/verification/closure-whitespace-summary.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 443,
+      "sha256": "1764cc0c5d0c756b3aabfee4dc9fad35d41281f60aa5ace69f41827bc473865f"
+    },
+    {
+      "path": "sources/h3/research/phase2-20261025/verification/whitespace-summary.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/phase2-20261025/verification/whitespace-summary.json",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 486,
+      "sha256": "b6aaea5f7be32c10d0c43ab60bba4a318b3d5a8bbf67086c314f7f8f765775cd"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/kr1.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/kr1.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 15919,
+      "sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_a2.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_a2.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5762,
+      "sha256": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_a2_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_a2_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6295,
+      "sha256": "b7cf523108757f270b320d284258ebd6a1ca34c84844a5435f521688b2ee416b"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_charge_extension.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_charge_extension.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2169,
+      "sha256": "d0ef57f94b87c4f4a0e1b6e18ad957d14e5150f106f0623425ec9e39af1bbf66"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_charge_extension_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_charge_extension_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4713,
+      "sha256": "4e6eb904178e09d3c9cdb85b5440972eaf804a298a457c60b0b82b4ca57750b2"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_charge_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_charge_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4681,
+      "sha256": "0acbe908b9d2beaf8b9fe70510bd3b1beaf501924e6bede09b9324f5e3b5600c"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1762,
+      "sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_cluster_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_cluster_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4508,
+      "sha256": "9ad76f3d57c2f0cefd13c16f1e5b9ce1a7821a94af55d47c86551044d1e14a18"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_clusters.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_clusters.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3071,
+      "sha256": "de61ecfe7bb3280b8304f4954ea3f9a24460d4c975f1c869f853cef4dda0420e"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_columns.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_columns.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3417,
+      "sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_cut_branch.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_cut_branch.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2114,
+      "sha256": "78661c29a37e26f5ccf7ec9c2c73ebc16842ca1d6773212eb08136c95b52840f"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_cut_branch_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_cut_branch_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5166,
+      "sha256": "069325c00d4d246ca23aa1e40614aa80c03b7fe4ecd68701e44e5433e21b0b9f"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_endpoint_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_endpoint_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4499,
+      "sha256": "ccfd238ffc3cd945f36f74d76bb010625d5d6f4230e69a0ef6763f78b779ae60"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_merge_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_merge_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4512,
+      "sha256": "15e746de4326c8d1b2c6f38d5a281d2bee1fca167a87c988bf47780efd78ec8a"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_meter.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_meter.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4832,
+      "sha256": "fff9dcc19c978e47705cc1b92bf003b7f1f758b1b4cf866c399e616947f7ff94"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_partial.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_partial.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 763,
+      "sha256": "6d47cdc695f5f5a04db827efd9ce3795823fe3fce535c7b299623b1ab8e73eb8"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_partial_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_partial_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4770,
+      "sha256": "b4a24b7595f530b226743e597512cd3d82759e8e46694ef8d089bbdca4068a67"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_product_involution.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_product_involution.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6692,
+      "sha256": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_product_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_product_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5471,
+      "sha256": "0dd93fe8777892151352555f3ee8891ee5ab2c21062d7bfa1287b37061b29c93"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_recursive.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_recursive.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4048,
+      "sha256": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_recursive_seed.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_recursive_seed.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 1505,
+      "sha256": "10a550057e4d924fa9b3b58b12b13e9397724574d5b1a98e1c81b6bb41e29d56"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_revision.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_revision.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6095,
+      "sha256": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_round2_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_round2_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 8904,
+      "sha256": "128bcba5ee3ccd75e30749aab9c70dc5bb21a76e9cd4692773a726e1057136d5"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_second_product.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_second_product.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7483,
+      "sha256": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_second_product_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_second_product_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5154,
+      "sha256": "23fb77310cbf085b20c6394f25370bee21e824963d1ba079d8383a713d8b8ec2"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_seed_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_seed_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3133,
+      "sha256": "b2b5faabb94d2c309867e10bfb3cca23516b7f36fc9261099985a1f14dac61a9"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_small_charge.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_small_charge.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 2152,
+      "sha256": "c74aa6f155682b0afe92592caa8d79cf0a35e148909b95e89c05a4cebbe58d71"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_stockhofe.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_stockhofe.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3831,
+      "sha256": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr003_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr003_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5814,
+      "sha256": "37a4f347d17a356d0260e4d1977aeebbd517a2c6110194064d26e0a9233b85ef"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr004_finite_certificate.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr004_finite_certificate.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4773,
+      "sha256": "2865f16ba147594dbcfac84875c19ab94a8b26ac8e8c986247f00a9f20a66715"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr004_meter.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr004_meter.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5077,
+      "sha256": "77949fc2dce853b6c73932fd482720a9ed8fe54e39d7c9e203b40a3460c152bd"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr004_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr004_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6579,
+      "sha256": "80cf0ec22940b23b02ac49cd6143961af177f5a57f664a52bb7affa079550909"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr005_chains.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr005_chains.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5417,
+      "sha256": "96378a9b872373af115164ea6176b04e5b513c45322e42c23a512c8dc4b21ca2"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr005_meter.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr005_meter.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 5077,
+      "sha256": "3159b3e0964634e1e52934814b7ad2d416421db342b493fda3b2bfc6916bb67a"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr005_six.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr005_six.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 3740,
+      "sha256": "4546f837f606a4d45725b05533e4a39d8a29bbc551327fe98660d69947713cb9"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr005_six_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr005_six_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4696,
+      "sha256": "1bcf79e115f9f791a247ddd6aba105ccdaa1d553415221052016b72e7bcfa087"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/rr005_verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/rr005_verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6039,
+      "sha256": "2dd46930c61aeae4cd8fa7762d724b82ba0644300efc17d120894b03ff3f7359"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/checks/verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/checks/verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 8703,
+      "sha256": "196042af27be6c4850b4b5af0b8bd18d692363632c69daa3b185520ab364394e"
+    },
+    {
+      "path": "sources/h3/research/partitions/checks/coloring_oracle.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/partitions/checks/coloring_oracle.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 6996,
+      "sha256": "2eeceb10d1a0e5ec786912d217cca13b6988f3b58ace811754b0d1c509e2b0ef"
+    },
+    {
+      "path": "sources/h3/research/partitions/checks/inventory_external_certificate.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/partitions/checks/inventory_external_certificate.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 4821,
+      "sha256": "17f2b0fedda0b63016ad5c336814bed222df7e5ab41696c8e2bbc5787eeac043"
+    },
+    {
+      "path": "sources/h3/research/partitions/checks/tableaux.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/partitions/checks/tableaux.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 9926,
+      "sha256": "ae2e52a8c795ce5e039a72fb5c326b419a40c95e8814d7ab7ed4238f0a2f0d46"
+    },
+    {
+      "path": "sources/h3/research/partitions/checks/verify.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/partitions/checks/verify.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 7214,
+      "sha256": "c7c0ff2e4dff1ebbc02584db1491597e1f393da82777973d755dd94e77d3624b"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/kr1.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/kr1.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 15919,
+      "sha256": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_a2.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_a2.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 5762,
+      "sha256": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_a2_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_a2_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 6295,
+      "sha256": "b7cf523108757f270b320d284258ebd6a1ca34c84844a5435f521688b2ee416b"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_charge_extension.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_charge_extension.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 2169,
+      "sha256": "d0ef57f94b87c4f4a0e1b6e18ad957d14e5150f106f0623425ec9e39af1bbf66"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_charge_extension_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_charge_extension_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4713,
+      "sha256": "4e6eb904178e09d3c9cdb85b5440972eaf804a298a457c60b0b82b4ca57750b2"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_charge_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_charge_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4681,
+      "sha256": "0acbe908b9d2beaf8b9fe70510bd3b1beaf501924e6bede09b9324f5e3b5600c"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_cluster_merge.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 1762,
+      "sha256": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_cluster_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_cluster_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4508,
+      "sha256": "9ad76f3d57c2f0cefd13c16f1e5b9ce1a7821a94af55d47c86551044d1e14a18"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_clusters.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_clusters.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 3071,
+      "sha256": "de61ecfe7bb3280b8304f4954ea3f9a24460d4c975f1c869f853cef4dda0420e"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_columns.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_columns.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 3417,
+      "sha256": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_cut_branch.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_cut_branch.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 2114,
+      "sha256": "78661c29a37e26f5ccf7ec9c2c73ebc16842ca1d6773212eb08136c95b52840f"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_cut_branch_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_cut_branch_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 5166,
+      "sha256": "069325c00d4d246ca23aa1e40614aa80c03b7fe4ecd68701e44e5433e21b0b9f"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_endpoint_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_endpoint_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4499,
+      "sha256": "ccfd238ffc3cd945f36f74d76bb010625d5d6f4230e69a0ef6763f78b779ae60"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_merge_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_merge_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4512,
+      "sha256": "15e746de4326c8d1b2c6f38d5a281d2bee1fca167a87c988bf47780efd78ec8a"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_meter.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_meter.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4832,
+      "sha256": "fff9dcc19c978e47705cc1b92bf003b7f1f758b1b4cf866c399e616947f7ff94"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_partial.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_partial.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 763,
+      "sha256": "6d47cdc695f5f5a04db827efd9ce3795823fe3fce535c7b299623b1ab8e73eb8"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_partial_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_partial_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4770,
+      "sha256": "b4a24b7595f530b226743e597512cd3d82759e8e46694ef8d089bbdca4068a67"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_product_involution.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_product_involution.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 6692,
+      "sha256": "20342fa3e8f6c56ca9fdf078e69cedd1a6debec60c45b35f8ac43eff455fb6f0"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_product_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_product_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 5471,
+      "sha256": "0dd93fe8777892151352555f3ee8891ee5ab2c21062d7bfa1287b37061b29c93"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_recursive.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_recursive.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4048,
+      "sha256": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_recursive_seed.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_recursive_seed.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 1505,
+      "sha256": "10a550057e4d924fa9b3b58b12b13e9397724574d5b1a98e1c81b6bb41e29d56"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_revision.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_revision.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 6095,
+      "sha256": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_round2_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_round2_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 8904,
+      "sha256": "128bcba5ee3ccd75e30749aab9c70dc5bb21a76e9cd4692773a726e1057136d5"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_second_product.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_second_product.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 7483,
+      "sha256": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_second_product_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_second_product_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 5154,
+      "sha256": "23fb77310cbf085b20c6394f25370bee21e824963d1ba079d8383a713d8b8ec2"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_seed_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_seed_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 3133,
+      "sha256": "b2b5faabb94d2c309867e10bfb3cca23516b7f36fc9261099985a1f14dac61a9"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_small_charge.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_small_charge.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 2152,
+      "sha256": "c74aa6f155682b0afe92592caa8d79cf0a35e148909b95e89c05a4cebbe58d71"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_stockhofe.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_stockhofe.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 3831,
+      "sha256": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr003_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr003_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 5814,
+      "sha256": "37a4f347d17a356d0260e4d1977aeebbd517a2c6110194064d26e0a9233b85ef"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr004_finite_certificate.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr004_finite_certificate.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4773,
+      "sha256": "2865f16ba147594dbcfac84875c19ab94a8b26ac8e8c986247f00a9f20a66715"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr004_meter.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr004_meter.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 5077,
+      "sha256": "77949fc2dce853b6c73932fd482720a9ed8fe54e39d7c9e203b40a3460c152bd"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr004_multidim_cones.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr004_multidim_cones.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 24910,
+      "sha256": "87623c89d2680fde090a88e9c214286dfcb0d90691e610e289ca5f27b8127f0d"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/rr004_verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/rr004_verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 6579,
+      "sha256": "80cf0ec22940b23b02ac49cd6143961af177f5a57f664a52bb7affa079550909"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/checks/verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/checks/verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 8703,
+      "sha256": "196042af27be6c4850b4b5af0b8bd18d692363632c69daa3b185520ab364394e"
+    },
+    {
+      "path": "sources/argon/research/partitions/checks/coloring_oracle.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/checks/coloring_oracle.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 6996,
+      "sha256": "2eeceb10d1a0e5ec786912d217cca13b6988f3b58ace811754b0d1c509e2b0ef"
+    },
+    {
+      "path": "sources/argon/research/partitions/checks/inventory_external_certificate.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/checks/inventory_external_certificate.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 4821,
+      "sha256": "17f2b0fedda0b63016ad5c336814bed222df7e5ab41696c8e2bbc5787eeac043"
+    },
+    {
+      "path": "sources/argon/research/partitions/checks/multidimensional_ferrers.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/checks/multidimensional_ferrers.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 21747,
+      "sha256": "c4654874def0957a8bde0bd8b316cabd618e02386c20004799cfc9ffabc57d18"
+    },
+    {
+      "path": "sources/argon/research/partitions/checks/tableaux.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/checks/tableaux.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 9926,
+      "sha256": "ae2e52a8c795ce5e039a72fb5c326b419a40c95e8814d7ab7ed4238f0a2f0d46"
+    },
+    {
+      "path": "sources/argon/research/partitions/checks/verify.py",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/checks/verify.py",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 7214,
+      "sha256": "c7c0ff2e4dff1ebbc02584db1491597e1f393da82777973d755dd94e77d3624b"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/AlternantSubsets.lean",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/AlternantSubsets.lean",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 8336,
+      "sha256": "32748cec117cbe8d97cfac47ca93079ef79271abf71ddc9a8410e3c1d0b7055b"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/CornerSlide.lean",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/CornerSlide.lean",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 23967,
+      "sha256": "b4f5c7efa75e4a311d84e1db4115e8d27ecedf4f364ad9cdd459f5a33b962af1"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/MultidimensionalFerrers.lean",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/MultidimensionalFerrers.lean",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 20900,
+      "sha256": "5cac97afaf92c2cbaad088764101c06a77ec1e1591aebaec76f9a71f66959e66"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/README.md",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/README.md",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 12549,
+      "sha256": "0b5adf85cd9874efa09aa3d12c7d504ccf9e090fa9ee7cba78248b75a0f971f9"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/SignedArrays.lean",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/SignedArrays.lean",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 38787,
+      "sha256": "c33f65fbae13d490d5fb1bcd83d4ded974b7cbac2a25ab5a826aac4b974412ad"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/TableauFamilies.lean",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/TableauFamilies.lean",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 10329,
+      "sha256": "1e72c85d1ad9488887ff11397573b67c03bad780f2bb1c2a901682634bcb470a"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/WeightedCancellation.lean",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/WeightedCancellation.lean",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 12473,
+      "sha256": "10554531eada909b3026b7551102ea55634ee1520ad832400d855f1245e23c21"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/lake-manifest.json",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/lake-manifest.json",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 154,
+      "sha256": "86390877b1ec5ac828b6c8a08f657bc7b41b8ef3a04d6bda2e26068297458235"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/lakefile.toml",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/lakefile.toml",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 430,
+      "sha256": "f09eefcdee1ddd26bc4f2048e5d44cf2d1241b0be67c4f731634da6fbb76b07d"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/lean-toolchain",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/lean-toolchain",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 25,
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    {
+      "path": "sources/argon/research/partitions/lean/verification.json",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/partitions/lean/verification.json",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 57261,
+      "sha256": "eabd669546db9c41d8899a7b98ee59deec697b3960bdba011a286a17040d8bf8"
+    },
+    {
+      "path": "sources/argon/research/rogers-ramanujan/rr004/UNIFORM_D_DIM_RECURSION_PROGRAM.md",
+      "source": "/Users/christopheryamba/YambaCode/Math/yamba-ai-math-rogers-ramanujan/research/rogers-ramanujan/rr004/UNIFORM_D_DIM_RECURSION_PROGRAM.md",
+      "source_revision": "97d6561a855ea4aac4fb89c03a6fb543c9edd56e",
+      "bytes": 5635,
+      "sha256": "17f39821f4acf7a686dc9ece4b49b557710d625345975240c433244dcbebd463"
+    },
+    {
+      "path": "sources/h3/research/rogers-ramanujan/rr007/fleet-a/checks/critic-a-literal.py",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/rr007/fleet-a/checks/critic-a-literal.py",
+      "source_revision": "ef7bfe0895c8648f6d8e4679b6c24dc09635f2c9",
+      "bytes": 12538,
+      "sha256": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984"
+    },
+    {
+      "path": "sources/review/REVIEW_AND_INTUITION.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/phase2-review-20261025/REVIEW_AND_INTUITION.md",
+      "source_revision": null,
+      "bytes": 13611,
+      "sha256": "caf364b8a3d65931967b91a2050190e3caf1cf6a91f84cd4d150942ae8ff6961"
+    },
+    {
+      "path": "sources/review/SESSION_HANDOFF.md",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/phase2-review-20261025/SESSION_HANDOFF.md",
+      "source_revision": null,
+      "bytes": 11222,
+      "sha256": "00fc4b46c7d9e52ff6b3c3196fed0e82e4bd2e80832446e84e6dbed2e6369217"
+    },
+    {
+      "path": "sources/review/sources/research-pr15-article-excerpt.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/phase2-review-20261025/sources/research-pr15-article-excerpt.json",
+      "source_revision": null,
+      "bytes": 9511,
+      "sha256": "dff9ea22dcd8cd1752df309bbbfbcd04cfb41b99f3889d8e8e1568582c99f82f"
+    },
+    {
+      "path": "sources/review/sources/research-pr15-info.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/phase2-review-20261025/sources/research-pr15-info.json",
+      "source_revision": null,
+      "bytes": 3767,
+      "sha256": "459b14bcc9ce2d0a9c28df317031cab8790d641b4e38306de3f95d5d19221285"
+    },
+    {
+      "path": "sources/review/sources/research-pr15-reviews.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/phase2-review-20261025/sources/research-pr15-reviews.json",
+      "source_revision": null,
+      "bytes": 1096,
+      "sha256": "d5c6a707b7f8c9fd2a5e6dbc6a492619a6c9efe9749f48fc9ae60c4dd713df9e"
+    },
+    {
+      "path": "sources/review/sources/research-pr15-threads.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/phase2-review-20261025/sources/research-pr15-threads.json",
+      "source_revision": null,
+      "bytes": 3863,
+      "sha256": "8f80bcfa315b5c758d10d5d7264ecb3f51ad53155513b7d00126db9bfdec2be8"
+    },
+    {
+      "path": "sources/review/sources/website-pr8-info.json",
+      "source": "/private/tmp/yamba-ai-math-phase2-review-20261025/research/rogers-ramanujan/phase2-review-20261025/sources/website-pr8-info.json",
+      "source_revision": null,
+      "bytes": 3192,
+      "sha256": "13f1be4bbc9625cebf321f8ddfe28c7824616316771514621a449538a8875bea"
+    },
+    {
+      "path": "sources/argon/antigravity/multidimensional_ferrers_solution.md",
+      "source": "/Users/christopheryamba/.gemini/antigravity/brain/32daf9b4-83c9-4c6b-9f04-e38325f55706/multidimensional_ferrers_solution.md",
+      "source_revision": null,
+      "bytes": 19040,
+      "sha256": "104a0e218042be4ab91dca566426a0886edc1777046549cbf08b6408793796c9"
+    },
+    {
+      "path": "sources/inputs/codex-clipboard-e62c39c1-2f3f-40a1-8be5-d6ccc3df7c2a.png",
+      "source": "/var/folders/hs/m7088x2x5lx94wg_2psx99dm0000gn/T/codex-clipboard-e62c39c1-2f3f-40a1-8be5-d6ccc3df7c2a.png",
+      "source_revision": null,
+      "bytes": 64920,
+      "sha256": "0812d4be258c0f83ee1d6356a86330a22f1e5eec9b75034655fa35ae31472c8b"
+    }
+  ]
+}

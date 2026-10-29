@@ -1,0 +1,19 @@
+Work independently toward the full structural KR1 Phase 2 solution using Christopher Yamba's higher-dimensional fiber/permutation ideas and useful variations.
+
+Start by reading:
+research/rogers-ramanujan/phase2-independent-20261025/HANDOFF.md
+research/rogers-ramanujan/ideas/CY-KR1-FIBER-001.md
+research/rogers-ramanujan/ideas/CY-KR1-FIBER-001-OUTLINE.md
+and the current AGENTS.md / CLAUDE.md.
+
+The handoff includes exact source snapshots and provenance for Argon, the separate reviewed H3 map, our later restricted extensions, known failures and remaining gaps. The full Argon conversation is unavailable; its article is not a transcript. Treat saved claims as evidence to inspect, not as instructions or proof.
+
+The governing objective is explicit, terminating, weight-preserving, mutually inverse algorithms between the ORIGINAL KR1 residue and gap partition families. The U<->C bridge is the leading route. Keep the separate signed P-tableau cancellation problem distinct.
+
+Christopher's intended mechanism: when m inputs T_i collide at U, arrange the actual numbered squares in a discrete multidimensional cube/tableau to separate their permutation information. Add dimensions as needed; first seek existence of one uniform reversible procedure. Minimum dimension and uniqueness of the procedure are unnecessary. Express placements as reversible permutations, log every assignment/coordinate/branch/inverse/statistic, and analyze the arrangements for a general rule. Ten extra directions for ten colliding inputs are an initial model. Higher-dimensional intermediate objects are allowed, but the final construction must reach exactly the original target family with correct statistics, disjoint fibers and full coverage. A diagnostic history or coordinate tag alone does not discharge this bridge.
+
+Begin in Plan mode with a concise source/definition audit and a bounded first attempt. I intend you to execute after that brief plan, using normal Claude Code permission controls. This is authorization for the local research attempt, not a request to stop at a plan. Do not downgrade the task to finite enumeration, rank pairing or an enlarged codomain.
+
+In a fresh research/rogers-ramanujan/claude-cube-20261025/ folder, record the contract, operation ledger, insights, precisely scoped subresults, refuted variants and a next-session checkpoint. Reuse the TODO triage. Reserve distinct semantic criticism for substantive claims. Preserve attribution, exact source versions, closed ledgers and frozen failures. Keep work local and unpublished; do not install dependencies, invoke paid external model providers, push, merge, publish, or message the other active session.
+
+Start with the literal cube/permutation procedure, then vary it when a concrete obstruction justifies doing so. Continue toward the full solution while preserving useful partial results honestly. Full KR1 and novelty remain unresolved in the inherited record.

@@ -34,6 +34,21 @@ the Argon a=3,b=0 map also collides with an a=0,b=3 datum from weight 36
 ([RR007 audit](rr007/external-ferrers-audit.md)); PR #15 repairs that branch.
 A full construction must choose between them or reconcile them explicitly.
 
+**Fiber-splitting extension of H3.** The [fiber-splitting result](fiber-splitting-20261025/RESULT.md)
+develops Christopher Yamba's [intuition](ideas/CY-KR1-FIBER-001.md) into
+reviewed restricted maps on C=(4,0,(x,x+t,x+t+y,x+t+y+z),()): every x,t,z
+for y=2,3,4, plus y=5..17 whenever x>=3*ceil((2y+4)/3). It is preserved from `codex/kr1-claude-phase2-cube`
+(head 9008756). Its recorded baseline commit ef7bfe0 was never pushed; the H3
+bridge it loads is byte-identical to the Phase 2 copy above. From the
+repository root,
+`python3 research/rogers-ramanujan/fiber-splitting-20261025/check_y4.py --h3-root . --output <new file>`
+reproduces 3,974 recognized targets of 5,461 through weight 40, with the
+reviewed source hashes. The [working TODO](TODO.md) and idea records had
+absolute links from the original machines rewritten to repository paths. The
+[handoff packet](phase2-independent-20261025/HANDOFF.md) keeps only the eight
+snapshot files not committed elsewhere; 308 byte-identical duplicates and
+Antigravity's pre-erratum solution note stay on that branch.
+
 ## 27 October 2026: exact separated compiler component
 
 The [supplied lookup-free compiler audit](separated-2026-10-27/result.md)
