@@ -79,16 +79,17 @@ REQUIRED_THEOREMS.update(
     "AlternantSubsets." + name for name in ALTERNANT_DECLARATIONS[4:]
 )
 MULTIDIM_DECLARATIONS = [
-    "NoLocalThreeChain", "promote32", "hookBefore", "hookBubbleEnd", "hookBubbleMid", "kr1Q",
+    "NoLocalThreeChain", "promote32", "promote321", "hookBefore", "hookBubbleEnd", "hookBubbleMid", "kr1Q",
     "bubble_injective_local_fiber", "promote32_tableau_valid", "promote32_tableau_graph_inversions",
-    "collision_witness_promoted_valid", "hookBubbleEnd_tableau_valid",
-    "hookBubbleEnd_tableau_graph_inversions", "hookBubbleMid_tableau_valid",
-    "hookBubbleMid_tableau_graph_inversions", "cascade_split_preserves_all",
-    "kr1_scale3_self_similarity", "kr1_scale3_divisible", "kr1_head_offset_identity",
-    "kr1_a3_core_weight", "kr1_a3_b0_octant_weight",
+    "collision_witness_promoted_valid", "promote321_tableau_valid", "promote321_tableau_graph_inversions",
+    "hookBubbleEnd_tableau_valid", "hookBubbleEnd_tableau_graph_inversions",
+    "hookBubbleMid_tableau_valid", "hookBubbleMid_tableau_graph_inversions",
+    "cascade_split_preserves_all", "kr1_scale3_self_similarity", "kr1_scale3_divisible",
+    "kr1_head_offset_identity", "kr1_a3_core_weight", "kr1_a3_b0_octant_weight",
+    "kr1_a3_b0_6d_cone_routing_weight", "kr1_higher_octant_weight", "kr1_a4_a5_a6_apex_weights",
 ]
 REQUIRED_THEOREMS.update(
-    "MultidimensionalFerrers." + name for name in MULTIDIM_DECLARATIONS[6:]
+    "MultidimensionalFerrers." + name for name in MULTIDIM_DECLARATIONS[7:]
 )
 
 

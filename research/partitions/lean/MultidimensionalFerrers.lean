@@ -100,6 +100,57 @@ theorem collision_witness_promoted_valid :
     decide
   · decide
 
+/-- Phase 2 (`n = 6`): 3D rotation of a colliding `(2, 2, 1, 1)` tableau
+`[[u, v], [a, b], [c1], [c2]]` into shape `(3, 2, 1)` (`[[u, v, b], [a, c2], [c1]]`). -/
+def promote321 (u v a b c1 c2 : Nat) : Rows :=
+  [[u, v, b], [a, c2], [c1]]
+
+theorem promote321_perm (u v a b c1 c2 : Nat) :
+    (promote321 u v a b c1 c2).flatten.Perm
+      ([[u, v], [a, b], [c1], [c2]] : Rows).flatten := by
+  change [u, v, b, a, c2, c1].Perm [u, v, a, b, c1, c2]
+  have h1 : [b, a, c2, c1].Perm [b, a, c1, c2] :=
+    List.Perm.cons b (List.Perm.cons a (List.Perm.swap c1 c2 []))
+  have h2 : [b, a, c1, c2].Perm [a, b, c1, c2] :=
+    List.Perm.swap a b [c1, c2]
+  exact List.Perm.cons u (List.Perm.cons v (h1.trans h2))
+
+theorem promote321_tableau_valid (r : Nat → Nat → Prop)
+    (trans : ∀ x y z, r x y → r y z → r x z)
+    (vertices : List Nat) (u v a b c1 c2 : Nat)
+    (hsource : Tableau r vertices [[u, v], [a, b], [c1], [c2]])
+    (hac2 : r a c2) (hvb : r v b) (hc2v : ¬ r c2 v) :
+    Tableau r vertices (promote321 u v a b c1 c2) := by
+  rcases hsource with ⟨hnodup, hperm, hrows, hcols⟩
+  have huv : r u v := (rowValid_pair r u v).mp (hrows [u, v] (by simp))
+  have hau : ¬ r a u := hcols.1.1
+  have hc1a : ¬ r c1 a := hcols.2.1.1
+  refine ⟨hnodup, (promote321_perm u v a b c1 c2).trans hperm, ?_, ?_⟩
+  · intro row hrow
+    simp only [promote321, List.mem_cons, List.not_mem_nil, or_false] at hrow
+    rcases hrow with rfl | rfl | rfl
+    · exact rowValid_triple r trans u v b huv hvb
+    · exact (rowValid_pair r a c2).mpr hac2
+    · exact rowValid_singleton r c1
+  · simp [promote321, ColumnsValid, ColumnPair, hau, hc2v, hc1a]
+
+theorem promote321_tableau_graph_inversions (r : Nat → Nat → Prop) [DecidableRel r]
+    (trans : ∀ x y z, r x y → r y z → r x z)
+    (vertices : List Nat) (u v a b c1 c2 : Nat)
+    (hsource : Tableau r vertices [[u, v], [a, b], [c1], [c2]])
+    (hac2 : r a c2) (hvb : r v b) (hc2v : ¬ r c2 v) (hc1c2 : r c1 c2) :
+    tableauGraphInversions r (promote321 u v a b c1 c2) =
+      tableauGraphInversions r [[u, v], [a, b], [c1], [c2]] := by
+  have htarget := promote321_tableau_valid r trans vertices u v a b c1 c2 hsource hac2 hvb hc2v
+  have hab : r a b := (rowValid_pair r a b).mp (hsource.2.2.1 [a, b] (by simp))
+  rw [tableau_graph_inversions_eq_word r _ (fun row hr => (htarget.2.2.1 row hr).2),
+    tableau_graph_inversions_eq_word r _ (fun row hr => (hsource.2.2.1 row hr).2)]
+  have hswap1 : graphInversions r [u, v, b, a, c2, c1] = graphInversions r [u, v, b, a, c1, c2] := by
+    simpa using (graph_inversions_comparable_swap r [u, v, b, a] [] c1 c2 hc1c2).symm
+  have hswap2 : graphInversions r [u, v, b, a, c1, c2] = graphInversions r [u, v, a, b, c1, c2] := by
+    simpa using (graph_inversions_comparable_swap r [u, v] [c1, c2] a b hab).symm
+  simpa [promote321] using hswap1.trans hswap2
+
 /-! ## 2. Universal Interior and Endpoint Hook Slides `(3, 1^m) → (2, 1^{m+1})` -/
 
 def hookBefore (u v w : Nat) (tail : List Nat) : Rows :=
@@ -306,12 +357,39 @@ theorem kr1_a3_b0_octant_weight (q2 r2 d3 d1 : Nat) :
   unfold kr1Q
   omega
 
+/-- Phase 2: Routing `(q2 ≥ 4, d3 ≥ 1, r2 = 0)` of `(a = 3, b = 0)` into the 6D cone
+`(10, 9, 9, 8, 6^{q2-4}, 3^{d3-1})` preserves exact weight for all `N → ∞`. -/
+theorem kr1_a3_b0_6d_cone_routing_weight (q2 d3 d1 : Nat) (hq2 : 4 ≤ q2) (hd3 : 1 ≤ d3) :
+    10 + 9 + 9 + 8 + 6 * (q2 - 4) + 3 * (d3 - 1) + d1 =
+      kr1Q 3 0 + 3 * d3 + 2 * (3 * q2) + d1 := by
+  unfold kr1Q
+  omega
+
+/-- Phase 2: Universal 3D Ferrers octant operator triple (`step_six`, `step_three`, `step_one`)
+weight identity on any higher sector `a ≥ 3` with base weight `W_base` above the top-3 `μ`-coordinates. -/
+theorem kr1_higher_octant_weight (wBase r2 q2 d3 d1 : Nat) :
+    (wBase + 2 * r2) + 6 * q2 + 3 * d3 + d1 =
+      wBase + 3 * d3 + 2 * (3 * q2 + r2) + d1 := by
+  omega
+
+/-- Phase 2: Exact weights of the fundamental octant apexes `(8, 8)` (`a = 4`),
+`(15, 9, 1)` (`a = 5`), and `(18, 10, 8)` (`a = 6`, scale-3 lift `3 * Q(0, 2)`). -/
+theorem kr1_a4_a5_a6_apex_weights :
+    8 + 8 = kr1Q 4 0 ∧
+    15 + 9 + 1 = kr1Q 5 0 ∧
+    18 + 10 + 8 = kr1Q 6 0 ∧
+    kr1Q 6 0 = 3 * kr1Q 0 2 := by
+  unfold kr1Q
+  decide
+
 end MultidimensionalFerrers
 
 #print axioms MultidimensionalFerrers.bubble_injective_local_fiber
 #print axioms MultidimensionalFerrers.promote32_tableau_valid
 #print axioms MultidimensionalFerrers.promote32_tableau_graph_inversions
 #print axioms MultidimensionalFerrers.collision_witness_promoted_valid
+#print axioms MultidimensionalFerrers.promote321_tableau_valid
+#print axioms MultidimensionalFerrers.promote321_tableau_graph_inversions
 #print axioms MultidimensionalFerrers.hookBubbleEnd_tableau_valid
 #print axioms MultidimensionalFerrers.hookBubbleEnd_tableau_graph_inversions
 #print axioms MultidimensionalFerrers.hookBubbleMid_tableau_valid
@@ -322,3 +400,6 @@ end MultidimensionalFerrers
 #print axioms MultidimensionalFerrers.kr1_head_offset_identity
 #print axioms MultidimensionalFerrers.kr1_a3_core_weight
 #print axioms MultidimensionalFerrers.kr1_a3_b0_octant_weight
+#print axioms MultidimensionalFerrers.kr1_a3_b0_6d_cone_routing_weight
+#print axioms MultidimensionalFerrers.kr1_higher_octant_weight
+#print axioms MultidimensionalFerrers.kr1_a4_a5_a6_apex_weights
