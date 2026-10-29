@@ -1,0 +1,92 @@
+{
+  "stage": "reserved-final-KR-review",
+  "calls": 4,
+  "successes": 4,
+  "failures": 0,
+  "wall_seconds": 3.2628213760326616,
+  "cpu_seconds": 2.944289,
+  "peak_rss_bytes": 32063488,
+  "above40_KR_objects_constructed": 0,
+  "high_gap_or_high_b_sources_constructed": 0,
+  "receipts": [
+    {
+      "index": 69,
+      "label": "kr-final-independent12",
+      "started_utc": "2026-10-24T22:42:27.872098+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-final-check.py",
+        "12"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.13586733301053755,
+      "cpu_seconds": 0.067861,
+      "peak_rss_bytes": 23068672,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/069-kr-final-independent12.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/069-kr-final-independent12.stderr",
+      "cumulative_wall_seconds": 83.10758858703775
+    },
+    {
+      "index": 70,
+      "label": "kr-final-independent30",
+      "started_utc": "2026-10-24T22:42:31.351833+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-final-check.py",
+        "30"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.5001508340064902,
+      "cpu_seconds": 0.49094299999999996,
+      "peak_rss_bytes": 27508736,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/070-kr-final-independent30.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/070-kr-final-independent30.stderr",
+      "cumulative_wall_seconds": 83.60773942104424
+    },
+    {
+      "index": 71,
+      "label": "kr-final-independent40",
+      "started_utc": "2026-10-24T22:42:35.153226+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-final-check.py",
+        "40"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 2.4952056250185706,
+      "cpu_seconds": 2.299509,
+      "peak_rss_bytes": 32063488,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/071-kr-final-independent40.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/071-kr-final-independent40.stderr",
+      "cumulative_wall_seconds": 86.10294504606281
+    },
+    {
+      "index": 72,
+      "label": "kr-final-naive-falsifier-scope",
+      "started_utc": "2026-10-24T22:43:18.012057+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-final-naive-audit.py"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.13159758399706334,
+      "cpu_seconds": 0.085976,
+      "peak_rss_bytes": 24150016,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/072-kr-final-naive-falsifier-scope.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/072-kr-final-naive-falsifier-scope.stderr",
+      "cumulative_wall_seconds": 86.23454263005988
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": "author-only; ready for distinct critic",
+  "frozen_utc": "2026-10-24T22:22:58.439398+00:00",
+  "claims": [
+    "TheoremA weighted partial injection with intrinsic inverse",
+    "TheoremB disjoint conditional triangle injection",
+    "n<=6 exhaustive checks and finite matching explicitly separated"
+  ],
+  "exposed_data": "n6 already used for discovery; no heldout claim",
+  "sha256": {
+    "author.md": "9e02329dfc61090275361070503328219a287d9f1f5f720de2e1842a71c3dd42",
+    "cancellation-v1.py": "d41c1fbaa6816a865afe3ff40a0837c4195ee132a288e94d14c97ab7bfddd5c2",
+    "cancellation.py": "a776a359f82235716c97a1cb63b360a09013e0d6bfc747c91ce2d5966eebf048",
+    "candidate-freeze-before6.json": "c76754bb961f935a8a39b6f8f679d100e91b36734a969be4673bf9f17858c023",
+    "candidates-through5-v2.json": "b4bc91e99fb55f92c004c68bd832ef6ff8a6afef163fc6f50fa356d741b3ca34",
+    "candidates-through5.json": "7787886244c8cea6ba13d4458ba39a53210ad0801a80b138fe3873343b16e85d",
+    "candidates-through6.json": "9ace86717c12f1757acb741de6412ced00b0d51085840a9e80971c6e98b81a17",
+    "independent-coloring-through6.json": "8b43b6c9e8bab0e2eee0b86c78cd39c89b2818513a6f62ab3798f44ab4d03a54",
+    "inventory-through5.json": "50349df689e724d66d8b290f29aa9e534068f9c08f008046153057fd68cd7217",
+    "inventory-through6.json": "19a41ac5afc4318689c20c8a7baac4aa649df231535ed7603dad93a0a61d4fd7",
+    "inventory.py": "ce6c13dd8b0eb7d1e294c30c3c042d64f9e1ab6bf91d9c3d3ab2bc747eb030b5",
+    "notebook.md": "7121f7e1e68105c3a74363c2ec796ed3abfa51e96e5e187515d0705ae086e83c",
+    "structural-freeze.json": "ab63370a9324cc714b03b49d53666b010d0ed11af15712a96f3691a7203c19be",
+    "structural-initial.py": "ae58d6ef7ccba8bb09ff8d6e7b6876e7a903588bb39adaaa7f44b10e06828e08",
+    "structural-results.json": "f1a9ecd3008762b7a3d6a868b7b94eec266c8198cbe443c553ca4e8f8ac4759e",
+    "structural.py": "84bb47956a243777f18c0872cf16ffea75b874ef942081088b9803d12c68d40f",
+    "verify_structural.py": "aeeb3cdc7a04cfe8d4f63db9754febf47ca4c7e4effd7b1407db22ceb118339a"
+  }
+}

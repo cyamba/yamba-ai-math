@@ -1,0 +1,3667 @@
+{
+  "status": "finite_candidate_graph_evidence",
+  "maximum_n": 5,
+  "scope": "e_(n-1,1); n<=6 natural unit interval orders; literal signed DJT sectors",
+  "families": {
+    "1": "one cell transfer plus whole row permutations",
+    "2": "at most3 moved labels with retained row blocks preserved (v2)",
+    "3": "unrestricted inversion-fiber matching, diagnostic only"
+  },
+  "universal_structural_injection": false,
+  "summary": [
+    {
+      "n": 2,
+      "hessenberg_vectors": 2,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 1,
+          "matched": 0,
+          "greedy_matched": 0,
+          "failed_vectors": 0,
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 1,
+          "matched": 0,
+          "greedy_matched": 0,
+          "failed_vectors": 0,
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 1,
+          "matched": 0,
+          "greedy_matched": 0,
+          "failed_vectors": 0,
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "hessenberg_vectors": 5,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 2,
+          "positive_objects": 7,
+          "matched": 2,
+          "greedy_matched": 2,
+          "failed_vectors": 0,
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 2,
+          "positive_objects": 7,
+          "matched": 2,
+          "greedy_matched": 2,
+          "failed_vectors": 0,
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 2,
+          "positive_objects": 7,
+          "matched": 2,
+          "greedy_matched": 2,
+          "failed_vectors": 0,
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "hessenberg_vectors": 14,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 27,
+          "positive_objects": 57,
+          "matched": 27,
+          "greedy_matched": 22,
+          "failed_vectors": 0,
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 27,
+          "positive_objects": 57,
+          "matched": 27,
+          "greedy_matched": 27,
+          "failed_vectors": 0,
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 27,
+          "positive_objects": 57,
+          "matched": 27,
+          "greedy_matched": 27,
+          "failed_vectors": 0,
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "hessenberg_vectors": 42,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 323,
+          "positive_objects": 582,
+          "matched": 320,
+          "greedy_matched": 269,
+          "failed_vectors": 2,
+          "first_failure": [
+            [
+              1,
+              2,
+              4,
+              5,
+              5
+            ],
+            {
+              "source": {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    5
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              "negative_vertices": [
+                {
+                  "sector": {
+                    "shape": [
+                      2,
+                      2,
+                      1
+                    ],
+                    "sigma": [
+                      1,
+                      0
+                    ],
+                    "indices": [
+                      4,
+                      1
+                    ],
+                    "target": [
+                      4,
+                      1
+                    ],
+                    "sign": -1
+                  },
+                  "tableau": [
+                    [
+                      1,
+                      4
+                    ],
+                    [
+                      2,
+                      3
+                    ],
+                    [
+                      5
+                    ]
+                  ]
+                },
+                {
+                  "sector": {
+                    "shape": [
+                      2,
+                      2,
+                      1
+                    ],
+                    "sigma": [
+                      1,
+                      0
+                    ],
+                    "indices": [
+                      4,
+                      1
+                    ],
+                    "target": [
+                      4,
+                      1
+                    ],
+                    "sign": -1
+                  },
+                  "tableau": [
+                    [
+                      1,
+                      4
+                    ],
+                    [
+                      2,
+                      5
+                    ],
+                    [
+                      3
+                    ]
+                  ]
+                }
+              ],
+              "positive_neighbors": [
+                {
+                  "sector": {
+                    "shape": [
+                      2,
+                      1,
+                      1,
+                      1
+                    ],
+                    "sigma": [
+                      0,
+                      1
+                    ],
+                    "indices": [
+                      4,
+                      1
+                    ],
+                    "target": [
+                      4,
+                      1
+                    ],
+                    "sign": 1
+                  },
+                  "tableau": [
+                    [
+                      1,
+                      4
+                    ],
+                    [
+                      2
+                    ],
+                    [
+                      3
+                    ],
+                    [
+                      5
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "negative_objects": 323,
+          "positive_objects": 582,
+          "matched": 323,
+          "greedy_matched": 323,
+          "failed_vectors": 0,
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 323,
+          "positive_objects": 582,
+          "matched": 323,
+          "greedy_matched": 323,
+          "failed_vectors": 0,
+          "first_failure": null
+        }
+      ]
+    }
+  ],
+  "all_results": [
+    {
+      "h": [
+        1,
+        2
+      ],
+      "target": [
+        1,
+        1
+      ],
+      "raw_sectors": 1,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 1,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 1,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 1,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        2
+      ],
+      "target": [
+        1,
+        1
+      ],
+      "raw_sectors": 1,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        3
+      ],
+      "target": [
+        2,
+        1
+      ],
+      "raw_sectors": 3,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 2,
+          "positive_objects": 2,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 4,
+          "mapping_sha256": "d49115b73b228caa34db419b85b16eb8137fe624a405295d1802307b7dbdc1c8",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 2,
+          "positive_objects": 2,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 4,
+          "mapping_sha256": "d49115b73b228caa34db419b85b16eb8137fe624a405295d1802307b7dbdc1c8",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 2,
+          "positive_objects": 2,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 4,
+          "mapping_sha256": "d49115b73b228caa34db419b85b16eb8137fe624a405295d1802307b7dbdc1c8",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        3
+      ],
+      "target": [
+        2,
+        1
+      ],
+      "raw_sectors": 3,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 2,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 2,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 2,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        3
+      ],
+      "target": [
+        2,
+        1
+      ],
+      "raw_sectors": 3,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 2,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 2,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 2,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        3
+      ],
+      "target": [
+        2,
+        1
+      ],
+      "raw_sectors": 3,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 1,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 1,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 1,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        3,
+        3
+      ],
+      "target": [
+        2,
+        1
+      ],
+      "raw_sectors": 3,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 5,
+          "positive_objects": 5,
+          "matched": 5,
+          "greedy_matched": 4,
+          "edges": 14,
+          "mapping_sha256": "d46014fd4230f46cdf64370363144e8728b94a70185a438c1e1781c1bccb0695",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 5,
+          "positive_objects": 5,
+          "matched": 5,
+          "greedy_matched": 5,
+          "edges": 25,
+          "mapping_sha256": "8f92c0476eabe7987c37eadaad82fa3d6257aff47c0f2188e6bc60ddaf6e4c1b",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 5,
+          "positive_objects": 5,
+          "matched": 5,
+          "greedy_matched": 5,
+          "edges": 25,
+          "mapping_sha256": "8f92c0476eabe7987c37eadaad82fa3d6257aff47c0f2188e6bc60ddaf6e4c1b",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 6,
+          "mapping_sha256": "492486b91f3575580264bcca2b05e2423b97301d0b211b3af17a60f587325b91",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 8,
+          "mapping_sha256": "986f77cbcc7d534d0d0a8c976963eb8c6def5490505be2a624f07d5beeb51323",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 8,
+          "mapping_sha256": "986f77cbcc7d534d0d0a8c976963eb8c6def5490505be2a624f07d5beeb51323",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 2,
+          "edges": 6,
+          "mapping_sha256": "995ffc2a87732134d9fcdf5be432fa56524a33a5535d4e02e8224b1a5b7c728e",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 8,
+          "mapping_sha256": "995ffc2a87732134d9fcdf5be432fa56524a33a5535d4e02e8224b1a5b7c728e",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 8,
+          "mapping_sha256": "995ffc2a87732134d9fcdf5be432fa56524a33a5535d4e02e8224b1a5b7c728e",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 2,
+          "positive_objects": 5,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 3,
+          "mapping_sha256": "e1f2f5fd5a2585ae109a09d6c437dec89fa3de487d885f7b9435da91f2316f96",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 2,
+          "positive_objects": 5,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 6,
+          "mapping_sha256": "17074d5e8ddab0421371d0f35e42b106fea5464811fb2534a02fee280956645b",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 2,
+          "positive_objects": 5,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 6,
+          "mapping_sha256": "17074d5e8ddab0421371d0f35e42b106fea5464811fb2534a02fee280956645b",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        4,
+        4,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 6,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 6,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 6,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        3,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 2,
+          "edges": 6,
+          "mapping_sha256": "97d9f68e7cac7ad0606dee6d86051c4daeca9b18f2fdd9af33cccc7244a49265",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 8,
+          "mapping_sha256": "97d9f68e7cac7ad0606dee6d86051c4daeca9b18f2fdd9af33cccc7244a49265",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 8,
+          "mapping_sha256": "97d9f68e7cac7ad0606dee6d86051c4daeca9b18f2fdd9af33cccc7244a49265",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 6,
+          "mapping_sha256": "239c4b90247434fefccba8c20fbfac8d27d587e99a4a792a2e7ce0c782bcddb0",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 6,
+          "mapping_sha256": "239c4b90247434fefccba8c20fbfac8d27d587e99a4a792a2e7ce0c782bcddb0",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 4,
+          "positive_objects": 4,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 6,
+          "mapping_sha256": "239c4b90247434fefccba8c20fbfac8d27d587e99a4a792a2e7ce0c782bcddb0",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 2,
+          "positive_objects": 5,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 4,
+          "mapping_sha256": "cea26c8f198e61c16a2f4fa144d50419e8a7c70e8021f3b1845c2dcee4845661",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 2,
+          "positive_objects": 5,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 6,
+          "mapping_sha256": "cea26c8f198e61c16a2f4fa144d50419e8a7c70e8021f3b1845c2dcee4845661",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 2,
+          "positive_objects": 5,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 6,
+          "mapping_sha256": "cea26c8f198e61c16a2f4fa144d50419e8a7c70e8021f3b1845c2dcee4845661",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 2,
+          "positive_objects": 4,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 2,
+          "mapping_sha256": "e5c895861d05bb3d006f69c9083132a5c6ff3efe128e29fc805eaf9376cbe72b",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 2,
+          "positive_objects": 4,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 4,
+          "mapping_sha256": "ccb02c79b4292168c3885a7ce14f9c7a24bb8235c446f9979f4cd1d2810a9ca9",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 2,
+          "positive_objects": 4,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 4,
+          "mapping_sha256": "ccb02c79b4292168c3885a7ce14f9c7a24bb8235c446f9979f4cd1d2810a9ca9",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        4,
+        4,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 4,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 4,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 4,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        3,
+        3,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 6,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 6,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 6,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 4,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 4,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 4,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        4,
+        4,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 2,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 2,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 2,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "raw_sectors": 5,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 13,
+          "positive_objects": 13,
+          "matched": 13,
+          "greedy_matched": 11,
+          "edges": 47,
+          "mapping_sha256": "1e82f65d0fccd4a57bcfa22fd2a7e6fd02e378c6f04cf0679bf1035eeb8dbfc5",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 13,
+          "positive_objects": 13,
+          "matched": 13,
+          "greedy_matched": 13,
+          "edges": 169,
+          "mapping_sha256": "e20bdb3dedafc4c367d306f9f27ce1f7014f9ddc360560930d26ed5ff1e8c1d4",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 13,
+          "positive_objects": 13,
+          "matched": 13,
+          "greedy_matched": 13,
+          "edges": 169,
+          "mapping_sha256": "e20bdb3dedafc4c367d306f9f27ce1f7014f9ddc360560930d26ed5ff1e8c1d4",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        3,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 8,
+          "edges": 30,
+          "mapping_sha256": "93fa19ec7dc2b025f94703255141e8b4fb33243925aa9e406c811f9a3a19f838",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "e160edb7d192d29b7005e8654d921385c32ff5ec58020f63fb3ed7e392418c89",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "e160edb7d192d29b7005e8654d921385c32ff5ec58020f63fb3ed7e392418c89",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 8,
+          "edges": 30,
+          "mapping_sha256": "bc7da4c76bb831f0b3301a728c7d939e9a720cd6d16f839811e3e24d4fe59848",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "6f3e549aae44f17c4cf7fe38012313f985fcc2f66db57c55063d21b93abb39b8",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "6f3e549aae44f17c4cf7fe38012313f985fcc2f66db57c55063d21b93abb39b8",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 11,
+          "greedy_matched": 10,
+          "edges": 28,
+          "mapping_sha256": "e7dde7c9346e4a660f1b4a21f7e1e2e7ff758606880271ccdbad6809057af5e2",
+          "first_failure": {
+            "source": {
+              "sector": {
+                "shape": [
+                  2,
+                  2,
+                  1
+                ],
+                "sigma": [
+                  1,
+                  0
+                ],
+                "indices": [
+                  4,
+                  1
+                ],
+                "target": [
+                  4,
+                  1
+                ],
+                "sign": -1
+              },
+              "tableau": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  3
+                ]
+              ]
+            },
+            "negative_vertices": [
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              },
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    5
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              }
+            ],
+            "positive_neighbors": [
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sigma": [
+                    0,
+                    1
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": 1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "f7c79b2a14da81ee805b25803581950fce897f18a12e4e5e13d5b4fa3eb94d0c",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "f7c79b2a14da81ee805b25803581950fce897f18a12e4e5e13d5b4fa3eb94d0c",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 22,
+          "mapping_sha256": "1291a09efc730b35833cadd5fff040c9f71e000545042e36bd9e4f2fc45479bf",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 40,
+          "mapping_sha256": "6a9d9d773b9a531fe57bb806a3e5504f19720a7215cec142ad046b50a2c11da5",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 40,
+          "mapping_sha256": "6a9d9d773b9a531fe57bb806a3e5504f19720a7215cec142ad046b50a2c11da5",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 10,
+          "edges": 32,
+          "mapping_sha256": "2a4f30a41a39e941600124f7d4b7c1002627c0e79a36f88df861a8cc93bd3a35",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "a20734deeccb8a0aa5c21ea52c11cc0b190c5792ed0e108fa928daecfd831ae7",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "a20734deeccb8a0aa5c21ea52c11cc0b190c5792ed0e108fa928daecfd831ae7",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 8,
+          "edges": 20,
+          "mapping_sha256": "9169d4fc011151e2db7a67e7280ad5fc55736e393deaaa86925d0853a4ac2f33",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 54,
+          "mapping_sha256": "e720707f2b5ceda59d60a5f50778c80e06cb2b8b97d39b293dfb29d6acd61b06",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 54,
+          "mapping_sha256": "e720707f2b5ceda59d60a5f50778c80e06cb2b8b97d39b293dfb29d6acd61b06",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        4,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 7,
+          "edges": 27,
+          "mapping_sha256": "3b0ba6113a324c102a75801bf79ab40da4fed4f94bd6fed43a3fba107c65423a",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "9fd2b2e36d372a4bb96fd77249aa6d1535cbf8844671a9163b001a5e85d3ea16",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "9fd2b2e36d372a4bb96fd77249aa6d1535cbf8844671a9163b001a5e85d3ea16",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        4,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 10,
+          "positive_objects": 14,
+          "matched": 10,
+          "greedy_matched": 9,
+          "edges": 24,
+          "mapping_sha256": "76c1395c4f85f6707ce3c68e6611a062c6fe164ec36e4e798ca5634148abab2d",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 10,
+          "positive_objects": 14,
+          "matched": 10,
+          "greedy_matched": 10,
+          "edges": 60,
+          "mapping_sha256": "fefaa75f10aa8448f4396c5b8770121da26711e58c56f5db42cd85a3fba316a1",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 10,
+          "positive_objects": 14,
+          "matched": 10,
+          "greedy_matched": 10,
+          "edges": 60,
+          "mapping_sha256": "fefaa75f10aa8448f4396c5b8770121da26711e58c56f5db42cd85a3fba316a1",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 19,
+          "mapping_sha256": "760ee5281f67e9a086bd373889ef8e8d67c3a984565bbec2fe981432e9a8468a",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 40,
+          "mapping_sha256": "6ba40203ff981fe0311a7d6877dcd46b2a6eb642f682261657f6898b58816a7e",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 40,
+          "mapping_sha256": "6ba40203ff981fe0311a7d6877dcd46b2a6eb642f682261657f6898b58816a7e",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        4,
+        4,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 6,
+          "edges": 22,
+          "mapping_sha256": "d7d5722f2aa3c29cf911a21c35db3dd75b4baadf0bd36fd6940f8e4e73b5aa1a",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 40,
+          "mapping_sha256": "261f723ba00d99407206716529fb20a2b03bcbe190e85ff89eb6ca2fe1f9f040",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 40,
+          "mapping_sha256": "261f723ba00d99407206716529fb20a2b03bcbe190e85ff89eb6ca2fe1f9f040",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        4,
+        4,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 19,
+          "mapping_sha256": "c1d53b1aa4d9f74514fd133c004f5707e89004e66c954bfa5301d27d2207bb1f",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 40,
+          "mapping_sha256": "2bf1865f63c164909fb44b07abdc17d409867404511399e7ac9eb99e12e6b98d",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 40,
+          "mapping_sha256": "2bf1865f63c164909fb44b07abdc17d409867404511399e7ac9eb99e12e6b98d",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        4,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 4,
+          "positive_objects": 20,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 10,
+          "mapping_sha256": "05d1705d703e0368e4a2a87703748d228a049b66ecd4a1452045123c102b3b3e",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 4,
+          "positive_objects": 20,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 24,
+          "mapping_sha256": "10d05a066d88a33a56f5deefa342d43fb088824fc25a169a1782fdc8ba4ad30e",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 4,
+          "positive_objects": 20,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 24,
+          "mapping_sha256": "10d05a066d88a33a56f5deefa342d43fb088824fc25a169a1782fdc8ba4ad30e",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        1,
+        5,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 24,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 24,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 24,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 10,
+          "edges": 34,
+          "mapping_sha256": "9cc64874a0d248086dba218cc8ac447d215e880be9fdc6789c92444507d679f6",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "bd5ed76ae1f27c58cfe73cea1b049050be7d985042908d05045e8d3a8b6bbf56",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "bd5ed76ae1f27c58cfe73cea1b049050be7d985042908d05045e8d3a8b6bbf56",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        3,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 8,
+          "edges": 28,
+          "mapping_sha256": "19fee0ce4c78c313a601937cd36186777e24ae43805b49fdf237b102bf46e1a3",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 54,
+          "mapping_sha256": "de0bc24415c58e300b3a8f68a0027ab553a1003e971ce5321fb90546628f4106",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 54,
+          "mapping_sha256": "de0bc24415c58e300b3a8f68a0027ab553a1003e971ce5321fb90546628f4106",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 9,
+          "edges": 32,
+          "mapping_sha256": "d7ffd40db44d7b95cabeb3d63d24a8173014709691be658aabb8b5b87bfd4569",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 54,
+          "mapping_sha256": "eccb20e4d59fa6470c41b5a67b3b181307810a546e0105a0f78032786b0ec9df",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 54,
+          "mapping_sha256": "eccb20e4d59fa6470c41b5a67b3b181307810a546e0105a0f78032786b0ec9df",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 10,
+          "greedy_matched": 8,
+          "edges": 21,
+          "mapping_sha256": "1610de0c2af0d246c8002ea9cfe4a0a63aa71ff3afe2f39f59888fbb8ec066e0",
+          "first_failure": {
+            "source": {
+              "sector": {
+                "shape": [
+                  2,
+                  2,
+                  1
+                ],
+                "sigma": [
+                  1,
+                  0
+                ],
+                "indices": [
+                  4,
+                  1
+                ],
+                "target": [
+                  4,
+                  1
+                ],
+                "sign": -1
+              },
+              "tableau": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  5
+                ]
+              ]
+            },
+            "negative_vertices": [
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              },
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    5
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              },
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              }
+            ],
+            "positive_neighbors": [
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sigma": [
+                    0,
+                    1
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": 1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              },
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sigma": [
+                    0,
+                    1
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": 1
+                },
+                "tableau": [
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    1
+                  ],
+                  [
+                    4
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 52,
+          "mapping_sha256": "27ff3c572777040d4d6ff389d9a5b01cffd06c3c093a7822cc8fd8999bf540bb",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 52,
+          "mapping_sha256": "27ff3c572777040d4d6ff389d9a5b01cffd06c3c093a7822cc8fd8999bf540bb",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 18,
+          "mapping_sha256": "d0cd6d33eb2e8c60f2c956f2018e394fc405665b782f91d268d47a2fb50a6b45",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 36,
+          "mapping_sha256": "57ae30d4f8e607c3deca050f492eee6e02a434c8de57ab3d8ace8439d8990de6",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 36,
+          "mapping_sha256": "57ae30d4f8e607c3deca050f492eee6e02a434c8de57ab3d8ace8439d8990de6",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        3,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 9,
+          "edges": 29,
+          "mapping_sha256": "c560f611a31463aec0ea1b07bcebe75c634fb8446921f79ed2f4cb8b910f80f9",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "2a34af834d4beb7ce9b4edde37e70869969132fe2869af4b476f16d38cc2b1aa",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 72,
+          "mapping_sha256": "2a34af834d4beb7ce9b4edde37e70869969132fe2869af4b476f16d38cc2b1aa",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        3,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 10,
+          "edges": 22,
+          "mapping_sha256": "f88550b6457a6e3e1ea4458d6c2a6812659c034e2cac0f58b2018cc0cfd50a32",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 52,
+          "mapping_sha256": "6207be4445600a3249b4ccf98f63c3d1e6bf3fc5f939ed5fa6dca7b06eebd4d9",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 52,
+          "mapping_sha256": "6207be4445600a3249b4ccf98f63c3d1e6bf3fc5f939ed5fa6dca7b06eebd4d9",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 10,
+          "positive_objects": 14,
+          "matched": 10,
+          "greedy_matched": 9,
+          "edges": 24,
+          "mapping_sha256": "29b530febfec8f9ec1fdd05fe704512a57dc585133a58a7b5a973c065f511128",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 10,
+          "positive_objects": 14,
+          "matched": 10,
+          "greedy_matched": 10,
+          "edges": 60,
+          "mapping_sha256": "afb1f49f1e6ae3b71fd8084715b09dea57343e55c922564b86b0c27cddd2d83f",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 10,
+          "positive_objects": 14,
+          "matched": 10,
+          "greedy_matched": 10,
+          "edges": 60,
+          "mapping_sha256": "afb1f49f1e6ae3b71fd8084715b09dea57343e55c922564b86b0c27cddd2d83f",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 10,
+          "positive_objects": 13,
+          "matched": 10,
+          "greedy_matched": 10,
+          "edges": 22,
+          "mapping_sha256": "b3e780e68628be533462fb1968a80e9507e3500a443a0a3421e5370cdd597121",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 10,
+          "positive_objects": 13,
+          "matched": 10,
+          "greedy_matched": 10,
+          "edges": 54,
+          "mapping_sha256": "d312c94ebd989ae7878d3859d0ec6e804cad471d71d3c5efedd793aff5e595aa",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 10,
+          "positive_objects": 13,
+          "matched": 10,
+          "greedy_matched": 10,
+          "edges": 54,
+          "mapping_sha256": "d312c94ebd989ae7878d3859d0ec6e804cad471d71d3c5efedd793aff5e595aa",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 8,
+          "positive_objects": 14,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 14,
+          "mapping_sha256": "564a8ee4520cd4ef182e1957b441356b3fe932eaa215bb5b1544023027b91471",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 8,
+          "positive_objects": 14,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 34,
+          "mapping_sha256": "5997c5cbb24c966b286a2edbed345702d83b300c80b13e84601afcee87bcb24c",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 8,
+          "positive_objects": 14,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 34,
+          "mapping_sha256": "5997c5cbb24c966b286a2edbed345702d83b300c80b13e84601afcee87bcb24c",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        4,
+        4,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 7,
+          "edges": 20,
+          "mapping_sha256": "5139ced5be869683efef23475053800302ac99c91b082bd6076c165f6a910274",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 40,
+          "mapping_sha256": "952cf70d7ceb8d67f548389306e1c626a7473c9e7d395c4a81f0298e49d04bc6",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 40,
+          "mapping_sha256": "952cf70d7ceb8d67f548389306e1c626a7473c9e7d395c4a81f0298e49d04bc6",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        4,
+        4,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 6,
+          "positive_objects": 16,
+          "matched": 6,
+          "greedy_matched": 6,
+          "edges": 17,
+          "mapping_sha256": "45d065e005a5f82cdd8cc0fc7483ae46c5215a0e56f67eec289c83f484b6b438",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 6,
+          "positive_objects": 16,
+          "matched": 6,
+          "greedy_matched": 6,
+          "edges": 36,
+          "mapping_sha256": "b90965bfa8cf856ef25064c3874e2419f15cd1d9cdd69d6ac46352026eebbb2c",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 6,
+          "positive_objects": 16,
+          "matched": 6,
+          "greedy_matched": 6,
+          "edges": 36,
+          "mapping_sha256": "b90965bfa8cf856ef25064c3874e2419f15cd1d9cdd69d6ac46352026eebbb2c",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 4,
+          "positive_objects": 16,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 9,
+          "mapping_sha256": "bdf979fcb64bffbcc3173c2ead55012eadd8bd91dcc001325d9f3ce73b38d5e9",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 4,
+          "positive_objects": 16,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 20,
+          "mapping_sha256": "bdf979fcb64bffbcc3173c2ead55012eadd8bd91dcc001325d9f3ce73b38d5e9",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 4,
+          "positive_objects": 16,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 20,
+          "mapping_sha256": "bdf979fcb64bffbcc3173c2ead55012eadd8bd91dcc001325d9f3ce73b38d5e9",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        2,
+        5,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 18,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 18,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 18,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        3,
+        3,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 8,
+          "edges": 20,
+          "mapping_sha256": "6243c8eab10a3933efedf81468e1fb6601d5b6b67ec57c6a46112e8b07e4f95f",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 40,
+          "mapping_sha256": "23ef1b50d904dde4baa580b95ee136c72b3ea832e193406dc707d22a8f03e0a5",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 40,
+          "mapping_sha256": "23ef1b50d904dde4baa580b95ee136c72b3ea832e193406dc707d22a8f03e0a5",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        3,
+        3,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 18,
+          "mapping_sha256": "419a78637cf9018e8b1af520f58c0de8bd5ed428229b50975fe61d7507823dab",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 36,
+          "mapping_sha256": "dcc3ac4443cdd75c4d5d7d95789d11ec16e2d6886ff6b0c237c8f3f851ead7af",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 12,
+          "positive_objects": 12,
+          "matched": 12,
+          "greedy_matched": 12,
+          "edges": 36,
+          "mapping_sha256": "dcc3ac4443cdd75c4d5d7d95789d11ec16e2d6886ff6b0c237c8f3f851ead7af",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 19,
+          "mapping_sha256": "397ee01c6468a8d1b35aed28da145d2bc64bdf153d7072ae18a858a146554f76",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 40,
+          "mapping_sha256": "afc6779e66957121d9499db607f61a1083e95dffa63bf4baa04ec41be8b2eb81",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 8,
+          "positive_objects": 16,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 40,
+          "mapping_sha256": "afc6779e66957121d9499db607f61a1083e95dffa63bf4baa04ec41be8b2eb81",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        3,
+        4,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 8,
+          "positive_objects": 14,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 14,
+          "mapping_sha256": "db7318d1ecfab4d1c96396cbaa65d59b939b90f0ee8923c493e9895dc434c062",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 8,
+          "positive_objects": 14,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 34,
+          "mapping_sha256": "b13aa862a307c6a6ec11c5848386eda1d8a79d692e6de63d26c5e32b47b9962e",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 8,
+          "positive_objects": 14,
+          "matched": 8,
+          "greedy_matched": 8,
+          "edges": 34,
+          "mapping_sha256": "b13aa862a307c6a6ec11c5848386eda1d8a79d692e6de63d26c5e32b47b9962e",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        3,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 4,
+          "positive_objects": 16,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 12,
+          "mapping_sha256": "11053ade45be485ce2b30f66ccfbcba7a8e77fd48bfeb57481b452bec78a9995",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 4,
+          "positive_objects": 16,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 20,
+          "mapping_sha256": "be3a77f765844639726e78c631e94e8e2762fd7df6638f403b677cee69d4b3bf",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 4,
+          "positive_objects": 16,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 20,
+          "mapping_sha256": "be3a77f765844639726e78c631e94e8e2762fd7df6638f403b677cee69d4b3bf",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        4,
+        4,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 4,
+          "positive_objects": 20,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 12,
+          "mapping_sha256": "a24addc7087551a96255ee94095b11026e7a1a26b1dbd9f4b7842e0d8ee8409b",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 4,
+          "positive_objects": 20,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 24,
+          "mapping_sha256": "a24addc7087551a96255ee94095b11026e7a1a26b1dbd9f4b7842e0d8ee8409b",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 4,
+          "positive_objects": 20,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 24,
+          "mapping_sha256": "a24addc7087551a96255ee94095b11026e7a1a26b1dbd9f4b7842e0d8ee8409b",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        4,
+        4,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 4,
+          "positive_objects": 16,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 9,
+          "mapping_sha256": "dbdce12d87142064e6bd92d2853676811ffbe98018f454d2e0d38be066fc8c6e",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 4,
+          "positive_objects": 16,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 20,
+          "mapping_sha256": "eaeb735bdf4f5b16a56d797887fd8bf06bb415f5278e0986db1c3c07ad43be86",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 4,
+          "positive_objects": 16,
+          "matched": 4,
+          "greedy_matched": 4,
+          "edges": 20,
+          "mapping_sha256": "eaeb735bdf4f5b16a56d797887fd8bf06bb415f5278e0986db1c3c07ad43be86",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        4,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 2,
+          "positive_objects": 14,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 6,
+          "mapping_sha256": "661448b561153086e2992f219b99acac0f9a3a9dad4540139a5474411487deca",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 2,
+          "positive_objects": 14,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 10,
+          "mapping_sha256": "661448b561153086e2992f219b99acac0f9a3a9dad4540139a5474411487deca",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 2,
+          "positive_objects": 14,
+          "matched": 2,
+          "greedy_matched": 2,
+          "edges": 10,
+          "mapping_sha256": "661448b561153086e2992f219b99acac0f9a3a9dad4540139a5474411487deca",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        3,
+        5,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 12,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 12,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 12,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        4,
+        4,
+        4,
+        4,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 24,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 24,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 24,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        4,
+        4,
+        4,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 18,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 18,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 18,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        4,
+        4,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 12,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 12,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 12,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        4,
+        5,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 6,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 6,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 6,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "h": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "raw_sectors": 7,
+      "identity_sector_pairs": 0,
+      "identity_object_pairs": 0,
+      "families": [
+        {
+          "family": 1,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 2,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        },
+        {
+          "family": 3,
+          "negative_objects": 0,
+          "positive_objects": 0,
+          "matched": 0,
+          "greedy_matched": 0,
+          "edges": 0,
+          "mapping_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "first_failure": null
+        }
+      ]
+    }
+  ]
+}

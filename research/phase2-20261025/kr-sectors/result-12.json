@@ -1,0 +1,48 @@
+{
+  "status": "finite_pass_not_full_KR1",
+  "bound": 12,
+  "all_C_A_U_B": 59,
+  "H1_C_domain_and_U_image": 59,
+  "H1_rejected_U": 0,
+  "H1_sectors": {
+    "(0, 0)": 1,
+    "(0, 1)": 4,
+    "(0, 2)": 1,
+    "(1, 0)": 12,
+    "(1, 1)": 9,
+    "(2, 0)": 25,
+    "(3, 0)": 7
+  },
+  "missing_C_sectors": {},
+  "first_missing_C": null,
+  "first_rejected_U": null,
+  "H1_A_cohorts": {
+    "distinct": 56,
+    "repeated": 3
+  },
+  "H1_B_cohorts": {
+    "distinct": 15,
+    "repeated": 44
+  },
+  "full_A_cohorts": {
+    "distinct": 56,
+    "repeated": 3
+  },
+  "full_B_cohorts": {
+    "repeated": 44,
+    "distinct": 15
+  },
+  "max_forward_path": 0,
+  "max_reverse_path": 0,
+  "bounded_phase_a3_states": 7,
+  "external_candidate_falsifiers": {
+    "checked_by_function": {
+      "reconstruct_a3_b0": 7
+    },
+    "first_failures": {
+      "reconstruct_a3_b0": {}
+    }
+  },
+  "script_sha256": "bf09944cbfb293594254291f3014d61f1c892369da25a54e1b8d005b6616d2c9",
+  "bridge_sha256": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac"
+}

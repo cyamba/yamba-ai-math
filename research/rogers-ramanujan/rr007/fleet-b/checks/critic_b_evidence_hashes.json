@@ -1,0 +1,22 @@
+[
+  {
+    "raw": ".runs/rr007/critic-b-independent.py",
+    "canonical": "research/rogers-ramanujan/rr007/fleet-b/checks/critic_b_independent.py",
+    "sha256": "857b53aa04a20dc625d196af21fb8956a3da4b47eb393cbd83f83cd86e463876"
+  },
+  {
+    "raw": ".runs/rr007/critic-b-independent-12.json",
+    "canonical": "research/rogers-ramanujan/rr007/fleet-b/checks/critic_b_independent_12.json",
+    "sha256": "f4dce21586de51be16dd06bac53c054d6f34fb2500ce5ca1baca903470c1d3f6"
+  },
+  {
+    "raw": ".runs/rr007/critic-b-stockhofe12.py",
+    "canonical": "research/rogers-ramanujan/rr007/fleet-b/checks/critic_b_stockhofe12.py",
+    "sha256": "0b5f470753862003dccb405ce9f620cd5c51d92110498e3a4b900aee9783ee67"
+  },
+  {
+    "raw": ".runs/rr007/critic-b-stockhofe-12.json",
+    "canonical": "research/rogers-ramanujan/rr007/fleet-b/checks/critic_b_stockhofe_12.json",
+    "sha256": "a40dfed5e8e3047c712d10ceae168062ba7e6e9c5b661dc9950a1409ffc763a1"
+  }
+]

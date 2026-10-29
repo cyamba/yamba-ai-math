@@ -1,0 +1,22 @@
+{
+  "research/phase2-20261025/tableau/author.md": "9e02329dfc61090275361070503328219a287d9f1f5f720de2e1842a71c3dd42",
+  "research/phase2-20261025/tableau/cancellation-v1.py": "d41c1fbaa6816a865afe3ff40a0837c4195ee132a288e94d14c97ab7bfddd5c2",
+  "research/phase2-20261025/tableau/cancellation.py": "a776a359f82235716c97a1cb63b360a09013e0d6bfc747c91ce2d5966eebf048",
+  "research/phase2-20261025/tableau/candidate-freeze-before6.json": "c76754bb961f935a8a39b6f8f679d100e91b36734a969be4673bf9f17858c023",
+  "research/phase2-20261025/tableau/candidates-through5-v2.json": "b4bc91e99fb55f92c004c68bd832ef6ff8a6afef163fc6f50fa356d741b3ca34",
+  "research/phase2-20261025/tableau/candidates-through5.json": "7787886244c8cea6ba13d4458ba39a53210ad0801a80b138fe3873343b16e85d",
+  "research/phase2-20261025/tableau/candidates-through6.json": "9ace86717c12f1757acb741de6412ced00b0d51085840a9e80971c6e98b81a17",
+  "research/phase2-20261025/tableau/independent-coloring-through6.json": "8b43b6c9e8bab0e2eee0b86c78cd39c89b2818513a6f62ab3798f44ab4d03a54",
+  "research/phase2-20261025/tableau/inventory-through5.json": "50349df689e724d66d8b290f29aa9e534068f9c08f008046153057fd68cd7217",
+  "research/phase2-20261025/tableau/inventory-through6.json": "19a41ac5afc4318689c20c8a7baac4aa649df231535ed7603dad93a0a61d4fd7",
+  "research/phase2-20261025/tableau/inventory.py": "ce6c13dd8b0eb7d1e294c30c3c042d64f9e1ab6bf91d9c3d3ab2bc747eb030b5",
+  "research/phase2-20261025/tableau/notebook.md": "7121f7e1e68105c3a74363c2ec796ed3abfa51e96e5e187515d0705ae086e83c",
+  "research/phase2-20261025/tableau/structural-freeze.json": "ab63370a9324cc714b03b49d53666b010d0ed11af15712a96f3691a7203c19be",
+  "research/phase2-20261025/tableau/structural-initial.py": "ae58d6ef7ccba8bb09ff8d6e7b6876e7a903588bb39adaaa7f44b10e06828e08",
+  "research/phase2-20261025/tableau/structural-results.json": "f1a9ecd3008762b7a3d6a868b7b94eec266c8198cbe443c553ca4e8f8ac4759e",
+  "research/phase2-20261025/tableau/structural.py": "84bb47956a243777f18c0872cf16ffea75b874ef942081088b9803d12c68d40f",
+  "research/phase2-20261025/tableau/verify_structural.py": "aeeb3cdc7a04cfe8d4f63db9754febf47ca4c7e4effd7b1407db22ceb118339a",
+  "research/phase2-20261025/tableau/freeze.json": "4493afa8ab22d3ecbcb7079181f4b7269ab8c4cbc837ce2a818c3059a8216e44",
+  "research/partitions/checks/coloring_oracle.py": "2eeceb10d1a0e5ec786912d217cca13b6988f3b58ace811754b0d1c509e2b0ef",
+  "research/phase2-20261025/reviews/tableau-check.py": "ec101a9599700a2a74dd7f610a4b98b7708904f54eadd951ff820049f58fcf07"
+}

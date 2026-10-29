@@ -1,0 +1,15 @@
+test_all_required_stages_and_records_are_needed (test_partition_verification.PartitionVerificationTests.test_all_required_stages_and_records_are_needed) ... ok
+test_changed_sources_prevent_checked_h3_status (test_partition_verification.PartitionVerificationTests.test_changed_sources_prevent_checked_h3_status) ... ok
+test_checked_h3_is_reported_only_with_all_acceptance_checks (test_partition_verification.PartitionVerificationTests.test_checked_h3_is_reported_only_with_all_acceptance_checks) ... ok
+test_failed_certificate_with_zero_process_exit_prevents_success (test_partition_verification.PartitionVerificationTests.test_failed_certificate_with_zero_process_exit_prevents_success) ... ok
+test_failed_repository_check_does_not_skip_certificate_checks (test_partition_verification.PartitionVerificationTests.test_failed_repository_check_does_not_skip_certificate_checks) ... ok
+test_failed_stage_prevents_checked_h3_status (test_partition_verification.PartitionVerificationTests.test_failed_stage_prevents_checked_h3_status) ... ok
+test_missing_dependency_prevents_success (test_partition_verification.PartitionVerificationTests.test_missing_dependency_prevents_success) ... ok
+test_missing_natural_transport_prevents_checked_h3_status (test_partition_verification.PartitionVerificationTests.test_missing_natural_transport_prevents_checked_h3_status) ... ok
+test_source_change_during_checks_prevents_success (test_partition_verification.PartitionVerificationTests.test_source_change_during_checks_prevents_success) ... ok
+test_zero_exit_without_certificate_prevents_success (test_partition_verification.PartitionVerificationTests.test_zero_exit_without_certificate_prevents_success) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.010s
+
+OK

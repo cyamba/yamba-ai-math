@@ -1,0 +1,21 @@
+{
+  "status": "finite_exact_passed",
+  "n": 6,
+  "totals": {
+    "negative_sources": 3980,
+    "mapped": 3980,
+    "mapped_(5, 1)": 19,
+    "mapped_(4, 2)": 96,
+    "mapped_(3, 1, 1, 1)": 1273,
+    "mapped_(2, 2, 1, 1)": 2592,
+    "recognized_images": 3980
+  },
+  "hessenberg_vectors": 132,
+  "failures": [],
+  "local_fiber_histogram": {
+    "0": 3417,
+    "1": 1676,
+    "2": 709,
+    "3": 27
+  }
+}

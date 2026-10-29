@@ -1,0 +1,174 @@
+{
+  "additional_unreceipted_wrapper_failures": [
+    "b-handoff-inventory ENAMETOOLONG; conservative1s debit",
+    "A finalpin ENAMETOOLONG; conservative1s debit",
+    "Final critic overlong pin command failed preflight; conservative1s debit"
+  ],
+  "approved_extensions_through30": [
+    {
+      "label": "a-author-a1-through30",
+      "pilot": "a-author-a1-pilot12",
+      "utc": "2026-10-24T20:55:02.606974+00:00"
+    },
+    {
+      "label": "a-author-a2-through30",
+      "pilot": "a-author-a2-pilot12",
+      "utc": "2026-10-24T20:58:32.064906+00:00"
+    },
+    {
+      "label": "b2-frozen-through30",
+      "pilot": "b2-frozen-pilot12",
+      "utc": "2026-10-24T21:02:25.568723+00:00"
+    },
+    {
+      "label": "a-author-a3-through30",
+      "pilot": "a-author-a3-pilot12",
+      "utc": "2026-10-24T21:11:33.298853+00:00"
+    },
+    {
+      "label": "a-critic-literal-through30",
+      "pilot": "a-critic-literal-pilot12",
+      "utc": "2026-10-24T21:18:06.587118+00:00"
+    },
+    {
+      "label": "critic-b-composition-through30",
+      "pilot": "critic-b-composition-pilot12",
+      "utc": "2026-10-24T21:26:18.016709+00:00"
+    }
+  ],
+  "artifact_measurement_scope": "RR007 durable and raw directories; conservative upper bound on their incremental allocation, excluding filesystem metadata",
+  "attempt": "RR007",
+  "attempt_artifact_bytes_before_completion_manifest": 7468066,
+  "closed_raw_ledger_sha256": "158093976acab6e5e0ae77e30c1f5e046645290fcbd023e04ce548660693f77d",
+  "closed_utc": "2026-10-24T22:04:50.240803+00:00",
+  "concurrency_cap_including_root": 4,
+  "conservative_debits": [
+    {
+      "category": "b",
+      "note": "B-author initial pwd utility unmetered; observed command wall about0.6s, conservative debit1s",
+      "seconds": 1.0
+    },
+    {
+      "category": "a",
+      "note": "A-context initial pwd unmetered wall0.777664s, conservative debit1s; subsequent reads and analysis metered",
+      "seconds": 1.0
+    },
+    {
+      "category": "b",
+      "note": "b-handoff-inventory meter wrapper ENAMETOOLONG before child; no receipt; safe named-script retry passed; conservative1s charge",
+      "seconds": 1.0
+    },
+    {
+      "category": "a",
+      "note": "A finalpin meter wrapper ENAMETOOLONG before child toolwall0.739s; no receipt; safe named-script retry passed; charge1s",
+      "seconds": 1.0
+    },
+    {
+      "category": "closing",
+      "note": "Resumed-session initial direct summary-status utility and final dispatch reservation; conservative one second each, not exact measured child CPU. Further read subprocesses metered.",
+      "seconds": 2.0
+    },
+    {
+      "category": "critic-a",
+      "note": "Final critic overlong pin command failed meter preflight before child/receipt; named helper retry succeeded. Conservative one-second failed-wrapper charge; no new mathematical execution.",
+      "seconds": 1.0
+    }
+  ],
+  "deadline_utc": "2026-10-24T22:41:26+00:00",
+  "detailed_source_record_cap": 6,
+  "detailed_source_records": 3,
+  "dispatch_invocations": 8,
+  "dispatch_proxy_cap": 20,
+  "dispatch_proxy_units": 20,
+  "distinct_child_profiles": 6,
+  "elapsed_minutes_including_preparation": 83.40401338333332,
+  "external_messages_or_publication": 0,
+  "failed_metered_receipts_retained": [
+    {
+      "exit_code": 1,
+      "label": "a-author-read-02",
+      "status": "failed"
+    },
+    {
+      "exit_code": 2,
+      "label": "rr007_b_sources_defs",
+      "status": "failed"
+    },
+    {
+      "exit_code": 2,
+      "label": "root-current-scope",
+      "status": "failed"
+    },
+    {
+      "exit_code": 1,
+      "label": "critic-b-read-2",
+      "status": "failed"
+    },
+    {
+      "exit_code": 1,
+      "label": "root-integrity-during-revision",
+      "status": "failed"
+    },
+    {
+      "exit_code": 2,
+      "label": "critic-b-compose-imports-2",
+      "status": "failed"
+    },
+    {
+      "exit_code": 1,
+      "label": "a-rev-read-a2-old",
+      "status": "failed"
+    }
+  ],
+  "finite_variant_cap": 6,
+  "finite_variant_count": 6,
+  "formal_proof_checker": "not run",
+  "free_bytes_at_closure": 14950400000,
+  "full_KR1": "unresolved",
+  "integrity": {
+    "known_historical_mismatches": [
+      {
+        "group": ".runs/rr007/a-context-hook-pin.json",
+        "path": "research/rogers-ramanujan/rr007/fleet-a/context.md",
+        "reason": "sha256_changed"
+      }
+    ],
+    "retained_acceptance_pins_status": "passed",
+    "status": "qualified",
+    "strict_snapshot_status": "failed",
+    "unexpected_mismatches": []
+  },
+  "invocation_cap": 8,
+  "maximum_executed_mathematical_weight": 30,
+  "maximum_executing_children": 3,
+  "measurement_limits": [
+    "Model tokens and service energy/cost unknown",
+    "First bootstrap utility commands conservatively charged 15 seconds; later subprocesses use meter",
+    "RSS observed post-exit, not a hard transient bound",
+    "Administrative and initial utility charges include conservative debits.",
+    "No service token, energy, money or transient memory measurement is available.",
+    "Source snippets are not inspected full proofs; external reports are not rerun evidence."
+  ],
+  "new_dependencies": 0,
+  "novelty": "unverified",
+  "paid_provider_invocations": 0,
+  "peak_observed_child_rss_bytes": 38469632,
+  "per_child_observed_rss_cap_bytes": 536870912,
+  "source_open_cap": 18,
+  "source_opens": 18,
+  "source_queries": 10,
+  "source_query_cap": 12,
+  "start_utc": "2026-10-24T20:41:26+00:00",
+  "status": "closed",
+  "subprocess_by_category": {
+    "a": 4.071259954973357,
+    "b": 2.626127290976001,
+    "bootstrap": 29.217244709027,
+    "closing": 8.884009043016704,
+    "critic-a": 2.0975172880862374,
+    "critic-b": 1.032985498139169,
+    "endpoint": 0.030565749999368563
+  },
+  "subprocess_cap_seconds": 600,
+  "subprocess_seconds_charged": 47.959709534217836
+}

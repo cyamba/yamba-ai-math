@@ -1,0 +1,50 @@
+{
+  "stage": "sole Fleet A revision closed for distinct final review",
+  "created_utc": "2026-10-24T21:56:53.136880+00:00",
+  "assurance": "author-only written proof; no new finite trial",
+  "scope": "R7 all-b a=2 A3-coherent partial extension; full KR1 unresolved",
+  "review_priority": [
+    "R7.1 old g2 completion",
+    "R7.3-4 repaired g3",
+    "R7.5 exact path image/inverse and all-b W",
+    "R3 stronger H1 corollary",
+    "R5 3D no-go",
+    "R6 C-only triadic grammar",
+    "R4 separate alternate"
+  ],
+  "sha256": {
+    "research/rogers-ramanujan/rr007/fleet-a/revision.md": "c2fc80eacbeaf86fce4245459ceaf9faca8a4d37a813a11a6d7151fab9f6281a",
+    "research/rogers-ramanujan/rr007/fleet-a/revision-journal.md": "04f9e182d01e31b3d660a12103c9b0baca2a2c409f6ec36330d77c5d5f9c71d2",
+    "research/rogers-ramanujan/rr007/fleet-a/review-1.md": "2e6c0d7fe3b569233f6e20aff8f5aa1454837de7434acde7cb624d826fb8ade0",
+    "research/rogers-ramanujan/rr003/round-2-proposal.md": "3a00ac1627b50fd9a3ad93b2440fcc3da1c69553c257d5d2e6a0fd2f0b37c3f8",
+    "research/rogers-ramanujan/rr003/round-2-revision.md": "0310ac52fe59173994a185af514e01c665de6ddf1871c2681e366a06b3d63b34",
+    "research/rogers-ramanujan/rr003/round-2-review.md": "b10292d073809463fce58e9d92ecfea6114b27486a7e046b752b94fc90ddeb07",
+    "research/rogers-ramanujan/checks/rr003_columns.py": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+    "research/rogers-ramanujan/checks/rr003_revision.py": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+    "research/rogers-ramanujan/checks/rr003_a2.py": "e008c4208e3e7bb96136ae2453c62ae97e1b0b27931dd45a49571b44549ce909",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a3-hook-and-wall.md": "6aa398f54b6365bb66dd2f266e79462cb32ceefa2ed816aefeda8a155260d24d",
+    ".runs/rr007/a3-hook-and-wall.py": "0b600e100434244e90e0b4927dc82bba9a961967144cc1612c2eb27775deb467",
+    ".runs/rr007/a-author-final-pin.json": "bf4f80f0525087c807f2f3296c49ce5126b4821f60342223c9f57f7aabcce370"
+  },
+  "initial_final_pins_unchanged": true,
+  "initial_final_sha256": {
+    "research/rogers-ramanujan/rr007/fleet-a/author.md": "8e15765f708867654fbb652f66a01dcfa9f4fffb671f1880e9b10eb12d2a17db",
+    "research/rogers-ramanujan/rr007/fleet-a/journal.md": "6dd079447be9d0e9f63d639b6bd1bb8cd2efd94e74ff00ef9f4081e5db47bd21",
+    "research/rogers-ramanujan/rr007/fleet-a/review-packet.md": "277a13e67231098c336f05a976be20276d58fc3fa91a69eabcc092547bcb7b62",
+    "research/rogers-ramanujan/rr007/fleet-a/context.md": "98a36ece4428befeaac1c8565d200a96d8b2d5ca65839e9f53759820e0728215",
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/unfrozen-first-positive-wall.md": "5f5057409e6fb287a54a51428793a3d23942313b330142d9ffd12dd45ed839aa",
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a1-freeze.json": "01068506b110afb652be974a32db4f96d1b40a466c72ca4db29e16a584fbb2c5",
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a2-freeze.json": "67c16123c38d02a1ac4ad25a9bae499048324d3ebae8ff4f4781be41852fd583",
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a3-freeze.json": "769322b0da5386630e5fc7dff8ec92bed79cfde74413cb6b09b9b773a0c4ef77"
+  },
+  "external_text_only_sha256": {
+    "/Users/christopheryamba/.gemini/antigravity/brain/32daf9b4-83c9-4c6b-9f04-e38325f55706/scratch/verify_a3_b0_universal.py": "ad45aa3e978f992cad975a79da3de5969403b640b9b18bd79f0af1154a1b04f1",
+    "/Users/christopheryamba/.gemini/antigravity/brain/32daf9b4-83c9-4c6b-9f04-e38325f55706/scratch/verify_full_kr1_bijection.py": "4b960630c47516ace7efac60df515110e248083bdf2b9da8dfba2d1609bd9ae9",
+    "/Users/christopheryamba/.gemini/antigravity/brain/32daf9b4-83c9-4c6b-9f04-e38325f55706/scratch/inspect_complement.py": "d317eb24e7d12914de9259059ff6b0a402f103cec9dccd40383e56bb2872c9b2"
+  },
+  "external_warning": "Read only; not imported/run; external3G universal assertion refuted symbolically and repaired in R7",
+  "early_context_pin_warning": "Earlier context-hook text pin mismatch preserved; this verifies the later initial final snapshot only",
+  "no_new_finite_trial": true,
+  "no_fourth_finite_candidate": true
+}

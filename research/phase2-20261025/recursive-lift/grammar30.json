@@ -1,0 +1,248 @@
+{
+  "status": "empirical transcription verification; not a U/C map",
+  "bound": 30,
+  "total_literal_C": 1393,
+  "total_independent_valid_grammar": 1393,
+  "both_identities": true,
+  "weight_identity": true,
+  "independent_reverse_language_enumeration": true,
+  "maximum_depth": 4,
+  "malformed_nodes_rejected": 5,
+  "edge_case_counts": {
+    "nonterminal": 1392,
+    "zero_residual": 36,
+    "positive_trits": 360,
+    "zero_in_mu": 458,
+    "repeated_mu": 441,
+    "repeated_nu": 28
+  },
+  "sector_counts": [
+    {
+      "a": 0,
+      "b": 0,
+      "count": 1
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "count": 10
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "count": 16
+    },
+    {
+      "a": 0,
+      "b": 3,
+      "count": 2
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "count": 30
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "count": 108
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "count": 39
+    },
+    {
+      "a": 2,
+      "b": 0,
+      "count": 196
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "count": 237
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "count": 4
+    },
+    {
+      "a": 3,
+      "b": 0,
+      "count": 406
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "count": 84
+    },
+    {
+      "a": 4,
+      "b": 0,
+      "count": 241
+    },
+    {
+      "a": 5,
+      "b": 0,
+      "count": 19
+    }
+  ],
+  "by_weight": [
+    {
+      "weight": 0,
+      "literal_C": 1,
+      "independent_valid_grammar": 1
+    },
+    {
+      "weight": 1,
+      "literal_C": 1,
+      "independent_valid_grammar": 1
+    },
+    {
+      "weight": 2,
+      "literal_C": 1,
+      "independent_valid_grammar": 1
+    },
+    {
+      "weight": 3,
+      "literal_C": 2,
+      "independent_valid_grammar": 2
+    },
+    {
+      "weight": 4,
+      "literal_C": 2,
+      "independent_valid_grammar": 2
+    },
+    {
+      "weight": 5,
+      "literal_C": 2,
+      "independent_valid_grammar": 2
+    },
+    {
+      "weight": 6,
+      "literal_C": 4,
+      "independent_valid_grammar": 4
+    },
+    {
+      "weight": 7,
+      "literal_C": 4,
+      "independent_valid_grammar": 4
+    },
+    {
+      "weight": 8,
+      "literal_C": 5,
+      "independent_valid_grammar": 5
+    },
+    {
+      "weight": 9,
+      "literal_C": 7,
+      "independent_valid_grammar": 7
+    },
+    {
+      "weight": 10,
+      "literal_C": 8,
+      "independent_valid_grammar": 8
+    },
+    {
+      "weight": 11,
+      "literal_C": 9,
+      "independent_valid_grammar": 9
+    },
+    {
+      "weight": 12,
+      "literal_C": 13,
+      "independent_valid_grammar": 13
+    },
+    {
+      "weight": 13,
+      "literal_C": 14,
+      "independent_valid_grammar": 14
+    },
+    {
+      "weight": 14,
+      "literal_C": 16,
+      "independent_valid_grammar": 16
+    },
+    {
+      "weight": 15,
+      "literal_C": 21,
+      "independent_valid_grammar": 21
+    },
+    {
+      "weight": 16,
+      "literal_C": 24,
+      "independent_valid_grammar": 24
+    },
+    {
+      "weight": 17,
+      "literal_C": 27,
+      "independent_valid_grammar": 27
+    },
+    {
+      "weight": 18,
+      "literal_C": 35,
+      "independent_valid_grammar": 35
+    },
+    {
+      "weight": 19,
+      "literal_C": 39,
+      "independent_valid_grammar": 39
+    },
+    {
+      "weight": 20,
+      "literal_C": 45,
+      "independent_valid_grammar": 45
+    },
+    {
+      "weight": 21,
+      "literal_C": 55,
+      "independent_valid_grammar": 55
+    },
+    {
+      "weight": 22,
+      "literal_C": 62,
+      "independent_valid_grammar": 62
+    },
+    {
+      "weight": 23,
+      "literal_C": 70,
+      "independent_valid_grammar": 70
+    },
+    {
+      "weight": 24,
+      "literal_C": 86,
+      "independent_valid_grammar": 86
+    },
+    {
+      "weight": 25,
+      "literal_C": 96,
+      "independent_valid_grammar": 96
+    },
+    {
+      "weight": 26,
+      "literal_C": 109,
+      "independent_valid_grammar": 109
+    },
+    {
+      "weight": 27,
+      "literal_C": 130,
+      "independent_valid_grammar": 130
+    },
+    {
+      "weight": 28,
+      "literal_C": 146,
+      "independent_valid_grammar": 146
+    },
+    {
+      "weight": 29,
+      "literal_C": 164,
+      "independent_valid_grammar": 164
+    },
+    {
+      "weight": 30,
+      "literal_C": 195,
+      "independent_valid_grammar": 195
+    }
+  ]
+}

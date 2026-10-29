@@ -1,0 +1,18 @@
+{
+  "frozen_utc": "2026-10-24T22:44:38.201422+00:00",
+  "stage": "reserved-final-KR-review-complete",
+  "verdict": "supported scoped H3 and corrected cut obstructions; full KR1 incomplete",
+  "files": {
+    "research/phase2-20261025/reviews/kr-final-check.py": "e78309e6c62a780a19c99a89530fe3329ddfe20872983cdbfa01425ac1d862fd",
+    "research/phase2-20261025/reviews/kr-final-dependencies.json": "0f6a1b2ea120e52affa9b7711492d7caa070e10467c919f6c0203f3a1a5ec5c4",
+    "research/phase2-20261025/reviews/kr-final-naive-audit.json": "9beb96bf58a53bda875d0f5d3bfd05d1d8883fab596e6fd0573e1d9cce6ebf1f",
+    "research/phase2-20261025/reviews/kr-final-naive-audit.py": "3f8709503b9189438d9cad9e6cb98bd8287ae0a3ea6131f7d225894800abca0d",
+    "research/phase2-20261025/reviews/kr-final-resource-use.json": "8e47805900fdc192f8602d63aa8a86f03c5042b2a9966db7f592319b67f8a816",
+    "research/phase2-20261025/reviews/kr-final-result-12.json": "a0c9f593ff782aedcb01e36659e44ce70ea2ed390bd7f6a7f66bdf5b602f98d3",
+    "research/phase2-20261025/reviews/kr-final-result-30.json": "1417533afe02d054f95f4c42ba445cc8be54e94c847f227450a2402a57cdfbf3",
+    "research/phase2-20261025/reviews/kr-final-result-40.json": "0179708935ec10ebd9fa775497da0e05d52e247b3e26db0c09e40d68cd3c3fa4",
+    "research/phase2-20261025/reviews/kr-final-review.md": "0545db534505eac41eaa3704fb99dff1eda70f3e159ba4c5056a683fbb344f00"
+  },
+  "all_reviewed_author_and_initial_review_dependencies_unchanged": true,
+  "additional_author_round": false
+}

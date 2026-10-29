@@ -1,0 +1,9 @@
+{
+  "kind": "readback_of_initial_input_pins_from_execution",
+  "files": {
+    "research/phase2-20261025/contract.md": "ad1f10ed31f980e0bc80886c9ac670b53103e626c110dbd773622f247969837a",
+    "research/phase2-20261025/pre-run.md": "4bfddd95cb316d3e476accdf8ac37458981d9f492d873df9d75834fd227ecf56",
+    "research/phase2-20261025/checks/meter.py": "92ad924e6fe68b2ab1e62b848917ee8c6963d2c55a334ca5f0dda3bb446a3868",
+    "research/phase2-20261025/baseline-pins.json": "00f05598a908194c3947380d78b1fb1890331a845c866ba83112d031bf049edd"
+  }
+}

@@ -1,0 +1,3289 @@
+{
+  "status": "finite_exact_passed",
+  "n": 6,
+  "totals": {
+    "negative_sources": 3980,
+    "mapped": 3964,
+    "mapped_(5, 1)": 19,
+    "mapped_(4, 2)": 96,
+    "mapped_(3, 1, 1, 1)": 1273,
+    "mapped_(2, 2, 1, 1)": 2576,
+    "recognized_images": 3964,
+    "unhandled": 16,
+    "unhandled_(2, 2, 1, 1)": 16
+  },
+  "hessenberg_vectors": 132,
+  "failures": [],
+  "local_fiber_histogram": {
+    "0": 3417,
+    "1": 1676,
+    "2": 709,
+    "3": 27
+  },
+  "remaining": [
+    {
+      "h": [
+        1,
+        2,
+        4,
+        5,
+        5,
+        6
+      ],
+      "source": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "degree": 1,
+      "demoted": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            3
+          ],
+          [
+            5
+          ],
+          [
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5
+          ],
+          [
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "source": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "degree": 1,
+      "demoted": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            5
+          ],
+          [
+            4
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "source": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "degree": 1,
+      "demoted": [
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "source": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "degree": 2,
+      "demoted": [
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          6
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        5,
+        6,
+        6,
+        6
+      ],
+      "source": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "degree": 2,
+      "demoted": [
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          6
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        1,
+        2,
+        5,
+        6,
+        6,
+        6
+      ],
+      "source": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ]
+      ],
+      "degree": 3,
+      "demoted": [
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          6
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            2
+          ],
+          [
+            5
+          ],
+          [
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            5
+          ],
+          [
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        5,
+        6,
+        6
+      ],
+      "source": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "degree": 1,
+      "demoted": [
+        [
+          1,
+          5
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        5,
+        6,
+        6
+      ],
+      "source": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "degree": 2,
+      "demoted": [
+        [
+          1,
+          5
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        1,
+        3,
+        4,
+        5,
+        5,
+        6
+      ],
+      "source": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ]
+      ],
+      "degree": 1,
+      "demoted": [
+        [
+          1,
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3
+          ],
+          [
+            5
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        5,
+        5,
+        6
+      ],
+      "source": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "degree": 1,
+      "demoted": [
+        [
+          1,
+          5
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        5,
+        5,
+        6
+      ],
+      "source": [
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "degree": 2,
+      "demoted": [
+        [
+          2,
+          5
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "source": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "degree": 2,
+      "demoted": [
+        [
+          1,
+          5
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4
+          ],
+          [
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "source": [
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "degree": 3,
+      "demoted": [
+        [
+          2,
+          5
+        ],
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            4
+          ],
+          [
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        3,
+        5,
+        6,
+        6
+      ],
+      "source": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "degree": 2,
+      "demoted": [
+        [
+          1,
+          5
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            2
+          ],
+          [
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        6
+      ],
+      "source": [
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3
+        ],
+        [
+          6
+        ]
+      ],
+      "degree": 2,
+      "demoted": [
+        [
+          2,
+          4
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            3
+          ],
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        6
+      ],
+      "source": [
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "degree": 3,
+      "demoted": [
+        [
+          2,
+          5
+        ],
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          6
+        ]
+      ],
+      "reserved_target": false,
+      "local_preimages": [
+        [
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3
+          ],
+          [
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            4
+          ],
+          [
+            3
+          ]
+        ]
+      ]
+    }
+  ],
+  "all_results": [
+    {
+      "h": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 33,
+      "mapped": 33,
+      "mapped_(5, 1)": 5,
+      "mapped_(4, 2)": 9,
+      "mapped_(3, 1, 1, 1)": 10,
+      "mapped_(2, 2, 1, 1)": 9,
+      "recognized_images": 33
+    },
+    {
+      "h": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(5, 1)": 2,
+      "mapped_(4, 2)": 6,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        1,
+        2,
+        3,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(5, 1)": 2,
+      "mapped_(4, 2)": 6,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 34,
+      "mapped_(5, 1)": 1,
+      "mapped_(4, 2)": 3,
+      "mapped_(3, 1, 1, 1)": 15,
+      "mapped_(2, 2, 1, 1)": 15,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        1,
+        2,
+        3,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 18,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(5, 1)": 2,
+      "mapped_(4, 2)": 6,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(4, 2)": 4,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 33,
+      "mapped_(5, 1)": 1,
+      "mapped_(4, 2)": 3,
+      "mapped_(3, 1, 1, 1)": 15,
+      "unhandled": 1,
+      "unhandled_(2, 2, 1, 1)": 1,
+      "mapped_(2, 2, 1, 1)": 14,
+      "recognized_images": 33
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 35,
+      "mapped_(4, 2)": 2,
+      "mapped_(3, 1, 1, 1)": 16,
+      "unhandled": 1,
+      "unhandled_(2, 2, 1, 1)": 1,
+      "mapped_(2, 2, 1, 1)": 17,
+      "recognized_images": 35
+    },
+    {
+      "h": [
+        1,
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 38,
+      "mapped_(3, 1, 1, 1)": 20,
+      "mapped_(2, 2, 1, 1)": 18,
+      "unhandled": 2,
+      "unhandled_(2, 2, 1, 1)": 2,
+      "recognized_images": 38
+    },
+    {
+      "h": [
+        1,
+        2,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 18,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        2,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 40,
+      "mapped_(3, 1, 1, 1)": 20,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 40
+    },
+    {
+      "h": [
+        1,
+        2,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 44,
+      "mapped": 42,
+      "mapped_(3, 1, 1, 1)": 22,
+      "mapped_(2, 2, 1, 1)": 20,
+      "unhandled": 2,
+      "unhandled_(2, 2, 1, 1)": 2,
+      "recognized_images": 42
+    },
+    {
+      "h": [
+        1,
+        2,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 48,
+      "mapped": 48,
+      "mapped_(3, 1, 1, 1)": 24,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 48
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(5, 1)": 2,
+      "mapped_(4, 2)": 6,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(4, 2)": 4,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(4, 2)": 4,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 32,
+      "mapped_(4, 2)": 2,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 18,
+      "unhandled": 2,
+      "unhandled_(2, 2, 1, 1)": 2,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        1,
+        3,
+        3,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 34,
+      "mapped_(5, 1)": 1,
+      "mapped_(4, 2)": 3,
+      "mapped_(3, 1, 1, 1)": 15,
+      "mapped_(2, 2, 1, 1)": 15,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        1,
+        3,
+        4,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 34,
+      "mapped_(4, 2)": 2,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        1,
+        3,
+        4,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 35,
+      "mapped_(4, 2)": 2,
+      "mapped_(3, 1, 1, 1)": 16,
+      "mapped_(2, 2, 1, 1)": 17,
+      "unhandled": 1,
+      "unhandled_(2, 2, 1, 1)": 1,
+      "recognized_images": 35
+    },
+    {
+      "h": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 35,
+      "mapped": 35,
+      "mapped_(4, 2)": 1,
+      "mapped_(3, 1, 1, 1)": 13,
+      "mapped_(2, 2, 1, 1)": 21,
+      "recognized_images": 35
+    },
+    {
+      "h": [
+        1,
+        3,
+        4,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 14,
+      "mapped_(2, 2, 1, 1)": 22,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        3,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 40,
+      "mapped_(3, 1, 1, 1)": 20,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 40
+    },
+    {
+      "h": [
+        1,
+        3,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 38,
+      "mapped": 38,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 38
+    },
+    {
+      "h": [
+        1,
+        3,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 16,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        3,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 18,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        4,
+        4,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 18,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        4,
+        4,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        4,
+        4,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 40,
+      "mapped_(3, 1, 1, 1)": 20,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 40
+    },
+    {
+      "h": [
+        1,
+        4,
+        4,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 14,
+      "mapped_(2, 2, 1, 1)": 22,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        4,
+        4,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 16,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        4,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 44,
+      "mapped": 44,
+      "mapped_(3, 1, 1, 1)": 22,
+      "mapped_(2, 2, 1, 1)": 22,
+      "recognized_images": 44
+    },
+    {
+      "h": [
+        1,
+        4,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 16,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        4,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 30,
+      "mapped": 30,
+      "mapped_(3, 1, 1, 1)": 14,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 30
+    },
+    {
+      "h": [
+        1,
+        4,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 24,
+      "mapped": 24,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 24
+    },
+    {
+      "h": [
+        1,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 48,
+      "mapped": 48,
+      "mapped_(3, 1, 1, 1)": 24,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 48
+    },
+    {
+      "h": [
+        1,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 18,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        1,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 24,
+      "mapped": 24,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 24
+    },
+    {
+      "h": [
+        1,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 12,
+      "mapped": 12,
+      "mapped_(3, 1, 1, 1)": 6,
+      "mapped_(2, 2, 1, 1)": 6,
+      "recognized_images": 12
+    },
+    {
+      "h": [
+        1,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "h": [
+        2,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(5, 1)": 2,
+      "mapped_(4, 2)": 6,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        2,
+        2,
+        3,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(4, 2)": 4,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        2,
+        2,
+        3,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(4, 2)": 4,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        2,
+        2,
+        3,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 34,
+      "mapped_(4, 2)": 2,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        2,
+        2,
+        3,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(4, 2)": 4,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 32,
+      "mapped_(4, 2)": 2,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 18,
+      "unhandled": 2,
+      "unhandled_(2, 2, 1, 1)": 2,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 34,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 26,
+      "unhandled": 2,
+      "unhandled_(2, 2, 1, 1)": 2,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        2,
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 40,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 32,
+      "recognized_images": 40
+    },
+    {
+      "h": [
+        2,
+        2,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        2,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 40,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 32,
+      "recognized_images": 40
+    },
+    {
+      "h": [
+        2,
+        2,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 44,
+      "mapped": 44,
+      "mapped_(3, 1, 1, 1)": 4,
+      "mapped_(2, 2, 1, 1)": 40,
+      "recognized_images": 44
+    },
+    {
+      "h": [
+        2,
+        2,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 48,
+      "mapped": 48,
+      "mapped_(2, 2, 1, 1)": 48,
+      "recognized_images": 48
+    },
+    {
+      "h": [
+        2,
+        3,
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 34,
+      "mapped_(5, 1)": 1,
+      "mapped_(4, 2)": 3,
+      "mapped_(3, 1, 1, 1)": 15,
+      "mapped_(2, 2, 1, 1)": 15,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        2,
+        3,
+        3,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 34,
+      "mapped_(4, 2)": 2,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        2,
+        3,
+        3,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 34,
+      "mapped": 34,
+      "mapped_(4, 2)": 2,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        2,
+        3,
+        3,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 35,
+      "mapped": 34,
+      "mapped_(4, 2)": 1,
+      "mapped_(3, 1, 1, 1)": 9,
+      "mapped_(2, 2, 1, 1)": 24,
+      "unhandled": 1,
+      "unhandled_(2, 2, 1, 1)": 1,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        2,
+        3,
+        3,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 6,
+      "mapped_(2, 2, 1, 1)": 30,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(4, 2)": 2,
+      "mapped_(3, 1, 1, 1)": 16,
+      "mapped_(2, 2, 1, 1)": 18,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 28,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 35,
+      "mapped": 35,
+      "mapped_(4, 2)": 1,
+      "mapped_(3, 1, 1, 1)": 13,
+      "mapped_(2, 2, 1, 1)": 21,
+      "recognized_images": 35
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 34,
+      "mapped_(3, 1, 1, 1)": 6,
+      "mapped_(2, 2, 1, 1)": 28,
+      "unhandled": 2,
+      "unhandled_(2, 2, 1, 1)": 2,
+      "recognized_images": 34
+    },
+    {
+      "h": [
+        2,
+        3,
+        4,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 4,
+      "mapped_(2, 2, 1, 1)": 32,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        3,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 14,
+      "mapped_(2, 2, 1, 1)": 22,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        3,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 28,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        3,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 2,
+      "mapped_(2, 2, 1, 1)": 34,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        3,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(2, 2, 1, 1)": 36,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        4,
+        4,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 40,
+      "mapped_(3, 1, 1, 1)": 20,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 40
+    },
+    {
+      "h": [
+        2,
+        4,
+        4,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 40,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 32,
+      "recognized_images": 40
+    },
+    {
+      "h": [
+        2,
+        4,
+        4,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 38,
+      "mapped": 38,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 38
+    },
+    {
+      "h": [
+        2,
+        4,
+        4,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 28,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        4,
+        4,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        2,
+        4,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 16,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        4,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        2,
+        4,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 28,
+      "mapped": 28,
+      "mapped_(3, 1, 1, 1)": 4,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 28
+    },
+    {
+      "h": [
+        2,
+        4,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 24,
+      "mapped": 24,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 24
+    },
+    {
+      "h": [
+        2,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 18,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        2,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 28,
+      "mapped": 28,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 28
+    },
+    {
+      "h": [
+        2,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 20,
+      "mapped": 20,
+      "mapped_(3, 1, 1, 1)": 6,
+      "mapped_(2, 2, 1, 1)": 14,
+      "recognized_images": 20
+    },
+    {
+      "h": [
+        2,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 12,
+      "mapped": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 12
+    },
+    {
+      "h": [
+        2,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "h": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 18,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        3,
+        3,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        3,
+        3,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        3,
+        3,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 6,
+      "mapped_(2, 2, 1, 1)": 30,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        3,
+        3,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(2, 2, 1, 1)": 36,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 40,
+      "mapped_(3, 1, 1, 1)": 20,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 40
+    },
+    {
+      "h": [
+        3,
+        3,
+        4,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 40,
+      "mapped": 40,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 32,
+      "recognized_images": 40
+    },
+    {
+      "h": [
+        3,
+        3,
+        4,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 14,
+      "mapped_(2, 2, 1, 1)": 22,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        3,
+        4,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 4,
+      "mapped_(2, 2, 1, 1)": 32,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        3,
+        4,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(2, 2, 1, 1)": 32,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        3,
+        3,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 16,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        3,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 32,
+      "mapped": 32,
+      "mapped_(3, 1, 1, 1)": 8,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 32
+    },
+    {
+      "h": [
+        3,
+        3,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 28,
+      "mapped": 28,
+      "mapped_(2, 2, 1, 1)": 28,
+      "recognized_images": 28
+    },
+    {
+      "h": [
+        3,
+        3,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 24,
+      "mapped": 24,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 24
+    },
+    {
+      "h": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 44,
+      "mapped": 44,
+      "mapped_(3, 1, 1, 1)": 22,
+      "mapped_(2, 2, 1, 1)": 22,
+      "recognized_images": 44
+    },
+    {
+      "h": [
+        3,
+        4,
+        4,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 44,
+      "mapped": 44,
+      "mapped_(3, 1, 1, 1)": 4,
+      "mapped_(2, 2, 1, 1)": 40,
+      "recognized_images": 44
+    },
+    {
+      "h": [
+        3,
+        4,
+        4,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 16,
+      "mapped_(2, 2, 1, 1)": 20,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        4,
+        4,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 2,
+      "mapped_(2, 2, 1, 1)": 34,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        3,
+        4,
+        4,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 28,
+      "mapped": 28,
+      "mapped_(2, 2, 1, 1)": 28,
+      "recognized_images": 28
+    },
+    {
+      "h": [
+        3,
+        4,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 30,
+      "mapped": 30,
+      "mapped_(3, 1, 1, 1)": 14,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 30
+    },
+    {
+      "h": [
+        3,
+        4,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 28,
+      "mapped": 28,
+      "mapped_(3, 1, 1, 1)": 4,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 28
+    },
+    {
+      "h": [
+        3,
+        4,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 22,
+      "mapped": 22,
+      "mapped_(2, 2, 1, 1)": 22,
+      "recognized_images": 22
+    },
+    {
+      "h": [
+        3,
+        4,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 16,
+      "mapped": 16,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 16
+    },
+    {
+      "h": [
+        3,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 24,
+      "mapped": 24,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 24
+    },
+    {
+      "h": [
+        3,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 20,
+      "mapped": 20,
+      "mapped_(3, 1, 1, 1)": 6,
+      "mapped_(2, 2, 1, 1)": 14,
+      "recognized_images": 20
+    },
+    {
+      "h": [
+        3,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 16,
+      "mapped": 16,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 16
+    },
+    {
+      "h": [
+        3,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 8,
+      "mapped": 8,
+      "mapped_(2, 2, 1, 1)": 8,
+      "recognized_images": 8
+    },
+    {
+      "h": [
+        3,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "h": [
+        4,
+        4,
+        4,
+        4,
+        5,
+        6
+      ],
+      "negative_sources": 48,
+      "mapped": 48,
+      "mapped_(3, 1, 1, 1)": 24,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 48
+    },
+    {
+      "h": [
+        4,
+        4,
+        4,
+        4,
+        6,
+        6
+      ],
+      "negative_sources": 48,
+      "mapped": 48,
+      "mapped_(2, 2, 1, 1)": 48,
+      "recognized_images": 48
+    },
+    {
+      "h": [
+        4,
+        4,
+        4,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(3, 1, 1, 1)": 18,
+      "mapped_(2, 2, 1, 1)": 18,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        4,
+        4,
+        4,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 36,
+      "mapped": 36,
+      "mapped_(2, 2, 1, 1)": 36,
+      "recognized_images": 36
+    },
+    {
+      "h": [
+        4,
+        4,
+        4,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 24,
+      "mapped": 24,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 24
+    },
+    {
+      "h": [
+        4,
+        4,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 24,
+      "mapped": 24,
+      "mapped_(3, 1, 1, 1)": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 24
+    },
+    {
+      "h": [
+        4,
+        4,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 24,
+      "mapped": 24,
+      "mapped_(2, 2, 1, 1)": 24,
+      "recognized_images": 24
+    },
+    {
+      "h": [
+        4,
+        4,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 16,
+      "mapped": 16,
+      "mapped_(2, 2, 1, 1)": 16,
+      "recognized_images": 16
+    },
+    {
+      "h": [
+        4,
+        4,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 8,
+      "mapped": 8,
+      "mapped_(2, 2, 1, 1)": 8,
+      "recognized_images": 8
+    },
+    {
+      "h": [
+        4,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "negative_sources": 12,
+      "mapped": 12,
+      "mapped_(3, 1, 1, 1)": 6,
+      "mapped_(2, 2, 1, 1)": 6,
+      "recognized_images": 12
+    },
+    {
+      "h": [
+        4,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "negative_sources": 12,
+      "mapped": 12,
+      "mapped_(2, 2, 1, 1)": 12,
+      "recognized_images": 12
+    },
+    {
+      "h": [
+        4,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 8,
+      "mapped": 8,
+      "mapped_(2, 2, 1, 1)": 8,
+      "recognized_images": 8
+    },
+    {
+      "h": [
+        4,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "negative_sources": 4,
+      "mapped": 4,
+      "mapped_(2, 2, 1, 1)": 4,
+      "recognized_images": 4
+    },
+    {
+      "h": [
+        4,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "h": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        6
+      ]
+    },
+    {
+      "h": [
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "h": [
+        5,
+        5,
+        5,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "h": [
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "h": [
+        5,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "h": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    }
+  ]
+}

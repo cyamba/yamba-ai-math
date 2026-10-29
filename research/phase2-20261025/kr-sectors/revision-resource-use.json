@@ -1,0 +1,197 @@
+{
+  "status": "closed_reserved_refinement_ledger",
+  "started_utc": "2026-10-24T22:33:30.149803+00:00",
+  "last_subprocess_started_utc": "2026-10-24T22:37:41.655529+00:00",
+  "dispatch": "same sector author reserved single refinement; distinct final critic separate",
+  "additional_subprocess_cap_seconds": 100,
+  "subprocess_count": 9,
+  "wall_seconds": 6.0779827080259565,
+  "cpu_seconds": 5.588533,
+  "peak_rss_bytes": 31555584,
+  "external_calls": 0,
+  "dependencies_added": 0,
+  "max_executed_KR_input_or_output_weight": 40,
+  "high_gap_instances_executed": 0,
+  "rows": [
+    {
+      "index": 46,
+      "label": "sectors-revision-12",
+      "started_utc": "2026-10-24T22:33:30.149803+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/kr-sectors/revision-check.py",
+        "12"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 100.0,
+      "wall_seconds": 0.18619504201342352,
+      "cpu_seconds": 0.062137,
+      "peak_rss_bytes": 22151168,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/046-sectors-revision-12.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/046-sectors-revision-12.stderr",
+      "cumulative_wall_seconds": 39.09540912898956
+    },
+    {
+      "index": 47,
+      "label": "sectors-revision-30",
+      "started_utc": "2026-10-24T22:33:33.889554+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/kr-sectors/revision-check.py",
+        "30"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 100.0,
+      "wall_seconds": 0.3980187920096796,
+      "cpu_seconds": 0.367882,
+      "peak_rss_bytes": 26181632,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/047-sectors-revision-30.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/047-sectors-revision-30.stderr",
+      "cumulative_wall_seconds": 39.49342792099924
+    },
+    {
+      "index": 48,
+      "label": "sectors-revision-40",
+      "started_utc": "2026-10-24T22:33:39.166985+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/kr-sectors/revision-check.py",
+        "40"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 100.0,
+      "wall_seconds": 1.4053357090160716,
+      "cpu_seconds": 1.350765,
+      "peak_rss_bytes": 31555584,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/048-sectors-revision-40.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/048-sectors-revision-40.stderr",
+      "cumulative_wall_seconds": 40.89876363001531
+    },
+    {
+      "index": 51,
+      "label": "sectors-revision-v2-12",
+      "started_utc": "2026-10-24T22:35:16.063265+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/kr-sectors/revision-v2-check.py",
+        "12"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 90.0,
+      "wall_seconds": 0.07968204098870046,
+      "cpu_seconds": 0.060129999999999996,
+      "peak_rss_bytes": 22642688,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/051-sectors-revision-v2-12.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/051-sectors-revision-v2-12.stderr",
+      "cumulative_wall_seconds": 45.52770567103289
+    },
+    {
+      "index": 52,
+      "label": "sectors-revision-v2-30",
+      "started_utc": "2026-10-24T22:35:19.179759+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/kr-sectors/revision-v2-check.py",
+        "30"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 90.0,
+      "wall_seconds": 0.41429866600083187,
+      "cpu_seconds": 0.372481,
+      "peak_rss_bytes": 26279936,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/052-sectors-revision-v2-30.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/052-sectors-revision-v2-30.stderr",
+      "cumulative_wall_seconds": 45.94200433703372
+    },
+    {
+      "index": 53,
+      "label": "sectors-revision-v2-40",
+      "started_utc": "2026-10-24T22:35:23.179412+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/kr-sectors/revision-v2-check.py",
+        "40"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 90.0,
+      "wall_seconds": 1.424415957997553,
+      "cpu_seconds": 1.372479,
+      "peak_rss_bytes": 31260672,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/053-sectors-revision-v2-40.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/053-sectors-revision-v2-40.stderr",
+      "cumulative_wall_seconds": 47.366420295031276
+    },
+    {
+      "index": 59,
+      "label": "sectors-revision-v3-12",
+      "started_utc": "2026-10-24T22:37:33.761862+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/kr-sectors/revision-v3-check.py",
+        "12"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 80.0,
+      "wall_seconds": 0.0851317500055302,
+      "cpu_seconds": 0.061837,
+      "peak_rss_bytes": 22609920,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/059-sectors-revision-v3-12.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/059-sectors-revision-v3-12.stderr",
+      "cumulative_wall_seconds": 60.09815542103024
+    },
+    {
+      "index": 60,
+      "label": "sectors-revision-v3-30",
+      "started_utc": "2026-10-24T22:37:37.755758+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/kr-sectors/revision-v3-check.py",
+        "30"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 80.0,
+      "wall_seconds": 0.4587842499895487,
+      "cpu_seconds": 0.41045,
+      "peak_rss_bytes": 26443776,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/060-sectors-revision-v3-30.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/060-sectors-revision-v3-30.stderr",
+      "cumulative_wall_seconds": 60.55693967101979
+    },
+    {
+      "index": 61,
+      "label": "sectors-revision-v3-40",
+      "started_utc": "2026-10-24T22:37:41.655529+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/kr-sectors/revision-v3-check.py",
+        "40"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 80.0,
+      "wall_seconds": 1.6261205000046175,
+      "cpu_seconds": 1.530372,
+      "peak_rss_bytes": 31391744,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/061-sectors-revision-v3-40.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/061-sectors-revision-v3-40.stderr",
+      "cumulative_wall_seconds": 62.18306017102441
+    }
+  ]
+}

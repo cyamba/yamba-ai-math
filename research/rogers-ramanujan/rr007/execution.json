@@ -1,0 +1,308 @@
+{
+  "attempt": "RR007",
+  "checks": [
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.07301995900343172,
+      "exit_code": 0,
+      "label": "a-author-a1-pilot12",
+      "output_path": ".runs/rr007/a-author-a1-pilot12.receipt.json",
+      "peak_child_rss_bytes": 23822336,
+      "status": "passed"
+    },
+    {
+      "bound": 30,
+      "elapsed_seconds": 0.1328324159840122,
+      "exit_code": 0,
+      "label": "a-author-a1-through30",
+      "output_path": ".runs/rr007/a-author-a1-through30.receipt.json",
+      "peak_child_rss_bytes": 24215552,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.06828095801756717,
+      "exit_code": 0,
+      "label": "a-author-a2-pilot12",
+      "output_path": ".runs/rr007/a-author-a2-pilot12.receipt.json",
+      "peak_child_rss_bytes": 23281664,
+      "status": "passed"
+    },
+    {
+      "bound": 30,
+      "elapsed_seconds": 0.11151970899663866,
+      "exit_code": 0,
+      "label": "a-author-a2-through30",
+      "output_path": ".runs/rr007/a-author-a2-through30.receipt.json",
+      "peak_child_rss_bytes": 25165824,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.038080375001300126,
+      "exit_code": 0,
+      "label": "b1-frozen-pilot12",
+      "output_path": ".runs/rr007/b1-frozen-pilot12.receipt.json",
+      "peak_child_rss_bytes": 16285696,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.03829425000003539,
+      "exit_code": 0,
+      "label": "b2-frozen-pilot12",
+      "output_path": ".runs/rr007/b2-frozen-pilot12.receipt.json",
+      "peak_child_rss_bytes": 16252928,
+      "status": "passed"
+    },
+    {
+      "bound": 30,
+      "elapsed_seconds": 0.04367037501651794,
+      "exit_code": 0,
+      "label": "b2-frozen-through30",
+      "output_path": ".runs/rr007/b2-frozen-through30.receipt.json",
+      "peak_child_rss_bytes": 16957440,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.06977775000268593,
+      "exit_code": 0,
+      "label": "a-context-hook-pilot12",
+      "output_path": ".runs/rr007/a-context-hook-pilot12.receipt.json",
+      "peak_child_rss_bytes": 15958016,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.03394583400222473,
+      "exit_code": 0,
+      "label": "b2-zero-energy-pilot12",
+      "output_path": ".runs/rr007/b2-zero-energy-pilot12.receipt.json",
+      "peak_child_rss_bytes": 15499264,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.06973291601752862,
+      "exit_code": 0,
+      "label": "a-author-a3-pilot12",
+      "output_path": ".runs/rr007/a-author-a3-pilot12.receipt.json",
+      "peak_child_rss_bytes": 24543232,
+      "status": "passed"
+    },
+    {
+      "bound": 30,
+      "elapsed_seconds": 0.3845822080038488,
+      "exit_code": 0,
+      "label": "a-author-a3-through30",
+      "output_path": ".runs/rr007/a-author-a3-through30.receipt.json",
+      "peak_child_rss_bytes": 27066368,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.038499291986227036,
+      "exit_code": 0,
+      "label": "b3-frozen-pilot12",
+      "output_path": ".runs/rr007/b3-frozen-pilot12.receipt.json",
+      "peak_child_rss_bytes": 16433152,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.05499304199474864,
+      "exit_code": 0,
+      "label": "a-critic-literal-pilot12",
+      "output_path": ".runs/rr007/a-critic-literal-pilot12.receipt.json",
+      "peak_child_rss_bytes": 21512192,
+      "status": "passed"
+    },
+    {
+      "bound": 30,
+      "elapsed_seconds": 0.32489966601133347,
+      "exit_code": 0,
+      "label": "a-critic-literal-through30",
+      "output_path": ".runs/rr007/a-critic-literal-through30.receipt.json",
+      "peak_child_rss_bytes": 27508736,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.04018770801485516,
+      "exit_code": 0,
+      "label": "critic-b-independent-pilot12",
+      "output_path": ".runs/rr007/critic-b-independent-pilot12.receipt.json",
+      "peak_child_rss_bytes": 17039360,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.07315937499515712,
+      "exit_code": 0,
+      "label": "a-critic-endpoint-pilot12",
+      "output_path": ".runs/rr007/a-critic-endpoint-pilot12.receipt.json",
+      "peak_child_rss_bytes": 21381120,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.06109633299638517,
+      "exit_code": 0,
+      "label": "critic-b-stockhofe-pilot12",
+      "output_path": ".runs/rr007/critic-b-stockhofe-pilot12.receipt.json",
+      "peak_child_rss_bytes": 19283968,
+      "status": "passed"
+    },
+    {
+      "bound": 12,
+      "elapsed_seconds": 0.09044425000320189,
+      "exit_code": 0,
+      "label": "critic-b-composition-pilot12",
+      "output_path": ".runs/rr007/critic-b-composition-pilot12.receipt.json",
+      "peak_child_rss_bytes": 24330240,
+      "status": "passed"
+    },
+    {
+      "bound": 30,
+      "elapsed_seconds": 0.32453037501545623,
+      "exit_code": 0,
+      "label": "critic-b-composition-through30",
+      "output_path": ".runs/rr007/critic-b-composition-through30.receipt.json",
+      "peak_child_rss_bytes": 33177600,
+      "status": "passed"
+    },
+    {
+      "bound": 0,
+      "elapsed_seconds": 0.16110929200658575,
+      "exit_code": 0,
+      "label": "root-whitespace-check",
+      "output_path": ".runs/rr007/root-whitespace-check.receipt.json",
+      "peak_child_rss_bytes": 8601600,
+      "status": "passed"
+    },
+    {
+      "bound": 0,
+      "elapsed_seconds": 0.5573394999955781,
+      "exit_code": 0,
+      "label": "root-repository-check",
+      "output_path": ".runs/rr007/root-repository-check.receipt.json",
+      "peak_child_rss_bytes": 18874368,
+      "status": "passed"
+    },
+    {
+      "bound": 0,
+      "elapsed_seconds": 0.0661650410038419,
+      "exit_code": 0,
+      "label": "root-untracked-whitespace",
+      "output_path": ".runs/rr007/root-untracked-whitespace.receipt.json",
+      "peak_child_rss_bytes": 18251776,
+      "status": "passed"
+    },
+    {
+      "bound": 0,
+      "elapsed_seconds": 0.13756604201626033,
+      "exit_code": 0,
+      "label": "root-final-document-check",
+      "output_path": ".runs/rr007/root-final-document-check.receipt.json",
+      "peak_child_rss_bytes": 18579456,
+      "status": "passed"
+    },
+    {
+      "bound": 0,
+      "elapsed_seconds": 0.1420850410067942,
+      "exit_code": 0,
+      "label": "root-final-integrity",
+      "output_path": ".runs/rr007/root-final-integrity.receipt.json",
+      "peak_child_rss_bytes": 31981568,
+      "status": "passed"
+    }
+  ],
+  "dispatches": [
+    {
+      "cost": 3,
+      "fleet": "a",
+      "profile": "mathematician-a",
+      "stage": "a-author",
+      "started_utc": "2026-10-24T20:46:09.163963+00:00"
+    },
+    {
+      "cost": 3,
+      "fleet": "a",
+      "profile": "geometer-a",
+      "stage": "a-context",
+      "started_utc": "2026-10-24T20:46:09.207679+00:00"
+    },
+    {
+      "cost": 2,
+      "fleet": "b",
+      "profile": "scout-b",
+      "stage": "b-source",
+      "started_utc": "2026-10-24T20:46:09.244601+00:00"
+    },
+    {
+      "cost": 3,
+      "fleet": "b",
+      "profile": "mathematician-b",
+      "stage": "b-author",
+      "started_utc": "2026-10-24T20:49:41.126618+00:00"
+    },
+    {
+      "cost": 2,
+      "fleet": "a",
+      "profile": "critic-a",
+      "stage": "a-review",
+      "started_utc": "2026-10-24T21:14:11.274522+00:00"
+    },
+    {
+      "cost": 2,
+      "fleet": "b",
+      "profile": "critic-b",
+      "stage": "b-review",
+      "started_utc": "2026-10-24T21:16:08.894474+00:00"
+    },
+    {
+      "cost": 3,
+      "fleet": "a",
+      "profile": "mathematician-a",
+      "stage": "a-revision",
+      "started_utc": "2026-10-24T21:21:10.685123+00:00"
+    },
+    {
+      "cost": 2,
+      "fleet": "a",
+      "profile": "critic-a",
+      "stage": "a-final-review",
+      "started_utc": "2026-10-24T21:57:01.154405+00:00"
+    }
+  ],
+  "full_KR1": "unresolved",
+  "head": "03d46d9db79cbdc2f77159defa5fc0bafcc8f5fd",
+  "historical_ledgers": "preserved; no unused RR006 resource was reused",
+  "integrity_group_counts": {
+    ".runs/rr007/a-author-final-pin-file.receipt.json": 1,
+    ".runs/rr007/a-author-final-pin.json": 8,
+    ".runs/rr007/a-context-hook-pin.json": 3,
+    ".runs/rr007/a-critic-final-pin-check.receipt.json": 0,
+    ".runs/rr007/a-critic-final-pin-diagnostic.receipt.json": 0,
+    ".runs/rr007/a-critic-final-pin-read.receipt.json": 0,
+    ".runs/rr007/a-revision-final-pin.json": 24,
+    ".runs/rr007/a-revision-final-pin.receipt.json": 1,
+    ".runs/rr007/b-final-artifact-pins.json": 6,
+    ".runs/rr007/critic-b-final-pins.json": 8,
+    "delayed_rr006_raw_pins": 40,
+    "initial_canonical_inputs": 460,
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a1-freeze.json": 5,
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a2-freeze.json": 5,
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a3-freeze.json": 6,
+    "research/rogers-ramanujan/rr007/fleet-a/critic-a-endpoint-freeze.json": 4,
+    "research/rogers-ramanujan/rr007/fleet-a/critic-a-freeze.json": 6,
+    "research/rogers-ramanujan/rr007/fleet-a/review-final-pins.json": 30,
+    "research/rogers-ramanujan/rr007/fleet-a/revision-final-pin.json": 24,
+    "research/rogers-ramanujan/rr007/fleet-b/checks/critic_b_evidence_hashes.json": 8,
+    "research/rogers-ramanujan/rr007/fleet-b/composition-final-pins.json": 9,
+    "research/rogers-ramanujan/rr007/fleet-b/composition-freeze.json": 6
+  },
+  "raw_receipts_directory": ".runs/rr007",
+  "status": "closed"
+}

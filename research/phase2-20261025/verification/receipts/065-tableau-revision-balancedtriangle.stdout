@@ -1,0 +1,121 @@
+{
+  "status": "finite_exact_passed",
+  "n": 6,
+  "totals": {
+    "negative_sources": 3980,
+    "mapped": 3971,
+    "mapped_(5, 1)": 19,
+    "mapped_(4, 2)": 96,
+    "mapped_(3, 1, 1, 1)": 1273,
+    "mapped_(2, 2, 1, 1)": 2583,
+    "recognized_images": 3971,
+    "unhandled": 9,
+    "unhandled_(2, 2, 1, 1)": 9
+  },
+  "hessenberg_vectors": 132,
+  "failures": [],
+  "local_fiber_histogram": {
+    "0": 3417,
+    "1": 1676,
+    "2": 709,
+    "3": 27
+  }
+}
+{
+  "first_remaining": {
+    "h": [
+      1,
+      2,
+      4,
+      5,
+      5,
+      6
+    ],
+    "source": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "degree": 1,
+    "demoted": [
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        5
+      ],
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "reserved_target": false,
+    "local_preimages": [
+      [
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ]
+      ]
+    ]
+  }
+}

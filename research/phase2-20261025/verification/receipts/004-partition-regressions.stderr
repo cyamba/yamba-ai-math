@@ -1,0 +1,20 @@
+test_all_height_two_bubble_inverses_through_five_vertices (test_partition_positivity.ColoringOracleTests.test_all_height_two_bubble_inverses_through_five_vertices) ... ok
+test_bubble_insertion_repairs_the_connected_slide (test_partition_positivity.ColoringOracleTests.test_bubble_insertion_repairs_the_connected_slide) ... ok
+test_color_rows_match_descents_with_empty_rows_and_small_alphabets (test_partition_positivity.ColoringOracleTests.test_color_rows_match_descents_with_empty_rows_and_small_alphabets) ... ok
+test_color_toggle_needs_monotonicity_and_adjacent_colors (test_partition_positivity.ColoringOracleTests.test_color_toggle_needs_monotonicity_and_adjacent_colors) ... ok
+test_connected_slide_obstruction_and_independent_coefficients (test_partition_positivity.ColoringOracleTests.test_connected_slide_obstruction_and_independent_coefficients) ... ok
+test_descending_color_rows_are_the_wrong_statistic_orientation (test_partition_positivity.ColoringOracleTests.test_descending_color_rows_are_the_wrong_statistic_orientation) ... ok
+test_empty_edgeless_and_complete_graphs (test_partition_positivity.ColoringOracleTests.test_empty_edgeless_and_complete_graphs) ... ok
+test_four_vertex_path_expansion (test_partition_positivity.ColoringOracleTests.test_four_vertex_path_expansion) ... ok
+test_independent_tableau_comparison_through_five_vertices (test_partition_positivity.ColoringOracleTests.test_independent_tableau_comparison_through_five_vertices) ... ok
+test_invalid_inputs (test_partition_positivity.ColoringOracleTests.test_invalid_inputs) ... ok
+test_named_monomial_symmetry_on_all_four_vertex_graphs (test_partition_positivity.ColoringOracleTests.test_named_monomial_symmetry_on_all_four_vertex_graphs) ... ok
+test_pointwise_adjacent_color_involution_through_five_vertices (test_partition_positivity.ColoringOracleTests.test_pointwise_adjacent_color_involution_through_five_vertices) ... ok
+test_subset_expansion_of_elementary_products (test_partition_positivity.ColoringOracleTests.test_subset_expansion_of_elementary_products) ... ok
+test_three_chain_causes_a_bubble_collision (test_partition_positivity.ColoringOracleTests.test_three_chain_causes_a_bubble_collision) ... ok
+test_unrestricted_slide_injection_has_a_cardinality_obstruction (test_partition_positivity.ColoringOracleTests.test_unrestricted_slide_injection_has_a_cardinality_obstruction) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.668s
+
+OK

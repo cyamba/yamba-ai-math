@@ -1,0 +1,448 @@
+[
+  {
+    "n": 2,
+    "hessenberg_vectors": 2,
+    "families": [
+      {
+        "family": 1,
+        "negative_objects": 0,
+        "positive_objects": 1,
+        "matched": 0,
+        "greedy_matched": 0,
+        "failed_vectors": 0,
+        "first_failure": null
+      },
+      {
+        "family": 2,
+        "negative_objects": 0,
+        "positive_objects": 1,
+        "matched": 0,
+        "greedy_matched": 0,
+        "failed_vectors": 0,
+        "first_failure": null
+      },
+      {
+        "family": 3,
+        "negative_objects": 0,
+        "positive_objects": 1,
+        "matched": 0,
+        "greedy_matched": 0,
+        "failed_vectors": 0,
+        "first_failure": null
+      }
+    ]
+  },
+  {
+    "n": 3,
+    "hessenberg_vectors": 5,
+    "families": [
+      {
+        "family": 1,
+        "negative_objects": 2,
+        "positive_objects": 7,
+        "matched": 2,
+        "greedy_matched": 2,
+        "failed_vectors": 0,
+        "first_failure": null
+      },
+      {
+        "family": 2,
+        "negative_objects": 2,
+        "positive_objects": 7,
+        "matched": 2,
+        "greedy_matched": 2,
+        "failed_vectors": 0,
+        "first_failure": null
+      },
+      {
+        "family": 3,
+        "negative_objects": 2,
+        "positive_objects": 7,
+        "matched": 2,
+        "greedy_matched": 2,
+        "failed_vectors": 0,
+        "first_failure": null
+      }
+    ]
+  },
+  {
+    "n": 4,
+    "hessenberg_vectors": 14,
+    "families": [
+      {
+        "family": 1,
+        "negative_objects": 27,
+        "positive_objects": 57,
+        "matched": 27,
+        "greedy_matched": 22,
+        "failed_vectors": 0,
+        "first_failure": null
+      },
+      {
+        "family": 2,
+        "negative_objects": 27,
+        "positive_objects": 57,
+        "matched": 27,
+        "greedy_matched": 22,
+        "failed_vectors": 0,
+        "first_failure": null
+      },
+      {
+        "family": 3,
+        "negative_objects": 27,
+        "positive_objects": 57,
+        "matched": 27,
+        "greedy_matched": 27,
+        "failed_vectors": 0,
+        "first_failure": null
+      }
+    ]
+  },
+  {
+    "n": 5,
+    "hessenberg_vectors": 42,
+    "families": [
+      {
+        "family": 1,
+        "negative_objects": 323,
+        "positive_objects": 582,
+        "matched": 320,
+        "greedy_matched": 269,
+        "failed_vectors": 2,
+        "first_failure": [
+          [
+            1,
+            2,
+            4,
+            5,
+            5
+          ],
+          {
+            "source": {
+              "sector": {
+                "shape": [
+                  2,
+                  2,
+                  1
+                ],
+                "sigma": [
+                  1,
+                  0
+                ],
+                "indices": [
+                  4,
+                  1
+                ],
+                "target": [
+                  4,
+                  1
+                ],
+                "sign": -1
+              },
+              "tableau": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  3
+                ]
+              ]
+            },
+            "negative_vertices": [
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              },
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    5
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              }
+            ],
+            "positive_neighbors": [
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sigma": [
+                    0,
+                    1
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": 1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family": 2,
+        "negative_objects": 323,
+        "positive_objects": 582,
+        "matched": 320,
+        "greedy_matched": 271,
+        "failed_vectors": 2,
+        "first_failure": [
+          [
+            1,
+            2,
+            4,
+            5,
+            5
+          ],
+          {
+            "source": {
+              "sector": {
+                "shape": [
+                  2,
+                  2,
+                  1
+                ],
+                "sigma": [
+                  1,
+                  0
+                ],
+                "indices": [
+                  4,
+                  1
+                ],
+                "target": [
+                  4,
+                  1
+                ],
+                "sign": -1
+              },
+              "tableau": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  3
+                ]
+              ]
+            },
+            "negative_vertices": [
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              },
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    2,
+                    1
+                  ],
+                  "sigma": [
+                    1,
+                    0
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": -1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2,
+                    5
+                  ],
+                  [
+                    3
+                  ]
+                ]
+              }
+            ],
+            "positive_neighbors": [
+              {
+                "sector": {
+                  "shape": [
+                    2,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sigma": [
+                    0,
+                    1
+                  ],
+                  "indices": [
+                    4,
+                    1
+                  ],
+                  "target": [
+                    4,
+                    1
+                  ],
+                  "sign": 1
+                },
+                "tableau": [
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    2
+                  ],
+                  [
+                    3
+                  ],
+                  [
+                    5
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family": 3,
+        "negative_objects": 323,
+        "positive_objects": 582,
+        "matched": 323,
+        "greedy_matched": 323,
+        "failed_vectors": 0,
+        "first_failure": null
+      }
+    ]
+  }
+]

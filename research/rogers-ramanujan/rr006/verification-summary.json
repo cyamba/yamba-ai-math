@@ -1,0 +1,109 @@
+{
+  "attempt": "RR006",
+  "status": "passed_local_integrity",
+  "recorded_utc": "2026-10-24T20:34:39.920373+00:00",
+  "initial_file_hashes_unchanged": 357,
+  "frozen_claim_files_unchanged": 64,
+  "head": "03d46d9db79cbdc2f77159defa5fc0bafcc8f5fd",
+  "functional_repository_changes": false,
+  "prior_records_preserved": true,
+  "git_diff_check": "passed",
+  "working_tree_status": [
+    " M research/rogers-ramanujan/rr006/SESSION_HANDOFF.md",
+    "?? research/rogers-ramanujan/rr006/NEXT_SESSION.md",
+    "?? research/rogers-ramanujan/rr006/census-data.json",
+    "?? research/rogers-ramanujan/rr006/claim-freeze.json",
+    "?? research/rogers-ramanujan/rr006/clues-and-rules.md",
+    "?? research/rogers-ramanujan/rr006/contract.md",
+    "?? research/rogers-ramanujan/rr006/execution-start.json",
+    "?? research/rogers-ramanujan/rr006/execution.json",
+    "?? research/rogers-ramanujan/rr006/family-census.md",
+    "?? research/rogers-ramanujan/rr006/ferrers-layers.md",
+    "?? research/rogers-ramanujan/rr006/fleet-plan-input.json",
+    "?? research/rogers-ramanujan/rr006/oeis-search-log.md",
+    "?? research/rogers-ramanujan/rr006/plan.md",
+    "?? research/rogers-ramanujan/rr006/planning-status.json",
+    "?? research/rogers-ramanujan/rr006/planning-validation.json",
+    "?? research/rogers-ramanujan/rr006/pre-run.md",
+    "?? research/rogers-ramanujan/rr006/result.md",
+    "?? research/rogers-ramanujan/rr006/review-1.md",
+    "?? research/rogers-ramanujan/rr006/source-records.json",
+    "?? research/rogers-ramanujan/rr006/verification-summary.json"
+  ],
+  "receipts": {
+    "critic-pilot12.receipt.json": {
+      "sha256": "aed83a37b00d801242fb6b64fde159477b7c94a550ba3fe83076d35206db0a3f",
+      "exit_code": 0,
+      "bound": 12,
+      "elapsed_seconds": 0.06519095800467767,
+      "peak_child_rss_bytes": 25001984
+    },
+    "critic-extension30.receipt.json": {
+      "sha256": "171e8a9edd6ce090678b18ff3aa87eb6d0c6e92f8d32fc2dc63516999b6e57c4",
+      "exit_code": 0,
+      "bound": 30,
+      "elapsed_seconds": 0.5251155419973657,
+      "peak_child_rss_bytes": 46284800
+    },
+    "census-pilot12.receipt.json": {
+      "sha256": "c3bc383a0169d67723ea7e312dc2b03a184683daa7790c34ba968c9a900364dd",
+      "exit_code": 0,
+      "bound": 12,
+      "elapsed_seconds": 0.1260386249923613,
+      "peak_child_rss_bytes": 25772032
+    },
+    "repository-check.receipt.json": {
+      "sha256": "41e170d561cf551d50730763d442a1c6ddcfbec21886b12fddf50f1ed1b593d6",
+      "exit_code": 0,
+      "bound": 0,
+      "elapsed_seconds": 0.16008570799021982,
+      "peak_child_rss_bytes": 18694144
+    },
+    "census-format30.receipt.json": {
+      "sha256": "ea770e11c83584db11c01216a2888d259976acff2195b15029e9e4018cc741af",
+      "exit_code": 0,
+      "bound": 30,
+      "elapsed_seconds": 0.06309862498892471,
+      "peak_child_rss_bytes": 27475968
+    },
+    "census-extend30.receipt.json": {
+      "sha256": "e2b4364b0aaffc089a8549a923d1f5515464c9cfe0e96077bb1e414cd3ca51b2",
+      "exit_code": 0,
+      "bound": 30,
+      "elapsed_seconds": 0.8296127080102451,
+      "peak_child_rss_bytes": 52576256
+    },
+    "census-package.receipt.json": {
+      "sha256": "f950fe54548fa0bf01c63952bf077a20ebbf1cfcac85a0775683be7fded29b63",
+      "exit_code": 0,
+      "bound": 30,
+      "elapsed_seconds": 0.0862488750135526,
+      "peak_child_rss_bytes": 31391744
+    },
+    "census-freeze.receipt.json": {
+      "sha256": "4244c7fc509efa3ae3bfb17a742fc14a5bfa4d235bfe644c655214203a554c5f",
+      "exit_code": 0,
+      "bound": 0,
+      "elapsed_seconds": 0.0394224580086302,
+      "peak_child_rss_bytes": 18006016
+    },
+    "retained-claim-freeze.receipt.json": {
+      "sha256": "15e2e9257e20ed6c077a64cfcfdb7649fc5aed7b43b12f74195bc42ce4d9dd36",
+      "exit_code": 0,
+      "bound": 0,
+      "elapsed_seconds": 0.07642287499038503,
+      "peak_child_rss_bytes": 22708224
+    }
+  },
+  "dispatch_units": 15,
+  "dispatch_invocations": 6,
+  "queries": 9,
+  "source_retrievals": 14,
+  "detailed_source_records": 6,
+  "incremental_bytes_observed": 3966434,
+  "free_bytes_observed": 13926400000,
+  "storage_limit_bytes": 1073741824,
+  "free_floor_bytes": 5368709120,
+  "unit_tests": "Not run: documentation/research evidence only, no functional repository change; old suite includes out-of-bound mathematical controls and was not replayed.",
+  "scope": "Integrity and finite protocol checks do not prove universal mathematics or novelty."
+}

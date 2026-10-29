@@ -1,0 +1,327 @@
+{
+  "attempt": "RR006",
+  "status": "closed_scoped_investigation_complete_full_KR1_unresolved",
+  "authorization": "2026-10-24 renewed user instruction accepts proposed contract unchanged; 30 min charged preparation + 120 execution min; local only",
+  "contract_sha256": "f86ab031eb0eb9aa5daeb2de224cf66e887648b073e72e5c413edc074dced3cc",
+  "worktree": "/private/tmp/yamba-ai-math-rr006",
+  "branch": "codex/kr1-rr006-family-search",
+  "head_unchanged": "03d46d9db79cbdc2f77159defa5fc0bafcc8f5fd",
+  "local_uncommitted_work": true,
+  "time": {
+    "execution_start_utc": "2026-10-24T20:16:20+00:00",
+    "execution_end_utc": "2026-10-24T20:35:45.923508+00:00",
+    "user_timezone": "Europe/Stockholm",
+    "local_start": "2026-10-24T22:16:20+02:00",
+    "local_end": "2026-10-24T22:35:45.923508+02:00",
+    "measured_execution_seconds": 1165.923508,
+    "execution_limit_seconds": 7200,
+    "preparation_conservative_minutes": 30,
+    "total_charged_minutes": 49.43205846666667,
+    "total_ceiling_minutes": 150,
+    "phase_events": [
+      {
+        "phase": "initial-research",
+        "start_utc": "2026-10-24T20:17:12+00:00",
+        "actual_phase_deadline_utc": "2026-10-24T20:52:12+00:00",
+        "ceiling_minutes": 35,
+        "note": "Earlier latest-schedule21:01:20 field is not permission to borrow unused bootstrap time. Actual35min branch cap applies.",
+        "recorded_utc": "2026-10-24T20:20:31.012860+00:00"
+      },
+      {
+        "phase": "integration-and-pilot",
+        "start_utc": "2026-10-24T20:22:00+00:00",
+        "ceiling_minutes": 20,
+        "discovery_deadline_utc": "2026-10-24T20:42:00+00:00",
+        "note": "Actual start precedes this conservative timestamp by under1minute; do not extend later.",
+        "recorded_utc": "2026-10-24T20:21:38.440818+00:00"
+      },
+      {
+        "phase": "integration-and-pilot",
+        "start_utc": "2026-10-24T20:21:38+00:00",
+        "ceiling_minutes": 20,
+        "discovery_deadline_utc": "2026-10-24T20:41:38+00:00",
+        "supersedes": "Previous approximate20:22 timestamp; actual clock read before cross-search dispatch governs. No unused-time borrowing.",
+        "recorded_utc": "2026-10-24T20:21:56.756483+00:00"
+      },
+      {
+        "phase": "separate-review",
+        "start_utc": "2026-10-24T20:27:26+00:00",
+        "ceiling_minutes": 35,
+        "deadline_utc": "2026-10-24T21:02:26+00:00"
+      },
+      {
+        "phase": "closing",
+        "start_utc": "2026-10-24T20:32:58+00:00",
+        "ceiling_minutes": 20,
+        "deadline_utc": "2026-10-24T20:52:58+00:00"
+      }
+    ]
+  },
+  "dispatch": {
+    "used_units": 15,
+    "limit_units": 20,
+    "invocations": 6,
+    "limit_invocations": 8,
+    "distinct_child_profiles": 4,
+    "max_simultaneously_executing_children": 3,
+    "max_active_participants_including_root": 4,
+    "nested_agents": 0,
+    "stages": [
+      {
+        "stage": "census",
+        "role": "mathematician",
+        "cost_units": 3,
+        "status": "completed",
+        "recorded_utc": "2026-10-24T20:17:10.490352+00:00"
+      },
+      {
+        "stage": "survey",
+        "role": "scout",
+        "cost_units": 2,
+        "status": "completed",
+        "recorded_utc": "2026-10-24T20:17:10.523509+00:00"
+      },
+      {
+        "stage": "geometry",
+        "role": "geometer",
+        "cost_units": 3,
+        "status": "completed",
+        "recorded_utc": "2026-10-24T20:17:10.555719+00:00"
+      },
+      {
+        "stage": "cross-search",
+        "role": "scout",
+        "cost_units": 2,
+        "status": "completed",
+        "dependencies": "census,survey,geometry initial handoffs complete",
+        "recorded_utc": "2026-10-24T20:21:38.408946+00:00"
+      },
+      {
+        "stage": "geometry-finish",
+        "role": "geometer",
+        "cost_units": 3,
+        "status": "completed",
+        "dependencies": "census,geometry,cross-search complete",
+        "recorded_utc": "2026-10-24T20:24:56.871944+00:00"
+      },
+      {
+        "stage": "review-1",
+        "role": "critic",
+        "cost_units": 2,
+        "status": "completed",
+        "dependencies": "census,cross-search,geometry-finish complete; claim-freeze saved",
+        "recorded_utc": "2026-10-24T20:27:26.307475+00:00"
+      }
+    ],
+    "skipped": [
+      {
+        "stage": "revise",
+        "cost_units_unspent": 3,
+        "reason": "Distinct critic found no substantive correction required"
+      },
+      {
+        "stage": "review-final",
+        "cost_units_unspent": 2,
+        "reason": "No substantive correction; no second review needed; no new discovery"
+      }
+    ],
+    "money_or_tokens_measurement": false
+  },
+  "local_computation": {
+    "charged_seconds": 286.53661187397665,
+    "limit_seconds": 600,
+    "measured_metered_child_seconds": 2.1269183739786968,
+    "measured_finite_mathematical_check_seconds": 1.5459578330046497,
+    "by_category_charged_seconds": {
+      "bootstrap": 25.0,
+      "census": 11.058172416000161,
+      "closing": 50.47843945797649,
+      "geometry": 20,
+      "critic": 180.0
+    },
+    "conservative_utility_debits": [
+      {
+        "category": "bootstrap",
+        "seconds": 15,
+        "scope": "scout initial/follow-up nonmathematical reads estimated14.2s; two failed rg/glob reads included"
+      },
+      {
+        "category": "census",
+        "seconds": 10,
+        "scope": "census read utilities estimate8-9s; no failed reads"
+      },
+      {
+        "category": "geometry",
+        "seconds": 20,
+        "scope": "geometer corrected summed-child read utility estimate17s including one failed administrative patch; earlier9s estimate superseded"
+      },
+      {
+        "category": "closing",
+        "seconds": 30,
+        "scope": "root post-bootstrap document inspection, ledger/record utilities, packaging preparation and final administrative closure; conservative allowance charged, distinct from metered child commands"
+      },
+      {
+        "category": "critic",
+        "seconds": 179.40969349999796,
+        "scope": "Full reserved critic180s including measured runs; aggregate ancillary utility time unknown, conservative debit instead of zero"
+      },
+      {
+        "category": "closing",
+        "seconds": 20,
+        "scope": "Additional conservative root utility/final administrative reserve; total root closing utility debit50s"
+      }
+    ],
+    "critic_ancillary_exact_aggregate": "unknown; entire180s category debited including measured runs",
+    "failed_mathematical_runs": 0,
+    "ancillary_failures": [
+      {
+        "scope": "read/admin only; no failed mathematical trial",
+        "count": 4,
+        "items": [
+          "Root initial rg included nonexistent .runs before initialization; exit2, charged initial maintenance",
+          "Scout two missing-path/glob rg reads, preserved in source log; exact full command text unavailable in root record",
+          "Geometer failed administrative patch context, no mutation; preserved in geometry note"
+        ],
+        "time": "included in conservative utility charges",
+        "recorded_utc": "2026-10-24T20:30:54.936792+00:00"
+      }
+    ],
+    "serialized": true,
+    "raw_receipts": {
+      "critic-pilot12.receipt.json": {
+        "sha256": "aed83a37b00d801242fb6b64fde159477b7c94a550ba3fe83076d35206db0a3f",
+        "exit_code": 0,
+        "bound": 12,
+        "elapsed_seconds": 0.06519095800467767
+      },
+      "final-integrity.receipt.json": {
+        "sha256": "f5c6f2cee05b72f994ee9973556c00d4276564fe41b6675f28f725409f0add9e",
+        "exit_code": 0,
+        "bound": 0,
+        "elapsed_seconds": 0.15568199998233467
+      },
+      "critic-extension30.receipt.json": {
+        "sha256": "171e8a9edd6ce090678b18ff3aa87eb6d0c6e92f8d32fc2dc63516999b6e57c4",
+        "exit_code": 0,
+        "bound": 30,
+        "elapsed_seconds": 0.5251155419973657
+      },
+      "census-pilot12.receipt.json": {
+        "sha256": "c3bc383a0169d67723ea7e312dc2b03a184683daa7790c34ba968c9a900364dd",
+        "exit_code": 0,
+        "bound": 12,
+        "elapsed_seconds": 0.1260386249923613
+      },
+      "repository-check.receipt.json": {
+        "sha256": "41e170d561cf551d50730763d442a1c6ddcfbec21886b12fddf50f1ed1b593d6",
+        "exit_code": 0,
+        "bound": 0,
+        "elapsed_seconds": 0.16008570799021982
+      },
+      "census-format30.receipt.json": {
+        "sha256": "ea770e11c83584db11c01216a2888d259976acff2195b15029e9e4018cc741af",
+        "exit_code": 0,
+        "bound": 30,
+        "elapsed_seconds": 0.06309862498892471
+      },
+      "census-extend30.receipt.json": {
+        "sha256": "e2b4364b0aaffc089a8549a923d1f5515464c9cfe0e96077bb1e414cd3ca51b2",
+        "exit_code": 0,
+        "bound": 30,
+        "elapsed_seconds": 0.8296127080102451
+      },
+      "census-package.receipt.json": {
+        "sha256": "f950fe54548fa0bf01c63952bf077a20ebbf1cfcac85a0775683be7fded29b63",
+        "exit_code": 0,
+        "bound": 30,
+        "elapsed_seconds": 0.0862488750135526
+      },
+      "census-freeze.receipt.json": {
+        "sha256": "4244c7fc509efa3ae3bfb17a742fc14a5bfa4d235bfe644c655214203a554c5f",
+        "exit_code": 0,
+        "bound": 0,
+        "elapsed_seconds": 0.0394224580086302
+      },
+      "retained-claim-freeze.receipt.json": {
+        "sha256": "15e2e9257e20ed6c077a64cfcfdb7649fc5aed7b43b12f74195bc42ce4d9dd36",
+        "exit_code": 0,
+        "bound": 0,
+        "elapsed_seconds": 0.07642287499038503
+      }
+    }
+  },
+  "memory": {
+    "observed_max_metered_child_rss_bytes": 52576256,
+    "per_child_limit_bytes": 536870912,
+    "combined_limit_bytes": 2147483648,
+    "enforcement": "post-exit peak RSS, serialized mathematical computation; no hard transient guarantee; model/service RSS unknown"
+  },
+  "storage": {
+    "existing_worktree_logical_bytes": 21471649,
+    "existing_allocated_disk_bytes": "unknown; baseline measured as file-content bytes",
+    "incremental_logical_bytes_observed_before_final_metadata": 3981951,
+    "incremental_limit_bytes": 1073741824,
+    "free_bytes_observed": 14991360000,
+    "free_floor_bytes": 5368709120,
+    "limitation": "observations cannot guarantee transient peaks; final metadata is checked against remaining headroom before write"
+  },
+  "retrieval": {
+    "query_strings": 9,
+    "query_limit": 12,
+    "source_opens_including_errors_and_reinspection": 14,
+    "open_limit": 18,
+    "detailed_records": 6,
+    "record_limit": 6,
+    "scout_records": 5,
+    "critic_addendum_records": 1,
+    "new_OEIS_identification": "A272397 full B only",
+    "queries_and_targets": "fresh raw ledger and source log; no external submission"
+  },
+  "mathematics": {
+    "pilot_ceiling": 12,
+    "extension_ceiling": 30,
+    "author_pilot_before_unchanged_extension": true,
+    "critic_pilot_before_specific_unchanged_extension": true,
+    "all_executed_input_and_output_endpoints_bounded": true,
+    "old_above_bound_witnesses": "symbolic only",
+    "finite_exposure": "discovery; not held-out",
+    "new_cross_domain_rule_variants_run": 0,
+    "geometric_encodings": 1,
+    "new_root_map_accepted": false,
+    "full_KR1_achieved": false,
+    "formal_certificate": false,
+    "novelty_verified": false,
+    "assurance": "See claim-by-claim separate informal review; A/B transported coverage conditional"
+  },
+  "verification": {
+    "summary": "verification-summary.json",
+    "repository_checker": "passed",
+    "git_diff_check": "passed",
+    "all357initial_pins_and64claim_pins": "unchanged",
+    "functional_repository_changes": false,
+    "unit_suite": "not run for documentation/research-only change; no legacy above-bound controls replayed"
+  },
+  "external_actions": {
+    "push": false,
+    "publication": false,
+    "external_message_or_Drive": false,
+    "new_dependency": false,
+    "new_paid_provider": false,
+    "feedback_CY_KR1_001_002": "PENDING; unchanged"
+  },
+  "unavailable_measurements": {
+    "model_tokens": null,
+    "model_runtime": null,
+    "model_or_service_memory": null,
+    "communication_prompt_output_tokens": null,
+    "retrieval_runtime": null
+  },
+  "provenance": {
+    "raw_ledger": ".runs/rr006/ledger.json",
+    "raw_ledger_sha256": "ba81fd2c1f18a015cee09f3eca95bbac71e67f4d3f7d8847bd0b632124922c68",
+    "input_pins": ".runs/rr006/input-pins.json",
+    "claim_freeze": "claim-freeze.json",
+    "review": "review-1.md",
+    "prior_closed_ledgers": "not reset, extended or used for new execution"
+  }
+}

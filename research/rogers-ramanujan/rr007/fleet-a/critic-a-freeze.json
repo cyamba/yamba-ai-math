@@ -1,0 +1,15 @@
+{
+  "critic": "critic-a",
+  "scope": "independent literal audit of frozen A1-A3 and one-sided source grammars; no fourth variant",
+  "frozen_utc": "2026-10-24T21:17:43.074990+00:00",
+  "initial_bound": 12,
+  "extension_authorized": false,
+  "sha256": {
+    "research/rogers-ramanujan/rr007/fleet-a/checks/critic-a-literal.py": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984",
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a1-two-singles.md": "04f173e5ce84151e3b5fd0c56782006df38584980df6b8396d88f483d675c747",
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a2-zero-or-one-single.md": "93486972f935e023c01ec87ca879b344316117b6dda0366417b95277bd89a5cb",
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a3-hook-and-wall.md": "6aa398f54b6365bb66dd2f266e79462cb32ceefa2ed816aefeda8a155260d24d",
+    "research/rogers-ramanujan/rr007/fleet-a/context.md": "98a36ece4428befeaac1c8565d200a96d8b2d5ca65839e9f53759820e0728215",
+    "research/rogers-ramanujan/rr007/fleet-a/author.md": "8e15765f708867654fbb652f66a01dcfa9f4fffb671f1880e9b10eb12d2a17db"
+  }
+}

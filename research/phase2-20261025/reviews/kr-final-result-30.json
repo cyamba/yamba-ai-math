@@ -1,0 +1,51 @@
+{
+  "bound": 30,
+  "all_C_U_A_B": 1393,
+  "H3_mapped": 1203,
+  "H3_rejected": 190,
+  "H2_assignments_preserved": 1092,
+  "new_y_classes": {
+    "0": 50,
+    "1": 61
+  },
+  "a4_b0": {
+    "all": 241,
+    "accepted": 147
+  },
+  "cohorts": {
+    "full_A": {
+      "distinct": 1229,
+      "repeated": 164
+    },
+    "full_B": {
+      "repeated": 1266,
+      "distinct": 127
+    },
+    "H3_A": {
+      "distinct": 1050,
+      "repeated": 153
+    },
+    "H3_B": {
+      "repeated": 1126,
+      "distinct": 77
+    }
+  },
+  "target_only_q0_t0_1_cases": 23,
+  "child3_minimum_parent": [
+    13,
+    [
+      10,
+      3
+    ]
+  ],
+  "corrected_child_terminal_bound": 2,
+  "child6_range_exclusion_verified": true,
+  "first_missing_C": "ClusterData(a=4, b=0, mu=(0, 0, 2, 2), nu=())",
+  "first_rejected_U": [
+    10,
+    9,
+    1
+  ],
+  "high_gap_and_high_b_sources_constructed": 0,
+  "status": "independent finite reconstruction; universal proofs separately reviewed"
+}

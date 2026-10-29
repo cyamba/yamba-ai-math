@@ -1,0 +1,18 @@
+{
+  "program": "RR005",
+  "round": 2,
+  "frozen_utc": "2026-10-24T17:31:30.115461+00:00",
+  "claims": "Universal contextual six-strip normal forms and exact {1,3,6} source correspondence; no full residual root match",
+  "source_sha256": {
+    "research/rogers-ramanujan/rr005/round-1-proposal.md": "e1b20eaa8e512f65c11c12d3aa66a2c50c0702cec71e2f5f658f37b64ab58206",
+    "research/rogers-ramanujan/rr005/round-1-review.md": "67e782049ab474ddeafb1e6b469a973b7950a977db1e8c4a0119f62914071dbd",
+    "research/rogers-ramanujan/rr005/round-1-revision.md": "9ea25c0aed03980797ff625921ec108404966e323ee43a5a5913ba97b110810d",
+    "research/rogers-ramanujan/rr005/round-2-proposal.md": "f4b33f9d74fe5b3211b1e20c5cea700389a930b12d284587888e136de4c56045",
+    "research/rogers-ramanujan/checks/rr005_chains.py": "96378a9b872373af115164ea6176b04e5b513c45322e42c23a512c8dc4b21ca2",
+    "research/rogers-ramanujan/checks/rr005_verify.py": "2dd46930c61aeae4cd8fa7762d724b82ba0644300efc17d120894b03ff3f7359",
+    "research/rogers-ramanujan/checks/rr005_six.py": "4546f837f606a4d45725b05533e4a39d8a29bbc551327fe98660d69947713cb9",
+    "research/rogers-ramanujan/checks/rr005_six_verify.py": "1bcf79e115f9f791a247ddd6aba105ccdaa1d553415221052016b72e7bcfa087",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+  },
+  "exposure": "Round-one through30 results and isolated controls. Round-two verifier limits enumerated inputs/raising edges to <=30 and leaves C1 six branch to written proof."
+}

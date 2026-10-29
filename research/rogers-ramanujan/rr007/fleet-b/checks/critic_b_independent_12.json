@@ -1,0 +1,23 @@
+{
+  "bound": 12,
+  "status": "passed",
+  "independent_U": 59,
+  "independent_F2": 59,
+  "independent_B0": 55,
+  "independent_C": 59,
+  "independent_cone": 55,
+  "independent_R20": 55,
+  "independent_M": 59,
+  "independent_R2star": 59,
+  "independent_printed_R2": 58,
+  "source_witness_weight": 11,
+  "distinct_U": 14,
+  "repeated_U": 45,
+  "distinct_B0": 12,
+  "repeated_B0": 43,
+  "distinct_M": 36,
+  "repeated_M": 23,
+  "max_actual_weight": 12,
+  "imports": "standard library only; no author/legacy executable imports",
+  "scope": "finite evidence only; independent ordinary proof review recorded separately"
+}

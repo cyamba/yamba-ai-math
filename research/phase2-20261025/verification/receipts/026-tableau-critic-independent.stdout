@@ -1,0 +1,294 @@
+{
+  "status": "finite_exact_passed",
+  "failure_count": 0,
+  "proof_assurance": "Independent ordinary semantic review is recorded separately; no formal checker.",
+  "sizes": [
+    {
+      "n": 0,
+      "vectors": 1,
+      "coloring_agreements": 1
+    },
+    {
+      "n": 1,
+      "vectors": 1,
+      "coloring_agreements": 1
+    },
+    {
+      "n": 2,
+      "vectors": 2,
+      "coloring_agreements": 2
+    },
+    {
+      "n": 3,
+      "vectors": 5,
+      "coloring_agreements": 5
+    },
+    {
+      "n": 4,
+      "vectors": 14,
+      "coloring_agreements": 14
+    },
+    {
+      "n": 5,
+      "vectors": 42,
+      "coloring_agreements": 42
+    },
+    {
+      "n": 6,
+      "vectors": 132,
+      "coloring_agreements": 132
+    }
+  ],
+  "vector_total": 197,
+  "literal_sector_counts": {
+    "0": 1,
+    "1": 1,
+    "2": 3,
+    "3": 7,
+    "4": 17,
+    "5": 37,
+    "6": 85
+  },
+  "e51_raw_sectors": [
+    {
+      "shape": [
+        6
+      ],
+      "sigma": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "indices": [
+        1,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "sign": 1
+    },
+    {
+      "shape": [
+        6
+      ],
+      "sigma": [
+        4,
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "indices": [
+        5,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "sign": 1
+    },
+    {
+      "shape": [
+        5,
+        1
+      ],
+      "sigma": [
+        3,
+        0,
+        1,
+        2,
+        4
+      ],
+      "indices": [
+        5,
+        0,
+        0,
+        0,
+        1
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "sign": -1
+    },
+    {
+      "shape": [
+        4,
+        2
+      ],
+      "sigma": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "indices": [
+        5,
+        1,
+        0,
+        0
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "sign": -1
+    },
+    {
+      "shape": [
+        4,
+        1,
+        1
+      ],
+      "sigma": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "indices": [
+        5,
+        0,
+        0,
+        1
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "sign": 1
+    },
+    {
+      "shape": [
+        3,
+        2,
+        1
+      ],
+      "sigma": [
+        2,
+        0,
+        1
+      ],
+      "indices": [
+        5,
+        1,
+        0
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "sign": 1
+    },
+    {
+      "shape": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "sigma": [
+        1,
+        0,
+        2
+      ],
+      "indices": [
+        5,
+        0,
+        1
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "sign": -1
+    },
+    {
+      "shape": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "sigma": [
+        1,
+        0
+      ],
+      "indices": [
+        5,
+        1
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "sign": -1
+    },
+    {
+      "shape": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sigma": [
+        0,
+        1
+      ],
+      "indices": [
+        5,
+        1
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "sign": 1
+    }
+  ],
+  "structural_n6": {
+    "source_hook": 19,
+    "destination_row1": 1,
+    "destination_row0": 1,
+    "destination_411": 99,
+    "source_two": 96,
+    "destination_321": 32,
+    "recognized_images": 151,
+    "sources": 151,
+    "all_positive": 6800,
+    "all_negative": 3980,
+    "source_triangle": 36,
+    "destination_21111": 18
+  },
+  "general_poset_n6_sanity": {
+    "sources": 772,
+    "distinct_posets": 248,
+    "source_hook": 214,
+    "destination_411": 581,
+    "source_two": 552,
+    "recognized_images": 772,
+    "destination_row0": 26,
+    "destination_row1": 26,
+    "destination_321": 136,
+    "source_triangle": 6,
+    "destination_21111": 3
+  },
+  "frozen_dependencies_unchanged": true
+}
