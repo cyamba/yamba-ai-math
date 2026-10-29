@@ -176,11 +176,15 @@ def program_frozen(ctx: Context) -> dict:
 
 def changed_documents(ctx: Context) -> list[str]:
     """Workspace documents the run added or modified, as candidates for the judged discovery axes."""
-    if not ctx.output_commit or ctx.output_commit == ctx.framework_commit:
+    workspace = ctx.layout.workspace + "/"
+    if ctx.snapshot:  # a live run reads the working tree: uncommitted and untracked work counts
+        paths = provenance.changed_in_worktree(ctx.repo, ctx.framework_commit, workspace)
+    elif not ctx.output_commit or ctx.output_commit == ctx.framework_commit:
         return []
-    return cached(ctx, "changed_documents", lambda: [
-        path for path in provenance.changed(ctx.repo, ctx.framework_commit, ctx.output_commit, "AM", ctx.layout.workspace + "/")
-        if path.endswith((".md", ".tex", ".lean"))])
+    else:
+        paths = cached(ctx, "changed_documents", lambda: provenance.changed(
+            ctx.repo, ctx.framework_commit, ctx.output_commit, "AM", workspace))
+    return [path for path in paths if path.endswith((".md", ".tex", ".lean"))]
 
 
 def idea_inventory(ctx: Context, probes: str, statuses: set[str]) -> list[dict]:

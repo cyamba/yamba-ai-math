@@ -64,6 +64,12 @@ def gather_sessions(repo: Path, pins: list[str], infer: bool, framework: str, wi
     return sessions
 
 
+def author_ids(sessions: list[dict], pins: list[str]) -> list[str]:
+    """Every session that authored the run, including pins whose telemetry could not be read."""
+    found = [s["id"] for s in sessions]
+    return found + [pin.split(":", 1)[1] for pin in pins if pin.split(":", 1)[1] not in found]
+
+
 def context(spec, prob, layout, repo, framework, output, sessions, *, snapshot=False, deep=False, hook=False,
             judgments=None, ladder=None, cache=None) -> Context:
     return Context(spec=spec, problem=prob, layout=layout, repo=repo, framework_commit=framework,
@@ -174,7 +180,7 @@ def cmd_collect(args) -> int:
     computed = compute(ctx)
     (work / "cache.json").write_text(json.dumps(ctx.cache, indent=1))
     packet = judge_packet(key=key, problem=prob, program=ctx.program, computed=computed, spec=spec,
-                          tree=ctx.layout.tree, run_dir=run_dir, author_sessions=[s["id"] for s in sessions],
+                          tree=ctx.layout.tree, run_dir=run_dir, author_sessions=author_ids(sessions, pins),
                           deep=args.deep, out=work / "judgments.json")
     (work / "judge-packet.json").write_text(json.dumps(packet, indent=1))
     audit = {"schema": "yambench.audit-packet/1", "key": key, "tree": str(ctx.layout.tree),

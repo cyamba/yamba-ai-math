@@ -529,6 +529,32 @@ class ProvenanceTests(unittest.TestCase):
             write(snap, ".claude/bench/records/r.json", "{}")
             self.assertEqual(provenance.fingerprint(snap, ["AGENTS.md", ".claude/"]), before)
 
+    def test_live_snapshot_inventories_uncommitted_and_untracked_documents(self):
+        from yambench.metrics import changed_documents
+        with tempfile.TemporaryDirectory() as temp:
+            repo = tree(Path(temp) / "repo")
+            subprocess.run(["git", "init", "-q", str(repo)], check=True)
+            subprocess.run(["git", "-C", str(repo), "add", "."], check=True)
+            subprocess.run(["git", "-C", str(repo), "-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qm", "c"], check=True)
+            write(repo, f"{WS}/README.md", "Edited before any commit.\n")
+            write(repo, f"{WS}/conjectures.md", "# New, untracked\n")
+            ctx = context(repo, snapshot=True)
+            ctx.repo, ctx.framework_commit = repo, provenance.resolve(repo, "HEAD")
+            ctx.output_commit = ctx.framework_commit  # an armed run that has not committed yet
+            self.assertEqual(changed_documents(ctx), [f"{WS}/README.md", f"{WS}/conjectures.md"])
+
+
+class AuthorTests(unittest.TestCase):
+    def test_pinned_author_without_readable_telemetry_still_blocks_self_review(self):
+        from yambench.cli import author_ids
+        sessions = [{"id": "codex-lead"}]
+        self.assertEqual(author_ids(sessions, ["codex:codex-lead", "claude-code:unreadable"]),
+                         ["codex-lead", "unreadable"])
+        packet = {"author_sessions": author_ids(sessions, ["claude-code:unreadable"]), "ladder": [], "requests": []}
+        answer = {"assessor": {"session": "unreadable", "model": "m"}, "metrics": {}}
+        with self.assertRaises(BenchError):
+            apply_judgments(answer, packet, load_spec())
+
 
 class CommandTests(unittest.TestCase):
     def test_unarmed_hook_exits_zero_silently(self):

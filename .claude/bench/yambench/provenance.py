@@ -85,6 +85,13 @@ def changed(repo: Path, base: str, head: str, filter_: str, *paths: str) -> list
     return [line for line in output.splitlines() if line]
 
 
+def changed_in_worktree(repo: Path, base: str, *paths: str) -> list[str]:
+    """Files added or modified since ``base`` in the working tree, uncommitted and untracked ones included."""
+    tracked = git(repo, "diff", "--name-only", "--diff-filter=AM", base, "--", *paths, check=False)
+    untracked = git(repo, "ls-files", "--others", "--exclude-standard", "--", *paths, check=False)
+    return sorted({line for line in (tracked + "\n" + untracked).splitlines() if line})
+
+
 def adding_commit(repo: Path, head: str, path: str) -> str | None:
     found = git(repo, "log", "--diff-filter=A", "--format=%H", head, "--", path, check=False).splitlines()
     return found[-1] if found else None
