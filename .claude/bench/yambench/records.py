@@ -139,7 +139,8 @@ def judge_packet(*, key: str, problem: dict, program: dict, computed: dict, spec
             continue
         if entry["status"] == "pending" or (entry.get("raw") or {}).get("pending"):
             requests.append({"metric": metric_id, "name": defs[metric_id]["name"], "type": judged["type"],
-                             "items": judged.get("items"), "rubric": f".claude/bench/spec/{judged['rubric']}",
+                             # absolute: a judge started in another worktree must not read another spec's rubric
+                             "items": judged.get("items"), "rubric": str(BENCH_ROOT / "spec" / judged["rubric"]),
                              "computed": entry.get("raw"), "evidence": entry["evidence"][:30]})
     milestones = problem["ladder"]["milestones"]
     return {
@@ -151,7 +152,7 @@ def judge_packet(*, key: str, problem: dict, program: dict, computed: dict, spec
                     "success_criteria": program["doc"].get("success_criteria")},
         "reviews": computed["reviews"], "requests": requests,
         "ladder": [{"milestone": m, "title": milestones[m].get("title", m)} for m in computed["frontier_judgments"]],
-        "ladder_rubric": ".claude/bench/spec/rubrics/ladder.md",
+        "ladder_rubric": str(BENCH_ROOT / "spec" / "rubrics" / "ladder.md"),
         "author_sessions": author_sessions,
         "write_to": str(out),
         "answer_shape": {
