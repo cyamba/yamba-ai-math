@@ -217,6 +217,11 @@ def apply_audit(gates: dict, audit: dict | None, author_sessions: list[str]) -> 
             raise BenchError(f"Audit ruling for {gate} needs a valid status and rationale")
         if gate == "G4" and updated["G4"]["status"] == "fail":
             continue  # a found canary cannot be overruled
+        if updated[gate].get("evidence_missing") and ruling["status"] == "pass":
+            # self-reported records cannot certify limits that no receipt or telemetry metered
+            updated[gate].update(ruling=ruling["rationale"], reviewer="bench-auditor",
+                                 notes=list(updated[gate].get("notes", [])) + ["auditor pass not applied: no receipts or telemetry"])
+            continue
         updated[gate].update(status=ruling["status"], ruling=ruling["rationale"], reviewer="bench-auditor")
     return updated, auditor, audit.get("disputes", [])
 

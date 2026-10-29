@@ -21,7 +21,8 @@ governs that. Run every command from the repository root.
 3. **Assess.** Spawn a fresh `bench-assessor` agent with only: "Judge packet: <judge-packet path>". Take
    the JSON block it returns, set `assessor.session` to the agent id the Agent tool reported, and write it
    to the packet's `write_to` path. Do not edit its judgments.
-4. **Audit.** Spawn a fresh `bench-auditor` agent with only: "Audit packet: <audit-packet path>". Write its
+4. **Audit**, only after step 3 has written the judgments (an auditor started earlier finds no judgments
+   to check). Spawn a fresh `bench-auditor` agent with only: "Audit packet: <audit-packet path>". Write its
    JSON block to the audit packet's `write_to` path with `auditor.session` set to its agent id.
 5. **Finalize.** `python3 .claude/bench/bench.py finalize --key <key> --judgments <judgments.json> --audit
    <audit.json>`, then `python3 .claude/bench/bench.py validate`.

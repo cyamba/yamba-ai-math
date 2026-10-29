@@ -523,8 +523,8 @@ def gate_g3(ctx: Context) -> dict:
         notes.append(f"telemetry shows {working} working threads > max_agents {constraints['max_agents']}"
                      f" ({', '.join(ctx.telemetry.get('child_names', []))} besides the lead)")
     if not attempted and not working:
-        status = UNKNOWN
         notes.append("no receipts or telemetry to compare with the program constraints")
+        return {"status": UNKNOWN, "computed": True, "notes": notes, "evidence_missing": True}
     return {"status": status, "computed": True, "notes": notes}
 
 

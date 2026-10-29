@@ -391,6 +391,14 @@ class RecordTests(unittest.TestCase):
         self.assertEqual(updated["G4"]["status"], "fail")
         self.assertEqual(updated["G1"]["status"], "pass")
 
+    def test_unmetered_budget_gate_cannot_be_passed_on_self_reports(self):
+        gates = {g: {"status": "unknown"} for g in ("G1", "G2", "G4")}
+        gates["G3"] = {"status": "unknown", "evidence_missing": True, "notes": []}
+        audit = {"auditor": {"session": "auditor-1"}, "gates": {"G3": {"status": "pass", "rationale": "records fit"}}}
+        self.assertEqual(apply_audit(gates, audit, ["lead-1"])[0]["G3"]["status"], "unknown")
+        audit["gates"]["G3"]["status"] = "review"
+        self.assertEqual(apply_audit(gates, audit, ["lead-1"])[0]["G3"]["status"], "review")
+
     def test_record_validation_rules(self):
         record = minimal_record()
         validate(record, self.spec)
