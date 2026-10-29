@@ -33,6 +33,38 @@
       "prompt_file": "agents/mathematician.md"
     },
     {
+      "id": "decomposer",
+      "name": "Glue-First Decomposer",
+      "category": "theory",
+      "capabilities": [
+        "decomposition"
+      ],
+      "tags": [
+        "glue-proof",
+        "sub-lemmas",
+        "dependency-cone",
+        "stall-recovery"
+      ],
+      "cost_units": 2,
+      "prompt_file": "agents/decomposer.md"
+    },
+    {
+      "id": "conjecturer",
+      "name": "Conjecturer",
+      "category": "discovery",
+      "capabilities": [
+        "conjecture"
+      ],
+      "tags": [
+        "pattern-mining",
+        "small-cases",
+        "falsifier-attached",
+        "route-diversity"
+      ],
+      "cost_units": 2,
+      "prompt_file": "agents/conjecturer.md"
+    },
+    {
       "id": "geometer",
       "name": "Geometric Learning Researcher",
       "category": "theory",

@@ -21,6 +21,8 @@ A program is a versioned investigation specification, not a grant of unrestricte
 
 Optional `rounds` defaults to 1 and must not exceed `constraints.max_rounds`. Optional `constraints.timeout_seconds` sets the per-call timeout, defaulting to 120 seconds with a maximum of 3600. Optional `preferred_tags` lists soft preferences used after minimum dispatch cost has been established. Fleet stages may declare `required_tags` as hard eligibility filters.
 
+Optional `target` pins the statement the program serves: `{"path": "<repository file>", "sha256": "<hex digest of its bytes>"}`, for example [the KR1 target](../research/rogers-ramanujan/TARGET.md). Loading, planning and every dispatch fail closed when the file no longer matches, and each packet carries its text. Under a pinned target every `proved` claim declares `target_relation`: `target` (exactly the pinned statement, empty `scope_delta`), `restricted` (a nonempty `scope_delta` listing each added hypothesis, restricted range or weakened conclusion) or `supporting` (a lemma that is not itself a version of the target). The harness checks the declaration's form; the reviewer checks that it is honest.
+
 The planner solves the finite registry assignment exactly: minimum summed dispatch cost, then maximum preferred-tag matches across stage invocations, then minimum distinct role count, then stable IDs. This mathematical optimum concerns the declared proxy objective and constraints. It does not establish optimal scientific quality or actual model cost. Agents' tags can describe mathematical specialties, research styles, or review functions; they do not certify competence.
 
 ## Before dispatch

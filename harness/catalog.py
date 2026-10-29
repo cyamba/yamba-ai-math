@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -51,6 +52,20 @@ def local_file(root: Path, relative: str) -> Path:
     path = (root / relative).resolve()
     if not path.is_relative_to(root.resolve()) or not path.is_file():
         raise ContractError(f"Expected an existing file inside the repository: {relative}")
+    return path
+
+
+def pinned_target(root: Path, target) -> Path:
+    """Return the program's pinned target file after checking it still matches its hash."""
+    if not isinstance(target, dict):
+        raise ContractError("program.target must be an object with path and sha256")
+    path = local_file(root, target.get("path"))
+    digest = target.get("sha256")
+    if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest):
+        raise ContractError("program.target.sha256 must be 64 lowercase hex digits")
+    # Workers must not be able to weaken the statement they are asked to prove.
+    if hashlib.sha256(path.read_bytes()).hexdigest() != digest:
+        raise ContractError(f"Pinned target changed: {target['path']} no longer matches program.target.sha256")
     return path
 
 
@@ -128,6 +143,8 @@ def load_program(path: Path, root: Path, fleets: dict[str, dict]) -> dict:
     for brief in strings(program.get("briefs", []), "program.briefs", empty=True):
         local_file(root, brief)
     strings(program.get("preferred_tags", []), "program.preferred_tags", empty=True)
+    if "target" in program:
+        pinned_target(root, program["target"])
     constraints = program.get("constraints")
     if not isinstance(constraints, dict):
         raise ContractError("program.constraints must be an object")
