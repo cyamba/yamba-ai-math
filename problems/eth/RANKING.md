@@ -36,6 +36,9 @@ $4^{-R}/R$ ([SR-03](subresults/SR-03-point-dependent-rank-barrier.md)); and feas
 dual ([SR-05](subresults/SR-05-stress-duality-and-products.md)). Either outcome is publishable: a
 construction improves the exponent, a lower bound explains the square root.
 
+**Pinned completion statement:** [targets/ETH001.md](targets/ETH001.md) (hash in the program
+contract; results for subclasses or small cases are `restricted` or `empirical`).
+
 **The quantitative target** (SR-04): a family with per-direction bad fraction $\beta\le R^{-C}$,
 $C>4$, at $Q\approx R^{(C+2)/3}$ gives the exponent $n(\log n)^{-(C-1)/(C+2)+o(1)}$, beating
 $n/(\log n)^{1/2+o(1)}$.

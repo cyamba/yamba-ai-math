@@ -21,6 +21,7 @@ their errors are corrected in [SR-08](subresults/SR-08-corrections-to-gemini-sum
 | [lean/](lean/) | Lake project `EthConsequences` (Lean 4.34.1, pinned Mathlib): 45 checked declarations, certificate [`verification.json`](lean/verification.json) |
 | [experiments/](experiments/README.md) | Exact computations (cube polynomial optima, swap-matrix ranks, Hermite weights, galactic thresholds) |
 | [articles/](articles/README.md) | Draft article on point-dependent designs and the square-root barrier |
+| [targets/](targets/ETH001.md) | Pinned completion statements for program contracts (ETH001) |
 
 ## Headline results of iteration 1
 

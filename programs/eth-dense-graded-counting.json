@@ -1,7 +1,7 @@
 {
   "id": "ETH002",
   "title": "Counting at arbitrary density: violation histograms and graded contraction",
-  "objective": "Extend the bounded-density graded counts of SR-07 toward arbitrary density, conditional on the preprint's Theorem C.1: either show that Theorem C.1 holds with a second passive grading variable, which would give weight enumerators and exact Max-k-SAT histograms at every density, or identify the precise step of Appendix C that fails, and record what this implies for exact dense Max-2-SAT.",
+  "objective": "Extend the bounded-density graded counts of SR-07 toward arbitrary density, conditional on the preprint's Theorem C.1: decide whether Theorem C.1 holds with a second passive grading variable, which would give weight enumerators of satisfying assignments at every density, or identify the precise step of Appendix C that fails; separately record why violation histograms (exact Max-k-SAT) do not follow from the arbitrary-density network and what an exact dense Max-2-SAT algorithm would additionally need.",
   "fleet": "theorem",
   "briefs": [
     "problems/eth/03-counting/ETH-C03-max-sat-histogram.md",

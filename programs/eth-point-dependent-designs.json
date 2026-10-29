@@ -4,12 +4,17 @@
   "objective": "Decide, within declared limits, whether point-dependent swap designs can beat the square root in the exponent of the openai/math family 378 counting method: construct and exactly verify cube-polynomial families CP(Q,R) with per-direction bad fraction at most R^-C, C > 4, at Q about R^((C+2)/3), or prove a lower bound beta*(Q,R) >= R^-O(1) for Q >= R^(2+delta) for all families or for a precisely defined natural subclass, preserving every exact counterexample and partial bound.",
   "fleet": "theorem",
   "briefs": [
+    "problems/eth/targets/ETH001.md",
     "problems/eth/01-algorithmic-core/ETH-A03-point-dependent-designs.md",
     "problems/eth/01-algorithmic-core/ETH-A01-break-the-sqrt-log-barrier.md",
     "problems/eth/subresults/SR-02-cube-polynomial-designs.md",
     "problems/eth/subresults/SR-04-slab-construction.md",
     "problems/eth/subresults/SR-05-stress-duality-and-products.md"
   ],
+  "target": {
+    "path": "problems/eth/targets/ETH001.md",
+    "sha256": "79dd5e2f17ec18d21009e303e6a1cf9c4a35f57c120b586e83f9a67f35686663"
+  },
   "constraints": {
     "max_agents": 6,
     "max_cost_units": 28,
@@ -28,7 +33,8 @@
     "Every claimed family is exactly verified; floating-point or modular evidence alone is reported as empirical",
     "No improvement of the exponent is claimed unless the design lemma is Lean-checked, the cost accounting is re-derived from the preprint's display (2.9) and constraints, and a distinct critic accepts it",
     "A lower bound states exactly which class of designs it covers; method-level barriers are not presented as barriers for all algorithms",
-    "Negative results, failed constructions and counterexamples to conjectures are preserved in the problem files"
+    "Negative results, failed constructions and counterexamples to conjectures are preserved in the problem files",
+    "Under the pinned target every proved claim declares target_relation (target, restricted or supporting) and lists its scope_delta; small-case data are empirical"
   ],
   "stop_conditions": [
     "Two proposal/review rounds are exhausted; record the strongest surviving statements and the open obligation",
