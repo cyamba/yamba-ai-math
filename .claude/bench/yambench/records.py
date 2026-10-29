@@ -8,14 +8,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import BenchError, __version__
-from .spec import ANCHORS, BENCH_ROOT, GATE_IDS, METRIC_IDS, metric_defs, sha256_bytes, sha256_file, spec_digest
+from .spec import (ANCHORS, BENCH_ROOT, GATE_IDS, KNOWN_METRIC_IDS, METRIC_COUNT, metric_defs, metric_ids, sha256_bytes,
+                   sha256_file, spec_digest)
 from .telemetry import public
 
 SCHEMA = "yambench.record/1"
 RECORDS_DIR = BENCH_ROOT / "records"
-ANCHOR_METRICS = ("B03", "B05")
+ANCHOR_METRICS = ("B03", "B05", "B13", "B14")
 GATE_STATUSES = {"pass", "fail", "review", "unknown"}
-HOME_RE = re.compile(r"/(Users|home)/[^/\s\"]+")
+# POSIX homes, and Windows homes with forward slashes or (possibly JSON-escaped) backslashes.
+HOME_RE = re.compile(r"/(?:Users|home)/[^/\s\"]+|[A-Za-z]:(?:\\+|/)Users(?:\\+|/)[^\\/\s\"]+", re.I)
 
 
 def now() -> str:
@@ -103,8 +105,11 @@ def validate(record: dict, spec: dict) -> dict:
         raise BenchError("promotion_authorized must be false")
     statuses = set(spec["metrics"]["statuses"])
     metrics = record.get("metrics") or {}
-    if tuple(sorted(metrics)) != METRIC_IDS:
-        raise BenchError(f"record must carry exactly {list(METRIC_IDS)}")
+    if len(metrics) != METRIC_COUNT or not set(metrics) <= set(KNOWN_METRIC_IDS):
+        raise BenchError(f"record must carry twelve known metric IDs, found {sorted(metrics)}")
+    current = (record.get("spec") or {}).get("hashes", {}).get("metrics.json") == spec["hashes"].get("metrics.json")
+    if current and set(metrics) != set(metric_ids(spec)):
+        raise BenchError(f"record under the current spec must carry exactly {list(metric_ids(spec))}")
     for metric_id, entry in metrics.items():
         status, score = entry.get("status"), entry.get("score")
         if status not in statuses:

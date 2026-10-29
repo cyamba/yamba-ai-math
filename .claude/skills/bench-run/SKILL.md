@@ -29,5 +29,8 @@ governs that. Run every command from the repository root.
 7. **Report** the record id, the twelve axes with status, the gates, flags, unanswered requests and
    disputes. Say which axes are unknown and why. Do not describe any axis as an improvement unless
    `/bench-compare` against a same-problem baseline shows it, and never call a version better overall.
+8. **Question the instrument.** Run `python3 .claude/bench/bench.py relevance` and report its flags in one
+   or two lines. Append one line to `.claude/bench/journal.md` only for a decision (a defect found, a
+   review started); a due review is proposed to the user as a new spec version, never edited silently.
 
 Never paste rubric text, canaries or scores into research packets, briefs, programs or AGENTS.md.

@@ -1,4 +1,4 @@
-"""The twelve benchmarks and the computed parts of the hard gates."""
+"""The benchmark axes (a spec selects twelve) and the computed parts of the hard gates."""
 
 from __future__ import annotations
 
@@ -131,6 +131,8 @@ def b01(d, ctx, state):
            "branches": current["branches"],
            "milestones": {name: m["result"] for name, m in current["milestones"].items()}}
     evidence = [dict(check, milestone=name) for name, m in current["milestones"].items() for check in m["checks"]]
+    if not branch["of"]:
+        return metric(d, "n/a", raw=raw, evidence=evidence, notes="Every milestone of the best branch is n/a.")
     return metric(d, "scored", 100 * branch["depth"] / branch["of"], raw, 1.0, evidence)
 
 
@@ -167,10 +169,62 @@ def b03(d, ctx, state):
     return metric(d, "scored", judged, raw, 1.0, inventory, ctx.judgments["B03"].get("rationale"))
 
 
-def b04(d, ctx, state):
+def program_frozen(ctx: Context) -> dict:
     frozen = ctx.problem.get("program_frozen")
-    frozen_result = evaluate(frozen, ctx.checks()) if frozen else {"kind": "none", "result": UNKNOWN, "detail": "no check"}
-    cap = frozen_result["result"] != PASS
+    return evaluate(frozen, ctx.checks()) if frozen else {"kind": "none", "result": UNKNOWN, "detail": "no check"}
+
+
+def changed_documents(ctx: Context) -> list[str]:
+    """Workspace documents the run added or modified, as candidates for the judged discovery axes."""
+    if not ctx.output_commit or ctx.output_commit == ctx.framework_commit:
+        return []
+    return cached(ctx, "changed_documents", lambda: [
+        path for path in provenance.changed(ctx.repo, ctx.framework_commit, ctx.output_commit, "AM", ctx.layout.workspace + "/")
+        if path.endswith((".md", ".tex", ".lean"))])
+
+
+def idea_inventory(ctx: Context, probes: str, statuses: set[str]) -> list[dict]:
+    inventory = [dict(evaluate(p["check"], ctx.checks()), name=p["name"]) for p in ctx.problem.get(probes, [])]
+    for run in ctx.runs:
+        for step, result in run["results"].items():
+            for claim in (result or {}).get("claims", []):
+                if claim.get("status") in statuses:
+                    inventory.append({"kind": "claim", "result": PASS, "name": f"[{claim['status']}] {claim['text'][:150]}",
+                                      "path": f"{ctx.layout.run_label}/{run['name']}/results/{step}.json"})
+    inventory += [{"kind": "document", "result": PASS, "name": path, "path": path} for path in changed_documents(ctx)]
+    return inventory
+
+
+def judged_inventory(d, ctx, metric_id: str, inventory: list[dict], raw: dict, cap: bool = False):
+    """Shared shape of the judged discovery axes: empty inventory scores 0, otherwise an anchor judgment."""
+    found = [item for item in inventory if item["result"] == PASS]
+    raw = {"inventory": len(found), **raw}
+    if not found:
+        if any(item["result"] == UNKNOWN for item in inventory):
+            return metric(d, "unknown", raw=raw, evidence=inventory, notes="Inventory incomplete without the run directory.")
+        return metric(d, "scored", 0, raw, 1.0, inventory, "Nothing in the inventory.")
+    judged = anchor(ctx, metric_id)
+    if judged is None:
+        return metric(d, "pending", raw=raw, evidence=inventory[:40])
+    return metric(d, "scored", min(judged, 50) if cap else judged, raw, 1.0, inventory[:40],
+                  ctx.judgments[metric_id].get("rationale"))
+
+
+def b13(d, ctx, state):
+    inspected = ((state["metrics"].get("B08") or {}).get("raw") or {}).get("items", {}).get("inspected_at_T")
+    cap = inspected != 1.0  # novelty cannot be judged against closest work nobody inspected
+    inventory = idea_inventory(ctx, "contribution_probes", {"proved", "conjecture", "empirical"})
+    return judged_inventory(d, ctx, "B13", inventory, {"closest_work_inspected": inspected, "capped_at_50": cap}, cap)
+
+
+def b14(d, ctx, state):
+    inventory = idea_inventory(ctx, "idea_probes", {"conjecture", "empirical", "refuted"})
+    return judged_inventory(d, ctx, "B14", inventory, {})
+
+
+def b04(d, ctx, state):
+    frozen_result = program_frozen(ctx)
+    cap = frozen_result["result"] == FAIL  # an unverifiable freeze is unknown, not a failure
     raw = {"program_frozen": frozen_result["result"], "capped_at_50": cap}
     record_template = ctx.problem.get("completion_record")
     if record_template:
@@ -296,7 +350,8 @@ def b07(d, ctx, state):
         repro = [cached(ctx, f"repro:{ctx.output_commit}:{r['name']}", lambda r=r: reproduce(r, ctx))
                  for r in ctx.problem.get("repro", [])]
         if repro:
-            items["reproduction"] = sum(1 for r in repro if r["result"] == PASS) / len(repro)
+            settled = [r for r in repro if r["result"] in (PASS, FAIL)]  # unknown is not a failure
+            items["reproduction"] = sum(1 for r in settled if r["result"] == PASS) / len(settled) if settled else None
             evidence += repro
     score, coverage, _ = itemize(items)
     evidence += [b for b in bindings if b["result"] != "pass"][:20]
@@ -447,8 +502,9 @@ def b12(d, ctx, state):
     return metric(d, "scored", score, {"items": items, "pending": pending}, coverage, evidence)
 
 
-COMPUTE = {"B01": b01, "B02": b02, "B03": b03, "B04": b04, "B05": b05, "B06": b06,
-           "B07": b07, "B08": b08, "B09": b09, "B10": b10, "B11": b11, "B12": b12}
+# Retired axes (B04, B10) stay computable so records of older specs can still be reproduced.
+COMPUTE = {"B01": b01, "B02": b02, "B03": b03, "B04": b04, "B05": b05, "B06": b06, "B07": b07,
+           "B08": b08, "B09": b09, "B10": b10, "B11": b11, "B12": b12, "B13": b13, "B14": b14}
 
 
 # --- gates -------------------------------------------------------------------------------------
@@ -498,13 +554,14 @@ def compute(ctx: Context) -> dict:
     bindings = [b for origin, doc in documents if doc is not None for b in hash_bindings(doc, origin)]
     state = {
         "ladder": ladder(ctx.checks()),
-        "reviews": reviews(ctx.layout.tree, f"{ctx.layout.workspace}/review*.md"),
+        "reviews": reviews(ctx.layout.tree, ctx.problem.get("review_glob", "{ws}/review*.md").replace("{ws}", ctx.layout.workspace)),
         "bindings": verify_bindings(bindings, ctx.layout),
         "flags": [], "metrics": {},
     }
-    for metric_id, fn in COMPUTE.items():
+    # ID order computes every axis after the ones it reads (B09 reads B01 and B03, B13 reads B08).
+    for metric_id in sorted(defs):
         state["metrics"][metric_id] = {"id": metric_id, "name": defs[metric_id]["name"],
-                                       "family": defs[metric_id]["family"], **fn(defs[metric_id], ctx, state)}
+                                       "family": defs[metric_id]["family"], **COMPUTE[metric_id](defs[metric_id], ctx, state)}
     gates = {
         "G1": {"status": UNKNOWN, "computed": False,
                "notes": [f["detail"] for f in state["flags"] if f["id"] == "hash_mismatch"]},
@@ -514,4 +571,4 @@ def compute(ctx: Context) -> dict:
     }
     return {"metrics": state["metrics"], "gates": gates, "flags": state["flags"],
             "frontier_judgments": state["ladder"]["frontier_judgments"],
-            "reviews": state["reviews"]}
+            "reviews": state["reviews"], "program_frozen": program_frozen(ctx)["result"]}

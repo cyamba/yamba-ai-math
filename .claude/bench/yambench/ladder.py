@@ -9,7 +9,7 @@ from pathlib import Path
 from .collectors import Layout, load_json, json_values, md_heading, reviews
 from .spec import sha256_file
 
-PASS, FAIL, UNKNOWN, PENDING = "pass", "fail", "unknown", "pending"
+PASS, FAIL, UNKNOWN, PENDING, NA = "pass", "fail", "unknown", "pending", "n/a"
 EMPTY = (None, "", [], {}, False)
 
 
@@ -133,8 +133,8 @@ def evaluate(check: dict, ctx: CheckContext) -> dict:
         return outcome(check, PASS, matched[0]["verdict"][:160], matched[0]["path"])
     if kind == "verification_declaration":
         targets = check.get("targets") or ctx.problem.get("formal_targets") or []
-        if not targets:
-            return outcome(check, FAIL, "no formal target registered")
+        if not targets:  # a rung nobody registered must not cap the ladder below 100
+            return outcome(check, NA, "no formal target registered")
         statuses = [verification_status(target, ctx) for target in targets]
         good = all(ok for ok, _ in statuses)
         return outcome(check, PASS if good else FAIL, "; ".join(detail for _, detail in statuses))
@@ -145,7 +145,7 @@ def combine(results: list[str]) -> str:
     for state in (FAIL, PENDING, UNKNOWN):
         if state in results:
             return state
-    return PASS
+    return NA if results and all(result == NA for result in results) else PASS
 
 
 def milestone(name: str, ctx: CheckContext) -> dict:
@@ -153,7 +153,7 @@ def milestone(name: str, ctx: CheckContext) -> dict:
     ctx.milestone = name
     computed = [evaluate(check, ctx) for check in spec["all"] if check["kind"] != "judged"]
     judged = [check for check in spec["all"] if check["kind"] == "judged"]
-    settled = all(c["result"] == PASS for c in computed)
+    settled = all(c["result"] in (PASS, NA) for c in computed)
     if judged and settled:  # a judgment cannot rescue a failed or unknown computed check
         computed += [evaluate(check, ctx) for check in judged]
     result = combine([c["result"] for c in computed])
@@ -165,7 +165,8 @@ def ladder(ctx: CheckContext) -> dict:
     spec = ctx.problem["ladder"]
     states = {name: milestone(name, ctx) for name in spec["milestones"]}
     branches = {}
-    for name, steps in spec["branches"].items():
+    for name, all_steps in spec["branches"].items():
+        steps = [step for step in all_steps if states[step]["result"] != NA]
         depth = 0
         for step in steps:
             if states[step]["result"] != PASS:
@@ -173,8 +174,9 @@ def ladder(ctx: CheckContext) -> dict:
             depth += 1
         stop = steps[depth] if depth < len(steps) else None
         branches[name] = {"depth": depth, "of": len(steps), "stopped_at": stop,
-                          "stopped_result": states[stop]["result"] if stop else None}
-    best = max(branches, key=lambda b: (branches[b]["depth"] / branches[b]["of"], b == "prove"))
+                          "stopped_result": states[stop]["result"] if stop else None,
+                          "not_applicable": [step for step in all_steps if step not in steps]}
+    best = max(branches, key=lambda b: (branches[b]["depth"] / max(branches[b]["of"], 1), b == "prove"))
     frontier = [b["stopped_at"] for b in branches.values()
                 if b["stopped_at"] and states[b["stopped_at"]]["needs_judgment"]]
     return {"best": best, "branches": branches, "milestones": states, "frontier_judgments": sorted(set(frontier))}

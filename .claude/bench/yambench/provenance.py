@@ -54,7 +54,9 @@ def materialize(repo: Path, sha: str, dest: Path) -> Path:
         raise BenchError("git archive would alter the snapshot: .gitattributes uses export-ignore/export-subst")
     if not hasattr(tarfile, "data_filter"):
         raise BenchError("Python 3.11.4+ is required for safe snapshot extraction")
-    proc = subprocess.run(["git", "-C", str(repo), "archive", "--format=tar", sha], capture_output=True)
+    # Recorded hashes are of committed bytes; a CRLF checkout setting must not rewrite the snapshot.
+    proc = subprocess.run(["git", "-C", str(repo), "-c", "core.autocrlf=false", "-c", "core.eol=lf",
+                           "archive", "--format=tar", sha], capture_output=True)
     if proc.returncode:
         raise BenchError(f"git archive {sha} failed: {proc.stderr.decode(errors='replace').strip()}")
     dest.mkdir(parents=True, exist_ok=True)
