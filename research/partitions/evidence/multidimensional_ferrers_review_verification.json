@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "n5_hessenberg_vectors": 42,
+  "phi221_tableaux_checked": 208,
+  "phi221_3d_promoted_witnesses": 20,
+  "six_sector_e41_negative_tableaux_cancelled": 323,
+  "six_sector_e41_positive_survivors": 259,
+  "n6_hessenberg_vectors": 132,
+  "phi2211_tableaux_checked": 2592,
+  "phi2211_3d_promoted_witnesses": 330,
+  "six_sector_e33_negative_tableaux_cancelled": 801,
+  "six_sector_e33_positive_survivors": 207,
+  "eight_sector_e51_negative_tableaux_cancelled": 3980,
+  "eight_sector_e51_positive_survivors": 2820,
+  "beta_rearrangement_bijection": [
+    {
+      "n": 1,
+      "partitions_checked": 1,
+      "total_valid_betas": 1,
+      "assurance": "finite exact two-sided roundtrip including sigma and sign"
+    },
+    {
+      "n": 2,
+      "partitions_checked": 2,
+      "total_valid_betas": 3,
+      "assurance": "finite exact two-sided roundtrip including sigma and sign"
+    },
+    {
+      "n": 3,
+      "partitions_checked": 3,
+      "total_valid_betas": 7,
+      "assurance": "finite exact two-sided roundtrip including sigma and sign"
+    },
+    {
+      "n": 4,
+      "partitions_checked": 5,
+      "total_valid_betas": 17,
+      "assurance": "finite exact two-sided roundtrip including sigma and sign"
+    },
+    {
+      "n": 5,
+      "partitions_checked": 7,
+      "total_valid_betas": 37,
+      "assurance": "finite exact two-sided roundtrip including sigma and sign"
+    },
+    {
+      "n": 6,
+      "partitions_checked": 11,
+      "total_valid_betas": 85,
+      "assurance": "finite exact two-sided roundtrip including sigma and sign"
+    }
+  ]
+}

@@ -1,21 +1,40 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{booktabs}
-\usepackage{hyperref}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{xurl}
+\emergencystretch=3em
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=blue!60!black,urlcolor=blue!60!black]{hyperref}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
 
-\title{From a 2D Corner Obstruction to $3\mathrm{D}$ and $d\mathrm{-Dimensional}$ Ferrers Diagram Bijections:\\
-Tableau Positivity and the Kanade--Russell $I_1$ Identity}
-\author{Christopher Yamba \and Antigravity (Google DeepMind)}
-\date{October 2026}
+\newcommand{\invG}{\operatorname{inv}_G}
+\newcommand{\inc}{\operatorname{inc}}
+\newcommand{\TP}{\mathcal{T}_P}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\title{\textbf{From a 2D Corner Obstruction to $3\mathrm{D}$ and $d\mathrm{-Dimensional}$ Ferrers Diagram Bijections:\\
+Tableau Positivity and the Kanade--Russell $I_1$ Identity}}
+\author{\textbf{Author: Christopher Yamba}\\
+\small Principal Investigator \& Originator of the $3\mathrm{D}$/$d\mathrm{D}$ Ferrers Insight\\
+\small \url{https://www.christopheryamba.com}
+\\[6pt]
+\small \textbf{Collaborator:} Antigravity (Google DeepMind)\\
+\small \footnotesize Collaborative Formalization \& Symbolic Verification}
+\date{Revision 2: October 26, 2026\\\small Original record: \texttt{2026-10-24T22:42:00Z}}
 
 \begin{document}
 \maketitle
@@ -23,96 +42,351 @@ Tableau Positivity and the Kanade--Russell $I_1$ Identity}
 \begin{abstract}
 In \emph{From a Failed Corner Slide to a Verified Tableau Injection} (\texttt{main.tex}), a naive two-dimensional corner slide on $P$-tableaux fails when the moved corner cell $b$ lands above a singleton entry $c_1 <_P b$, creating an illegal vertical $P$-descent (Figure~1), and Cho--Huh's comparable-prefix slide $B$ ceases to be injective on posets of height at least three when a three-element chain $a <_P c_1 <_P b$ causes two distinct $(2,2,1)$ tableaux to collide (Theorem~4.3).
 
-This article presents the resolution of both obstructions---together with a simultaneous construction for the $a \ge 3$ sectors of the Kanade--Russell $I_1$ (KR1) partition bijection ($\mathcal{B} \leftrightarrow \mathcal{U} \leftrightarrow \mathcal{C} \leftrightarrow \mathcal{A}$)---originating from \textbf{Christopher Yamba's geometric insight and suggestion}: instead of restricting slides to a two-dimensional Ferrers diagram $(x, y)$, slide the obstructed corner cell into a three-dimensional Ferrers diagram $(x, y, z)$ where entries strictly descend in $P$ along the extra third axis, and extend the configuration space to $d > 3$ dimensions when higher-order chains or multi-scale column weights interact. All core combinatorial and algebraic theorems are accompanied by a machine-checked Lean~4.34.0 (\texttt{Std}-only) supplementary certificate (\texttt{MultidimensionalFerrers.lean}) and exact Python verification suites.
+Christopher Yamba's geometric suggestion---to explore a third Ferrers coordinate and higher-dimensional extensions---motivates the constructions studied here. We prove a local fiber-injectivity lemma, conditional tableau rotations, a general hook-slide argument, a signed-array cascade, and a corrected $n$-dimensional $\beta$-rearrangement bijection. Exact Python enumeration verifies the complete routing maps and selected Dual Jacobi--Trudi cancellations for all $42$ natural unit interval orders at $n=5$ and all $132$ at $n=6$.
+
+For Kanade--Russell $I_1$ (KR1), we record weight identities, proposed cone and sector rules, and a finite round-trip check across $5{,}461$ states of weights $0\le N\le40$. The implementation uses an explicit finite apex table; it is not a lookup-free construction or a proof of an unrestricted KR1 bijection. The supplementary Lean certificate proves specified local lemmas and arithmetic identities, not the complete routing algorithms, the $\beta$ theorem, or the general KR1 construction. Revision 2 corrects the rotation selection and determinant permutation convention and separates these assurance levels.
 \end{abstract}
+
+\tableofcontents
 
 \section{Introduction and Attribution of the Geometric Insight}
 
-Let $P = ([n], <_P)$ be a finite poset and $G = \mathrm{inc}(P)$ its incomparability graph. In Shareshian--Wachs and Gasharov's tableau expansion of the chromatic quasisymmetric function $X_G(x; q)$, a $P$-tableau $T \in \mathcal{T}_P(\mu)$ of shape $\mu \vdash n$ satisfies two planar order conditions:
+Let $P = ([n], <_P)$ be a finite poset and $G = \inc(P)$ its incomparability graph. The tableau expansions of Gasharov~\cite{Gas96} and Shareshian--Wachs~\cite{SW16} apply under their respective hypotheses; the $q$-weighted applications here use natural unit interval orders. Independently, a $P$-tableau $T \in \TP(\mu)$ of shape $\mu = (\mu_1, \dots, \mu_\ell) \vdash n$ is a bijective filling of the two-dimensional Ferrers diagram of $\mu$ by $\{1, \dots, n\}$ satisfying two planar conditions:
 \begin{enumerate}
-  \item \textbf{Row-strict $P$-chains ($x$-axis):} $T_{i,j} <_P T_{i,j+1}$ along each row.
-  \item \textbf{Column non-descent ($y$-axis):} $T_{i+1,j} \not<_P T_{i,j}$ down each column.
+  \item \textbf{Row-strict $P$-chains ($x$-axis):} $T_{i,j} <_P T_{i,j+1}$ for all $1 \le j < \mu_i$.
+  \item \textbf{Column non-descent ($y$-axis):} $T_{i+1,j} \not<_P T_{i,j}$ for all $1 \le j \le \mu_{i+1}$.
 \end{enumerate}
+Each tableau $T$ carries the graph inversion weight $\invG(T) = |\{(u, v) \in E(G) : u < v \text{ and } \mathrm{row}_T(v) < \mathrm{row}_T(u)\}|$.
 
-When $T$ has shape $(2^{k+1}, 1^m)$ with last two-cell row $(a, b)$ followed by singleton leg entries $c_1, \dots, c_m$, the naive two-dimensional slide splits $(a, b)$ into $(a), (b)$ above $(c_1)$. Whenever $c_1 <_P b$, this creates a vertical descent $c_1 <_P b$ along the $y$-axis (Figure~1 of \texttt{main.tex}).
+When $T$ has two-column shape $(2^{k+1}, 1^m)$ with last two-cell row $(a, b)$ at row $k+1$ followed by singleton leg entries $(c_1), \dots, (c_m)$, the naive two-dimensional corner slide splits $(a, b)$ into $(a), (b)$ directly above $(c_1)$. As documented in Figure~1 of \texttt{main.tex} for the Hessenberg vector $h = (3,4,4,5,5)$, whenever $c_1 <_P b$, this planar slide produces an illegal vertical descent $c_1 <_P b$:
+\[
+  T = \begin{array}{cc} 1 & 4 \\ 2 & 5 \\ 3 & \end{array}
+  \quad\xrightarrow{\text{naive 2D slide}}\quad
+  \begin{array}{cc} 1 & 4 \\ 2 & \\ 5 & \\ 3 & \end{array}
+  \qquad (\text{invalid: } 3 <_P 5 \text{ violates column non-descent}).
+\]
 
-\begin{remark}[Christopher Yamba's $3\mathrm{D}$ and $d\mathrm{D}$ Ferrers Principle]
-Inspecting Figure~1 of \texttt{main.tex}, Christopher Yamba observed that if one embeds the tableau in three-dimensional space $(x, y, z)$ and slides the corner cell $b$ along the \textbf{third axis ($z$-axis)} where entries strictly descend in $P$ ($b >_P c_1 >_P \dots >_P c_p$), the planar column obstruction disappears; furthermore, extending from $3\mathrm{D}$ to $d > 3$ dimensions provides a natural coordinate system for multi-sector cancellations and multi-scale partition bijections.
+\begin{remark}[Christopher Yamba's $3\mathrm{D}$ and $d\mathrm{D}$ Ferrers Diagram Principle]
+\label{rem:yamba-insight}
+Inspecting the invalid target of Figure~1, \textbf{Christopher Yamba} proposed the following geometric resolution:
+\begin{quote}
+\emph{Instead of working strictly in $2\mathrm{D}$ and sliding cells within the $(x,y)$ plane, slide the obstructed corner cell into a $3\mathrm{D}$ Ferrers diagram $(x,y,z)$ where entries strictly descend along the extra third axis; furthermore, extend the construction to $d > 3$ dimensions whenever higher-order poset chains or multi-scale partition coordinates interact.}
+\end{quote}
+For the present constructions the extra coordinate is geometric bookkeeping, rather than a proved general theory of three-dimensional tableaux. Its conditions are:
+\begin{itemize}
+  \item \textbf{$x$-axis (rows):} strict $P$-chains ($u <_P v$).
+  \item \textbf{$y$-axis (columns):} no $P$-descents ($v \not<_P u$).
+  \item \textbf{$z$-coordinate bookkeeping:} each prefix entry satisfies $c_i <_P b$; this does not assert a chain among the $c_i$. Here $C = (c_1, \dots, c_p)$ is the maximal initial prefix of the singleton leg satisfying $c_i <_P b$.
+\end{itemize}
+Comparable-prefix insertion moves $b$ below $C$ and avoids the original adjacent descent. The local fiber analysis distinguishes:
+\begin{enumerate}
+  \item the \textbf{sufficient non-three-chain fiber} (under the stronger global predicate $\forall z,\;z<_P b\Rightarrow a\not<_P z$), which unfolds losslessly onto the $y$-axis as Cho--Huh's comparable-prefix slide $B(T) \in \TP(2^k, 1^{m+2})$, and
+  \item the \textbf{three-chain collision locus} ($\exists z \in C,\; a <_P z <_P b$), which motivates testing rotations into a length-$3$ row; validity and inversion weight must still be checked.
+\end{enumerate}
 \end{remark}
 
-\section{3D Fiber Dichotomy and Resolution of the Height-3 Collision}
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  box/.style={draw, rounded corners=3pt, minimum width=3.4cm, minimum height=1.8cm, align=center, font=\small},
+  arrow/.style={-{Stealth[length=2.5mm]}, thick}
+]
+  \node[box] (src) at (0,0) {\textbf{2D Source $T \in \TP(2,2,1)$}\\[2pt]
+    Row 1: $(u, v)$\\Row 2: $(a, b)$\\Row 3: $(c_1)$};
+  \node[box, fill=blue!5] (d3) at (5.3,0) {\textbf{3D Ferrers Slide $(x,y,z)$}\\[2pt]
+    Row 1: $(u, v)$\\Row 2: $(a)$\\$z$-fiber: $b >_P c_1$};
+  \node[box, fill=green!7] (f2111) at (11.2,1.25) {\textbf{No 3-Chain ($a \not<_P c_1$)}\\[2pt]
+    Unfold $z \to y$-axis:\\$((u,v),(a),(c_1),(b)) \in \TP(2,1,1,1)$};
+  \node[box, fill=orange!10] (f32) at (11.2,-1.25) {\textbf{Collision predicate $W(T)$}\\[2pt]
+    Rotate $z \to x$-axis:\\$\Phi_{221}(T) \in \TP(3,2)$};
 
-\begin{theorem}[Non-3-Chain Local Fiber Injectivity; \texttt{bubble\_injective\_local\_fiber}]
+  \draw[arrow] (src) -- node[above, font=\scriptsize] {slide $b$ to $z$-axis} (d3);
+  \draw[arrow] (d3.east) -- (f2111.west);
+  \draw[arrow] (d3.east) -- (f32.west);
+\end{tikzpicture}
+\caption{Schematic of the motivating geometry at $n=5$. The complete routing uses the collision, validity and weight predicates below, for natural unit interval orders.}
+\label{fig:3d-slide}
+\end{figure}
+
+\section{Exact 3D Fiber Dichotomy and Resolution of the Height-3 Collision}
+
+\subsection{Non-Three-Chain Local Fiber Injectivity}
+
+In \texttt{CornerSlide.lean}, injectivity of Cho--Huh's comparable-prefix insertion $\mathrm{bubbleInsert}$ was previously proved under the global poset hypothesis $\mathrm{NoThreeChain}(r)$ (height at most two). Viewing the slide in $3\mathrm{D}$ shows that global height at most two is unnecessary on the 2D fiber: injectivity holds inside posets of \emph{arbitrary} height on the exact sub-domain where $(a, b)$ has no intermediate element $z$ with $a <_P z <_P b$.
+
+\begin{theorem}[Non-3-Chain Local Fiber Injectivity; \nolinkurl{bubble_injective_local_fiber}]
 \label{thm:local-fiber}
-Let $r$ be a decidable relation on $\mathbb{N}$, and define the local non-three-chain predicate
+Let $r$ be a decidable relation on $\N$, and define the local non-three-chain predicate
 \[
   \mathrm{NoLocalThreeChain}(r, a, b) \;:=\; \forall z,\; r(z, b) \implies \neg\, r(a, z).
 \]
-Then for any $b, b'$ and singleton tails $\mathit{tail}, \mathit{tail}'$ satisfying $r(a, b)$, $r(a, b')$, $\mathrm{NoLocalThreeChain}(r, a, b)$, and $\mathrm{NoLocalThreeChain}(r, a, b')$, equality of Cho--Huh's comparable-prefix insertions
+Fix $b,b'\in\N$ and singleton tails $\mathit{tail}, \mathit{tail}'$ satisfying $r(a, b)$, $r(a, b')$, $\mathrm{NoLocalThreeChain}(r, a, b)$, and $\mathrm{NoLocalThreeChain}(r, a, b')$. Then equality of the comparable-prefix insertions
 \[
   \mathrm{bubbleInsert}(r, b, \mathit{tail}) = \mathrm{bubbleInsert}(r, b', \mathit{tail}')
 \]
-implies $b = b'$ and $\mathit{tail} = \mathit{tail}'$, without any global height restriction on $r$.
+implies $b = b'$ and $\mathit{tail} = \mathit{tail}'$, recovered explicitly by $\mathrm{extractFirst}(r(a, \cdot))$.
 \end{theorem}
+\begin{proof}
+Suppose $\mathrm{bubbleInsert}(r, b, \mathit{tail})$ decomposes $\mathit{tail} = C \mathbin{++} D$ where every $z \in C$ satisfies $r(z, b)$. By $\mathrm{NoLocalThreeChain}(r, a, b)$, no $z \in C$ satisfies $r(a, z)$, whereas $r(a, b)$ holds by hypothesis. Therefore $b$ is the unique first entry of $C \mathbin{++} (b :: D)$ satisfying $r(a, \cdot)$, so $\mathrm{extractFirst}(r(a, \cdot))$ returns $\mathrm{some}(b, C \mathbin{++} D) = \mathrm{some}(b, \mathit{tail})$. Applying $\mathrm{extractFirst}(r(a, \cdot))$ to both sides yields $(b, \mathit{tail}) = (b', \mathit{tail}')$. (Machine-checked in \nolinkurl{MultidimensionalFerrers.bubble_injective_local_fiber}.)
+\end{proof}
 
-When $\mathrm{NoLocalThreeChain}(r, a, b)$ fails on $\mathcal{T}_P(2,2,1)$---that is, when $T = ((u,v),(a,b),(c))$ satisfies $a <_P c <_P b$ and $c \not<_P v$---its image $B(T) = ((u,v),(a),(c),(b))$ collides with $B(T')$ for $T' = ((u,v),(a,c),(b)) \in \mathcal{T}_P(2,2,1)$. Rotating the 3-chain along the third Ferrers axis into shape $(3,2)$ resolves the collision:
+\subsection{Exact Collision Locus on $\TP(2,2,1)$ and 3D Rotation into $\TP(3,2)$}
 
-\begin{theorem}[3D Rotation into Shape $(3,2)$; \texttt{promote32\_tableau\_valid}, \texttt{promote32\_tableau\_graph\_inversions}]
+\begin{theorem}[3D Rotation into Shape $(3,2)$; \texttt{promote32\_*} and $\Phi_{221}$]
 \label{thm:promote32}
-Let $r$ be a transitive relation on $\mathbb{N}$ and $T = [[u,v],[a,b],[c]]$ a valid tableau satisfying $r(a, c)$, $r(v, b)$, and $\neg\, r(c, v)$. Then the 3D-rotated filling
-\[
-  \mathrm{promote32}(u, v, a, b, c) := [[u, v, b], [a, c]]
-\]
-is a valid tableau of shape $(3,2)$ on the same vertex set and preserves the row-based graph inversion statistic:
-\[
-  \mathrm{tableauGraphInversions}(r, \mathrm{promote32}(u, v, a, b, c))
-  = \mathrm{tableauGraphInversions}(r, [[u, v], [a, b], [c]]).
-\]
+Let $P = ([5], <_P)$ be a poset and $T = ((u, v), (a, b), (c)) \in \TP(2, 2, 1)$.
+\begin{enumerate}
+  \item Two distinct tableaux in $\TP(2,2,1)$ have the same image under Cho--Huh's slide $B : \TP(2,2,1) \to \TP(2,1,1,1)$ if and only if one of them satisfies the local three-chain collision condition
+  \begin{equation}\label{eq:collision-cond}
+    a <_P c <_P b \quad\text{and}\quad c \not<_P v,
+  \end{equation}
+  in which case its unique collision partner in $\TP(2,2,1)$ is $T' = ((u, v), (a, c), (b))$ and $B(T) = B(T') = ((u, v), (a), (c), (b))$.
+  \item Whenever~\eqref{eq:collision-cond} holds and $v <_P b$, the $3\mathrm{D}$-rotated filling
+  \[
+    \mathrm{promote32}(u, v, a, b, c) := ((u, v, b), (a, c))
+  \]
+  is a valid tableau in $\TP(3,2)$ with $\invG(\mathrm{promote32}(T)) = \invG(T)$ for \textbf{every} transitive poset $P$.
+  \item \textbf{Finite computational statement, not a Lean theorem.} For every natural unit interval order $P=P_h$ at $n=5$, use the following ordered candidates:
+  \[
+  \begin{array}{ll}
+  R_1(T)=((u,v,b),(a,c)),& R_2(T)=((a,c,b),(u,v)),\\
+  R_3(T)=((u,a,v),(c,b)),& R_4(T)=((u,c,b),(a,v)).
+  \end{array}
+  \]
+  Write $W(T)$ for condition~\eqref{eq:collision-cond}, and set
+  \[
+  A_i(T):\Longleftrightarrow R_i(T)\in\TP(3,2)
+       \ \text{and}\ \invG(R_i(T))=\invG(T).
+  \]
+  The corrected construction is
+  \begin{equation}\label{eq:phi221}
+  \Phi_{221}(T)=\begin{cases}
+    B(T),&\neg W(T),\\
+    R_{i_*(T)}(T),&W(T),\quad i_*(T)=\min\{i\in\{1,2,3,4\}:A_i(T)\}.
+  \end{cases}
+  \end{equation}
+  The two output shapes distinguish the disjoint-union sectors. Exhaustive enumeration checks existence of $i_*$, validity, weight preservation, and injectivity for all $42$ such $h$. Weight preservation of an accepted candidate follows from its predicate; candidate coverage and injectivity are separate finite checks.
+\end{enumerate}
 \end{theorem}
+\begin{proof}
+Part~(1): Since the singleton suffix of $T \in \TP(2,2,1)$ has length $1$, $B(T)$ is either $((u,v),(a),(b),(c))$ (when $c \not<_P b$) or $((u,v),(a),(c),(b))$ (when $c <_P b$). Two distinct tableaux collide iff one is $T = ((u,v),(a,b),(c))$ with $c <_P b$ and the other is $T' = ((u,v),(a,c),(b))$ with $b \not<_P c$; validity of $T'$ in $\TP(2,2,1)$ requires $a <_P c$ and $c \not<_P v$.
 
-\section{Universal Interior Hook Slides and 6-Sector Cancellation}
+Part~(2): When $u <_P v <_P b$ and $a <_P c$, both rows $(u, v, b)$ and $(a, c)$ are strict $P$-chains by transitivity of $<_P$. Column non-descent holds because $a \not<_P u$ (from $T \in \TP(2,2,1)$) and $c \not<_P v$ (from~\eqref{eq:collision-cond}). Since flattened words of $T$ and $\mathrm{promote32}(T)$ differ only by swapping the comparable pair $(a, b)$ ($a <_P b$), $\invG$ is preserved identically (machine-checked in \nolinkurl{promote32_tableau_valid} and \nolinkurl{promote32_tableau_graph_inversions}; the concrete witness $T_2 = [[1,2],[3,5],[4]] \mapsto [[1,2,5],[3,4]]$ of Theorem~4.3 in \texttt{main.tex} is checked in \nolinkurl{collision_witness_promoted_valid}).
 
-\begin{theorem}[Universal Endpoint and Interior Hook Slides; \texttt{hookBubbleEnd\_*}, \texttt{hookBubbleMid\_*}]
-\label{thm:hook-slides}
-Let $r$ be an asymmetric decidable relation on $\mathbb{N}$ and let $T = [u, v, w] :: \mathrm{singletons}(\mathit{tail})$ be a valid hook tableau of shape $(3, 1^m)$. Then both the endpoint hook slide
+Part~(3): Exhaustively verified across all natural unit interval Hessenberg vectors at $n=5$ in \nolinkurl{multidimensional_ferrers.py}; this is computational evidence for this fixed size. The earlier displayed branch predicates were incorrect. For $h=(2,2,4,5,5)$ and $T=((1,4),(2,5),(3))$, $\invG(T)=1$, whereas $R_2(T)=((2,3,5),(1,4))$ has weight $2$. The corrected predicate rejects $R_2$ and selects $R_4(T)=((1,3,5),(2,4))$, of weight $1$. The Lean theorem for $R_1=\mathrm{promote32}$ retains its explicit hypotheses and does not establish the complete routing map.
+\end{proof}
+
+\section{Universal Interior Hook Slides and 6-Sector Cancellation for $[e_{4,1}] X_G$}
+
+\subsection{Universal Interior and Endpoint Hook Slides}
+
+\begin{theorem}[Universal Interior Hook Slide $\Psi_{\mathrm{hook}}^{(m)}$; \texttt{hookBubbleEnd\_*}, \texttt{hookBubbleMid\_*}]
+\label{thm:hook-slide}
+Let $P$ be any finite asymmetric poset and let $T = ((u_1, \dots, u_k), (c_1), \dots, (c_r)) \in \TP(k, 1^r)$ be a hook $P$-tableau ($k \ge 2$). For \textbf{any} arm index $m \in \{2, \dots, k\}$, let $C = (c_1, \dots, c_p)$ be the longest prefix of $(c_1, \dots, c_r)$ such that $c_i <_P u_m$. Then removing $u_m$ from the arm and inserting $(u_m)$ immediately after $C$:
 \[
-  \mathrm{hookBubbleEnd}(r, u, v, w, \mathit{tail}) := [u, v] :: \mathrm{singletons}(\mathrm{bubbleInsert}(r, w, \mathit{tail}))
+  \Psi_{\mathrm{hook}}^{(m)}(T) := \big((u_1, \dots, \widehat{u_m}, \dots, u_k),\ (c_1), \dots, (c_p), (u_m), (c_{p+1}), \dots, (c_r)\big)
 \]
-and the interior hook slide
-\[
-  \mathrm{hookBubbleMid}(r, u, v, w, \mathit{tail}) := [u, w] :: \mathrm{singletons}(\mathrm{bubbleInsert}(r, v, \mathit{tail}))
-\]
-are valid tableaux of shape $(2, 1^{m+1})$ with $\mathrm{tableauGraphInversions}$ equal to that of $T$.
+is a valid hook tableau in $\TP(k-1, 1^{r+1})$ satisfying $\invG(\Psi_{\mathrm{hook}}^{(m)}(T)) = \invG(T)$.
 \end{theorem}
+\begin{proof}
+Since $(u_1, \dots, u_k)$ is a strict $P$-chain, removing $u_m$ ($m \ge 2$) leaves a non-empty strict $P$-chain with first entry $u_1 <_P u_m$. Since $u_1 <_P u_m$ and $(u_1, c_1, \dots, c_r)$ has no $P$-descents, $\mathrm{bubble\_noDescent}$ implies that $(u_1, c_1, \dots, c_p, u_m, c_{p+1}, \dots, c_r)$ has no $P$-descents. Moreover, $u_m$ only passes across arm elements $u_j$ ($j > m$, where $u_m <_P u_j$) and leg prefix elements $c_i$ ($1 \le i \le p$, where $c_i <_P u_m$); every such pair is comparable in $P$ and thus a non-edge of $G = \inc(P)$, preserving $\invG$. (Machine-checked for $k=3$, $m \in \{2, 3\}$ and arbitrary singleton tail in \texttt{hookBubbleEnd\_*} and \texttt{hookBubbleMid\_*}.)
+\end{proof}
 
-\begin{theorem}[$n$-Dimensional $\beta$-Rearrangement Bijection for Dual Jacobi--Trudi Sectors]
+\subsection{$n$-Dimensional $\beta$-Rearrangement Bijection for Dual Jacobi--Trudi Sectors}
+
+\begin{theorem}[$n$-Dimensional $\beta$-Rearrangement Characterization of Dual Jacobi--Trudi Sectors]
 \label{thm:beta-bijection}
-Fix $n \ge 1$ and $\lambda = (\lambda_1, \dots, \lambda_k) \vdash n$, and let $\hat{\lambda} = (\lambda_1, \dots, \lambda_k, 0^{n-k}) \in \mathbb{N}^n$. The non-vanishing determinant terms $(\mu, \sigma)$ contributing to $[e_\lambda] \det_{1 \le i,j \le n}(e_{\mu'_i - i + j})$ are in canonical bijection with rearrangements $\beta = (\beta_0, \dots, \beta_{n-1}) \in \mathrm{Perm}(\hat{\lambda})$ whose shifted keys $\kappa_j(\beta) = \beta_j - j$ are pairwise distinct.
+For the $X_G$ application assume $P$ is a natural unit interval order; the determinant-term bijection itself is algebraic and does not require a poset. Fix $n \ge 1$ and $\lambda = (\lambda_1, \dots, \lambda_k) \vdash n$, and pad $\lambda$ with zeros to $\hat{\lambda} = (\lambda_1, \dots, \lambda_k, 0^{n-k}) \in \N^n$. The non-vanishing determinant terms $(\mu, \sigma)$ contributing to $[e_\lambda] X_G(x; q)$ in the Dual Jacobi--Trudi identity
+\[
+  [e_\lambda] X_G(x; q) = \sum_{\mu \vdash n} F_\mu(q)\, [e_\lambda] \det_{1 \le i,j \le n}(e_{\mu'_i - i + j})
+\]
+biject $1$-to-$1$ with rearrangements $\beta = (\beta_0, \dots, \beta_{n-1}) \in \mathrm{Perm}(\hat{\lambda})$ whose shifted keys
+\[
+  \kappa_j(\beta) := \beta_j - j \qquad (0 \le j < n)
+\]
+are pairwise distinct: sorting $\kappa_{\tau(0)} > \kappa_{\tau(1)} > \dots > \kappa_{\tau(n-1)}$ uniquely recovers $\sigma = \tau \in S_n$, conjugate column lengths $\mu'_i = \kappa_{\tau(i)} + i \ge 0$, and sign $\operatorname{sgn}(\sigma) = (-1)^{\operatorname{inv}(\tau)}$.
 \end{theorem}
+\begin{proof}
+A determinant term $(\mu, \sigma)$ contributes $e_\lambda$ iff the vector $\beta$ defined by $\beta_{\sigma(i)} = \mu'_i - i + \sigma(i)$ ($0 \le i < n$) is a rearrangement of $\hat{\lambda}$. Subtracting $j = \sigma(i)$ gives $\kappa_{\sigma(i)}(\beta) = \mu'_i - i$. Since $\mu'_0 \ge \mu'_1 \ge \dots \ge \mu'_{n-1} \ge 0$, the sequence $i \mapsto \mu'_i - i$ is strictly decreasing, so the keys $\kappa_j(\beta)$ are pairwise distinct and their unique decreasing sort order $\tau$ equals $\sigma$. Conversely, any rearrangement $\beta \in \mathrm{Perm}(\hat{\lambda})$ with distinct keys $\kappa_j(\beta)$ has $\kappa_{\tau(i)}(\beta) \ge \kappa_{\tau(n-1)}(\beta) + (n - 1 - i) \ge -(n-1) + (n - 1 - i) = -i$, so $\mu'_i := \kappa_{\tau(i)}(\beta) + i$ is weakly decreasing and non-negative. Its sum is
+\[
+ \sum_{i=0}^{n-1}\mu'_i
+ =\sum_{j=0}^{n-1}(\beta_j-j)+\sum_{i=0}^{n-1}i=n,
+\]
+so it is the padded conjugate of a unique partition $\mu\vdash n$. Set $\sigma=\tau$; then
+$\mu'_i-i+\sigma(i)=\kappa_{\tau(i)}+\tau(i)=\beta_{\tau(i)}$,
+recovering the original rearrangement exactly. In the other direction, strict decrease of $\mu'_i-i$ recovers the original $\sigma$ and then $\mu'$. Thus the constructions are mutual inverses, including determinant multiplicity, and the sign is $(-1)^{\operatorname{inv}(\tau)}$. This is a written proof; no Lean formalization of this bijection is claimed.
+
+For example, $n=3$, $\beta=(0,0,3)$ gives keys $(0,-1,1)$, $\tau=\sigma=(2,0,1)$, and $\mu'=(1,1,1)$. Using $\tau^{-1}=(1,2,0)$ instead produces determinant exponents $(2,2,-1)$ and is incorrect.
+\end{proof}
+
+For $n=5$ and $\lambda = (4, 1)$, Theorem~\ref{thm:beta-bijection} yields $7$ valid rearrangements $\beta \in \mathrm{Perm}(4,1,0,0,0)$ corresponding to the $6$ shapes $\mu \vdash 5$ with $c_{\mu,(4,1)} \ne 0$:
+\[
+  -F_{221} - F_{311} - 2F_5 + F_{2111} + F_{32} + F_{41}.
+\]
+Combining $\Phi_{221}$ on $\TP(2,2,1)$, $\Psi_{\mathrm{hook}}^{(5)}$ and row-splitting on the two copies of $\TP(5)$, and the four pure moves on $\TP(3,1,1)$ ($\Psi_{\mathrm{hook}}^{(3)}$, $\Psi_{\mathrm{hook}}^{(2)}$, row-2 merge into $\TP(3,2)$, and leg-to-arm promotion into $\TP(4,1)$) cancels all $323$ negative tableaux across all $42$ Hessenberg vectors at $n=5$, leaving $259$ positive survivors matching $[e_{4,1}] X_G(q)$ degree-by-degree.
+
+\subsection{Phase 2 Extension to $n = 6$ Across All $132$ Hessenberg Vectors}
+
+At $n = 6$, the conditional $3\mathrm{D}$ rotation $\mathrm{promote321}(u, v, a, b, c_1, c_2) = ((u, v, b), (a, c_2), (c_1)) \in \TP(3, 2, 1)$ (machine-checked under the hypotheses $a<_P c_2$, $v<_P b$, $c_2\not<_P v$, and, for weight preservation, $c_1<_P c_2$) supplies one candidate for the computational construction
+\[
+  \Phi_{2211} : \TP(2, 2, 1, 1) \hookrightarrow \TP(2, 1, 1, 1, 1) \sqcup \TP(3, 2, 1).
+\]
+The Python construction processes tableaux in its fixed enumeration order and chooses the first valid equal-weight candidate not already used in the target sector. It is not the single conditional Lean rotation. Across all $132$ Hessenberg vectors at $n = 6$, finite exhaustive checks establish:
+\begin{enumerate}
+  \item $\Phi_{2211}$ maps all $2{,}592$ tableaux in $\TP(2,2,1,1)$ injectively into $\TP(2,1,1,1,1) \sqcup \TP(3,2,1)$, promoting all $330$ local $3$-chain collisions into $\TP(3,2,1)$.
+  \item For $\lambda = (3, 3)$ ($-F_{51} - F_{321} + F_6 + F_{411} + F_{33} + F_{222}$), the $6$-sector injection \nolinkurl{six_sector_e33_injection} cancels all $801$ negative tableaux across all $132$ Hessenberg vectors, leaving $207$ positive survivors matching $[e_{3,3}] X_G(q)$ degree-by-degree.
+  \item For $\lambda = (5, 1)$ ($-F_{2211} - F_{3111} - F_{42} - F_{51} + F_{21111} + F_{321} + F_{411} + 2F_6$), the $8$-sector injection \nolinkurl{eight_sector_e51_injection} cancels all $3{,}980$ negative tableaux across all $132$ Hessenberg vectors, leaving $2{,}820$ positive survivors matching $[e_{5,1}] X_G(q)$ degree-by-degree.
+\end{enumerate}
 
 \section{Universal $k$-Dimensional First-Column Cascade in \texttt{SignedArrays}}
 
-\begin{theorem}[Universal $(0, k) \leftrightarrow (k-1, 1)$ Cascade; \texttt{cascade\_split\_preserves\_all}]
+\begin{theorem}[Universal $(0, k) \leftrightarrow (k-1, 1)$ Cascade; \nolinkurl{cascade_split_preserves_all}]
 \label{thm:cascade}
-For every decidable relation $r$, every non-empty list $\mathit{as}$ such that $(b :: \mathit{as})$ is a strict $r$-chain, and every signed-array suffix $\mathit{tail}$, the adjacent-row toggle between $((p, []), (q, b :: \mathit{as}))$ and $((q, \mathit{as}), (p, [b]))$ preserves \texttt{ShapeAt}, \texttt{Good}, and \texttt{graphInversions} for all $k = |b :: \mathit{as}| \ge 2$.
+For every decidable relation $r$, every non-empty list $\mathit{as}$ such that $(b :: \mathit{as})$ is a strict $r$-chain, and every signed-array suffix $\mathit{tail}$, the adjacent-row toggle between
+\[
+  ((p, []), (q, b :: \mathit{as})) \quad\longleftrightarrow\quad ((q, \mathit{as}), (p, [b]))
+\]
+preserves \texttt{ShapeAt}, \texttt{Good}, chain validity, and \texttt{graphInversions} for all $k = |b :: \mathit{as}| \ge 2$.
 \end{theorem}
+\begin{proof}
+Since $(b :: \mathit{as})$ is a strict $r$-chain with $\mathit{as} = a_1 :: \mathit{rest}$, we have $r(b, a)$ for every $a \in \mathit{as}$. In particular $r(b, a_1)$ implies $\neg \mathrm{FirstPair}(r, [a_1, \dots], [b])$ matches $\mathrm{GoodFirst}$ of $((p, []), (q, b :: \mathit{as}))$, and moving $b$ past $\mathit{as}$ in the flattened word swaps $b$ only across elements $a \in \mathit{as}$ with $r(b, a)$, preserving $\mathrm{wordWeight}(\mathrm{graphScore}(r), \cdot)$ by induction on $\mathit{as}$ (\nolinkurl{comparable_pass_wordWeight} and \nolinkurl{cascade_split_preserves_all} in \nolinkurl{MultidimensionalFerrers.lean}).
+\end{proof}
+The named Lean theorem states equivalences of \texttt{ShapeAt} and \texttt{Good}, and equality of inversion weight. It does not assert that either signed array is a globally good tableau; both local two-row configurations fail the full \texttt{Good} predicate.\par
 
 \section{6D Ferrers Cones and the Kanade--Russell $I_1$ Bijection}
 
+\subsection{Scale-3 Self-Similarity and Universal Head-Offset Identities}
+
+In the Kanade--Russell $I_1$ (KR1) identity ($\mathcal{B} \leftrightarrow \mathcal{U} \leftrightarrow \mathcal{C} \leftrightarrow \mathcal{A}$), a cluster configuration $C = (a, b, \mu, \nu) \in \mathcal{C}$ has base weight $Q(a, b) = a^2 + 3ab + 3b^2$ when $\mu = 0$ and $\nu = 0$.
+
 \begin{theorem}[Scale-3 Self-Similarity and 6D Octant Weight Identities; \texttt{kr1\_*}]
 \label{thm:kr1-identities}
-Let $Q(a, b) = a^2 + 3ab + 3b^2$ be the Kanade--Russell $I_1$ base quadratic form. For all $c, r, b \in \mathbb{N}$ and $a \ge 1$:
+For all $c, r, b \in \N$ and $a \ge 1$:
 \begin{align}
   Q(3c + r, b) &= r^2 + 3r(b + 2c) + 3\,Q(b, c), \label{eq:self-sim}\\
   Q(3c, b) &= 3\,Q(b, c), \label{eq:scale3}\\
   Q(a, b) &= 3b(b + 1) + a^2 + 3(a - 1)b, \label{eq:head-offset}\\
+  3(b + 2) + 3(b + 1) + 3b(b + 1) &= Q(3, b), \label{eq:a3-core}\\
   (9 + 2r_2) + 6q_2 + 3d_3 + d_1 &= Q(3, 0) + 3d_3 + 2(3q_2 + r_2) + d_1. \label{eq:octant}
 \end{align}
 \end{theorem}
+\begin{proof}
+All five identities are arithmetic identities in $\N$ under the stated hypotheses, machine-checked in \nolinkurl{MultidimensionalFerrers.lean} (\nolinkurl{kr1_scale3_self_similarity}, \texttt{kr1\_scale3\_divisible}, \nolinkurl{kr1_head_offset_identity}, \texttt{kr1\_a3\_core\_weight}, and \nolinkurl{kr1_a3_b0_octant_weight}).
+\end{proof}
 
-\begin{theorem}[The 6D Ferrers Cone Theorem and Universal $(a=3, b=0)$ Bijection]
+\subsection{The 6-Dimensional Ferrers Cone Conjecture in $\mathcal{U} \setminus \mathcal{U}_{a \le 2}$}
+
+\begin{conjecture}[The 6D Ferrers Cone Conjecture]
 \label{thm:6d-cone}
-In the 6-dimensional column multiplicity space $(10^z, 9^y, 8^x, 6^{c_6}, 3^{c_3}, 1^{c_1})$, every head $(x, y, z) \in \mathbb{N}^3$ with $y \in \{1, 2\}$ and $x + z \ge 1$ ($0 \le z \le 3$) spans a full 3D octant $(c_6, c_3, c_1) \in \mathbb{N}^3$ (with $c_6 + c_3 + c_1 \ge 1$ when $x = 0$) inside $\mathcal{U} \setminus \mathcal{U}_{a \le 2}$. Together with equation~\eqref{eq:octant}, this yields an explicit, lookup-free, weight-preserving bijection for the entire infinite sector $(a=3, b=0, \forall \mu)$ (verified across all 710 states through weight $N = 35$) and completes the round-trip bijection $\mathcal{B} \leftrightarrow \mathcal{U} \leftrightarrow \mathcal{C} \leftrightarrow \mathcal{A}$ across all 758 states for $0 \le N \le 26$.
-\end{theorem}
+In the $6$-dimensional multiplicity space of columns $(10^z, 9^y, 8^x, 6^{c_6}, 3^{c_3}, 1^{c_1})$ (corresponding to column heights $h \in \{6, 5, 4, 3, 2, 1\}$), for \textbf{every} $(x, y, z) \in \N^3$ satisfying $y \in \{1, 2\}$ and $x + z \ge 1$ ($0 \le z \le 3$), the entire $3\mathrm{D}$ Ferrers octant
+\[
+  U(x, y, z, c_6, c_3, 1^{c_1}) = (10^z, 9^y, 8^x, 6^{c_6}, 3^{c_3}, 1^{c_1}) \qquad ((c_6, c_3, c_1) \in \N^3,\; c_6 + c_3 + c_1 \ge 1 \text{ if } x = 0)
+\]
+is universally valid in $\mathcal{U}$ and $100\%$ disjoint from the $a \le 2$ image $\mathcal{U}_{a \le 2}$ of \texttt{rr003\_a2.py}.
+\end{conjecture}
+\begin{remark}[Evidence and remaining obligations]
+The proposed argument observes that column-height differences $\Delta h$ between adjacent distinct parts in $\{6, 5, 4, 3, 2, 1\}$ are at most $4 < 5$. Whenever $h = 5$ (weight $9$) appears, it is followed by at least one shorter column ($x > 0$ or $c_6 + c_3 + c_1 \ge 1$), avoiding the forbidden terminal height $5q + 5$. Furthermore, in \texttt{rr003\_a2.py}, any state containing $9$ (height $5$) either has no $\{8, 10\}$ markers ($x = z = 0$) or has $y = 1$ with markers in $\{17, 19\}$; thus $y \in \{1, 2\}$ together with $x + z \ge 1$ lies completely outside $\mathcal{U}_{a \le 2}$. The terminal and image-exclusion arguments still require a complete proof from the definitions of $\mathcal U$ and the lower-sector image. Finite membership and exclusion checks cover $3{,}744$ states in \nolinkurl{rr004_multidim_cones.py}.
+\end{remark}
+
+\subsection{Proposed $(a=3,b=0)$ Rules and Finite Octant Recursion through $N=40$}
+
+For $C = (3, 0, (\mu_0, \mu_1, \mu_2), ())$, set $d_3 = \mu_0$, $d_2 = \mu_1 - \mu_0 = 3q_2 + r_2$ ($r_2 \in \{0, 1, 2\}$), and $d_1 = \mu_2 - \mu_1$. By~\eqref{eq:octant}, $\operatorname{wt}(C) = (9 + 2r_2) + 6q_2 + 3d_3 + d_1$, so each residue class $r_2 \in \{0, 1, 2\}$ of cluster coordinates is parameterized by a $3\mathrm{D}$ octant $(q_2, d_3, d_1) \in \N^3$ with step weights $(+6, +3, +1)$ of the same formal weight as $(6^{q_2}, 3^{d_3}, 1^{d_1})$. Table~\ref{tab:a3-b0} proposes target cores; equal weights alone do not prove a bijection into $\mathcal U$. Crucially, when $r_2 = 0$, $q_2 \ge 4$, and $d_3 \ge 1$ ($N \ge 36$), routing Subfamily~$3G$ into the 6D cone $(10, 9, 9, 8, 6^{q_2-4}, 3^{d_3-1})$ ($x=1, y=2, z=1$) is intended to avoid $(9, 9, 6^{\ge 2}, 3^{\ge 2}) \in \mathcal{U}_{a \le 2}$. Its weight identity is machine-checked in \nolinkurl{kr1_a3_b0_6d_cone_routing_weight} and the sector algorithm is verified across all $1{,}137$ states through $N=40$. Validity, disjointness, inverse behavior and completeness beyond the tested range remain proof obligations.
+
+More generally, the implementation reduces a cluster $C=(a,b,\mu,\nu)$ to its octant apex $(d_1 = d_3 = q_2 = 0, d_2 = r_2 \in \{0, 1, 2\})$ and uses the following proposed $3\mathrm{D}$ octant operators (\nolinkurl{rr004_multidim_cones.py}):
+\begin{enumerate}
+  \item \textbf{$+6$ operator $\mathrm{step\_six}$ / $\mathrm{unstep\_six}$} along $q_2 = \lfloor (\mu_{a-2} - \mu_{a-3}) / 3 \rfloor$ on super-primitive cores ($d_1 = d_3 = 0$),
+  \item \textbf{$+3$ operator $\mathrm{step\_three}$ / $\mathrm{unstep\_three}$} along $d_3 = \mu_{a-3} - \mu_{a-4}$ on primitive cores ($d_1 = 0$), and
+  \item \textbf{$+1$ operator $\mathrm{step\_one}$ / $\mathrm{unstep\_one}$} along $d_1 = \mu_{a-1} - \mu_{a-2}$ on proposed higher-sector targets:
+\end{enumerate}
+\[
+  \mathrm{step\_one}(U) = \begin{cases}
+    (10, 6^q) & \text{if } U = (9, 6^q) \text{ for } q \ge 1, \\
+    (12, 8, 6^q, 3^{r+1}) & \text{if } U = (10, 6^{2+q}, 3^r) \text{ for } q \ge 0,\; r \in \{0, 1\}, \\
+    (10, 9, 9, 6^q, 3^{r+1}) & \text{if } U = (10, 10, 6^{1+q}, 3^r, 1^4) \text{ for } q \ge 0,\; r \in \{0, 1\}, \\
+    (17, 10, 6, 3^{1+r}) & \text{if } U = (17, 9, 6, 3^{1+r}) \text{ for } r \ge 0, \\
+    (17, 12, 6, 3) & \text{if } U = (19, 12, 6), \\
+    U + (1,) & \text{otherwise.}
+  \end{cases}
+\]
+Across $0 \le N \le 40$, this operator triple reduces all $3{,}709$ states of $a \ge 3$ to $85$ cluster-coordinate apexes (three in the special $(a=3,b=0)$ sector and $82$ assigned by the explicit table) (including the scale-$3$ lift apex $(18, 10, 8)$ at $N = 36 = Q(6, 0) = 3Q(0, 2)$) and verifies the round-trip correspondence $\mathcal{B}_N \leftrightarrow \mathcal{U}_N \leftrightarrow \mathcal{C}_N \leftrightarrow \mathcal{A}_N$ across all $5{,}461$ states for $0 \le N \le 40$.
+
+\begin{table}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Subfamily} & \textbf{Domain in $(d_3, d_2)$} & \textbf{Primitive Core $U_{\mathrm{core}}(d_3, d_2)$ ($d_1 = 0$)} & \textbf{Head Signature} \\
+\midrule
+$3A$ & $d_2 = 0,\; \forall d_3 \ge 0$ & $(6^q, 3^r)$ where $\operatorname{divmod}(d_3 + 3, 2) = (q, r)$ & $()$ with $c_3 \in \{0, 1\}$ \\
+$3B$ & $d_2 = 1,\; \forall d_3 \ge 0$ & $(8, 3^{1+d_3})$ if $d_3 \le 1$; $(8, 6, 3^{d_3-1})$ if $d_3 \ge 2$ & $(8,)$ \\
+$3C$ & $d_2 = 2,\; \forall d_3 \ge 0$ & $(10, 3^{1+d_3})$ if $d_3 \le 1$; $(10, 6, 3^{d_3-1})$ if $d_3 \ge 2$ & $(10,)$ \\
+$3D$ & $d_2 = 3,\; \forall d_3 \ge 0$ & $(9, 6)$ if $d_3=0$; $(10, 8, 3^{d_3-1})$ if $d_3 \in \{1, 2\}$; $(10, 8, 6, 3^{d_3-3})$ if $d_3 \ge 3$ & $(9,)$ / $(10, 8)$ \\
+$3E$ & $d_2 = 3q_2 + 1 \ge 4$ & $(9, 8, 6^{q_2 - 1}, 3^{d_3})$ & $(9, 8)$ \\
+$3F$ & $d_2 = 3q_2 + 2 \ge 5$ & $(9, 9, 1)$ if $(q_2, d_3) = (1, 0)$; $(10, 9, 6^{q_2 - 1}, 3^{d_3})$ else & $(9, 9, 1)$ / $(10, 9)$ \\
+$3G_0$ & $d_2 = 3q_2 \ge 6,\; q_2 \le 3 \text{ or } d_3 = 0$ & $(9, 9, 6^{q_2 - 2}, 3^{1 + d_3})$ & $(9, 9)$ \\
+$3G_1$ & $d_2 = 3q_2 \ge 12,\; q_2 \ge 4,\; d_3 \ge 1$ & $(10, 9, 9, 8, 6^{q_2 - 4}, 3^{d_3 - 1})$ & $(10, 9, 9, 8)$ \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Proposed core rules for $(a=3,b=0)$, computationally checked through $N=40$.}
+\label{tab:a3-b0}
+\end{table}
+
+\section{Assurance Levels and Remaining Research}
+\begin{itemize}
+\item \textbf{Machine-checked local statements:} the Lean certificate proves local fiber injectivity, rotations under their explicit hypotheses, hook slides for arm length $3$, a signed-array cascade, and arithmetic weight identities. It does not prove the complete $\Phi$ algorithms or a KR1 bijection.
+\item \textbf{Written arguments:} the general hook-slide statement and the corrected $\beta$-rearrangement theorem have mathematical arguments above. The latter is additionally tested by permutation round trips; it is not a Lean theorem.
+\item \textbf{Finite computational verification:} complete routing and cancellation concern $n=5,6$ only; KR1 round trips concern $0\le N\le40$ only. These checks are exact but are not general proofs.
+\item \textbf{Unproved general claims:} unrestricted cone membership/exclusion and the global KR1 map require proofs of totality, validity, disjointness, inverse behavior and exhaustiveness. The code's \texttt{OCTANT\_APEX\_PAIRS} is an explicit finite lookup table of apex assignments, not a formula for every apex. Extending the table is research, not a consequence of the weight identities. In fact the current rules already fail at $N=41$ with a known apex: $C=(5,0,(0,1,2,6,7),())$ maps to $U=(19,12,6,3,1)$, but \texttt{decompose\_full} returns $(2,2,(5,5),(0,1))$. Thus the all-weight extension of the current rules is refuted, not merely unverified. The special $(a=3,b=0)$ sector passes an additional finite check through $N=60$ ($4{,}491$ states), which is not a general proof.
+\end{itemize}
+The next construction target is to repair the $+6,+3,+1$ orbit near $(19,12,6)$ while proving disjointness from the lower-sector image. Adding missing apexes alone cannot repair the exhibited collision. For tableau routing, a stronger next target is an explicit inverse and a proof of candidate coverage under natural unit interval hypotheses.
+
+\section{Supplementary Lean 4.34.0 Verification Index}
+
+Lean was unavailable locally. GitHub CI subsequently rebuilt the unchanged Lean~4.34.0 certificate (73 theorem reports); its fresh source-bound record is included as \nolinkurl{lean_std_ci_2026-10-26.json} in the evidence package. The existing source-bound record reports $19$ indexed theorem results in \nolinkurl{MultidimensionalFerrers.lean}, checked with zero warnings and zero \texttt{sorry} under Lean~4.34.0 (\texttt{Std} only), depending solely on standard axioms $\{\texttt{propext}, \texttt{Quot.sound}, \texttt{Classical.choice}\}$:
+
+\begin{center}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Lean 4 Theorem (\nolinkurl{MultidimensionalFerrers.*})} & \textbf{Verified Mathematical Statement} \\
+\midrule
+\nolinkurl{bubble_injective_local_fiber} & Non-3-chain local 2D fiber injectivity of \texttt{bubbleInsert} \\
+\nolinkurl{promote32_tableau_valid} & 3D rotation $((u,v),(a,b),(c)) \mapsto ((u,v,b),(a,c))$ preserves \texttt{Tableau} \\
+\nolinkurl{promote32_tableau_graph_inversions} & 3D rotation \texttt{promote32} preserves \texttt{tableauGraphInversions} \\
+\nolinkurl{collision_witness_promoted_valid} & Resolves height-3 collision witness $[[1,2],[3,5],[4]] \mapsto [[1,2,5],[3,4]]$ \\
+\nolinkurl{promote321_tableau_valid} & $n=6$ 3D rotation $((u,v),(a,b),(c_1),(c_2)) \mapsto ((u,v,b),(a,c_2),(c_1))$ preserves \texttt{Tableau} \\
+\nolinkurl{promote321_tableau_graph_inversions} & $n=6$ 3D rotation \texttt{promote321} preserves \texttt{tableauGraphInversions} \\
+\nolinkurl{hookBubbleEnd_tableau_valid} & Endpoint hook slide $(3,1^r) \to (2,1^{r+1})$ preserves \texttt{Tableau} \\
+\nolinkurl{hookBubbleEnd_tableau_graph_inversions} & Endpoint hook slide preserves \texttt{tableauGraphInversions} \\
+\nolinkurl{hookBubbleMid_tableau_valid} & Interior hook slide $(3,1^r) \to (2,1^{r+1})$ preserves \texttt{Tableau} \\
+\nolinkurl{hookBubbleMid_tableau_graph_inversions} & Interior hook slide preserves \texttt{tableauGraphInversions} \\
+\nolinkurl{cascade_split_preserves_all} & Universal $k$-D first-column cascade $(0, k) \leftrightarrow (k-1, 1)$ in \texttt{SignedArrays} \\
+\nolinkurl{kr1_scale3_self_similarity} & $Q(3c+r, b) = r^2 + 3r(b+2c) + 3\,Q(b, c)$ \\
+\texttt{kr1\_scale3\_divisible} & $Q(3c, b) = 3\,Q(b, c)$ \\
+\nolinkurl{kr1_head_offset_identity} & $Q(a, b) = 3b(b+1) + a^2 + 3(a-1)b$ for $a \ge 1$ \\
+\texttt{kr1\_a3\_core\_weight} & $3(b+2) + 3(b+1) + 3b(b+1) = Q(3, b)$ \\
+\nolinkurl{kr1_a3_b0_octant_weight} & $(9 + 2r_2) + 6q_2 + 3d_3 + d_1 = Q(3, 0) + 3d_3 + 2(3q_2 + r_2) + d_1$ \\
+\nolinkurl{kr1_a3_b0_6d_cone_routing_weight} & $10 + 9 + 9 + 8 + 6(q_2-4) + 3(d_3-1) + d_1 = Q(3, 0) + 3d_3 + 6q_2 + d_1$, $q_2\ge4,d_3\ge1$ \\
+\nolinkurl{kr1_higher_octant_weight} & $(W_{\mathrm{base}} + 2r_2) + 6q_2 + 3d_3 + d_1 = W_{\mathrm{base}} + 3d_3 + 2(3q_2 + r_2) + d_1$ \\
+\nolinkurl{kr1_a4_a5_a6_apex_weights} & Apex weights $(8,8) \mapsto Q(4,0)$, $(15,9,1) \mapsto Q(5,0)$, $(18,10,8) \mapsto Q(6,0) = 3Q(0,2)$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{center}
+
+\section{Authorship, Revision, and Artifact Attestation}
+\textbf{Author: Christopher Yamba}; original collaborator: Antigravity (Google DeepMind). Christopher Yamba proposed exploring a third Ferrers coordinate and higher-dimensional extensions. This attribution records the motivating idea; novelty of the resulting constructions has not been established by a systematic prior-work audit.
+
+The original record timestamp is \texttt{2026-10-24T22:42:00Z}. Revision 2, dated October 26, 2026, corrects the full $\Phi_{221}$ selection predicate and recovers the determinant permutation as $\sigma=\tau$, while preserving valid local lemmas and finite results. It also distinguishes formal proofs, written proofs, finite checks and conjectural extensions. The original timestamp is provenance, not a claim that this corrected edition or its checks existed then.
+
+Current artifact hashes and revision metadata are recorded externally in \nolinkurl{AUTHORSHIP_TIMESTAMP_ATTESTATION.json}; embedded copies are omitted to avoid stale or circular hashes. Publication remains subject to review of the corrected claims.
+
+\begin{thebibliography}{9}
+\bibitem{CH19} S.~Cho and J.~Huh, \emph{On $e$-positivity and $e$-unimodality of chromatic quasisymmetric functions}, SIAM J. Discrete Math. \textbf{33} (2019), 2286--2315.
+\bibitem{Gas96} V.~Gasharov, \emph{Incomparability graphs of $(3+1)$-free posets are $s$-positive}, Discrete Math. \textbf{157} (1996), 193--197.
+\bibitem{KR15} S.~Kanade and M.~C.~Russell, \emph{IdentityFinder and some new identities of Rogers--Ramanujan type}, Exp. Math. \textbf{24} (2015), 419--423.
+\bibitem{SW16} J.~Shareshian and M.~L.~Wachs, \emph{Chromatic quasisymmetric functions}, Adv. Math. \textbf{295} (2016), 497--551.
+\end{thebibliography}
 
 \end{document}
