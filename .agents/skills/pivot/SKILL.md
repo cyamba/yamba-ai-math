@@ -9,7 +9,9 @@ Read the current contract and result. Keep the complete residue-to-gap objective
 and proof standards explicit. A representation or proof structure can evolve;
 partial coverage cannot become the new definition of completion.
 
-Write a short decision in the canonical research record:
+Write a short decision in the canonical research record (the active attempt
+folder, otherwise beside the current result) and append one line to
+[the session log](../../../meta/session-log.md):
 
 1. Exact rule under challenge, its intended invariant and inverse, and the decisive
    proof obligation. Preserve the frozen proposal, failure receipt and witness.
@@ -18,6 +20,9 @@ Write a short decision in the canonical research record:
    structural contradiction, and an implementation error from either.
 3. Retain, revise or pivot, with a concrete mathematical advantage. Prefer an
    intrinsic inverse branch and a proved structural lemma over finite agreement.
+   Compare routes by what each still owes: prefer the one whose unproved
+   prerequisites are fewest and already precisely stated, not the shortest
+   paper argument. The new route serves the same pinned target.
    State the replacement rule/conjecture, inverse, invariant, central lemma,
    closest inspected construction and smallest useful falsifier.
 4. One bounded next artifact and stop condition, plus one unvalidated workflow
@@ -29,7 +34,6 @@ verification; log discovery exposure. Keep validity, weight, collisions, missing
 images and both round trips, followed by universal argument and separate review.
 
 Respect the active contract's mechanisms, stages, dispatch and runtime/storage
-limits; a pivot adds none. RR003 allowed two mechanisms and two review rounds and
-is now closed. Correctness is separate from preferred quartic work/quadratic space:
+limits; a pivot adds none. Closed runs (RR003, RR004) stay closed. Correctness is separate from preferred quartic work/quadratic space:
 record actual bounds and any needed contract revision, without relaxing binding
 investigation caps. Broader harness changes belong in a separately evaluated task.

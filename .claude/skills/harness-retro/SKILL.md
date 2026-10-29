@@ -8,7 +8,9 @@ argument-hint: [record ids...]
 # Harness retrospective
 
 1. List records with `ls .claude/bench/records/` and pick the requested ones (default: the latest final
-   record per problem). Run `python3 .claude/bench/bench.py validate`.
+   record per problem). Run `python3 .claude/bench/bench.py validate` and
+   `python3 .claude/bench/bench.py relevance`. When the relevance review is due or an axis is flagged,
+   say so first: a candidate aimed at a flagged axis may be chasing a broken measure.
 2. Spawn a fresh `harness-architect` agent with the record paths and nothing else. It writes one file in
    `meta/candidates/`.
 3. Read the candidate. Check it has every field of `meta/protocol.md` section 1, changes one thing, does

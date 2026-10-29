@@ -1,4 +1,4 @@
-"""Command line: start, snapshot, stop, collect, finalize, validate, compare, dashboard, export-artifact, sessions."""
+"""Command line: start, snapshot, stop, collect, finalize, validate, compare, relevance, dashboard, export-artifact, sessions."""
 
 from __future__ import annotations
 
@@ -15,6 +15,7 @@ from .dashboard import export_artifact, render
 from .metrics import Context, compute
 from .records import (RECORDS_DIR, apply_audit, apply_judgments, build, family, judge_packet, load_all, now,
                       validate, write)
+from .relevance import relevance, text as relevance_text
 from .spec import CANARY_RE, load_spec, problem as find_problem, sha256_file
 from .telemetry import codex_candidates, codex_role, epoch, read_claude, select_codex, summarize
 
@@ -56,10 +57,17 @@ def gather_sessions(repo: Path, pins: list[str], infer: bool, framework: str, wi
     sessions = select_codex(worktrees(repo), codex, framework, window) if codex or infer else []
     for sid in claude:
         found, error = read_claude(sid)
-        if error:
-            raise BenchError(error)
+        if error:  # missing telemetry leaves cost and context items unknown; it does not void the record
+            print(f"bench: warning: {error}; session telemetry stays unknown", file=sys.stderr)
+            continue
         sessions += found
     return sessions
+
+
+def author_ids(sessions: list[dict], pins: list[str]) -> list[str]:
+    """Every session that authored the run, including pins whose telemetry could not be read."""
+    found = [s["id"] for s in sessions]
+    return found + [pin.split(":", 1)[1] for pin in pins if pin.split(":", 1)[1] not in found]
 
 
 def context(spec, prob, layout, repo, framework, output, sessions, *, snapshot=False, deep=False, hook=False,
@@ -72,11 +80,11 @@ def context(spec, prob, layout, repo, framework, output, sessions, *, snapshot=F
 
 
 def replacements(repo: Path, layout: Layout, work: Path) -> list[tuple[str, str]]:
-    pairs = [(str(layout.tree) + "/", ""), (str(work) + "/", "")]
-    if layout.runs_base:
-        pairs.append((str(layout.runs_base) + "/", ""))
-    pairs += [(str(w) + "/", "") for w in worktrees(repo)] + [(str(Path.home()), "~")]
-    return pairs
+    roots = [layout.tree, work] + ([layout.runs_base] if layout.runs_base else []) + worktrees(repo)
+    pairs = []
+    for root in roots:  # native separators on Windows, POSIX form everywhere
+        pairs += [(str(root) + "/", ""), (str(root) + "\\", ""), (Path(root).as_posix() + "/", "")]
+    return pairs + [(str(Path.home()), "~"), (Path.home().as_posix(), "~")]
 
 
 def make_record(spec, prob, ctx: Context, computed: dict, *, kind: str, repo: Path, work: Path,
@@ -91,9 +99,8 @@ def make_record(spec, prob, ctx: Context, computed: dict, *, kind: str, repo: Pa
     if ctx.layout.base is not None:
         changed = prov.fingerprint(ctx.layout.tree, spec["problems"]["framework_paths"])["sha256"] != framework["fingerprint"]["sha256"]
         framework["framework_paths_changed_during_run"] = changed
-    b04 = computed["metrics"]["B04"].get("raw") or {}
     program = {"id": ctx.program["id"], "path": ctx.program["path"], "sha256": ctx.program["sha256"],
-               "frozen_at_start": b04.get("program_frozen") == "pass"}
+               "frozen_at_start": computed.get("program_frozen") == "pass"}
     run = {"dir": ctx.layout.run_label, "available": bool(ctx.layout.run_dir and ctx.layout.run_dir.is_dir()),
            "harness_runs": [{"name": r["name"], "backend": r["receipt"].get("backend"), "status": r["receipt"].get("status"),
                              "planned_cost_units": r["receipt"].get("planned_cost_units"),
@@ -173,7 +180,7 @@ def cmd_collect(args) -> int:
     computed = compute(ctx)
     (work / "cache.json").write_text(json.dumps(ctx.cache, indent=1))
     packet = judge_packet(key=key, problem=prob, program=ctx.program, computed=computed, spec=spec,
-                          tree=ctx.layout.tree, run_dir=run_dir, author_sessions=[s["id"] for s in sessions],
+                          tree=ctx.layout.tree, run_dir=run_dir, author_sessions=author_ids(sessions, pins),
                           deep=args.deep, out=work / "judgments.json")
     (work / "judge-packet.json").write_text(json.dumps(packet, indent=1))
     audit = {"schema": "yambench.audit-packet/1", "key": key, "tree": str(ctx.layout.tree),
@@ -336,6 +343,12 @@ def cmd_compare(args) -> int:
     return 0
 
 
+def cmd_relevance(args) -> int:
+    report = relevance(load_all(), load_spec())
+    print(json.dumps(report, indent=2) if args.json else relevance_text(report))
+    return 0
+
+
 def all_records(include_snapshots: bool) -> list[dict]:
     records = load_all()
     if include_snapshots:
@@ -428,6 +441,9 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("candidate")
     p.add_argument("--allow-spec-drift", action="store_true")
     p.set_defaults(fn=cmd_compare)
+    p = sub.add_parser("relevance", help="question the axes: saturation, unmeasured axes, hygiene-dominated radars, review due")
+    p.add_argument("--json", action="store_true")
+    p.set_defaults(fn=cmd_relevance)
     p = sub.add_parser("dashboard", help="render the radar dashboard locally")
     p.add_argument("--out")
     p.add_argument("--snapshots", action="store_true")

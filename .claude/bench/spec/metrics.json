@@ -1,47 +1,70 @@
 {
-  "spec_version": "2026.10.24-1",
+  "spec_version": "2026.10.29-1",
   "anchors": [0, 25, 50, 75, 100],
   "statuses": ["scored", "pending", "unknown", "n/a"],
   "families": [
-    {"id": "progress", "name": "Progress", "question": "Did this version move the problem?"},
-    {"id": "rigor", "name": "Rigor", "question": "Can the movement be trusted?"},
-    {"id": "operations", "name": "Operations", "question": "What did the movement cost and how much help did it need?"}
+    {"id": "discovery", "name": "Discovery", "question": "Did this version create or advance mathematics?"},
+    {"id": "rigor", "name": "Rigor", "question": "Can the result be trusted?"},
+    {"id": "operations", "name": "Operations", "question": "What did it cost, how much help did it need, and can the work continue?"}
   ],
+  "relevance_review": {
+    "reviewed": "2026-10-29",
+    "next_due": {"records": 3, "date": "2027-01-31"},
+    "decisions": {
+      "B01": "revised: milestones whose only checks are unregistered formal targets are n/a instead of an unreachable ceiling",
+      "B02": "kept, moved to rigor: a machine check certifies trust in a result, not its discovery",
+      "B03": "revised: refuting a method the run set up only to refute no longer earns 50; literature errors count as obstructions",
+      "B04": "retired: contract compliance saturated at 100 while frontier depth stayed low; program freeze stays in provenance",
+      "B05": "revised: statement fidelity (no unlabeled added hypotheses or restrictions) is part of claim integrity",
+      "B07": "kept: unknown reproduction outcomes no longer count as failures",
+      "B10": "retired: orientation and context proxies do not track mathematical value and were unmeasured without telemetry",
+      "B13": "added: the strongest new contribution, judged against the closest inspected work",
+      "B14": "added: distinct, precisely stated and tested routes or conjectures; creation, not only proof"
+    }
+  },
   "metrics": [
     {
-      "id": "B01", "family": "progress", "name": "Frontier depth", "mode": "K",
+      "id": "B01", "family": "discovery", "name": "Frontier depth", "mode": "K",
       "question": "How far up the problem's preregistered milestone ladder does the output commit stand?",
-      "formula": "100 * contiguous milestones met / branch length, best of the prove and refute branches. A milestone is met only when every check passes; depth stops at the first unmet milestone.",
+      "formula": "100 * contiguous milestones met / applicable branch length, best of the prove and refute branches. A milestone is met only when every check passes; depth stops at the first unmet milestone. A milestone whose only checks name formal targets the problem does not register is n/a and leaves the branch.",
       "unknown_policy": "A milestone whose checks are pending or unknown stops the depth and marks the score provisional.",
       "gaming_risk": "Easy milestones and inherited progress. Depth is contiguous, depth_start is recorded from the framework commit, and rungs at or above a universal argument require a distinct-thread review or a judgment."
     },
     {
-      "id": "B02", "family": "progress", "name": "Formal assurance", "mode": "C",
+      "id": "B03", "family": "discovery", "name": "Decisive finding", "mode": "C+J",
+      "question": "What is the single most decisive finding off the ladder: counterexample, method refutation, obstruction, literature error or extended exact bound?",
+      "formula": "Judged anchor for the best sha-bound, rechecked finding. The computed inventory is evidence only; 0 is computed when the inventory is empty.",
+      "unknown_policy": "pending in snapshots unless the inventory is empty.",
+      "judged": {"type": "anchor", "rubric": "rubrics/B03.md"},
+      "gaming_risk": "Padding with many weak findings, or refuting a strawman. Only the best counts, counts are not scored, and a self-made strawman is capped at 25."
+    },
+    {
+      "id": "B13", "family": "discovery", "name": "Novel contribution", "mode": "C+J",
+      "question": "What is the strongest new mathematical contribution, and does its novelty survive the closest inspected work?",
+      "formula": "Judged anchor for the best item of the computed inventory: registered contribution probes, run claims labeled proved, conjecture or empirical, and workspace documents the run added or changed. Capped at 50 unless every registered closest work is inspected at level T or higher; 0 is computed when the inventory is empty.",
+      "unknown_policy": "pending in snapshots unless the inventory is empty.",
+      "judged": {"type": "anchor", "rubric": "rubrics/B13.md"},
+      "gaming_risk": "Renaming known or earlier repository results as new, or splitting one result into variants. Only the best counts, novelty is judged against inspected work, and restricted results are scored as restricted."
+    },
+    {
+      "id": "B14", "family": "discovery", "name": "Idea generation", "mode": "C+J",
+      "question": "How many genuinely distinct, precisely stated routes or conjectures did the run generate and test to a verdict?",
+      "formula": "Judged anchor over the computed inventory: registered idea probes (for example a failure ledger), run claims labeled conjecture, empirical or refuted, and workspace documents the run added or changed. Credit needs distinct mechanisms, stated objects and falsifiers, and tests that reached a verdict; 0 is computed when the inventory is empty.",
+      "unknown_policy": "pending in snapshots unless the inventory is empty.",
+      "judged": {"type": "anchor", "rubric": "rubrics/B14.md"},
+      "gaming_risk": "Listing many vague or untested ideas. Ideas without objects and a falsifier earn nothing, parameter variants are one idea, and killed ideas count only with a witness."
+    },
+    {
+      "id": "B02", "family": "rigor", "name": "Formal assurance", "mode": "C",
       "question": "Which maintainer-registered formal targets are machine-checked at the output commit?",
       "formula": "100 * targets present in a passed verification record, depending only on allowed axioms, with every recorded source hash current / registered targets.",
       "unknown_policy": "n/a when the problem registers no formal target. A judged statement-fidelity failure removes a target from the numerator.",
       "gaming_risk": "A trivial lemma with the target's name. Targets are registered by the maintainer only and statement fidelity can be judged."
     },
     {
-      "id": "B03", "family": "progress", "name": "Decisive finding", "mode": "C+J",
-      "question": "What is the single most decisive finding off the ladder: counterexample, method refutation, obstruction or extended exact bound?",
-      "formula": "Judged anchor for the best sha-bound, rechecked finding. The computed inventory is evidence only; 0 is computed when the inventory is empty.",
-      "unknown_policy": "pending in snapshots unless the inventory is empty.",
-      "judged": {"type": "anchor", "rubric": "rubrics/B03.md"},
-      "gaming_risk": "Padding with many weak findings. Only the best counts; counts are not scored."
-    },
-    {
-      "id": "B04", "family": "progress", "name": "Contract fulfilment", "mode": "K/J",
-      "question": "Were the program's deliverables and success criteria met?",
-      "formula": "Completion record present: 100 * (met criteria + delivered items) / (criteria + deliverables). Otherwise the judged anchor. Capped at 50 unless the program hash is recorded in run provenance at start.",
-      "unknown_policy": "pending in snapshots without a completion record.",
-      "judged": {"type": "anchor", "rubric": "rubrics/B04.md"},
-      "gaming_risk": "The agent writes its own contract or completion record. The cap and the auditor's claim checks apply."
-    },
-    {
       "id": "B05", "family": "rigor", "name": "Claim integrity", "mode": "C+J",
-      "question": "Are material claims labeled correctly, scoped, and supported by the cited artifacts?",
-      "formula": "Judged anchor from an audit sample with at least one claim per label used. Computed flags (label disagreement across records, unreviewed proved claims, hash mismatches, undisclosed agents) are evidence and feed gate review.",
+      "question": "Are material claims labeled correctly, scoped, faithful to the problem's statement, and supported by the cited artifacts?",
+      "formula": "Judged anchor from an audit sample with at least one claim per label used, including a statement-fidelity check: a result that adds hypotheses or restricts the problem's statement must say so. Computed flags (label disagreement across records, unreviewed proved claims, hash mismatches, undisclosed agents) are evidence and feed gate review.",
       "unknown_policy": "pending in snapshots.",
       "judged": {"type": "anchor", "rubric": "rubrics/B05.md"},
       "gaming_risk": "Hedging every claim to avoid errors. The rubric rewards precise labels, not weak ones."
@@ -58,7 +81,7 @@
       "id": "B07", "family": "rigor", "name": "Reproducibility", "mode": "K",
       "question": "Do the recorded artifacts re-verify from hashed sources?",
       "formula": "Mean of evaluated items: recorded hashes verify, source_stable flags true, recorded checks exited 0, repository checker passes at commit, run directory complete, preregistration order, and in deep mode unit tests and declared reproduction commands.",
-      "unknown_policy": "Unevaluated items are unknown, never failures; coverage reports the evaluated share.",
+      "unknown_policy": "Unevaluated items and reproduction commands without a comparison file are unknown, never failures; coverage reports the evaluated share.",
       "gaming_risk": "Recording few hashes. Coverage is shown beside the score."
     },
     {
@@ -75,19 +98,6 @@
       "formula": "100 * min(1, reference effective tokens / measured effective tokens), effective = uncached input + cache write + output over lead and child sessions. Overhead sessions are reported separately.",
       "unknown_policy": "unknown without telemetry or a reference budget; n/a when the run made no progress (no new depth and no decisive finding).",
       "gaming_risk": "Cheap empty runs. No progress means n/a, and quality is compared beside cost, never multiplied into it."
-    },
-    {
-      "id": "B10", "family": "operations", "name": "Context economy", "mode": "C",
-      "question": "How efficiently did the agents orient themselves and manage context?",
-      "formula": "Mean of available banded sub-scores: tool calls before the first file-modifying call, peak context fraction, compactions, redundant reads.",
-      "unknown_policy": "unknown without telemetry; redundant reads are unavailable for Codex.",
-      "bands": {
-        "orientation_tool_calls": [[5, 100], [10, 75], [20, 50], [40, 25]],
-        "peak_context_fraction": [[0.5, 100], [0.7, 75], [0.85, 50], [0.95, 25]],
-        "compactions": [[0, 100], [1, 75], [2, 50], [4, 25]],
-        "redundant_read_ratio": [[0.05, 100], [0.1, 75], [0.2, 50], [0.35, 25]]
-      },
-      "gaming_risk": "Writing a placeholder file early. Orientation is a diagnostic for the repository map, not a target."
     },
     {
       "id": "B11", "family": "operations", "name": "Operational autonomy", "mode": "C",

@@ -6,6 +6,7 @@ Initial state: no harness improvement trial has been executed. There are no acce
 | --- | --- | --- | --- | --- | --- |
 | M0001 | Independent first pass before pair reconciliation | proposed; unexecuted | To be pinned before a trial | Not created | No decision |
 | M0002 | Repository map in `AGENTS.md` (enters every worker packet), `CLAUDE.md`, and the `.claude/` benchmark instrument | user-authorized revision (2026-10-24); not trial-evaluated | `dce6026` | Instrument only; no paired trial run | Merge is the maintainer's decision |
+| M0003 | [Statement fidelity, glue-first decomposition and conjecture generation](candidates/M0003-statement-fidelity-and-glue-first.md), plus the session decision log | user-authorized revision (2026-10-29); not trial-evaluated | `33862d8` | Preregistered against the next KR1 run; none executed | Merge is the maintainer's decision |
 
 M0002 was requested directly by the user rather than selected by a trial. The `.claude/` instrument measures framework versions on registered problems and records them under `.claude/bench/records/`; its scores are descriptive and cannot promote any change. The repository-map change alters worker packets and should be benchmarked prospectively against `dce6026` on the same problem before any claim about its effect.
 

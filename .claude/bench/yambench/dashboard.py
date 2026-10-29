@@ -118,9 +118,10 @@ def datasets(records: list[dict], spec: dict) -> dict:
                 rows["trajectory"].append({"record_id": rid, "step_index": index, "step": point.get("step"),
                                            "created_at": point.get("created_at"), "metric_id": metric_id,
                                            "score": score, "status": (point.get("statuses") or {}).get(metric_id)})
-    rows["metrics"] = [{"metric_id": m["id"], "name": m["name"], "family": families[m["family"]], "mode": m["mode"],
-                        "question": m["question"], "formula": m["formula"], "unknown_policy": m["unknown_policy"]}
-                       for m in spec["metrics"]["metrics"]]
+    rows["metrics"] = [{"metric_id": m["id"], "order": index, "name": m["name"], "family": families[m["family"]],
+                        "mode": m["mode"], "question": m["question"], "formula": m["formula"],
+                        "unknown_policy": m["unknown_policy"]}
+                       for index, m in enumerate(spec["metrics"]["metrics"])]
     return rows
 
 

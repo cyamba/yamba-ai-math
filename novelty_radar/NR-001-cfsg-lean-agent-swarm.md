@@ -120,6 +120,8 @@ Bounded, read-only steps:
    dates.
 3. **Method extraction.** Write a one-page comparison of the swarm's workflow with our fleets. Any
    proposed harness change becomes a `meta/` candidate under the meta protocol, not an edit.
+   Done 2026-10-29 as [M0003](../meta/candidates/M0003-statement-fidelity-and-glue-first.md)
+   (user-authorized, not trial-evaluated).
 4. **Digest the UGT paper** with `digest-result`: statement card, key idea, the PSL₂(49)
    counterexample worked out step by step, and what is new.
 5. **Venue check.** Read Hexagon's about and submission pages and decide whether any manuscript in
