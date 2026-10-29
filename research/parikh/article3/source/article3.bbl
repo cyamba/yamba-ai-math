@@ -7,6 +7,12 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{10}
 
+\bibitem{FZ00}
+S.~Fomin and A.~Zelevinsky, \emph{Total positivity: tests and parametrizations}, Math. Intelligencer \textbf{22} (2000), no.~1, 23--33, \url{https://doi.org/10.1007/BF03024444}. Item and page numbers cited are those of \href{https://arxiv.org/abs/math/9912128v1}{arXiv:math/9912128v1}.
+
+\bibitem{GV85}
+I.~Gessel and G.~Viennot, \emph{Binomial determinants, paths, and hook length formulae}, Adv. in Math. \textbf{58} (1985), no.~3, 300--321, \url{https://doi.org/10.1016/0001-8708(85)90121-5}.
+
 \bibitem{Kra15}
 C.~Krattenthaler, \emph{Lattice path enumeration}, Handbook of Enumerative Combinatorics (M.~B{\'o}na, ed.), CRC Press, Boca Raton, FL, 2015, \url{https://doi.org/10.1201/b18255-16}, \href{https://arxiv.org/abs/1503.05930}{arXiv:1503.05930}.
 
@@ -27,6 +33,9 @@ A.~Salomaa, \emph{Connections between subwords and certain matrix mappings}, The
 
 \bibitem{Sal06}
 \bysame, \emph{Independence of certain quantities indicating subword occurrences}, Theoret. Comput. Sci. \textbf{362} (2006), no.~1--3, 222--231, \url{https://doi.org/10.1016/j.tcs.2006.06.025}.
+
+\bibitem{Sal08}
+\bysame, \emph{Subword histories and associated matrices}, Theoret. Comput. Sci. \textbf{407} (2008), no.~1--3, 250--257, \url{https://doi.org/10.1016/j.tcs.2008.05.023}. Not consulted.
 
 \bibitem{Sal15}
 \bysame, \emph{On a {C}auchy-type inequality for subword occurrences}, An. Univ. Bucure{\c{s}}ti Inform. \textbf{62} (2015), no.~2, 101--112, Bibliographic record: \url{https://tucs.fi/publications/view/?pub_id=jSalomaa_Arto15b}.

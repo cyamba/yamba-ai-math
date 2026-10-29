@@ -11,3 +11,6 @@ venv/
 dist/
 build/
 *.egg-info/
+
+# Per-operator agent configuration (YambaPost targets etc.)
+.agents/local/

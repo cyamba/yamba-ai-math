@@ -1,0 +1,10 @@
+{
+  "program": "RR003",
+  "round": 1,
+  "frozen_utc": "2026-10-24T10:10:32.191189+00:00",
+  "proposal_sha256": "2f8992e6375517905cc82506cb1f165f2442bfd36c1bcd7fd9531aeba0450623",
+  "claim": "restricted bijection only; no universal coverage",
+  "discovery_ceiling_exposed": 12,
+  "verification_ceiling_pilot": 12,
+  "verification_ceiling_max": 30
+}

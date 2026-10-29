@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import itertools
 import json
 import sys
@@ -7,7 +8,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from harness.catalog import ContractError, load_catalog, local_file, positive_int, topological_order
+from harness.catalog import ContractError, load_catalog, load_program, local_file, positive_int, topological_order
 from harness.evaluation import compare, metrics, validate_evaluation
 from harness.planner import assemble
 from harness.runtime import execute, validate_result
@@ -32,6 +33,10 @@ def program(**constraints):
 def fleet(stages):
     return {"id": "test", "description": "Test only", "max_agents": 4,
             "required_capabilities": sorted({r for s in stages for r in s["requires"]}), "stages": stages}
+
+
+def pinned(path="agents/scout.md"):
+    return {"path": path, "sha256": hashlib.sha256((ROOT / path).read_bytes()).hexdigest()}
 
 
 def result(summary="test result"):
@@ -68,6 +73,24 @@ class CatalogTests(unittest.TestCase):
             with self.assertRaises(ContractError):
                 local_file(root, "link.md")
 
+
+    def test_new_mathematical_roles_have_feasible_fleets(self):
+        agents, fleets = load_catalog(ROOT)
+        for fleet_id, role in [("decompose", "decomposer"), ("discover", "conjecturer")]:
+            plan = assemble({**program(max_agents=6, max_cost_units=40), "fleet": fleet_id}, agents, fleets)
+            self.assertIn(role, {step["agent_id"] for step in plan["steps"]})
+
+    def test_pinned_target_hash_is_enforced(self):
+        _, fleets = load_catalog(ROOT)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "program.json"
+            value = {**program(), "fleet": "pair", "target": pinned()}
+            path.write_text(json.dumps(value))
+            self.assertEqual(load_program(path, ROOT, fleets)["target"], pinned())
+            for target in [{**pinned(), "sha256": "0" * 64}, {"path": "agents/scout.md"}, "agents/scout.md"]:
+                path.write_text(json.dumps({**value, "target": target}))
+                with self.assertRaises(ContractError):
+                    load_program(path, ROOT, fleets)
 
 class PlannerTests(unittest.TestCase):
     def setUp(self):
@@ -207,6 +230,31 @@ class RuntimeTests(unittest.TestCase):
         value["claims"] = [{"text": "claim", "status": "definitely-genius"}]
         with self.assertRaises(ContractError):
             validate_result(value)
+
+    def test_pinned_target_is_delivered_and_rechecked(self):
+        self.program["target"] = pinned()
+        self.run_backend()
+        saved = json.loads((self.directory / "run/packets/first.json").read_text())
+        self.assertIn("Literature Scout", saved["target"]["content"])
+        self.program["target"] = {**pinned(), "sha256": "0" * 64}
+        receipt = execute(ROOT, self.program, self.plan, self.agents, self.directory / "drifted")
+        self.assertEqual(receipt["status"], "failed_preparation")
+
+    def test_restricted_result_cannot_pose_as_the_target(self):
+        def claims(*items):
+            return {**result(), "claims": [{"text": "claim", "status": "proved", **item} for item in items]}
+        accepted = [{"target_relation": "target", "scope_delta": []},
+                    {"target_relation": "restricted", "scope_delta": ["only weights up to 30"]},
+                    {"target_relation": "supporting"}]
+        validate_result(claims(*accepted), target_pinned=True)
+        validate_result(claims({}))
+        for bad in [{}, {"target_relation": "target", "scope_delta": ["assumes a <= 2"]},
+                    {"target_relation": "restricted", "scope_delta": []},
+                    {"target_relation": "almost"}, {"target_relation": "supporting", "scope_delta": "none"}]:
+            with self.assertRaises(ContractError):
+                validate_result(claims(bad), target_pinned=True)
+        conjecture = {**result(), "claims": [{"text": "claim", "status": "conjecture"}]}
+        validate_result(conjecture, target_pinned=True)
 
     def test_reported_usage_cannot_be_negative_or_boolean(self):
         for number in [-1, True]:

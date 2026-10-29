@@ -1,0 +1,5 @@
+{
+  "YAMBAPOST_RECIPIENT": "@your-handle",
+  "YAMBAPOST_INBOX_FOLDER_ID": "<google-drive-folder-id>",
+  "YAMBAPOST_FORMAT_REF_FILE_ID": "<google-drive-file-id>"
+}

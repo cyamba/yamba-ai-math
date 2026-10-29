@@ -1,0 +1,323 @@
+{
+  "registry_version": "2026.10.29-1",
+  "framework_paths": [
+    "AGENTS.md", "CLAUDE.md", "SKILLS.md", "agents/", "fleets/", "skills/", "harness/",
+    "programs/contract.md", "meta/protocol.md", "meta/scorecard.md", "docs/", "scripts/",
+    "explore/AGENTS.md", ".agents/", ".claude/agents/", ".claude/skills/"
+  ],
+  "verification_files": [
+    "research/partitions/lean/verification.json",
+    "research/partitions/mathlib/verification.json"
+  ],
+  "allowed_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "problems": [
+    {
+      "id": "h3-elementary-unimodality",
+      "title": "Height-three e_(n-4,3,1) first differences",
+      "statement_ref": "research/partitions/height-three-unimodality/README.md",
+      "workspace": "research/partitions/height-three-unimodality",
+      "programs": ["programs/partition-h3-unimodality.json"],
+      "registered_after_run": true,
+      "default_run_dir": ".runs/h3-unimodality",
+      "formal_targets": [],
+      "reference_budget": {"effective_tokens": null, "basis": "unset; set by the maintainer before a prospective run"},
+      "closest_work": [
+        {"key": "Cho-Huh", "match": "1711.07152"},
+        {"key": "Wang v3", "match": "2210.07567"},
+        {"key": "Tom", "match": "2311.08020"},
+        {"key": "Sagan-Tom", "match": "alco.468"},
+        {"key": "Hikita v2", "match": "2410.12758"},
+        {"key": "OpenAI 2026", "match": "Elementary-Positivity"},
+        {"key": "Kafidov", "match": "2607.20595"}
+      ],
+      "program_frozen": {"kind": "run_json_equals_sha", "file": "{run}/r1-accounted.json",
+        "path": ["provenance", "sources", "programs/partition-h3-unimodality.json"],
+        "of": "programs/partition-h3-unimodality.json"},
+      "completion_record": null,
+      "team_record": {"file": "{ws}/execution.json", "path": ["team"]},
+      "consistency": [
+        {"name": "target status", "values": [
+          {"file": "{ws}/evidence.json", "path": ["target_status"]},
+          {"file": "{ws}/execution.json", "path": ["theorem_status"]}]},
+        {"name": "novelty status", "values": [
+          {"file": "{ws}/evidence.json", "path": ["novelty_status"]},
+          {"file": "{ws}/execution.json", "path": ["novelty_status"]}]},
+        {"name": "research validated", "values": [
+          {"file": "{ws}/evidence.json", "path": ["research_validated"]},
+          {"file": "{ws}/execution.json", "path": ["research_validated"]}]}
+      ],
+      "novelty_label": {"file": "{ws}/execution.json", "path": ["novelty_status"]},
+      "findings": [
+        {"name": "Isolated negative state refuting the frozen tableau grammar",
+         "check": {"kind": "json_path", "file": "{ws}/evidence.json",
+           "path": ["round_one", "cases", "*", "moves", "isolated_negative"], "op": "any_nonempty"}},
+        {"name": "Mark-step-only forest moves leave isolated negatives",
+         "check": {"kind": "json_path", "file": "{ws}/evidence.json",
+           "path": ["round_two", "comparison", "rank_step_diagnostic", "isolated_negatives"], "op": "ge", "value": 1}}
+      ],
+      "preregistration": {"protocol": "{ws}/protocol.json", "results": "{ws}/results.md"},
+      "continuity": {
+        "next_step": {"kind": "json_path", "file": "{ws}/execution.json", "path": ["gates", "next_step"], "op": "any_nonempty"},
+        "remaining_obligations": {"kind": "md_heading", "file": "{ws}/results.md", "regex": "^## Next decisive obligation"},
+        "status_page": "{ws}/README.md",
+        "status_record": {"kind": "json_path", "file": "{ws}/evidence.json", "path": ["target_status"], "op": "any_nonempty"}
+      },
+      "repro": [
+        {"name": "Round-one exact enumeration",
+         "argv": ["python3", "-m", "research.partitions.checks.height_three", "run", "--round", "1", "--output", "{tmp}/r1.json"],
+         "timeout_seconds": 300,
+         "against": "{run}/r1-accounted.json",
+         "paths": [["cases", "*", "status"], ["selection_lock", "selector"], ["selection_lock", "eligible"]]}
+      ],
+      "ladder": {
+        "branches": {
+          "prove": ["protocol_frozen", "finite_exact", "mechanism_heldout", "universal_reviewed",
+                    "coloring_bridge", "lean_checked", "semantic_review"],
+          "refute": ["protocol_frozen", "candidate_counterexample", "counterexample_verified", "counterexample_formal"]
+        },
+        "milestones": {
+          "protocol_frozen": {"title": "Protocol frozen and hash-bound", "all": [
+            {"kind": "file_exists", "path": "{ws}/protocol.json"},
+            {"kind": "sha256_matches", "path": "{ws}/protocol.json",
+             "recorded": {"file": "{ws}/evidence.json", "path": ["protocol_sha256"]}}]},
+          "finite_exact": {"title": "Complete exact evidence on development and held-out cases", "all": [
+            {"kind": "json_path", "file": "{ws}/evidence.json", "path": ["round_one", "cases", "*", "status"], "op": "all_eq", "value": "complete"},
+            {"kind": "json_path", "file": "{ws}/evidence.json", "path": ["round_one", "cases", "*", "split"], "op": "contains_all", "value": ["development", "heldout"]},
+            {"kind": "json_path", "file": "{ws}/evidence.json", "path": ["round_one", "source_stable"], "op": "eq", "value": true}]},
+          "mechanism_heldout": {"title": "A candidate mechanism survives the held-out cases", "all": [
+            {"kind": "json_path", "file": "{ws}/evidence.json", "path": ["round_one", "selection_lock", "eligible"], "op": "eq", "value": true},
+            {"kind": "judged"}]},
+          "universal_reviewed": {"title": "Universal written argument with a supported separate review", "all": [
+            {"kind": "review_verdict", "glob": "{ws}/review*.md", "regex": "universal (theorem|argument|proof)[^.]{0,40}\\bsupported", "distinct_thread": true},
+            {"kind": "judged"}]},
+          "coloring_bridge": {"title": "Exact coloring bridge to the target coefficient", "all": [{"kind": "judged"}]},
+          "lean_checked": {"title": "Placeholder-free Lean check of the theorem", "all": [{"kind": "verification_declaration"}]},
+          "semantic_review": {"title": "Separate semantic review of the formal statement", "all": [
+            {"kind": "review_verdict", "glob": "{ws}/semantic-review*.md", "regex": "\\baccept", "distinct_thread": true},
+            {"kind": "judged"}]},
+          "candidate_counterexample": {"title": "Candidate counterexample to the target", "all": [{"kind": "judged"}]},
+          "counterexample_verified": {"title": "Counterexample independently verified", "all": [{"kind": "judged"}]},
+          "counterexample_formal": {"title": "Counterexample formally checked", "all": [{"kind": "verification_declaration"}]}
+        }
+      }
+    },
+    {
+      "id": "kr1-residue-gap-bijection",
+      "title": "KR1: residue 1,3,6,8 mod 9 to gap partition bijection",
+      "statement_ref": "research/rogers-ramanujan/problem_01_rogers_ramanujan_bijections.md",
+      "workspace": "research/rogers-ramanujan/terra2026",
+      "programs": [
+        "research/rogers-ramanujan/terra2026/fleet-plan.json",
+        "research/rogers-ramanujan/terra2026/contract.md"
+      ],
+      "registered_after_run": true,
+      "registration_note": "Retrospective baseline for the terra2026 investigation: framework 4e2492d (framework paths identical to the run's stated baseline 4ccc4fe, which sits on a diverged branch), output b44c5ba. The contract is prose; fleet-plan.json supplies rounds. The pinned target is research/rogers-ramanujan/TARGET.md from 2026-10-29 on.",
+      "review_glob": "{ws}/*review*.md",
+      "default_run_dir": ".runs/kr1-terra2026",
+      "formal_targets": [],
+      "reference_budget": {
+        "effective_tokens": null,
+        "basis": "unset; set by the maintainer before a prospective run"
+      },
+      "closest_work": [
+        {
+          "key": "Kursungoz 2018",
+          "match": "1808.01432"
+        },
+        {
+          "key": "Kanade-Russell linked partition ideals",
+          "match": "1809.08655"
+        },
+        {
+          "key": "Xia 2026",
+          "match": "2609.08816"
+        },
+        {
+          "key": "Mizuno 2026",
+          "match": "2609.09653"
+        }
+      ],
+      "completion_record": null,
+      "team_record": {
+        "file": "{ws}/fleet-plan.json",
+        "path": [
+          "distinct_agents"
+        ]
+      },
+      "consistency": [],
+      "novelty_label": {
+        "file": "{ws}/publication-manifest.json",
+        "path": [
+          "novelty"
+        ]
+      },
+      "findings": [
+        {
+          "name": "Failure ledger of refuted constructions with witnesses",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/failure-ledger.md",
+            "regex": "^## FAILED"
+          }
+        },
+        {
+          "name": "Bounded-expansion entropy obstruction with separate review",
+          "check": {
+            "kind": "review_verdict",
+            "glob": "{ws}/entropy-independent-review.md",
+            "regex": "\\bsupported"
+          }
+        }
+      ],
+      "contribution_probes": [
+        {
+          "name": "Main theorem section of the research package",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/README.md",
+            "regex": "^## Main theorem"
+          }
+        },
+        {
+          "name": "Final mathematical review",
+          "check": {
+            "kind": "review_verdict",
+            "glob": "{ws}/final-math-review.md",
+            "regex": "\\bsupported"
+          }
+        }
+      ],
+      "idea_probes": [
+        {
+          "name": "Refuted mechanisms with witnesses",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/failure-ledger.md",
+            "regex": "^## FAILED"
+          }
+        },
+        {
+          "name": "Working scoped constructions",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/failure-ledger.md",
+            "regex": "^## WORKS"
+          }
+        },
+        {
+          "name": "Open constructive obligations",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/failure-ledger.md",
+            "regex": "^## OPEN"
+          }
+        }
+      ],
+      "continuity": {
+        "next_step": {
+          "kind": "md_heading",
+          "file": "{ws}/README.md",
+          "regex": "^## Next mathematical obligation"
+        },
+        "remaining_obligations": {
+          "kind": "md_heading",
+          "file": "{ws}/failure-ledger.md",
+          "regex": "^## OPEN"
+        },
+        "status_page": "{ws}/README.md",
+        "status_record": {
+          "kind": "json_path",
+          "file": "{ws}/verification/verification.json",
+          "path": [
+            "scope"
+          ],
+          "op": "any_nonempty"
+        }
+      },
+      "repro": [],
+      "ladder": {
+        "branches": {
+          "prove": [
+            "contract_frozen",
+            "scoped_reviewed",
+            "global_reduction",
+            "explicit_maps",
+            "inverse_proofs",
+            "complete_review",
+            "lean_checked"
+          ]
+        },
+        "milestones": {
+          "contract_frozen": {
+            "title": "Contract and repository baseline recorded before the work",
+            "all": [
+              {
+                "kind": "file_exists",
+                "path": "{ws}/contract.md"
+              },
+              {
+                "kind": "file_exists",
+                "path": "{ws}/repository-baseline.json"
+              }
+            ]
+          },
+          "scoped_reviewed": {
+            "title": "A scoped construction or theorem with a supported separate review",
+            "all": [
+              {
+                "kind": "review_verdict",
+                "glob": "{ws}/*review*.md",
+                "regex": "\\bsupported"
+              }
+            ]
+          },
+          "global_reduction": {
+            "title": "An explicit global reduction covering one whole side of the target (all residue partitions or all gap partitions), with a proved inverse",
+            "all": [
+              {
+                "kind": "judged"
+              }
+            ]
+          },
+          "explicit_maps": {
+            "title": "Explicit total maps in both directions with validity and weight arguments",
+            "all": [
+              {
+                "kind": "judged"
+              }
+            ]
+          },
+          "inverse_proofs": {
+            "title": "Universal proofs of termination and of both inverse identities",
+            "all": [
+              {
+                "kind": "judged"
+              }
+            ]
+          },
+          "complete_review": {
+            "title": "Separate semantic review accepts the complete bijection",
+            "all": [
+              {
+                "kind": "review_verdict",
+                "glob": "{ws}/*review*.md",
+                "regex": "complete (KR1 )?bijection[^.]{0,40}\\bsupported"
+              },
+              {
+                "kind": "judged"
+              }
+            ]
+          },
+          "lean_checked": {
+            "title": "Placeholder-free Lean check of the bijection",
+            "all": [
+              {
+                "kind": "verification_declaration"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "program": "RR003",
+  "round": 2,
+  "frozen_utc": "2026-10-24T10:26:29.358327+00:00",
+  "selected": "Mechanism A: round-one family plus all zero-pair a=2 and mixed marker sectors k not in {4,5,9}",
+  "claims": "restricted universal written theorem; full U-C and B-A unresolved; mechanism-B insertion refuted",
+  "discovery_exposure": "All actual objects through 30; direct symbolically derived witnesses at 38 and 43, not sweeps",
+  "priority": "round-one recognition, then mixed markers, then zero-pair new patterns; malformed actual U rejected",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "research/rogers-ramanujan/checks/rr003_columns.py": "ec2837f6a5c4413b83f70786e290cb459cc43c9981d5d2fb7743fa8101d3caf9",
+    "research/rogers-ramanujan/checks/rr003_revision.py": "cbcb91828fb127912a7ee74642d74c3539d98702fc0fc057f07eeedf6b0fcbf9",
+    "research/rogers-ramanujan/checks/rr003_recursive.py": "6727bc25410c13fdee869d27ae358d4842d9dd5caa0d131456ad1df323809ae7",
+    "research/rogers-ramanujan/rr003/round-1-proposal.md": "2f8992e6375517905cc82506cb1f165f2442bfd36c1bcd7fd9531aeba0450623",
+    "research/rogers-ramanujan/rr003/round-1-freeze.json": "ec4d33e7e386d8b510355e162a191577e7411104352b5e84e28e1e3e4be4e3a8",
+    "research/rogers-ramanujan/rr003/round-2-proposal.md": "3a00ac1627b50fd9a3ad93b2440fcc3da1c69553c257d5d2e6a0fd2f0b37c3f8",
+    "research/rogers-ramanujan/rr003/recursive-discovery.md": "6ed8be0345c15981d145f595c968bbc3879e3e3980c6027815dbc619a1314f34",
+    "research/rogers-ramanujan/rr003/sources.md": "d73210bb1b0b6984ef5fa4bf6d12dd98af04b78ef279882145a2a995019f8e6c"
+  }
+}

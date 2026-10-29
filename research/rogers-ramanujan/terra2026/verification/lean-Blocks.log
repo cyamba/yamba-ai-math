@@ -1,0 +1,26 @@
+/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/lean/Blocks.lean:40:6: warning: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/lean/Blocks.lean:41:10: warning: Variable name `f` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _f
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/workspace/scratch/5c312600ea19/kr1-terra/research/rogers-ramanujan/terra2026/lean/Blocks.lean:52:43: warning: This simp argument is unused:
+  BoundaryValid
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Compatible, counts]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'KR1.block_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KR1.transition_table' depends on axioms: [propext, Quot.sound]
+'KR1.adjacent_blocks' depends on axioms: [propext, Quot.sound]
+'KR1.counts_injective' depends on axioms: [propext]
+'KR1.sequence_encode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KR1.sequence_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KR1.realization_unique' depends on axioms: [propext, Quot.sound]

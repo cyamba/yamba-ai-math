@@ -1,0 +1,260 @@
+{
+  "protocol_version": "1",
+  "program_id": "KR1T2026",
+  "fleet_id": "theorem",
+  "objective": "minimum declared dispatch cost; then maximum declared preferred-tag matches; then distinct role count; then stable agent IDs",
+  "optimality_scope": "exact for this finite registry and constraints; capability tags and costs are declared proxies, not measured quality or money",
+  "cost_units": 42,
+  "distinct_agents": [
+    "critic",
+    "experimenter",
+    "mathematician",
+    "scout",
+    "synthesizer"
+  ],
+  "rounds": 3,
+  "max_workers": 3,
+  "steps": [
+    {
+      "id": "r1--survey",
+      "stage_id": "survey",
+      "round": 1,
+      "requires": [
+        "literature"
+      ],
+      "depends_on": [],
+      "agent_id": "scout",
+      "cost_units": 2
+    },
+    {
+      "id": "r1--statement",
+      "stage_id": "statement",
+      "round": 1,
+      "requires": [
+        "formalization"
+      ],
+      "depends_on": [
+        "r1--survey"
+      ],
+      "agent_id": "mathematician",
+      "cost_units": 3
+    },
+    {
+      "id": "r1--counterexample",
+      "stage_id": "counterexample",
+      "round": 1,
+      "requires": [
+        "falsification"
+      ],
+      "depends_on": [
+        "r1--statement"
+      ],
+      "agent_id": "critic",
+      "cost_units": 2
+    },
+    {
+      "id": "r1--finite-check",
+      "stage_id": "finite-check",
+      "round": 1,
+      "requires": [
+        "experiments"
+      ],
+      "depends_on": [
+        "r1--statement"
+      ],
+      "agent_id": "experimenter",
+      "cost_units": 2
+    },
+    {
+      "id": "r1--revise",
+      "stage_id": "revise",
+      "round": 1,
+      "requires": [
+        "formalization"
+      ],
+      "depends_on": [
+        "r1--counterexample",
+        "r1--finite-check"
+      ],
+      "agent_id": "mathematician",
+      "cost_units": 3
+    },
+    {
+      "id": "r1--integrate",
+      "stage_id": "integrate",
+      "round": 1,
+      "requires": [
+        "synthesis"
+      ],
+      "depends_on": [
+        "r1--revise",
+        "r1--counterexample",
+        "r1--finite-check"
+      ],
+      "agent_id": "synthesizer",
+      "cost_units": 2
+    },
+    {
+      "id": "r2--survey",
+      "stage_id": "survey",
+      "round": 2,
+      "requires": [
+        "literature"
+      ],
+      "depends_on": [
+        "r1--integrate"
+      ],
+      "agent_id": "scout",
+      "cost_units": 2
+    },
+    {
+      "id": "r2--statement",
+      "stage_id": "statement",
+      "round": 2,
+      "requires": [
+        "formalization"
+      ],
+      "depends_on": [
+        "r2--survey"
+      ],
+      "agent_id": "mathematician",
+      "cost_units": 3
+    },
+    {
+      "id": "r2--counterexample",
+      "stage_id": "counterexample",
+      "round": 2,
+      "requires": [
+        "falsification"
+      ],
+      "depends_on": [
+        "r2--statement"
+      ],
+      "agent_id": "critic",
+      "cost_units": 2
+    },
+    {
+      "id": "r2--finite-check",
+      "stage_id": "finite-check",
+      "round": 2,
+      "requires": [
+        "experiments"
+      ],
+      "depends_on": [
+        "r2--statement"
+      ],
+      "agent_id": "experimenter",
+      "cost_units": 2
+    },
+    {
+      "id": "r2--revise",
+      "stage_id": "revise",
+      "round": 2,
+      "requires": [
+        "formalization"
+      ],
+      "depends_on": [
+        "r2--counterexample",
+        "r2--finite-check"
+      ],
+      "agent_id": "mathematician",
+      "cost_units": 3
+    },
+    {
+      "id": "r2--integrate",
+      "stage_id": "integrate",
+      "round": 2,
+      "requires": [
+        "synthesis"
+      ],
+      "depends_on": [
+        "r2--revise",
+        "r2--counterexample",
+        "r2--finite-check"
+      ],
+      "agent_id": "synthesizer",
+      "cost_units": 2
+    },
+    {
+      "id": "r3--survey",
+      "stage_id": "survey",
+      "round": 3,
+      "requires": [
+        "literature"
+      ],
+      "depends_on": [
+        "r2--integrate"
+      ],
+      "agent_id": "scout",
+      "cost_units": 2
+    },
+    {
+      "id": "r3--statement",
+      "stage_id": "statement",
+      "round": 3,
+      "requires": [
+        "formalization"
+      ],
+      "depends_on": [
+        "r3--survey"
+      ],
+      "agent_id": "mathematician",
+      "cost_units": 3
+    },
+    {
+      "id": "r3--counterexample",
+      "stage_id": "counterexample",
+      "round": 3,
+      "requires": [
+        "falsification"
+      ],
+      "depends_on": [
+        "r3--statement"
+      ],
+      "agent_id": "critic",
+      "cost_units": 2
+    },
+    {
+      "id": "r3--finite-check",
+      "stage_id": "finite-check",
+      "round": 3,
+      "requires": [
+        "experiments"
+      ],
+      "depends_on": [
+        "r3--statement"
+      ],
+      "agent_id": "experimenter",
+      "cost_units": 2
+    },
+    {
+      "id": "r3--revise",
+      "stage_id": "revise",
+      "round": 3,
+      "requires": [
+        "formalization"
+      ],
+      "depends_on": [
+        "r3--counterexample",
+        "r3--finite-check"
+      ],
+      "agent_id": "mathematician",
+      "cost_units": 3
+    },
+    {
+      "id": "r3--integrate",
+      "stage_id": "integrate",
+      "round": 3,
+      "requires": [
+        "synthesis"
+      ],
+      "depends_on": [
+        "r3--revise",
+        "r3--counterexample",
+        "r3--finite-check"
+      ],
+      "agent_id": "synthesizer",
+      "cost_units": 2
+    }
+  ]
+}

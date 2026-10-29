@@ -1,0 +1,13 @@
+{
+  "program": "RR003",
+  "stage": "mechanism B final author second product split",
+  "frozen_utc": "2026-10-24T12:11:41.236538+00:00",
+  "claim": "weighted bit times P2 <-> P1 disjoint-union L; full KR1 unresolved; no separate review",
+  "priority": "same smallest eligible toggle, with explicit substituted constants and packet normalization",
+  "discovery_exposure": "all original and auxiliary objects through30; symbolic local identity; no second split verification yet",
+  "frozen_sha256": {
+    "research/rogers-ramanujan/checks/rr003_second_product.py": "c9eb5eba0184c1d927f77c95b156659cfb9d359be10ed0e5f3a26299b3744ba9",
+    "research/rogers-ramanujan/rr003/second-product-involution.md": "a18daf33a424e56a91b87a5c311fa9203801b2f39599309150f233fb19881e14",
+    "research/rogers-ramanujan/rr003/product-involution.md": "550e4a7bc0dacdde8c3b2cf0d501412fb5df74269918fdd9ba12951c266303a4"
+  }
+}

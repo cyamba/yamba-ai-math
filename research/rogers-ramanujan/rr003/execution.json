@@ -1,0 +1,462 @@
+{
+  "program": "RR003",
+  "status": "closed_with_progress_complete_KR1_bijection_unresolved",
+  "governing_objective_achieved": false,
+  "execution_mode": "manual author/critic research, not provider execution or replay",
+  "start_utc": "2026-10-24T10:02:35Z",
+  "hard_deadline_utc": "2026-10-24T13:02:35Z",
+  "closing_record_utc": "2026-10-24T12:48:40.780416+00:00",
+  "elapsed_seconds_at_record": 9965.780416,
+  "checkpoint_commit": "5eec6bb",
+  "profiles": [
+    "mathematician (root author)",
+    "critic (rr003_critic)"
+  ],
+  "rounds": 2,
+  "logical_stage_dispatches": 6,
+  "declared_dispatch_proxy_units": 16,
+  "timing_deviation": "Both critic challenges occurred earlier than nominal phase windows; subsequent development remained in final author revision and received no additional semantic review.",
+  "limits": {
+    "elapsed_seconds": 10800,
+    "cumulative_computation_seconds": 600,
+    "measured_child_rss_bytes": 2147483648,
+    "incremental_artifact_bytes": 1073741824,
+    "minimum_free_disk_bytes": 5368709120
+  },
+  "observed": {
+    "observed_utc": "2026-10-24T12:47:22.751789+00:00",
+    "elapsed_seconds": 9887.751789,
+    "remaining_elapsed_seconds": 912.248211,
+    "charged_computation_seconds": 21.508843002971844,
+    "peak_recorded_child_rss_bytes": 28770304,
+    "ignored_run_artifact_bytes": 694922,
+    "staged_working_file_bytes": 544604,
+    "related_python_cache_bytes": 321374,
+    "entire_existing_git_common_store_bytes": 19632125,
+    "free_disk_bytes": 29571158016,
+    "closing_reserve_bytes": 8388608,
+    "conservative_local_artifact_ceiling_bytes": 29581633,
+    "scope_note": "Conservative local artifact ceiling includes the entire existing Git common store and whole changed files, thus overcounts task increments; includes an 8MiB closing reserve. It excludes unrelated user activity and unobservable provider storage/memory.",
+    "computation_ledger_sha256": "474b8c8c0b120e39ad1bb304268008142c7213e8d950e004f1190ea339032c53",
+    "peak_child_rss_bytes": 28770304,
+    "resource_snapshot_sha256": "26cf1bba4b1f5ac1940f36409a2864b4616be037c2ffbe75345347fa2452cee8"
+  },
+  "resource_assurance": "The runner serializes and times child commands; RSS is measured after execution, not OS-reserved. Model reasoning memory is unobservable. Final byte scope includes canonical new/modified files and ignored RR003 artifacts, not unrelated user activity.",
+  "engineering": {
+    "unit_tests": {
+      "passed": 90,
+      "receipt_sha256": "fe3d94d845365e4f1bef0c465a7347f94395e07cc745fafd8721482e3d6d4043"
+    },
+    "planner": {
+      "exit_code": 0,
+      "cost_units": 16,
+      "receipt_sha256": "e4bc48ab9468ff4950a5e56754bdbdc9cf029c2b0901b778ab60166dc55b1d88"
+    },
+    "repository_checker": {
+      "status": "passed",
+      "receipt_sha256": "2a05e35c4541f688819723a18af0cccfb9c0a792e5bfdb2a88bb4dcbfb62b4e5",
+      "exit_code": 0
+    },
+    "frozen_integrity": {
+      "passed": true,
+      "bindings": 71,
+      "distinct_paths": 41,
+      "receipt_sha256": "67e6a4c9597eb62948288b2df2d4a59c79d70ece549a67e6462b5145bf76fa57"
+    },
+    "staged_content_audit": {
+      "program": "RR003",
+      "observed_utc": "2026-10-24T12:42:38.681194+00:00",
+      "staged_files": 88,
+      "staged_bytes": 517540,
+      "scope_violations": [],
+      "credential_pattern_hits": [],
+      "diff_check_exit_code": 0,
+      "ignored_bulk_verified": true,
+      "receipt_sha256": "992c665564c9558594293965320dda3291cc34047c669455ca17df87456d4052"
+    }
+  },
+  "boundaries": {
+    "new_dependencies": false,
+    "new_paid_provider": false,
+    "deleted_user_files": false,
+    "pushed": false,
+    "published": false,
+    "general_harness_redesign": false
+  },
+  "completion": {
+    "complete_KR1_bijection": false,
+    "universal_U_C_bridge_accepted": false,
+    "Lean": "subsequent obligation",
+    "exposition": "subsequent obligation",
+    "novelty": "unverified"
+  },
+  "result": "result.md",
+  "verification": "verification-summary.json",
+  "chronology": "execution.md",
+  "charged_computation_runs": [
+    {
+      "label": "baseline-engineering-conservative-charge",
+      "seconds": 3,
+      "measured_unit_tests_seconds": 2.257
+    },
+    {
+      "label": "discovery-columns",
+      "elapsed_seconds": 0.04499791700800415,
+      "peak_child_rss_bytes": 18071552,
+      "exit_code": 0
+    },
+    {
+      "label": "round1-pilot12",
+      "elapsed_seconds": 0.1407772910024505,
+      "peak_child_rss_bytes": 22773760,
+      "exit_code": 0
+    },
+    {
+      "label": "round1-verify30",
+      "elapsed_seconds": 0.19586725000408478,
+      "peak_child_rss_bytes": 23478272,
+      "exit_code": 0
+    },
+    {
+      "label": "critic1-independent",
+      "elapsed_seconds": 0.23365224999724887,
+      "peak_child_rss_bytes": 24641536,
+      "exit_code": 0
+    },
+    {
+      "label": "discovery-recursive",
+      "elapsed_seconds": 0.07329437498992775,
+      "peak_child_rss_bytes": 17563648,
+      "exit_code": 0
+    },
+    {
+      "label": "discovery-charge",
+      "elapsed_seconds": 0.04403579200152308,
+      "peak_child_rss_bytes": 17350656,
+      "exit_code": 0
+    },
+    {
+      "label": "discovery-charge-witness43",
+      "elapsed_seconds": 0.05136579100508243,
+      "peak_child_rss_bytes": 17989632,
+      "exit_code": 0
+    },
+    {
+      "label": "round2-pilot12",
+      "elapsed_seconds": 0.0627921669947682,
+      "peak_child_rss_bytes": 23429120,
+      "exit_code": 0
+    },
+    {
+      "label": "round2-verify30",
+      "elapsed_seconds": 0.17799679198651575,
+      "peak_child_rss_bytes": 24379392,
+      "exit_code": 0
+    },
+    {
+      "label": "engineering-tests",
+      "elapsed_seconds": 2.3183540830068523,
+      "peak_child_rss_bytes": 28082176,
+      "exit_code": 0
+    },
+    {
+      "label": "critic2-independent",
+      "elapsed_seconds": 0.418949667000561,
+      "peak_child_rss_bytes": 27410432,
+      "exit_code": 0
+    },
+    {
+      "label": "discovery-unassigned",
+      "elapsed_seconds": 0.044745958992280066,
+      "peak_child_rss_bytes": 17203200,
+      "exit_code": 0
+    },
+    {
+      "label": "repository-check",
+      "elapsed_seconds": 0.07724745800078381,
+      "peak_child_rss_bytes": 16465920,
+      "exit_code": 0
+    },
+    {
+      "label": "revision-pilot12",
+      "elapsed_seconds": 0.06601633298851084,
+      "peak_child_rss_bytes": 22888448,
+      "exit_code": 0
+    },
+    {
+      "label": "revision-verify30",
+      "elapsed_seconds": 0.16600687499158084,
+      "peak_child_rss_bytes": 23248896,
+      "exit_code": 0
+    },
+    {
+      "label": "charge-critical-trace",
+      "elapsed_seconds": 0.03841716599708889,
+      "peak_child_rss_bytes": 16957440,
+      "exit_code": 0
+    },
+    {
+      "label": "endpoint-pilot12",
+      "elapsed_seconds": 0.05605933300103061,
+      "peak_child_rss_bytes": 22364160,
+      "exit_code": 0
+    },
+    {
+      "label": "endpoint-verify30",
+      "elapsed_seconds": 0.1547541670006467,
+      "peak_child_rss_bytes": 24346624,
+      "exit_code": 0
+    },
+    {
+      "label": "cluster-endpoint-pilot12",
+      "elapsed_seconds": 0.05429170899151359,
+      "peak_child_rss_bytes": 21626880,
+      "exit_code": 0
+    },
+    {
+      "label": "cluster-endpoint-verify30",
+      "elapsed_seconds": 0.1061147079890361,
+      "peak_child_rss_bytes": 22052864,
+      "exit_code": 0
+    },
+    {
+      "label": "merge-endpoint-pilot12",
+      "elapsed_seconds": 0.057209834005334415,
+      "peak_child_rss_bytes": 22216704,
+      "exit_code": 0
+    },
+    {
+      "label": "merge-endpoint-verify30",
+      "elapsed_seconds": 0.09504920900508296,
+      "peak_child_rss_bytes": 22167552,
+      "exit_code": 0
+    },
+    {
+      "label": "recursive-repair-pilot12",
+      "elapsed_seconds": 0.058064542012289166,
+      "peak_child_rss_bytes": 22085632,
+      "exit_code": 0
+    },
+    {
+      "label": "recursive-repair-verify30",
+      "elapsed_seconds": 0.08509166700241622,
+      "peak_child_rss_bytes": 21807104,
+      "exit_code": 0
+    },
+    {
+      "label": "partial-composition-pilot12",
+      "elapsed_seconds": 0.05604374999529682,
+      "peak_child_rss_bytes": 21610496,
+      "exit_code": 0
+    },
+    {
+      "label": "partial-composition-verify30",
+      "elapsed_seconds": 0.16447270799835678,
+      "peak_child_rss_bytes": 23724032,
+      "exit_code": 0
+    },
+    {
+      "label": "discovery-third-one-obstruction",
+      "elapsed_seconds": 0.03749149999930523,
+      "peak_child_rss_bytes": 16678912,
+      "exit_code": 0
+    },
+    {
+      "label": "final-engineering-tests",
+      "elapsed_seconds": 2.334465125008137,
+      "peak_child_rss_bytes": 27820032,
+      "exit_code": 0
+    },
+    {
+      "label": "three-sector-pilot12",
+      "elapsed_seconds": 0.05652779199590441,
+      "peak_child_rss_bytes": 21692416,
+      "exit_code": 0
+    },
+    {
+      "label": "three-sector-verify30",
+      "elapsed_seconds": 0.07014441600767896,
+      "peak_child_rss_bytes": 21659648,
+      "exit_code": 0
+    },
+    {
+      "label": "separated-charge-pilot12",
+      "elapsed_seconds": 0.05520033300854266,
+      "peak_child_rss_bytes": 21921792,
+      "exit_code": 0
+    },
+    {
+      "label": "separated-charge-verify30",
+      "elapsed_seconds": 0.10561533400323242,
+      "peak_child_rss_bytes": 21626880,
+      "exit_code": 0
+    },
+    {
+      "label": "final-functional-tests",
+      "elapsed_seconds": 2.3526855829986744,
+      "peak_child_rss_bytes": 27869184,
+      "exit_code": 0
+    },
+    {
+      "label": "partial-overlay-obstruction",
+      "elapsed_seconds": 0.045396292000077665,
+      "peak_child_rss_bytes": 17973248,
+      "exit_code": 0
+    },
+    {
+      "label": "recursive-seed-pilot12",
+      "elapsed_seconds": 0.05446308299724478,
+      "peak_child_rss_bytes": 21315584,
+      "exit_code": 0
+    },
+    {
+      "label": "recursive-seed-verify30",
+      "elapsed_seconds": 0.11032958299620077,
+      "peak_child_rss_bytes": 22478848,
+      "exit_code": 0
+    },
+    {
+      "label": "recursive-seed-lift-obstruction34",
+      "elapsed_seconds": 0.03107262498815544,
+      "peak_child_rss_bytes": 15319040,
+      "exit_code": 0
+    },
+    {
+      "label": "product-involution-pilot12",
+      "elapsed_seconds": 0.06856779201189056,
+      "peak_child_rss_bytes": 21970944,
+      "exit_code": 0
+    },
+    {
+      "label": "product-involution-verify30",
+      "elapsed_seconds": 1.4457454170042183,
+      "peak_child_rss_bytes": 23003136,
+      "exit_code": 0
+    },
+    {
+      "label": "second-product-pilot12",
+      "elapsed_seconds": 0.0624133749952307,
+      "peak_child_rss_bytes": 22069248,
+      "exit_code": 0
+    },
+    {
+      "label": "second-product-verify30",
+      "elapsed_seconds": 0.747314375010319,
+      "peak_child_rss_bytes": 25526272,
+      "exit_code": 0
+    },
+    {
+      "label": "cut-branch-pilot12",
+      "elapsed_seconds": 0.053852124998229556,
+      "peak_child_rss_bytes": 21512192,
+      "exit_code": 0
+    },
+    {
+      "label": "cut-branch-verify30",
+      "elapsed_seconds": 0.12165191699750721,
+      "peak_child_rss_bytes": 21626880,
+      "exit_code": 0
+    },
+    {
+      "label": "l-boundary-obstruction24",
+      "elapsed_seconds": 0.04214716699789278,
+      "peak_child_rss_bytes": 17661952,
+      "exit_code": 0
+    },
+    {
+      "label": "closing-functional-tests",
+      "elapsed_seconds": 2.705304207993322,
+      "peak_child_rss_bytes": 28770304,
+      "exit_code": 0
+    },
+    {
+      "label": "l-k-overlap26",
+      "elapsed_seconds": 0.042320499997003935,
+      "peak_child_rss_bytes": 17530880,
+      "exit_code": 0
+    },
+    {
+      "label": "l-k-overlap26-corrected-check",
+      "elapsed_seconds": 0.04394091700669378,
+      "peak_child_rss_bytes": 17678336,
+      "exit_code": 0
+    },
+    {
+      "label": "closing-repository-check",
+      "elapsed_seconds": 0.07306216699362267,
+      "peak_child_rss_bytes": 16220160,
+      "exit_code": 1
+    },
+    {
+      "label": "closing-pair-plan",
+      "elapsed_seconds": 0.05743329199322034,
+      "peak_child_rss_bytes": 22036480,
+      "exit_code": 0
+    },
+    {
+      "label": "closing-repository-check-complete",
+      "elapsed_seconds": 0.07944683400273789,
+      "peak_child_rss_bytes": 16990208,
+      "exit_code": 0
+    },
+    {
+      "label": "l-phase-local-repair-obstruction",
+      "elapsed_seconds": 0.04592433299694676,
+      "peak_child_rss_bytes": 17924096,
+      "exit_code": 0
+    },
+    {
+      "label": "middle-source-pilot12",
+      "elapsed_seconds": 0.05534329199872445,
+      "peak_child_rss_bytes": 21741568,
+      "exit_code": 0
+    },
+    {
+      "label": "middle-source-verify30",
+      "elapsed_seconds": 0.15902054100297391,
+      "peak_child_rss_bytes": 21872640,
+      "exit_code": 0
+    },
+    {
+      "label": "closing-functional-tests-final",
+      "elapsed_seconds": 2.3369619590084767,
+      "peak_child_rss_bytes": 27262976,
+      "exit_code": 0
+    },
+    {
+      "label": "closing-repository-check-final",
+      "elapsed_seconds": 0.07333233299141284,
+      "peak_child_rss_bytes": 16105472,
+      "exit_code": 0
+    }
+  ],
+  "complexity_contract_note": {
+    "preferred_bit_work": "O((N+1)^4)",
+    "preferred_auxiliary_bits": "O((N+1)^2)",
+    "auxiliary_involution_proved_upper_bound": "O((N+1)^3 log(N+2) 2^(3N+3)) bit work and O((N+1)^2) auxiliary bits",
+    "required_full_map_contract_revision": "If these walks are retained in a correct complete map without a sharper bound, explicitly allow this exponential upper bound in the work contract. Preferred quartic target is not achieved by the known bound. Binding investigation caps and proof standards remain unchanged.",
+    "complete_map_complexity": "unresolved"
+  },
+  "late_author_work": [
+    "Exact local phase-repair collision and an eight-to-seven restricted-fiber impossibility proof",
+    "Attributed positive middle source family, frozen verification-only coefficient checks through actual weight30",
+    "Focused closing primary-source inspection with novelty and proof-audit limits preserved"
+  ],
+  "mathematical_results_status": "Progress only; final author extensions and auxiliary arguments lack separate semantic review. No accepted full U-C bridge or complete KR1 map.",
+  "elapsed_assurance": "This is the pre-commit closing record time, not an invented exact duration for semantic-review stages. The final local commit/readback must also finish before the original deadline.",
+  "resource_checks": {
+    "elapsed": true,
+    "computation": true,
+    "recorded_child_rss": true,
+    "conservative_local_artifacts": true,
+    "free_disk": true
+  },
+  "local_commit_policy": "Included in the authorized local-only checkpoint; identify its final commit from git history. No push or publication.",
+  "final_record_sha256": {
+    "result.md": "906c714830aace6787bc786acfa6baf7cf1ed2e3b740ce7e0694c70acbb34c56",
+    "mechanisms.md": "00e2c4a26e2f69f33d527b56721225940a41d7e71b7f99455482dd8c9a5a6a43",
+    "verification-summary.json": "78c59fd8b48ea9527aee9404f748f5bf0e8f032e1255cdcf434f8a8e631044a5",
+    "closing-source-comparison.md": "51d3101fec0b975cd2fb385ae4d7a981663c826d2db255dc9ca86c60ae87d7dd",
+    "l-branch-phase-obstruction.md": "f4e9cf50806ad321e4e989aeb70a8725f12af870626952ff6df131879c048380"
+  }
+}

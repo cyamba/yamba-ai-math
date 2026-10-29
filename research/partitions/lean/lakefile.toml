@@ -1,6 +1,9 @@
 name = "partition_corner_slide"
 version = "0.1.0"
-defaultTargets = ["CornerSlide", "TableauFamilies", "WeightedCancellation", "SignedArrays", "AlternantSubsets"]
+defaultTargets = ["CornerSlide", "TableauFamilies", "WeightedCancellation", "SignedArrays", "AlternantSubsets", "MultidimensionalFerrers"]
+
+[[lean_lib]]
+name = "MultidimensionalFerrers"
 
 [[lean_lib]]
 name = "CornerSlide"

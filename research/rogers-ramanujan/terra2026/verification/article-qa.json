@@ -1,0 +1,27 @@
+{
+  "article_tex_sha256": "3ba6f83ee55ddffd30c565037a262ac69f7bd28c099bcbf35181411f5b6082c4",
+  "article_pdf_sha256": "24cddea0d3abb0b2c6efdc8c66a0e6f9520d05ebf93e17e03bcdf71c9debfa23",
+  "pages": 12,
+  "figures": 4,
+  "renderer": "pdflatex, then Poppler pdftoppm at 1200px long edge",
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "inspection": "All pages via contact sheets; detailed checks of Figures 1, 2 and 3; final Figure 1 re-inspected after label spacing fix. Figure 4 inspected in page contact sheet.",
+  "overfull_boxes": 0,
+  "undefined_references": 0,
+  "remaining_underfull_boxes": 3,
+  "needs_rerun": false,
+  "findings": "No clipping or text/diagram overlap retained; three noncritical underfull spacing notices."
+}

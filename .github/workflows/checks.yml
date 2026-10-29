@@ -20,6 +20,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: python -m unittest discover -s tests -v
       - run: python scripts/check_repository.py
+      - run: python -m unittest discover -s .claude/bench/tests -v
+      - run: python .claude/bench/bench.py validate
 
   lean-std:
     runs-on: ubuntu-latest

@@ -1,0 +1,7 @@
+'KR1Cancellation.toggle_involution' depends on axioms: [propext]
+'KR1Cancellation.cancel_involution' depends on axioms: [propext]
+'KR1Cancellation.cancel_weight' depends on axioms: [propext, Quot.sound]
+'KR1Cancellation.cancel_parity' depends on axioms: [propext]
+'KR1Cancellation.cancel_fixed' depends on axioms: [propext]
+'KR1Cancellation.fixed_iff_all_zero' depends on axioms: [propext, Quot.sound]
+'KR1Cancellation.cancel_weight_nine' depends on axioms: [propext, Quot.sound]

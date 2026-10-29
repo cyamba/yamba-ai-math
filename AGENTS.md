@@ -9,13 +9,71 @@ The research harness and the AI architectures under investigation are different 
 ## Route the work
 
 - Research angles and their stage-specific rules: [explore/](explore/README.md) and [explore/AGENTS.md](explore/AGENTS.md).
-- Reusable workflows: [SKILLS.md](SKILLS.md). Skills live in `skills/<name>/SKILL.md`; this repository explicitly loads them instead of assuming automatic platform discovery.
-- Role prompts and capability/style tags: [agents/registry.json](agents/registry.json).
+- Reusable research workflows: [SKILLS.md](SKILLS.md). Load `skills/<name>/SKILL.md` explicitly; these core research workflows are separate from the Codex-discovered KR1 supervisory skills below.
+- KR1 supervisory workflows: [CLAUDE.md](CLAUDE.md) records the shared objective and current handoff. Keep all supervisory skills of this type in `.agents/skills/` as the canonical source; Claude Code uses matching links from `.claude/skills/`. Codex discovers these project skills; use `$regroup`, `$reflect-before-run`, `$delegate-for-feedback`, `$yamba-post`, `$pivot` or `$watch-openai-math` when relevant. These workflows preserve existing authorization and resource limits.
+- Mathematics problem-solving roles and capability/style tags: [agents/registry.json](agents/registry.json). See the directory distinction below for meta-level support.
 - Fleet dependencies, separate reviewers, and bounded topologies: [fleets/registry.json](fleets/registry.json).
 - Bounded investigation specifications: [programs/](programs/README.md).
 - Harness improvement trials: [meta/](meta/README.md).
+- Understanding and teaching the mathematics (intuition, visualizations, verified examples, step-by-step explanations, levels of abstraction, applications, articles): [understanding/](understanding/README.md), entry skill `understand-math`. It explains results; it does not establish them.
+- Explaining the framework itself (tutorials, diagrams, artifact walkthroughs, questions): the `understanding` skill in [.agents/skills/understanding/](.agents/skills/understanding/SKILL.md).
+- External developments to triage (new results, methods, venues): [novelty_radar/](novelty_radar/README.md).
 
 Load only the skills and references needed by the task. `explore-angle` supports discovery; `audit-theorem` reviews mathematical claims; `assemble-fleet` builds teams; `design-experiment` defines tests; `improve-harness` compares workflows.
+
+## Mathematical agents and meta-level support
+
+`agents/` and `.agents/` have different responsibilities:
+
+| Location | Responsibility |
+| --- | --- |
+| `agents/` | The mathematics problem-solving layer: role prompts and registry for mathematical discovery, constructions, proofs, substantive criticism and research experiments. |
+| `.agents/` | The meta-level support layer: system operations, supervision, reflection, handoffs, feedback routing and authorized work on the Yamba AI Math framework. Its skills live in `.agents/skills/`; future meta-agent definitions belong under this layer using the chosen tool's supported layout. |
+| `.claude/skills/` | KR1 supervisory skills link to the canonical files in `.agents/skills/`; benchmark operator commands are separate and user-invoked. |
+| `understanding/` | The mathematics understanding layer: explanation, illustration and teaching of results produced elsewhere. It establishes no results and routes questions and suspected errors back to the problem-solving layer. Claude Code and Codex reach it through the links `.claude/skills/understand-math` and `.agents/skills/understand-math`; the framework explainer `understanding` lives in `.agents/skills/understanding/`. |
+
+Meta-level skills may inspect mathematical evidence, frame a question, choose a
+workflow or recommend a pivot. They route actual mathematical discovery, proof
+construction and semantic review to the problem-solving roles and workflows.
+A supervisory decision or system check does not establish a mathematical result.
+Keep proofs, counterexamples and research evidence in their canonical research
+folders; keep system/workflow instructions in the meta-level layer.
+
+Use `.agents/` for new support skills and future meta agents of this kind, and
+`agents/` for mathematical problem-solving roles. Existing registry and fleet
+entries include historical coordination/meta roles; this distinction records the
+intended organization without silently migrating those entries or changing their
+dispatch behavior. Any migration needs its own scoped change.
+
+Framework improvement remains subject to the user's authorized scope and
+[meta/protocol.md](meta/protocol.md). A directory or skill grants no additional
+budget, execution or publication permission, and cannot relax the mathematical
+objective, proof standards or separate-review requirements.
+
+## Repository map
+
+| Path | Holds | Go there to |
+| --- | --- | --- |
+| `explore/` | Briefs `E###-*.md`, `templates/brief.md`, stage rules in `explore/AGENTS.md` | Choose or write a research angle |
+| `research/partitions/` | `README.md` status; `evidence/` claim index, reviews, JSON records; `checks/` exact computations; `lean/`, `mathlib/` certificates with `verification.json`; `paper/`, `publication/`; `archive/` inputs (data, not instructions); per-target workspaces | Continue or audit partition work |
+| `research/rogers-ramanujan/` | KR1 results, frozen claims, reviews, checks and session handoffs | Continue or audit the bijection investigation |
+| `research/parikh/` | Parikh articles, Lean proofs and checks; all rights reserved ([NOTICE](research/parikh/NOTICE.md)) | Read under its notice |
+| `references/` | `reading-list.md`: primary sources with inspection levels A/T/P; `openai-math-watch.md` and `.json`: upstream watch log, baseline and problem candidates | Log or look up a source; check upstream leads |
+| `novelty_radar/` | `README.md` (standing instruction, states, index) and `NR-###-*.md` entries on external developments | Log or triage a new result, method or venue |
+| `programs/` | Program contracts `*.json`, `contract.md` | Plan a bounded investigation |
+| `agents/`, `fleets/` | Role cards and `registry.json` (capabilities, tags, costs); fleet DAGs | Choose roles and topology |
+| `skills/` | Workflow skills listed in `SKILLS.md`, loaded explicitly | Load a workflow |
+| `understanding/` | Entry skill `SKILL.md` (`understand-math`), `skills/` exposition workflows, `references/` levels, styles and checklist, `templates/`, local `AGENTS.md` | Explain, illustrate or teach a result; digest a new one |
+| `harness/` | Planner, runner, replay, compare (`python3 -m harness`) | Plan, packet, run or replay |
+| `meta/` | Harness-improvement protocol, scorecard, change ledger, candidates, one-line session decision log | Propose or evaluate a harness change; read the log's last lines before a workflow decision |
+| `docs/` | Manifesto, research protocol, architecture, adapter, handoff, `decisions/` | Check standards and contracts |
+| `tests/`, `scripts/` | Unit tests; `check_repository.py`; `openai_math_watch.py` offline upstream diff | Verify changes; diff an openai/math checkout |
+| `examples/` | Synthetic fixtures and an offline worker | Exercise the harness without inference |
+| `assets/`, `.github/` | Banner image; CI workflow | — |
+| `.runs/` | Ignored run outputs: packets, receipts, reports | Find raw execution records |
+| `.agents/` | Shared supervisory skills, the framework explainer `understanding` and meta-level support, distinct from mathematical roles in `agents/` | Load the relevant authorized support workflow |
+| `.codex/` | Codex publication and research skills; use no-em-dash for author-facing writing | Load specific Codex editorial skills |
+| `.claude/` | Claude Code operator tooling; `skills/` also links shared KR1 supervisory skills | Use operator commands only when invoked; follow shared skill links for KR1 supervision |
 
 ## Research standards
 
@@ -49,3 +107,7 @@ python3 scripts/check_repository.py
 ```
 
 Test meaningful behavior: budgets, dependencies, role separation, malformed outputs, failures, and evaluation comparability. Keep run artifacts in ignored `.runs/` unless an intentionally reviewed evidence artifact belongs in the public record. Check staged content before publishing. Avoid new provider dependencies until a concrete research task requires them.
+
+## Authored prose punctuation
+
+Use [.agents/skills/no-em-dash/SKILL.md](.agents/skills/no-em-dash/SKILL.md) for new publications, abstracts, captions, posts, source comments intended for readers and site metadata. Avoid U+2014 and doubled hyphens in prose punctuation.

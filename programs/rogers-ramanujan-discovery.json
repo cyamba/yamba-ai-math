@@ -1,0 +1,46 @@
+{
+  "id": "RR003",
+  "title": "KR1: discovery toward a complete structural bijection",
+  "objective": "Construct explicit weight-preserving mutually inverse residue-to-gap algorithms with universal proofs; investigate at most two mechanisms, preserving partial results without declaring completion.",
+  "fleet": "pair",
+  "briefs": [
+    "research/rogers-ramanujan/rr003/contract.md",
+    "research/rogers-ramanujan/evidence/construction-result.md",
+    "research/rogers-ramanujan/evidence/source-audit.md",
+    "explore/AGENTS.md",
+    "skills/explore-angle/SKILL.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_workers": 2,
+    "max_cost_units": 16,
+    "max_rounds": 2,
+    "timeout_seconds": 1800
+  },
+  "rounds": 2,
+  "deliverables": [
+    "Two mechanism records, exploratory observations and evidence-based selection",
+    "Frozen proposals and two separate critic reviews with author revisions",
+    "Executable restricted or complete maps with actual proof obligations and exact falsifiers",
+    "Source-bound execution and learning records, preserving the unchanged end-to-end objective"
+  ],
+  "success_criteria": [
+    "Complete success means explicit residue-to-gap maps at every natural weight, universal validity/weight/termination/inverse proofs and separate semantic review",
+    "A bridge or restricted theorem is progress, never completion; endpoints must be executable and verified before full-bijection claims",
+    "Novelty remains unverified until closest primary constructions are inspected and compared",
+    "Exploration may guide invention; rank matching, enumeration and hidden lookups cannot define the map",
+    "Engineering checks pass and all capped/unresolved/negative results remain visible"
+  ],
+  "stop_conditions": [
+    "Hard deadline 2026-10-24T13:02:35Z, from start 2026-10-24T10:02:35Z; all coordination, source inspection and computation counted",
+    "At most two mechanisms, two review rounds, two profiles and 16 dispatch proxy units; no nested agents or providers",
+    "Ten cumulative enumeration minutes, 2 GiB computational RSS, 1 GiB incremental artifacts, 5 GiB free-space safeguard",
+    "No dependencies, paid adapters, deletions, publishing or pushing",
+    "Preferred quartic work/quadratic auxiliary space do not define mathematical correctness; record actual bounds and required contract revision if exceeded",
+    "No general harness redesign or success-criterion changes after seeing results"
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

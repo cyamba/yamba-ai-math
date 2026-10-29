@@ -33,11 +33,33 @@ supplied positivity proofs, a reproduced height-two theorem with an end-to-end
 Lean proof for every finite alphabet, and an illustrated article. It does not claim a general open-problem
 solution or an improvement to an AI architecture.
 
+Read the [full illustrated technical article (PDF, 11 pages)](research/partitions/paper/height-two-positivity.pdf),
+with [editable LaTeX source](research/partitions/paper/main.tex). The article
+formalizes the established Cho–Huh height-two theorem; it does not announce a
+new solution of an unsolved problem.
+
 The [Parikh matrix research](research/parikh/README.md) continues Christopher Yamba's 2006
 thesis on Parikh matrices and permutation statistics. It contains two articles with their
 LaTeX sources, Lean 4 proofs and verification checks. That directory is **all rights
 reserved** and excluded from the MIT License (see its
 [NOTICE](research/parikh/NOTICE.md)).
+
+The [Rogers–Ramanujan bijection investigation](research/rogers-ramanujan/README.md)
+preserves the original problem brief and supplies a Plan-mode prompt and bounded
+harness contract. Its first task is to verify one precise unresolved constructive
+target; no new bijection or theorem is claimed by this setup.
+
+The [KR1 positive cut-word research package](research/rogers-ramanujan/terra2026/README.md) includes the manuscript, Lean evidence, and the unresolved bijection.
+
+## Understand the work
+
+- [The understanding layer](understanding/README.md) explains, illustrates and teaches the
+  mathematics: intuition, verified examples, figures, step-by-step walkthroughs, several levels
+  of abstraction, applications and articles. It explains results; it does not establish them.
+- [The framework explainer](.agents/skills/understanding/SKILL.md) gives tutorials, diagrams and
+  walkthroughs of the harness itself.
+- [The novelty radar](novelty_radar/README.md) logs external developments worth a look, starting
+  with the [Lean formalization of the Classification of Finite Simple Groups](novelty_radar/NR-001-cfsg-lean-agent-swarm.md).
 
 ## Run the harness
 
@@ -98,6 +120,8 @@ Those records are synthetic fixtures. The comparison reports descriptive outcome
 | --- | --- |
 | `explore/` | Mathematical research angles and brief template |
 | `references/` | Primary-source reading and inspection ledger |
+| `novelty_radar/` | External developments to triage: new results, methods and venues |
+| `understanding/` | Explanation, illustration and teaching of the mathematics (skill `understand-math`) |
 | `research/partitions/` | Partition research, exact counterexamples, formal proofs, and article |
 | `agents/`, `fleets/` | Role cards, categories, tags, and workflow registries |
 | `skills/`, `SKILLS.md` | Reusable research workflows |
@@ -106,5 +130,6 @@ Those records are synthetic fixtures. The comparison reports descriptive outcome
 | `meta/` | Controlled improvement of the research harness |
 | `docs/` | Research standards, architecture, and adapter contract |
 | `tests/`, `examples/` | Behavioral checks and explicitly synthetic examples |
+| `.claude/`, `CLAUDE.md` | Operator meta-harness for Claude Code: benchmarks of framework versions on open problems and change proposals, outside research scope |
 
 Contribute through [the contribution guide](CONTRIBUTING.md). Code and original repository material use the [MIT license](LICENSE); linked third-party research retains its own terms.

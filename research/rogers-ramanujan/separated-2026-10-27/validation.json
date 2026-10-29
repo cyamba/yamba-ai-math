@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-27",
+  "commands": [
+    {
+      "command": "python3 research/rogers-ramanujan/separated-2026-10-27/audit.py --maximum 60 --original <locally-extracted-harness> --output <evidence.json>",
+      "exit_code": 0,
+      "elapsed_seconds": 2.702648,
+      "peak_rss_kib": 18696,
+      "source_states": 55403,
+      "outcome": "All restricted assertions pass; global compiler refuted."
+    },
+    {
+      "command": "python3 research/rogers-ramanujan/separated-2026-10-27/critic_check.py",
+      "outcome": "Separate critic report, 3231 sources through36 and 1393 gap targets through30.",
+      "reported_elapsed_seconds": 1.159327932999986
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests": 115,
+      "reported_elapsed_seconds": 3.288
+    },
+    {
+      "command": "python3 scripts/check_repository.py",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "resource_ledger": {
+    "enumeration_budget_seconds": 600,
+    "enumeration_seconds_conservatively_charged": 60,
+    "charge_note": "Conservative bound covers supplied harness pilots, author audit, critic checks and small regression enumerations; not a measured aggregate.",
+    "author_audit_measured_seconds": 2.702648,
+    "critic_reported_seconds": 1.159327932999986,
+    "per_enumeration_memory_limit_bytes": 2147483648,
+    "storage_budget_bytes": 1073741824,
+    "initial_free_space_kib": 28794508,
+    "separate_critics": 1,
+    "review_rounds": 1
+  },
+  "assurance": "Written mathematical proofs with separate semantic review. Finite checks corroborate code. No Lean run or novelty claim.",
+  "remote_push": false,
+  "website_publication": false,
+  "full_KR1_resolved": false
+}

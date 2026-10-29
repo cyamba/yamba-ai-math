@@ -1,5 +1,13 @@
 # Primary-source reading and inspection ledger
 
+27 October 2026, separated KR1 compiler audit: Kurşungöz,
+[Andrews-Gordon Type Series for Kanade-Russell Conjectures, arXiv:1808.01432v1](https://arxiv.org/pdf/1808.01432),
+**T**: Theorem7, its hypotheses, staircase/base configuration(3), pp5-6;
+selected free-pair and crossing rules(6)-(7), pp6-7, also inspected.
+The cluster series and base are established prior work. No full proof audit
+or novelty certification. Used in
+[the exact separated endpoint result](../research/rogers-ramanujan/separated-2026-10-27/result.md).
+
 **Verification date for the initial entries: 2026-10-20.** Later additions carry
 their own inspection dates. Verification here means that a primary-source record
 and the indicated material were inspected through web retrieval or an identified

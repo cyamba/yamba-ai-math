@@ -145,12 +145,26 @@ seven principal reports were separately [reviewed](../evidence/h3-algebra-review
 An actual finite-subset bijection is checked in the Mathlib project, but
 the complete two-elementary polynomial specialization remains an obligation.
 
+[MultidimensionalFerrers.lean](MultidimensionalFerrers.lean) is the sixth Std
+module, formalizing Christopher Yamba's 3D and $d$-dimensional Ferrers diagram
+constructions:
+
+| Lean declaration | Universally checked statement |
+| --- | --- |
+| `bubble_injective_local_fiber` | On the non-3-chain 2D fiber (`NoLocalThreeChain r a b`), Cho–Huh's `bubbleInsert` is injective inside posets of arbitrary height. |
+| `promote32_tableau_valid`, `promote32_tableau_graph_inversions` | Rotating a colliding `(2,2,1)` tableau `[[u,v],[a,b],[c]]` with `r a c`, `r v b`, `¬ r c v` along the 3rd Ferrers axis into `[[u,v,b],[a,c]]` of shape `(3,2)` preserves `Tableau` validity and `tableauGraphInversions`. |
+| `collision_witness_promoted_valid` | On the height-3 collision witness `[[1,2],[3,5],[4]]`, 3D rotation produces the valid `(3,2)` tableau `[[1,2,5],[3,4]]` with identical graph inversions. |
+| `hookBubbleEnd_tableau_valid`, `hookBubbleEnd_tableau_graph_inversions` | Endpoint hook slide `[[u,v,w]] ++ singletons tail ↦ [[u,v]] ++ singletons (bubbleInsert r w tail)` preserves `Tableau` validity and `tableauGraphInversions`. |
+| `hookBubbleMid_tableau_valid`, `hookBubbleMid_tableau_graph_inversions` | Interior hook slide `[[u,v,w]] ++ singletons tail ↦ [[u,w]] ++ singletons (bubbleInsert r v tail)` preserves `Tableau` validity and `tableauGraphInversions`. |
+| `cascade_split_preserves_all` | Universal $k$-dimensional first-column cascade `(0, k) ↔ (k-1, 1)` in `SignedArrays` preserves `ShapeAt`, `Good`, and `graphInversions` for every $k \ge 2$. |
+| `kr1_scale3_self_similarity`, `kr1_scale3_divisible`, `kr1_head_offset_identity`, `kr1_a3_core_weight`, `kr1_a3_b0_octant_weight` | Scale-3 self-similarity $Q(3c+r, b) = r^2 + 3r(b+2c) + 3\,Q(b, c)$ and 6D Ferrers octant weight identities for the Kanade–Russell $I_1$ quadratic form. |
+
 The checked principal statements use only `propext`, `Quot.sound`, and
 `Classical.choice`. Classical choice is used by the finite-family definitions
-as well as one original concrete filling proof. There is no `sorryAx`,
+as well as concrete filling proofs. There is no `sorryAx`,
 custom axiom declaration, `unsafe`, or `native_decide`. See the successful,
 source-hash-bound [verification record](verification.json) for actual command
-outputs, actual declaration types, and all 54 printed dependency lists. The
+outputs, actual declaration types, and all 68 printed dependency lists. The
 [separate semantic review](../evidence/gap-review.md) supports H1/H2 while
 retaining the coloring-to-elementary gap H3.
 
@@ -165,6 +179,7 @@ lake env lean TableauFamilies.lean
 lake env lean WeightedCancellation.lean
 lake env lean SignedArrays.lean
 lake env lean AlternantSubsets.lean
+lake env lean MultidimensionalFerrers.lean
 python3 verify.py --output verification.json
 ```
 
