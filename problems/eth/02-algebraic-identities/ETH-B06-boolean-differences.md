@@ -3,7 +3,7 @@
 | Field | Value |
 | --- | --- |
 | Category | Algebraic identities |
-| Source items | Preprint Lemma 3.2 (implicit in "Stage 4: Taylor jet extraction") |
+| Source items | Preprint Lemma 3.3 (implicit in "Stage 4: Taylor jet extraction") |
 | Status | **Solved and Lean-verified** (combinatorial core) |
 | Depends on the upstream theorem | No |
 | Score (I/B/T/L/Lean) | 2 / 1 / 4 / 4 / 5, composite **2.6** |
@@ -19,7 +19,7 @@ signed sum of $\sum_{j\le q}2^j\binom nj$ restricted sums with the formal input 
 ## Next step
 
 Feed into [ETH-G01](../07-formalization/ETH-G01-decouple-algebraic-core.md): state the full
-counting routine (Proposition 3.3) with an abstract design and prove its output equals the
+counting routine (Proposition 3.4) with an abstract design and prove its output equals the
 count, combining this lemma, measurement separation and Hermite uniqueness.
 
 ## Resource boundary

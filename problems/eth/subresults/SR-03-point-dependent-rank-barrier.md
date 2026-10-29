@@ -42,26 +42,33 @@ rank, `rank_add_le`, `rank_smul_le`, `rank_sum_le`), `label_barrier` (product se
 `Fintype.piFinset`) and `label_barrier_explicit` (the count
 $|H|^R(r-|H|)^Rr^{2(Q-R)}$).
 
-## How the three barriers compare
+## How the barriers compare
 
-| Design class | Lower bound on measurements per node, $c/D$ | Achieved by | Source |
+| Design class | Lower bound on measurements per node, $c/D$ | Best known | Source |
 | --- | --- | --- | --- |
-| One matrix $C$ for all nodes (preprint) | $\Pr[X\ge k+R]\Pr[X\le k]$, Gaussian: forces $R\gtrsim\sqrt{Q\log(1/\varepsilon)}$ | $V_0f(W_0)$, optimal up to a constant factor in $R$ | [SR-01](SR-01-isoperimetric-rank-barrier.md) |
-| Point-dependent, inside the swap algebra | $\frac{r-1}{r}\min(p,1-p)^{R-1}/R\approx2^{-R}$ | slab family: $\frac{r-1}{r}\cdot\frac1R$ for every $Q$ | [SR-02](SR-02-cube-polynomial-designs.md), [SR-04](SR-04-slab-construction.md) |
-| Point-dependent, arbitrary auxiliary matrices | $(h(r-h)/r^2)^R/R\approx4^{-R}$ | (same constructions) | this note |
+| The preprint's template (rows (2.16), (4.10) from an $R$-admissible pair) | $\Pr[X\ge k+R]\Pr[X\le k]$, Gaussian: forces $R\gtrsim\sqrt{Q\log(1/\varepsilon)}$ | $V_0f(W_0)$, optimal up to a constant factor in $R$ | [SR-01](SR-01-isoperimetric-rank-barrier.md) |
+| Swap-algebra designs, one matrix for all nodes | at least the largest node rank below | slab family: $\le2/R$ for every $Q$ (separate review) | [SR-02](SR-02-cube-polynomial-designs.md), [SR-04](SR-04-slab-construction.md) |
+| Swap-algebra designs, node-dependent matrices | $\frac{r-1}{r}\big(\frac{r-1}{2r}\big)^{R-1}/R$, i.e. $4^{1-R}/(2R)$ at $r=2$ and about $2^{1-R}/R$ for large $r$ (subcube obstruction) | slab family: $\frac{r-1}{r}\cdot\frac1R$ for every $Q$, far above the bound | [SR-02](SR-02-cube-polynomial-designs.md), [SR-04](SR-04-slab-construction.md) |
+| Node-dependent, arbitrary auxiliary matrices | $(h(r-h)/r^2)^R/R\approx4^{-R}/R$ | (same constructions) | this note |
+
+Counts in this table are ranks of nonlocal parts, i.e. rows after the split into groups; see
+[SR-02](SR-02-cube-polynomial-designs.md#setting) for the conversion to the preprint's counts.
 
 ## Consequence for the method
 
-The counting routine needs $c_t/D\le\tau/(3r)$ at every node, with $\tau\approx1/(r\log n)$ in the
-preprint's regime. For single-matrix designs SR-01 turns this into $R\gtrsim\sqrt{Q\log(r\log n)}$,
-which is exactly what produces the exponent $n/(\log n)^{1/2+o(1)}$. For point-dependent designs
-SR-03 only forces
-$$R\ \ge\ \log_4\frac{3r}{R\tau}\ \approx\ \log_4\big(r^2\log n\big),$$
+After the split into groups the design needs $\sum_gc_{t,g}\le2\tau n$ rows at node $t$ (Definition
+3.1(3)), and the rank bound above counts exactly such rows; with $h\approx M/D$ copies of the
+labels and $M\le3n$ this amounts to roughly $\operatorname{rank}N_t/D\lesssim2\tau/3$, with
+$\tau\approx1/(r\log n)$ in the preprint's regime. For template designs SR-01 turns the requirement
+into $R\gtrsim\sqrt{Q\log(r\log n)}$, which is exactly what produces the exponent
+$n/(\log n)^{1/2+o(1)}$. For node-dependent designs SR-03 only forces
+$$4^{-R}/R\ \lesssim\ 2\tau,\qquad\text{i.e.}\qquad R\ \gtrsim\ \log_4(r\log n),$$
 a **logarithmic** requirement. Plugging $R=\Theta(\log\log n)$ into the three costs of the
-preprint (Section 2.6) gives exponents as small as $n(\log\log n)^{O(1)}/\log n$. So the
-$\sqrt{\log n}$ barrier is **not** implied by any rank argument of this kind: it is a property of
-the single-matrix construction (SR-01), and whether point-dependent designs can approach the
-exponential bound is the open problem
+preprint (display (2.11)) gives exponents as small as $n(\log\log n)^{O(1)}/\log n$. So the
+$\sqrt{\log n}$ barrier is **not** implied by this forced-identity argument (for which product sets
+are optimal: any admissible set $U$ lies in some $A\times B$, so the argument cannot give more than
+$4^{-R}/R$): it is a property of the template (SR-01), and whether designs outside the template
+can approach the exponential bound is the open problem
 [ETH-A03](../01-algorithmic-core/ETH-A03-point-dependent-designs.md).
 
 ## Scope
@@ -69,5 +76,5 @@ exponential bound is the open problem
 The theorem covers every design built, like the preprint's Section 4, from auxiliary rows on
 the label space $([r]\times[r])^Q$ with the group rule $a_w(t)=d_u(t)$, with arbitrary
 node-dependent splittings. It does not cover designs whose locality pattern is not of this
-product form, nor the tensor-contraction route of the preprint's Appendix C, whose square root
+product form, nor the tensor-contraction route of the preprint's Appendix D, whose square root
 comes from a different count ([ETH-A04](../01-algorithmic-core/ETH-A04-tensor-mode-counting-barrier.md)).

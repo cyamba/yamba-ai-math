@@ -6,7 +6,7 @@ import Mathlib.Tactic.Ring
 /-!
 # Boolean differences: recovering a diagonal sum from fixed Boolean substitutions
 
-This file formalizes the combinatorial core of Lemma 3.2 ("Boolean differences") in
+This file formalizes the combinatorial core of Lemma 3.3 ("Boolean differences") in
 openai/math result 378. Boolean points of `{0,1}^ι` are encoded as finsets `x : Finset ι`
 (the support). For a function `f : Finset ι → R` the Möbius coefficients on the Boolean
 lattice are
@@ -72,7 +72,7 @@ theorem mobius_inversion (X : Finset ι) : ∀ f : Finset ι → R,
 
 variable [Fintype ι]
 
-/-- **Boolean differences** (openai/math 378, Lemma 3.2, combinatorial core).
+/-- **Boolean differences** (openai/math 378, Lemma 3.3, combinatorial core).
 If every `g x` has Möbius coefficients supported on sets of size at most `q`, then
 `∑_x g x x = ∑_{|E| ≤ q} ∑_{U ⊆ E} (-1)^{|E \ U|} ∑_{x ⊇ E} g x U`. -/
 theorem boolean_differences (q : ℕ) (g : Finset ι → Finset ι → R)

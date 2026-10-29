@@ -39,5 +39,5 @@ expanders.
 
 ## Resource boundary
 
-One agent to check the tensor encoding against Theorem C.1's hypotheses (entry computation
+One agent to check the tensor encoding against Theorem D.1's hypotheses (entry computation
 time, degree), one critic.

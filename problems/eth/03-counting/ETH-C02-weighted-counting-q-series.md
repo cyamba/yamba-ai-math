@@ -5,7 +5,7 @@
 | Category | Counting |
 | Source items | "YMB-ETH-03: q-series lifting, subexponential partition function $Z_F(q)$ for weighted #k-SAT" |
 | Status | **Solved conditionally at bounded density** (SR-07, Cor. B); **open at arbitrary density** |
-| Depends on the upstream theorem | Yes (Theorem C.1) |
+| Depends on the upstream theorem | Yes (Theorem D.1) |
 | Score (I/B/T/L/Lean) | 3 / 2 / 4 / 3 / 4, composite **3.0** |
 | Subresults | [SR-07](../subresults/SR-07-graded-counting-bounded-density.md); Lean `Graded.weight_identity` |
 
@@ -19,7 +19,7 @@ deformed 378 algorithm") is not needed, and its exponent $n\log\log n/\log n$ is
 ## Open part
 
 At arbitrary density the preprint's network sums the original variables inside variable-group
-tensors and already uses $V$ for the parity lift. Show that Theorem C.1 holds over
+tensors and already uses $V$ for the parity lift. Show that Theorem D.1 holds over
 $(\mathbb Z/2^P)[V,W]/(V^\ell,W^{n+1})$ (a second passive variable), or find another grading.
 
 ## The partition-counting remark
@@ -29,7 +29,7 @@ hence $\Theta(n\log n)$ variables for numbers of $\log n$ bits: not covered by l
 
 ## Closest work
 
-Preprint Appendix C (level T, read in full; R039).
+Preprint Appendix D (level T, read in full; R039).
 
 ## Smallest falsifier
 
@@ -38,4 +38,4 @@ $\omega(s)$ would block the extension.
 
 ## Resource boundary
 
-One agent to check Appendix C with two passive variables; one critic.
+One agent to check Appendix D with two passive variables; one critic.

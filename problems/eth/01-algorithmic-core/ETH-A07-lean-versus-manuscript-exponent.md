@@ -13,19 +13,19 @@
 
 The openai/math Lean development proves time $(L+1)^{O_k(1)}2^{O_k(n(\log\log n)^2/\sqrt{\log n})}$
 ([378.md](https://github.com/openai/math/blob/main/lean/docs/378.md)); the manuscript proves
-$n\log\log n/\sqrt{\log n}$ in general and $n/\sqrt{\log n}$ at bounded density via Appendix C.
+$n\log\log n/\sqrt{\log n}$ in general and $n/\sqrt{\log n}$ at bounded density via Appendix D.
 Formalize the sharper bounds.
 
 ## Correction
 
 The source summary attributes the extra $\log\log n$ to IPZ branching and proposes "buffered
 clause-width compression". In the preprint the difference is between the rational-interpolation
-route (Sections 3 to 5) and the tensor-contraction route (Appendix C); see
+route (Sections 3 to 5) and the tensor-contraction route (Appendix D); see
 [SR-08](../subresults/SR-08-corrections-to-gemini-summaries.md), row 4.
 
 ## Plan
 
-1. Formalize Theorem C.1 abstractly over $(\mathbb Z/2^P)[V]/(V^\ell)$ (contraction identity,
+1. Formalize Theorem D.1 abstractly over $(\mathbb Z/2^P)[V]/(V^\ell)$ (contraction identity,
    tapered Hermite recovery Lemma C.4, mode expansion), separate from Turing-machine accounting.
 2. Reuse `HermiteUniqueness.lean` and add a 2-adic valuation version.
 
@@ -36,9 +36,9 @@ openai/math `lean/OAI/Algorithms/SubexponentialSAT/` (level T); our
 
 ## Obstruction
 
-Appendix C is long and arithmetic-heavy; the 2-adic precision bookkeeping is the risk.
+Appendix D is long and arithmetic-heavy; the 2-adic precision bookkeeping is the risk.
 
 ## Resource boundary
 
-A multi-iteration Lean project; first iteration: statement of Theorem C.1 and Lemma C.4 with
+A multi-iteration Lean project; first iteration: statement of Theorem D.1 and Lemma D.5 (tapered Hermite recovery) with
 proofs of the algebraic identities only.

@@ -11,8 +11,9 @@
 
 ## Statement
 
-No instance of practical size is affected: in the preprint's own cost model the algorithm beats
-$2^n$ only for $n\gtrsim2^{160000}$ variables, and any cryptographic instance encoded as CNF has
+No instance of practical size is affected: in the preprint's own cost model the analysed bound
+beats $2^n$ only from about $n=2^{1.6\times10^5}$ variables with the best parameters found, and in no
+case before $n\approx2^{3\times10^4}$, and any cryptographic instance encoded as CNF has
 fewer than $2^{300}$ variables. Asymptotically, a primitive whose security proof reduced from
 fixed-width SAT with linear blowup and assumed $2^{\Omega(n)}$ hardness must be re-parameterized
 against $2^{O(n\log\log n/\sqrt{\log n})}$ attacks.

@@ -7,8 +7,8 @@ p_eps(T) (eps in {0,1}^Q) the matrix polynomial
 
     P(T) = sum_S c_S(T) Pi_S,   c_S(T) = 2^-Q sum_eps p_eps(T) chi_S(eps).
 
-At node t the *nonlocal* part N_t keeps the entries (u, w) with a_w(t) != d_u(t); its rank is
-the number of measurements the design needs at t. SR-02 predicts
+At node t the *nonlocal* part N_t keeps the entries (u, w) of the full matrix P(x_t) with
+a_w(t) != d_u(t) (computed by masking); its rank bounds the measurements needed at t. SR-02 predicts
 
     rank N_t = r(r-1) * sum over bad edges (eps', eps' + e_t) of m(eps'),
     m(eps') = prod_{s != t} (r(r+1)/2)^(1 - eps'_s) (r(r-1)/2)^(eps'_s),
@@ -159,19 +159,27 @@ def bad_edges(Q, vals):
 
 
 def rank_mod_p(mat, p):
-    m = [row[:] for row in mat]
-    rank, ncols = 0, len(m[0]) if m else 0
-    for c in range(ncols):
-        piv = next((i for i in range(rank, len(m)) if m[i][c] % p), None)
-        if piv is None:
+    """Rank of an integer matrix (list of rows or numpy array) modulo the prime p."""
+    import numpy as np
+    m = np.array(mat, dtype=np.int64) % p
+    rows, cols = m.shape if m.size else (0, 0)
+    rank = 0
+    for c in range(cols):
+        if rank == rows:
+            break
+        nz = np.nonzero(m[rank:, c])[0]
+        if nz.size == 0:
             continue
-        m[rank], m[piv] = m[piv], m[rank]
-        inv = pow(m[rank][c], p - 2, p)
-        m[rank] = [(x * inv) % p for x in m[rank]]
-        for i in range(len(m)):
-            if i != rank and m[i][c] % p:
-                f = m[i][c]
-                m[i] = [(a - f * b) % p for a, b in zip(m[i], m[rank])]
+        piv = rank + nz[0]
+        if piv != rank:
+            m[[rank, piv]] = m[[piv, rank]]
+        inv = pow(int(m[rank, c]), p - 2, p)
+        m[rank] = (m[rank] * inv) % p
+        others = np.nonzero(m[:, c])[0]
+        others = others[others != rank]
+        if others.size:
+            f = m[others, c].reshape(-1, 1)
+            m[others] = (m[others] - (f * m[rank]) % p) % p
         rank += 1
     return rank
 
@@ -181,6 +189,11 @@ def to_mod(q: Fraction, p: int) -> int:
 
 
 def validate(r, Q, R, vals, nodes, label):
+    """Build the full matrix P(x_t) = sum_S c_S(x_t) Pi_S for every node, keep exactly the
+    entries (u, w) with a_w(t) != d_u(t) (the nonlocal part N_t, by masking, not by the formula
+    of the proof), and compare rank N_t with the prediction of SR-02, Proposition 1. Also report
+    the rank of the stacked matrix [N_1; ...; N_Q], the number of rows a single measurement
+    matrix serving every node needs before the split into groups."""
     labels = list(itertools.product(itertools.product(range(r), repeat=Q), repeat=2))
     index = {u: i for i, u in enumerate(labels)}
     D = len(labels)
@@ -195,12 +208,10 @@ def validate(r, Q, R, vals, nodes, label):
     bad = bad_edges(Q, vals)
     result = {"family": label, "r": r, "Q": Q, "R": R, "D": D, "bad_edges": len(bad), "nodes": []}
     ranks = []
+    stacked = {p: [] for p in PRIMES}
     for t in range(Q):
-        # c_S(x_t) for S not containing t
         coeffs = {}
         for S in range(1 << Q):
-            if (S >> t) & 1:
-                continue
             c = sum(vals[(e, t)] * (-1) ** popcount(S & e) for e in range(1 << Q)) / (1 << Q)
             if c != 0:
                 coeffs[S] = c
@@ -218,17 +229,18 @@ def validate(r, Q, R, vals, nodes, label):
         for p in PRIMES:
             mat = [[0] * D for _ in range(D)]
             for u in labels:
-                if u[0][t] == u[1][t]:
-                    continue  # diagonal at t: every entry of this row is local
                 i = index[u]
                 for S, c in coeffs.items():
                     w = swap(u, S)
-                    if w[0][t] != u[1][t]:
+                    if w[0][t] != u[1][t]:          # nonlocal entry at node t
                         mat[i][index[w]] = (mat[i][index[w]] + to_mod(c, p)) % p
             rk.append(rank_mod_p(mat, p))
+            stacked[p].extend(row for row in mat if any(row))
         ranks.append(rk[0])
         result["nodes"].append({"t": t, "rank_mod_p": rk, "predicted": predicted,
                                 "match": rk[0] == rk[1] == predicted})
+    result["single_matrix_rows"] = [rank_mod_p(stacked[p], p) if stacked[p] else 0 for p in PRIMES]
+    result["max_node_rank"] = max(ranks)
     # SR-03 check for every R-subset of nodes, with the best balanced split H of [r]
     h = r // 2
     bound = (h ** R) * ((r - h) ** R) * r ** (2 * (Q - R))
@@ -237,6 +249,22 @@ def validate(r, Q, R, vals, nodes, label):
     result["min_sum_over_R_nodes"] = worst
     result["sr03_holds"] = worst >= bound
     return result
+
+
+def window_counts():
+    """Bad edges of the actual window family (best window), against the rule 'good iff both
+    weights lie in the window' (nodes x_t = (t+1)/Q, uniform measure)."""
+    from cube_polynomial import per_direction, window_bad
+    out = []
+    for Q in range(2, 7):
+        for R in range(2, Q + 1):
+            nodes = [Fraction(t + 1, Q) for t in range(Q)]
+            fam = min(((len(b), max(per_direction(Q, b))) for b in
+                       (bad_edges(Q, window_family_values(Q, R, lo, nodes)) for lo in range(Q - R + 2))))
+            rule = min(((len(b), max(per_direction(Q, b))) for b in
+                        (window_bad(Q, R, lo) for lo in range(Q - R + 2))))
+            out.append({"Q": Q, "R": R, "family_total_max": fam, "rule_total_max": rule})
+    return out
 
 
 def main():
@@ -249,7 +277,8 @@ def main():
         nodes = [Fraction(t + 1, Q) for t in range(Q)]
         for s0 in range(R):
             out.append(validate(r, Q, R, slab_family_values(Q, R, s0, nodes), nodes, f"slab s0={s0}"))
-        low = max(0, (Q - R + 1) // 2)
+        p = Fraction(r - 1, 2 * r)
+        low = min(max(0, int(Q * p - Fraction(R - 1, 2))), Q - R + 1)   # window around Qp
         out.append(validate(r, Q, R, window_family_values(Q, R, low, nodes), nodes, f"window low={low}"))
     if args.milp_log.exists():
         for line in args.milp_log.read_text().splitlines():
@@ -269,11 +298,13 @@ def main():
                 for r in (2,):
                     out.append(validate(r, Q, R, vals, nodes, f"milp {key}"))
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(json.dumps(out, indent=1) + "\n")
+    args.out.write_text(json.dumps({"validations": out, "window_family_counts": window_counts()},
+                                   indent=1) + "\n")
     for res in out:
         print(res["family"], "r", res["r"], "Q", res["Q"], "R", res["R"], "bad", res["bad_edges"],
               "ranks", [n["rank_mod_p"][0] for n in res["nodes"]],
               "match", all(n["match"] for n in res["nodes"]),
+              "single-C rows", res["single_matrix_rows"], "max node rank", res["max_node_rank"],
               "SR03", res["sr03_holds"], res["min_sum_over_R_nodes"], ">=", res["sr03_bound"])
 
 

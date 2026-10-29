@@ -27,7 +27,7 @@ T). So the algorithm's certificates cannot live in those systems.
 
 Extended Frege (or even Frege) has $2^{O(n\log\log n/\sqrt{\log n})}$-size refutations of every
 unsatisfiable 3-CNF. This would follow if the correctness of the counting routine (polynomial
-identities over $\mathbb Q$, Hermite interpolation, Lemmas 3.1 and 3.2) is provable in a weak
+identities over $\mathbb Q$, Hermite interpolation, Lemmas 3.2 and 3.3) is provable in a weak
 bounded arithmetic with polynomial overhead in the size of the computation. The algebraic
 identities proved in our Lean library are of this kind.
 

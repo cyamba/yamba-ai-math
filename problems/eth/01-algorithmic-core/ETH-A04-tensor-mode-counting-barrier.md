@@ -3,7 +3,7 @@
 | Field | Value |
 | --- | --- |
 | Category | Algorithmic core |
-| Source items | Preprint Appendix C (sharper route); implicit in "YMB-ETH-02" |
+| Source items | Preprint Appendix D (sharper route); implicit in "YMB-ETH-02" |
 | Status | **Open** |
 | Depends on the upstream theorem | No (concerns the method) |
 | Score (I/B/T/L/Lean) | 4 / 3 / 2 / 3 / 2, composite **3.0** |
@@ -11,7 +11,7 @@
 
 ## Task
 
-Appendix C contracts a Boolean tensor network with $s$ wires in $2^{O(s/\sqrt{\log s})}$. At a
+Appendix D contracts a Boolean tensor network with $s$ wires in $2^{O(s/\sqrt{\log s})}$. At a
 call with $M$ wires and $u=\Theta(\log s/2^d)$ retained 2-adic levels, the number of children is
 the number of mode monomials of total weight below the working precision $p_t$:
 $$\exp\big(O(\sqrt{Mp_t/D})\big)=\exp\big(O(M/\sqrt u)\big),\qquad p_t=O(MD/u),\quad
@@ -33,7 +33,7 @@ square root is forced for this route.
 
 ## Closest work
 
-Preprint Appendix C (level T: C.1 to C.6 read in full, no proof audit; R039). Partition asymptotics (Hardy–Ramanujan type)
+Preprint Appendix D (level T: D.1 to D.4 read in full, no proof audit; R039). Partition asymptotics (Hardy–Ramanujan type)
 explain the square root exactly: $N$ variables of each weight $1,2,\dots$ and budget $p$ give
 $\exp(\Theta(\sqrt{Np}))$ monomials.
 

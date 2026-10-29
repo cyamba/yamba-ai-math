@@ -6,7 +6,7 @@ import Mathlib.Data.Fintype.Pi
 /-!
 # Graded counting: histograms and weight enumerators (subresult SR-07)
 
-Tensor contraction over the truncated ring `(ℤ/2^p)[V]/(V^ℓ)` (preprint, Theorem C.1) computes
+Tensor contraction over the truncated ring `(ℤ/2^p)[V]/(V^ℓ)` (preprint, Theorem D.1) computes
 sums of products of local factors whose values are polynomials in `V`. This file proves the
 algebraic identities that turn such sums into the two graded counts used in SR-07:
 

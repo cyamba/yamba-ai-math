@@ -14,7 +14,7 @@
 State and prove in Lean, with Mathlib and without any machine model, the **abstract counting
 theorem**: given polynomial factors $\Phi_e$, replacement forms $\vec P_{e,v}(T)$ of degree $\le R$
 with $\vec P_{e,v}(0)=\delta_v$, and an $(r,\tau,D)$-design at each node $t=1,\dots,Q$ (Definition
-3.1), the quantity computed by the routine of Proposition 3.3 (Taylor data by Boolean
+3.1), the quantity computed by the routine of Proposition 3.4 (Taylor data by Boolean
 differences, group sums after fixing measurements, Hermite recovery) equals
 $\sum_{x\in\{0,1\}^n}\prod_e\Phi_e(x)$.
 
@@ -27,8 +27,8 @@ clause-violation generating function, now `Graded.deformation_identity` (SR-08 r
 
 ## Plan
 
-1. Definitions: designs as data (groups, assignments, measurement matrices, the dependence
-   condition (3.1) as an equality of linear forms).
+1. Definitions: designs as data (groups, assignments, measurement matrices, the kernel
+   condition of Definition 3.1(4) as an equality of linear forms).
 2. Per node: `Separation.sum_prod_eq_sum_measurements` applied to the transformed factors with the
    formal input fixed; per Taylor order: `BooleanDifferences.boolean_differences`.
 3. Recovery: `Hermite.eq_of_jets_eq`, plus a constructive interpolation (or the residue formula
@@ -38,4 +38,4 @@ clause-violation generating function, now `Graded.deformation_identity` (SR-08 r
 ## Resource boundary
 
 Two Lean agents over one or two iterations; a reviewer checks that the formal statement matches
-Proposition 3.3.
+Proposition 3.4.

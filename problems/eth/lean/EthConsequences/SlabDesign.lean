@@ -26,10 +26,12 @@ This file proves:
 * `slab_design_bound`: for a suitable offset of the slabs, **in every direction at most a
   `1/R` fraction of the edges is bad**, for every `Q`.
 
-The single-matrix construction of the preprint fails on a Gaussian fraction
-`≈ exp(-R²/(8Q))` of the edges (SR-01 shows this is optimal for single-matrix designs); the slab
-construction fails on at most `1/R`, independently of `Q`. The general lower bound for
-point-dependent designs is exponential in `R` (`PointDependentBarrier.lean`, SR-03).
+The preprint's construction (its window family) fails on at most a Gaussian fraction
+`≤ 2 exp(-R²/(8Q))` of the edges, and SR-01 shows that every design of the preprint's template
+needs a Gaussian fraction; the slab family lies outside that template and fails on at most
+`1/R`, independently of `Q`, with node-dependent or with single measurement matrices (SR-04).
+The general lower bound for point-dependent designs is exponential in `R`
+(`PointDependentBarrier.lean`, SR-03).
 -/
 
 namespace EthConsequences.SlabDesign

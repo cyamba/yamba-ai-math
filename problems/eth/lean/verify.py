@@ -53,6 +53,8 @@ THEOREMS = [
     "RankBarrier.barrier_threshold",
     "Subcube.eval_zero_eq_sum",
     "Subcube.no_good_subcube",
+    "Subcube.card_good_directions_lt",
+    "Subcube.subcube_identity",
     "IndependentSets.card_indepSets_eq_card_satAssignments",
     "IndependentSets.card_indepSets_size_eq",
     "PointBarrier.rank_add_le",
@@ -183,8 +185,8 @@ def main() -> int:
                          "warnings_as_errors": True},
             scope=("Kernel-checked statements: Newton parity interpolation and its off-window "
                    "defect (closed form and bound); Boolean-lattice Mobius inversion and the "
-                   "Boolean-differences identity of Lemma 3.2 (Mobius-coefficient form); the "
-                   "measurement-separation identity of Lemma 3.1 (algebraic core); uniqueness of "
+                   "Boolean-differences identity of Lemma 3.3 (Mobius-coefficient form); the "
+                   "measurement-separation identity of Lemma 3.2 (algebraic core); uniqueness of "
                    "Hermite interpolation; the isoperimetric rank barrier for any auxiliary pair "
                    "(M0, C) with the Hamming support condition, including its threshold form; the "
                    "R-subcube obstruction for point-dependent cube designs; the independent-set "

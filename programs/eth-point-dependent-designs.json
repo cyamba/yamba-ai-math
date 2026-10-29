@@ -1,7 +1,7 @@
 {
   "id": "ETH001",
   "title": "Point-dependent designs and the square-root barrier of the ETH-refutation method",
-  "objective": "Decide, within declared limits, whether point-dependent swap designs can beat the square root in the exponent of the openai/math family 378 counting method: construct and exactly verify cube-polynomial families CP(Q,R) with per-direction bad fraction at most R^-C, C > 4, at Q about R^((C+2)/3), or prove a lower bound beta*(Q,R) >= R^-O(1) for Q >= R^(2+delta) for all families or for a precisely defined natural subclass, preserving every exact counterexample and partial bound.",
+  "objective": "Decide, within declared limits, whether swap-algebra measurement designs (node-dependent or single-matrix, outside the preprint's template) can beat the square root in the exponent of the openai/math family 378 counting method: construct and exactly verify cube-polynomial families CP(Q,R) meeting the improvement criterion of SR-04 (per-direction bad fraction at most R^-C with C > 3 at Q about R^((C+1)/2) when zero measurement rows are dropped, C > 4 at Q about R^((C+2)/3) under the preprint's row count), or prove the matching barrier (for example the touched-set bound of SR-10) for all families or for a precisely defined natural subclass, preserving every exact counterexample and partial bound.",
   "fleet": "theorem",
   "briefs": [
     "problems/eth/targets/ETH001.md",
@@ -9,11 +9,13 @@
     "problems/eth/01-algorithmic-core/ETH-A01-break-the-sqrt-log-barrier.md",
     "problems/eth/subresults/SR-02-cube-polynomial-designs.md",
     "problems/eth/subresults/SR-04-slab-construction.md",
-    "problems/eth/subresults/SR-05-stress-duality-and-products.md"
+    "problems/eth/subresults/SR-05-stress-duality-and-products.md",
+    "problems/eth/subresults/SR-10-touched-vertices-barrier-criterion.md",
+    "problems/eth/subresults/SR-11-subcube-identities-characterize-defects.md"
   ],
   "target": {
     "path": "problems/eth/targets/ETH001.md",
-    "sha256": "79dd5e2f17ec18d21009e303e6a1cf9c4a35f57c120b586e83f9a67f35686663"
+    "sha256": "5cb06c13bdf0bf708597f967fcf2e68c0a626734df7a276362517b47148913f6"
   },
   "constraints": {
     "max_agents": 6,

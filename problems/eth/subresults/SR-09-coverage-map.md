@@ -1,7 +1,7 @@
 # SR-09. Coverage map: which ETH-hard problems become subexponential
 
-**Status: proved conditionally** on the preprint's Theorem 1.1 (and Theorem C.1 where marked
-C.1). Each positive entry gives a reduction to fixed-width SAT with $O(n)$ variables; the
+**Status: proved conditionally** on the preprint's Theorem 1.1 (and Theorem D.1 where marked
+D.1). Each positive entry gives a reduction to fixed-width SAT with $O(n)$ variables; the
 negative entries record that **no such reduction is known** (open), not that none exists.
 Bibliographic facts were checked by our citation pass of 2026-10-29 at statement level
 (inspection level T or A, as recorded in the
@@ -29,12 +29,12 @@ variables (any number of clauses) and $2^{O_{k,D}(N/\sqrt{\log N})}$ at density 
 | $k$-SAT, #$k$-SAT, $k$ fixed | itself | $2^{O_k(\rho(n))}$ |
 | Maximum independent set, maximum clique, minimum vertex cover, any graph ($v$ vertices) | 2-CNF $\bigwedge_{uw}(\bar x_u\vee\bar x_w)$ (complement graph for clique) plus a linear-size counting circuit (adder tree, $O(v)$ gates) and Tseitin encoding | $2^{O(\rho(v))}$ |
 | #IS, proper $q$-colourings ($q$ fixed), perfect matchings (sparse) | preprint Cor. 1.3 | $2^{o(v)}$, $2^{o(v+e)}$ |
-| Independence polynomial, Potts/Ising at fixed rational parameters, graphs with $O(v)$ edges | graded contraction, [SR-07](SR-07-graded-counting-bounded-density.md) (C.1) | $2^{O(v/\sqrt{\log v})}$ |
+| Independence polynomial, Potts/Ising at fixed rational parameters, graphs with $O(v)$ edges | graded contraction, [SR-07](SR-07-graded-counting-bounded-density.md) (D.1) | $2^{O(v/\sqrt{\log v})}$ |
 | Exact Max-$k$-SAT and its histogram, $m\le Dn$ | [SR-07](SR-07-graded-counting-bounded-density.md) | $2^{O_{k,D}(n/\sqrt{\log n})}$ |
 | Dominating set, max degree $\Delta$ fixed | width-$(\Delta+1)$ clause per vertex plus counter | $2^{O_\Delta(\rho(v))}$ |
 | Set Splitting, sets of size $\le k$ | preprint §1.1.3 (Cygan, Dell, Lokshtanov, Marx, Nederlof, Okamoto, Paturi, Saurabh, Wahlström, observation 3.6) | $2^{O_k(\rho(n))}$ |
 | Circuit-SAT, fan-in 2, $s=O(n)$ gates | Tseitin | $2^{O(\rho(n))}$; gives $\mathrm E^{\mathrm{NP}}\not\subseteq\mathrm{SIZE}(O(n))$ (preprint Cor. C.1) |
-| Inverting maps with output locality $d$ (Goldreich's PRG, any stretch) | preprint Cor. D.2 | $2^{O_d(\rho(n))}\mathrm{poly}(m)$ |
+| Inverting maps with output locality $d$ (Goldreich's PRG, any stretch) | preprint Cor. C.2 | $2^{O_d(\rho(n))}\mathrm{poly}(m)$ |
 | **Sparse noisy linear equations / sparse LPN with $m=O(n)$ samples**: find $x\in\mathbb F_2^n$, $e$ with $\lvert e\rvert\le\eta m$, $Ax+e=b$, rows of $A$ of weight $k$ | variables $x,e$ ($n+m$); each row is a $(k+1)$-XOR, $2^k$ clauses; counter for $\lvert e\rvert$ | $2^{O_{k,\eta,m/n}(n/\sqrt{\log n})}$ |
 | **Vertex Cover parameterized by $k$** | kernel with $\le2k$ vertices (Chen, Kanj, Jia, J. Algorithms 41 (2001), via Nemhauser–Trotter), then the IS row | $2^{O(\rho(k))}+\mathrm{poly}(n)$ |
 
@@ -49,8 +49,8 @@ $$\varepsilon n+O\!\left(\frac{k\,(k/\varepsilon)^{O(k)}\,n}{\sqrt{\log n}}\righ
 Choosing $\varepsilon=1/\log\log n$ gives $o(n)$ whenever
 $$k(n)\ \le\ c\,\frac{\log\log n}{\log\log\log n}$$
 for a small absolute $c$. So $k(n)$-SAT is subexponential up to width
-$\Theta(\log\log n/\log\log\log n)$ (conditional on C.1 with absolute constants for $s$ wires,
-which is how Theorem C.1 is stated). The source summary's threshold
+$\Theta(\log\log n/\log\log\log n)$ (conditional on D.1 with absolute constants for $s$ wires,
+which is how Theorem D.1 is stated). The source summary's threshold
 $k\le\frac{1-\varepsilon}c\log_2\log_2n$ (YMB-ETH-06) omits the $\log\log\log n$ coming from
 the $(k/\varepsilon)^{O(k)}$ sparsification constant. Unbounded-width CNF-SAT with
 $\mathrm{poly}(n)$ clauses is untouched, so the lower bounds that follow from "CNF-SAT has no

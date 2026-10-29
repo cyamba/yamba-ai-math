@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Explicit constants for the counting algorithm of openai/math result 378 (subresult SR-05).
+"""Explicit constants for the counting algorithm of openai/math result 378 (subresult SR-06).
 
-We evaluate the three costs of the preprint's overview algorithm (Section 2.6, display (2.9)):
+We evaluate the three costs of the preprint's overview algorithm (Section 2.6, display (2.11)):
 
     Taylor data      sum_{j <= q} 2^j C(n, j),   q = floor(3 n R / Q)
     measurements     (2D + 1)^(2 tau n)
@@ -11,19 +11,21 @@ for the bounded-occurrence 3-CNF setting (n variables, at most 3 occurrences eac
 polynomial factors, and report the exponent e = log2(time) / n as a function of
 lambda = log2(n). Two parameter regimes:
 
-  * "preprint": the explicit choices (2.12): r = floor(sqrt(lam)/nu^2), Q = floor(lam/(128 nu)),
+  * "preprint": the explicit choices (2.19): r = floor(sqrt(lam)/nu^2), Q = floor(lam/(128 nu)),
     R = 4 ceil(sqrt(lam)), tau = 1/(r lam), D = r^(2Q), with lam = ceil(log2 n),
     nu = ceil(log2 lam), together with the validity conditions stated there
-    (r >= 2, R >= 32, 6R <= Q, 12 D^2 <= n, 2 Q r^2 <= n).
+    (r >= 2, R >= 32, 6R <= Q, and (2.17) with the slightly stronger 12 D^2 <= n in place of
+    12 D^2 <= M, 2 Q r^2 <= n).
   * "optimized": the best integer choice of (r, Q, R) subject to the same structural
     constraints, using the exact binomial tail of the interpolation window
-    (c/D = Pr[Bin(Q, p) not in I], p = (r-1)/(2r)) and tau = 3 r c / D.
+    (c/D = Pr[Bin(Q, p) not in I], p = (r-1)/(2r), as in the preprint's Lemma 4.1) and
+    tau = 3 r c / D (the requirement c <= D tau / (3r)).
 
 For each regime we find the smallest lambda at which e drops below 1 (beats exhaustive
 search), 1/2 (beats Grover's quadratic speedup, 2^(n/2)) and log2(1.30704) (beats the
 PPSZ bound of Hertli for 3-SAT). These are thresholds for the analysed cost bound, not
 for any implementation; the bounds of the preprint's general k-CNF reduction and of its
-Appendix C are larger still (see the appendix-C check at the end).
+Appendix D are larger still (see the appendix-D check at the end).
 
 Usage: python3 galactic_thresholds.py --out results/galactic_thresholds.json
 """
@@ -130,7 +132,7 @@ def optimized(lam: float, r_values=None) -> dict:
                 if R > hi or R < lo:
                     continue
                 tail = window_tail(Q, R, r) if Q <= 200000 else 2 * math.exp(-R * R / (8 * Q))
-                tau = 3 * r * tail * r / (r - 1)  # c/D = (r-1)/r * tail <= tau/(3r)
+                tau = 3 * r * tail  # c/D = tail (Lemma 4.1) <= tau/(3r)
                 e = exponent(lam, r, Q, R, tau)
                 if best is None or e < best["exponent"]:
                     best = {"lambda": lam, "r": r, "Q": Q, "R": R, "tau": tau,
@@ -139,6 +141,16 @@ def optimized(lam: float, r_values=None) -> dict:
                             "measurements": 2 * tau * (2 * Q * math.log2(r) + 1),
                             "groups": 2 / r}
     return best or {"lambda": lam, "exponent": None}
+
+
+def spot_check(lam: float, r: int, Q: int, R: int) -> dict:
+    """Exponent and validity of one explicit parameter choice in the optimized model."""
+    valid = (math.log2(12) + 4 * Q * math.log2(r) <= lam and math.log2(2 * Q * r * r) <= lam
+             and 1 <= R <= Q)
+    tail = window_tail(Q, R, r)
+    tau = 3 * r * tail
+    return {"lambda": lam, "r": r, "Q": Q, "R": R, "valid": valid, "window_tail": tail,
+            "exponent": exponent(lam, r, Q, R, tau)}
 
 
 def first_crossing(fn, targets, lam_grid):
@@ -158,14 +170,15 @@ def first_crossing(fn, targets, lam_grid):
     return hits, prev
 
 
-def appendix_c_threshold() -> dict:
-    """Appendix C requires lambda^{4/5} <= u_0 = floor(eps * lambda), eps = 1/(128*1024)."""
+def appendix_d_threshold() -> dict:
+    """Appendix D, at recursion depth 0, requires lambda^{4/5} <= u_0 = floor(eps * lambda),
+    eps = 1/(128*1024). Deeper recursion levels need more (not computed here)."""
     eps = 1 / (128 * 1024)
     # lambda^{1/5} >= 1/eps  <=>  lambda >= eps^{-5}
     lam_min = (1 / eps) ** 5
     return {"epsilon": eps, "condition": "lambda^(4/5) <= floor(eps*lambda)",
             "lambda_min": lam_min, "log2_lambda_min": math.log2(lam_min),
-            "meaning": "the Appendix C parameter inequalities can hold only when log2(s) >= 2^85"}
+            "meaning": "the depth-0 Appendix D parameter inequalities can hold only when log2(s) >= 2^85"}
 
 
 def main() -> None:
@@ -190,7 +203,8 @@ def main() -> None:
         "preprint_crossings": pre_hits,
         "optimized_crossings": opt_hits,
         "optimized_samples": samples,
-        "appendix_c": appendix_c_threshold(),
+        "appendix_d": appendix_d_threshold(),
+        "spot_checks": [spot_check(160805, 17, 9835, 595), spot_check(177828, 20, 10286, 617)],
         "log2_ppsz": LOG2_PPSZ,
     }
     args.out.parent.mkdir(parents=True, exist_ok=True)
@@ -199,7 +213,7 @@ def main() -> None:
                       "preprint": {k: (v["lambda"], round(v["exponent"], 4)) for k, v in pre_hits.items()},
                       "optimized": {k: (v["lambda"], round(v["exponent"], 4), v["r"], v["Q"], v["R"])
                                     for k, v in opt_hits.items()},
-                      "appendix_c": report["appendix_c"]["log2_lambda_min"]}, indent=1))
+                      "appendix_d": report["appendix_d"]["log2_lambda_min"]}, indent=1))
     for k, v in samples.items():
         print(k, {kk: (round(vv, 4) if isinstance(vv, float) else vv) for kk, vv in v.items()})
 

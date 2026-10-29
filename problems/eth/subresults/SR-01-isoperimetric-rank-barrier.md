@@ -1,4 +1,4 @@
-# SR-01. Isoperimetric rank barrier for the spectral matrix construction
+# SR-01. Isoperimetric rank barrier for the preprint's template of designs
 
 **Status: proved** (informal proof below; the combinatorial and linear-algebraic core is
 **Lean-verified** in [`RankBarrier.lean`](../lean/EthConsequences/RankBarrier.lean), certificate
@@ -25,7 +25,11 @@ we found no prior statement for this construction. Inspection level for the two 
 Feeds: [ETH-A01](../01-algorithmic-core/ETH-A01-break-the-sqrt-log-barrier.md),
 [ETH-A02](../01-algorithmic-core/ETH-A02-optimality-of-the-spectral-construction.md).
 Continued by [SR-02](SR-02-cube-polynomial-designs.md) to [SR-05](SR-05-stress-duality-and-products.md),
-which show that the barrier is specific to designs with one measurement matrix for all nodes.
+which show that the barrier is specific to the preprint's **template** (replacement rows (2.16),
+(4.10) built from a pair $(M_0,C)$ with the two conditions (2.14)): the slab family of
+[SR-04](SR-04-slab-construction.md), a swap-algebra design outside the template, beats it with a
+single measurement matrix as well as with node-dependent ones (finding of the separate review,
+2026-10-29).
 
 ## Setting (preprint Section 2.7, Step 2, and Section 4.2)
 
@@ -39,7 +43,7 @@ $C\in\mathbb Q^{c\times\mathcal B}$ is **$R$-admissible** when
 1. (kernel) $M_0\xi=\xi$ for every $\xi\in\ker C$, and
 2. (support) $M_0[u,w]\ne0\Rightarrow|E_{u,w}|\le R-1$.
 
-These are exactly the two conditions (2.12) of the preprint. Condition 2 is what makes the
+These are exactly the two conditions (2.14) of the preprint, and the rows below are its (2.16). Condition 2 is what makes the
 replacement rows $\langle\vec P_u(T),\vec\zeta\rangle=((I-M_0)\vec\zeta)_u+\sum_wM_0[u,w]
 \prod_{s\in E_{u,w}}(1-T/s)\zeta_w$ have degree at most $R-1$; condition 1 is what makes
 $(I-M_0)\vec\zeta$ a function of the $c$ measurements $C\vec\zeta$. The preprint requires
@@ -81,7 +85,7 @@ If $c\le\varepsilon D$ then
 $$(R+1)^2\ \ge\ Q\,p_h(1-p_h)\,\ln\frac{1}{2(Q+1)\varepsilon},\qquad p_h=\frac{\lfloor r/2\rfloor}{r}\in[\tfrac13,\tfrac12],$$
 
 so in particular $R\ge\sqrt{\tfrac29\,Q\ln\frac{1}{2(Q+1)\varepsilon}}-1$ (when
-$\lceil Qp_h\rceil+R\le Q$; otherwise $R>Q/2-1$, which is stronger).
+$\lceil Qp_h\rceil+R\le Q$; otherwise $R>Q/2-1$).
 
 *Proof.* Take $k=\lceil Qp_h\rceil$; a binomial median lies in
 $\{\lfloor Qp_h\rfloor,\lceil Qp_h\rceil\}$, so $\Pr[X\le k]\ge\frac12$. For $m=k+R\le Q$,
@@ -93,17 +97,20 @@ $\varepsilon\ge\frac{1}{2(Q+1)}\exp\!\big(-\frac{(R+1)^2}{Qp(1-p)}\big)$. $\squa
 **Comparison.** The preprint needs $c\le D\tau/(3r)$ and achieves it with
 $R\approx\sqrt{8Q\ln(6r/\tau)}$. Corollary 3 forces
 $R\gtrsim\sqrt{\tfrac29 Q\ln\frac{3r}{2(Q+1)\tau}}$. So **among all matrices satisfying the
-two conditions, $V_0f(W_0)$ is optimal up to a factor of about 6 in $R$** (in the regime
-$\ln(r/\tau)\gg\ln Q$, which is the preprint's regime). No cleverer choice of $M_0$, even a
-non-symmetric one outside the swap algebra, can improve the exponent of the method.
+two conditions, $V_0f(W_0)$ is optimal up to a constant factor in $R$**: about $6$ when
+$\ln(r/\tau)\gg\ln Q$, and about $\sqrt{72}\approx8.5$ in the preprint's own regime, where
+$r/\tau=r^2\lambda$ and $\ln(r/\tau)\approx2\ln Q$. No cleverer choice of $M_0$, even a non-symmetric
+one outside the swap algebra, improves the exponent **within this template**; designs outside it
+can do better (SR-04).
 
 ## Corollary 4 (method-level barrier, under the preprint's accounting)
 
-Consider the counting routine of Proposition 3.3 instantiated by the Section 4 construction
+Consider the counting routine of Proposition 3.4 instantiated by the Section 4 construction
 with an arbitrary $R$-admissible pair, $h$ label copies, and $rhc$ group measurement rows
 (the preprint's accounting), applied to a bounded-occurrence formula with $M\ge n$
-occurrences. Assume every auxiliary label is used by some occurrence (as in Lemma 4.4; this
-forces $D\le M\le3n$, i.e. $Q\le\log_r(3n)/2$). Then the routine examines at least
+occurrences. Assume every auxiliary label is used by some occurrence (an assumption of ours: the
+preprint's Lemma 4.5 bounds the largest label multiplicity but does not make every label used;
+the assumption forces $D\le M\le3n$, i.e. $Q\le\log_r(3n)/2$). Then the routine examines at least
 
 $$2^{\Omega(n/\sqrt{\log n})}$$
 
@@ -130,14 +137,17 @@ rank becomes $\Theta(n)$. A fully hypothesis-free version over arbitrary schedul
 
 ## What the barrier does not cover
 
-* **Point-dependent measurements.** The preprint uses one matrix $C$ at every node. If the
-  measurement matrices may depend on $t$ (Definition 3.1 allows this), the forced-identity
-  argument only gives $c_t/D\gtrsim2^{-R}/R$. Whether the true answer is Gaussian
+* **Designs outside the template.** Theorem 1 needs rows of the form (2.16), with all of
+  $I-M_0$ measured and $M_0$ supported on Hamming-close pairs. A general swap-algebra design
+  $P(T)=\sum_Sc_S(T)\Pi_S$ need not have this form: the slab family of SR-04 has $c/D\le2/R$ with
+  one measurement matrix for all nodes, for every $Q$, beating Corollary 3 once
+  $Q\ge\frac98(R+2)^2$. For node-dependent designs (Definitions 2.1 and 3.1 allow them) the
+  forced-identity argument only gives $c_t/D\gtrsim4^{-R}/R$ (SR-03). Whether the true answer is Gaussian
   ($e^{-\Theta(R^2/Q)}$) or exponential ($2^{-\Theta(R)}$) in $R$ is the cube polynomial
   problem of [SR-02](SR-02-cube-polynomial-designs.md). An exponential answer would give an
   exponent of order $n(\log\log n)^{O(1)}/\log n$ for the overview algorithm (see the derivation
   in [SR-04](SR-04-slab-construction.md#why-this-does-not-yet-improve-the-algorithm)).
-* **The tensor-contraction route (Appendix C).** Its square root has a different source
+* **The tensor-contraction route (Appendix D).** Its square root has a different source
   (a partition count of 2-adic modes); see
   [ETH-A04](../01-algorithmic-core/ETH-A04-tensor-mode-counting-barrier.md).
 * **Different auxiliary geometry.** Any construction whose locality pattern is not "agree in

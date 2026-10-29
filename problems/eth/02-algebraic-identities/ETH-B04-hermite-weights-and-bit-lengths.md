@@ -36,7 +36,7 @@ $QJ\le30$; the source's bound $L^{2J}$ is correct but weak
 
 1. Lean: the residue identity via `Polynomial` division, or directly the uniqueness plus an
    explicit interpolant.
-2. The tapered 2-adic version of Appendix C (Lemma C.4) is where bit lengths actually matter;
+2. The tapered 2-adic version of Appendix D (Lemma D.5) is where bit lengths actually matter;
    optimize its loss term $\sum_jj^2/2^j=6$.
 
 ## Resource boundary

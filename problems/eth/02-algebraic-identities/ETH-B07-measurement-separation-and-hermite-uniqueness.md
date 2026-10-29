@@ -3,7 +3,7 @@
 | Field | Value |
 | --- | --- |
 | Category | Algebraic identities |
-| Source items | Preprint Lemma 3.1 and Section 2.5 |
+| Source items | Preprint Lemma 3.2 and Section 2.5 |
 | Status | **Solved and Lean-verified** (algebraic cores) |
 | Depends on the upstream theorem | No |
 | Score (I/B/T/L/Lean) | 2 / 1 / 4 / 4 / 5, composite **2.6** |

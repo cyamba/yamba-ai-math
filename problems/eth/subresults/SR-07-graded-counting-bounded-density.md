@@ -1,10 +1,10 @@
 # SR-07. Exact Max-k-SAT histograms, weight enumerators and partition functions at bounded density
 
-**Status: proved conditionally** on the preprint's Theorem C.1 (Boolean tensor contraction),
+**Status: proved conditionally** on the preprint's Theorem D.1 (Boolean tensor contraction),
 which is part of the unverified upstream claim. The algebraic identities are **Lean-verified**
 in [`GradedCounting.lean`](../lean/EthConsequences/GradedCounting.lean) (`sum_pow_eq`,
 `histogram_identity`, `coeff_histogram`, `deformation_identity`, `weight_identity`); the reduction
-to Theorem C.1 is checked against its hypotheses below.
+to Theorem D.1 is checked against its hypotheses below.
 **Novelty: not verified.** The preprint states approximate Max-$k$-SAT (Corollary 1.2) and
 counts independent sets, colourings and matchings (Corollary 1.3); it does not state the
 graded counts below.
@@ -15,11 +15,12 @@ Feeds: [ETH-C02](../03-counting/ETH-C02-weighted-counting-q-series.md),
 
 ## The tool
 
-Theorem C.1 contracts a bipartite Boolean tensor network with $O(s)$ wires and degree at most
+Theorem D.1 contracts a bipartite Boolean tensor network with $O(s)$ wires and degree at most
 $s^{9/10}$, with entries in $\mathcal B_{P_0,\ell}=(\mathbb Z/2^{P_0})[V]/(V^\ell)$,
-$P_0,\ell\le Cs$, in time $(s+\mathcal L)^{O(1)}2^{O(s/\sqrt{\log s})}$ and polynomial space. The
-preprint uses it with $\ell=1$ for $\#k$-SAT. The formal variable $V$ is free for us to use as a
-**grading**.
+$P_0,\ell\le Cs$, in time $(s+\mathcal L)^{O(1)}2^{O(s/\sqrt{\log s})}$ and polynomial space. At fixed density
+the preprint uses it with $\ell=1$ (Section D.2); its arbitrary-density count (Lemma D.2) already
+uses $\ell=n+1$ for a parity lift. At fixed density the formal variable $V$ is free for us to use
+as a **grading**.
 
 ## Corollary A (exact clause histogram at bounded density)
 
@@ -28,17 +29,21 @@ $h_j=\#\{x:\ x\text{ violates exactly }j\text{ clauses}\}$, $0\le j\le m$, can b
 $2^{O_{k,D}(n/\sqrt{\log n})}$ time and polynomial space. In particular the exact Max-$k$-SAT
 value $m-\min\{j:h_j>0\}$ and the number of optimal assignments.
 
-*Proof.* Take the preprint's fixed-density network (Appendix C.2: one vertex per clause with its
+*Proof.* Take the preprint's fixed-density network (Section D.2: one vertex per clause with its
 satisfaction table, equality trees for repeated variables, every edge subdivided by an
 equality tensor) and change only the clause tensors: entry $1$ if the clause is satisfied and
 $V$ if it is violated. Use $P_0=n+1$ and $\ell=m+1\le s=n+m$. The contraction equals
 $\sum_x\prod_e(\text{entry})=\sum_xV^{\mathrm{viol}(x)}=\sum_jh_jV^j$ (`histogram_identity`), and
 $0\le h_j\le2^n<2^{n+1}$, so the coefficients modulo $2^{n+1}$ are exact (`coeff_histogram`).
-Wires $O_{k}(n+m)=O_{k,D}(n)$, degree $\le\max(k,3)$, entries computable in constant time. $\square$
+Wires $O_{k}(n+m)=O_{k,D}(n)$, degree $\le\max(k,3)$, entries computable in constant time. An
+empty clause is violated by every assignment; it contributes the constant factor $V$, so the
+contraction is multiplied by $V^{\#\text{empty}}$ (or empty clauses are removed and the
+histogram shifted). $\square$
 
-*Second proof (decision only).* For $m\le Dn$ the preprint's own Corollary 1.2 argument needs no
+*Second proof (all cumulative counts).* For $m\le Dn$ the preprint's own Corollary 1.2 argument needs no
 sampling: a linear-size threshold circuit plus the circuit-to-3-CNF reduction gives exact
-Max-$k$-SAT by binary search, and parsimony of the encoding gives the counts $\sum_{j\le J}h_j$.
+Max-$k$-SAT by binary search, and parsimony of the encoding gives every cumulative count
+$\sum_{j\le J}h_j$, hence the whole histogram as well.
 
 **Weighted Max-$k$-SAT** with integer weights $w_e\ge0$ and $\sum_ew_e=O(n)$ follows the same way
 with entries $V^{w_e}$.
@@ -59,7 +64,7 @@ On graphs with $v$ vertices and $O(v)$ edges, in $2^{O(v/\sqrt{\log v})}$:
   $\bigwedge_{uw\in E}(\bar x_u\vee\bar x_w)$, Lean bijection in
   [`IndependentSets.lean`](../lean/EthConsequences/IndependentSets.lean)), hence the hard-core
   partition function at every rational activity;
-* the $q$-state Potts and Ising partition functions at fixed rational parameters and fixed $q$:
+* the $q$-state Potts and Ising partition functions with rational edge weights and fixed $q$:
   clear denominators, use local integer tensors on $\lceil\log_2q\rceil$-bit spins, and take
   $P_0=O(v)$ bits;
 * the number of proper $q$-colourings for fixed $q$ (already Corollary 1.3 of the preprint).
@@ -72,7 +77,7 @@ On graphs with $v$ vertices and $O(v)$ edges, in $2^{O(v/\sqrt{\log v})}$:
   Williams's $O^*(2^{\omega n/3})$.
 * **Weight enumerators at arbitrary density.** The preprint's arbitrary-density network sums
   the original variables inside the variable-group tensors and already uses $V$ for the parity
-  lift. A second passive truncated variable in Theorem C.1 would suffice; this extension has not
+  lift. A second passive truncated variable in Theorem D.1 would suffice; this extension has not
   been checked.
 * **Tutte polynomial at generic points** and the full chromatic polynomial: the random-cluster
   weight $q^{k(A)}$ and colourings with $q=\Theta(v)$ colours are not local with linearly many

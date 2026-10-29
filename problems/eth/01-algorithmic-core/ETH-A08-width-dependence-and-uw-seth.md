@@ -17,7 +17,7 @@ $2^{(1-\delta)n}$ time.
 
 ## Known
 
-Conditional on Theorem C.1 and the Calabro–Impagliazzo–Paturi sparsification constant
+Conditional on Theorem D.1 and the Calabro–Impagliazzo–Paturi sparsification constant
 $(k/\varepsilon)^{O(k)}$: $k(n)\le c\log\log n/\log\log\log n$ suffices (SR-09). The source
 summary's $k\le\frac{1-\varepsilon}c\log\log n$ omits the $\log\log\log n$ (SR-08 context). Lower
 bounds that depend only on unbounded-width CNF-SAT (Fréchet distance, diameter approximation,

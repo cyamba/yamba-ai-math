@@ -1,4 +1,4 @@
-# ETH-A02. Optimality of the single-matrix spectral construction
+# ETH-A02. Optimality of the spectral construction within the preprint's template
 
 | Field | Value |
 | --- | --- |
@@ -11,16 +11,17 @@
 
 ## Task
 
-Among all pairs $(M_0,C)$ on labels $([r]\times[r])^Q$ with $M_0\xi=\xi$ on $\ker C$ and
+Within the preprint's template (rows (2.16), (4.10)), among all pairs $(M_0,C)$ on labels $([r]\times[r])^Q$ with $M_0\xi=\xi$ on $\ker C$ and
 $M_0[u,w]\ne0\Rightarrow|E_{u,w}|\le R-1$, determine the least $R$ for which $c\le\varepsilon D$ is
-possible, up to $1+o(1)$.
+possible, up to $1+o(1)$. (Designs outside the template can do better: the slab family of
+[SR-04](../subresults/SR-04-slab-construction.md) does, with a single matrix too.)
 
 ## What is known
 
 SR-01: $c\ge\operatorname{rank}(I-M_0)\ge|A||B|$ for Hamming-separated $A,B$, hence
 $(R+1)^2\ge Qp_h(1-p_h)\ln\frac1{2(Q+1)\varepsilon}$, while the preprint achieves
 $R\approx\sqrt{8Q\ln(2/\varepsilon)}$: optimal up to a factor of about 6 in $R$ when
-$\ln(1/\varepsilon)\gg\ln Q$. Inside the swap algebra the rank is the exact identity
+$\ln(1/\varepsilon)\gg\ln Q$, and about $\sqrt{72}\approx8.5$ in the preprint's own regime. Inside the swap algebra the rank is the exact identity
 $\operatorname{rank}(I-M_0)=D\,\mu_p(g\ne\chi)$ (O'Donnell's Lemma 4.1 analogue), and the
 sign-error bound of Aspnes–Beigel–Furst–Rudich gives the uniform-measure barrier.
 

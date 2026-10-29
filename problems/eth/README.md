@@ -15,10 +15,11 @@ their errors are corrected in [SR-08](subresults/SR-08-corrections-to-gemini-sum
 | Path | Holds |
 | --- | --- |
 | [SOURCE.md](SOURCE.md) | The theorem, its mechanism in one page, inspection levels |
+| [NEXT_ITERATION.md](NEXT_ITERATION.md) | Fresh-session entry point for the next iteration |
 | [RANKING.md](RANKING.md) | Rubric, the ranked problem and subresult lists, program contracts for the next iteration, novelty ledger |
 | `01-` to `07-` | One file per problem: statement, status label, closest work, obstruction, smallest falsifier, resource boundary, score |
-| [subresults/](subresults/README.md) | Nine subresults proved or computed in iteration 1 |
-| [lean/](lean/) | Lake project `EthConsequences` (Lean 4.34.1, pinned Mathlib): 45 checked declarations, certificate [`verification.json`](lean/verification.json) |
+| [subresults/](subresults/README.md) | Eleven subresults proved or computed in iteration 1 |
+| [lean/](lean/) | Lake project `EthConsequences` (Lean 4.34.1, pinned Mathlib): 47 checked declarations, certificate [`verification.json`](lean/verification.json) |
 | [experiments/](experiments/README.md) | Exact computations (cube polynomial optima, swap-matrix ranks, Hermite weights, galactic thresholds) |
 | [articles/](articles/README.md) | Draft article on point-dependent designs and the square-root barrier |
 | [targets/](targets/ETH001.md) | Pinned completion statements for program contracts (ETH001) |
@@ -30,23 +31,38 @@ depends on the theorem being true unless it says so. Novelty is **not verified**
 ([novelty ledger](RANKING.md#novelty-ledger)).
 
 1. **Where the square root comes from** ([SR-01](subresults/SR-01-isoperimetric-rank-barrier.md),
-   proved, Lean core). Every design that uses one measurement matrix at all nodes pays a Gaussian
-   price $c/D\gtrsim e^{-\Theta(R^2/Q)}$; the preprint's matrix is optimal up to a constant in $R$.
-2. **Point-dependent designs are a clean cube problem** ([SR-02](subresults/SR-02-cube-polynomial-designs.md),
-   proved and checked on actual matrices). The measurement count at node $t$ equals the weight of
-   the bad edges in direction $t$ of a family of polynomials on the cube.
-3. **Point dependence provably helps, but not yet enough** ([SR-04](subresults/SR-04-slab-construction.md),
-   Lean). The slab family has bad fraction $\le1/R$ for every $Q$, beating every single-matrix
-   design once $Q\ge\frac98(R+2)^2$. A family with $\beta\le R^{-C}$, $C>4$, at $Q\approx R^{(C+2)/3}$
-   would improve the exponent to $n(\log n)^{-(C-1)/(C+2)+o(1)}$.
+   proved, Lean core). Every design of the preprint's template (replacement rows built from a pair
+   $(M_0,C)$ with its conditions (2.14)) pays a Gaussian price $c/D\gtrsim e^{-\Theta(R^2/Q)}$; the
+   preprint's matrix is optimal within the template up to a constant in $R$.
+2. **Designs beyond the template are a clean cube problem** ([SR-02](subresults/SR-02-cube-polynomial-designs.md),
+   proved and checked on actual matrices). For swap-algebra designs, the measurements needed at
+   node $t$ are the weight of the bad edges in direction $t$ of a family of polynomials on the cube.
+3. **Leaving the template provably helps, but not yet enough** ([SR-04](subresults/SR-04-slab-construction.md),
+   Lean). The slab family has bad fraction $\le1/R$ for every $Q$ ($c/D\le2/R$ with one measurement
+   matrix), beating every template design by a factor of order $R$ once $Q\ge\frac98(R+2)^2$ and $R$
+   is large. A family with $\beta\le R^{-C}$,
+   $C>3$, at $Q\approx R^{(C+1)/2}$ would improve the exponent to $n(\log n)^{-(C-1)/(C+1)+o(1)}$ (with
+   zero measurement rows dropped; $C>4$ under the preprint's own row count).
 4. **The general barrier is far away** ([SR-03](subresults/SR-03-point-dependent-rank-barrier.md),
    Lean): any design needs only $c_t/D\ge4^{-R}/R$, which would still allow $n(\log\log n)^{O(1)}/\log n$.
 5. **Exact feasibility and products** ([SR-05](subresults/SR-05-stress-duality-and-products.md),
    Lean for one direction): a set of edges can be made good iff every stress has zero total;
-   combinatorial relaxations are exponentially weak, so a polynomial lower bound must use algebra.
-6. **The analysed bound is galactic** ([SR-06](subresults/SR-06-galactic-thresholds.md), exact
-   evaluation): it beats $2^n$ only for $n\gtrsim2^{160000}$ and PPSZ only for $n\gtrsim2^{4\times10^6}$.
-7. **Conditional counting consequences** ([SR-07](subresults/SR-07-graded-counting-bounded-density.md),
+   the natural relaxations are exponentially weak, so a polynomial lower bound must exploit
+   integrality for the algebraic obstructions.
+6. **What an improvement would have to look like** ([SR-10](subresults/SR-10-touched-vertices-barrier-criterion.md),
+   proved; conjecture marked). Exponent $e$ forces $R\le eQ/3$ and leaves at most an $e/24$
+   fraction of vertices touching a bad edge ($e^2/12$ under the preprint's row count). So a lower
+   bound $c/R$ on that fraction for $R\le c_0\sqrt Q$ (the slab touches about $2/R$; $c/R^2$ would
+   suffice under the preprint's count) would prove that swap designs cannot beat the square root;
+   realizing a sparse Turán-type touched set would refute it.
+7. **A local linear form of the problem** ([SR-11](subresults/SR-11-subcube-identities-characterize-defects.md),
+   proved; one direction in Lean). The bad sets of families are exactly the supports of edge
+   functions satisfying one explicit identity per $R$-subcube, so every obstruction is a
+   combination of subcube stresses and the problem becomes sparse linear algebra.
+8. **The analysed bound is galactic** ([SR-06](subresults/SR-06-galactic-thresholds.md), exact
+   evaluation): with the best parameters found it beats $2^n$ from about $n=2^{1.6\times10^5}$ and
+   PPSZ from about $n=2^{4\times10^6}$, and no parameters beat $2^n$ before $n\approx2^{3\times10^4}$.
+9. **Conditional counting consequences** ([SR-07](subresults/SR-07-graded-counting-bounded-density.md),
    [SR-09](subresults/SR-09-coverage-map.md)): exact Max-$k$-SAT histograms and weight enumerators at
    bounded density, and a coverage map of which ETH-hard problems transfer.
 
@@ -59,10 +75,10 @@ Composite scores follow the rubric in [RANKING.md](RANKING.md#rubric).
 | Problem | Status | Composite |
 | --- | --- | --- |
 | [ETH-A01](01-algorithmic-core/ETH-A01-break-the-sqrt-log-barrier.md) Break the $\sqrt{\log n}$ barrier, or prove it intrinsic | **Open.** Method-level barriers and reformulations proved (SR-01 to SR-05) | 4.2 |
-| [ETH-A02](01-algorithmic-core/ETH-A02-optimality-of-the-spectral-construction.md) Optimality of the single-matrix spectral construction | **Largely solved** by SR-01; constant factor and hypotheses open | 3.0 |
-| [ETH-A03](01-algorithmic-core/ETH-A03-point-dependent-designs.md) Point-dependent designs: the cube polynomial problem CP(Q, R) | **Open.** Reformulation, bounds, constructions and small exact optima proved | 4.5 |
+| [ETH-A02](01-algorithmic-core/ETH-A02-optimality-of-the-spectral-construction.md) Optimality of the spectral construction within the preprint's template | **Largely solved** by SR-01; constant factor and hypotheses open | 3.0 |
+| [ETH-A03](01-algorithmic-core/ETH-A03-point-dependent-designs.md) Designs beyond the preprint's template: the cube polynomial problem CP(Q, R) | **Open.** Reformulations, bounds, constructions and small exact optima proved; pinned target [ETH001](targets/ETH001.md) | 4.5 |
 | [ETH-A04](01-algorithmic-core/ETH-A04-tensor-mode-counting-barrier.md) The tensor-contraction route: mode counting and its square root | **Open** | 3.0 |
-| [ETH-A05](01-algorithmic-core/ETH-A05-approximate-parity-interpolation.md) Approximate parity interpolation: Chebyshev, Krawtchouk and Padé alternatives | **Mostly negative** (analysis below); the 2-adic version is Appendix C | 2.4 |
+| [ETH-A05](01-algorithmic-core/ETH-A05-approximate-parity-interpolation.md) Approximate parity interpolation: Chebyshev, Krawtchouk and Padé alternatives | **Mostly negative** (analysis below); the 2-adic version is Appendix D | 2.4 |
 | [ETH-A06](01-algorithmic-core/ETH-A06-explicit-constants-and-crossover.md) Explicit constants and the crossover with exhaustive search and PPSZ | **Partially solved** (SR-06); improvements open | 3.0 |
 | [ETH-A07](01-algorithmic-core/ETH-A07-lean-versus-manuscript-exponent.md) Close the gap between the Lean exponent and the manuscript's | **Open** | 2.0 |
 | [ETH-A08](01-algorithmic-core/ETH-A08-width-dependence-and-uw-seth.md) Dependence on the clause width and the unbounded-width frontier | **Partially solved conditionally** (SR-09); frontier open | 2.9 |
@@ -73,7 +89,7 @@ Composite scores follow the rubric in [RANKING.md](RANKING.md#rubric).
 | --- | --- | --- |
 | [ETH-B01](02-algebraic-identities/ETH-B01-newton-parity-interpolation.md) Shifted Newton parity interpolation and its off-window defect | **Solved and Lean-verified**; two claims of the source corrected | 2.7 |
 | [ETH-B02](02-algebraic-identities/ETH-B02-swap-algebra-support-localization.md) The commuting swap algebra and support localization | **Proved informally** (preprint Lemmas 4.2, 4.3); Lean open | 2.7 |
-| [ETH-B03](02-algebraic-identities/ETH-B03-zero-pm-one-eigenbasis.md) The orthogonal $\{0,\pm1\}$ eigenbasis of the swap operators | **Proved informally** (preprint Section 2.7, Step 2; Lemma 4.2); statement in the source is correct | 2.6 |
+| [ETH-B03](02-algebraic-identities/ETH-B03-zero-pm-one-eigenbasis.md) The orthogonal $\{0,\pm1\}$ eigenbasis of the swap operators | **Proved informally** (preprint Section 2.7, Step 2; Lemma 4.1); statement in the source is correct | 2.6 |
 | [ETH-B04](02-algebraic-identities/ETH-B04-hermite-weights-and-bit-lengths.md) Closed-form Hermite weights and bit lengths | **Solved** (proof below, exact check for $Q\le7$, $J\le5$); Lean open | 2.5 |
 | [ETH-B05](02-algebraic-identities/ETH-B05-minc-permanent-expansion.md) Minc's permanent expansion and bounded-scope Taylor extraction | **Classical identity; not used by the preprint**; Lean open | 1.9 |
 | [ETH-B06](02-algebraic-identities/ETH-B06-boolean-differences.md) Boolean differences: Taylor data from fixed substitutions | **Solved and Lean-verified** (combinatorial core) | 2.6 |
@@ -114,7 +130,7 @@ Composite scores follow the rubric in [RANKING.md](RANKING.md#rubric).
 
 | Problem | Status | Composite |
 | --- | --- | --- |
-| [ETH-F01](06-crypto-and-quantum/ETH-F01-inverting-local-functions.md) Inverting local functions: Goldreich's PRG and sparse LPN | **Conditional consequences proved** (preprint Cor. D.2; SR-09 for sparse LPN); open beyond | 2.7 |
+| [ETH-F01](06-crypto-and-quantum/ETH-F01-inverting-local-functions.md) Inverting local functions: Goldreich's PRG and sparse LPN | **Conditional consequences proved** (preprint Cor. C.2; SR-09 for sparse LPN); open beyond | 2.7 |
 | [ETH-F02](06-crypto-and-quantum/ETH-F02-cryptographic-parameter-scaling.md) Cryptographic parameter scaling and concrete security | **Answered for concrete sizes** (SR-06); asymptotic bookkeeping open | 2.0 |
 | [ETH-F03](06-crypto-and-quantum/ETH-F03-quantum-versus-classical.md) Quantum versus classical: Grover and the new algorithm | **Asymptotic statement correct; crossover computed** (SR-06); quantum speedup of the new algorithm open | 2.0 |
 

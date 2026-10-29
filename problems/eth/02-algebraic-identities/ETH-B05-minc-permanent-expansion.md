@@ -18,7 +18,7 @@ the first $J$ Taylor coefficients need $\binom v{<J}^2$ minors.
 
 ## Correction
 
-The preprint computes Taylor data by Boolean differences (Lemma 3.2, Lean
+The preprint computes Taylor data by Boolean differences (Lemma 3.3, Lean
 `boolean_differences`), not by permanent expansions; permanents enter only through Curticapean's
 reduction for perfect matchings ([SR-08](../subresults/SR-08-corrections-to-gemini-summaries.md),
 row 9).

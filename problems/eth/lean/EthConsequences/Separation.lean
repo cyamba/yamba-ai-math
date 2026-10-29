@@ -5,7 +5,7 @@ import Mathlib.Data.Fintype.Pi
 /-!
 # Separation of a sum over assignments by fixing shared measurements
 
-Algebraic core of Lemma 3.1 ("measurement separation") in openai/math result 378.
+Algebraic core of Lemma 3.2 ("measurement separation") in openai/math result 378.
 Variables are split into groups `g : ι`; group `g` takes values `u : X g` and has a
 measurement `meas g u : Y g`. Each group factor `A g` may depend on its own block and on the
 measurements of all groups (in the paper: on `x_g` and on `C_h x_h` for `h ≠ g`; the

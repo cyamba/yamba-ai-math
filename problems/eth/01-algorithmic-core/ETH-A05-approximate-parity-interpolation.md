@@ -4,7 +4,7 @@
 | --- | --- |
 | Category | Algorithmic core |
 | Source items | "Problem 6 (YAMBA-378-06): sharpening via Chebyshev/Padé spectral approximants" |
-| Status | **Mostly negative** (analysis below); the 2-adic version is Appendix C |
+| Status | **Mostly negative** (analysis below); the 2-adic version is Appendix D |
 | Depends on the upstream theorem | No |
 | Score (I/B/T/L/Lean) | 2 / 2 / 4 / 2 / 2, composite **2.4** |
 | Subresults | [SR-01](../subresults/SR-01-isoperimetric-rank-barrier.md), [SR-03](../subresults/SR-03-point-dependent-rank-barrier.md) |
@@ -23,7 +23,7 @@ being an integer.
   fixed direction must be measured or its error carried. Carrying it perturbs $H(0)$ by up to
   $2^n\cdot\mathrm{poly}\cdot\max|\varepsilon_j|$, so the error must be below $2^{-n}$, which
   costs degree $\Omega(\sqrt{Qn})$ and destroys the Taylor savings.
-* **The 2-adic version works**: Appendix C keeps exactness modulo $2^{p_t}$ and lets terms of
+* **The 2-adic version works**: Appendix D keeps exactness modulo $2^{p_t}$ and lets terms of
   high 2-adic valuation vanish. Approximation in the 2-adic metric is exactly what the tensor
   route does ([ETH-A04](ETH-A04-tensor-mode-counting-barrier.md)).
 

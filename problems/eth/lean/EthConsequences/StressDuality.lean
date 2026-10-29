@@ -18,9 +18,11 @@ Store an edge weight `w t u` at the lower endpoint `u` (`t ∉ u`) and let
   `∑ₜ ∑_{u ∌ t} w t u` is zero. Hence a stress with nonzero total certifies that its support
   cannot be entirely good. The `R`-subcube obstruction (`no_good_subcube`) is the stress with
   the Lagrange coefficients of the subcube's directions as weights; the general statement is
-  also sufficient for infeasibility by linear-algebra duality (SR-05, informal).
+  also sufficient for infeasibility by linear-algebra duality (SR-05, informal), and SR-11
+  shows that combinations of subcube stresses already suffice.
 * `product_edge_good`, `natDegree_product_le`, `product_eval_zero`: the product of two families
-  on disjoint sets of directions is a family whose bad edges are exactly those of its factors,
+  on disjoint sets of directions is a family whose bad edges are contained in those of its
+  factors (an edge may become good where the other factor vanishes at the node),
   with degree bound `(R₁ - 1) + (R₂ - 1)`.
 -/
 

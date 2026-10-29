@@ -10,10 +10,11 @@ import EthConsequences.SubcubeObstruction
 In openai/math result 378 the replacement forms come from auxiliary rows `P_u(T)`, `u` a label,
 with `P_u(0) = δ_u` and `deg P_u < R`. At an evaluation node the design splits each row into a
 *local* part (labels allowed by the group rule at that node) and a part determined by the
-node's measurements, whose number is at least the rank of that part. The preprint uses one
-measurement matrix for every node; its Definition 3.1 allows a different one at each node.
-Subresult SR-01 (`RankBarrier.lean`) bounds the single-matrix case. Here we prove a bound that
-holds for **arbitrary point-dependent designs**:
+node's measurements, whose number is at least the rank of that part. The preprint's
+construction uses one measurement matrix for every node and rows of a fixed template (its
+(2.16) and (4.10)); its Definitions 2.1 and 3.1 allow different matrices at each node.
+Subresult SR-01 (`RankBarrier.lean`) bounds the template case. Here we prove a bound that
+holds for **arbitrary point-dependent designs**, in or out of the swap algebra:
 
 * `card_le_sum_rank`: if `1 = ∑ᵢ λᵢ (Lᵢ + Nᵢ)` and every `Lᵢ` vanishes on `U × U`, then
   `|U| ≤ ∑ᵢ rank Nᵢ`.
@@ -27,8 +28,9 @@ holds for **arbitrary point-dependent designs**:
   `|H|^R (r - |H|)^R r^(2(Q-R)) ≤ ∑ᵢ rank Nᵢ`; dividing by `D = r^(2Q)`, the measurements at
   some node are at least a `(|H|(r-|H|)/r²)^R / R ≥ 4^(-R)/R`-fraction of `D` when `r` is even.
 
-The single-matrix barrier of SR-01 is Gaussian in `R`; this one is exponential, and it is the
-only obstruction that survives point dependence in this generality (see SR-03, SR-04).
+The template barrier of SR-01 is Gaussian in `R`; this one is exponential. It is the best
+bound this forced-identity argument can give (product sets are optimal for it), not a claim
+about all arguments (see SR-03, SR-04).
 -/
 
 namespace EthConsequences.PointBarrier

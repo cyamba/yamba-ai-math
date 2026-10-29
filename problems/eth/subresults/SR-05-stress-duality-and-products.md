@@ -35,6 +35,10 @@ $z_v\mathrm{ev}_0+\sum_tw_{e(v,t)}\mathrm{ev}_{x_t}=0$ on polynomials of degree 
 $\sum_tw_{e(v,t)}x_t^k=0$ for $1\le k<R$ and $z_v=-\sum_tw_{e(v,t)}$. Its right side is
 $\sum_vz_v=-2\sum_ew_e$. $\square$
 
+**Sharper form.** [SR-11](SR-11-subcube-identities-characterize-defects.md) shows that only
+combinations of subcube stresses are needed: $G$ is infeasible iff some combination of the
+stresses below, with nonzero total, vanishes on every edge outside $G$.
+
 **Examples.** The $R$-subcube in directions $T$ carries the stress $w_e=\lambda_{t(e)}$, the
 Lagrange weights $\lambda_t=\prod_{s\in T\setminus t}x_s/(x_s-x_t)$, with total
 $2^{R-1}\sum_t\lambda_t=2^{R-1}\ne0$; this is SR-02's subcube obstruction. Global formulas
@@ -58,8 +62,11 @@ give only exponentially small lower bounds on the bad fraction:
   Prop. 1.1; Ellis, Ivan, Leader, [arXiv:2401.16289](https://arxiv.org/abs/2401.16289),
   Thms 7 and 9).
 
-So **any polynomial lower bound $\beta^*\ge R^{-O(1)}$ must use the algebra of the moment curve,
-not just the combinatorics of subcubes**. Conversely, a construction reaching the hitting value
+So **any polynomial lower bound $\beta^*\ge R^{-O(1)}$ must exploit integrality**: the fractional
+relaxation is exponentially small even over all obstructions, the algebraic ones included, and
+the integral relaxation by subcubes alone is exponentially small too. What remains is the
+integral hitting problem for algebraic obstructions, which by
+[SR-11](SR-11-subcube-identities-characterize-defects.md) are combinations of subcube stresses. Conversely, a construction reaching the hitting value
 $2^{-R/2+o(R)}$ would need the vertex set of such a hitting family to separate the cube into
 regions carrying no stress with nonzero total, which global formulas cannot do on their own
 (the exact disagreement of a degree-$(R-1)$ polynomial with parity on $\{0,1\}^Q$ is at least
@@ -75,7 +82,9 @@ on $Q_1+Q_2$ directions with degree $<R_1+R_2-1$, $p_{(v,u)}(0)=1$, and an edge 
 of the first block is good whenever its projection is good for $(p_v)$
 (`product_edge_good`: $(p+p')(y)=0\Rightarrow(ps)(y)+(p's)(y)=0$). Hence
 $$\beta^*(Q_1+Q_2,\ R_1+R_2-1)\ \le\ \max\big(\beta^*(Q_1,R_1),\ \beta^*(Q_2,R_2)\big)$$
-for the per-direction objective.
+for the per-direction objective, where each $\beta^*$ refers to the node block actually used
+(the optimum depends on the node set, up to scaling); the bad edges of the product are
+contained in those of its factors.
 
 **Consequences.** Products preserve the ratio $Q/R$ (up to the $-1$) and the bad fraction. So
 the relevant asymptotic quantity is the best bad fraction $\beta$ as a function of $R$ at a
@@ -83,4 +92,8 @@ fixed ratio $\rho=Q/R$: the window family gives $e^{-\Theta(R/\rho)}$, and the q
 [ETH-A03](../01-algorithmic-core/ETH-A03-point-dependent-designs.md) is whether some family
 gives $e^{-cR}$ with $c$ independent of $\rho$. Small exact optima (e.g. one bad edge per direction
 at $(Q,R)=(4,3)$, [SR-02](SR-02-cube-polynomial-designs.md#exact-small-cases)) can be
-multiplied to give, for instance, $\beta\le1/8$ at $(Q,R)=(4m,2m+1)$ for every $m$.
+multiplied to give, for instance, $\beta\le1/8$ at $(Q,R)=(4m,2m+1)$ for every $m$ (uniform
+measure). Scaling all nodes by a common factor is a symmetry ($p_v(T)\mapsto p_v(T/c)$), so the
+$(4,3)$ family for the nodes $t/4$ gives families for the pairwise disjoint blocks
+$\{5^jt/4:t=1,\dots,4\}$, $j=0,\dots,m-1$. (The separate review also checked the blocks
+$\{5,\dots,8\}$, $\{9,\dots,12\}$, $\{13,\dots,16\}$ and $\{101,\dots,104\}$ directly.)

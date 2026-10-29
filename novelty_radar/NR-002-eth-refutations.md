@@ -6,7 +6,7 @@
 | Found | 2026-10-26, through the openai/math update of that date (family 378); followed up 2026-10-28 and 2026-10-29 |
 | Kind | New result (claimed refutation of a central complexity conjecture); formalization milestone; AI-generated mathematics |
 | State | `PROMOTED` to [problems/eth](../problems/eth/README.md) at the operator's request (2026-10-29), with `TRACKING` items below |
-| Evidence here | **Unverified upstream claim.** The preprint was read at statement level and its overview, matrix construction and Appendix C in full (inspection level T, [R039](../references/reading-list.md#exponential-time-hypothesis-consequences)); the upstream Lean development was not rebuilt. The second report is known only from a secondary article (level A, R058). Method-level results proved here do not depend on the claim (see [problems/eth/subresults](../problems/eth/subresults/README.md)). |
+| Evidence here | **Unverified upstream claim.** The preprint was read at statement level and its overview, matrix construction and Appendices C and D in full (inspection level T, [R039](../references/reading-list.md#exponential-time-hypothesis-consequences)); the upstream Lean development was not rebuilt. The second report is known only from a secondary article (level A, R058). Method-level results proved here do not depend on the claim (see [problems/eth/subresults](../problems/eth/subresults/README.md)). |
 | Receiving project | [problems/eth](../problems/eth/README.md); ranking for the next fleet iteration in [RANKING.md](../problems/eth/RANKING.md) |
 | Next action | The bounded steps under [Tracking](#tracking) |
 

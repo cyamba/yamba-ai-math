@@ -4,7 +4,7 @@
 | --- | --- |
 | Category | Algebraic identities (Lean target) |
 | Source items | "Problem 3 (YAMBA-378-03): explicit orthogonal decomposition into $\{0,\pm1\}$ measurement rows" |
-| Status | **Proved informally** (preprint Section 2.7, Step 2; Lemma 4.2); statement in the source is correct |
+| Status | **Proved informally** (preprint Section 2.7, Step 2; Lemma 4.1); statement in the source is correct |
 | Depends on the upstream theorem | No |
 | Score (I/B/T/L/Lean) | 2 / 1 / 5 / 2 / 5, composite **2.6** |
 | Subresults | used by [SR-02](../subresults/SR-02-cube-polynomial-designs.md) (rank computation), validated by [`matrix_validation.py`](../experiments/matrix_validation.py) |

@@ -21,15 +21,17 @@ Bounded-occurrence 3-CNF, the preprint's three costs, exact binomial tails:
 
 | Parameters | Beats $2^n$ | Beats $2^{n/2}$ | Beats $1.30704^n$ |
 | --- | --- | --- | --- |
-| Preprint (2.12) | $\log_2n\approx6.3\times10^{10}$ | $5.5\times10^{11}$ | $1.1\times10^{12}$ |
-| Best found | $1.6\times10^5$ | $\lesssim1.8\times10^6$ | $\lesssim4.0\times10^6$ |
+| Preprint (2.19) | $\log_2n\approx6.3\times10^{10}$ | $5.5\times10^{11}$ | $1.1\times10^{12}$ |
+| Best found (upper bounds on the thresholds) | $\le1.6\times10^5$ | $\le1.8\times10^6$ | $\le4.0\times10^6$ |
 
-Appendix C as written needs $\log_2s\ge2^{85}$. The source summary's form $2^{C_3n/\log_2n}$ is
+Appendix D as written needs $\log_2s\ge2^{85}$ already at recursion depth 0 (more at deeper
+levels, per the separate review). A crude lower bound: no parameters beat $2^n$ before
+$\log_2n\approx3\times10^4$. The source summary's form $2^{C_3n/\log_2n}$ is
 wrong ([SR-08](../subresults/SR-08-corrections-to-gemini-summaries.md), row 5).
 
 ## Open parts
 
-1. Optimize Appendix C's constants ($\varepsilon=2^{-17}$, $r=64$, $\Delta=s^{9/10}$) and report its
+1. Optimize Appendix D's constants ($\varepsilon=2^{-17}$, $r=64$, $\Delta=s^{9/10}$) and report its
    threshold.
 2. Use the slab or MILP-optimal point-dependent designs ([ETH-A03](ETH-A03-point-dependent-designs.md))
    inside the cost model: they shrink the measurement term for moderate $Q$.
