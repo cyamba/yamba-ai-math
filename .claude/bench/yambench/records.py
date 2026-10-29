@@ -229,7 +229,7 @@ def apply_audit(gates: dict, audit: dict | None, author_sessions: list[str]) -> 
 def write(record: dict, directory: Path = RECORDS_DIR) -> Path:
     directory.mkdir(parents=True, exist_ok=True)
     path = directory / f"{record['record_id']}.json"
-    path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    path.write_bytes((json.dumps(record, indent=2, ensure_ascii=False) + "\n").encode("utf-8"))  # LF on every OS
     return path
 
 
