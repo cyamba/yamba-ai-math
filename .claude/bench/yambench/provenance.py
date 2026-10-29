@@ -54,7 +54,9 @@ def materialize(repo: Path, sha: str, dest: Path) -> Path:
         raise BenchError("git archive would alter the snapshot: .gitattributes uses export-ignore/export-subst")
     if not hasattr(tarfile, "data_filter"):
         raise BenchError("Python 3.11.4+ is required for safe snapshot extraction")
-    proc = subprocess.run(["git", "-C", str(repo), "archive", "--format=tar", sha], capture_output=True)
+    # Recorded hashes are of committed bytes; a CRLF checkout setting must not rewrite the snapshot.
+    proc = subprocess.run(["git", "-C", str(repo), "-c", "core.autocrlf=false", "-c", "core.eol=lf",
+                           "archive", "--format=tar", sha], capture_output=True)
     if proc.returncode:
         raise BenchError(f"git archive {sha} failed: {proc.stderr.decode(errors='replace').strip()}")
     dest.mkdir(parents=True, exist_ok=True)
@@ -81,6 +83,13 @@ def fingerprint(root: Path, paths: list[str]) -> dict:
 def changed(repo: Path, base: str, head: str, filter_: str, *paths: str) -> list[str]:
     output = git(repo, "diff", "--name-only", f"--diff-filter={filter_}", base, head, "--", *paths, check=False)
     return [line for line in output.splitlines() if line]
+
+
+def changed_in_worktree(repo: Path, base: str, *paths: str) -> list[str]:
+    """Files added or modified since ``base`` in the working tree, uncommitted and untracked ones included."""
+    tracked = git(repo, "diff", "--name-only", "--diff-filter=AM", base, "--", *paths, check=False)
+    untracked = git(repo, "ls-files", "--others", "--exclude-standard", "--", *paths, check=False)
+    return sorted({line for line in (tracked + "\n" + untracked).splitlines() if line})
 
 
 def adding_commit(repo: Path, head: str, path: str) -> str | None:

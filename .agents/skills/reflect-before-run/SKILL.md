@@ -7,7 +7,9 @@ description: Before the next KR1 attempt, turn lessons and returned feedback int
 
 Use when preparing to restart research or when the operator requests pre-run tweaks.
 Read root CLAUDE.md, the latest regroup/result, relevant review findings, pending
-feedback and the proposed run contract. Distinguish feedback actually received
+feedback, the proposed run contract and the last ten lines of
+[the session log](../../../meta/session-log.md). Close entries whose check can now
+be judged (`-> kept` or `-> reverted`) and append one line per applied tweak. Distinguish feedback actually received
 from questions merely queued. Keep this reflection short and count it within the
 declared investigation budget; it does not launch a new attempt or reset a ledger.
 
@@ -38,7 +40,7 @@ claims before verification; previously inspected cases remain discovery exposure
 
 Preserve universal proof standards, separate semantic criticism, attribution and
 novelty limits, plus the active resource and local-only/no-push safeguards. A tweak
-adds no agents, mechanisms, rounds or budget. RR003 is closed. Route a mathematical
+adds no agents, mechanisms, rounds or budget. Closed runs stay closed. Route a mathematical
 change of approach through [pivot](../pivot/SKILL.md), and a useful human question
 through [delegate-for-feedback](../delegate-for-feedback/SKILL.md). Broader harness
 changes require separate evaluation under the repository's meta protocol. Label

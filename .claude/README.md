@@ -6,7 +6,7 @@ research: worker packets never include it, and research agents do not need to re
 
 | Path | Purpose |
 | --- | --- |
-| `bench/` | Benchmark instrument: twelve benchmarks, four hard gates, problem registry, records, dashboard. See [bench/README.md](bench/README.md). |
+| `bench/` | Benchmark instrument: twelve benchmarks, four hard gates, problem registry, records, dashboard, a `relevance` check that questions the axes, and a one-line [journal](bench/journal.md). See [bench/README.md](bench/README.md). |
 | `skills/` | Operator commands: `/bench-run`, `/bench-snapshot`, `/bench-dashboard`, `/bench-compare`, `/harness-retro`, all user-invoked only. Shared KR1 supervisory skills and the framework explainer `understanding` are links to `.agents/skills/`; `understand-math` links to the root `understanding/` folder. |
 | `agents/` | `bench-assessor` (judges), `bench-auditor` (adversarial checks), `harness-architect` (proposes one change). |
 | `hooks/bench_stop.py` | Stop hook: snapshots an armed run; silent no-op otherwise. |

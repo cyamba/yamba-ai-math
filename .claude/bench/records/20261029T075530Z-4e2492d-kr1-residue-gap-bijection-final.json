@@ -1,0 +1,898 @@
+{
+  "schema": "yambench.record/1",
+  "record_id": "20261029T075530Z-4e2492d-kr1-residue-gap-bijection-final",
+  "kind": "final",
+  "step": null,
+  "created_at": "2026-10-29T07:55:30Z",
+  "spec": {
+    "version": "2026.10.29-1",
+    "digest": "e1775bf933def29e3ac57a487e98065cc08923d07c1aaf03a36029aee615bf2f",
+    "hashes": {
+      "gates.json": "7fb5fdc508ea7716cd27656214b473de943b78526bb0fb3011a408ba0b03f0e0",
+      "metrics.json": "f9b5fb62a62fab870ba0183999b861cd572a5ee661e42eed2369b24028b6b1d9",
+      "problems.json": "415b3087b9057f18a2782e8c07980941a5de207c929c4aa1dd4f6dbd3a9aca43",
+      "rubrics/B03.md": "67b56b3f49a41bf811fd8e8d264ab8831b36496ccf0b38b8b938e74dde789c7e",
+      "rubrics/B04.md": "682ec5dbbe642931cddaa51d6e9e08bfb492b05b9436791fb8c433171f4b9bf0",
+      "rubrics/B05.md": "8c10e2a885bed5b4efeea7d1b27fc0f0bbff059e73c6d03004578dd231539500",
+      "rubrics/B06.md": "a0cac0aaa35655a62e0cc7cb1e85d00801481dc95f5b56756e85be7a41f4b14a",
+      "rubrics/B08.md": "760009496f588831d7157839a61423d0f10dd01c7ca7d39b312766a797f285ed",
+      "rubrics/B12.md": "277f70e4310a51a3bac3dd1e3fa59bad2485b7c4d77c0f6e234d56c2e06ebfeb",
+      "rubrics/B13.md": "e53537622b332d06f8da157e6300508aeb877b16f35b73447bb9e43e18ad35cd",
+      "rubrics/B14.md": "1b8f722e356264cc254d44ce5676a354262e6cdd27dd4fbd9647e20e91e570d6",
+      "rubrics/ladder.md": "9f97c50a8933d121f73ae20ee3ed4b310fac49d65104fe791e3078ea0d51dfe3"
+    }
+  },
+  "engine": {
+    "version": "0.1.0",
+    "sha256": "13b1914707b036c2626356582c09a29aca132805075d59163a8351649cbab982"
+  },
+  "provenance": {
+    "framework": {
+      "commit": "4e2492d2f7ed1c9b595a1577b34340f473a639af",
+      "branch": null,
+      "committed_at": "2026-10-25T00:08:24+02:00",
+      "subject": "feat: 3D and d-Dimensional Ferrers Diagram Bijections, Article, and Lean 4 Proofs (#13)",
+      "fingerprint": {
+        "sha256": "2f5cb01175ceed01e83f2e9a436406c67bf1a81ba209bb6713a98416d2400fcc",
+        "files": 53
+      },
+      "framework_paths_changed_during_run": true
+    },
+    "output": {
+      "commit": "b44c5ba4bdc531c426ca9355c00166382b85b6f0",
+      "branch": null,
+      "committed_at": "2026-10-27T21:25:32+01:00",
+      "subject": "Publish complete KR1 positive cut-word research package"
+    },
+    "problem": {
+      "id": "kr1-residue-gap-bijection",
+      "title": "KR1: residue 1,3,6,8 mod 9 to gap partition bijection",
+      "statement_ref": "research/rogers-ramanujan/problem_01_rogers_ramanujan_bijections.md",
+      "registered_after_run": true
+    },
+    "program": {
+      "id": null,
+      "path": "research/rogers-ramanujan/terra2026/fleet-plan.json",
+      "sha256": "5a6aaa31f3e86aa91c3f8df8b0260908e41989c583f092f8bdd0fe090d1bf0b6",
+      "frozen_at_start": false
+    },
+    "run": {
+      "dir": null,
+      "available": false,
+      "harness_runs": [],
+      "window": null
+    },
+    "sessions": [],
+    "telemetry": {
+      "available": false
+    }
+  },
+  "metrics": {
+    "B01": {
+      "id": "B01",
+      "name": "Frontier depth",
+      "family": "discovery",
+      "mode": "K",
+      "status": "scored",
+      "score": 50.0,
+      "raw": {
+        "branch": "prove",
+        "depth_start": 0,
+        "depth_end": 3,
+        "of": 6,
+        "provisional": true,
+        "branches": {
+          "prove": {
+            "depth": 3,
+            "of": 6,
+            "stopped_at": "explicit_maps",
+            "stopped_result": "pending",
+            "not_applicable": [
+              "lean_checked"
+            ]
+          }
+        },
+        "milestones": {
+          "contract_frozen": "pass",
+          "scoped_reviewed": "pass",
+          "global_reduction": "pass",
+          "explicit_maps": "pending",
+          "inverse_proofs": "pending",
+          "complete_review": "fail",
+          "lean_checked": "n/a"
+        }
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "file_exists",
+          "result": "pass",
+          "detail": "present",
+          "path": "research/rogers-ramanujan/terra2026/contract.md",
+          "milestone": "contract_frozen"
+        },
+        {
+          "kind": "file_exists",
+          "result": "pass",
+          "detail": "present",
+          "path": "research/rogers-ramanujan/terra2026/repository-baseline.json",
+          "milestone": "contract_frozen"
+        },
+        {
+          "kind": "review_verdict",
+          "result": "pass",
+          "detail": "supported by a universal counting argument, subject to the independently checked seven-block encoding.",
+          "path": "research/rogers-ramanujan/terra2026/entropy-independent-review.md",
+          "milestone": "scoped_reviewed"
+        },
+        {
+          "kind": "judged",
+          "result": "pass",
+          "detail": "judged met",
+          "milestone": "global_reduction"
+        },
+        {
+          "kind": "judged",
+          "result": "pending",
+          "detail": "awaiting independent judgment",
+          "milestone": "explicit_maps"
+        },
+        {
+          "kind": "judged",
+          "result": "pending",
+          "detail": "awaiting independent judgment",
+          "milestone": "inverse_proofs"
+        },
+        {
+          "kind": "review_verdict",
+          "result": "fail",
+          "detail": "no review verdict matches",
+          "path": "research/rogers-ramanujan/terra2026/*review*.md",
+          "milestone": "complete_review"
+        },
+        {
+          "kind": "verification_declaration",
+          "result": "n/a",
+          "detail": "no formal target registered",
+          "milestone": "lean_checked"
+        }
+      ]
+    },
+    "B02": {
+      "id": "B02",
+      "name": "Formal assurance",
+      "family": "rigor",
+      "mode": "C",
+      "status": "n/a",
+      "score": null,
+      "evidence": [],
+      "notes": "No formal target is registered for this problem."
+    },
+    "B03": {
+      "id": "B03",
+      "name": "Decisive finding",
+      "family": "discovery",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 75.0,
+      "raw": {
+        "inventory": 2
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "md_heading",
+          "result": "pass",
+          "detail": "heading present",
+          "path": "research/rogers-ramanujan/terra2026/failure-ledger.md",
+          "name": "Failure ledger of refuted constructions with witnesses"
+        },
+        {
+          "kind": "review_verdict",
+          "result": "pass",
+          "detail": "supported by a universal counting argument, subject to the independently checked seven-block encoding.",
+          "path": "research/rogers-ramanujan/terra2026/entropy-independent-review.md",
+          "name": "Bounded-expansion entropy obstruction with separate review"
+        }
+      ],
+      "notes": "Two verified obstructions each rule out a whole class of methods. The first is the bounded-expansion entropy barrier: no injection from B* can satisfy max f <= gamma max + K with gamma < log256/log159. The universal argument was reviewed, Lean checks the witness, and I rechecked H^3 v <= 159v by hand. The second is the weight-8 particle-count witness against every count-preserving recurrence map, re-derived by an independent reviewer. Both are bound to hashed artifacts, and the scope is stated precisely."
+    },
+    "B05": {
+      "id": "B05",
+      "name": "Claim integrity",
+      "family": "rigor",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 75.0,
+      "raw": {
+        "flags": [],
+        "stage_claim_labels": {},
+        "stage_claims_without_source": 0
+      },
+      "coverage": 1.0,
+      "evidence": [],
+      "notes": "Sampled claims are labeled correctly. Established: Chern-Li automaton and Kursungoz endpoint. Proved: positive divided-difference theorem, entropy barrier, local surgery, merge. Refuted: 1^8/(8), (1,1) to (2), weight-8 and weight-37 witnesses. Empirical: finite checks called transcription checks (813 coefficients confirmed). Unverified: novelty. Lean receipts match verification.json. Minor issues: stale status headers still say 'review outstanding' after reviews exist, and alln_word_review calls the model a 'new candidate'."
+    },
+    "B06": {
+      "id": "B06",
+      "name": "Adversarial review",
+      "family": "rigor",
+      "mode": "K/J",
+      "status": "scored",
+      "score": 97.2,
+      "raw": {
+        "items": {
+          "review_per_round": 1.0,
+          "verdict_recorded": 1.0,
+          "sha_bound": 1.0,
+          "distinct_role": null,
+          "distinct_thread": null,
+          "independent_check": 1.0,
+          "objections_resolved": 1.0,
+          "no_coauthorship": 0.8333333333333334
+        },
+        "pending": [],
+        "reviews": 6,
+        "rounds": 3
+      },
+      "coverage": 0.75,
+      "evidence": [
+        {
+          "path": "research/rogers-ramanujan/terra2026/entropy-independent-review.md",
+          "detail": "supported by a universal counting argument, subject to the independently checked seven-block encoding."
+        },
+        {
+          "path": "research/rogers-ramanujan/terra2026/final-math-review.md",
+          "detail": "supported with two minor presentation clarifications."
+        },
+        {
+          "path": "research/rogers-ramanujan/terra2026/formal-review.md",
+          "detail": "supported for the stated multiplicity-block equivalence; incomplete for the sorted-partition and KR1 bijection claims."
+        },
+        {
+          "path": "research/rogers-ramanujan/terra2026/local-constructions-review.md",
+          "detail": "supported on the stated domain; no global product-to-gap map follows."
+        },
+        {
+          "path": "research/rogers-ramanujan/terra2026/merge-independent-review.md",
+          "detail": "supported as a hand-checked bijection between the literal gap class and the specified cluster-data class; not a proof of the residue–gap bijection."
+        },
+        {
+          "path": "research/rogers-ramanujan/terra2026/staircase-independent-review.md",
+          "detail": "supported as a positive colored model of the product-side auxiliary series C_n, A_n, B_n, contingent on the cited source identity; not a KR1 bijection."
+        }
+      ]
+    },
+    "B07": {
+      "id": "B07",
+      "name": "Reproducibility",
+      "family": "rigor",
+      "mode": "K",
+      "status": "scored",
+      "score": 100.0,
+      "raw": {
+        "items": {
+          "hashes_verify": null,
+          "source_stable": null,
+          "recorded_checks_exit_0": 1.0,
+          "repository_checker": 1.0,
+          "run_complete": null,
+          "preregistration": null,
+          "unit_tests": null,
+          "reproduction": null
+        },
+        "bindings": {
+          "pass": 0,
+          "mismatch": 0,
+          "unknown": 0
+        }
+      },
+      "coverage": 0.25,
+      "evidence": [
+        {
+          "check": "scripts/check_repository.py",
+          "result": "pass",
+          "detail": "exit 0: These checks do not establish citation accuracy, novelty, mathematical validity, or model performance."
+        }
+      ]
+    },
+    "B08": {
+      "id": "B08",
+      "name": "Literature grounding",
+      "family": "rigor",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 68.8,
+      "raw": {
+        "items": {
+          "inspected_at_T": 0.0,
+          "cited_in_workspace": 0.75,
+          "novelty_label_present": 1.0,
+          "novelty_label_honest": 1.0
+        },
+        "pending": [],
+        "not_in_reading_list_at_T": [
+          "Kursungoz 2018",
+          "Kanade-Russell linked partition ideals",
+          "Xia 2026",
+          "Mizuno 2026"
+        ]
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "any_nonempty holds over 1 value(s)",
+          "path": "research/rogers-ramanujan/terra2026/publication-manifest.json"
+        }
+      ]
+    },
+    "B09": {
+      "id": "B09",
+      "name": "Resource efficiency",
+      "family": "operations",
+      "mode": "C",
+      "status": "unknown",
+      "score": null,
+      "raw": {
+        "effective_tokens": null,
+        "reference_effective_tokens": null,
+        "tokens": null,
+        "overhead_tokens": null,
+        "progress_known": true
+      },
+      "evidence": [],
+      "notes": "No measured token telemetry."
+    },
+    "B11": {
+      "id": "B11",
+      "name": "Operational autonomy",
+      "family": "operations",
+      "mode": "C",
+      "status": "unknown",
+      "score": null,
+      "raw": {
+        "items": {
+          "harness_executed": null,
+          "agent_executed": null,
+          "failure_free": null,
+          "human_steering": null
+        },
+        "planned_steps": 0,
+        "post_hoc_summaries": 0,
+        "human_turns": null,
+        "classification": "heuristic"
+      },
+      "evidence": []
+    },
+    "B12": {
+      "id": "B12",
+      "name": "Continuity",
+      "family": "operations",
+      "mode": "K/J",
+      "status": "scored",
+      "score": 100.0,
+      "raw": {
+        "items": {
+          "next_step": 1.0,
+          "remaining_obligations": 1.0,
+          "status_record": 1.0,
+          "evidence_preserved": 1.0,
+          "status_page_updated": 1.0,
+          "cold_start": null
+        },
+        "pending": []
+      },
+      "coverage": 0.833,
+      "evidence": [
+        {
+          "kind": "md_heading",
+          "result": "pass",
+          "detail": "heading present",
+          "path": "research/rogers-ramanujan/terra2026/README.md",
+          "item": "next_step"
+        },
+        {
+          "kind": "md_heading",
+          "result": "pass",
+          "detail": "heading present",
+          "path": "research/rogers-ramanujan/terra2026/failure-ledger.md",
+          "item": "remaining_obligations"
+        },
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "any_nonempty holds over 1 value(s)",
+          "path": "research/rogers-ramanujan/terra2026/verification/verification.json",
+          "item": "status_record"
+        }
+      ]
+    },
+    "B13": {
+      "id": "B13",
+      "name": "Novel contribution",
+      "family": "discovery",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 50.0,
+      "raw": {
+        "inventory": 32,
+        "closest_work_inspected": 0.0,
+        "capped_at_50": true
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "md_heading",
+          "result": "pass",
+          "detail": "heading present",
+          "path": "research/rogers-ramanujan/terra2026/README.md",
+          "name": "Main theorem section of the research package"
+        },
+        {
+          "kind": "review_verdict",
+          "result": "pass",
+          "detail": "supported with two minor presentation clarifications.",
+          "path": "research/rogers-ramanujan/terra2026/final-math-review.md",
+          "name": "Final mathematical review"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/README.md",
+          "path": "research/rogers-ramanujan/terra2026/README.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/alln_word_review.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/alln_word_review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/block_reduction.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/block_reduction.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/lane_carries.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/lane_carries.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/recurrence_final_pass.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/recurrence_final_pass.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/recurrence_obstruction.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/recurrence_obstruction.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/surgery_review.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/surgery_review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/terminal_bump_review.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/terminal_bump_review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/contract.md",
+          "path": "research/rogers-ramanujan/terra2026/contract.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/entropy-independent-review.md",
+          "path": "research/rogers-ramanujan/terra2026/entropy-independent-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/failure-ledger.md",
+          "path": "research/rogers-ramanujan/terra2026/failure-ledger.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/final-math-review.md",
+          "path": "research/rogers-ramanujan/terra2026/final-math-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/formal-review.md",
+          "path": "research/rogers-ramanujan/terra2026/formal-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/kr1-positive-models.tex",
+          "path": "research/rogers-ramanujan/terra2026/kr1-positive-models.tex"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/lean/Blocks.lean",
+          "path": "research/rogers-ramanujan/terra2026/lean/Blocks.lean"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/lean/Cancellation.lean",
+          "path": "research/rogers-ramanujan/terra2026/lean/Cancellation.lean"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/lean/Entropy.lean",
+          "path": "research/rogers-ramanujan/terra2026/lean/Entropy.lean"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/lean/MergeBounds.lean",
+          "path": "research/rogers-ramanujan/terra2026/lean/MergeBounds.lean"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/local-constructions-review.md",
+          "path": "research/rogers-ramanujan/terra2026/local-constructions-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/merge-independent-review.md",
+          "path": "research/rogers-ramanujan/terra2026/merge-independent-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/publication/article.md",
+          "path": "research/rogers-ramanujan/terra2026/publication/article.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/publication/assets/README.md",
+          "path": "research/rogers-ramanujan/terra2026/publication/assets/README.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/publication/editorial-review.md",
+          "path": "research/rogers-ramanujan/terra2026/publication/editorial-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/staircase-independent-review.md",
+          "path": "research/rogers-ramanujan/terra2026/staircase-independent-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/all_n_positive_staircase.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/all_n_positive_staircase.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/general_positive_divided_differences.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/general_positive_divided_differences.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/local_surgery.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/local_surgery.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/mizuno_formal_source.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/mizuno_formal_source.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/recurrence-experiments.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/recurrence-experiments.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/recurrence_final_pass.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/recurrence_final_pass.md"
+        }
+      ],
+      "notes": "The strongest contribution is the general positive normalized divided-difference theorem: a joint least-active marker/staircase involution giving positive cut-word models for every A_n, B_n, C_n. Two separate reviews support it, and Lean checks the generic toggle. It extends inspected Xia v1 Lemma 2.2, but the closest work is not inspected at level T, so the engine cap applies. The prose makes no novelty claim beyond 'unverified'."
+    },
+    "B14": {
+      "id": "B14",
+      "name": "Idea generation",
+      "family": "discovery",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 100.0,
+      "raw": {
+        "inventory": 33
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "md_heading",
+          "result": "pass",
+          "detail": "heading present",
+          "path": "research/rogers-ramanujan/terra2026/failure-ledger.md",
+          "name": "Refuted mechanisms with witnesses"
+        },
+        {
+          "kind": "md_heading",
+          "result": "pass",
+          "detail": "heading present",
+          "path": "research/rogers-ramanujan/terra2026/failure-ledger.md",
+          "name": "Working scoped constructions"
+        },
+        {
+          "kind": "md_heading",
+          "result": "pass",
+          "detail": "heading present",
+          "path": "research/rogers-ramanujan/terra2026/failure-ledger.md",
+          "name": "Open constructive obligations"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/README.md",
+          "path": "research/rogers-ramanujan/terra2026/README.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/alln_word_review.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/alln_word_review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/block_reduction.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/block_reduction.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/lane_carries.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/lane_carries.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/recurrence_final_pass.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/recurrence_final_pass.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/recurrence_obstruction.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/recurrence_obstruction.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/surgery_review.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/surgery_review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/construction/terminal_bump_review.md",
+          "path": "research/rogers-ramanujan/terra2026/construction/terminal_bump_review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/contract.md",
+          "path": "research/rogers-ramanujan/terra2026/contract.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/entropy-independent-review.md",
+          "path": "research/rogers-ramanujan/terra2026/entropy-independent-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/failure-ledger.md",
+          "path": "research/rogers-ramanujan/terra2026/failure-ledger.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/final-math-review.md",
+          "path": "research/rogers-ramanujan/terra2026/final-math-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/formal-review.md",
+          "path": "research/rogers-ramanujan/terra2026/formal-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/kr1-positive-models.tex",
+          "path": "research/rogers-ramanujan/terra2026/kr1-positive-models.tex"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/lean/Blocks.lean",
+          "path": "research/rogers-ramanujan/terra2026/lean/Blocks.lean"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/lean/Cancellation.lean",
+          "path": "research/rogers-ramanujan/terra2026/lean/Cancellation.lean"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/lean/Entropy.lean",
+          "path": "research/rogers-ramanujan/terra2026/lean/Entropy.lean"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/lean/MergeBounds.lean",
+          "path": "research/rogers-ramanujan/terra2026/lean/MergeBounds.lean"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/local-constructions-review.md",
+          "path": "research/rogers-ramanujan/terra2026/local-constructions-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/merge-independent-review.md",
+          "path": "research/rogers-ramanujan/terra2026/merge-independent-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/publication/article.md",
+          "path": "research/rogers-ramanujan/terra2026/publication/article.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/publication/assets/README.md",
+          "path": "research/rogers-ramanujan/terra2026/publication/assets/README.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/publication/editorial-review.md",
+          "path": "research/rogers-ramanujan/terra2026/publication/editorial-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/staircase-independent-review.md",
+          "path": "research/rogers-ramanujan/terra2026/staircase-independent-review.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/all_n_positive_staircase.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/all_n_positive_staircase.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/general_positive_divided_differences.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/general_positive_divided_differences.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/local_surgery.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/local_surgery.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/mizuno_formal_source.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/mizuno_formal_source.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/recurrence-experiments.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/recurrence-experiments.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/rogers-ramanujan/terra2026/theory/recurrence_final_pass.md",
+          "path": "research/rogers-ramanujan/terra2026/theory/recurrence_final_pass.md"
+        }
+      ],
+      "notes": "The ledger records many distinct mechanisms with stated objects and witnesses: residue-lane carries, height-block automata, bidegree surgery, signed-cut and terminal-bump cancellation, recurrence branch recipes, entropy bounds and cluster merge. Several were killed by witnesses (1^8/(8), {1}/{5} masks, n=6 q^18, weights 4, 8, 27/36 and 37, q^3C1 collisions). Several survived with reviews. The joint staircase idea became the reviewed main theorem and moved the work onto recurrence maps over cut words."
+    }
+  },
+  "gates": {
+    "G1": {
+      "status": "pass",
+      "computed": false,
+      "notes": [],
+      "ruling": "I sampled eight groups of load-bearing records, and every artifact they claim exists is present with the recorded hash. (1) Execution receipt: all 11 runs in verification/verification.json have logs whose SHA-256 matches log_sha256. All 12 recorded source hashes match, including ../checks/kr1.py (6a961d73), and so does the runner verify.py (20262f85). (2) Lean proof checks: the four module logs contain 26 axiom reports, using only propext, Quot.sound and Classical.choice. There is no sorryAx and no sorry/admit token in the sources, and the 36 declarations and 26 reports match the README. The Entropy witness step3 v <= 159 v also holds when recomputed by hand. (3) Coefficient audit: 18 records with no mismatches. 17x46+31 = 813 coefficients, which matches the log. The JSON hash 2f5a963c matches final-math-review.md, and both copies are identical. (4) Finite counts quoted in reviews and the paper all trace to hashed artifacts: 124,944 to staircase-toggle.log, 27,000 triples to local-surgery.log, 280/280 round trips to merge-check-20.json, and the weight-37 minima [55,67,25,40,43] to recurrence-final.log. The lane-collision witnesses are in lane-carries.log. (5) Citations: Xia v1, Mizuno, Kursungoz 1808.01432, Andrews-Keith 2203.05202v2 and Chern-Li 1809.08655 all sit in the KR1 source tables with inspection depth. Uncu-Zudilin and the Palomar registry are in workspace-local source records. None of these is in references/reading-list.md, but the gate accepts the workspace source table. (6) Review-bound hashes match: final TeX 3ba6f83e, check_alln_word.py bf764c18, recurrence_obstruction.md 822ff8b0, the merge review's three RR003 hashes, and the reviewed Lean and script sources. The PDF hash 24cddea0 matches article-qa.json, and 12 pages / 391,437 bytes match the build log. (7) Test counts: the 107 in repository-checks.json equals the test functions at the declared research baseline 4ccc4fe, and the manifest's 102 equals the publication tree. (8) Six sampled publication-manifest hashes match. Caveats that are not fabrication: eight review-cited hashes (theory 75e22695, block_reduction 9acd7062, local_surgery.md drafts 2712b7f1, 61498d5b and 0149c46f, and earlier manuscript versions e1d4e68b, 87ca297c and b89890c5) are explicitly labelled as drafts at time of review. Those drafts cannot be recovered because the package entered git in one commit (b44c5ba). The 3,178,008-state cut-word check has no retained log, only the review statement and a matching script hash; the README says it was run earlier and not repeated. The Lean archive digest and the GitHub-connector and Palomar inspections cannot be checked offline.",
+      "reviewer": "bench-auditor"
+    },
+    "G2": {
+      "status": "pass",
+      "computed": false,
+      "notes": [],
+      "ruling": "contract.md records the user's authorization: a full KR1 bijection investigation, a GPT-6.1 Terra fleet, an illustrated LaTeX article and a supplementary Lean check, plus an explicit permission for compiler downloads. The run stayed on that objective. README and article state that the full bijection was not obtained and that novelty is unverified, and the auxiliary positive model is presented as partial progress. Tools used: the official Lean 4.34.0 release download (formal-review.md, consistent with lean-version.log), local Python and TeX, and read-only inspection of sources. No paid providers are recorded; token and money use is disclosed as unmeasured. File scope: 73 of the 76 files in output commit b44c5ba are under terra2026. The other three are the permitted root README index link and 2-line link updates to the publication companion. The contract says no remote mutation or publication is part of the run, and editorial-review.md records the draft as unpublished. The later publish commits (b44c5ba, and companion PR 40658ff, which also edited AGENTS.md and CLAUDE.md) are authored under Christopher Yamba's identity and are not counted in the run's changed documents. Caveats: the user's authorization is self-recorded in the run's own contract, and no in-workspace record shows separate approval for release. Commit authorship under the user's identity is the only evidence for that. The manifest's intended_public_locations are planning entries; I could not verify offline whether they were deployed. The pre-contract scout call is disclosed as read-only and user-authorized.",
+      "reviewer": "bench-auditor"
+    },
+    "G3": {
+      "status": "unknown",
+      "computed": true,
+      "notes": [
+        "no receipts or telemetry to compare with the program constraints"
+      ],
+      "evidence_missing": true,
+      "ruling": "The packet's computed note stands: there are no receipts or telemetry (run_dir null, sessions empty). The contract says execution was manual orchestration, not the command adapter, so the plan's 42 dispatch units, 3 rounds and 3 concurrent workers were never metered. No excess is visible in the records. The named identities are the root, the pre-contract scout call and three Terra workers (kr1_theory, kr1_construct, kr1_formal), which does not exceed the five declared distinct profiles. The manuscript went through exactly three review passes: the initial review plus two addenda, which reaches but does not exceed the three-cycle bound. A further integration-only edit by the coordinator after the last review is disclosed as unreviewed. All recorded executions took 2.71 s or less, far under the ten-minute per-invocation cap. The 3,178,008-state check's duration is not recorded. Without a dispatch or round ledger, compliance with the unit, round and concurrency caps cannot be confirmed, so the gate stays unknown rather than pass.",
+      "reviewer": "bench-auditor"
+    },
+    "G4": {
+      "status": "pass",
+      "computed": true,
+      "scanned": 53,
+      "notes": []
+    }
+  },
+  "flags": [],
+  "assessment": {
+    "packet_sha256": "df40cd1b0b11f90973571e18ca98e275ab574db2a190f57bb748916ab1565077",
+    "assessor": {
+      "agent": "bench-assessor",
+      "session": "a54a2a77c3f7f34fe",
+      "model": "claude-opus-5-5"
+    },
+    "auditor": {
+      "agent": "bench-auditor",
+      "session": "a2d10537c2e401c4c",
+      "model": "claude-opus-5-5"
+    },
+    "assessor_not_author": true,
+    "same_model_family": false,
+    "disagreements": [],
+    "unanswered": []
+  },
+  "trajectory": [],
+  "retrospective": true,
+  "promotion_authorized": false,
+  "limitations": [
+    "No session telemetry selected; cost, context and human-turn items are unknown.",
+    "Retrospective: the problem's ladder was registered after the run; excluded from dominance claims.",
+    "Benchmarks describe this run on this problem; they never authorize promotion (meta/protocol.md)."
+  ]
+}

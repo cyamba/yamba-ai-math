@@ -9,22 +9,36 @@ tokens, compactions and human turns. Records feed a radar dashboard. Python 3.11
 
 Each axis is 0–100, or `pending` (awaiting judgment), `unknown` (not measured) or `n/a` (does not apply).
 Unknown and n/a are gaps on the radar, never zero. Modes: **C** computed, **K** checklist, **J** judged
-by an independent `bench-assessor` against an anchored rubric (0/25/50/75/100).
+by an independent `bench-assessor` against an anchored rubric (0/25/50/75/100). Spec `2026.10.29-1`
+weights the radar toward creating mathematics: four Discovery axes, five Rigor, three Operations.
 
 | ID | Family | Benchmark | Question | Mode |
 | --- | --- | --- | --- | --- |
-| B01 | Progress | Frontier depth | How far up the problem's preregistered milestone ladder (prove or refute branch) does the output stand? | K |
-| B02 | Progress | Formal assurance | Which maintainer-registered formal targets are machine-checked, with allowed axioms and current hashes? | C |
-| B03 | Progress | Decisive finding | What is the single most decisive off-ladder finding: counterexample, refutation, obstruction, bound? | C+J |
-| B04 | Progress | Contract fulfilment | Were the program's deliverables and success criteria met? Capped at 50 unless the program was hash-frozen at start. | K/J |
-| B05 | Rigor | Claim integrity | Are material claims labeled, scoped and supported? Computed flags plus an audit sample. | C+J |
+| B01 | Discovery | Frontier depth | How far up the problem's preregistered milestone ladder (prove or refute branch) does the output stand? Unregistered formal rungs are n/a. | K |
+| B03 | Discovery | Decisive finding | What is the single most decisive off-ladder finding: counterexample, refutation, obstruction, literature error, bound? | C+J |
+| B13 | Discovery | Novel contribution | What is the strongest new contribution, judged against the closest inspected work? Capped at 50 without T-level inspection. | C+J |
+| B14 | Discovery | Idea generation | How many distinct, precisely stated routes or conjectures were generated and tested to a verdict? | C+J |
+| B02 | Rigor | Formal assurance | Which maintainer-registered formal targets are machine-checked, with allowed axioms and current hashes? | C |
+| B05 | Rigor | Claim integrity | Are material claims labeled, scoped, faithful to the problem statement and supported? | C+J |
 | B06 | Rigor | Adversarial review | Did an independent challenge, in a distinct thread, run checks and resolve objections every round? | K/J |
 | B07 | Rigor | Reproducibility | Do recorded hashes, checks and declared reproduction commands re-verify? Coverage shown. | K |
 | B08 | Rigor | Literature grounding | Was the closest prior work inspected (level T+) and is the novelty label honest? | C+J |
 | B09 | Operations | Resource efficiency | Measured effective tokens against the problem's reference budget; n/a without progress. | C |
-| B10 | Operations | Context economy | Tool calls before the first file write, peak context, compactions, redundant reads. | C |
 | B11 | Operations | Operational autonomy | Harness-executed stages, agent-executed stages, failures, steering and correction turns. | C |
 | B12 | Operations | Continuity | Next step, remaining obligations, preserved evidence, updated status, cold-start resume. | K/J |
+
+Retired in `2026.10.29-1` and still computable for older records: B04 Contract fulfilment (saturated
+while depth stayed low) and B10 Context economy (a process proxy, unmeasured without telemetry). IDs are
+never reused.
+
+## Keeping the benchmark relevant
+
+`python3 .claude/bench/bench.py relevance` questions the axes themselves over the final records of the
+current spec: saturated, floor, flat or mostly unmeasured axes, radars carried by process axes while the
+Discovery axes stay low, and whether the review scheduled in `metrics.json` (`relevance_review`) is due.
+Its flags are questions, not changes. `/bench-run` and `/harness-retro` end with it and log one line in
+[journal.md](journal.md); a change of axes is a new spec version with its reasons recorded in
+`relevance_review.decisions`.
 
 Hard gates, shown beside the radar: **G1** no fabrication, **G2** scope and permissions, **G3** budget
 and stop conditions, **G4** no benchmark leakage (rubric canaries). Full definitions, formulas, unknown
@@ -46,6 +60,7 @@ python3 $B collect --problem <id> --commit <output> --framework-commit <version>
     --run-dir <abs .runs dir> --session codex:<lead id> [--deep]
 python3 $B finalize --key <key> --judgments <file> --audit <file>
 python3 $B compare <baseline record> <candidate record>
+python3 $B relevance                                  # do the axes still track new mathematics?
 python3 $B dashboard                                  # offline HTML with embedded records
 python3 $B export-artifact [--out-dir DIR]            # dataset files and page for the published dashboard
 ```

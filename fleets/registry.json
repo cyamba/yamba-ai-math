@@ -54,6 +54,30 @@
       ]
     },
     {
+      "id": "decompose",
+      "description": "Glue-first recovery for a stalled obligation: precise sub-lemmas plus a short glue proof, independently reviewed before the sub-lemmas are released.",
+      "required_capabilities": ["decomposition", "falsification"],
+      "max_agents": 2,
+      "stages": [
+        {"id": "decompose", "requires": ["decomposition"], "depends_on": []},
+        {"id": "glue-review", "requires": ["falsification"], "depends_on": ["decompose"], "independent_of": ["decompose"]},
+        {"id": "revise", "requires": ["decomposition"], "depends_on": ["glue-review"], "independent_of": ["glue-review"]}
+      ]
+    },
+    {
+      "id": "discover",
+      "description": "Generate distinct conjectures or routes from exact small-case data, then independently try to kill them and check them on tractable cases.",
+      "required_capabilities": ["literature", "conjecture", "falsification", "experiments", "synthesis"],
+      "max_agents": 5,
+      "stages": [
+        {"id": "survey", "requires": ["literature"], "depends_on": []},
+        {"id": "conjecture", "requires": ["conjecture"], "depends_on": ["survey"]},
+        {"id": "counterexample", "requires": ["falsification"], "depends_on": ["conjecture"], "independent_of": ["conjecture"]},
+        {"id": "finite-check", "requires": ["experiments"], "depends_on": ["conjecture"], "independent_of": ["conjecture"]},
+        {"id": "integrate", "requires": ["synthesis"], "depends_on": ["conjecture", "counterexample", "finite-check"], "independent_of": ["conjecture", "counterexample"]}
+      ]
+    },
+    {
       "id": "world-model",
       "description": "Study state, geometric structure, causal mechanisms, and full cost of a world-model architecture.",
       "required_capabilities": ["world-models", "geometry", "causality", "cost-analysis", "falsification", "synthesis"],

@@ -12,7 +12,11 @@ from . import BenchError
 BENCH_ROOT = Path(__file__).resolve().parents[1]
 SPEC_DIR = BENCH_ROOT / "spec"
 AGENTS_DIR = BENCH_ROOT.parent / "agents"
-METRIC_IDS = tuple(f"B{n:02d}" for n in range(1, 13))
+# Every axis the engine can compute. A spec version selects twelve of them; retired axes keep their
+# IDs so records from older specs stay readable, and a new axis never reuses a retired ID.
+KNOWN_METRIC_IDS = tuple(f"B{n:02d}" for n in range(1, 15))
+METRIC_COUNT = 12
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 GATE_IDS = ("G1", "G2", "G3", "G4")
 ANCHORS = (0, 25, 50, 75, 100)
 MODES = {"C", "K", "C+J", "K/J"}
@@ -128,13 +132,33 @@ def validate_problem(entry: dict):
             validate_check(check, f"{where} continuity {key}")
 
 
+def metric_ids(spec: dict) -> tuple:
+    """The current spec's axes in radar order."""
+    return tuple(metric["id"] for metric in spec["metrics"]["metrics"])
+
+
+def validate_relevance(review):
+    """The spec must say when its own axes are next questioned; see `bench.py relevance`."""
+    if not isinstance(review, dict):
+        raise BenchError("metrics.json needs a relevance_review block (reviewed, next_due, decisions)")
+    due = review.get("next_due") or {}
+    if not DATE_RE.match(str(review.get("reviewed"))) or not DATE_RE.match(str(due.get("date"))):
+        raise BenchError("relevance_review.reviewed and next_due.date must be YYYY-MM-DD")
+    if isinstance(due.get("records"), bool) or not isinstance(due.get("records"), int) or due["records"] < 1:
+        raise BenchError("relevance_review.next_due.records must be a positive integer")
+    decisions = review.get("decisions")
+    if not isinstance(decisions, dict) or not set(decisions) <= set(KNOWN_METRIC_IDS):
+        raise BenchError("relevance_review.decisions must map known metric IDs to one-line reasons")
+
+
 def validate_spec(spec: dict):
     metrics = spec["metrics"]
     if tuple(metrics.get("anchors", ())) != ANCHORS:
         raise BenchError(f"anchors must be {list(ANCHORS)}")
     ids = tuple(metric.get("id") for metric in metrics.get("metrics", []))
-    if ids != METRIC_IDS:
-        raise BenchError(f"Exactly twelve metrics B01..B12 are required, found {list(ids)}")
+    if len(ids) != METRIC_COUNT or len(set(ids)) != METRIC_COUNT or not set(ids) <= set(KNOWN_METRIC_IDS):
+        raise BenchError(f"Exactly twelve distinct metrics from {KNOWN_METRIC_IDS[0]}..{KNOWN_METRIC_IDS[-1]} are required, found {list(ids)}")
+    validate_relevance(metrics.get("relevance_review"))
     families = {family["id"] for family in metrics.get("families", [])}
     for metric in metrics["metrics"]:
         for field in METRIC_FIELDS:

@@ -8,14 +8,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import BenchError, __version__
-from .spec import ANCHORS, BENCH_ROOT, GATE_IDS, METRIC_IDS, metric_defs, sha256_bytes, sha256_file, spec_digest
+from .spec import (ANCHORS, BENCH_ROOT, GATE_IDS, KNOWN_METRIC_IDS, METRIC_COUNT, metric_defs, metric_ids, sha256_bytes,
+                   sha256_file, spec_digest)
 from .telemetry import public
 
 SCHEMA = "yambench.record/1"
 RECORDS_DIR = BENCH_ROOT / "records"
-ANCHOR_METRICS = ("B03", "B05")
+ANCHOR_METRICS = ("B03", "B05", "B13", "B14")
 GATE_STATUSES = {"pass", "fail", "review", "unknown"}
-HOME_RE = re.compile(r"/(Users|home)/[^/\s\"]+")
+# POSIX homes, and Windows homes with forward slashes or (possibly JSON-escaped) backslashes.
+HOME_RE = re.compile(r"/(?:Users|home)/[^/\s\"]+|[A-Za-z]:(?:\\+|/)Users(?:\\+|/)[^\\/\s\"]+", re.I)
 
 
 def now() -> str:
@@ -103,8 +105,11 @@ def validate(record: dict, spec: dict) -> dict:
         raise BenchError("promotion_authorized must be false")
     statuses = set(spec["metrics"]["statuses"])
     metrics = record.get("metrics") or {}
-    if tuple(sorted(metrics)) != METRIC_IDS:
-        raise BenchError(f"record must carry exactly {list(METRIC_IDS)}")
+    if len(metrics) != METRIC_COUNT or not set(metrics) <= set(KNOWN_METRIC_IDS):
+        raise BenchError(f"record must carry twelve known metric IDs, found {sorted(metrics)}")
+    current = (record.get("spec") or {}).get("hashes", {}).get("metrics.json") == spec["hashes"].get("metrics.json")
+    if current and set(metrics) != set(metric_ids(spec)):
+        raise BenchError(f"record under the current spec must carry exactly {list(metric_ids(spec))}")
     for metric_id, entry in metrics.items():
         status, score = entry.get("status"), entry.get("score")
         if status not in statuses:
@@ -134,7 +139,8 @@ def judge_packet(*, key: str, problem: dict, program: dict, computed: dict, spec
             continue
         if entry["status"] == "pending" or (entry.get("raw") or {}).get("pending"):
             requests.append({"metric": metric_id, "name": defs[metric_id]["name"], "type": judged["type"],
-                             "items": judged.get("items"), "rubric": f".claude/bench/spec/{judged['rubric']}",
+                             # absolute: a judge started in another worktree must not read another spec's rubric
+                             "items": judged.get("items"), "rubric": str(BENCH_ROOT / "spec" / judged["rubric"]),
                              "computed": entry.get("raw"), "evidence": entry["evidence"][:30]})
     milestones = problem["ladder"]["milestones"]
     return {
@@ -146,7 +152,7 @@ def judge_packet(*, key: str, problem: dict, program: dict, computed: dict, spec
                     "success_criteria": program["doc"].get("success_criteria")},
         "reviews": computed["reviews"], "requests": requests,
         "ladder": [{"milestone": m, "title": milestones[m].get("title", m)} for m in computed["frontier_judgments"]],
-        "ladder_rubric": ".claude/bench/spec/rubrics/ladder.md",
+        "ladder_rubric": str(BENCH_ROOT / "spec" / "rubrics" / "ladder.md"),
         "author_sessions": author_sessions,
         "write_to": str(out),
         "answer_shape": {
@@ -211,6 +217,11 @@ def apply_audit(gates: dict, audit: dict | None, author_sessions: list[str]) -> 
             raise BenchError(f"Audit ruling for {gate} needs a valid status and rationale")
         if gate == "G4" and updated["G4"]["status"] == "fail":
             continue  # a found canary cannot be overruled
+        if updated[gate].get("evidence_missing") and ruling["status"] == "pass":
+            # self-reported records cannot certify limits that no receipt or telemetry metered
+            updated[gate].update(ruling=ruling["rationale"], reviewer="bench-auditor",
+                                 notes=list(updated[gate].get("notes", [])) + ["auditor pass not applied: no receipts or telemetry"])
+            continue
         updated[gate].update(status=ruling["status"], ruling=ruling["rationale"], reviewer="bench-auditor")
     return updated, auditor, audit.get("disputes", [])
 
@@ -218,7 +229,7 @@ def apply_audit(gates: dict, audit: dict | None, author_sessions: list[str]) -> 
 def write(record: dict, directory: Path = RECORDS_DIR) -> Path:
     directory.mkdir(parents=True, exist_ok=True)
     path = directory / f"{record['record_id']}.json"
-    path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    path.write_bytes((json.dumps(record, indent=2, ensure_ascii=False) + "\n").encode("utf-8"))  # LF on every OS
     return path
 
 

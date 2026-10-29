@@ -1,9 +1,9 @@
 {
-  "registry_version": "2026.10.24-1",
+  "registry_version": "2026.10.29-1",
   "framework_paths": [
     "AGENTS.md", "CLAUDE.md", "SKILLS.md", "agents/", "fleets/", "skills/", "harness/",
     "programs/contract.md", "meta/protocol.md", "meta/scorecard.md", "docs/", "scripts/",
-    "explore/AGENTS.md", ".claude/agents/", ".claude/skills/"
+    "explore/AGENTS.md", ".agents/", ".claude/agents/", ".claude/skills/"
   ],
   "verification_files": [
     "research/partitions/lean/verification.json",
@@ -98,6 +98,224 @@
           "candidate_counterexample": {"title": "Candidate counterexample to the target", "all": [{"kind": "judged"}]},
           "counterexample_verified": {"title": "Counterexample independently verified", "all": [{"kind": "judged"}]},
           "counterexample_formal": {"title": "Counterexample formally checked", "all": [{"kind": "verification_declaration"}]}
+        }
+      }
+    },
+    {
+      "id": "kr1-residue-gap-bijection",
+      "title": "KR1: residue 1,3,6,8 mod 9 to gap partition bijection",
+      "statement_ref": "research/rogers-ramanujan/problem_01_rogers_ramanujan_bijections.md",
+      "workspace": "research/rogers-ramanujan/terra2026",
+      "programs": [
+        "research/rogers-ramanujan/terra2026/fleet-plan.json",
+        "research/rogers-ramanujan/terra2026/contract.md"
+      ],
+      "registered_after_run": true,
+      "registration_note": "Retrospective baseline for the terra2026 investigation: framework 4e2492d (framework paths identical to the run's stated baseline 4ccc4fe, which sits on a diverged branch), output b44c5ba. The contract is prose; fleet-plan.json supplies rounds. The pinned target is research/rogers-ramanujan/TARGET.md from 2026-10-29 on.",
+      "review_glob": "{ws}/*review*.md",
+      "default_run_dir": ".runs/kr1-terra2026",
+      "formal_targets": [],
+      "reference_budget": {
+        "effective_tokens": null,
+        "basis": "unset; set by the maintainer before a prospective run"
+      },
+      "closest_work": [
+        {
+          "key": "Kursungoz 2018",
+          "match": "1808.01432"
+        },
+        {
+          "key": "Kanade-Russell linked partition ideals",
+          "match": "1809.08655"
+        },
+        {
+          "key": "Xia 2026",
+          "match": "2609.08816"
+        },
+        {
+          "key": "Mizuno 2026",
+          "match": "2609.09653"
+        }
+      ],
+      "completion_record": null,
+      "team_record": {
+        "file": "{ws}/fleet-plan.json",
+        "path": [
+          "distinct_agents"
+        ]
+      },
+      "consistency": [],
+      "novelty_label": {
+        "file": "{ws}/publication-manifest.json",
+        "path": [
+          "novelty"
+        ]
+      },
+      "findings": [
+        {
+          "name": "Failure ledger of refuted constructions with witnesses",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/failure-ledger.md",
+            "regex": "^## FAILED"
+          }
+        },
+        {
+          "name": "Bounded-expansion entropy obstruction with separate review",
+          "check": {
+            "kind": "review_verdict",
+            "glob": "{ws}/entropy-independent-review.md",
+            "regex": "\\bsupported"
+          }
+        }
+      ],
+      "contribution_probes": [
+        {
+          "name": "Main theorem section of the research package",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/README.md",
+            "regex": "^## Main theorem"
+          }
+        },
+        {
+          "name": "Final mathematical review",
+          "check": {
+            "kind": "review_verdict",
+            "glob": "{ws}/final-math-review.md",
+            "regex": "\\bsupported"
+          }
+        }
+      ],
+      "idea_probes": [
+        {
+          "name": "Refuted mechanisms with witnesses",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/failure-ledger.md",
+            "regex": "^## FAILED"
+          }
+        },
+        {
+          "name": "Working scoped constructions",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/failure-ledger.md",
+            "regex": "^## WORKS"
+          }
+        },
+        {
+          "name": "Open constructive obligations",
+          "check": {
+            "kind": "md_heading",
+            "file": "{ws}/failure-ledger.md",
+            "regex": "^## OPEN"
+          }
+        }
+      ],
+      "continuity": {
+        "next_step": {
+          "kind": "md_heading",
+          "file": "{ws}/README.md",
+          "regex": "^## Next mathematical obligation"
+        },
+        "remaining_obligations": {
+          "kind": "md_heading",
+          "file": "{ws}/failure-ledger.md",
+          "regex": "^## OPEN"
+        },
+        "status_page": "{ws}/README.md",
+        "status_record": {
+          "kind": "json_path",
+          "file": "{ws}/verification/verification.json",
+          "path": [
+            "scope"
+          ],
+          "op": "any_nonempty"
+        }
+      },
+      "repro": [],
+      "ladder": {
+        "branches": {
+          "prove": [
+            "contract_frozen",
+            "scoped_reviewed",
+            "global_reduction",
+            "explicit_maps",
+            "inverse_proofs",
+            "complete_review",
+            "lean_checked"
+          ]
+        },
+        "milestones": {
+          "contract_frozen": {
+            "title": "Contract and repository baseline recorded before the work",
+            "all": [
+              {
+                "kind": "file_exists",
+                "path": "{ws}/contract.md"
+              },
+              {
+                "kind": "file_exists",
+                "path": "{ws}/repository-baseline.json"
+              }
+            ]
+          },
+          "scoped_reviewed": {
+            "title": "A scoped construction or theorem with a supported separate review",
+            "all": [
+              {
+                "kind": "review_verdict",
+                "glob": "{ws}/*review*.md",
+                "regex": "\\bsupported"
+              }
+            ]
+          },
+          "global_reduction": {
+            "title": "An explicit global reduction covering one whole side of the target (all residue partitions or all gap partitions), with a proved inverse",
+            "all": [
+              {
+                "kind": "judged"
+              }
+            ]
+          },
+          "explicit_maps": {
+            "title": "Explicit total maps in both directions with validity and weight arguments",
+            "all": [
+              {
+                "kind": "judged"
+              }
+            ]
+          },
+          "inverse_proofs": {
+            "title": "Universal proofs of termination and of both inverse identities",
+            "all": [
+              {
+                "kind": "judged"
+              }
+            ]
+          },
+          "complete_review": {
+            "title": "Separate semantic review accepts the complete bijection",
+            "all": [
+              {
+                "kind": "review_verdict",
+                "glob": "{ws}/*review*.md",
+                "regex": "complete (KR1 )?bijection[^.]{0,40}\\bsupported"
+              },
+              {
+                "kind": "judged"
+              }
+            ]
+          },
+          "lean_checked": {
+            "title": "Placeholder-free Lean check of the bijection",
+            "all": [
+              {
+                "kind": "verification_declaration"
+              }
+            ]
+          }
         }
       }
     }

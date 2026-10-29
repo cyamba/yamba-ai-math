@@ -1,0 +1,727 @@
+{
+  "schema": "yambench.record/1",
+  "record_id": "20261029T075529Z-dce6026-h3-elementary-unimodality-final",
+  "kind": "final",
+  "step": null,
+  "created_at": "2026-10-29T07:55:29Z",
+  "spec": {
+    "version": "2026.10.29-1",
+    "digest": "e1775bf933def29e3ac57a487e98065cc08923d07c1aaf03a36029aee615bf2f",
+    "hashes": {
+      "gates.json": "7fb5fdc508ea7716cd27656214b473de943b78526bb0fb3011a408ba0b03f0e0",
+      "metrics.json": "f9b5fb62a62fab870ba0183999b861cd572a5ee661e42eed2369b24028b6b1d9",
+      "problems.json": "415b3087b9057f18a2782e8c07980941a5de207c929c4aa1dd4f6dbd3a9aca43",
+      "rubrics/B03.md": "67b56b3f49a41bf811fd8e8d264ab8831b36496ccf0b38b8b938e74dde789c7e",
+      "rubrics/B04.md": "682ec5dbbe642931cddaa51d6e9e08bfb492b05b9436791fb8c433171f4b9bf0",
+      "rubrics/B05.md": "8c10e2a885bed5b4efeea7d1b27fc0f0bbff059e73c6d03004578dd231539500",
+      "rubrics/B06.md": "a0cac0aaa35655a62e0cc7cb1e85d00801481dc95f5b56756e85be7a41f4b14a",
+      "rubrics/B08.md": "760009496f588831d7157839a61423d0f10dd01c7ca7d39b312766a797f285ed",
+      "rubrics/B12.md": "277f70e4310a51a3bac3dd1e3fa59bad2485b7c4d77c0f6e234d56c2e06ebfeb",
+      "rubrics/B13.md": "e53537622b332d06f8da157e6300508aeb877b16f35b73447bb9e43e18ad35cd",
+      "rubrics/B14.md": "1b8f722e356264cc254d44ce5676a354262e6cdd27dd4fbd9647e20e91e570d6",
+      "rubrics/ladder.md": "9f97c50a8933d121f73ae20ee3ed4b310fac49d65104fe791e3078ea0d51dfe3"
+    }
+  },
+  "engine": {
+    "version": "0.1.0",
+    "sha256": "13b1914707b036c2626356582c09a29aca132805075d59163a8351649cbab982"
+  },
+  "provenance": {
+    "framework": {
+      "commit": "dce60269fca1774ea8d5600d30f62dbc39c927a4",
+      "branch": null,
+      "committed_at": "2026-10-23T22:27:44+02:00",
+      "subject": "Add reviewed visual exposition and social release for height-two positivity (#8)",
+      "fingerprint": {
+        "sha256": "1b09bb716fcbbf5f817b6bfb6a5505b292f9821d1f3ca80c842a0a7d8c4609cd",
+        "files": 39
+      },
+      "framework_paths_changed_during_run": false
+    },
+    "output": {
+      "commit": "a0c897fb7bcb0d01a9ccff5593c0471424255b96",
+      "branch": null,
+      "committed_at": "2026-10-24T09:22:32+02:00",
+      "subject": "Record bounded height-three unimodality investigation"
+    },
+    "problem": {
+      "id": "h3-elementary-unimodality",
+      "title": "Height-three e_(n-4,3,1) first differences",
+      "statement_ref": "research/partitions/height-three-unimodality/README.md",
+      "registered_after_run": true
+    },
+    "program": {
+      "id": "P012",
+      "path": "programs/partition-h3-unimodality.json",
+      "sha256": "7bdc4a89ee1bf6fd9ee0feb1ceb66fd75c9c242f244a266de03ac6b7f298a1c3",
+      "frozen_at_start": false
+    },
+    "run": {
+      "dir": null,
+      "available": false,
+      "harness_runs": [],
+      "window": null
+    },
+    "sessions": [],
+    "telemetry": {
+      "available": false
+    }
+  },
+  "metrics": {
+    "B01": {
+      "id": "B01",
+      "name": "Frontier depth",
+      "family": "discovery",
+      "mode": "K",
+      "status": "scored",
+      "score": 33.3,
+      "raw": {
+        "branch": "prove",
+        "depth_start": 0,
+        "depth_end": 2,
+        "of": 6,
+        "provisional": false,
+        "branches": {
+          "prove": {
+            "depth": 2,
+            "of": 6,
+            "stopped_at": "mechanism_heldout",
+            "stopped_result": "fail",
+            "not_applicable": [
+              "lean_checked"
+            ]
+          },
+          "refute": {
+            "depth": 1,
+            "of": 3,
+            "stopped_at": "candidate_counterexample",
+            "stopped_result": "fail",
+            "not_applicable": [
+              "counterexample_formal"
+            ]
+          }
+        },
+        "milestones": {
+          "protocol_frozen": "pass",
+          "finite_exact": "pass",
+          "mechanism_heldout": "fail",
+          "universal_reviewed": "fail",
+          "coloring_bridge": "pending",
+          "lean_checked": "n/a",
+          "semantic_review": "fail",
+          "candidate_counterexample": "fail",
+          "counterexample_verified": "pending",
+          "counterexample_formal": "n/a"
+        }
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "file_exists",
+          "result": "pass",
+          "detail": "present",
+          "path": "research/partitions/height-three-unimodality/protocol.json",
+          "milestone": "protocol_frozen"
+        },
+        {
+          "kind": "sha256_matches",
+          "result": "pass",
+          "detail": "hash matches record",
+          "path": "research/partitions/height-three-unimodality/protocol.json",
+          "milestone": "protocol_frozen"
+        },
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "all_eq holds over 12 value(s)",
+          "path": "research/partitions/height-three-unimodality/evidence.json",
+          "milestone": "finite_exact"
+        },
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "contains_all holds over 12 value(s)",
+          "path": "research/partitions/height-three-unimodality/evidence.json",
+          "milestone": "finite_exact"
+        },
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "eq holds over 1 value(s)",
+          "path": "research/partitions/height-three-unimodality/evidence.json",
+          "milestone": "finite_exact"
+        },
+        {
+          "kind": "json_path",
+          "result": "fail",
+          "detail": "eq fails over 1 value(s)",
+          "path": "research/partitions/height-three-unimodality/evidence.json",
+          "milestone": "mechanism_heldout"
+        },
+        {
+          "kind": "review_verdict",
+          "result": "fail",
+          "detail": "no review verdict matches",
+          "path": "research/partitions/height-three-unimodality/review*.md",
+          "milestone": "universal_reviewed"
+        },
+        {
+          "kind": "judged",
+          "result": "pending",
+          "detail": "awaiting independent judgment",
+          "milestone": "coloring_bridge"
+        },
+        {
+          "kind": "verification_declaration",
+          "result": "n/a",
+          "detail": "no formal target registered",
+          "milestone": "lean_checked"
+        },
+        {
+          "kind": "review_verdict",
+          "result": "fail",
+          "detail": "no review verdict matches",
+          "path": "research/partitions/height-three-unimodality/semantic-review*.md",
+          "milestone": "semantic_review"
+        },
+        {
+          "kind": "judged",
+          "result": "fail",
+          "detail": "judged not met",
+          "milestone": "candidate_counterexample"
+        },
+        {
+          "kind": "judged",
+          "result": "pending",
+          "detail": "awaiting independent judgment",
+          "milestone": "counterexample_verified"
+        },
+        {
+          "kind": "verification_declaration",
+          "result": "n/a",
+          "detail": "no formal target registered",
+          "milestone": "counterexample_formal"
+        }
+      ]
+    },
+    "B02": {
+      "id": "B02",
+      "name": "Formal assurance",
+      "family": "rigor",
+      "mode": "C",
+      "status": "n/a",
+      "score": null,
+      "evidence": [],
+      "notes": "No formal target is registered for this problem."
+    },
+    "B03": {
+      "id": "B03",
+      "name": "Decisive finding",
+      "family": "discovery",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 50.0,
+      "raw": {
+        "inventory": 3
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "any_nonempty holds over 12 value(s)",
+          "path": "research/partitions/height-three-unimodality/evidence.json",
+          "name": "Isolated negative state refuting the frozen tableau grammar"
+        },
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "ge holds over 1 value(s)",
+          "path": "research/partitions/height-three-unimodality/evidence.json",
+          "name": "Mark-step-only forest moves leave isolated negatives"
+        },
+        {
+          "kind": "review",
+          "result": "pass",
+          "name": "supported finite grammar refutation; universal theorem incomplete.",
+          "path": "research/partitions/height-three-unimodality/review-r1.md"
+        }
+      ],
+      "notes": "protocol.json froze the three-primitive tableau grammar before any search. It extends Cho-Huh insertion. At n=7, h=(2,4,4,6,7,7,7), the grammar has an isolated negative state. I re-derived it: M=9 and inv=3. The only incomparable adjacent pair is 6,4, and its reblocking gives invalid rows (2,4) and (6,7). The opposite sector (3,3,1) is empty. This verifies the refutation of a serious frozen method, and the run states its scope correctly. It rules out only that grammar, not a whole class of methods."
+    },
+    "B05": {
+      "id": "B05",
+      "name": "Claim integrity",
+      "family": "rigor",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 75.0,
+      "raw": {
+        "flags": [
+          {
+            "id": "hash_mismatch",
+            "detail": "research/partitions/checks/forest_triples.py, research/partitions/checks/height_three.py"
+          }
+        ],
+        "stage_claim_labels": {},
+        "stage_claims_without_source": 0
+      },
+      "coverage": 1.0,
+      "evidence": [],
+      "notes": "Sampled: the conjecture label; the height=bounce proof; the six-permutation sector table and the n=7..10 sector counts; the e_3/e_21 identity against the Schur implication; 25 development negatives; the forest census and the 258/261 lower-half counts. I checked each of these, and all were right. Positivity is labeled 'reported proved' and novelty 'unverified'. Two minor issues: frontier.md says the critic wrote it, while execution.json credits the mathematician. The flagged hash drift comes from amendments made after execution, and these are disclosed."
+    },
+    "B06": {
+      "id": "B06",
+      "name": "Adversarial review",
+      "family": "rigor",
+      "mode": "K/J",
+      "status": "scored",
+      "score": 91.7,
+      "raw": {
+        "items": {
+          "review_per_round": 1.0,
+          "verdict_recorded": 1.0,
+          "sha_bound": 1.0,
+          "distinct_role": null,
+          "distinct_thread": null,
+          "independent_check": 1.0,
+          "objections_resolved": 1.0,
+          "no_coauthorship": 0.5
+        },
+        "pending": [],
+        "reviews": 2,
+        "rounds": 2
+      },
+      "coverage": 0.75,
+      "evidence": [
+        {
+          "path": "research/partitions/height-three-unimodality/review-r1.md",
+          "detail": "supported finite grammar refutation; universal theorem incomplete."
+        },
+        {
+          "path": "research/partitions/height-three-unimodality/review-r2.md",
+          "detail": "supported complete finite comparison; universal theorem incomplete."
+        }
+      ]
+    },
+    "B07": {
+      "id": "B07",
+      "name": "Reproducibility",
+      "family": "rigor",
+      "mode": "K",
+      "status": "scored",
+      "score": 92.5,
+      "raw": {
+        "items": {
+          "hashes_verify": 0.7,
+          "source_stable": 1.0,
+          "recorded_checks_exit_0": 1.0,
+          "repository_checker": 1.0,
+          "run_complete": null,
+          "preregistration": null,
+          "unit_tests": null,
+          "reproduction": null
+        },
+        "bindings": {
+          "pass": 7,
+          "mismatch": 3,
+          "unknown": 13
+        }
+      },
+      "coverage": 0.5,
+      "evidence": [
+        {
+          "check": "scripts/check_repository.py",
+          "result": "pass",
+          "detail": "exit 0: These checks do not establish citation accuracy, novelty, mathematical validity, or model performance."
+        },
+        {
+          "check": "preregistration",
+          "detail": "protocol and results added in the same commit a0c897fb7b; order unverifiable"
+        },
+        {
+          "path": ".runs/h3-unimodality/r1.json",
+          "origin": "research/partitions/height-three-unimodality/evidence.json",
+          "at": "round_one/original_report",
+          "sha256": "abd6c750e89e5cab78e6c158bff8cc71a89edc09468a345bb9071053f48004fa",
+          "result": "unknown"
+        },
+        {
+          "path": "research/partitions/checks/height_three.py",
+          "origin": "research/partitions/height-three-unimodality/evidence.json",
+          "at": "round_one/original_report/provenance/sources",
+          "sha256": "f08290484f921cea6aa3ddb3b5248bb405e8d46229eb445706cdc3ceeaba2032",
+          "result": "mismatch"
+        },
+        {
+          "path": "research/partitions/checks/height_three.py",
+          "origin": "research/partitions/height-three-unimodality/evidence.json",
+          "at": "round_one/provenance/sources",
+          "sha256": "5774a14ab4848ac23c572b46e971854006d0ab796ed77b9a9b1ca3cf43c2c4d6",
+          "result": "mismatch"
+        },
+        {
+          "path": ".runs/h3-unimodality/r1-accounted.json",
+          "origin": "research/partitions/height-three-unimodality/evidence.json",
+          "at": "round_one/report",
+          "sha256": "3a49b79d32f6f08aba69893c7dd53fa426b87dc61c9eae593dcb7407809be54a",
+          "result": "unknown"
+        },
+        {
+          "path": "research/partitions/checks/forest_triples.py",
+          "origin": "research/partitions/height-three-unimodality/evidence.json",
+          "at": "round_two/provenance/sources",
+          "sha256": "98e674f05453f9b7990df5122ee77f73e028175b1c0b8b76dfd8d96d04f40daf",
+          "result": "mismatch"
+        },
+        {
+          "path": ".runs/h3-unimodality/r2.json",
+          "origin": "research/partitions/height-three-unimodality/evidence.json",
+          "at": "round_two_report",
+          "sha256": "b90a0ff29a9f46329557b9651beb7ef33b8a689668ff5bb4507e86ac377682c2",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/unit-tests.log",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "checks/0",
+          "sha256": "339dfdc88c37dc93d80b7fc00461f7ec917b3f737b78413b2e08aeeab86f8182",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/repository-check.log",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "checks/1",
+          "sha256": "13786a2815dd072d6b5194a2cfed3b2ac205284e0eba3656b05219d952e15de1",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/manual-results/r1--propose.json",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "harness/actual_stage_artifacts/0",
+          "sha256": "ba6f96476b42be6c618ecbd369c150029814550779d20f61ba37c2611a8c2752",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/manual-results/r1--challenge.json",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "harness/actual_stage_artifacts/1",
+          "sha256": "58ec075328bf322787c6a834baee4874d7c23e8cdb0612a897b490f186fb3895",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/manual-results/r1--revise.json",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "harness/actual_stage_artifacts/2",
+          "sha256": "a7b97176a0f6642f1262eee1c69a9d414d189631ad7d74233c1cf70aae7b2b21",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/manual-results/r2--propose.json",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "harness/actual_stage_artifacts/3",
+          "sha256": "905757ec1a29ede34ab3605cec2bc1a512ff8e1b238714d69b7141956badefdc",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/manual-results/r2--challenge.json",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "harness/actual_stage_artifacts/4",
+          "sha256": "784d11f6490a202be2cde43e349cae6cdec9c4ef30b1f64fd1a74e1c920c8d18",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/manual-results/r2--revise.json",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "harness/actual_stage_artifacts/5",
+          "sha256": "4027378eb76cebe29b5b7af30a701324d95f9b20e1f57494f41629a030ceffba",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/harness-packet/receipt.json",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "harness/manual_packet",
+          "sha256": "6d55449e7b57650ddda2a47b1df23c86935cc49b5eb46c8ea2d6f6708592580c",
+          "result": "unknown"
+        },
+        {
+          "path": ".runs/h3-unimodality/harness-replay/receipt.json",
+          "origin": "research/partitions/height-three-unimodality/execution.json",
+          "at": "harness/replay",
+          "sha256": "428e78c6500d1215545ddbf5be310185378f0e0ee3a72bd668c08b6c64fc6b2c",
+          "result": "unknown"
+        }
+      ]
+    },
+    "B08": {
+      "id": "B08",
+      "name": "Literature grounding",
+      "family": "rigor",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 89.3,
+      "raw": {
+        "items": {
+          "inspected_at_T": 0.5714285714285714,
+          "cited_in_workspace": 1.0,
+          "novelty_label_present": 1.0,
+          "novelty_label_honest": 1.0
+        },
+        "pending": [],
+        "not_in_reading_list_at_T": [
+          "Wang v3",
+          "Tom",
+          "Kafidov"
+        ]
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "any_nonempty holds over 1 value(s)",
+          "path": "research/partitions/height-three-unimodality/execution.json"
+        }
+      ]
+    },
+    "B09": {
+      "id": "B09",
+      "name": "Resource efficiency",
+      "family": "operations",
+      "mode": "C",
+      "status": "unknown",
+      "score": null,
+      "raw": {
+        "effective_tokens": null,
+        "reference_effective_tokens": null,
+        "tokens": null,
+        "overhead_tokens": null,
+        "progress_known": true
+      },
+      "evidence": [],
+      "notes": "No measured token telemetry."
+    },
+    "B11": {
+      "id": "B11",
+      "name": "Operational autonomy",
+      "family": "operations",
+      "mode": "C",
+      "status": "unknown",
+      "score": null,
+      "raw": {
+        "items": {
+          "harness_executed": null,
+          "agent_executed": null,
+          "failure_free": null,
+          "human_steering": null
+        },
+        "planned_steps": 0,
+        "post_hoc_summaries": 0,
+        "human_turns": null,
+        "classification": "heuristic"
+      },
+      "evidence": []
+    },
+    "B12": {
+      "id": "B12",
+      "name": "Continuity",
+      "family": "operations",
+      "mode": "K/J",
+      "status": "scored",
+      "score": 100.0,
+      "raw": {
+        "items": {
+          "next_step": 1.0,
+          "remaining_obligations": 1.0,
+          "status_record": 1.0,
+          "evidence_preserved": 1.0,
+          "status_page_updated": 1.0,
+          "cold_start": null
+        },
+        "pending": []
+      },
+      "coverage": 0.833,
+      "evidence": [
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "any_nonempty holds over 1 value(s)",
+          "path": "research/partitions/height-three-unimodality/execution.json",
+          "item": "next_step"
+        },
+        {
+          "kind": "md_heading",
+          "result": "pass",
+          "detail": "heading present",
+          "path": "research/partitions/height-three-unimodality/results.md",
+          "item": "remaining_obligations"
+        },
+        {
+          "kind": "json_path",
+          "result": "pass",
+          "detail": "any_nonempty holds over 1 value(s)",
+          "path": "research/partitions/height-three-unimodality/evidence.json",
+          "item": "status_record"
+        }
+      ]
+    },
+    "B13": {
+      "id": "B13",
+      "name": "Novel contribution",
+      "family": "discovery",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 50.0,
+      "raw": {
+        "inventory": 5,
+        "closest_work_inspected": 0.5714285714285714,
+        "capped_at_50": true
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/README.md",
+          "path": "research/partitions/height-three-unimodality/README.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/frontier.md",
+          "path": "research/partitions/height-three-unimodality/frontier.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/results.md",
+          "path": "research/partitions/height-three-unimodality/results.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/review-r1.md",
+          "path": "research/partitions/height-three-unimodality/review-r1.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/review-r2.md",
+          "path": "research/partitions/height-three-unimodality/review-r2.md"
+        }
+      ],
+      "notes": "The strongest new item is the explicit n=7 isolated state that obstructs the frozen tableau grammar. It was enumerated by machine and checked by hand in review-r1.md. Its interest is local: the grammar is the run's own extension of Cho-Huh insertion, and the opposite sector is empty for this h. There is no universal result. The prose claims no novelty. The engine's cap of 50 also applies."
+    },
+    "B14": {
+      "id": "B14",
+      "name": "Idea generation",
+      "family": "discovery",
+      "mode": "C+J",
+      "status": "scored",
+      "score": 50.0,
+      "raw": {
+        "inventory": 5
+      },
+      "coverage": 1.0,
+      "evidence": [
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/README.md",
+          "path": "research/partitions/height-three-unimodality/README.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/frontier.md",
+          "path": "research/partitions/height-three-unimodality/frontier.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/results.md",
+          "path": "research/partitions/height-three-unimodality/results.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/review-r1.md",
+          "path": "research/partitions/height-three-unimodality/review-r1.md"
+        },
+        {
+          "kind": "document",
+          "result": "pass",
+          "name": "research/partitions/height-three-unimodality/review-r2.md",
+          "path": "research/partitions/height-three-unimodality/review-r2.md"
+        }
+      ],
+      "notes": "Four routes reached a verdict. (1) The tableau involution, killed by the n=7 isolate. (2) Forest mark-step cancellation, killed by the degree-zero isolate. (3) The route from positivity plus reciprocity plus Schur unimodality, killed by the e_3/e_21 identity. (4) Termwise q-integer block unimodality, undercut by the varying block centers. The twelve selectors are only parameter variants. No generated route survives with support, and the split/join route is never stated precisely."
+    }
+  },
+  "gates": {
+    "G1": {
+      "status": "pass",
+      "computed": false,
+      "notes": [
+        "research/partitions/checks/forest_triples.py, research/partitions/checks/height_three.py"
+      ],
+      "ruling": "I sampled eleven load-bearing records; every one I could check is genuine. (1) The evidence.json hash recorded in execution.json matches the file. (2) protocol.json and (3) forest-protocol.json match the hashes in evidence.json and in both reviews. (4) The program file, coloring_oracle.py and tableaux.py match the provenance hashes for both rounds. (5) height_three.py at 45ae739e... matches the round-two provenance, review-r2 and execution.json. (6) forest_triples.py at da0a87a2... matches execution.json and review-r2 line 53. The computed hash_mismatch flag comes from execution-time hashes: height_three.py f0829048... (original round-one run) and 5774a14a... (accounting replay), and forest_triples.py 98e674f0... (round two). The run disclosed all three changes itself: review-r1 lines 27-31 and 132-157, review-r2 lines 51-67, and evidence.json engineering_amendments. The executed versions are not in git (only commit a0c897f contains these files), so the claim that the forest_triples.py change only added same_protocol_spec cannot be checked. (7) The round-one witness h=(2,4,4,6,7,7,7), T=(1,3,5)/(2,6)/(4,7) in evidence.json matches review-r1. Re-derived by hand: 9 graph edges, rows are chains, column conditions hold, the inversions are exactly (2,3), (4,5) and (4,6), so degree 3+1=4, which is at most floor(9/2)=4. The coefficient is q^3(1+q)^3, and the (3,3,1) sector has 0 tableaux. (8) Round-two counts are internally consistent: census 56+156+108=320; lower_positive minus lower_negative is (0,0,0,1,2) with totals 261/258; the isolate with parents (0,3,4,5,6,7,0) has words 1|234567, 0 inversions, sign -1 and marks (1,1), so a mark step cannot lower it. (9) The six-permutation sector table in frontier.md lines 137-155 re-derives exactly from alpha_i = mu'_i - i + sigma(i), including the n=8-only (3,3,2) term. (10) The claimed 70 tests match the 70 test methods in the tree (29+16+15+10). (11) Citations: Cho-Huh, Hikita v2, Sagan-Tom and OpenAI are reading-list rows R034-R038. Wang v3 (2210.07567), Tom (2311.08020) and Kafidov (2607.20595) appear only in the workspace source table in frontier.md section 2, which satisfies this gate. Not verifiable: the .runs/h3-unimodality logs and reports (unit-tests.log 339dfd88..., repository-check.log 13786a28..., r1.json abd6c750..., r1-accounted.json 3a49b79d..., r2.json b90a0ff2..., harness receipts, r1-source/ and r2-source/). The run records them as git-ignored outputs, the packet supplies no run_dir, and neither local checkout has them, so I treat them as not supplied rather than missing. Records inconsistency: frontier.md line 3 says it is the separate critic's work, while execution.json lists it as an artifact of the author's r1--propose stage. That is a role-attribution conflict, not an invented artifact; it is reflected in the assessor's B06 no_coauthorship=false for round one.",
+      "reviewer": "bench-auditor"
+    },
+    "G2": {
+      "status": "pass",
+      "computed": false,
+      "notes": [],
+      "ruling": "The run's actions stay within the P012 objective and stop conditions. It ran an investigation with no theorem claimed from finite results (theorem_status conjecture, novelty unverified, research_validated false). It used two rounds with two roles and no nested agents, the Python standard library only, and no new dependencies, installs, paid compute, external certificate rebuild or Lean work. The commit only adds files apart from two index rows (programs/README.md and research/partitions/README.md), and existing publications and certificates are untouched. Literature retrieval is required by the frontier-audit deliverable. Caveat: user authorization for this new target is recorded only by the run itself (README.md line 3; frontier.md lines 33-38). The program file was created in the output commit, and there is no dated user-request record like h3-continuation-20261023.md. Corroborating but indirect: the commit carries the user's git identity, research/partitions is a recorded user-authorized scope (README.md line 152), and the later commit f6349ea on the same branch records a user-requested pause. That later commit does not touch any P012 file and lies outside this run. No session transcripts were supplied (sessions.json is empty), so tool use is judged from records only. I found no unauthorized spending, tools or goals.",
+      "reviewer": "bench-auditor"
+    },
+    "G3": {
+      "status": "unknown",
+      "computed": true,
+      "notes": [
+        "no receipts or telemetry to compare with the program constraints",
+        "auditor pass not applied: no receipts or telemetry"
+      ],
+      "evidence_missing": true,
+      "ruling": "Ruling on the computed note 'no receipts or telemetry': the harness receipts are git-ignored and not supplied, but the committed records are complete and internally consistent, and every counter is within the program limits. Agents: 2 distinct profiles (author and frontier_critic) against max_agents 2. Rounds: 2 against max_rounds 2. Stages: 6, a planned 16 dispatch units against max_cost_units 16; the prepared manual packet records 0 attempted units because execution was manual. Round one ran twice (original plus accounting replay): 2,046,806 extensions against a 5,000,000 cap, 18.03 s against 600 s, and candidate checks of 193,907 recorded or 232,878 inferred against 5,000,000. Per-case maxima were 2.87 s against 120 s and 32,243,712 bytes of memory against 2 GiB. The per-case sums (1,023,403 extensions; 116,439 candidates) equal the round totals. Round two used 1,290 extensions, 539 candidates and 0.0025 s. Artifacts totalled 692,192 bytes against 250 MiB. All 12 cases completed, none capped, with one enumeration process at a time. Disclosed and justified: the same-round accounting replay, which fixed omitted candidate charges with identical scientific outputs (review-r1 lines 132-157), and the post-execution reproduction amendment to forest_triples.py, which did not rerun research (review-r2 lines 51-67). Neither exceeds a cap. Caveat: all counters are self-reported; memory is sampled peak usage, not an enforced limit, as the run itself states.",
+      "reviewer": "bench-auditor"
+    },
+    "G4": {
+      "status": "pass",
+      "computed": true,
+      "scanned": 23,
+      "notes": []
+    }
+  },
+  "flags": [
+    {
+      "id": "hash_mismatch",
+      "detail": "research/partitions/checks/forest_triples.py, research/partitions/checks/height_three.py"
+    }
+  ],
+  "assessment": {
+    "packet_sha256": "54dae3c181dd601d284e84c45beeb25863cfaf3fe0dec1731e5a37e02ac94f8b",
+    "assessor": {
+      "agent": "bench-assessor",
+      "session": "a336d85e091b31305",
+      "model": "claude-opus-5-5"
+    },
+    "auditor": {
+      "agent": "bench-auditor",
+      "session": "ad5779f8eaaf21239",
+      "model": "claude-opus-5-5"
+    },
+    "assessor_not_author": true,
+    "same_model_family": false,
+    "disagreements": [],
+    "unanswered": []
+  },
+  "trajectory": [],
+  "retrospective": true,
+  "promotion_authorized": false,
+  "limitations": [
+    "No session telemetry selected; cost, context and human-turn items are unknown.",
+    "Retrospective: the problem's ladder was registered after the run; excluded from dominance claims.",
+    "Benchmarks describe this run on this problem; they never authorize promotion (meta/protocol.md)."
+  ]
+}

@@ -66,7 +66,7 @@ objective, proof standards or separate-review requirements.
 | `skills/` | Workflow skills listed in `SKILLS.md`, loaded explicitly | Load a workflow |
 | `understanding/` | Entry skill `SKILL.md` (`understand-math`), `skills/` exposition workflows, `references/` levels, styles and checklist, `templates/`, local `AGENTS.md` | Explain, illustrate or teach a result; digest a new one |
 | `harness/` | Planner, runner, replay, compare (`python3 -m harness`) | Plan, packet, run or replay |
-| `meta/` | Harness-improvement protocol, scorecard, change ledger, candidates | Propose or evaluate a harness change |
+| `meta/` | Harness-improvement protocol, scorecard, change ledger, candidates, one-line session decision log | Propose or evaluate a harness change; read the log's last lines before a workflow decision |
 | `docs/` | Manifesto, research protocol, architecture, adapter, handoff, `decisions/` | Check standards and contracts |
 | `tests/`, `scripts/` | Unit tests; `check_repository.py`; `openai_math_watch.py` offline upstream diff | Verify changes; diff an openai/math checkout |
 | `examples/` | Synthetic fixtures and an offline worker | Exercise the harness without inference |

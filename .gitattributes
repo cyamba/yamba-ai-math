@@ -1,0 +1,3 @@
+# Frozen claims and benchmark provenance hash file bytes. Keep text files LF on every platform
+# so a Windows checkout reproduces the recorded SHA-256 values.
+* text=auto eol=lf

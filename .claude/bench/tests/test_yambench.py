@@ -140,6 +140,17 @@ class SpecTests(unittest.TestCase):
         with self.assertRaises(BenchError):
             validate_spec(spec)
 
+    def test_spec_selects_twelve_distinct_known_axes_and_schedules_its_own_review(self):
+        ids = [m["id"] for m in load_spec()["metrics"]["metrics"]]
+        self.assertTrue({"B13", "B14"} <= set(ids) and not {"B04", "B10"} & set(ids))
+        unknown, duplicate, unreviewed = (copy.deepcopy(load_spec()) for _ in range(3))
+        unknown["metrics"]["metrics"][0]["id"] = "B99"
+        duplicate["metrics"]["metrics"][1]["id"] = duplicate["metrics"]["metrics"][0]["id"]
+        del unreviewed["metrics"]["relevance_review"]
+        for spec in (unknown, duplicate, unreviewed):
+            with self.assertRaises(BenchError):
+                validate_spec(spec)
+
 
 class LadderTests(unittest.TestCase):
     def setUp(self):
@@ -163,6 +174,16 @@ class LadderTests(unittest.TestCase):
         tree(self.root, cases=("complete", "capped"))
         result = ladder(self.check_context(judged={"argument": True}))
         self.assertEqual(result["branches"]["prove"]["depth"], 1)
+
+    def test_unregistered_formal_rung_is_not_applicable(self):
+        tree(self.root)
+        entry = problem()
+        entry["ladder"]["branches"]["prove"] = ["frozen", "finite", "lean"]
+        entry["ladder"]["milestones"]["lean"] = {"all": [{"kind": "verification_declaration"}]}
+        ctx = CheckContext(layout=Layout(tree=self.root, workspace=WS, run_dir=None), problem=entry,
+                           registry={"verification_files": [], "allowed_axioms": []})
+        prove = ladder(ctx)["branches"]["prove"]
+        self.assertEqual((prove["depth"], prove["of"], prove["not_applicable"]), (2, 2, ["lean"]))
 
     def test_refute_branch_can_win(self):
         tree(self.root, cases=("capped",))
@@ -226,6 +247,25 @@ class MetricTests(unittest.TestCase):
         self.assertEqual(compute(context(self.root))["metrics"]["B03"]["status"], "pending")
         judged = compute(context(self.root, judgments={"B03": {"anchor": 50, "rationale": "r", "evidence": ["e"]}}))
         self.assertEqual(judged["metrics"]["B03"]["score"], 50.0)
+
+    def test_discovery_axes_need_an_inventory_and_novelty_needs_inspected_closest_work(self):
+        snapshot = compute(context(self.root, snapshot=True))["metrics"]
+        self.assertEqual((snapshot["B13"]["score"], snapshot["B14"]["score"]), (0.0, 0.0))  # nothing to judge
+        probe = [{"name": "witness", "check": {"kind": "json_path", "file": "{ws}/evidence.json",
+                                               "path": ["next_step"], "op": "any_nonempty"}}]
+        entry = problem(contribution_probes=probe, idea_probes=probe)
+        self.assertEqual(compute(context(self.root, entry))["metrics"]["B13"]["status"], "pending")
+        anchor = {"anchor": 75, "rationale": "r", "evidence": ["e"]}
+        judged = compute(context(self.root, entry, judgments={"B13": anchor, "B14": anchor}))["metrics"]
+        self.assertEqual(judged["B13"]["score"], 50.0)  # closest work B is inspected only at level A
+        self.assertTrue(judged["B13"]["raw"]["capped_at_50"])
+        self.assertEqual(judged["B14"]["score"], 75.0)
+
+    def test_unverifiable_program_freeze_does_not_cap_contract_fulfilment(self):
+        from yambench.metrics import b04
+        judgments = {"B04": {"anchor": 100, "rationale": "r", "evidence": ["e"]}}
+        found = b04({"mode": "K/J"}, context(self.root, judgments=judgments), {})
+        self.assertEqual((found["score"], found["raw"]["capped_at_50"]), (100.0, False))
 
     def test_canary_in_worker_packet_fails_g4(self):
         token = canaries(load_spec())[0]
@@ -351,6 +391,14 @@ class RecordTests(unittest.TestCase):
         self.assertEqual(updated["G4"]["status"], "fail")
         self.assertEqual(updated["G1"]["status"], "pass")
 
+    def test_unmetered_budget_gate_cannot_be_passed_on_self_reports(self):
+        gates = {g: {"status": "unknown"} for g in ("G1", "G2", "G4")}
+        gates["G3"] = {"status": "unknown", "evidence_missing": True, "notes": []}
+        audit = {"auditor": {"session": "auditor-1"}, "gates": {"G3": {"status": "pass", "rationale": "records fit"}}}
+        self.assertEqual(apply_audit(gates, audit, ["lead-1"])[0]["G3"]["status"], "unknown")
+        audit["gates"]["G3"]["status"] = "review"
+        self.assertEqual(apply_audit(gates, audit, ["lead-1"])[0]["G3"]["status"], "review")
+
     def test_record_validation_rules(self):
         record = minimal_record()
         validate(record, self.spec)
@@ -370,6 +418,19 @@ class RecordTests(unittest.TestCase):
         broken["promotion_authorized"] = True
         with self.assertRaises(BenchError):
             validate(broken, self.spec)
+        for leaked in ["C:\\Users\\someone\\dev", json.dumps("C:\\Users\\someone\\dev"), "c:/Users/someone/dev"]:
+            broken = copy.deepcopy(record)
+            broken["limitations"] = [leaked]
+            with self.assertRaises(BenchError):
+                validate(broken, self.spec)
+
+    def test_record_under_the_current_spec_carries_its_axes(self):
+        record = minimal_record()  # retired B04 and B10 are fine under an older spec
+        validate(record, self.spec)
+        record["spec"]["hashes"]["metrics.json"] = self.spec["hashes"]["metrics.json"]
+        with self.assertRaises(BenchError):
+            validate(record, self.spec)
+        validate(current_record(self.spec), self.spec)
 
 
 def minimal_record(problem_id="toy", scores=None, retrospective=False, gates=None) -> dict:
@@ -387,7 +448,46 @@ def minimal_record(problem_id="toy", scores=None, retrospective=False, gates=Non
             "retrospective": retrospective, "promotion_authorized": False, "limitations": []}
 
 
+def current_record(spec: dict, scores=None, created_at="2026-11-01T00:00:00Z", **fields) -> dict:
+    record = minimal_record(scores={}, **fields)
+    record["metrics"] = {m["id"]: {"status": "scored" if (scores or {}).get(m["id"]) is not None else "unknown",
+                                   "score": (scores or {}).get(m["id"]), "evidence": []}
+                         for m in spec["metrics"]["metrics"]}
+    record["spec"]["hashes"]["metrics.json"] = spec["hashes"]["metrics.json"]
+    record.update(created_at=created_at, record_id=f"r-{created_at}")
+    return record
+
+
+class RelevanceTests(unittest.TestCase):
+    def test_flags_saturated_unmeasured_and_hygiene_dominated_axes_and_a_due_review(self):
+        from datetime import date
+        from yambench.relevance import relevance
+        spec = load_spec()
+        scores = {"B01": 10.0, "B03": 0.0, "B13": 0.0, "B14": 25.0, "B05": 100.0, "B06": 100.0, "B07": 100.0,
+                  "B08": 100.0, "B11": 90.0, "B12": 100.0}
+        records = [current_record(spec, scores, f"2026-11-0{day}T00:00:00Z") for day in (1, 2, 3)]
+        records.append(minimal_record())  # an older spec never enters the report
+        report = relevance(records, spec, today=date(2026, 11, 4))
+        self.assertEqual(report["records"], 3)
+        self.assertTrue(report["review"]["due"])
+        self.assertTrue(any(f.startswith("saturated") for f in report["axes"]["B07"]["flags"]))
+        self.assertTrue(any(f.startswith("unmeasured") for f in report["axes"]["B09"]["flags"]))
+        self.assertIn("flag", report["shapes"][0])
+        quiet = relevance(records[:1], spec, today=date(2026, 11, 4))
+        self.assertFalse(quiet["review"]["due"])
+        self.assertEqual(quiet["axes"]["B07"]["flags"], [])
+
+
 class CompareTests(unittest.TestCase):
+    def test_axes_measured_by_only_one_spec_are_unknown(self):
+        spec = load_spec()
+        result = compare(minimal_record(scores={"B01": 25.0}), current_record(spec, {"B01": 50.0, "B13": 75.0}),
+                         allow_spec_drift=True)
+        self.assertEqual(result["axes"]["B01"]["outcome"], "better")
+        self.assertEqual(result["axes"]["B13"]["outcome"], "unknown")
+        self.assertEqual(result["axes"]["B04"]["candidate_status"], "absent")
+        self.assertFalse(result["dominance_claim_eligible"])
+
     def test_unknown_axes_never_count_as_wins(self):
         result = compare(minimal_record(scores={"B01": 25.0}), minimal_record(scores={"B01": 50.0, "B02": 100.0}))
         self.assertEqual(result["summary"]["better"], 1)
@@ -428,6 +528,32 @@ class ProvenanceTests(unittest.TestCase):
             before = provenance.fingerprint(snap, ["AGENTS.md", ".claude/"])
             write(snap, ".claude/bench/records/r.json", "{}")
             self.assertEqual(provenance.fingerprint(snap, ["AGENTS.md", ".claude/"]), before)
+
+    def test_live_snapshot_inventories_uncommitted_and_untracked_documents(self):
+        from yambench.metrics import changed_documents
+        with tempfile.TemporaryDirectory() as temp:
+            repo = tree(Path(temp) / "repo")
+            subprocess.run(["git", "init", "-q", str(repo)], check=True)
+            subprocess.run(["git", "-C", str(repo), "add", "."], check=True)
+            subprocess.run(["git", "-C", str(repo), "-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qm", "c"], check=True)
+            write(repo, f"{WS}/README.md", "Edited before any commit.\n")
+            write(repo, f"{WS}/conjectures.md", "# New, untracked\n")
+            ctx = context(repo, snapshot=True)
+            ctx.repo, ctx.framework_commit = repo, provenance.resolve(repo, "HEAD")
+            ctx.output_commit = ctx.framework_commit  # an armed run that has not committed yet
+            self.assertEqual(changed_documents(ctx), [f"{WS}/README.md", f"{WS}/conjectures.md"])
+
+
+class AuthorTests(unittest.TestCase):
+    def test_pinned_author_without_readable_telemetry_still_blocks_self_review(self):
+        from yambench.cli import author_ids
+        sessions = [{"id": "codex-lead"}]
+        self.assertEqual(author_ids(sessions, ["codex:codex-lead", "claude-code:unreadable"]),
+                         ["codex-lead", "unreadable"])
+        packet = {"author_sessions": author_ids(sessions, ["claude-code:unreadable"]), "ladder": [], "requests": []}
+        answer = {"assessor": {"session": "unreadable", "model": "m"}, "metrics": {}}
+        with self.assertRaises(BenchError):
+            apply_judgments(answer, packet, load_spec())
 
 
 class CommandTests(unittest.TestCase):

@@ -494,7 +494,7 @@ dash.calc('pair_summary', {
     loading.forEach((el) => el.classList.remove('dash-skeleton'));
     const records = sets.records.data;
     const scores = sets.scores.data;
-    const metrics = [...sets.metrics.data].sort((a, b) => a.metric_id.localeCompare(b.metric_id));
+    const metrics = [...sets.metrics.data].sort((a, b) => (Number(a.order) - Number(b.order)) || a.metric_id.localeCompare(b.metric_id));
     const mine = syncSelection(records);
     const chosenRecord = records.find((r) => r.record_id === state.version);
     if (!chosenRecord) {

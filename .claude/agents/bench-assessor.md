@@ -14,7 +14,7 @@ you do not improve it. The caller gives you the path of a judge packet (`judge-p
 
 1. Read the packet. `tree` is the frozen commit snapshot; `run_dir` holds the ignored run artifacts.
    Paths in evidence are relative to `tree` unless they start with `.runs/`.
-2. For each entry in `requests`, read its `rubric` (relative to the meta-harness checkout root) and the
+2. For each entry in `requests`, read its `rubric` (an absolute path in the checkout that wrote the packet) and the
    evidence it needs. Read the program's deliverables and success criteria in the packet.
 3. For each milestone in `ladder`, read `ladder_rubric` and decide `met` true or false.
 4. Judge only from files you opened. Cite repo-relative paths. Never read or rely on session transcripts.

@@ -39,6 +39,24 @@ def operator_specific_lines(root: Path = ROOT) -> list[str]:
     return found
 
 
+SESSION_ENTRY = re.compile(
+    r"^- \d{4}-\d{2}-\d{2} \| [^|]+ \| (?:math|framework) \| [^|]+ \| why: [^|]+ \| check: [^|]+$")
+SESSION_LIMIT, SESSION_WIDTH = 40, 300
+
+
+def session_log_problems(path: Path) -> list[str]:
+    """The decision log stays a short index that sessions can read in a few lines."""
+    if not path.is_file():
+        return [f"{path.name}: missing session decision log"]
+    _, _, entries = path.read_text(encoding="utf-8").partition("\n## Entries\n")
+    lines = [line for line in entries.splitlines() if line.strip()]
+    problems = [f"{path.name}: more than {SESSION_LIMIT} entries; archive closed ones"] if len(lines) > SESSION_LIMIT else []
+    for line in lines:
+        if len(line) > SESSION_WIDTH or not SESSION_ENTRY.match(line):
+            problems.append(f"{path.name}: malformed or overlong entry: {line[:60]}")
+    return problems
+
+
 def top_level_directories() -> set[str]:
     """Tracked top-level directories; the filesystem stands in when git is unavailable."""
     try:
@@ -109,6 +127,7 @@ def check() -> list[str]:
             if relative and not (path.parent / relative).exists():
                 failures.append(f"{path.relative_to(ROOT)}: broken local link {target}")
     failures.extend(operator_specific_lines())
+    failures.extend(session_log_problems(ROOT / "meta" / "session-log.md"))
     return failures
 
 
@@ -117,5 +136,5 @@ if __name__ == "__main__":
     if errors:
         print("\n".join(errors), file=sys.stderr)
         raise SystemExit(1)
-    print("Repository checks passed: registries, feasible programs, brief/skill metadata, repository map, local file links, and operator-neutral shared skills.")
+    print("Repository checks passed: registries, feasible programs, brief/skill metadata, repository map, local file links, operator-neutral shared skills and the session decision log format.")
     print("These checks do not establish citation accuracy, novelty, mathematical validity, or model performance.")

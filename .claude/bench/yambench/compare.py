@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from . import BenchError
-from .spec import METRIC_IDS
 
 GATE_ORDER = {"pass": 0, "unknown": 1, "review": 2, "fail": 3}
 
@@ -22,8 +21,9 @@ def compare(baseline: dict, candidate: dict, allow_spec_drift: bool = False) -> 
         raise BenchError("Records use different metric specifications; rescore both or pass --allow-spec-drift")
     axes, tally = {}, {"better": 0, "worse": 0, "equal": 0, "unknown": 0}
     runtime_match = same_runtime(baseline, candidate)
-    for metric_id in METRIC_IDS:
-        a, b = baseline["metrics"][metric_id], candidate["metrics"][metric_id]
+    absent = {"status": "absent", "score": None}  # an axis only one spec version measures
+    for metric_id in sorted(set(baseline["metrics"]) | set(candidate["metrics"])):
+        a, b = baseline["metrics"].get(metric_id, absent), candidate["metrics"].get(metric_id, absent)
         outcome, delta = "unknown", None
         if a["status"] == b["status"] == "scored" and not (metric_id == "B09" and not runtime_match):
             delta = round(b["score"] - a["score"], 1)
