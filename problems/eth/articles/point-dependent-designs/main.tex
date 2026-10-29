@@ -1,0 +1,330 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{problem}{Open problem}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\Bin}{\operatorname{Bin}}
+\newcommand{\CP}{\mathrm{CP}}
+
+\title{Point-dependent measurement designs and the square root\\in the subexponential \#SAT algorithm}
+\author{Yamba AI Math Lab\thanks{Draft for review, prepared with substantial assistance from Claude (Anthropic) in Claude Code under the direction of Christopher Yamba. Not submitted. All claims carry the status recorded in Section~\ref{sec:status}.}}
+\date{Draft of 29 October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A manuscript released on 26 October 2026 in the openai/math collection claims that the Exponential Time Hypothesis is false: it counts the satisfying assignments of a $k$-CNF on $n$ variables in time $2^{n/(\log n)^{1/2+o(1)}}$. The square root in the exponent enters through one step of the method, a \emph{measurement design} that separates a deformed polynomial into small independent groups. We study that step on its own. First, every design that uses a single measurement matrix at all interpolation nodes needs at least $D\cdot e^{-\Theta(R^2/Q)}$ measurements, where $R$ is the deformation degree, $Q$ the number of nodes and $D$ the auxiliary dimension; so the manuscript's matrix is optimal up to a constant factor in $R$, and the square root is intrinsic to single-matrix designs. Second, designs whose measurements depend on the node, which the manuscript's definitions allow but its construction does not use, are equivalent inside the manuscript's swap algebra to a combinatorial problem on the cube: attach a polynomial $p_v$ of degree $<R$ with $p_v(0)=1$ to every vertex $v$ of $\{0,1\}^Q$, and call the edge $\{v,v+e_t\}$ good when $p_v(x_t)+p_{v+e_t}(x_t)=0$; the measurements needed at node $t$ are the bad edges in direction $t$. Third, a \emph{slab} family has a fraction at most $1/R$ of bad edges in every direction for every $Q$, which beats every single-matrix design once $Q\ge\frac98(R+2)^2$; a family with fraction $R^{-C}$, $C>4$, at $Q\approx R^{(C+2)/3}$ would improve the exponent to $n(\log n)^{-(C-1)/(C+2)+o(1)}$. Fourth, a general rank argument requires only $4^{-R}/R$, feasibility of a set of good edges has an exact dual in terms of stresses, and the natural combinatorial relaxations are exponentially weak. The core statements are verified in Lean~4 with Mathlib. All results concern the method and hold whether or not the manuscript's main theorem is correct; their novelty has not been verified.
+\end{abstract}
+
+\section{Introduction}
+
+The Exponential Time Hypothesis (ETH) of Impagliazzo and Paturi asserts that 3-SAT on $n$ variables needs time $2^{\delta n}$ for some $\delta>0$. The openai/math manuscript \emph{The Exponential Time Hypothesis is False} (family 378, revised 25 October 2026, \cite{oai378}) claims a deterministic algorithm that counts the satisfying assignments of a $k$-CNF with $n$ variables and $m$ clauses in
+\[
+(n+m)^{O_k(1)}\,2^{O_k(n\log\log n/\sqrt{\log n})}
+\]
+time and polynomial space, and $2^{O(n/\sqrt{\log n})}$ at bounded density. An upstream Lean development proves the slightly weaker exponent $n(\log\log n)^2/\sqrt{\log n}$ for a multi-tape machine \cite{oai378lean}. An independent working group led by Impagliazzo, Paturi and Williams is examining the proof. Expositions have appeared \cite{odonnell,kintali}.
+
+Whatever the outcome of that review, the method raises a sharp question: \emph{where does the square root come from, and can it be removed?} The algorithm deforms a polynomial whose value at $0$ is the count, recovers the deformed polynomial from Taylor data at $Q$ nodes, and evaluates each Taylor coefficient by separating the variables into $r$ groups after fixing a small number of integer \emph{measurements}. The degree $R$ of the deformation controls the cost of the Taylor data, and the number of measurements controls the cost of the separation. In the manuscript's construction the measurement fraction decays like $e^{-R^2/(8Q)}$, so $R$ must be of order $\sqrt{Q\log(1/\varepsilon)}$; with $Q\approx\log n/\log\log n$ forced by the auxiliary dimension, the square root follows.
+
+\paragraph{Results.} We isolate the measurement step and prove:
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{A barrier for single-matrix designs} (Theorem~\ref{thm:barrier}, Corollary~\ref{cor:degree}). Any matrix satisfying the manuscript's two admissibility conditions needs $c/D\ge\Pr[X\ge k+R]\Pr[X\le k]$ with $X$ binomial, hence $R\gtrsim\sqrt{Q\log(1/\varepsilon)}$. The manuscript's matrix $V_0f(W_0)$ is optimal up to a factor of about $6$ in $R$.
+\item \textbf{A reduction for point-dependent designs} (Proposition~\ref{prop:reduction}). Inside the commuting swap algebra, node-dependent designs are exactly families of polynomials on the cube, and the measurements at node $t$ are the weighted bad edges in direction $t$. We call the resulting optimization problem the \emph{cube polynomial problem} $\CP(Q,R)$.
+\item \textbf{Global formulas and the slab family} (Lemma~\ref{lem:global}, Theorem~\ref{thm:slab}). There are explicit families with bad fraction at most $1/R$ in every direction, for every $Q$; for $Q\ge\frac98(R+2)^2$ this beats every single-matrix design by a factor of order $R$.
+\item \textbf{The target, and why the slab is not enough} (Proposition~\ref{prop:criterion}). Bad fraction $R^{-C}$ with $C>4$ at $Q\approx R^{(C+2)/3}$ would improve the exponent of the method.
+\item \textbf{Barriers and duality} (Theorems~\ref{thm:general}, \ref{thm:stress}, \ref{thm:product}). Every design, in or out of the swap algebra, needs only $c_t/D\ge4^{-R}/R$; a set of good edges is feasible if and only if every stress on it has total weight zero; obstructions have at least $2^R$ vertices, so fractional and subcube-hitting relaxations give only exponentially small bounds; products of families preserve the bad fraction.
+\end{enumerate}
+Small exact optima, computed by integer programming and re-verified in rational arithmetic, beat the slab in every solved case with $3\le R\le Q-1$ (Section~\ref{sec:data}). The decisive asymptotic question, whether the bad fraction can be made polynomially small in $R$ at $Q\gg R^2$, is open (Section~\ref{sec:open}).
+
+\paragraph{Status.} The statements concern the method, not the truth of the main theorem: they are true whether or not the manuscript's algorithm is correct. The core lemmas are machine-checked (Section~\ref{sec:lean}). Our literature check (Section~\ref{sec:status}) found no prior statement of these results, but it was not a systematic review, so their novelty is \textbf{not verified}.
+
+\section{The measurement step of the algorithm}\label{sec:setting}
+
+We follow the bounded-occurrence overview of \cite[Section~2]{oai378}; all costs below ignore polynomial factors. A formula with $n$ variables and $M\le3n$ literal occurrences gives a polynomial $\#F=\sum_{x\in\{0,1\}^n}\prod_e\Phi_e(x)$. Each occurrence of $X_v$ in clause $e$ is replaced by a linear form $\langle\vec P_{e,v}(T),\vec X\rangle$ whose coefficients are polynomials of degree at most $R$ in a deformation variable $T$, with $\vec P_{e,v}(0)=\delta_v$. The resulting $H(T)$ satisfies $H(0)=\#F$ and is recovered by Hermite interpolation from its Taylor coefficients at nodes $t=1,\dots,Q$. Each Taylor coefficient is assembled from Boolean substitutions by inclusion and exclusion. At each node the deformed clauses must be \emph{separated}: once a small number of integer measurements of the variables are fixed, each clause should depend only on its own group of variables. The manuscript calls this an $(r,\tau,D)$-design at the node \cite[Definition~3.1]{oai378}: $r$ groups of at most $2n/r$ variables and at most $2\tau n$ measurements of $\ell_1$ norm at most $D$. The three costs multiply to
+\begin{equation}\label{eq:cost}
+\underbrace{\sum_{j\le q}2^j\binom nj}_{\text{Taylor data},\ q=\lfloor3nR/Q\rfloor}\cdot\underbrace{(2D+1)^{2\tau n}}_{\text{measurements}}\cdot\underbrace{2^{2n/r}}_{\text{one group}},
+\end{equation}
+which is $2^{O(n[(R/Q)\log(2Q/R)+\tau\log(2D+1)+1/r])}$ \cite[display (2.9)]{oai378}.
+
+\paragraph{The auxiliary construction.} The designs are built on auxiliary labels $u=(a_u,d_u)\in\B=[r]^Q\times[r]^Q$, so $D=|\B|=r^{2Q}$; for labels $u,w$ put $E_{u,w}=\{t:a_w(t)\ne d_u(t)\}$. The construction needs a matrix $M_0\in\Q^{\B\times\B}$ and a measurement matrix $C\in\Q^{c\times\B}$ with
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item (kernel) $M_0\xi=\xi$ for every $\xi\in\ker C$, and
+\item (support) $M_0[u,w]\ne0\Rightarrow|E_{u,w}|\le R-1$,
+\end{enumerate}
+and the counting routine requires $c\le D\tau/(3r)$. Condition (ii) keeps the degree of the replacement rows below $R$, and condition (i) makes the nonlocal part a function of the measurements. The manuscript uses the commuting swaps $\Pi_s$ that exchange the two coordinates at position $s$, the complete swap $V_0=\prod_s\Pi_s$, the operator $W_0=\frac12\sum_s(I-\Pi_s)$, and $M_0=V_0f(W_0)$, where $f$ has degree $R-1$ and interpolates $(-1)^j$ on a window $\mathcal I$ of $R$ consecutive integers around $Qp$, $p=\frac{r-1}{2r}$. Then $I-M_0$ has rank $D\Pr[\Bin(Q,p)\notin\mathcal I]\le2De^{-R^2/(8Q)}$, and its rows are measured through an orthogonal $\{0,\pm1\}$ eigenbasis \cite[Section~2.7]{oai378}.
+
+\section{Single-matrix designs: an isoperimetric barrier}\label{sec:single}
+
+\begin{theorem}[rank barrier]\label{thm:barrier}
+Let $(M_0,C)$ satisfy (i) and (ii), and let $A,B\subseteq[r]^Q$ with $\dist_H(a,b)\ge R$ for all $a\in A$, $b\in B$. Then $c\ge\rank(I-M_0)\ge|A|\,|B|$.
+\end{theorem}
+
+\begin{proof}
+By (i), $\ker C\subseteq\ker(I-M_0)$, so $\rank(I-M_0)\le\rank C\le c$. Let $U=\{u:a_u\in A,\ d_u\in B\}$. For $u,w\in U$, $|E_{u,w}|=\dist_H(d_u,a_w)\ge R$, so $M_0[u,w]=0$ by (ii). The principal submatrix of $I-M_0$ on $U$ is the identity, so $\rank(I-M_0)\ge|U|=|A||B|$.
+\end{proof}
+
+\begin{corollary}[binomial form]\label{cor:binomial}
+Let $h=\lfloor r/2\rfloor$ and $X\sim\Bin(Q,h/r)$. For every integer $k$, $c/D\ge\Pr[X\ge k+R]\cdot\Pr[X\le k]$.
+\end{corollary}
+
+\begin{proof}
+Fix $H\subseteq[r]$ with $|H|=h$ and let $N_H(a)$ count the positions with $a(t)\in H$. Then $\dist_H(a,b)\ge N_H(a)-N_H(b)$. Apply Theorem~\ref{thm:barrier} to $A=\{N_H\ge k+R\}$ and $B=\{N_H\le k\}$ and divide by $D=r^{2Q}$.
+\end{proof}
+
+\begin{corollary}[necessary degree]\label{cor:degree}
+If $c\le\varepsilon D$ then $(R+1)^2\ge Q\,p_h(1-p_h)\ln\frac1{2(Q+1)\varepsilon}$ with $p_h=\lfloor r/2\rfloor/r\in[\frac13,\frac12]$ (provided $\lceil Qp_h\rceil+R\le Q$; otherwise $R>Q/2-1$).
+\end{corollary}
+
+\begin{proof}
+Take $k=\lceil Qp_h\rceil$, so $\Pr[X\le k]\ge\frac12$ since a binomial median lies in $\{\lfloor Qp_h\rfloor,\lceil Qp_h\rceil\}$. For $m=k+R$, $\Pr[X\ge m]\ge\binom Qm p_h^m(1-p_h)^{Q-m}\ge\frac1{Q+1}e^{-Q\,\mathrm{KL}(m/Q\,\|\,p_h)}$, and $\mathrm{KL}(q\|p)\le(q-p)^2/(p(1-p))$ with $m-Qp_h\le R+1$.
+\end{proof}
+
+The manuscript achieves $c\le D\tau/(3r)$ with $R\approx\sqrt{8Q\ln(6r/\tau)}$, while Corollary~\ref{cor:degree} forces $R\gtrsim\sqrt{\frac29Q\ln\frac{3r}{2(Q+1)\tau}}$. So in the manuscript's regime ($\ln(r/\tau)\gg\ln Q$), \textbf{no matrix satisfying (i) and (ii), in or out of the swap algebra, improves on $V_0f(W_0)$ by more than a factor of about $6$ in $R$}, and the square root is forced for single-matrix designs. For the swap algebra and the uniform measure, the rank identity of O'Donnell \cite[Lemma~4.1]{odonnell} combined with the sign-error bound of Aspnes, Beigel, Furst and Rudich \cite{abfr} gives a similar conclusion; Theorem~\ref{thm:barrier} needs neither.
+
+\section{Point-dependent designs and the cube polynomial problem}\label{sec:cp}
+
+Definition~3.1 of \cite{oai378} is a design \emph{at a node}: nothing prevents the measurement matrices from depending on $t$. Theorem~\ref{thm:barrier} does not apply to such designs, because the nonlocal part may differ from node to node. We now describe them inside the swap algebra.
+
+Each position $s$ splits $\Q^{[r]\times[r]}$ into the swap-symmetric part (dimension $r(r+1)/2$) and the antisymmetric part (dimension $r(r-1)/2$). A product eigenvector has a type $\varepsilon\in\{0,1\}^Q$ ($\varepsilon_s=1$ when antisymmetric at $s$), and $\Pi_S=\prod_{s\in S}\Pi_s$ acts on it by $\chi_S(\varepsilon)=(-1)^{|S\cap\varepsilon|}$. Under the uniform measure on labels the type has the product law $\mu_p$, $p=\frac{r-1}{2r}$.
+
+A \emph{swap design of degree $<R$} is $P(T)=\sum_{S\subseteq[Q]}c_S(T)\Pi_S$ with $P(0)=I$ and $\deg c_S<R$. At node $t$ the row of label $u$ may read freely the labels $w$ with $a_w(t)=d_u(t)$; the rest of $P(t)$ is the nonlocal part $N_t$, and $\rank N_t$ measurements are necessary and, through the eigenbasis, sufficient.
+
+\begin{proposition}[reduction]\label{prop:reduction}
+Put $p_\varepsilon(T)=\sum_Sc_S(T)\chi_S(\varepsilon)$ for $\varepsilon\in\{0,1\}^Q$. Then $P(0)=I$ if and only if $p_\varepsilon(0)=1$ for all $\varepsilon$; $\deg P<R$ if and only if $\deg p_\varepsilon<R$ for all $\varepsilon$; and for every node $t$
+\[
+\frac{\rank N_t}{D}=\frac{r-1}{r}\,\mu_p\big(\{\varepsilon':\ p_{\varepsilon'}(x_t)+p_{\varepsilon'+e_t}(x_t)\ne0\}\big),
+\]
+where $\varepsilon'$ ranges over types with $\varepsilon'_t=0$ and $\mu_p$ is the product measure on the other $Q-1$ coordinates.
+\end{proposition}
+
+\begin{proof}
+The first two statements are Fourier inversion on $\{0,1\}^Q$. The entry $(u,w)$ of $\Pi_S$ is nonzero only for $w=\mathrm{swap}_S(u)$. If $t\in S$ then $a_w(t)=d_u(t)$ and the entry is local. If $t\notin S$ then $a_w(t)=a_u(t)$, which equals $d_u(t)$ exactly when $u$ is diagonal at $t$. Hence $N_t=D_t\sum_{S\not\ni t}c_S(x_t)\Pi_S$ with $D_t$ the projector onto labels off-diagonal at $t$. The projector commutes with every swap, has rank $r(r-1)$ at position $t$, and the remaining factor is diagonal in the product eigenbasis with eigenvalue $\sum_{S\not\ni t}c_S(x_t)\chi_S(\varepsilon')=\frac12(p_{\varepsilon'}(x_t)+p_{\varepsilon'+e_t}(x_t))$ on the eigenvectors of type $\varepsilon'$ at the other positions. Counting these eigenvectors gives the formula.
+\end{proof}
+
+We checked the rank formula exactly against the actual matrices $P(T)$, computed modulo two 31-bit primes, for $(r,Q,R)\in\{(2,3,2),(2,3,3),(3,2,2),(2,4,2),(2,4,3),(3,3,2)\}$ and several families each.
+
+\begin{definition}[cube polynomial problem]
+Fix distinct nonzero nodes $x_1,\dots,x_Q$. A \emph{family} assigns to every vertex $v\in\{0,1\}^Q$ a polynomial $p_v$ of degree $<R$ with $p_v(0)=1$. The edge $\{v,v+e_t\}$ is \emph{bad} if $p_v(x_t)+p_{v+e_t}(x_t)\ne0$. The value of a family is $\beta=\max_t\beta_t$, where $\beta_t$ is the measure of the bad edges in direction $t$ (the measure of their endpoints with $v_t=0$). $\CP(Q,R)$ asks for the least value $\beta^*(Q,R)$.
+\end{definition}
+
+By Proposition~\ref{prop:reduction}, a family of value $\beta$ for the measure $\mu_p$ is a point-dependent swap design with $c_t/D\le\frac{r-1}r\beta$ at every node. The manuscript's matrix is the \emph{window family} $p_\varepsilon=1-\sigma_\varepsilon f(|\varepsilon|)+\sigma_\varepsilon G(T,\varepsilon)$, $\sigma_\varepsilon=(-1)^{|\varepsilon|}$, with $G$ the global formula of Lemma~\ref{lem:global} below: its good edges are those with both weights in the window, and its value is the binomial tail outside the window.
+
+\begin{proposition}[subcube obstruction]\label{prop:subcube}
+For any $R$ distinct directions, every $R$-dimensional subcube in those directions contains a bad edge. Consequently $\sum_{t\in T}\beta_t\ge\min(p,1-p)^{R-1}$ for every set $T$ of $R$ directions, and $\beta^*(Q,R)\ge2^{1-R}/R$ for the uniform measure.
+\end{proposition}
+
+\begin{proof}
+Let $\ell_i(0)$ be the Lagrange weights of the $R$ nodes. For every vertex $v$ of the subcube, $1=p_v(0)=\sum_i\ell_i(0)p_v(x_{t_i})$. Sum over the $2^R$ vertices: the left side is $2^R$. For each $i$, the inner sum $\sum_vp_v(x_{t_i})$ splits into the edges of direction $t_i$ and vanishes if they are all good. The second statement follows by summing over the bases of the subcubes.
+\end{proof}
+
+\section{Global formulas and the slab family}\label{sec:slab}
+
+\begin{lemma}[global formulas]\label{lem:global}
+For coefficients $\gamma_S$ $(S\subseteq[Q])$ and distinct nonzero nodes put
+\[
+G(T,\varepsilon)=\sum_S\gamma_S\,\chi_S(\varepsilon)\prod_{s\in S}\Big(1-\frac T{x_s}\Big).
+\]
+Then $G(x_t,\varepsilon)=G(x_t,\varepsilon+e_t)$ for every vertex and direction, $\deg_TG\le\max\{|S|:\gamma_S\ne0\}$, and $G(0,\varepsilon)=\sum_S\gamma_S\chi_S(\varepsilon)$.
+\end{lemma}
+
+\begin{proof}
+Terms with $t\in S$ vanish at $T=x_t$, and terms with $t\notin S$ satisfy $\chi_S(\varepsilon+e_t)=\chi_S(\varepsilon)$.
+\end{proof}
+
+So $p_\varepsilon=\sigma_\varepsilon G(\cdot,\varepsilon)$ makes every edge good, and the only defect is the normalization $p_\varepsilon(0)=\sigma_\varepsilon g(\varepsilon)$ with $g=\sum_S\gamma_S\chi_S$ of Fourier degree $<R$. Conversely, if every edge of the whole cube is good then $\sigma_\varepsilon p_\varepsilon$ is a global formula: the Fourier coefficient $\widehat{G}_S(T)$ vanishes at $x_t$ for every $t\in S$. Since parity has Fourier degree $Q$, no all-good family exists for $Q\ge R$.
+
+\begin{lemma}[symmetric functions have low degree]\label{lem:symmetric}
+Over a field of characteristic $0$, if $\deg f\le d$ then $\varepsilon\mapsto f(|\varepsilon|)$ is a combination of the characters $\chi_S$ with $|S|\le d$.
+\end{lemma}
+
+\begin{proof}
+$|\varepsilon|=\sum_s\frac{1-\chi_{\{s\}}(\varepsilon)}2$, and multiplication by $\chi_{\{s\}}$ maps $\chi_S$ to $\chi_{S\triangle\{s\}}$, raising the degree by at most one.
+\end{proof}
+
+\begin{theorem}[slab family]\label{thm:slab}
+Fix $R\ge1$ and an offset $s_0$. Cut the weights $0,\dots,Q$ into slabs $\{w:\lfloor(w+s_0)/R\rfloor=k\}$ of at most $R$ consecutive values. On slab $k$ let $f_k$ interpolate $(-1)^w$ (degree $<R$), let $\gamma^{(k)}$ be the Fourier coefficients of $f_k(|\cdot|)$ given by Lemma~\ref{lem:symmetric}, and put $p_\varepsilon=\sigma_\varepsilon G_{\gamma^{(k)}}(\cdot,\varepsilon)$ for $|\varepsilon|$ in slab $k$. Then $\deg p_\varepsilon<R$, $p_\varepsilon(0)=1$, every edge inside a slab is good, and for some $s_0<R$, for every direction $t$ and every $Q\ge1$, at most $2^{Q-1}/R$ edges in direction $t$ are bad. Averaging over $s_0$ gives $\mu_p(\text{bad in direction }t)\le1/R$ for every product measure.
+\end{theorem}
+
+\begin{proof}
+Degree and normalization follow from Lemmas~\ref{lem:global} and~\ref{lem:symmetric}. An edge $\{\varepsilon,\varepsilon+e_t\}$ with $\varepsilon_t=0$ joins weights $w$ and $w+1$; it is good when both lie in one slab. The edges in direction $t$ between weights $w$ and $w+1$ number $\binom{Q-1}w$, and each $w$ is the top of a slab for exactly one offset modulo $R$. Summing over the $R$ offsets counts every edge in direction $t$ at most once, so some offset has at most $2^{Q-1}/R$ bad edges in direction $t$; the same averaging works simultaneously for all directions since the count does not depend on $t$.
+\end{proof}
+
+\begin{corollary}[point dependence helps]\label{cor:helps}
+If $Q\ge\frac98(R+2)^2$ and $Q$ exceeds an absolute constant, every single-matrix design has $c/D\ge0.01$, while the slab design has $c_t/D\le\frac{r-1}{r}\cdot\frac1R$ at every node.
+\end{corollary}
+
+\begin{proof}
+In Corollary~\ref{cor:binomial} take $k=\lceil Qp_h\rceil$, so $\Pr[X\le k]\ge\frac12$. With $\sigma=\sqrt{Qp_h(1-p_h)}\ge\sqrt{2Q/9}$, the hypothesis gives $k+R\le Qp_h+2\sigma$, and the Berry and Esseen theorem gives $\Pr[X\ge Qp_h+2\sigma]\ge\Phi(-2)-O(1/\sigma)\ge0.02$ for large $Q$.
+\end{proof}
+
+\begin{proposition}[improvement criterion]\label{prop:criterion}
+Assume the manuscript's cost analysis \eqref{eq:cost}, its constraints $12D^2\le n$ and $2Qr^2\le n$, and its requirement $c_t/D\le\tau/(3r)$ at every node, applied with point-dependent designs. If for some $C>4$ there are families with $\beta\le R^{-C}$ at $Q\approx R^{(C+2)/3}$ for all large $R$, then the exponent of the method improves to $n(\log n)^{-(C-1)/(C+2)+o(1)}$, which is $o(n/(\log n)^{1/2})$.
+\end{proposition}
+
+\begin{proof}[Derivation]
+Write $\lambda=\log_2n$ and take $Q\approx\lambda/(4\log_2r)$, the largest value allowed by $12D^2\le n$. With $\tau=3(r-1)\beta$ the exponent per variable is about
+\[
+\tfrac{3R}{Q}\log_2\tfrac{Q}{R}+12(r-1)\beta Q\log_2r+\tfrac2r\ \approx\ \tfrac{R}{Q}\log\tfrac QR+3r\lambda\beta+\tfrac2r .
+\]
+Put $r=\lambda^a$ and $R=\lambda^b$. The first and last terms balance at $b=1-a$, and the middle term is at most the last when $bC\ge2a+1$, that is $a\le(C-1)/(C+2)$. The exponent is then $\lambda^{-(C-1)/(C+2)}$ up to logarithmic factors, at $R=\lambda^{3/(C+2)}$ and $Q\approx\lambda\approx R^{(C+2)/3}$. It beats $\lambda^{-1/2}$ exactly when $C>4$.
+\end{proof}
+
+The slab has $C=1$, which gives nothing; the window family is excellent at fixed ratio $Q/R$ but needs $R\gtrsim\sqrt{Q\log Q}$. A family that beats both by a polynomial factor in the regime $Q\approx R^{2+}$ is what an improvement needs. If $\beta$ could be made $2^{-\Theta(R)}$, the same computation with $R=\Theta(\log\log n)$ would give $n(\log\log n)^{O(1)}/\log n$.
+
+\section{Barriers and duality}\label{sec:barriers}
+
+\begin{theorem}[general rank barrier]\label{thm:general}
+Let $P(T)$ be any $\B\times\B$ matrix of polynomials with $\deg P<R$ and $P(0)=I$, not necessarily in the swap algebra. Let $x_1,\dots,x_R$ be distinct nodes, node $i$ using the groups of position $\pi(i)$, with $\pi$ injective, and split $P(x_i)=L_i+N_i$ where $L_i[u,w]\ne0$ implies $a_w(\pi(i))=d_u(\pi(i))$. For product sets $A=\prod_tS^A_t$ and $B=\prod_tS^B_t$ with $S^A_{\pi(i)}\cap S^B_{\pi(i)}=\varnothing$ for all $i$,
+\[
+|A|\,|B|\le\sum_{i=1}^R\rank N_i,\qquad\text{hence}\qquad\max_i\frac{\rank N_i}{D}\ge\frac1R\Big(\frac{h(r-h)}{r^2}\Big)^R ,
+\]
+which is $4^{-R}/R$ for even $r$ and $h=r/2$.
+\end{theorem}
+
+\begin{proof}
+Lagrange extrapolation gives $I=P(0)=\sum_i\lambda_iP(x_i)$, hence $\sum_i\lambda_iN_i=I-\sum_i\lambda_iL_i$. On $U=\{u:a_u\in A,\ d_u\in B\}$ every $L_i$ vanishes, so the principal submatrix of $\sum_i\lambda_iN_i$ on $U$ is the identity and $|U|\le\sum_i\rank N_i$.
+\end{proof}
+
+Plugging $c_t/D\approx4^{-R}$ into the derivation of Proposition~\ref{prop:criterion} shows that no argument of this kind can force more than $R=\Theta(\log\log n)$: the square root is a property of the single-matrix construction, not of the measurement framework.
+
+\begin{theorem}[stress duality]\label{thm:stress}
+Put $\xi_t=(x_t,x_t^2,\dots,x_t^{R-1})$. For a set $G$ of edges, a \emph{stress} is a weighting $w:G\to\Q$ with $\sum_{t:\,e(v,t)\in G}w_{e(v,t)}\xi_t=0$ at every vertex $v$. There is a family in which every edge of $G$ is good if and only if every stress on $G$ has total weight $\sum_ew_e=0$.
+\end{theorem}
+
+\begin{proof}
+If a family exists, vanishing moments give $\sum_tw_{e(v,t)}p_v(x_t)=(\sum_tw_{e(v,t)})p_v(0)$ at each vertex. Summing over vertices, the right side is $2\sum_ew_e$ and the left side is $\sum_ew_e(p_u(x_t)+p_{u+e_t}(x_t))=0$. Conversely, the conditions form a linear system in the coefficients of the $p_v$; by linear duality it is unsolvable exactly when some combination has zero left side and nonzero right side, and the multipliers of such a combination are a stress with nonzero total.
+\end{proof}
+
+\begin{corollary}[obstructions are large; relaxations are weak]\label{cor:weak}
+Every stress with nonzero total is supported on at least $2^R$ vertices. Consequently the fractional relaxation of $\CP(Q,R)$ over obstructions has value at most $2^{1-R}/R$, and the subcube-hitting relaxation has value at most $2^{-R/2+o(R)}$ by the constructions of Alon \cite{alon} and of Ellis, Ivan and Leader \cite{eil}. A polynomial lower bound $\beta^*\ge R^{-O(1)}$ must therefore use the algebra of the moment curve, not only the combinatorics of subcubes.
+\end{corollary}
+
+\begin{proof}
+Any $R-1$ of the vectors $\xi_t$ are independent (Vandermonde), so every vertex touched by a nonzero stress carries at least $R$ weighted edges. A subgraph of the cube of minimum degree at least $R$ has at least $2^R$ vertices (split along a coordinate and induct). The fractional bound follows by giving weight $1/(R2^{R-1})$ to every edge, and the hitting bound by taking all edges at a vertex set of density $2^{-R/2+o(R)}$ that meets every $R$-subcube.
+\end{proof}
+
+\begin{theorem}[products]\label{thm:product}
+If $(p_v)$ is a family on $Q_1$ directions of degree $<R_1$ and $(s_u)$ a family on $Q_2$ other directions of degree $<R_2$, then $p_{(v,u)}=p_vs_u$ is a family on $Q_1+Q_2$ directions of degree $<R_1+R_2-1$ in which an edge is good whenever its projection is good. Hence $\beta^*(Q_1+Q_2,R_1+R_2-1)\le\max(\beta^*(Q_1,R_1),\beta^*(Q_2,R_2))$.
+\end{theorem}
+
+\begin{proof}
+If $p(y)+p'(y)=0$ then $(ps)(y)+(p's)(y)=0$.
+\end{proof}
+
+Products preserve the ratio $Q/R$ and the bad fraction, so they cannot reach the regime $Q\gg R^2$ that Proposition~\ref{prop:criterion} needs; they do turn small optima into infinite families, for instance $\beta\le1/8$ at $(Q,R)=(4m,2m+1)$ from the optimum at $(4,3)$.
+
+\section{Small exact cases}\label{sec:data}
+
+We computed $\CP(Q,R)$ for the nodes $x_t=t/Q$ and the uniform measure with a mixed-integer program (HiGHS through SciPy, 240 seconds per instance), re-checking every reported good-edge set in exact rational arithmetic. Table~\ref{tab:data} gives the number of bad edges, in total and in the worst direction (out of $2^{Q-1}$). Entries with ``$\le$'' hit the time limit; the bracket is the solver's proven lower bound.
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{rrllll}
+\toprule
+$Q$ & $R$ & subcube hitting & $\CP$ optimum & slab & window\\
+ & & total / max & total / max & total / max & total / max\\
+\midrule
+3 & 2 & 3 / 1 & 4 / 2 & 6 / 2 & 6 / 2\\
+4 & 2 & 8 / 2 & 12 / 4 & 16 / 4 & 20 / 5\\
+4 & 3 & 3 / 1 & 4 / 1 & 8 / 2 & 8 / 2\\
+5 & 2 & 24 / 5 & $\le32\ [25]$ / $\le7\ [5]$ & 40 / 8 & 50 / 10\\
+5 & 3 & 8 / 2 & $\le14\ [8]$ / $\le4\ [2]$ & 25 / 5 & 30 / 6\\
+5 & 4 & 3 / 1 & 4 / 1 & 10 / 2 & 10 / 2\\
+6 & 3 & $\le22$ / 4 & $\le60\ [9]$ / $\le12\ [2]$ & 60 / 10 & 72 / 12\\
+6 & 4 & 8 / 2 & $\le18\ [4]$ / $\le5\ [1]$ & 36 / 6 & 42 / 7\\
+6 & 5 & 3 / 1 & 4 / 1 & 12 / 2 & 12 / 2\\
+\bottomrule
+\end{tabular}
+\caption{Bad edges in small cases of $\CP(Q,R)$ (nodes $t/Q$, uniform measure).}\label{tab:data}
+\end{table}
+
+Three observations, all empirical: realizability is a real constraint (at $(5,2)$ the proven lower bound exceeds the hitting optimum); for $R=Q-1$ the optimum is four bad edges in total and one per direction; and the slab is beaten in every solved case with $3\le R\le Q-1$, and at $(5,2)$, where a family with exactly $7$ bad edges in every direction exists. The optimal families are not unions of global formulas on level sets. Whether their advantage over the slab grows with $R$ at large ratio $Q/R$ is the question below.
+
+\section{Open problems}\label{sec:open}
+
+\begin{problem}[the decisive question]
+Determine the growth of $\beta^*(Q,R)$ for $Q\ge R^{2+\delta}$. A family with $\beta\le R^{-C}$, $C>4$, at $Q\approx R^{(C+2)/3}$ improves the exponent of the method (Proposition~\ref{prop:criterion}); a proof that $\beta^*(Q,R)\ge R^{-4-o(1)}$ there shows that no point-dependent swap design beats the square root.
+\end{problem}
+
+\begin{problem}[the infinite-ratio limit]
+The direction-averaged optimum is non-decreasing in $Q$ (restrict to the two faces of a new coordinate). Is $\lim_{Q\to\infty}\beta^*(Q,R)$ of order $1/R$, so that the slab is asymptotically optimal, or exponentially small in $R$?
+\end{problem}
+
+\begin{problem}[region-based designs]
+Suppose the good edges are exactly the edges inside the parts of a partition of the cube, each part carrying one global formula. Each part is then a set on which parity agrees with a polynomial of degree $<R$, of measure at most about $R\sqrt{2/(\pi Q)}$ by the sign-error bound \cite{abfr}. Prove that such designs have $\beta\ge c/R$, an isoperimetric statement about parity-interpolable sets.
+\end{problem}
+
+\begin{problem}[linear polynomials]
+For $R=2$ the good edges form a $C_4$-free subgraph of the cube, so asymptotically at least $1-0.6068$ of the edges are bad \cite{bhll}; for generic nodes the condition is that every cycle of good edges is balanced for the voltages $-2/x_t$. Is the optimal bad fraction $\frac12-o(1)$ for generic nodes, and do special nodes (such as $t/5$ at $Q=5$) help asymptotically?
+\end{problem}
+
+\begin{problem}[realizing Tur\'an constructions]
+The vertex sets of density $2^{-R/2+o(R)}$ meeting every $R$-subcube \cite{alon,eil} are built layer by layer. Is the set of edges at such a vertex set the bad set of some family? A positive answer for a single moderate $R$ would beat the slab there.
+\end{problem}
+
+\section{Formal verification}\label{sec:lean}
+
+The following statements are proved in the Lake project \texttt{EthConsequences} (Lean 4.34.1, Mathlib at a pinned revision). The build passes with \texttt{lake --wfail build} and the only axioms used are \texttt{Classical.choice}, \texttt{Quot.sound} and \texttt{propext}; the certificate records file hashes and all 45 checked declarations.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright}p{0.34\textwidth}>{\raggedright\arraybackslash}p{0.58\textwidth}}
+\toprule
+Result & Lean declarations\\
+\midrule
+Theorem~\ref{thm:barrier}, Corollary~\ref{cor:binomial} & \texttt{RankBarrier.barrier}, \texttt{barrier\_threshold}, \texttt{count\_le\_count\_add\_hammingDist}\\
+Proposition~\ref{prop:subcube} (the full $R$-cube) & \texttt{Subcube.no\_good\_subcube}, \texttt{eval\_zero\_eq\_sum}\\
+Lemmas~\ref{lem:global}, \ref{lem:symmetric}, Theorem~\ref{thm:slab} & \texttt{SlabDesign.G\_edge}, \texttt{natDegree\_G\_le}, \texttt{G\_eval\_zero}, \texttt{exists\_gamma}, \texttt{slab\_edge\_good}, \texttt{slab\_eval\_zero}, \texttt{slab\_natDegree}, \texttt{slab\_design\_bound}\\
+Theorem~\ref{thm:general} & \texttt{PointBarrier.point\_dependent\_barrier}, \texttt{label\_barrier}, \texttt{label\_barrier\_explicit}\\
+Theorem~\ref{thm:stress}, soundness direction & \texttt{Stress.stress\_total\_eq\_zero}, \texttt{moment\_collapse}, \texttt{sum\_edgeW}\\
+Theorem~\ref{thm:product} & \texttt{Stress.product\_edge\_good}, \texttt{natDegree\_product\_le}, \texttt{product\_eval\_zero}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Not formalized: the reduction (Proposition~\ref{prop:reduction}, checked on actual matrices), the binomial estimates in Corollaries~\ref{cor:degree} and~\ref{cor:helps}, the completeness direction of Theorem~\ref{thm:stress}, Corollary~\ref{cor:weak}, the derivation in Proposition~\ref{prop:criterion}, and the manuscript's own analysis, on which Proposition~\ref{prop:criterion} is conditional.
+
+\section{Status, scope and novelty}\label{sec:status}
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Scope.} The barriers cover designs built, like the manuscript's Section~4, on the label space $([r]\times[r])^Q$ with the group rule $a_w(t)=d_u(t)$. They say nothing about algorithms of other shapes, nor about the manuscript's Appendix~C, whose square root comes from a partition count of $2$-adic modes.
+\item \textbf{Dependence on the main theorem.} None of the theorems depends on it. Proposition~\ref{prop:criterion} is conditional on the manuscript's cost analysis.
+\item \textbf{Inspection.} We read the manuscript's Sections~1 and~2, the statements of Section~3, Sections~4.1 to~4.3 and Appendices~C and~D in full from the openai/math repository at commit \texttt{7ef5c0cc5}; this is not a proof audit, and the upstream Lean development was not rebuilt.
+\item \textbf{Novelty.} A web-based literature check on 29 October 2026 found the expositions \cite{odonnell,kintali}, which discuss no barrier and no point-dependent designs, and the closest combinatorics in hypercube Tur\'an problems \cite{aks,eil,alon,bhll} and in the interpolation and probabilistic degree of parity \cite{abfr,alman,stv}. The check was not systematic, so novelty is \textbf{not verified}. A reported independent refutation of ETH by another group, known to us only from a press report, has not been inspected.
+\end{itemize}
+
+\begin{thebibliography}{99}\small
+\bibitem{oai378} OpenAI, \emph{The Exponential Time Hypothesis is False}, openai/math, family 378, manuscript revised 25 October 2026, \url{https://github.com/openai/math}.
+\bibitem{oai378lean} openai/math, Lean scope note for family 378, \texttt{lean/docs/378.md}.
+\bibitem{odonnell} R. O'Donnell, \emph{Some exposition of ``The Exponential Time Hypothesis Is False''}, 28 October 2026, \url{https://www.cs.cmu.edu/~odonnell/some_eth_false_exposition.pdf}.
+\bibitem{kintali} S. Kintali, \emph{A simplified proof of ETH is false}, 26 October 2026, \url{https://shivakintali.github.io/papers/ETH.pdf}.
+\bibitem{abfr} J. Aspnes, R. Beigel, M. Furst, S. Rudich, The expressive power of voting polynomials, \emph{Combinatorica} 14 (1994).
+\bibitem{aks} N. Alon, A. Krech, T. Szab\'o, Tur\'an's theorem in the hypercube, \emph{SIAM J. Discrete Math.} 21 (2007).
+\bibitem{eil} D. Ellis, M.-R. Ivan, I. Leader, Tur\'an densities for daisies and hypercubes, arXiv:2401.16289.
+\bibitem{alon} N. Alon, Erasure list-decodable codes and Tur\'an hypercube problems, \emph{Finite Fields Appl.} 100 (2024), arXiv:2403.16319.
+\bibitem{bhll} J. Balogh, P. Hu, B. Lidick\'y, H. Liu, Upper bounds on the size of 4- and 6-cycle-free subgraphs of the hypercube, arXiv:1201.0209.
+\bibitem{alman} J. Alman, R. Williams, Probabilistic rank and matrix rigidity, STOC 2017, arXiv:1611.05558.
+\bibitem{stv} S. Srinivasan, U. Tripathi, S. Venkitesh, On the probabilistic degrees of symmetric Boolean functions, arXiv:1910.02465.
+\end{thebibliography}
+
+\end{document}

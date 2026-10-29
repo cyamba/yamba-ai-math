@@ -1,0 +1,39 @@
+{
+  "id": "ETH002",
+  "title": "Counting at arbitrary density: violation histograms and graded contraction",
+  "objective": "Extend the bounded-density graded counts of SR-07 toward arbitrary density, conditional on the preprint's Theorem C.1: either show that Theorem C.1 holds with a second passive grading variable, which would give weight enumerators and exact Max-k-SAT histograms at every density, or identify the precise step of Appendix C that fails, and record what this implies for exact dense Max-2-SAT.",
+  "fleet": "theorem",
+  "briefs": [
+    "problems/eth/03-counting/ETH-C03-max-sat-histogram.md",
+    "problems/eth/03-counting/ETH-C02-weighted-counting-q-series.md",
+    "problems/eth/03-counting/ETH-C05-counting-beyond-linear-encodings.md",
+    "problems/eth/subresults/SR-07-graded-counting-bounded-density.md"
+  ],
+  "constraints": {
+    "max_agents": 6,
+    "max_cost_units": 14,
+    "max_workers": 3,
+    "max_rounds": 1
+  },
+  "rounds": 1,
+  "deliverables": [
+    "A line-by-line check of Appendix C's hypotheses for a network with two passive variables, with every changed inequality written out",
+    "Either a conditional theorem (with its dependence on Theorem C.1 stated) or the exact failing step with a small explicit network showing it",
+    "An exact small-instance checker comparing graded counts with brute force",
+    "A separate critic's verdict and an updated SR-09 coverage map"
+  ],
+  "success_criteria": [
+    "Every claim that depends on the unverified upstream theorem is labelled conditional",
+    "Small-instance checks are exact and reproducible from a committed script",
+    "The dense Max-2-SAT question is reported as open unless an actual algorithm and proof survive review"
+  ],
+  "stop_conditions": [
+    "One proposal/review round is exhausted",
+    "Appendix C turns out to rely on a step the working group disputes; stop and record it",
+    "No paid provider calls, publication or external contact beyond the user-authorized repository work"
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

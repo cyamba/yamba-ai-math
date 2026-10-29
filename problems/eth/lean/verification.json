@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T20:15:25.133144+00:00",
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "sha256": {
+    "EthConsequences.lean": "7322b64c0caf310b357e77b6501953188fea618599562ef4384b1675a63d3509",
+    "EthConsequences/ParityInterpolation.lean": "4490039548f429e2ccfd71a461da16c582ece5efe86b41f71099e57acc63119a",
+    "EthConsequences/BooleanDifferences.lean": "0df130574d8ca3aa483777fc1128c501451b67d69a402efbe16e72e433b322e1",
+    "EthConsequences/Separation.lean": "0c01e99e3383a6f4e6f67d4aaffb05f4caea6423fafd5a1c08b460f2aaeb48c4",
+    "EthConsequences/HermiteUniqueness.lean": "f863c461253357996816e94b782b8de5705d79e42227316992c01fdf996fd0ca",
+    "EthConsequences/RankBarrier.lean": "d7b29f8257e562ca88b9be00372b84317713112720e6465f0bbe146f51169d2d",
+    "EthConsequences/SubcubeObstruction.lean": "76bd681c5acb1410cfd88d045b5eeaf536458d3f7bd2ae152d72e507960421b3",
+    "EthConsequences/IndependentSets.lean": "da01871f5d2fabe8058a34e28608f45244dff1250263925735c2f719b5d32e2f",
+    "EthConsequences/PointDependentBarrier.lean": "eb32e7a43d4f904b7dccb168e144b05d799340f4388b53362fd0bf8dc61c95d0",
+    "EthConsequences/SlabDesign.lean": "d01e4447bb785aeb2a11e02eb7bc7c07ba30026787b7ea471e8f87b42d0a26a6",
+    "EthConsequences/StressDuality.lean": "fa071df2b5724933a560c8240442976c11f741cee5057334c475ea8a9a418542",
+    "EthConsequences/GradedCounting.lean": "a6d38c9a7c2b17f901cdf9864cdce612192741a14d4a1e64e2679aa9e31f11a3",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "lakefile.toml": "fe622c0ec2a7638fa9535f50b8119245e2d945d714a389e02d00ee4b32e93dc5",
+    "lake-manifest.json": "9c8982edf8ea38b0fc5b434c6b8a9ed5a4fb213b17790736e6cbc5ff66b002b2",
+    "verify.py": "e305b45f068930636bcee2209ac22a38a729397cbdddbaa5901b707eb9430ee2"
+  },
+  "dependency_revisions": {
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "theorems": [
+    "EthConsequences.BooleanDifferences.boolean_differences",
+    "EthConsequences.BooleanDifferences.mobius_insert",
+    "EthConsequences.BooleanDifferences.mobius_inversion",
+    "EthConsequences.Graded.coeff_histogram",
+    "EthConsequences.Graded.deformation_identity",
+    "EthConsequences.Graded.histogram_identity",
+    "EthConsequences.Graded.sum_pow_eq",
+    "EthConsequences.Graded.weight_identity",
+    "EthConsequences.Hermite.eq_of_jets_eq",
+    "EthConsequences.Hermite.eq_zero_of_jets_vanish",
+    "EthConsequences.IndependentSets.card_indepSets_eq_card_satAssignments",
+    "EthConsequences.IndependentSets.card_indepSets_size_eq",
+    "EthConsequences.ParityInterpolation.S_of_le",
+    "EthConsequences.ParityInterpolation.S_succ",
+    "EthConsequences.ParityInterpolation.abs_defect_le",
+    "EthConsequences.ParityInterpolation.alternating_sum_bounds",
+    "EthConsequences.ParityInterpolation.defect_eq",
+    "EthConsequences.PointBarrier.card_le_sum_rank",
+    "EthConsequences.PointBarrier.label_barrier",
+    "EthConsequences.PointBarrier.label_barrier_explicit",
+    "EthConsequences.PointBarrier.map_eval_zero_eq_sum",
+    "EthConsequences.PointBarrier.point_dependent_barrier",
+    "EthConsequences.PointBarrier.rank_add_le",
+    "EthConsequences.RankBarrier.barrier",
+    "EthConsequences.RankBarrier.barrier_threshold",
+    "EthConsequences.RankBarrier.card_le_rank_of_principal_identity",
+    "EthConsequences.RankBarrier.count_le_count_add_hammingDist",
+    "EthConsequences.RankBarrier.rank_le_of_ker_le",
+    "EthConsequences.Separation.sum_prod_eq_sum_measurements",
+    "EthConsequences.SlabDesign.G_edge",
+    "EthConsequences.SlabDesign.G_eval_zero",
+    "EthConsequences.SlabDesign.exists_gamma",
+    "EthConsequences.SlabDesign.natDegree_G_le",
+    "EthConsequences.SlabDesign.slab_design_bound",
+    "EthConsequences.SlabDesign.slab_edge_good",
+    "EthConsequences.SlabDesign.slab_eval_zero",
+    "EthConsequences.SlabDesign.slab_natDegree",
+    "EthConsequences.Stress.moment_collapse",
+    "EthConsequences.Stress.natDegree_product_le",
+    "EthConsequences.Stress.product_edge_good",
+    "EthConsequences.Stress.product_eval_zero",
+    "EthConsequences.Stress.stress_total_eq_zero",
+    "EthConsequences.Stress.sum_edgeW",
+    "EthConsequences.Subcube.eval_zero_eq_sum",
+    "EthConsequences.Subcube.no_good_subcube"
+  ],
+  "axioms": {
+    "EthConsequences.ParityInterpolation.S_of_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.ParityInterpolation.S_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.ParityInterpolation.defect_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.ParityInterpolation.alternating_sum_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.ParityInterpolation.abs_defect_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.BooleanDifferences.mobius_insert": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.BooleanDifferences.mobius_inversion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.BooleanDifferences.boolean_differences": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Separation.sum_prod_eq_sum_measurements": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Hermite.eq_zero_of_jets_vanish": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Hermite.eq_of_jets_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.RankBarrier.card_le_rank_of_principal_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.RankBarrier.rank_le_of_ker_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.RankBarrier.barrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.RankBarrier.count_le_count_add_hammingDist": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.RankBarrier.barrier_threshold": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Subcube.eval_zero_eq_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Subcube.no_good_subcube": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.IndependentSets.card_indepSets_eq_card_satAssignments": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.IndependentSets.card_indepSets_size_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.PointBarrier.rank_add_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.PointBarrier.card_le_sum_rank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.PointBarrier.map_eval_zero_eq_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.PointBarrier.point_dependent_barrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.PointBarrier.label_barrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.PointBarrier.label_barrier_explicit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.SlabDesign.G_edge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.SlabDesign.natDegree_G_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.SlabDesign.G_eval_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.SlabDesign.exists_gamma": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.SlabDesign.slab_edge_good": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.SlabDesign.slab_eval_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.SlabDesign.slab_natDegree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.SlabDesign.slab_design_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Stress.moment_collapse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Stress.sum_edgeW": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Stress.stress_total_eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Stress.product_edge_good": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Stress.natDegree_product_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Stress.product_eval_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Graded.sum_pow_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Graded.histogram_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Graded.coeff_histogram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Graded.deformation_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EthConsequences.Graded.weight_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "clean_build": {
+    "fresh_temporary_workspace": true,
+    "project_build_products_reused": false,
+    "pinned_dependency_products_reused": true,
+    "warnings_as_errors": true
+  },
+  "scope": "Kernel-checked statements: Newton parity interpolation and its off-window defect (closed form and bound); Boolean-lattice Mobius inversion and the Boolean-differences identity of Lemma 3.2 (Mobius-coefficient form); the measurement-separation identity of Lemma 3.1 (algebraic core); uniqueness of Hermite interpolation; the isoperimetric rank barrier for any auxiliary pair (M0, C) with the Hamming support condition, including its threshold form; the R-subcube obstruction for point-dependent cube designs; the independent-set to 2-CNF counting bijection (all sizes and fixed size). Translations between these statements and the preprint, and binomial-tail estimates, are informal; see problems/eth/subresults. Added 2026-10-29: the rank barrier for arbitrary point-dependent designs (SR-03), global formulas, low Fourier degree of symmetric polynomials and the slab construction with its 1/R bound (SR-04), soundness of stress certificates and products of designs (SR-05), and the graded-counting identities (SR-07).",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.343,
+      "output": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n"
+    },
+    {
+      "command": [
+        "lake",
+        "--wfail",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 40.192,
+      "output": "✔ [1047/1050] Built EthConsequences.BooleanDifferences (4.3s)\n✔ [1048/1119] Built EthConsequences.Separation (4.5s)\n✔ [1472/1515] Built EthConsequences.ParityInterpolation (6.0s)\n✔ [1984/2000] Built EthConsequences.HermiteUniqueness (5.0s)\n✔ [1995/2009] Built EthConsequences.StressDuality (6.1s)\n✔ [1996/2009] Built EthConsequences.RankBarrier (7.7s)\n✔ [2003/2009] Built EthConsequences.GradedCounting (5.6s)\n✔ [2004/2009] Built EthConsequences.IndependentSets (4.2s)\n✔ [2005/2009] Built EthConsequences.SubcubeObstruction (6.8s)\n✔ [2006/2009] Built EthConsequences.SlabDesign (10s)\n✔ [2007/2009] Built EthConsequences.PointDependentBarrier (6.0s)\n✔ [2008/2009] Built EthConsequences (2.3s)\nBuild completed successfully (2009 jobs).\n"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "StatementInventory.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.684,
+      "output": "'EthConsequences.ParityInterpolation.S_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.ParityInterpolation.S_succ' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.ParityInterpolation.defect_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.ParityInterpolation.alternating_sum_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.ParityInterpolation.abs_defect_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.BooleanDifferences.mobius_insert' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.BooleanDifferences.mobius_inversion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.BooleanDifferences.boolean_differences' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Separation.sum_prod_eq_sum_measurements' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Hermite.eq_zero_of_jets_vanish' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Hermite.eq_of_jets_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.RankBarrier.card_le_rank_of_principal_identity' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'EthConsequences.RankBarrier.rank_le_of_ker_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.RankBarrier.barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.RankBarrier.count_le_count_add_hammingDist' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.RankBarrier.barrier_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Subcube.eval_zero_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Subcube.no_good_subcube' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.IndependentSets.card_indepSets_eq_card_satAssignments' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'EthConsequences.IndependentSets.card_indepSets_size_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.PointBarrier.rank_add_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.PointBarrier.card_le_sum_rank' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.PointBarrier.map_eval_zero_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.PointBarrier.point_dependent_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.PointBarrier.label_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.PointBarrier.label_barrier_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.SlabDesign.G_edge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.SlabDesign.natDegree_G_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.SlabDesign.G_eval_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.SlabDesign.exists_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.SlabDesign.slab_edge_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.SlabDesign.slab_eval_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.SlabDesign.slab_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.SlabDesign.slab_design_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Stress.moment_collapse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Stress.sum_edgeW' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Stress.stress_total_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Stress.product_edge_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Stress.natDegree_product_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Stress.product_eval_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Graded.sum_pow_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Graded.histogram_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Graded.coeff_histogram' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Graded.deformation_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EthConsequences.Graded.weight_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ]
+}

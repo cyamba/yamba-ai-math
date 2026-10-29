@@ -1,0 +1,24 @@
+# Subresults of the `eth` set
+
+Each file states one result with its status label (repository vocabulary: **established**,
+**proved**, **conjecture**, **empirical**, **unverified**, **refuted**), its assurance (informal
+proof, exact computation, Lean declaration in [`../lean/`](../lean/)), its dependence on the
+upstream theorem, and the problems it feeds. Novelty is **not verified** for any of them; the
+checks done so far are in the [novelty ledger](../RANKING.md#novelty-ledger). The ranking of the
+subresults is in [RANKING.md](../RANKING.md#subresults-ranked).
+
+| ID | Result | Status | Assurance | Upstream theorem needed |
+| --- | --- | --- | --- | --- |
+| [SR-01](SR-01-isoperimetric-rank-barrier.md) | Isoperimetric rank barrier: single-matrix designs pay $c/D\gtrsim e^{-\Theta(R^2/Q)}$; the preprint's $V_0f(W_0)$ is optimal up to a constant in $R$ | proved | Lean core (`RankBarrier.lean`), tail estimates informal | No |
+| [SR-02](SR-02-cube-polynomial-designs.md) | Point-dependent swap designs are the cube polynomial problem CP(Q, R); subcube obstruction; exact small optima | proved; table empirical | Reduction informal and checked on actual matrices; obstruction in Lean (`SubcubeObstruction.lean`); MILP results re-checked exactly | No |
+| [SR-03](SR-03-point-dependent-rank-barrier.md) | Rank barrier for arbitrary point-dependent designs: $c_t/D\ge(h(r-h)/r^2)^R/R$ | proved | Lean (`PointDependentBarrier.lean`) | No |
+| [SR-04](SR-04-slab-construction.md) | Global formulas and the slab family: $\beta\le1/R$ for every $Q$; point dependence beats every single matrix for $Q\ge\frac98(R+2)^2$; the $C>4$ improvement criterion | proved | Lean (`SlabDesign.lean`); comparison and criterion informal | No |
+| [SR-05](SR-05-stress-duality-and-products.md) | Stress duality (exact feasibility criterion), size of obstructions, weakness of relaxations, products of designs | proved | Lean for soundness and products (`StressDuality.lean`); completeness informal | No |
+| [SR-06](SR-06-galactic-thresholds.md) | Explicit constants: the analysed bound beats $2^n$ from $\log_2n\approx1.6\times10^5$, Grover from $\lesssim1.8\times10^6$, PPSZ from $\lesssim4\times10^6$ | empirical | Exact evaluation of the preprint's cost bound | No (evaluates its cost model) |
+| [SR-07](SR-07-graded-counting-bounded-density.md) | Exact Max-$k$-SAT histograms, weight enumerators and partition functions at bounded density | proved conditionally | Identities in Lean (`GradedCounting.lean`); reduction to Theorem C.1 informal | Yes (Theorem C.1) |
+| [SR-08](SR-08-corrections-to-gemini-summaries.md) | Twenty corrections to the two seed summaries | established against the inspected preprint | Preprint at level T, Lean or exact computation where marked | No |
+| [SR-09](SR-09-coverage-map.md) | Coverage map: which ETH-hard problems become subexponential, and the open boundary | proved conditionally | Reductions informal; bibliography at level T or A | Yes (Theorem 1.1) |
+
+Dependencies: SR-01 → SR-02 → {SR-03, SR-04, SR-05}; SR-04 and SR-05 feed
+[ETH-A03](../01-algorithmic-core/ETH-A03-point-dependent-designs.md); SR-06 feeds ETH-A06, ETH-F02 and
+ETH-F03; SR-07 and SR-09 feed the counting and fine-grained problems.

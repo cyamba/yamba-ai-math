@@ -1,0 +1,39 @@
+{
+  "id": "ETH003",
+  "title": "Audit the upstream Lean formalization of family 378 and decouple its algebraic core",
+  "objective": "Rebuild the openai/math Lean development for family 378 at a pinned commit within declared resource limits, inventory the statement of OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat and its trusted assumptions, and state, in our own Lean project, the purely algebraic counting theorem it rests on, reusing the verified building blocks in problems/eth/lean.",
+  "fleet": "pair",
+  "briefs": [
+    "problems/eth/07-formalization/ETH-G03-audit-the-upstream-formalization.md",
+    "problems/eth/07-formalization/ETH-G01-decouple-algebraic-core.md",
+    "problems/eth/01-algorithmic-core/ETH-A07-lean-versus-manuscript-exponent.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_cost_units": 16,
+    "max_workers": 2,
+    "max_rounds": 2
+  },
+  "rounds": 2,
+  "deliverables": [
+    "Pinned upstream commit, toolchain, dependency manifest and exact build commands, with resource use",
+    "A semantic inventory of the top-level formal statement: machine model, input encoding, exponent, axioms and any trusted external assumptions",
+    "A Lean statement of the algebraic counting core with as many of its lemmas proved as the limits allow, and the remaining obligations listed",
+    "A separate critic's verdict on whether the formal statement says what Theorem 1.1 says"
+  ],
+  "success_criteria": [
+    "Build assurance and mathematical meaning are reported separately",
+    "No sorry, axiom or native_decide is accepted silently; each is listed",
+    "Statements proved in our project build with lake --wfail and are recorded in verification.json"
+  ],
+  "stop_conditions": [
+    "Two proposal/review rounds are exhausted",
+    "The upstream build exceeds 120 cumulative build minutes or 30 GiB of storage",
+    "At most one clean build attempt and one diagnosed retry",
+    "No paid provider calls, publication or external contact beyond the user-authorized repository work"
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

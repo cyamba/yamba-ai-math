@@ -1,0 +1,44 @@
+{
+  "id": "ETH001",
+  "title": "Point-dependent designs and the square-root barrier of the ETH-refutation method",
+  "objective": "Decide, within declared limits, whether point-dependent swap designs can beat the square root in the exponent of the openai/math family 378 counting method: construct and exactly verify cube-polynomial families CP(Q,R) with per-direction bad fraction at most R^-C, C > 4, at Q about R^((C+2)/3), or prove a lower bound beta*(Q,R) >= R^-O(1) for Q >= R^(2+delta) for all families or for a precisely defined natural subclass, preserving every exact counterexample and partial bound.",
+  "fleet": "theorem",
+  "briefs": [
+    "problems/eth/01-algorithmic-core/ETH-A03-point-dependent-designs.md",
+    "problems/eth/01-algorithmic-core/ETH-A01-break-the-sqrt-log-barrier.md",
+    "problems/eth/subresults/SR-02-cube-polynomial-designs.md",
+    "problems/eth/subresults/SR-04-slab-construction.md",
+    "problems/eth/subresults/SR-05-stress-duality-and-products.md"
+  ],
+  "constraints": {
+    "max_agents": 6,
+    "max_cost_units": 28,
+    "max_workers": 3,
+    "max_rounds": 2
+  },
+  "rounds": 2,
+  "deliverables": [
+    "A survey note on the closest work (Turan problems in the hypercube, probabilistic and threshold degree of parity, rigidity of direction networks) with reading-list entries and inspection levels",
+    "Construction track: explicit families for CP(Q,R) at ratios Q/R >= R, each re-verified in exact rational arithmetic, with a table against the slab and window families",
+    "Lower-bound track: a proved bound for a precisely defined class of designs (for example region-based designs built from global formulas), or for all designs at R = 2 with generic nodes, with the exact step that fails for general families",
+    "Lean statements and proofs for every new design lemma used in a claimed exponent change, added to problems/eth/lean with a regenerated verification.json",
+    "A separate critic's verdict on every claimed theorem, and an updated RANKING.md and novelty ledger"
+  ],
+  "success_criteria": [
+    "Every claimed family is exactly verified; floating-point or modular evidence alone is reported as empirical",
+    "No improvement of the exponent is claimed unless the design lemma is Lean-checked, the cost accounting is re-derived from the preprint's display (2.9) and constraints, and a distinct critic accepts it",
+    "A lower bound states exactly which class of designs it covers; method-level barriers are not presented as barriers for all algorithms",
+    "Negative results, failed constructions and counterexamples to conjectures are preserved in the problem files"
+  ],
+  "stop_conditions": [
+    "Two proposal/review rounds are exhausted; record the strongest surviving statements and the open obligation",
+    "Exact computations exceed about 4 CPU hours in total or 16 GiB of memory",
+    "A claimed construction fails exact verification twice after repair; preserve it as a counterexample to the heuristic",
+    "The upstream working group reports an error in the parts of the preprint the cost model uses; re-scope before continuing",
+    "No paid provider calls, publication or external contact beyond the user-authorized repository work"
+  ],
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ]
+}

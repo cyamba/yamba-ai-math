@@ -1,0 +1,838 @@
+[
+ {
+  "family": "slab s0=0",
+  "r": 2,
+  "Q": 3,
+  "R": 2,
+  "D": 64,
+  "bad_edges": 6,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     12,
+     12
+    ],
+    "predicted": 12,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     12,
+     12
+    ],
+    "predicted": 12,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     12,
+     12
+    ],
+    "predicted": 12,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 24,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=1",
+  "r": 2,
+  "Q": 3,
+  "R": 2,
+  "D": 64,
+  "bad_edges": 6,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     20,
+     20
+    ],
+    "predicted": 20,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     20,
+     20
+    ],
+    "predicted": 20,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     20,
+     20
+    ],
+    "predicted": 20,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 40,
+  "sr03_holds": true
+ },
+ {
+  "family": "window low=1",
+  "r": 2,
+  "Q": 3,
+  "R": 2,
+  "D": 64,
+  "bad_edges": 6,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     20,
+     20
+    ],
+    "predicted": 20,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     20,
+     20
+    ],
+    "predicted": 20,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     20,
+     20
+    ],
+    "predicted": 20,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 40,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=0",
+  "r": 2,
+  "Q": 3,
+  "R": 3,
+  "D": 64,
+  "bad_edges": 3,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     2,
+     2
+    ],
+    "predicted": 2,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     2,
+     2
+    ],
+    "predicted": 2,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     2,
+     2
+    ],
+    "predicted": 2,
+    "match": true
+   }
+  ],
+  "sr03_bound": 1,
+  "min_sum_over_R_nodes": 6,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=1",
+  "r": 2,
+  "Q": 3,
+  "R": 3,
+  "D": 64,
+  "bad_edges": 6,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     12,
+     12
+    ],
+    "predicted": 12,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     12,
+     12
+    ],
+    "predicted": 12,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     12,
+     12
+    ],
+    "predicted": 12,
+    "match": true
+   }
+  ],
+  "sr03_bound": 1,
+  "min_sum_over_R_nodes": 36,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=2",
+  "r": 2,
+  "Q": 3,
+  "R": 3,
+  "D": 64,
+  "bad_edges": 3,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   }
+  ],
+  "sr03_bound": 1,
+  "min_sum_over_R_nodes": 54,
+  "sr03_holds": true
+ },
+ {
+  "family": "window low=0",
+  "r": 2,
+  "Q": 3,
+  "R": 3,
+  "D": 64,
+  "bad_edges": 3,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     2,
+     2
+    ],
+    "predicted": 2,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     2,
+     2
+    ],
+    "predicted": 2,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     2,
+     2
+    ],
+    "predicted": 2,
+    "match": true
+   }
+  ],
+  "sr03_bound": 1,
+  "min_sum_over_R_nodes": 6,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=0",
+  "r": 3,
+  "Q": 2,
+  "R": 2,
+  "D": 81,
+  "bad_edges": 2,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 36,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=1",
+  "r": 3,
+  "Q": 2,
+  "R": 2,
+  "D": 81,
+  "bad_edges": 2,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     36,
+     36
+    ],
+    "predicted": 36,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     36,
+     36
+    ],
+    "predicted": 36,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 72,
+  "sr03_holds": true
+ },
+ {
+  "family": "window low=0",
+  "r": 3,
+  "Q": 2,
+  "R": 2,
+  "D": 81,
+  "bad_edges": 2,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 36,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=0",
+  "r": 2,
+  "Q": 4,
+  "R": 2,
+  "D": 256,
+  "bad_edges": 16,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   },
+   {
+    "t": 3,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   }
+  ],
+  "sr03_bound": 16,
+  "min_sum_over_R_nodes": 112,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=1",
+  "r": 2,
+  "Q": 4,
+  "R": 2,
+  "D": 256,
+  "bad_edges": 16,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     72,
+     72
+    ],
+    "predicted": 72,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     72,
+     72
+    ],
+    "predicted": 72,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     72,
+     72
+    ],
+    "predicted": 72,
+    "match": true
+   },
+   {
+    "t": 3,
+    "rank_mod_p": [
+     72,
+     72
+    ],
+    "predicted": 72,
+    "match": true
+   }
+  ],
+  "sr03_bound": 16,
+  "min_sum_over_R_nodes": 144,
+  "sr03_holds": true
+ },
+ {
+  "family": "window low=1",
+  "r": 2,
+  "Q": 4,
+  "R": 2,
+  "D": 256,
+  "bad_edges": 16,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     72,
+     72
+    ],
+    "predicted": 72,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     72,
+     72
+    ],
+    "predicted": 72,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     72,
+     72
+    ],
+    "predicted": 72,
+    "match": true
+   },
+   {
+    "t": 3,
+    "rank_mod_p": [
+     72,
+     72
+    ],
+    "predicted": 72,
+    "match": true
+   }
+  ],
+  "sr03_bound": 16,
+  "min_sum_over_R_nodes": 144,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=0",
+  "r": 2,
+  "Q": 4,
+  "R": 3,
+  "D": 256,
+  "bad_edges": 12,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   },
+   {
+    "t": 3,
+    "rank_mod_p": [
+     18,
+     18
+    ],
+    "predicted": 18,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 54,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=1",
+  "r": 2,
+  "Q": 4,
+  "R": 3,
+  "D": 256,
+  "bad_edges": 12,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     54,
+     54
+    ],
+    "predicted": 54,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     54,
+     54
+    ],
+    "predicted": 54,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     54,
+     54
+    ],
+    "predicted": 54,
+    "match": true
+   },
+   {
+    "t": 3,
+    "rank_mod_p": [
+     54,
+     54
+    ],
+    "predicted": 54,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 162,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=2",
+  "r": 2,
+  "Q": 4,
+  "R": 3,
+  "D": 256,
+  "bad_edges": 8,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   },
+   {
+    "t": 3,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 168,
+  "sr03_holds": true
+ },
+ {
+  "family": "window low=1",
+  "r": 2,
+  "Q": 4,
+  "R": 3,
+  "D": 256,
+  "bad_edges": 8,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   },
+   {
+    "t": 3,
+    "rank_mod_p": [
+     56,
+     56
+    ],
+    "predicted": 56,
+    "match": true
+   }
+  ],
+  "sr03_bound": 4,
+  "min_sum_over_R_nodes": 168,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=0",
+  "r": 3,
+  "Q": 3,
+  "R": 2,
+  "D": 729,
+  "bad_edges": 6,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     216,
+     216
+    ],
+    "predicted": 216,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     216,
+     216
+    ],
+    "predicted": 216,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     216,
+     216
+    ],
+    "predicted": 216,
+    "match": true
+   }
+  ],
+  "sr03_bound": 36,
+  "min_sum_over_R_nodes": 432,
+  "sr03_holds": true
+ },
+ {
+  "family": "slab s0=1",
+  "r": 3,
+  "Q": 3,
+  "R": 2,
+  "D": 729,
+  "bad_edges": 6,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     270,
+     270
+    ],
+    "predicted": 270,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     270,
+     270
+    ],
+    "predicted": 270,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     270,
+     270
+    ],
+    "predicted": 270,
+    "match": true
+   }
+  ],
+  "sr03_bound": 36,
+  "min_sum_over_R_nodes": 540,
+  "sr03_holds": true
+ },
+ {
+  "family": "window low=1",
+  "r": 3,
+  "Q": 3,
+  "R": 2,
+  "D": 729,
+  "bad_edges": 6,
+  "nodes": [
+   {
+    "t": 0,
+    "rank_mod_p": [
+     270,
+     270
+    ],
+    "predicted": 270,
+    "match": true
+   },
+   {
+    "t": 1,
+    "rank_mod_p": [
+     270,
+     270
+    ],
+    "predicted": 270,
+    "match": true
+   },
+   {
+    "t": 2,
+    "rank_mod_p": [
+     270,
+     270
+    ],
+    "predicted": 270,
+    "match": true
+   }
+  ],
+  "sr03_bound": 36,
+  "min_sum_over_R_nodes": 540,
+  "sr03_holds": true
+ }
+]

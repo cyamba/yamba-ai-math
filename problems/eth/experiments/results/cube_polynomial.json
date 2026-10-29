@@ -1,0 +1,3090 @@
+{
+ "description": "Exact small cases of the cube polynomial problem CP(Q, R).",
+ "nodes": "scaled",
+ "cases": [
+  {
+   "Q": 2,
+   "R": 2,
+   "edges": 4,
+   "edges_per_direction": 2,
+   "nodes": [
+    "1/2",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 1,
+   "hitting_total": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.0
+   },
+   "hitting_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.0
+   },
+   "slab": {
+    "total": 2,
+    "max_direction": 1,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 2,
+    "max_direction": 1,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.01,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     1,
+     0
+    ],
+    "bad_edges": [
+     [
+      2,
+      0
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.01,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     0,
+     1
+    ],
+    "bad_edges": [
+     [
+      1,
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 3,
+   "R": 2,
+   "edges": 12,
+   "edges_per_direction": 4,
+   "nodes": [
+    "1/3",
+    "2/3",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 3,
+   "hitting_total": {
+    "value": 3,
+    "status": 0,
+    "seconds": 0.01
+   },
+   "hitting_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.01
+   },
+   "slab": {
+    "total": 6,
+    "max_direction": 2,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 6,
+    "max_direction": 2,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 4,
+    "status": 0,
+    "seconds": 0.03,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 3.999999999999979,
+    "per_direction": [
+     0,
+     2,
+     2
+    ],
+    "bad_edges": [
+     [
+      0,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      2
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 2,
+    "status": 0,
+    "seconds": 0.06,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 2.0,
+    "per_direction": [
+     2,
+     2,
+     2
+    ],
+    "bad_edges": [
+     [
+      4,
+      0
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 3,
+   "R": 3,
+   "edges": 12,
+   "edges_per_direction": 4,
+   "nodes": [
+    "1/3",
+    "2/3",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 1,
+   "hitting_total": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.0
+   },
+   "hitting_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.0
+   },
+   "slab": {
+    "total": 3,
+    "max_direction": 1,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 3,
+    "max_direction": 1,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.01,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     0,
+     1,
+     0
+    ],
+    "bad_edges": [
+     [
+      0,
+      1
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.02,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     1,
+     1,
+     0
+    ],
+    "bad_edges": [
+     [
+      4,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 4,
+   "R": 2,
+   "edges": 32,
+   "edges_per_direction": 8,
+   "nodes": [
+    "1/4",
+    "1/2",
+    "3/4",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 8,
+   "hitting_total": {
+    "value": 8,
+    "status": 0,
+    "seconds": 0.01
+   },
+   "hitting_max_direction": {
+    "value": 2,
+    "status": 0,
+    "seconds": 0.01
+   },
+   "slab": {
+    "total": 16,
+    "max_direction": 4,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 20,
+    "max_direction": 5,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 12,
+    "status": 0,
+    "seconds": 1.26,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 12.0,
+    "per_direction": [
+     4,
+     3,
+     3,
+     2
+    ],
+    "bad_edges": [
+     [
+      0,
+      0
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      13,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      5,
+      3
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 4,
+    "status": 0,
+    "seconds": 3.85,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 4.0,
+    "per_direction": [
+     4,
+     4,
+     3,
+     4
+    ],
+    "bad_edges": [
+     [
+      0,
+      0
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      14,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      7,
+      3
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 4,
+   "R": 3,
+   "edges": 32,
+   "edges_per_direction": 8,
+   "nodes": [
+    "1/4",
+    "1/2",
+    "3/4",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 3,
+   "hitting_total": {
+    "value": 3,
+    "status": 0,
+    "seconds": 0.01
+   },
+   "hitting_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.01
+   },
+   "slab": {
+    "total": 8,
+    "max_direction": 2,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 8,
+    "max_direction": 2,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 4,
+    "status": 0,
+    "seconds": 0.32,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 3.999999999999902,
+    "per_direction": [
+     2,
+     0,
+     1,
+     1
+    ],
+    "bad_edges": [
+     [
+      6,
+      0
+     ],
+     [
+      8,
+      0
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      6,
+      3
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.26,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "bad_edges": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      7,
+      3
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 4,
+   "R": 4,
+   "edges": 32,
+   "edges_per_direction": 8,
+   "nodes": [
+    "1/4",
+    "1/2",
+    "3/4",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 1,
+   "hitting_total": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.0
+   },
+   "hitting_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.0
+   },
+   "slab": {
+    "total": 4,
+    "max_direction": 1,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 4,
+    "max_direction": 1,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.02,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.000000000000001,
+    "per_direction": [
+     0,
+     0,
+     1,
+     0
+    ],
+    "bad_edges": [
+     [
+      0,
+      2
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.04,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     0,
+     1,
+     0,
+     0
+    ],
+    "bad_edges": [
+     [
+      4,
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 5,
+   "R": 2,
+   "edges": 80,
+   "edges_per_direction": 16,
+   "nodes": [
+    "1/5",
+    "2/5",
+    "3/5",
+    "4/5",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 20,
+   "hitting_total": {
+    "value": 24,
+    "status": 0,
+    "seconds": 0.98
+   },
+   "hitting_max_direction": {
+    "value": 5,
+    "status": 0,
+    "seconds": 0.24
+   },
+   "slab": {
+    "total": 40,
+    "max_direction": 8,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 50,
+    "max_direction": 10,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 32,
+    "status": 1,
+    "seconds": 240.02,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 25.0,
+    "per_direction": [
+     5,
+     7,
+     7,
+     8,
+     5
+    ],
+    "bad_edges": [
+     [
+      6,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      16,
+      0
+     ],
+     [
+      30,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      9,
+      1
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      17,
+      1
+     ],
+     [
+      20,
+      1
+     ],
+     [
+      24,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      18,
+      2
+     ],
+     [
+      24,
+      2
+     ],
+     [
+      27,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      17,
+      3
+     ],
+     [
+      18,
+      3
+     ],
+     [
+      20,
+      3
+     ],
+     [
+      23,
+      3
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      15,
+      4
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 7,
+    "status": 1,
+    "seconds": 240.01,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 5.0,
+    "per_direction": [
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "bad_edges": [
+     [
+      4,
+      0
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      14,
+      0
+     ],
+     [
+      18,
+      0
+     ],
+     [
+      24,
+      0
+     ],
+     [
+      30,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      20,
+      1
+     ],
+     [
+      24,
+      1
+     ],
+     [
+      25,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      16,
+      2
+     ],
+     [
+      19,
+      2
+     ],
+     [
+      25,
+      2
+     ],
+     [
+      26,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      17,
+      3
+     ],
+     [
+      18,
+      3
+     ],
+     [
+      20,
+      3
+     ],
+     [
+      23,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      12,
+      4
+     ],
+     [
+      15,
+      4
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 5,
+   "R": 3,
+   "edges": 80,
+   "edges_per_direction": 16,
+   "nodes": [
+    "1/5",
+    "2/5",
+    "3/5",
+    "4/5",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 7,
+   "hitting_total": {
+    "value": 8,
+    "status": 0,
+    "seconds": 0.14
+   },
+   "hitting_max_direction": {
+    "value": 2,
+    "status": 0,
+    "seconds": 0.08
+   },
+   "slab": {
+    "total": 25,
+    "max_direction": 5,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 30,
+    "max_direction": 6,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 14,
+    "status": 1,
+    "seconds": 240.01,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 8.0,
+    "per_direction": [
+     4,
+     1,
+     4,
+     1,
+     4
+    ],
+    "bad_edges": [
+     [
+      4,
+      0
+     ],
+     [
+      16,
+      0
+     ],
+     [
+      24,
+      0
+     ],
+     [
+      30,
+      0
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      16,
+      2
+     ],
+     [
+      24,
+      2
+     ],
+     [
+      27,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      15,
+      4
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 4,
+    "status": 1,
+    "seconds": 240.01,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 2.0,
+    "per_direction": [
+     4,
+     3,
+     4,
+     4,
+     4
+    ],
+    "bad_edges": [
+     [
+      12,
+      0
+     ],
+     [
+      16,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      26,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      16,
+      1
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      18,
+      2
+     ],
+     [
+      24,
+      2
+     ],
+     [
+      27,
+      2
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      17,
+      3
+     ],
+     [
+      19,
+      3
+     ],
+     [
+      23,
+      3
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      12,
+      4
+     ],
+     [
+      14,
+      4
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 5,
+   "R": 4,
+   "edges": 80,
+   "edges_per_direction": 16,
+   "nodes": [
+    "1/5",
+    "2/5",
+    "3/5",
+    "4/5",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 3,
+   "hitting_total": {
+    "value": 3,
+    "status": 0,
+    "seconds": 0.01
+   },
+   "hitting_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.0
+   },
+   "slab": {
+    "total": 10,
+    "max_direction": 2,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 10,
+    "max_direction": 2,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 4,
+    "status": 0,
+    "seconds": 4.37,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 3.9999999999998597,
+    "per_direction": [
+     0,
+     2,
+     0,
+     2,
+     0
+    ],
+    "bad_edges": [
+     [
+      1,
+      1
+     ],
+     [
+      28,
+      1
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      20,
+      3
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.21,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     1,
+     1,
+     1,
+     0,
+     1
+    ],
+    "bad_edges": [
+     [
+      22,
+      0
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      19,
+      2
+     ],
+     [
+      8,
+      4
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 5,
+   "R": 5,
+   "edges": 80,
+   "edges_per_direction": 16,
+   "nodes": [
+    "1/5",
+    "2/5",
+    "3/5",
+    "4/5",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 1,
+   "hitting_total": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.0
+   },
+   "hitting_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.0
+   },
+   "slab": {
+    "total": 5,
+    "max_direction": 1,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 5,
+    "max_direction": 1,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.02,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "bad_edges": [
+     [
+      16,
+      2
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.16,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "bad_edges": [
+     [
+      3,
+      3
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 6,
+   "R": 2,
+   "edges": 192,
+   "edges_per_direction": 32,
+   "nodes": [
+    "1/6",
+    "1/3",
+    "1/2",
+    "2/3",
+    "5/6",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 48,
+   "hitting_total": {
+    "value": 60,
+    "status": 1,
+    "seconds": 240.02
+   },
+   "hitting_max_direction": {
+    "value": 10,
+    "status": 0,
+    "seconds": 96.66
+   },
+   "slab": {
+    "total": 96,
+    "max_direction": 16,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 132,
+    "max_direction": 22,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 91,
+    "status": 1,
+    "seconds": 240.01,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 51.0,
+    "per_direction": [
+     16,
+     12,
+     14,
+     16,
+     15,
+     18
+    ],
+    "bad_edges": [
+     [
+      4,
+      0
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      14,
+      0
+     ],
+     [
+      18,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      24,
+      0
+     ],
+     [
+      30,
+      0
+     ],
+     [
+      34,
+      0
+     ],
+     [
+      40,
+      0
+     ],
+     [
+      46,
+      0
+     ],
+     [
+      48,
+      0
+     ],
+     [
+      54,
+      0
+     ],
+     [
+      58,
+      0
+     ],
+     [
+      60,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      13,
+      1
+     ],
+     [
+      25,
+      1
+     ],
+     [
+      28,
+      1
+     ],
+     [
+      32,
+      1
+     ],
+     [
+      33,
+      1
+     ],
+     [
+      36,
+      1
+     ],
+     [
+      40,
+      1
+     ],
+     [
+      48,
+      1
+     ],
+     [
+      53,
+      1
+     ],
+     [
+      61,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      17,
+      2
+     ],
+     [
+      18,
+      2
+     ],
+     [
+      19,
+      2
+     ],
+     [
+      24,
+      2
+     ],
+     [
+      25,
+      2
+     ],
+     [
+      27,
+      2
+     ],
+     [
+      32,
+      2
+     ],
+     [
+      34,
+      2
+     ],
+     [
+      43,
+      2
+     ],
+     [
+      57,
+      2
+     ],
+     [
+      58,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      18,
+      3
+     ],
+     [
+      20,
+      3
+     ],
+     [
+      21,
+      3
+     ],
+     [
+      23,
+      3
+     ],
+     [
+      33,
+      3
+     ],
+     [
+      34,
+      3
+     ],
+     [
+      36,
+      3
+     ],
+     [
+      39,
+      3
+     ],
+     [
+      48,
+      3
+     ],
+     [
+      51,
+      3
+     ],
+     [
+      53,
+      3
+     ],
+     [
+      54,
+      3
+     ],
+     [
+      55,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      33,
+      4
+     ],
+     [
+      36,
+      4
+     ],
+     [
+      39,
+      4
+     ],
+     [
+      40,
+      4
+     ],
+     [
+      43,
+      4
+     ],
+     [
+      46,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      13,
+      5
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      16,
+      5
+     ],
+     [
+      19,
+      5
+     ],
+     [
+      21,
+      5
+     ],
+     [
+      22,
+      5
+     ],
+     [
+      23,
+      5
+     ],
+     [
+      25,
+      5
+     ],
+     [
+      26,
+      5
+     ],
+     [
+      28,
+      5
+     ],
+     [
+      31,
+      5
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 17,
+    "status": 1,
+    "seconds": 240.05,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 9.0,
+    "per_direction": [
+     16,
+     17,
+     14,
+     17,
+     17,
+     17
+    ],
+    "bad_edges": [
+     [
+      2,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      8,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      16,
+      0
+     ],
+     [
+      26,
+      0
+     ],
+     [
+      28,
+      0
+     ],
+     [
+      32,
+      0
+     ],
+     [
+      42,
+      0
+     ],
+     [
+      44,
+      0
+     ],
+     [
+      46,
+      0
+     ],
+     [
+      52,
+      0
+     ],
+     [
+      56,
+      0
+     ],
+     [
+      58,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      13,
+      1
+     ],
+     [
+      16,
+      1
+     ],
+     [
+      21,
+      1
+     ],
+     [
+      25,
+      1
+     ],
+     [
+      32,
+      1
+     ],
+     [
+      37,
+      1
+     ],
+     [
+      41,
+      1
+     ],
+     [
+      45,
+      1
+     ],
+     [
+      48,
+      1
+     ],
+     [
+      49,
+      1
+     ],
+     [
+      52,
+      1
+     ],
+     [
+      57,
+      1
+     ],
+     [
+      60,
+      1
+     ],
+     [
+      61,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      19,
+      2
+     ],
+     [
+      24,
+      2
+     ],
+     [
+      35,
+      2
+     ],
+     [
+      40,
+      2
+     ],
+     [
+      43,
+      2
+     ],
+     [
+      48,
+      2
+     ],
+     [
+      50,
+      2
+     ],
+     [
+      57,
+      2
+     ],
+     [
+      58,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      17,
+      3
+     ],
+     [
+      18,
+      3
+     ],
+     [
+      20,
+      3
+     ],
+     [
+      23,
+      3
+     ],
+     [
+      33,
+      3
+     ],
+     [
+      34,
+      3
+     ],
+     [
+      36,
+      3
+     ],
+     [
+      48,
+      3
+     ],
+     [
+      50,
+      3
+     ],
+     [
+      51,
+      3
+     ],
+     [
+      52,
+      3
+     ],
+     [
+      53,
+      3
+     ],
+     [
+      54,
+      3
+     ],
+     [
+      55,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      12,
+      4
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      15,
+      4
+     ],
+     [
+      33,
+      4
+     ],
+     [
+      34,
+      4
+     ],
+     [
+      36,
+      4
+     ],
+     [
+      39,
+      4
+     ],
+     [
+      40,
+      4
+     ],
+     [
+      45,
+      4
+     ],
+     [
+      46,
+      4
+     ],
+     [
+      47,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      9,
+      5
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      13,
+      5
+     ],
+     [
+      15,
+      5
+     ],
+     [
+      17,
+      5
+     ],
+     [
+      18,
+      5
+     ],
+     [
+      23,
+      5
+     ],
+     [
+      24,
+      5
+     ],
+     [
+      27,
+      5
+     ],
+     [
+      29,
+      5
+     ],
+     [
+      30,
+      5
+     ],
+     [
+      31,
+      5
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 6,
+   "R": 3,
+   "edges": 192,
+   "edges_per_direction": 32,
+   "nodes": [
+    "1/6",
+    "1/3",
+    "1/2",
+    "2/3",
+    "5/6",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 16,
+   "hitting_total": {
+    "value": 22,
+    "status": 1,
+    "seconds": 240.02
+   },
+   "hitting_max_direction": {
+    "value": 4,
+    "status": 0,
+    "seconds": 1.71
+   },
+   "slab": {
+    "total": 60,
+    "max_direction": 10,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 72,
+    "max_direction": 12,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 60,
+    "status": 1,
+    "seconds": 240.01,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 9.0,
+    "per_direction": [
+     3,
+     0,
+     13,
+     20,
+     9,
+     15
+    ],
+    "bad_edges": [
+     [
+      8,
+      0
+     ],
+     [
+      34,
+      0
+     ],
+     [
+      56,
+      0
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      18,
+      2
+     ],
+     [
+      26,
+      2
+     ],
+     [
+      34,
+      2
+     ],
+     [
+      40,
+      2
+     ],
+     [
+      41,
+      2
+     ],
+     [
+      43,
+      2
+     ],
+     [
+      48,
+      2
+     ],
+     [
+      49,
+      2
+     ],
+     [
+      50,
+      2
+     ],
+     [
+      57,
+      2
+     ],
+     [
+      58,
+      2
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      7,
+      3
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      17,
+      3
+     ],
+     [
+      18,
+      3
+     ],
+     [
+      19,
+      3
+     ],
+     [
+      20,
+      3
+     ],
+     [
+      21,
+      3
+     ],
+     [
+      23,
+      3
+     ],
+     [
+      34,
+      3
+     ],
+     [
+      35,
+      3
+     ],
+     [
+      36,
+      3
+     ],
+     [
+      37,
+      3
+     ],
+     [
+      38,
+      3
+     ],
+     [
+      39,
+      3
+     ],
+     [
+      52,
+      3
+     ],
+     [
+      53,
+      3
+     ],
+     [
+      54,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      15,
+      4
+     ],
+     [
+      35,
+      4
+     ],
+     [
+      39,
+      4
+     ],
+     [
+      40,
+      4
+     ],
+     [
+      47,
+      4
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      15,
+      5
+     ],
+     [
+      16,
+      5
+     ],
+     [
+      20,
+      5
+     ],
+     [
+      21,
+      5
+     ],
+     [
+      22,
+      5
+     ],
+     [
+      23,
+      5
+     ],
+     [
+      27,
+      5
+     ],
+     [
+      28,
+      5
+     ],
+     [
+      29,
+      5
+     ],
+     [
+      30,
+      5
+     ],
+     [
+      31,
+      5
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 12,
+    "status": 1,
+    "seconds": 240.0,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 2.0,
+    "per_direction": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "bad_edges": [
+     [
+      2,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      16,
+      0
+     ],
+     [
+      28,
+      0
+     ],
+     [
+      30,
+      0
+     ],
+     [
+      36,
+      0
+     ],
+     [
+      42,
+      0
+     ],
+     [
+      48,
+      0
+     ],
+     [
+      50,
+      0
+     ],
+     [
+      54,
+      0
+     ],
+     [
+      58,
+      0
+     ],
+     [
+      60,
+      0
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      13,
+      1
+     ],
+     [
+      16,
+      1
+     ],
+     [
+      17,
+      1
+     ],
+     [
+      20,
+      1
+     ],
+     [
+      21,
+      1
+     ],
+     [
+      32,
+      1
+     ],
+     [
+      37,
+      1
+     ],
+     [
+      40,
+      1
+     ],
+     [
+      41,
+      1
+     ],
+     [
+      60,
+      1
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      34,
+      2
+     ],
+     [
+      35,
+      2
+     ],
+     [
+      41,
+      2
+     ],
+     [
+      43,
+      2
+     ],
+     [
+      48,
+      2
+     ],
+     [
+      49,
+      2
+     ],
+     [
+      51,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      18,
+      3
+     ],
+     [
+      19,
+      3
+     ],
+     [
+      21,
+      3
+     ],
+     [
+      32,
+      3
+     ],
+     [
+      33,
+      3
+     ],
+     [
+      49,
+      3
+     ],
+     [
+      50,
+      3
+     ],
+     [
+      51,
+      3
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      32,
+      4
+     ],
+     [
+      34,
+      4
+     ],
+     [
+      37,
+      4
+     ],
+     [
+      38,
+      4
+     ],
+     [
+      42,
+      4
+     ],
+     [
+      44,
+      4
+     ],
+     [
+      45,
+      4
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      15,
+      5
+     ],
+     [
+      20,
+      5
+     ],
+     [
+      21,
+      5
+     ],
+     [
+      22,
+      5
+     ],
+     [
+      23,
+      5
+     ],
+     [
+      25,
+      5
+     ],
+     [
+      28,
+      5
+     ],
+     [
+      29,
+      5
+     ],
+     [
+      31,
+      5
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 6,
+   "R": 4,
+   "edges": 192,
+   "edges_per_direction": 32,
+   "nodes": [
+    "1/6",
+    "1/3",
+    "1/2",
+    "2/3",
+    "5/6",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 6,
+   "hitting_total": {
+    "value": 8,
+    "status": 0,
+    "seconds": 0.78
+   },
+   "hitting_max_direction": {
+    "value": 2,
+    "status": 0,
+    "seconds": 0.2
+   },
+   "slab": {
+    "total": 36,
+    "max_direction": 6,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 42,
+    "max_direction": 7,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 18,
+    "status": 1,
+    "seconds": 240.0,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 4.000000000000012,
+    "per_direction": [
+     1,
+     6,
+     4,
+     1,
+     2,
+     4
+    ],
+    "bad_edges": [
+     [
+      16,
+      0
+     ],
+     [
+      13,
+      1
+     ],
+     [
+      37,
+      1
+     ],
+     [
+      40,
+      1
+     ],
+     [
+      41,
+      1
+     ],
+     [
+      45,
+      1
+     ],
+     [
+      61,
+      1
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      16,
+      2
+     ],
+     [
+      40,
+      2
+     ],
+     [
+      41,
+      2
+     ],
+     [
+      55,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      39,
+      4
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      13,
+      5
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 5,
+    "status": 1,
+    "seconds": 240.0,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     5,
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "bad_edges": [
+     [
+      4,
+      0
+     ],
+     [
+      18,
+      0
+     ],
+     [
+      46,
+      0
+     ],
+     [
+      48,
+      0
+     ],
+     [
+      54,
+      0
+     ],
+     [
+      17,
+      1
+     ],
+     [
+      28,
+      1
+     ],
+     [
+      33,
+      1
+     ],
+     [
+      45,
+      1
+     ],
+     [
+      61,
+      1
+     ],
+     [
+      26,
+      2
+     ],
+     [
+      33,
+      2
+     ],
+     [
+      40,
+      2
+     ],
+     [
+      43,
+      2
+     ],
+     [
+      49,
+      2
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      7,
+      3
+     ],
+     [
+      17,
+      3
+     ],
+     [
+      18,
+      3
+     ],
+     [
+      38,
+      3
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      18,
+      5
+     ],
+     [
+      24,
+      5
+     ],
+     [
+      28,
+      5
+     ]
+    ]
+   }
+  },
+  {
+   "Q": 6,
+   "R": 5,
+   "edges": 192,
+   "edges_per_direction": 32,
+   "nodes": [
+    "1/6",
+    "1/3",
+    "1/2",
+    "2/3",
+    "5/6",
+    "1"
+   ],
+   "subcube_bound_total": null,
+   "averaging_lower_bound_total": 3,
+   "hitting_total": {
+    "value": 3,
+    "status": 0,
+    "seconds": 0.04
+   },
+   "hitting_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 0.01
+   },
+   "slab": {
+    "total": 12,
+    "max_direction": 2,
+    "exact_good_set_feasible": true
+   },
+   "window": {
+    "total": 12,
+    "max_direction": 2,
+    "exact_good_set_feasible": true
+   },
+   "realizable_total": {
+    "value": 4,
+    "status": 0,
+    "seconds": 50.59,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 3.9999999999995763,
+    "per_direction": [
+     0,
+     0,
+     2,
+     1,
+     0,
+     1
+    ],
+    "bad_edges": [
+     [
+      11,
+      2
+     ],
+     [
+      48,
+      2
+     ],
+     [
+      52,
+      3
+     ],
+     [
+      11,
+      5
+     ]
+    ]
+   },
+   "realizable_max_direction": {
+    "value": 1,
+    "status": 0,
+    "seconds": 13.76,
+    "exact_good_set_feasible": true,
+    "mip_dual_bound": 1.0,
+    "per_direction": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "bad_edges": [
+     [
+      54,
+      0
+     ],
+     [
+      9,
+      1
+     ],
+     [
+      34,
+      2
+     ],
+     [
+      23,
+      3
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      6,
+      5
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -76,3 +76,4 @@ formalization of the Classification of Finite Simple Groups produced by an agent
 | ID | Found | Lead | Kind | State |
 | --- | --- | --- | --- | --- |
 | [NR-001](NR-001-cfsg-lean-agent-swarm.md) | 2026-10-28 | The Classification of Finite Simple Groups formalized in Lean by an AI agent swarm (Axiom), with a repaired route to the Unbalanced Group Theorem posted on Hexagon | Formalization milestone, method, new result, venue | `EXPLORE FURTHER` |
+| [NR-002](NR-002-eth-refutations.md) | 2026-10-26 | The Exponential Time Hypothesis reported false (openai/math family 378; a second, independent report by Anthropic known only from a secondary article); promoted to `problems/eth` | New result, formalization milestone | `PROMOTED`, with `TRACKING` items |

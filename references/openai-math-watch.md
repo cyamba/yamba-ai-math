@@ -39,7 +39,7 @@ inspection level, and any use as a dependency needs the `audit-theorem` workflow
 | 168 Combinatorial invariance of Kazhdan–Lusztig polynomials | Positivity and Bruhat-interval combinatorics beside H3 | Candidate `explore-angle` source; check its Lean coverage first |
 | 122 Trace-reconstruction bounds | Deletion-channel decoding, relevant to sequencing and DNA storage | Bioinformatics lead; no project yet |
 | 107 Matrix multiplication, omega at most 9/4 | Compute cost of dense linear algebra | [E001](../explore/E001-certified-attention-compression.md), [E014](../explore/E014-value-of-computation.md) |
-| 378 Disproof of the Exponential Time Hypothesis | Exact model counting in subexponential time | [E014](../explore/E014-value-of-computation.md); record external review state before any use |
+| 378 Disproof of the Exponential Time Hypothesis | Exact model counting in subexponential time | [E014](../explore/E014-value-of-computation.md); promoted to [problems/eth](../problems/eth/README.md) on 2026-10-29 ([NR-002](../novelty_radar/NR-002-eth-refutations.md)); record external review state before any use |
 | 133 Complexity of Weisfeiler–Leman refinement | Limits of graph-isomorphism refinement, graph-network expressivity | [E003](../explore/E003-approximate-symmetry.md), [E004](../explore/E004-multiscale-evidence-graphs.md) |
 | 139 Log-concave sampling query complexity | Cost of sampling under oracle access | [E011](../explore/E011-sequential-risk-control.md), [E014](../explore/E014-value-of-computation.md) |
 | 186 Uniform influence and sharp thresholds | Phase transitions in monotone properties | [E013](../explore/E013-agent-topology-and-correlation.md) |
@@ -60,6 +60,7 @@ Each row is a question to triage, not a commitment. Promote one only by writing 
 | OW002 | 169, 168 | Which neighbouring positivity statements (Schur and h-positivity cases, KL-type invariance) remain open after these releases, and does either family's Lean coverage supply reusable definitions for our mathlib bridge? | PENDING triage |
 | OW003 | 122, 121 | Is there a tractable deletion or edit channel model close to real sequencing error profiles where the quasipolynomial decoder or the edit-distance approximation gives a usable algorithm? | PENDING triage |
 | OW004 | 378 | If the ETH disproof survives review, what does subexponential #k-SAT imply for verification cost budgets in E014? | WAITING on external review |
+| OW005 | 378 | Where does the method's $\sqrt{\log n}$ come from, and which consequences follow? | PROMOTED to [problems/eth](../problems/eth/README.md) at the operator's request, 2026-10-29 |
 
 ## Update log
 
