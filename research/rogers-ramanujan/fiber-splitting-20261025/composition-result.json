@@ -1,0 +1,24 @@
+{
+  "status": "restricted_composition_passes_full_KR1_unresolved",
+  "elapsed_seconds": 1.3062775419966783,
+  "critic_weight56_alternate_rejected": true,
+  "critic_witness_C": {
+    "a": 4,
+    "b": 0,
+    "mu": [
+      9,
+      9,
+      11,
+      11
+    ],
+    "nu": []
+  },
+  "through_weight40": {
+    "H3_preserved": 3498,
+    "combined": 3700,
+    "exactly_recognized_targets": 3700
+  },
+  "funded_composition_cases": 405,
+  "composed_sha256": "56a4f6039558b3526026d4d5202b46297ece7963e70c9b70184988041044aae0",
+  "discovery_not_held_out": true
+}

@@ -1,0 +1,64 @@
+{
+  "review_threads": [
+    {
+      "id": "PRRT_kwDOVRIfY86v8aLK",
+      "is_resolved": false,
+      "is_outdated": false,
+      "path": "research/partitions/paper/multidimensional_ferrers_article.tex",
+      "line": 157,
+      "diff_side": "RIGHT",
+      "start_line": 157,
+      "start_diff_side": null,
+      "original_line": 157,
+      "original_start_line": null,
+      "resolved_by": null,
+      "comments": [
+        {
+          "id": "PRRC_kwDOVRIfY88AAAABBGb13w",
+          "database_id": 4368823775,
+          "body": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Preserve inversion weight in the second rotation branch**\n\nFor the valid Hessenberg vector `h=(2,2,4,5,5)` and source tableau `T=((1,4),(2,5),(3,))`, the collision condition holds and this second branch is selected, but its output `((2,3,5),(1,4))` has graph-inversion weight 2 whereas the source has weight 1. Thus the displayed map does not satisfy the claimed weight-preserving theorem. The Python `phi_221` avoids this counterexample by checking inversion equality and selecting the fourth candidate, so its successful exhaustive verification does not validate the published piecewise formula. Correct the branch predicates in both article sources and regenerate the PDF.\n\nAGENTS.md reference: [AGENTS.md:L73-L73](https://github.com/cyamba/yamba-ai-math/blob/e43a3d02fe3abc60364feaf4a75985b4be602247/AGENTS.md#L73-L73)\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+          "created_at": "2026-10-24T22:50:55Z",
+          "updated_at": "2026-10-24T22:50:55Z",
+          "author": {
+            "login": "chatgpt-codex-connector",
+            "name": "chatgpt-codex-connector",
+            "email": null,
+            "avatar_url": "https://avatars.githubusercontent.com/in/1144995?v=4",
+            "id": null
+          },
+          "viewer_did_author": false
+        }
+      ]
+    },
+    {
+      "id": "PRRT_kwDOVRIfY86v8aLM",
+      "is_resolved": false,
+      "is_outdated": false,
+      "path": "research/partitions/paper/multidimensional_ferrers_article.tex",
+      "line": 204,
+      "diff_side": "RIGHT",
+      "start_line": 204,
+      "start_diff_side": null,
+      "original_line": 204,
+      "original_start_line": null,
+      "resolved_by": null,
+      "comments": [
+        {
+          "id": "PRRC_kwDOVRIfY88AAAABBGb14w",
+          "database_id": 4368823779,
+          "body": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Recover the determinant permutation as tau, not its inverse**\n\nWith the forward convention used in the proof, `κ_{σ(i)}=μ'_i−i`, the decreasing key order is `τ=σ`, not `σ⁻¹`. For example, at `n=3`, the valid rearrangement `β=(0,0,3)` has keys `(0,-1,1)`, sorting order `τ=(2,0,1)`, and recovered columns `μ'=(1,1,1)`. The stated inverse instead returns `σ=(1,2,0)`, whose determinant exponents are `(2,2,-1)`, so it is a vanishing term rather than the term corresponding to this rearrangement. Correct the permutation recovery and the matching assertion in the proof; the existing Python check compares sets of beta vectors without exercising this inverse.\n\nAGENTS.md reference: [AGENTS.md:L73-L73](https://github.com/cyamba/yamba-ai-math/blob/e43a3d02fe3abc60364feaf4a75985b4be602247/AGENTS.md#L73-L73)\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+          "created_at": "2026-10-24T22:50:55Z",
+          "updated_at": "2026-10-24T22:50:55Z",
+          "author": {
+            "login": "chatgpt-codex-connector",
+            "name": "chatgpt-codex-connector",
+            "email": null,
+            "avatar_url": "https://avatars.githubusercontent.com/in/1144995?v=4",
+            "id": null
+          },
+          "viewer_did_author": false
+        }
+      ]
+    }
+  ]
+}

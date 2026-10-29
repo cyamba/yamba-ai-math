@@ -1,0 +1,8 @@
+{
+  "phase": "before first candidate test or separate review",
+  "sha256": {
+    "contract.md": "bd9eb9fc090adbbf22a61569e88ca2ff33b3795c79aac3b93820bd7d7ef2952c",
+    "candidates.py": "acf73bf1f0cfba796591d354a70c2e9dfa07eac1b2c8335c6b0d7f0ccd4f3fc1",
+    "proof-candidate.md": "5a272f24ba4815410629499dd859acb22ac2607ca271a9e9164f126870830f1f"
+  }
+}
