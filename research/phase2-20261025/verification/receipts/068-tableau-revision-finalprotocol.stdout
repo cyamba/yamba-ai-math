@@ -1,0 +1,57 @@
+{
+  "status": "finite_exact_passed",
+  "n": 6,
+  "totals": {
+    "negative_sources": 3980,
+    "mapped": 3980,
+    "mapped_(5, 1)": 19,
+    "mapped_(4, 2)": 96,
+    "mapped_(3, 1, 1, 1)": 1273,
+    "mapped_(2, 2, 1, 1)": 2592,
+    "recognized_images": 3980
+  },
+  "hessenberg_vectors": 132,
+  "failures": [],
+  "local_fiber_histogram": {
+    "0": 3417,
+    "1": 1676,
+    "2": 709,
+    "3": 27
+  },
+  "additional_protocol_counts": {
+    "moved_1": 3242,
+    "original_assignments": 151,
+    "moved_2": 712,
+    "positive_occurrences": 6800,
+    "positive_row0": 1,
+    "positive_row1": 1,
+    "positive_411": 187,
+    "positive_321": 782,
+    "positive_21111": 5829,
+    "moved_3": 26,
+    "unmatched_positive_occurrences": 2820
+  },
+  "first_assigned_layer_counts": {
+    "0": 3214,
+    "1": 7,
+    "2": 29,
+    "3": 23,
+    "4": 67,
+    "5": 45,
+    "6": 481,
+    "8": 2,
+    "9": 35,
+    "10": 35,
+    "11": 16,
+    "12": 5,
+    "13": 3,
+    "14": 2,
+    "16": 4,
+    "17": 3,
+    "18": 4,
+    "19": 2,
+    "20": 1,
+    "21": 1,
+    "22": 1
+  }
+}

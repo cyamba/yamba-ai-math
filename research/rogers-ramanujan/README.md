@@ -4,6 +4,36 @@ Small incoming results go in the [contribution ledger](contributions.md), using
 the [intake guide](../../.agents/kr1-contribution-intake.md). Reviewed supporting
 lemmas remain separate from integrated progress toward the complete bijection.
 
+## 29 October 2026: closed RR005 to RR007, the Phase 2 run, and two map lineages
+
+RR005, RR006, RR007 and the Phase 2 run closed on 24 and 25 October on branch
+`codex/phase2-kr1-djt-n40`. Their files are preserved here byte for byte:
+[RR005](rr005/result.md), [RR006](rr006/result.md), [RR007](rr007/result.md)
+and [Phase 2](../phase2-20261025/claim-index.md). Their reviewed restricted
+results include the RR005 strip normal forms on all U and C with a bijection
+on U supported on {1,3,6}, RR007's map H1 on every C with a<=2 and every
+a=3,b=0 datum, and the Phase 2 maps H2 and H3. Full KR1 remains unresolved,
+novelty is not verified, and their resource ledgers are spent. The branch's
+prefix for `NEXT_SESSION.md` was not applied because it predates terra2026.
+These run IDs are taken; a new run takes RR008 or later.
+
+The KR1 work now holds two different partial U–C maps:
+
+- **Codex lineage:** RR005, RR006, RR007 (H1), then Phase 2 (H2, H3), above.
+- **Antigravity/Argon lineage:** `checks/rr004_multidim_cones.py` from PR #13,
+  corrected in [PR #15](https://github.com/cyamba/yamba-ai-math/pull/15), with
+  the a=3,b=0 sector proved for all parameters in
+  [PR #16](https://github.com/cyamba/yamba-ai-math/pull/16).
+  [terra2026](terra2026/README.md) starts from this lineage.
+
+They assign overlapping objects differently and cannot be joined as a union.
+Of the 1,137 data with a=3,b=0 and weight at most 40, the H3 and corrected
+Argon maps agree on 142. The first disagreement is C=(3,0,(1,1,1),()), weight
+12, sent to (9,3) by H3 and to (6,6) by the Argon map. The PR #13 version of
+the Argon a=3,b=0 map also collides with an a=0,b=3 datum from weight 36
+([RR007 audit](rr007/external-ferrers-audit.md)); PR #15 repairs that branch.
+A full construction must choose between them or reconcile them explicitly.
+
 ## 27 October 2026: exact separated compiler component
 
 The [supplied lookup-free compiler audit](separated-2026-10-27/result.md)

@@ -1,0 +1,13 @@
+{
+  "critic": "critic-a",
+  "scope": "distinct audit of fixed old endpoint, no root-map candidate",
+  "frozen_utc": "2026-10-24T21:19:05.069085+00:00",
+  "initial_bound": 12,
+  "extension_authorized": false,
+  "sha256": {
+    "research/rogers-ramanujan/rr007/fleet-a/checks/critic-a-endpoint.py": "8ec8385e9a57e059c482422f84654a8d532ad79488fa0b655e4412a9878ab4d4",
+    "research/rogers-ramanujan/rr007/fleet-a/checks/critic-a-literal.py": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984",
+    "research/rogers-ramanujan/rr003/endpoint-cluster-merge.md": "b81fda49e1c3781d78ac1874e383ca34481b1b4cace3b021c784eab6ddf0b3cc",
+    "research/rogers-ramanujan/checks/rr003_cluster_merge.py": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19"
+  }
+}

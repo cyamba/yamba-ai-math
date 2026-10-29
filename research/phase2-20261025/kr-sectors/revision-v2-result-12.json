@@ -1,0 +1,32 @@
+{
+  "status": "finite_H3_pass_not_full_KR1",
+  "bound": 12,
+  "all_C_U": 59,
+  "H3_mapped": 59,
+  "H3_rejected": 0,
+  "H2_preserved": 59,
+  "new_classes": {},
+  "source_sectors": {
+    "(0, 0)": 1,
+    "(0, 1)": 4,
+    "(0, 2)": 1,
+    "(1, 0)": 12,
+    "(1, 1)": 9,
+    "(2, 0)": 25,
+    "(3, 0)": 7
+  },
+  "A_cohorts": {
+    "distinct": 56,
+    "repeated": 3
+  },
+  "B_cohorts": {
+    "distinct": 15,
+    "repeated": 44
+  },
+  "first_missing_C": null,
+  "first_rejected_U": null,
+  "q0_target_only_components": [],
+  "naive_append_threes_failure": null,
+  "script_sha256": "e11dd681dd1021d35370c6cd2c42cb19e52fc4b4e186999b1f34036130e70e03",
+  "bridge_sha256": "9327d31f2dcffa12e3be20112ebdb724f8cdf7699c98a900a19b3398d530c43e"
+}

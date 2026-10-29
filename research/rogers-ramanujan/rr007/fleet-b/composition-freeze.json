@@ -1,0 +1,16 @@
+{
+  "frozen_utc": "2026-10-24T21:26:02.761537+00:00",
+  "map": "unchanged frozen A3 composed with actual RR003 A/C and U/B endpoints",
+  "first_bound": 12,
+  "extension_bound": 30,
+  "extension_requires": "explicit root approval after this unchanged pilot passes",
+  "candidate_change": false,
+  "pinned_files": {
+    "research/rogers-ramanujan/rr007/fleet-b/checks/critic_b_composition.py": "c46a18dfdbb99c7ca543e2ac1df52bee40ed2afffa5d92f13a1736e35763ba6e",
+    "research/rogers-ramanujan/rr007/fleet-a/checks/critic-a-literal.py": "6c6be584e6da5c29fb85e95eb749faaa7cda39f26d51b8fdabecca0cf2297984",
+    "research/rogers-ramanujan/rr007/fleet-a/candidates/a3-hook-and-wall.md": "6aa398f54b6365bb66dd2f266e79462cb32ceefa2ed816aefeda8a155260d24d",
+    "research/rogers-ramanujan/checks/rr003_cluster_merge.py": "e73aa70fe9734084914b5e34554fa0a3f2392cada1ecc6defa5eeedd4e967d19",
+    "research/rogers-ramanujan/checks/rr003_stockhofe.py": "875ac209e5710e5c0a90c983afb4db1f8857270ed739f9184778291d95c8d0b2",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8"
+  }
+}

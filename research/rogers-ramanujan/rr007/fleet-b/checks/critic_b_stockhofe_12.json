@@ -1,0 +1,13 @@
+{
+  "bound": 12,
+  "status": "passed",
+  "U": 59,
+  "B": 59,
+  "U_distinct": 14,
+  "U_repeated": 45,
+  "B_distinct": 15,
+  "B_repeated": 44,
+  "max_actual_weight": 12,
+  "scope": "actual RR003 Stockhofe endpoint; separate RR007 critic pilot12",
+  "imports": "endpoint module and its definition-only kr1 dependency; no legacy tests"
+}

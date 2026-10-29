@@ -1,0 +1,42 @@
+{
+  "id": "RR005",
+  "title": "KR1 context-sensitive inverse-first construction",
+  "objective": "Complete explicit weight-preserving mutually inverse residue-to-gap algorithms with universal proofs; this attempt investigates one U-C decomposition and records exact failures without redefining completion.",
+  "fleet": "pair",
+  "briefs": [
+    "research/rogers-ramanujan/rr005/contract.md",
+    "research/rogers-ramanujan/rr005/pre-run.md",
+    "research/rogers-ramanujan/rr005/round-1-proposal.md",
+    "skills/audit-theorem/SKILL.md"
+  ],
+  "constraints": {
+    "max_agents": 2,
+    "max_workers": 1,
+    "max_cost_units": 16,
+    "max_rounds": 2,
+    "timeout_seconds": 900
+  },
+  "rounds": 2,
+  "deliverables": [
+    "Frozen mathematical candidate or exact obstruction",
+    "Two separately scoped critic reviews and revisions within ceilings",
+    "Exact finite checks and capped incomplete status",
+    "Resource ledger, assurance distinctions and next unresolved lemma"
+  ],
+  "success_criteria": [
+    "Full KR1 requires universal validity, weight, termination, both inverse proofs, full executable endpoints and separate semantic review",
+    "A restricted theorem or failure is progress only; novelty remains NOT VERIFIED",
+    "No enumeration/ranking/hidden lookup defines the map; all known cases remain exposure",
+    "Preserve closed RR003/RR004 evidence and ledgers; record restricted claims without declaring complete KR1"
+  ],
+  "stop_conditions": [
+    "120 minutes total including 20-minute preparation charge; execution deadline in rr005/execution.json",
+    "Discovery <=40 minutes; two profiles, sequential stages, two review rounds and <=16 dispatch proxies",
+    "Cumulative computation <=600 seconds; child RSS <=2GiB; incremental artifacts <=1GiB, free floor >=5GiB",
+    "Local only: no push, publication, messages, new dependencies, paid providers or implicit route pivot"
+  ],
+  "preferred_tags": [
+    "first-principles",
+    "constructive-skeptic"
+  ]
+}

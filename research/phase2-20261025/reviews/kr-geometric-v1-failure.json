@@ -1,0 +1,24 @@
+{
+  "script_sha256": "7f1fcbbdbccafef32e7896e73dc4f0ea71bbad8dfd87b22cd940429d79a6ef2d",
+  "failed_meter_label": "kr-critic-geometry30",
+  "failure": "assert (3,) not in quotient images",
+  "counterexample": {
+    "parent_U": [
+      10,
+      3
+    ],
+    "parent_heights": [
+      6,
+      2
+    ],
+    "parent_weight": 13,
+    "child_U": [
+      3
+    ],
+    "quotient_heights_after_dropping_zeros": [
+      2
+    ]
+  },
+  "impact": "Refutes universal range exclusion, not the specific weight9 commutation obstruction.",
+  "repair": "Replace child terminal<=1 by <=2; refute weight9 commutation using minimum parent cost13."
+}

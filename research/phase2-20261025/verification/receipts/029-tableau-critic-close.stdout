@@ -1,0 +1,11 @@
+{
+  "status": "closed_distinct_ordinary_semantic_review",
+  "author_frozen_dependencies": 17,
+  "verdict": "incomplete overall; supported Theorem A and stated conditional Theorem B",
+  "claims": {
+    "TheoremA": "proved; distinct ordinary semantic review; not formally certified",
+    "TheoremB": "proved on stated conditional domain; distinct ordinary semantic review; not formally certified",
+    "full_structural_n6_cancellation": "incomplete; 3829 negative sources remain",
+    "finite_matching_and_oracle_agreement": "empirical finite exact evidence"
+  }
+}

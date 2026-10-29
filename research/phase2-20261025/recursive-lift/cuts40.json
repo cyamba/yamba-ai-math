@@ -1,0 +1,84 @@
+{
+  "bound": 40,
+  "literal_U_count": 5461,
+  "families": [
+    {
+      "name": "lower-sheet-core-v1",
+      "counts": {
+        "inputs": 5461,
+        "valid_child": 2957,
+        "negative_residual": 0,
+        "invalid_child": 2504
+      },
+      "smallest_observed_failure": {
+        "reason": "invalid child U",
+        "parent": [
+          8
+        ],
+        "parent_weight": 8,
+        "child": [
+          2
+        ]
+      },
+      "distinct_valid_children": 25
+    },
+    {
+      "name": "triple-row-v1",
+      "counts": {
+        "inputs": 5461,
+        "valid_child": 5313,
+        "negative_residual": 0,
+        "invalid_child": 148
+      },
+      "smallest_observed_failure": {
+        "reason": "invalid child U",
+        "parent": [
+          9,
+          9,
+          9,
+          1
+        ],
+        "parent_weight": 28,
+        "child": [
+          9
+        ]
+      },
+      "distinct_valid_children": 73
+    },
+    {
+      "name": "ternary-height-v1",
+      "counts": {
+        "inputs": 5461,
+        "valid_child": 5461,
+        "negative_residual": 0
+      },
+      "smallest_observed_failure": null,
+      "distinct_valid_children": 26
+    }
+  ],
+  "sheet_lift_volume_order_and_losslessness": true,
+  "height_quotient_with_full_padded_remainder_identity": true,
+  "weight13_inclusion_targets_at15": [
+    [
+      8,
+      3,
+      3,
+      1
+    ],
+    [
+      6,
+      3,
+      3,
+      3
+    ],
+    [
+      6,
+      3,
+      3,
+      1,
+      1,
+      1
+    ]
+  ],
+  "status": "candidate falsification only; no U/C bridge"
+}

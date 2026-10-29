@@ -1,0 +1,21 @@
+{
+  "method": "explicit DAG/cost check; no worker execution or semantic review certified",
+  "groups": [
+    [
+      "a-author",
+      "a-context",
+      "b-source"
+    ],
+    [
+      "b-author",
+      "a-review"
+    ],
+    [
+      "b-review"
+    ]
+  ],
+  "initial_dispatch_cost": 15,
+  "reserve": 5,
+  "cap": 20,
+  "valid": true
+}

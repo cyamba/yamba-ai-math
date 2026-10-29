@@ -97,7 +97,8 @@ canonical source. Keep new skills there and link them from `.claude/skills/<name
 for Claude Code. In Codex use `$skill-name` or `/skills`; Claude Code uses
 `/skill-name`. See [official Codex discovery guidance](https://learn.chatgpt.com/docs/build-skills).
 
-RR003 and RR004 are closed; their clocks, computation ledgers and two review rounds per attempt are spent.
+RR003 through RR007 and the Phase 2 run are closed; their clocks, computation ledgers and review rounds are spent.
+A new run takes the next unused ID, RR008 or later.
 A later investigation needs its own declared contract and resource ledger within
 the user's authorization. Reflection does not silently start another run.
 Respect the active contract's resource and external-action limits, including

@@ -1,0 +1,98 @@
+{
+  "kind": "file_integrity_only_not_mathematical_verification",
+  "status": "fail",
+  "checked_entries": 543,
+  "manifests": [
+    {
+      "manifest": "research/phase2-20261025/baseline-pins.json",
+      "sha256": "00f05598a908194c3947380d78b1fb1890331a845c866ba83112d031bf049edd",
+      "checked_entries": 132
+    },
+    {
+      "manifest": "research/phase2-20261025/supplemental-input-pins.json",
+      "sha256": "02363c73b94a3f0d27e1dbc094047b7db4eaeacc36be1da1313a94258eca63c6",
+      "checked_entries": 240
+    },
+    {
+      "manifest": "research/phase2-20261025/kr-sectors/extension-freeze.json",
+      "sha256": "3fb5acb91f0c3578ebb9a19d593244339f2cb23993f433508432d5a50f1c0acd",
+      "checked_entries": 5
+    },
+    {
+      "manifest": "research/phase2-20261025/kr-sectors/freeze.json",
+      "sha256": "2726b54ebc29f57b0286c09cb3a660bf008c84ced94f9051256ebceee7342653",
+      "checked_entries": 28
+    },
+    {
+      "manifest": "research/phase2-20261025/kr-sectors/initial-freeze.json",
+      "sha256": "96a5b21253799b3b28a96ebfa3987e43598990996bcd26d37d7c70935097c243",
+      "checked_entries": 3
+    },
+    {
+      "manifest": "research/phase2-20261025/kr-sectors/revision-pretest-freeze.json",
+      "sha256": "0067f7959987de5a0a975713f70f3c3c5147a2130cecdf24a91867987360faac",
+      "checked_entries": 2
+    },
+    {
+      "manifest": "research/phase2-20261025/recursive-lift/freeze.json",
+      "sha256": "6007a54c5a8e33fb4d10a6e021ad6ff6257b7dbb4b6e077733316c600e92b972",
+      "checked_entries": 13
+    },
+    {
+      "manifest": "research/phase2-20261025/recursive-lift/prepilot-freeze.json",
+      "sha256": "e4e59c064d08aaca4868e052a291be8011a59a1fbc9fcf9bfcd36f96e13fb0c9",
+      "checked_entries": 4
+    },
+    {
+      "manifest": "research/phase2-20261025/recursive-lift/revision-freeze.json",
+      "sha256": "edd18b65d4ec5c05ebe5288ac07d4616b5af1cc79989fa3e5a9f627c8677cf07",
+      "checked_entries": 47
+    },
+    {
+      "manifest": "research/phase2-20261025/recursive-lift/revision-prepilot-freeze.json",
+      "sha256": "4e9061cf850f7fcdae9b0fe8cef8e13b7745ee8a713349725edbe3187aec566b",
+      "checked_entries": 2
+    },
+    {
+      "manifest": "research/phase2-20261025/reviews/kr-initial-freeze.json",
+      "sha256": "85ead20cdf75b85bca9ef29568ea5ec5c0c1c936f154770bb37bd2115324f317",
+      "checked_entries": 14
+    },
+    {
+      "manifest": "research/phase2-20261025/tableau/candidate-freeze-before6.json",
+      "sha256": "c76754bb961f935a8a39b6f8f679d100e91b36734a969be4673bf9f17858c023",
+      "checked_entries": 6
+    },
+    {
+      "manifest": "research/phase2-20261025/tableau/freeze.json",
+      "sha256": "4493afa8ab22d3ecbcb7079181f4b7269ab8c4cbc837ce2a818c3059a8216e44",
+      "checked_entries": 17
+    },
+    {
+      "manifest": "research/phase2-20261025/tableau/structural-freeze.json",
+      "sha256": "ab63370a9324cc714b03b49d53666b010d0ed11af15712a96f3691a7203c19be",
+      "checked_entries": 2
+    },
+    {
+      "manifest": "research/phase2-20261025/reviews/tableau-review-final-pins.json",
+      "sha256": "4f18de73ceabfed5f6bf2af347657396c4739bf4fd7296d0441816b5ff49c970",
+      "checked_entries": 28
+    }
+  ],
+  "failures": [
+    {
+      "manifest": "research/phase2-20261025/tableau/structural-freeze.json",
+      "field": "sha256",
+      "path": "/private/tmp/yamba-ai-math-phase2-20261025/research/phase2-20261025/tableau/structural.py",
+      "expected": "ae58d6ef7ccba8bb09ff8d6e7b6876e7a903588bb39adaaa7f44b10e06828e08",
+      "actual": "84bb47956a243777f18c0872cf16ffea75b874ef942081088b9803d12c68d40f"
+    },
+    {
+      "manifest": "research/phase2-20261025/tableau/structural-freeze.json",
+      "field": "sha256",
+      "path": "/private/tmp/yamba-ai-math-phase2-20261025/research/phase2-20261025/tableau/verify_structural.py",
+      "expected": "71918602f2f6f8da0fceea5dd1e9af3adce3a230e3ff9ef9eaeea44db8746098",
+      "actual": "aeeb3cdc7a04cfe8d4f63db9754febf47ca4c7e4effd7b1407db22ceb118339a"
+    }
+  ]
+}

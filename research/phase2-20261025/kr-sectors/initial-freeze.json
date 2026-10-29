@@ -1,0 +1,14 @@
+{
+  "stage": "author-initial-freeze",
+  "date_utc": "2026-10-24T22:18:34.209555+00:00",
+  "families": [
+    "H1-v1-reviewed-paper-transcription",
+    "external-sector-tables-v1-as-written",
+    "bounded-phase-reduction-v1-C-only"
+  ],
+  "files": {
+    "research/phase2-20261025/kr-sectors/bridge.py": "82d50aa3c25e1c909c6ecd660e1ab87353c89dadaa3eea4e02b6b7ab77e290ac",
+    "research/phase2-20261025/kr-sectors/check_sectors.py": "bf09944cbfb293594254291f3014d61f1c892369da25a54e1b8d005b6616d2c9",
+    "research/phase2-20261025/kr-sectors/notebook.md": "b0d7d270bd557845e35bc938965bdb0820c679cff04e5f6ab35254f97576d152"
+  }
+}

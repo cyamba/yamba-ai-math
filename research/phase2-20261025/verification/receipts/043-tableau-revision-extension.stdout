@@ -1,0 +1,11 @@
+{
+  "status": "finite_extension_passed",
+  "scope": "frozen <=3label family after fixing every revision local pair",
+  "totals": {
+    "fixed": 3169,
+    "remaining": 811,
+    "matched_remaining": 811,
+    "available_positive": 3631
+  },
+  "first_failure": null
+}

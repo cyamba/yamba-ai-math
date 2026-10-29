@@ -1,0 +1,121 @@
+{
+  "status": "planning_only_execution_not_authorized",
+  "scope": "Attempt-local fleet supplied in memory to the existing planner; no global registry change or worker dispatch.",
+  "program": {
+    "id": "RR006-family-search",
+    "title": "KR1 residual-family census, sequence clues and lossless geometry",
+    "objective": "Prepare a reviewed finite family census and bounded OEIS/primary-source and geometric investigation, preserving the unresolved full KR1 objective and all prior assurance distinctions.",
+    "fleet": "rr006-family-search-local",
+    "briefs": [
+      "research/rogers-ramanujan/rr006/plan.md",
+      "research/rogers-ramanujan/rr006/contract.md",
+      "research/rogers-ramanujan/rr006/pre-run.md",
+      "research/rogers-ramanujan/rr006/SESSION_HANDOFF.md",
+      "research/rogers-ramanujan/rr005/result.md",
+      "research/rogers-ramanujan/rr005/round-2-review.md"
+    ],
+    "constraints": {
+      "max_agents": 4,
+      "max_cost_units": 20,
+      "max_workers": 3,
+      "max_rounds": 1,
+      "timeout_seconds": 2100
+    },
+    "rounds": 1,
+    "deliverables": [
+      "Side-specific full-object and residual-root census with exact denominators and distinct/repeated refinements",
+      "Exact bounded query log and at most six inspected source records",
+      "One lossless 3D representation proposal versus a 2D baseline, or a precise information-loss obstruction",
+      "Versioned clue/rule table with at most three frozen variants and all failures retained",
+      "Separate scoped critic verdicts and at most three ranked next directions",
+      "Fresh resource record and local handoff without a full-KR1 or novelty overclaim"
+    ],
+    "success_criteria": [
+      "Census counts distinguish full objects, roots, maps, sides and cohort predicates",
+      "Search claims record terms, offsets, inspection depth, no-hits and ambiguity",
+      "Geometric claims account for all information and have intrinsic reconstruction or an exact obstruction",
+      "Each retained new substantive claim has a separate critic verdict with explicit dependencies and assurance",
+      "All executed finite inputs and outputs obey the accepted ceiling and budgets"
+    ],
+    "stop_conditions": [
+      "No renewed execution instruction or a subsequent user stop",
+      "Any binding time, computation, memory, storage, query, candidate or dispatch cap",
+      "Missing required input, unreliable accounting or an instruction conflict",
+      "No intrinsic inverse or coverage argument at the discovery deadline: freeze the gap instead",
+      "Scope would require dependencies, providers, external messages, publication or functional repository changes"
+    ]
+  },
+  "fleet": {
+    "id": "rr006-family-search-local",
+    "description": "Three distinct initial research branches, bounded cross-search and geometry follow-up, then a distinct critic and one correction/final-review opportunity.",
+    "required_capabilities": ["formalization", "literature", "geometry", "falsification"],
+    "max_agents": 4,
+    "stages": [
+      {
+        "id": "census",
+        "requires": ["formalization"],
+        "required_tags": ["first-principles"],
+        "depends_on": []
+      },
+      {
+        "id": "survey",
+        "requires": ["literature"],
+        "required_tags": ["primary-sources"],
+        "depends_on": [],
+        "independent_of": ["census", "geometry"]
+      },
+      {
+        "id": "geometry",
+        "requires": ["geometry", "formalization"],
+        "required_tags": ["structure-seeking"],
+        "depends_on": [],
+        "independent_of": ["census"]
+      },
+      {
+        "id": "cross-search",
+        "requires": ["literature"],
+        "required_tags": ["primary-sources"],
+        "depends_on": ["census", "survey", "geometry"],
+        "independent_of": ["census", "geometry"]
+      },
+      {
+        "id": "geometry-finish",
+        "requires": ["geometry", "formalization"],
+        "required_tags": ["structure-seeking"],
+        "depends_on": ["census", "geometry", "cross-search"],
+        "independent_of": ["census", "survey"]
+      },
+      {
+        "id": "review-1",
+        "requires": ["falsification"],
+        "required_tags": ["constructive-skeptic"],
+        "depends_on": ["census", "cross-search", "geometry-finish"],
+        "independent_of": ["census", "survey", "geometry", "cross-search", "geometry-finish"]
+      },
+      {
+        "id": "revise",
+        "requires": ["formalization"],
+        "required_tags": ["first-principles"],
+        "depends_on": ["review-1"],
+        "independent_of": ["review-1"]
+      },
+      {
+        "id": "review-final",
+        "requires": ["falsification"],
+        "required_tags": ["constructive-skeptic"],
+        "depends_on": ["revise", "review-1"],
+        "independent_of": ["census", "survey", "geometry", "cross-search", "geometry-finish", "revise"]
+      }
+    ]
+  },
+  "execution_gates_outside_planner": {
+    "renewed_user_instruction_required": true,
+    "maximum_stage_invocations": 8,
+    "maximum_semantic_review_opportunities": 2,
+    "maximum_substantive_correction_passes": 1,
+    "root_coordination_outside_worker_dispatch_accounting": true,
+    "maximum_active_participants_including_root": 4,
+    "no_nested_agents": true,
+    "note": "One planner round contains the entire unrolled DAG. The solver checks assignment constraints only; operational resource and authorization gates remain binding."
+  }
+}

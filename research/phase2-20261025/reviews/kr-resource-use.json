@@ -1,0 +1,172 @@
+{
+  "stage": "kr-initial-review",
+  "calls": 8,
+  "successes": 7,
+  "failures": 1,
+  "wall_seconds": 5.7017470840364695,
+  "cpu_seconds": 4.989476,
+  "peak_rss_bytes": 40910848,
+  "above40_KR_objects_constructed": 0,
+  "receipts": [
+    {
+      "index": 30,
+      "label": "kr-critic-independent12",
+      "started_utc": "2026-10-24T22:27:40.010829+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-independentcheck.py",
+        "12"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.13171741701080464,
+      "cpu_seconds": 0.07778399999999999,
+      "peak_rss_bytes": 23412736,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/030-kr-critic-independent12.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/030-kr-critic-independent12.stderr",
+      "cumulative_wall_seconds": 23.76084100495791
+    },
+    {
+      "index": 31,
+      "label": "kr-critic-independent30",
+      "started_utc": "2026-10-24T22:27:43.675813+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-independentcheck.py",
+        "30"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.820962291007163,
+      "cpu_seconds": 0.770255,
+      "peak_rss_bytes": 31293440,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/031-kr-critic-independent30.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/031-kr-critic-independent30.stderr",
+      "cumulative_wall_seconds": 24.581803295965074
+    },
+    {
+      "index": 32,
+      "label": "kr-critic-independent40",
+      "started_utc": "2026-10-24T22:27:47.398065+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-independentcheck.py",
+        "40"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 4.038217916997382,
+      "cpu_seconds": 3.653031,
+      "peak_rss_bytes": 40910848,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/032-kr-critic-independent40.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/032-kr-critic-independent40.stderr",
+      "cumulative_wall_seconds": 28.620021212962456
+    },
+    {
+      "index": 33,
+      "label": "kr-critic-geometry12",
+      "started_utc": "2026-10-24T22:28:38.742990+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-geometriccheck.py",
+        "12"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.12877283300622366,
+      "cpu_seconds": 0.066529,
+      "peak_rss_bytes": 23003136,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/033-kr-critic-geometry12.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/033-kr-critic-geometry12.stderr",
+      "cumulative_wall_seconds": 28.74879404596868
+    },
+    {
+      "index": 34,
+      "label": "kr-critic-geometry30",
+      "started_utc": "2026-10-24T22:28:41.937030+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-geometriccheck.py",
+        "30"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.1304705000075046,
+      "cpu_seconds": 0.08467899999999999,
+      "peak_rss_bytes": 23445504,
+      "exit_code": 1,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/034-kr-critic-geometry30.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/034-kr-critic-geometry30.stderr",
+      "cumulative_wall_seconds": 28.879264545976184
+    },
+    {
+      "index": 35,
+      "label": "kr-critic-geometry-v2-12",
+      "started_utc": "2026-10-24T22:29:14.063826+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-geometriccheck.py",
+        "12"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.07808729200041853,
+      "cpu_seconds": 0.059084,
+      "peak_rss_bytes": 22347776,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/035-kr-critic-geometry-v2-12.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/035-kr-critic-geometry-v2-12.stderr",
+      "cumulative_wall_seconds": 28.957351837976603
+    },
+    {
+      "index": 36,
+      "label": "kr-critic-geometry-v2-30",
+      "started_utc": "2026-10-24T22:29:17.268479+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-geometriccheck.py",
+        "30"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.1325161250133533,
+      "cpu_seconds": 0.087961,
+      "peak_rss_bytes": 23773184,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/036-kr-critic-geometry-v2-30.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/036-kr-critic-geometry-v2-30.stderr",
+      "cumulative_wall_seconds": 29.089867962989956
+    },
+    {
+      "index": 37,
+      "label": "kr-critic-geometry-v2-40",
+      "started_utc": "2026-10-24T22:29:20.581381+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/reviews/kr-geometriccheck.py",
+        "40"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 180.0,
+      "wall_seconds": 0.2410027089936193,
+      "cpu_seconds": 0.190153,
+      "peak_rss_bytes": 26705920,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/037-kr-critic-geometry-v2-40.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/037-kr-critic-geometry-v2-40.stderr",
+      "cumulative_wall_seconds": 29.330870671983575
+    }
+  ]
+}

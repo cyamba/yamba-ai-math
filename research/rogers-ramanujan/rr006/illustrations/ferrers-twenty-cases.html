@@ -1,0 +1,135 @@
+<div id="kr1-ferrers-twenty">
+  <style>
+    #kr1-ferrers-twenty { color:var(--foreground); }
+    #kr1-ferrers-twenty .case-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:28px; row-gap:22px; }
+    #kr1-ferrers-twenty .pair { display:grid; grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr); column-gap:8px; align-items:start; }
+    #kr1-ferrers-twenty .case { min-width:0; }
+    #kr1-ferrers-twenty .case-label { margin-bottom:8px; font-weight:500; }
+    #kr1-ferrers-twenty figure { margin:0; min-width:0; }
+    #kr1-ferrers-twenty figcaption { min-height:40px; overflow-wrap:anywhere; }
+    #kr1-ferrers-twenty .arrow { padding-top:48px; text-align:center; color:var(--foreground); }
+    #kr1-ferrers-twenty .ferrers { display:block; width:100%; overflow:visible; }
+    #kr1-ferrers-twenty .cell-a { fill:color-mix(in srgb,var(--viz-series-1) 55%,transparent); stroke:var(--foreground); stroke-opacity:.65; stroke-width:.6; }
+    #kr1-ferrers-twenty .cell-b { fill:color-mix(in srgb,var(--viz-series-2) 55%,transparent); stroke:var(--foreground); stroke-opacity:.65; stroke-width:.6; }
+    #kr1-ferrers-twenty .empty { fill:var(--foreground); font:inherit; }
+    #kr1-ferrers-twenty h3 { margin-top:0; margin-bottom:14px; }
+    #kr1-ferrers-twenty .second-set { margin-top:30px; }
+    #kr1-ferrers-twenty .unmatched { max-width:430px; margin-top:30px; }
+    @media(max-width:600px) {
+      #kr1-ferrers-twenty .case-grid { grid-template-columns:1fr; row-gap:20px; }
+    }
+  </style>
+  <section aria-labelledby="kr1-sizes-title">
+    <h3 id="kr1-sizes-title">One example at each size, 1–10</h3>
+    <div id="kr1-sizes-grid" class="case-grid"></div>
+  </section>
+  <section class="second-set" aria-labelledby="kr1-first-title">
+    <h3 id="kr1-first-title">First ten A partitions, including empty</h3>
+    <div id="kr1-first-grid" class="case-grid"></div>
+  </section>
+  <section class="unmatched" aria-labelledby="kr1-open-title">
+    <h3 id="kr1-open-title">First unmatched residual shapes · size 8</h3>
+    <div id="kr1-unmatched"></div>
+  </section>
+  <script>
+    (function () {
+      const root = document.getElementById('kr1-ferrers-twenty');
+      const sizes = [
+        {n:1,a:[1],b:[1]},
+        {n:2,a:[2],b:[1,1]},
+        {n:3,a:[1,2],b:[3]},
+        {n:4,a:[1,3],b:[1,3]},
+        {n:5,a:[1,4],b:[1,1,3]},
+        {n:6,a:[2,4],b:[6]},
+        {n:7,a:[1,2,4],b:[1,3,3]},
+        {n:8,a:[2,6],b:[1,1,6]},
+        {n:9,a:[1,3,5],b:[3,6]},
+        {n:10,a:[1,3,6],b:[1,3,6]}
+      ];
+      const first = [
+        {n:0,a:[],b:[]},
+        {n:1,a:[1],b:[1]},
+        {n:2,a:[2],b:[1,1]},
+        {n:3,a:[1,2],b:[3]},
+        {n:3,a:[3],b:[1,1,1]},
+        {n:4,a:[1,3],b:[1,3]},
+        {n:4,a:[4],b:[1,1,1,1]},
+        {n:5,a:[1,4],b:[1,1,3]},
+        {n:5,a:[5],b:[1,1,1,1,1]},
+        {n:6,a:[1,5],b:[1,1,1,3]}
+      ];
+      const NS = 'http://www.w3.org/2000/svg';
+      const figures = [];
+      function tuple(p) { return p.length ? '('+p.join(', ')+')' : '∅'; }
+      function element(tag,cls,text) {
+        const e = document.createElement(tag);
+        if (cls) e.className = cls;
+        if (text !== undefined) e.textContent = text;
+        return e;
+      }
+      function diagram(parts,side,rows) {
+        const figure = element('figure');
+        const caption = element('figcaption',null,side+' · '+tuple(parts));
+        const svg = document.createElementNS(NS,'svg');
+        svg.setAttribute('class','ferrers');
+        svg.setAttribute('role','img');
+        svg.setAttribute('aria-label',side+' Ferrers diagram: row lengths '+tuple(parts)+', '+parts.reduce((a,b)=>a+b,0)+' unit squares. Rows drawn largest first.');
+        figure.append(caption,svg);
+        figures.push({svg:svg,parts:parts,side:side,rows:rows});
+        return figure;
+      }
+      function renderCase(d,index,container,unmatched) {
+        const article = element('article','case');
+        article.dataset.n = d.n;
+        article.dataset.a = JSON.stringify(d.a);
+        article.dataset.b = JSON.stringify(d.b);
+        if (!unmatched) article.append(element('div','case-label',(index+1)+'.  N = '+d.n));
+        const pair = element('div','pair');
+        const rows = Math.max(1,d.a.length,d.b.length);
+        const arrow = element('div','arrow',unmatched?'?':'→');
+        arrow.setAttribute('aria-label',unmatched?'No root matching rule selected':'Existing partial construction maps A to B');
+        pair.append(diagram(d.a,'A',rows),arrow,diagram(d.b,'B',rows));
+        article.append(pair);
+        container.append(article);
+      }
+      sizes.forEach((d,i)=>renderCase(d,i,root.querySelector('#kr1-sizes-grid'),false));
+      first.forEach((d,i)=>renderCase(d,i,root.querySelector('#kr1-first-grid'),false));
+      renderCase({n:8,a:[3,5],b:[8]},0,root.querySelector('#kr1-unmatched'),true);
+      function draw() {
+        figures.forEach(function(f) {
+          const width = Math.max(1,f.svg.getBoundingClientRect().width);
+          const unit = Math.min(18,Math.max(10,(width-6)/8));
+          const height = Math.ceil(f.rows*unit+6);
+          f.svg.setAttribute('viewBox','0 0 '+width+' '+height);
+          f.svg.setAttribute('height',height);
+          f.svg.replaceChildren();
+          const title = document.createElementNS(NS,'title');
+          title.textContent = f.side+' = '+tuple(f.parts);
+          f.svg.append(title);
+          if (!f.parts.length) {
+            const t = document.createElementNS(NS,'text');
+            t.setAttribute('x',3);
+            t.setAttribute('y',unit);
+            t.setAttribute('class','empty');
+            t.textContent = '∅';
+            f.svg.append(t);
+            return;
+          }
+          f.parts.slice().reverse().forEach(function(value,row) {
+            for (let col=0;col<value;col++) {
+              const r = document.createElementNS(NS,'rect');
+              r.setAttribute('x',3+col*unit);
+              r.setAttribute('y',3+row*unit);
+              r.setAttribute('width',unit-2);
+              r.setAttribute('height',unit-2);
+              r.setAttribute('class',f.side==='A'?'cell-a':'cell-b');
+              f.svg.append(r);
+            }
+          });
+        });
+      }
+      new ResizeObserver(draw).observe(root);
+      draw();
+    })();
+  </script>
+</div>

@@ -1,0 +1,99 @@
+{
+  "status": "reserved correction complete; distinct final review pending",
+  "wall_seconds": 0.43855562500539236,
+  "peak_rss_bytes": 24952832,
+  "calls": [
+    {
+      "index": 39,
+      "label": "recursive-corrected12",
+      "started_utc": "2026-10-24T22:30:18.537932+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/recursive-lift/revision-check.py",
+        "--bound",
+        "12",
+        "--output",
+        "research/phase2-20261025/recursive-lift/revision12.json"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 30.0,
+      "wall_seconds": 0.0747229169937782,
+      "cpu_seconds": 0.0537,
+      "peak_rss_bytes": 22511616,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/039-recursive-corrected12.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/039-recursive-corrected12.stderr",
+      "cumulative_wall_seconds": 31.67869679699652
+    },
+    {
+      "index": 40,
+      "label": "recursive-corrected30",
+      "started_utc": "2026-10-24T22:30:30.502715+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/recursive-lift/revision-check.py",
+        "--bound",
+        "30",
+        "--output",
+        "research/phase2-20261025/recursive-lift/revision30.json"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 30.0,
+      "wall_seconds": 0.1304638330184389,
+      "cpu_seconds": 0.100659,
+      "peak_rss_bytes": 23216128,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/040-recursive-corrected30.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/040-recursive-corrected30.stderr",
+      "cumulative_wall_seconds": 31.809160630014958
+    },
+    {
+      "index": 41,
+      "label": "recursive-corrected40",
+      "started_utc": "2026-10-24T22:30:31.483015+00:00",
+      "command": [
+        "python3",
+        "research/phase2-20261025/recursive-lift/revision-check.py",
+        "--bound",
+        "40",
+        "--output",
+        "research/phase2-20261025/recursive-lift/revision40.json"
+      ],
+      "cwd": "/private/tmp/yamba-ai-math-phase2-20261025",
+      "timeout_seconds": 30.0,
+      "wall_seconds": 0.23336887499317527,
+      "cpu_seconds": 0.21834399999999998,
+      "peak_rss_bytes": 24952832,
+      "exit_code": 0,
+      "failure": null,
+      "stdout": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/041-recursive-corrected40.stdout",
+      "stderr": "/private/tmp/yamba-ai-math-phase2-20261025/.runs/phase2-20261025/041-recursive-corrected40.stderr",
+      "cumulative_wall_seconds": 32.04252950500813
+    }
+  ],
+  "bound_scope": "U inventories at12,30,40; fixed retained C edges at9 and18 checked in each call, all already within prior exposed40 boundary",
+  "initial_frozen_claim_refuted": "nonempty quotient terminal decodedheight\u22641 and global child(3) exclusion",
+  "critic_counterexample": {
+    "U": [
+      10,
+      3
+    ],
+    "heights": [
+      6,
+      2
+    ],
+    "weight": 13,
+    "quotient_child": [
+      3
+    ]
+  },
+  "corrected_claims": [
+    "terminal quotient\u22642",
+    "minimumparentweightforchild(3)=13",
+    "global child(6) exclusion",
+    "weight9 retained-child commutation obstruction",
+    "weight18 retained-child commutation obstruction"
+  ]
+}

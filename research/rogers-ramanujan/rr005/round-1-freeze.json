@@ -1,0 +1,16 @@
+{
+  "program": "RR005",
+  "round": 1,
+  "frozen_utc": "2026-10-24T17:24:05.646709+00:00",
+  "claims": "global chain normal forms and a two-root restricted correspondence; no full root matching",
+  "source_sha256": {
+    "research/rogers-ramanujan/rr005/contract.md": "d23a2e4823ba1faf0976f787fe92bb2e5d386455f79e6d405b1c5a383ca04870",
+    "research/rogers-ramanujan/rr005/pre-run.md": "f08f0d59432ef8568974b79fb3ee4941fbba3b6eda95c230612f4bd97688b8e1",
+    "research/rogers-ramanujan/rr005/round-1-proposal.md": "e1b20eaa8e512f65c11c12d3aa66a2c50c0702cec71e2f5f658f37b64ab58206",
+    "research/rogers-ramanujan/checks/rr005_chains.py": "96378a9b872373af115164ea6176b04e5b513c45322e42c23a512c8dc4b21ca2",
+    "research/rogers-ramanujan/checks/rr005_verify.py": "2dd46930c61aeae4cd8fa7762d724b82ba0644300efc17d120894b03ff3f7359",
+    "research/rogers-ramanujan/checks/kr1.py": "6a961d737f0bf5907a60c5ecc0922816323c2e01edac8b4a7561c74c321418a8",
+    "programs/rogers-ramanujan-rr005.json": "dfdab19668644f66438c8a04c7bcf32b296aebc11481ba67ed42d55329e4c086"
+  },
+  "exposure": "Earlier through-30 cases; newly derived symbolic rules before this verification. Raising edges add 1 or 3; direct weight-31 bridge rejection is explicitly not an enumerated sweep."
+}
