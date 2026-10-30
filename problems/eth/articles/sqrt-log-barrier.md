@@ -1,70 +1,76 @@
-# Routing rigidity and a $\sqrt{\log n}$ barrier for replacement-form algorithms after the refutation of ETH
+# Routing rigidity and the optimality of the interpolation route after the refutation of ETH
 
 **Christopher Yamba** (Yamba AI Math Lab), with Claude (Anthropic) as research assistant.
-Draft of 2026-10-30. Status: results proved here unless marked otherwise; core lemma machine-checked in
-Lean 4 with Mathlib. **Novelty: NOT VERIFIED** (the source preprint appeared on 2026-10-25; we found no
-follow-up work, but the literature has not been searched systematically).
+Draft of 2026-10-30, revision 2 (after an internal referee pass; changes listed at the end).
+Status: results proved here unless marked otherwise; core lemma machine-checked in Lean 4 with Mathlib.
+**Novelty: NOT VERIFIED** (the source preprint appeared on 2026-10-25; the literature has not been searched
+systematically).
 
 ## Abstract
 
 OpenAI's preprint *The Exponential Time Hypothesis is False* (October 25, 2026) counts satisfying
-assignments of $k$-CNFs in time $2^{O_k(n\log\log n/\sqrt{\log n})}$. Its interpolation route replaces each
-clause input by a low-degree linear form built from a matrix $M_0$ whose entries are constrained by a
-*routing* support pattern, and pays for the low-rank defect $I-M_0$ with integer measurements. We prove that
-**every** matrix with this support pattern, commutative or not, satisfies
-$\operatorname{rank}(I-M_0)\ge D\,e^{-O(R^2/Q)}$, where $D$ is the auxiliary dimension, $Q$ the number of
-interpolation nodes and $R-1$ the degree of the forms. The proof is a zero-block argument on a product set of
-strings; its core is formally verified. As a consequence, every instantiation of the replacement-form
-template with rows of the $M_0$ form has running-time exponent at least $c\,n\log\log n/\sqrt{\log n}$, so the
-square root in the preprint is not an artefact of the analysis: it is forced by the template, and the
-preprint's sharpest bound already meets it. We also show that the commutative swap construction is within a
-factor $\sqrt 2$ of optimal in $R$, report a smallest case where a non-commutative matrix does strictly
-better (numerically), and isolate the one relaxation our argument does not cover: polynomial rows whose
-row-space component varies with the node. For those we prove only $\varepsilon\ge 4^{-R}$; closing this gap
-in the other direction would give exponent $O(n(\log\log n)^3/\log n)$.
+assignments of $k$-CNFs in subexponential time by two methods. Its interpolation route, the one formalised in
+Lean by OpenAI, replaces clause inputs by low-degree linear forms built from a matrix $M_0$ whose support is
+constrained by a *routing* pattern, pays for the defect $I-M_0$ with integer measurements, and reaches exponent
+$\rho(n)=n(\log\log n)^2/\sqrt{\log n}$. We prove that **every** matrix with this support pattern,
+commutative or not, satisfies $\operatorname{rank}(I-M_0)\ge D\,e^{-O(1+R^2/Q)}$ for $R\le Q/6$, where $D$ is
+the auxiliary dimension, $Q$ the number of interpolation nodes and $R-1$ the degree of the forms. The proof
+is a zero-block argument on a product set of strings and its core is formally verified. Consequently every
+instantiation of the interpolation template that measures on the full auxiliary space, as the preprint does,
+has exponent $\Omega(\rho(n))$: **the interpolation route is optimal for its own template up to a constant
+factor**. The swap construction is within a factor $\sqrt2$ of optimal in $R$. The preprint's other method
+(recursive tensor contraction) reaches $n\log\log n/\sqrt{\log n}$ in general and $n/\sqrt{\log n}$ at bounded
+density, so it necessarily leaves the template; we list which template assumptions remain open escapes:
+node-dependent polynomial rows (where we prove only $\varepsilon\ge4^{-R}$ for even $r$), and measurement on
+the used labels only (where type-balanced labelings defeat our argument).
 
 ## 1. Context
 
-Let $\rho(n)=n(\log\log n)^2/\sqrt{\log n}$. The preprint (Theorem 1) gives, for each fixed $k\ge 2$, a
-deterministic algorithm computing $\#F$ for a $k$-CNF $F$ in $(n+m)^{O_k(1)}2^{O_k(n\log\log n/\sqrt{\log n})}$
-time and polynomial space, refuting ETH, SETH, #ETH, Gap-ETH and NSETH. Two routes are given: an
-*interpolation route* (Sections 2 to 5 of the preprint, exponent $O_k(\rho(n))$, the one formalised in Lean
-by OpenAI) and a *tensor-contraction route* (appendix) achieving the stated bound.
+The preprint's Theorem 1 gives, for each fixed $k\ge2$, a deterministic algorithm computing $\#F$ for a
+$k$-CNF $F$ in $(n+m)^{O_k(1)}2^{O_k(n\log\log n/\sqrt{\log n})}$ time and polynomial space, and
+$2^{O_{k,D}(n/\sqrt{\log n})}$ when $m\le Dn$; both bounds are proved in its appendix by tensor contraction.
+Sections 2 to 5 of the preprint give the *interpolation route* with exponent $O_k(\rho(n))$, which is what the
+Lean formalisation (`lean/docs/378.md`) covers.
 
-A natural question, raised in two model-generated problem sheets that seeded this program, is whether a
-cleverer choice of the interpolating polynomial (Chebyshev, Pade, Krawtchouk) can replace $\sqrt{\log n}$ by
-$\log n$. We answer it negatively for the whole template, and locate the remaining freedom.
+Two model-generated problem sheets that seeded this program asked whether a cleverer interpolating
+polynomial (Chebyshev, Pade, Krawtchouk) could replace $\sqrt{\log n}$ by $\log n$ in the interpolation route.
+We answer this negatively for the whole template and identify where the remaining freedom lies.
 
-## 2. The replacement-form template
+## 2. The interpolation template
 
 We recall the structure (preprint Sec. 2.3 to 2.6). After sparsification and copying, the input is a 3-CNF on
 $n$ variables with $M=\Theta(n)$ variable occurrences. Fix integers $r$ (groups), $Q$ (nodes), $R$ (degree
-budget) and put $\mathcal B=([r]\times[r])^Q$, $D=|\mathcal B|=r^{2Q}$. An index $u\in\mathcal B$ is a pair
-of strings $a_u,d_u\in[r]^Q$; at node $t$, coordinate $w$ belongs to group $a_w(t)$ and row $u$ is assigned
-to group $d_u(t)$.
+budget) and put $\mathcal B=([r]\times[r])^Q$, $D=|\mathcal B|=r^{2Q}$. An index $u\in\mathcal B$ is a pair of
+strings $a_u,d_u\in[r]^Q$; at node $t$, coordinate $w$ belongs to group $a_w(t)$ and row $u$ is assigned to
+group $d_u(t)$.
 
 **Definition 1 (routing support).** $M\in K^{\mathcal B\times\mathcal B}$ is *routing-supported with defect
-$R$* if $M[u,w]\neq 0$ implies $\operatorname{Ham}(d_u,a_w)\le R-1$.
+$R$* if $M[u,w]\neq0$ implies $\operatorname{Ham}(d_u,a_w)\le R-1$.
 
-**Template ($M_0$ form).** Choose a routing-supported $M_0$ and a measurement matrix $C$ whose rows span the
-row space of $I-M_0$ (so $c=\operatorname{rank}(I-M_0)$ rows). Rows are
+**Template.** Choose a routing-supported $M_0$ and a measurement matrix $C$ on the full auxiliary space whose
+rows span the row space of $I-M_0$, so $c=\operatorname{rank}(I-M_0)$. Rows are
 $$\langle P_u(T),\zeta\rangle=((I-M_0)\zeta)_u+\sum_{w}M_0[u,w]\prod_{s\in E_{u,w}}(1-T/s)\,\zeta_w,
 \qquad E_{u,w}=\{t:a_w(t)\ne d_u(t)\}.$$
-The product multiplier vanishes at every node where $w$ lies outside the assigned group and has degree
-$|E_{u,w}|$; the degree budget $R-1$ is exactly Definition 1. Labels are assigned to occurrences with
-multiplicity $h\ge\max(1,M/D)$ (pigeonhole), and the algorithm uses $r h c$ group-restricted measurements.
+The coefficient of $\zeta_w$ is the single term $M_0[u,w]\prod_{s\in E_{u,w}}(1-T/s)$ of degree
+$|E_{u,w}|$, so the degree budget $R-1$ is exactly Definition 1. Labels are assigned to occurrences with
+multiplicity $h\ge\max(1,M/D)$ (pigeonhole), and the preprint uses $rhc$ group-restricted measurements. The
+preprint's balance requirement is $12D^2\le M$, i.e. $D\lesssim\sqrt n$.
 
-**Cost.** Up to polynomial factors the preprint's running time is the product of three enumerations
-(preprint eq. (2.10)):
-$$\underbrace{\textstyle\sum_{j\le q}2^j\binom nj}_{\text{Taylor data},\ q\ge\lfloor nR/Q\rfloor}\cdot
-\underbrace{(2D+1)^{\text{rows}}}_{\text{measurements}}\cdot\underbrace{2^{\max_g|S_g|}}_{\text{one group}\ \ge n/r}.$$
-Writing $\text{rows}=2\tau n$ and $\varepsilon=c/D$, the logarithm of the cost satisfies
-$$E\ \ge\ \Omega\!\Big(n\Big[\frac RQ+\frac1r\Big]\Big)+\text{rows}\cdot\log 3,\qquad
-\text{rows}\ \ge\ r\,\varepsilon\,\max(D,n). \tag{1}$$
-(The Taylor factor is at least $\binom nq\ge e^{q}$ for $q\le n/e$.) The preprint chooses
-$f(j)=(-1)^j$ on $R$ consecutive integers and $M_0=V_0f(W_0)$ in the algebra generated by commuting swaps,
-which gives $\varepsilon\le 2e^{-R^2/(8Q)}$ (its analysis) and in fact $\varepsilon\approx e^{-R^2/(2Q)}$
-(sharp binomial tail, since the swap eigenvalue count is $\mathrm{Bin}(Q,p)$ with $p\to 1/2$).
+**Cost.** Up to polynomial factors the running time is the product of three enumerations (preprint,
+"three costs"): Taylor data $\sum_{j\le q}2^j\binom nj$, where Hermite recovery from $Q$ nodes of a polynomial of
+degree up to $M(R-1)$ needs $q\ge\lfloor n(R-1)/Q\rfloor$; measurement tuples $(2D+1)^{\text{rows}}$; and one
+group $2^{\max_g|S_g|}\ge2^{n/r}$. With $\varepsilon=c/D$, the logarithm $E$ of the cost satisfies, for
+$R\ge2$ and $(R-1)/Q\le1/e$,
+$$E\ \ge\ \tfrac n2\,x\log\tfrac1x\ +\ \tfrac nr\ +\ \text{rows}\cdot\log3,\qquad x=\tfrac{R-1}{Q},\qquad
+\text{rows}\ \ge\ r\,\varepsilon\,\max(D,n), \tag{1}$$
+using $\binom nq\ge(n/q)^q$. (If $(R-1)/Q>1/e$ the Taylor factor alone is $2^{\Omega(n)}$.) Remark: only
+$\sum_g\dim(\mathrm{Rs}|_{S_g})\ge\dim\mathrm{Rs}$ is forced in general; the factor $r$ in the row count is the
+preprint's accounting, and the proof below goes through with $\log(1/\delta)$ in place of $\log(r/\delta)$
+without it.
+
+The preprint chooses $f(j)=(-1)^j$ on $R$ consecutive integers and $M_0=V_0f(W_0)$ in the algebra generated by
+commuting swaps. The swap eigenvalue count is $\mathrm{Bin}(Q,p)$ with $p=(r-1)/(2r)$, so the sharp tail gives
+$\varepsilon\approx e^{-R^2/(8Qp(1-p))}$ (the preprint's analysis states $2e^{-R^2/(8Q)}$).
 
 ## 3. Routing rigidity
 
@@ -72,84 +78,100 @@ which gives $\varepsilon\le 2e^{-R^2/(8Q)}$ (its analysis) and in fact $\varepsi
 partition $[r]=X\sqcup Y$ and all integers $k_1+k_2\ge Q+R$,
 $$\operatorname{rank}(I-M)\ \ge\ \#\{u\in\mathcal B:\ |\{t:a_u(t)\in X\}|\ge k_1,\ |\{t:d_u(t)\in Y\}|\ge k_2\}.$$
 
-*Proof.* Call the set on the right $T$. For $u,w\in T$, the sets $\{t:a_w(t)\in X\}$ and $\{t:d_u(t)\in Y\}$
-have sizes $\ge k_1,k_2$ inside $[Q]$, so they meet in at least $k_1+k_2-Q\ge R$ positions, at each of which
-$a_w(t)\ne d_u(t)$. Hence $\operatorname{Ham}(d_u,a_w)\ge R$ and $M[u,w]=0$. The principal submatrix
-$(I-M)[T,T]$ is the identity, and rank does not increase under taking submatrices. $\square$
+*Proof.* Call the set on the right $T$. For $u,w\in T$ (including $u=w$) the sets $\{t:a_w(t)\in X\}$ and
+$\{t:d_u(t)\in Y\}$ have sizes at least $k_1,k_2$ inside $[Q]$, so they meet in at least $R$ positions, at
+each of which $a_w(t)\ne d_u(t)$. Hence $M[u,w]=0$, the principal submatrix $(I-M)[T,T]$ is the identity, and
+rank does not increase under taking submatrices. $\square$
 
-This is formalised as `EthProblems.RoutingRigidity.rank_one_sub_ge_card_block` (with the two auxiliary
-lemmas `hamming_ge_of_split` and `card_le_rank_of_zero_block`), using Mathlib's `Matrix.rank_submatrix_le`.
+Formalised as `EthProblems.RoutingRigidity.rank_one_sub_ge_card_block`, with `hamming_ge_of_split` and
+`card_le_rank_of_zero_block`, via Mathlib's `Matrix.rank_submatrix_le`.
 
-**Corollary A.1.** Let $x=\lfloor r/2\rfloor/r\in[1/3,1/2]$, $|X|=\lfloor r/2\rfloor$. Then
-$$\frac{\operatorname{rank}(I-M)}{D}\ \ge\ \Pr\big[\mathrm{Bin}(Q,x)\ge \lceil xQ+R/2\rceil\big]\cdot
-\Pr\big[\mathrm{Bin}(Q,1-x)\ge\lceil(1-x)Q+R/2\rceil\big]\ \ge\ c_0\,e^{-C_0(R+2\sqrt Q+2)^2/Q}$$
-for absolute constants $c_0,C_0>0$ whenever $R\le Q/6$.
+**Corollary A.1.** Let $x_r=\lfloor r/2\rfloor/r\in[1/3,1/2]$ and $|X|=\lfloor r/2\rfloor$. For $R\le Q/6$,
+$$\frac{\operatorname{rank}(I-M)}{D}\ \ge\ \Pr\big[\mathrm{Bin}(Q,x_r)\ge\lceil x_rQ+R/2\rceil\big]\cdot
+\Pr\big[\mathrm{Bin}(Q,1-x_r)\ge\lceil(1-x_r)Q+R/2\rceil\big]\ \ge\ c_0\,e^{-C_0(R+2\sqrt Q+2)^2/Q}$$
+with absolute constants (one can take $C_0=9/4$, and $c_0=1/32$ for $Q\ge25$).
 
-*Proof.* The set $T$ is a product of a set of $a$-strings and a set of $d$-strings, whose densities are the
-two binomial probabilities. For the second inequality use the standard local bound
-$\Pr[\mathrm{Bin}(Q,x)=j]\ge (8Q)^{-1/2}e^{-Q\,\mathrm{KL}(j/Q\,\|\,x)}$ (Stirling), sum over the window
-$j\in[k,k+\sqrt Q]$ and use $\mathrm{KL}(a\|x)\le (a-x)^2/(x(1-x))$ with $x(1-x)\ge 2/9$. $\square$
+*Proof.* $T$ is a product of a set of $a$-strings and a set of $d$-strings with the two stated densities. Use
+the local bound $\Pr[\mathrm{Bin}(Q,x)=j]\ge(2Q)^{-1/2}e^{-Q\,\mathrm{KL}(j/Q\|x)}$, sum over the window
+$j\in[k,k+\sqrt Q]$, and use $\mathrm{KL}(a\|x)\le(a-x)^2/(x(1-x))$ with $x(1-x)\ge2/9$. $\square$
 
-For even $r$ this reads $\varepsilon\ge e^{-(1+o(1))R^2/Q}$ when $\sqrt Q\ll R\ll Q$, against
-$\varepsilon\approx e^{-R^2/(2Q)}$ achieved by the swap construction. So the swap construction is optimal up
-to the constant in the exponent, and no routing-supported matrix, commutative or not, can improve $R$ by more
-than a factor $\sqrt 2+o(1)$. Exact zero-block checks and the asymptotic comparison are in
-`checks/routing_product_set_bound.py`.
+In the regime $\sqrt Q\ll R\ll Q$ the lower bound has exponent $R^2/(4Q\,x_r(1-x_r))$ and the swap
+construction $R^2/(8Q\,p(1-p))$; the ratio is $2p(1-p)/(x_r(1-x_r))\le2$, with equality for odd $r$. So no
+routing-supported matrix, commutative or not, can improve $R$ at equal $\varepsilon$ by more than a factor
+$\sqrt2+o(1)$. Exact zero-block checks: `checks/routing_product_set_bound.py`.
 
-**Remark (the eigenvalue view).** For $M_0$ in the commutative swap algebra the statement can also be proved
-on the spectral side: $M_0$ acts on the product eigenvector with antisymmetric pattern $y\in\{0,1\}^Q$ by
-$(-1)^{|y|}h(y)$ with $\deg h\le R-1$, and a biased version of Smolensky's lemma (random restriction to the
-coordinates where a $\mathrm{Ber}(2p)$ coin is 1) shows
+**Remark (eigenvalue view, sketch).** For $M_0$ in the commutative swap algebra, $M_0$ acts on the product
+eigenvector with antisymmetric pattern $y\in\{0,1\}^Q$ by $(-1)^{|y|}h(y)$ with $\deg h\le R-1$, and a
+biased Smolensky argument (restrict to the coordinates where a $\mathrm{Ber}(2p)$ coin is 1) suggests
 $\Pr_{y\sim\mu_p}[h(y)\ne(-1)^{|y|}]\ge\mathbb E_{m\sim\mathrm{Bin}(Q,2p)}\,2^{-m}\sum_{i>\lfloor m/2\rfloor+R-1}\binom mi$.
-Theorem A is simpler and stronger because it needs no commutativity.
+We have checked this exactly for $Q\le4$ (`checks/smolensky_biased_check.py`); a written proof is not part
+of this article. Theorem A supersedes it for our purposes.
 
-## 4. The barrier
+## 4. Optimality of the interpolation route within its template
 
 **Theorem B.** There are absolute constants $c,n_0>0$ such that for $n\ge n_0$, every instantiation of the
-template of Section 2 (any $r,Q,R$, any routing-supported $M_0$, any labelling) has cost exponent
-$$E\ \ge\ c\,n\,\frac{\log\log n}{\sqrt{\log n}}.$$
+template of Section 2 (measurement on the full auxiliary space; any $r,Q,R$; any routing-supported $M_0$) has
+$$E\ \ge\ c\,n\,\frac{(\log\log n)^2}{\sqrt{\log n}}\ =\ c\,\rho(n).$$
+Since the preprint's interpolation route attains $O(\rho(n))$, it is optimal for its template up to a constant.
 
-*Proof.* Put $\delta=E/n$ and assume $\delta\le\delta_0$ for a small absolute $\delta_0$ (otherwise we are
-done). By (1): $r\ge 1/\delta$, $R\le\delta Q$, and $r\varepsilon\max(D,n)\le\delta n$, so
-$$\log\frac1\varepsilon\ \ge\ \log\frac r\delta+\log\frac{\max(D,n)}n .$$
-By Corollary A.1, $\log(1/\varepsilon)\le C_0(R+2\sqrt Q+2)^2/Q+\log(1/c_0)$. Since $\log(r/\delta)\ge
-2\log(1/\delta_0)$ is large, the $2\sqrt Q+2$ term cannot carry the inequality and we get
-$R\ge c_1\sqrt{Q\log(r/\delta)}$ (for $Q\ge Q_0$; small $Q$ forces $R/Q\ge 1/Q_0$, contradicting
-$\delta\le\delta_0$).
+*Proof.* Put $\delta=E/n$ and assume $\delta\le\delta_0$ for a small absolute $\delta_0\le1/(6e)$.
 
-*Bounding $Q$.* If $D>n^2$ then $\log(1/\varepsilon)\ge\log(D/n)\ge\tfrac12\log D=Q\log r$, so
-$R\ge c_1 Q\sqrt{\log r}$ and $R/Q\ge c_1\sqrt{\log 2}$, contradicting $\delta\le\delta_0$. Hence
-$D=r^{2Q}\le n^2$, that is $Q\le\log n/\log r$.
+*Step 1 (parameters).* By (1), $r\ge1/\delta$ and $x=(R-1)/Q\le1/e$ (else $E=\Omega(n)$). The case $R=1$ is
+excluded because Corollary A.1 then gives $\varepsilon\ge c$ for an absolute $c$, while Step 2 forces
+$\varepsilon\le\delta/r$. So $R\ge2$ and $R-1\ge R/2$; also $R\le Q/6$.
 
-*Conclusion.* $\delta\ge R/Q\ge c_1\sqrt{\log(r/\delta)/Q}\ge c_1\sqrt{\log r\cdot\log r/\log n}
-= c_1\log r/\sqrt{\log n}$, and $\delta\ge 1/r$. If $r\le\sqrt{\log n}/\log\log n$ then
-$\delta\ge\log\log n/\sqrt{\log n}$; otherwise $\log r\ge\tfrac13\log\log n$ for large $n$ and
-$\delta\ge(c_1/3)\log\log n/\sqrt{\log n}$. $\square$
+*Step 2 (measurement budget).* $r\varepsilon\max(D,n)\le\text{rows}\le\delta n$, so
+$\log(1/\varepsilon)\ge\log(r/\delta)+\log(\max(D,n)/n)$.
 
-**Reading.** The interpolation route of the preprint has exponent $\rho(n)=n(\log\log n)^2/\sqrt{\log n}$,
-a $\log\log n$ factor above Theorem B; its tensor-contraction route attains $n\log\log n/\sqrt{\log n}$,
-exactly the barrier. Chebyshev, Pade or Krawtchouk choices of $f$, non-symmetric coefficients $\gamma_S$ and
-non-commutative $M_0$ are all covered.
+*Step 3 (degree).* By Corollary A.1, $\log(1/\varepsilon)\le C_0(R+2\sqrt Q+2)^2/Q+\log(1/c_0)$. Since
+$\log(r/\delta)\ge2\log(1/\delta_0)$ is large, the term $2\sqrt Q+2$ cannot carry the inequality, so
+$R\ge c_1\sqrt{Q\log(r/\delta)}$.
 
-## 5. What the barrier does not cover
+*Step 4 (number of nodes).* If $D>n^2$ then $\log(1/\varepsilon)\ge\log(D/n)\ge\tfrac12\log D=Q\log r$, so
+$R\ge c_1Q\sqrt{\log r}$, contradicting $R\le Q/6$ for $\delta_0$ small. Hence $D=r^{2Q}\le n^2$, i.e.
+$Q\le\log n/\log r$. (With the preprint's balance requirement $D\lesssim\sqrt n$ this only improves constants.)
 
-The template needs less than the $M_0$ form. It needs rows $P_u(T)\in K[T]^{\mathcal B}$ with
-$\deg P_u\le R-1$, $P_u(0)=e_u$, and, at each node $t$, agreement on the forbidden coordinates
-$N_{t,u}=\{w:a_w(t)\ne d_u(t)\}$ with some vector $\rho_{u,t}$ of the measurement row space $\mathrm{Rs}$.
-The $M_0$ form is the special case where $\rho_{u,t}$ does not depend on $t$.
+*Step 5 (optimisation).* From Steps 3 and 4,
+$x\ge R/(2Q)\ge\tfrac{c_1}2\sqrt{\log(r/\delta)/Q}\ge\tfrac{c_1}2\,\log r/\sqrt{\log n}$. If
+$r\le\sqrt{\log n}/(\log\log n)^2$ then $\delta\ge1/r\ge(\log\log n)^2/\sqrt{\log n}$. Otherwise
+$\log r\ge\tfrac13\log\log n$ for large $n$, so $x\ge x_1:=\tfrac{c_1}6\log\log n/\sqrt{\log n}$. As
+$x\mapsto x\log(1/x)$ increases on $(0,1/e]$,
+$\delta\ge\tfrac12x_1\log(1/x_1)\ge c\,(\log\log n)^2/\sqrt{\log n}$. $\square$
 
-**Proposition C.** For general rows, $\dim\mathrm{Rs}\ge D\,(|X||Y|/r^2)^R\ge D\,4^{-R}(1-o(1))$.
+**Reading.** Chebyshev, Pade or Krawtchouk choices of $f$, non-symmetric coefficients $\gamma_S$ and
+non-commutative $M_0$ cannot improve the interpolation route beyond constants. The preprint's tensor-contraction
+method does better ($n\log\log n/\sqrt{\log n}$ in general, $n/\sqrt{\log n}$ at bounded density, including on
+the bounded-occurrence instances where the template runs). So it must violate at least one template
+assumption: it uses a Cauchy deformation $W_{xy}(T)=\mathcal C(T)/(\mathcal C'(0)(T-(y-x)))$ on packets
+rather than swap routing, a recursion, and recovery at a structured point set. Identifying exactly which
+assumption it escapes is the natural next question (problem ETH-B04).
 
-*Proof.* Fix $S_0\subseteq[Q]$ with $|S_0|=R$ and let $T=\{u: a_u(t)\in X,\ d_u(t)\in Y\ \forall t\in S_0\}$.
-For $u,w\in T$ and $t\in S_0$, $w\in N_{t,u}$, so $P_u(t)[w]=\rho_{u,t}[w]$. Lagrange interpolation of the
-degree-$(R-1)$ polynomial $P_u(\cdot)[w]$ at $S_0$ gives
-$\delta_{uw}=\sum_{t\in S_0}\lambda_t\rho_{u,t}[w]$ with $\lambda_t$ independent of $w$. So
-$\sigma_u=\sum_t\lambda_t\rho_{u,t}\in\mathrm{Rs}$ restricts to $e_u$ on $T$ for every $u\in T$. $\square$
+## 5. What the argument does not cover
 
-If general rows could attain $\varepsilon=2^{-O(R)}$, the choice $R\asymp\log(r/\tau)$,
-$Q\asymp\log n/\log r$, $r\asymp\log n/(\log\log n)^3$ in (1) gives exponent $O(n(\log\log n)^3/\log n)$.
-Deciding which of $e^{-\Theta(R^2/Q)}$ and $2^{-\Theta(R)}$ is the truth for general rows is, in our view,
-the main open problem on the algorithmic side of the refutation (problem ETH-B03).
+**(a) Node-dependent rows.** The template needs less than the $M_0$ form: rows $P_u(T)$ with
+$\deg P_u\le R-1$, $P_u(0)=e_u$ and, at each node $t$, agreement on the forbidden coordinates
+$N_{t,u}=\{w:a_w(t)\ne d_u(t)\}$ with a vector $\rho_{u,t}$ of the measurement row space $\mathrm{Rs}$. The $M_0$
+form is the special case where $\rho_{u,t}$ does not depend on $t$.
+
+**Proposition C.** For general rows and even $r$, $\dim\mathrm{Rs}\ge D\,4^{-R}$ (for odd $r$,
+$D\,(\lfloor r/2\rfloor\lceil r/2\rceil/r^2)^R$).
+
+*Proof.* Fix $S_0\subseteq[Q]$ with $|S_0|=R$ and $T=\{u:a_u(t)\in X,\ d_u(t)\in Y\ \forall t\in S_0\}$. For
+$u,w\in T$ and $t\in S_0$, $w\in N_{t,u}$, so $P_u(t)[w]=\rho_{u,t}[w]$. Lagrange interpolation at $S_0$ gives
+$\delta_{uw}=\sum_{t\in S_0}\lambda_t\rho_{u,t}[w]$ with $\lambda_t$ independent of $w$, so
+$\sigma_u=\sum_t\lambda_t\rho_{u,t}\in\mathrm{Rs}$ restricts to $e_u$ on $T$. $\square$
+
+If the measurement spaces themselves may differ per node ($\mathrm{Rs}_t$), the same argument bounds
+$\dim\sum_{t\in S_0}\mathrm{Rs}_t$, losing a factor $R$. If general rows could attain $\varepsilon=2^{-O(R)}$,
+then $R\asymp\log\log n$, $Q\asymp\log n/\log r$, $r\asymp\log n/(\log\log n)^3$ and
+$\tau\asymp(\log\log n)^3/(\log n)^2$ in the cost model give exponent $O(n(\log\log n)^3/\log n)$.
+
+**(b) Measurement on used labels only.** The algorithm's design condition only constrains the transferred rows
+on *filled* coordinates. What matters is $\operatorname{rank}((I-M_0)[U,U])$ for the set $U$ of labels actually
+used, not $\operatorname{rank}(I-M_0)$. Theorem A's product blocks can miss $U$ entirely: for type-balanced
+schedules, where every string uses each symbol exactly $Q/r$ times, every $a_u$ has exactly $x_rQ$ symbols in
+$X$ and $T\cap U=\varnothing$. A barrier for this relaxation needs blocks adapted to type classes (product sets
+over position subsets) or a new argument (problem ETH-B07).
 
 ## 6. Small cases
 
@@ -160,39 +182,38 @@ the main open problem on the algorithmic side of the refutation (problem ETH-B03
 | (3,3,2) | 64 | 1 | 1 | 1 |
 | (2,2,3) | 81 | 9 | 9 (no lower rank found) | 8 |
 
-The commutative optimum is computed exactly by enumerating agreement sets of degree-$(R-1)$ polynomials
-with parity, weighted by eigenspace multiplicities. Lower bounds come from maximum acyclic induced
-subgraphs of the support digraph (a triangular unit block), solved to optimality with CP-SAT. The rank-9
-completion for $(3,2,2)$ was found by alternating projections; three of eight runs converge to
-$\sigma_{10}/\sigma_1\approx10^{-14}$ with entries bounded by 4.3, and a greedy sparsification keeps 129 free
-nonzeros. An exact rational certificate is still missing (status: **empirical**). A one-step correction of the
-commutative optimum provably cannot reach rank 9: no exceptional eigenvector is supported inside any row's
-allowed set. Scripts: `checks/routing_minrank_experiment.py`, `routing_minrank_lowerbound.py`,
-`routing_rank9_probe.py`, `routing_exact_correction.py`.
+These are the four cases we ran; we did not search all cases in a fixed order, so we make no "smallest
+case" claim. The commutative optimum is computed exactly over the swap algebra. Lower bounds come from
+maximum acyclic induced subgraphs of the support digraph (a triangular unit block), solved to optimality with
+CP-SAT. The rank-9 completion for $(3,2,2)$ is **empirical**: three of eight alternating-projection runs
+converge to $\sigma_{10}/\sigma_1\approx10^{-14}$ with entries bounded by 4.3; no exact certificate yet. A
+one-step correction of the commutative optimum provably cannot reach rank 9 (no exceptional eigenvector is
+supported inside any row's allowed set).
 
 ## 7. Machine-checked components
 
 Lean 4 (v4.34.1) with Mathlib (rev `d13f23b7`), project `problems/eth/lean`, no `sorry`, axioms
-`propext`, `Classical.choice`, `Quot.sound` only:
-
-* `RoutingRigidity.rank_one_sub_ge_card_block` (Theorem A), `hamming_ge_of_split`,
-  `card_le_rank_of_zero_block`.
-* `Parity.no_low_degree_parity_match`: a polynomial of degree $<R$ cannot equal $\varepsilon(-1)^i$ on
-  $R+1$ consecutive points, the one-dimensional version of the interval optimality.
-* Supporting identities of the preprint's algebra: interval identity and exact off-interval defect of the
-  parity interpolant, Hermite uniqueness from Taylor data at $Q$ nodes, Mobius inversion on the Boolean
-  lattice, and the deformed partition function identity.
-
-Not formalised: Corollary A.1 (binomial anti-concentration) and Theorem B (parameter optimisation).
+`propext`, `Classical.choice`, `Quot.sound` only: Theorem A (`rank_one_sub_ge_card_block` and its two
+lemmas); `no_low_degree_parity_match` (degree $<R$ cannot equal $\varepsilon(-1)^i$ on $R+1$ consecutive
+points); and supporting identities of the preprint (parity interpolant and its exact defect, Hermite
+uniqueness, Mobius inversion on the Boolean lattice, deformed partition function). Corollary A.1 and Theorem B
+are not formalised.
 
 ## 8. Relation to prior work
 
 The interval interpolation of $(-1)^j$ and the resulting low-rank approximations of Walsh-Hadamard type
-matrices go back to Alman and Williams (matrix rigidity) and Alman-Williams interpolation lemmas, cited in the
-preprint; Dvir and Liu use Fourier-sparsity for non-rigidity. Theorem A is a rigidity statement in the
-opposite direction for a *support-constrained* family; its proof is a fooling-set argument. Smolensky's lemma
-(1987) underlies the remark in Section 3. We are not aware of earlier work on lower bounds for the
-preprint's template, which is to be expected given its date.
+matrices come from Alman and Williams, cited in the preprint; Dvir and Liu use Fourier sparsity for
+non-rigidity. Theorem A is a rigidity statement in the opposite direction for a support-constrained family,
+proved by a fooling-set argument. Smolensky's lemma underlies the remark in Section 3. We are not aware of
+earlier lower bounds for the preprint's template, which is expected given its date.
+
+## Revision notes
+
+Revision 2 incorporates an internal referee pass: (i) the claim that both OpenAI routes sit at the barrier was
+false and is removed (the tensor route beats the template); (ii) keeping the $\log(Q/R)$ factor of the Taylor
+cost strengthens Theorem B from $n\log\log n/\sqrt{\log n}$ to $\Omega(\rho(n))$; (iii) the scope is restricted
+to full-auxiliary measurement, with the used-label relaxation listed as open; (iv) constants, the balance
+constraint, Proposition C for odd $r$ and the status of the eigenvalue remark are corrected.
 
 ## References
 
@@ -201,5 +222,5 @@ preprint's template, which is to be expected given its date.
 2. J. Alman and R. Williams, Probabilistic rank and matrix rigidity, STOC 2017.
 3. Z. Dvir and A. Liu, Fourier and circulant matrices are not rigid, Theory of Computing 2020.
 4. R. Smolensky, Algebraic methods in the theory of lower bounds for Boolean circuit complexity, STOC 1987.
-5. T. M. Cover and J. A. Thomas, *Elements of Information Theory*, 2nd ed., Wiley 2006 (method of types).
+5. T. M. Cover and J. A. Thomas, *Elements of Information Theory*, 2nd ed., Wiley 2006.
 6. R. Impagliazzo, R. Paturi and F. Zane, Which problems have strongly exponential complexity?, JCSS 2001.

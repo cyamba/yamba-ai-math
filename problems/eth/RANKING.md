@@ -14,8 +14,8 @@ and ranked by `score = 0.40 B + 0.25 N + 0.20 T + 0.15 L`.
 | Rank | ID | Problem | B | N | T | L | Score |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [ETH-B03](B-exponent-frontier/ETH-B03-polynomial-row-routing.md) | General polynomial rows: is `eps* = 2^{-Theta(R)}` possible? | 10 | 9 | 5 | 5 | **8.00** |
-| 2 | [ETH-B04](B-exponent-frontier/ETH-B04-loglog-gap.md) item 2 | Common "routing design" abstraction for both OpenAI routes; extend Theorem A to the tensor route | 7 | 8 | 6 | 6 | **6.90** |
-| 3 | [ETH-B07](B-exponent-frontier/ETH-B07-sparse-embedding-escape.md) | Rank savings on filled coordinates | 8 | 8 | 5 | 4 | **6.80** |
+| 2 | [ETH-B04](B-exponent-frontier/ETH-B04-loglog-gap.md) item 2 | Which template assumption does the tensor route escape, and can that mechanism go below `sqrt(log n)`? | 8 | 8 | 6 | 5 | **7.15** |
+| 3 | [ETH-B07](B-exponent-frontier/ETH-B07-sparse-embedding-escape.md) | Used-label measurement: type-balanced labelings avoid every product block | 8 | 8 | 6 | 4 | **7.00** |
 | 4 | [ETH-C01](C-counting-extensions/ETH-C01-weighted-q-series.md) | Weight enumerator; k-Vertex Cover in `2^{o(k)}` | 6 | 6 | 8 | 7 | **6.55** |
 | 5 | [ETH-C03](C-counting-extensions/ETH-C03-dense-exact-maxsat.md) | Exact Max-k-SAT for dense formulas (mod `2^l` binomial moments) | 7 | 7 | 6 | 5 | **6.50** |
 | 6 | [ETH-D10](D-complexity-consequences/ETH-D10-proof-complexity.md) | `2^{o(n)}` Extended Frege / IPS refutations of 3-CNFs | 7 | 9 | 4 | 4 | **6.45** |
@@ -39,11 +39,11 @@ and ranked by `score = 0.40 B + 0.25 N + 0.20 T + 0.15 L`.
 
 | Rank | Subresult | Status | Why it ranks here | Where |
 | --- | --- | --- | --- | --- |
-| 1 | **Routing rigidity (Theorem A)**: every routing-supported `M` has `rank(I-M) >= D e^{-(1+o(1))R^2/Q}` | **proved, Lean** | Settles the `M_0`-form template up to constants; basis of the article | [RoutingRigidity.lean](lean/EthProblems/RoutingRigidity.lean), [article](articles/sqrt-log-barrier.md) |
-| 2 | **Template barrier (Theorem B)**: exponent `>= c n log log n / sqrt(log n)` for every `M_0`-form instantiation | **proved** (paper proof) | Explains the `sqrt(log n)` and shows the preprint's best bound is tight for its method | [ETH-B01](B-exponent-frontier/ETH-B01-sqrt-log-barrier.md) |
+| 1 | **Routing rigidity (Theorem A)**: every routing-supported `M` has `rank(I-M) >= D e^{-O(1+R^2/Q)}` (`R <= Q/6`) | **proved, Lean** | Settles the full-measurement `M_0` template up to constants; basis of the article | [RoutingRigidity.lean](lean/EthProblems/RoutingRigidity.lean), [article](articles/sqrt-log-barrier.md) |
+| 2 | **Template optimality (Theorem B)**: exponent `>= c n (log log n)^2 / sqrt(log n)` for every full-measurement `M_0`-form instantiation | **proved** (paper proof, refereed internally) | Shows the preprint's interpolation route is optimal for its template; the tensor route must escape it | [ETH-B01](B-exponent-frontier/ETH-B01-sqrt-log-barrier.md) |
 | 3 | **General rows: `eps* >= 4^{-R}`** and the computation that `2^{-Theta(R)}` would give `n (log log n)^3 / log n` | **proved** | Pinpoints the one escape and its payoff; drives rank-1 problem | [ETH-B03](B-exponent-frontier/ETH-B03-polynomial-row-routing.md) |
 | 4 | Non-commutative beats commutative at `(3,2,2)`: 10 to 9 | **empirical** (LB 8 proved) | First evidence that the swap algebra is not optimal; constant-factor only by Theorem A | [checks/](checks/) |
-| 5 | Biased Smolensky lemma (Lemma B) | **proved**, exact check `Q <= 4` | Spectral view of the commutative case | [ETH-B01](B-exponent-frontier/ETH-B01-sqrt-log-barrier.md) |
+| 5 | Biased Smolensky lemma (Lemma B) | **proof sketch**, exact check `Q <= 4` | Spectral view of the commutative case | [ETH-B01](B-exponent-frontier/ETH-B01-sqrt-log-barrier.md) |
 | 6 | Interval optimality: degree `< R` cannot match parity on `R+1` consecutive points | **proved, Lean** | One-dimensional shadow of the barrier | [ParityInterpolant.lean](lean/EthProblems/ParityInterpolant.lean) |
 | 7 | Exact off-interval defect; sheet formula refuted | **proved, Lean** | Corrects the input sheet; entry-size bounds | ETH-A01 |
 | 8 | Source audit: exponent is `n/sqrt(log n)`, not `n/log n`; planar claim refuted | **established** against the preprint | Prevents fleets from building on a wrong exponent | [SOURCE-AUDIT.md](SOURCE-AUDIT.md) |
@@ -51,7 +51,8 @@ and ranked by `score = 0.40 B + 0.25 N + 0.20 T + 0.15 L`.
 | 10 | k-Vertex Cover in `poly(n) + 2^{o(k)}` via weight enumerator | **proof sketch** | Concrete new FPT consequence, conditional on Theorem 1 | ETH-C01 |
 | 11 | Exact Max-k-SAT histogram for `m <= Dn` | **proof sketch** | Strengthens Cor. 1.1 in the linear regime | ETH-C05 |
 
-Article written for subresults 1 to 3 (highest novelty and score):
+Article written for subresults 1 to 3 (highest novelty and score); revision 2 incorporates an internal
+referee pass that removed a false claim and strengthened Theorem B:
 [articles/sqrt-log-barrier.md](articles/sqrt-log-barrier.md).
 
 ## C. Fleet briefs for the top four
@@ -71,16 +72,18 @@ Roles refer to [agents/registry.json](../../agents/registry.json); topologies to
   `(4,2,2)`, lower the priority of constructions and raise the lower-bound branch.
 * **Budget.** CPU-only; tiny instances run in minutes on 2 cores.
 
-### Fleet 2: one abstraction for both OpenAI routes (topology `theorem`)
+### Fleet 2: what the tensor route escapes (topology `theorem`)
 
-* **Goal.** Define a "routing design" that covers the interpolation route and the tensor-contraction route
-  (Cauchy deformation, packets of `L = 2^a` slots, labels in `[r]^a`), and prove Theorem A for it.
-* **Roles.** `decomposer`, `mathematician`, `critic`. Output: a lemma note plus Lean statement.
+* **Goal.** The tensor-contraction route beats the interpolation template's optimum `rho(n)`. Find which
+  template assumption it violates (Cauchy deformation on packets, recursion, structured recovery points),
+  state a common "routing design" abstraction, and test whether that mechanism can go below `sqrt(log n)`.
+* **Roles.** `decomposer`, `mathematician`, `critic`. Output: a lemma note plus a Lean statement.
 
-### Fleet 3: ETH-B07, filled-coordinate rank (topology `explore`)
+### Fleet 3: ETH-B07, used-label measurement (topology `explore`)
 
-* **Goal.** Determine whether structured labelings with `D >> n` can avoid all product blocks
-  `A x D'` while keeping groups balanced.
+* **Goal.** Type-balanced labelings already avoid every product block of Theorem A. Either prove a used-label
+  rigidity bound (blocks over type classes and position subsets) or construct `M_0` with small
+  `rank((I - M_0)[U,U])` for type-balanced `U`, and evaluate the resulting exponent.
 * **Roles.** `scout` (coding-theory constructions), `experimenter`, `critic`.
 
 ### Fleet 4: ETH-C01 and ETH-C05 to full proofs (topology `pair`)
@@ -96,5 +99,7 @@ Roles refer to [agents/registry.json](../../agents/registry.json); topologies to
 * Lean + Mathlib: the network policy in this environment blocks the Mathlib cache and the Lean release host.
   The toolchain installs from GitHub releases; the needed Mathlib closure builds from source on 2 cores in
   about 1.5 hours. Keep imports narrow.
+* An independent referee pass caught a false claim (tensor route versus barrier) and a slack factor that,
+  once removed, upgraded Theorem B. Reserve a separate critic for every article.
 * Numerical rank experiments found a counterexample to "commutative is optimal" within minutes, and a cheap
   fooling-set argument then bounded what it could buy. Running cheap experiments before long proofs paid off.

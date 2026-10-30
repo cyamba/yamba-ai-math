@@ -30,7 +30,7 @@ which requires `M_0[u,w] != 0 => Ham(d_u, a_w) <= R-1` and gives `c = rank(I - M
 | `M_0` form, commutative swap algebra achieves `~ D e^{-R^2/(2Q)}` | **established** (preprint construction, sharp tail) | |
 | Hence for the `M_0` form `log(1/eps*) = kappa R^2 / Q` with `kappa in [1/2, 1]` asymptotically | **proved** | |
 | Smallest case `(Q,R,r) = (3,2,2)`: commutative optimum 10, certified lower bound 8, non-commutative completion of rank 9 | **empirical** (rank 9: 3 of 8 runs converge to `sigma_10 ~ 1e-14` with bounded entries); LB 8 **proved** by CP-SAT triangular block | [checks/routing_minrank_*.py](../checks/) |
-| General polynomial rows: `eps* >= 4^{-R}` | **proved** (fixed node set `S_0` of size `R` on which every pair in a block is forbidden; Lagrange at `S_0` puts `e_u|_T` in `Rs|_T`) | this file, Sec. "Proof of the 4^{-R} bound" |
+| General polynomial rows: `eps* >= 4^{-R}` (even `r`; odd `r`: `(floor(r/2) ceil(r/2)/r^2)^R`) | **proved** (fixed node set `S_0` of size `R` on which every pair in a block is forbidden; Lagrange at `S_0` puts `e_u|_T` in `Rs|_T`) | this file, Sec. "Proof of the 4^{-R} bound" |
 | General rows: is `eps* = 2^{-Theta(R)}` achievable for `R << sqrt(Q)`? | **OPEN** | ALS on `(3,2,2)` inconclusive (does not even recover known `c = 9`) |
 
 ### Proof of the `4^{-R}` bound
@@ -44,10 +44,10 @@ lies in `Rs` and restricts to `e_u` on `T`. Hence `dim Rs >= |T|`. QED.
 
 ## Why this is the top problem
 
-If general rows reach `eps* = 2^{-O(R)}`, take `R ~ log(r/tau)`, `Q ~ log n / (2 log r)`,
-`r ~ log n / (log log n)^3`: the exponent becomes `O(n (log log n)^3 / log n)`, a polynomial-in-`log n`
-improvement over Theorem 1 and the first algorithm beyond the `sqrt(log n)` barrier
-([ETH-B01](ETH-B01-sqrt-log-barrier.md)). If instead `eps* >= e^{-O(R^2/Q)}` holds for general rows too, the
+If general rows reach `eps* = 2^{-O(R)}`, take `R ~ log log n`, `Q ~ log n / log r`,
+`r ~ log n / (log log n)^3`, `tau ~ (log log n)^3 / (log n)^2`: the exponent becomes `O(n (log log n)^3 / log n)`, a polynomial-in-`log n`
+improvement over Theorem 1 and the first algorithm beyond the `sqrt(log n)` scale
+(the interpolation template is stuck at `rho(n)`, [ETH-B01](ETH-B01-sqrt-log-barrier.md)). If instead `eps* >= e^{-O(R^2/Q)}` holds for general rows too, the
 barrier covers the whole replacement-form template and the field must change the recovery step.
 
 ## Concrete sub-problems for a fleet

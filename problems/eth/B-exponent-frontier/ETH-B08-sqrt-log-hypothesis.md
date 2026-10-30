@@ -8,7 +8,7 @@ status: open question (no conjecture asserted)
 # ETH-B08: Is `2^{n / (log n)^{1/2 + o(1)}}` the truth for #3-SAT?
 
 Both of OpenAI's routes stop at `n / sqrt(log n)` up to `log log` factors, and [ETH-B01](ETH-B01-sqrt-log-barrier.md)
-shows that the replacement-form template with `M_0`-type rows cannot do better. Natural questions:
+shows that the interpolation template cannot beat `n (log log n)^2 / sqrt(log n)`. Natural questions:
 
 1. **Weaker hypotheses that may still hold.** Formulate a "`sqrt(log)`-ETH": #3-SAT (or 3-SAT) has no
    `2^{n / (log n)^{1/2 + delta}}` algorithm for some `delta > 0`. What would it imply under the standard

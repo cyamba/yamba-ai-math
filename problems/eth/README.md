@@ -64,13 +64,13 @@ Ranking for the next fleet iteration: **[RANKING.md](RANKING.md)**.
 | [ETH-A05](A-algebraic-core/ETH-A05-taylor-extraction.md) | Bounded-scope Taylor extraction (Minc view) | Open |
 | [ETH-A06](A-algebraic-core/ETH-A06-boolean-differences.md) | Boolean differences / Mobius inversion | **Solved, Lean** |
 | [ETH-A07](A-algebraic-core/ETH-A07-algebraic-core-decoupling.md) | Decouple the algebraic core from Turing-machine plumbing | Open |
-| [ETH-B01](B-exponent-frontier/ETH-B01-sqrt-log-barrier.md) | The `sqrt(log n)` barrier for the replacement-form template | **Proved; core lemma in Lean; article** |
+| [ETH-B01](B-exponent-frontier/ETH-B01-sqrt-log-barrier.md) | Routing rigidity; the interpolation route is optimal for its template | **Proved; core lemma in Lean; article** |
 | [ETH-B02](B-exponent-frontier/ETH-B02-spectral-approximants.md) | Chebyshev / Pade / Krawtchouk replacements for `f` | **Answered negatively** inside the commutative algebra (by B01) |
 | [ETH-B03](B-exponent-frontier/ETH-B03-polynomial-row-routing.md) | Routing rigidity beyond `M_0`: the only visible route past `sqrt(log n)` | **Top open problem**; `M_0` form settled up to constants |
-| [ETH-B04](B-exponent-frontier/ETH-B04-loglog-gap.md) | The extra `log log n` factor | Closed in paper (tensor contraction); Lean gap open |
+| [ETH-B04](B-exponent-frontier/ETH-B04-loglog-gap.md) | What the tensor route escapes; the `log log n` gap | Item 2 top-ranked open; Lean gap open |
 | [ETH-B05](B-exponent-frontier/ETH-B05-width-threshold.md) | Largest clause width `k(n)` still subexponential | Open |
 | [ETH-B06](B-exponent-frontier/ETH-B06-crossover-constant.md) | Explicit constants and crossover against PPSZ | Open |
-| [ETH-B07](B-exponent-frontier/ETH-B07-sparse-embedding-escape.md) | Rank savings from zero-filled auxiliary coordinates | Open |
+| [ETH-B07](B-exponent-frontier/ETH-B07-sparse-embedding-escape.md) | Used-label measurement escapes the barrier? | Open, raised priority |
 | [ETH-B08](B-exponent-frontier/ETH-B08-sqrt-log-hypothesis.md) | Is `2^{n / (log n)^{1/2 + o(1)}}` the truth for #3-SAT? | Open question |
 | [ETH-C01](C-counting-extensions/ETH-C01-weighted-q-series.md) | Weight enumerator `Z_F(q)` and k-Vertex Cover in `2^{o(k)}` | Proof sketch |
 | [ETH-C02](C-counting-extensions/ETH-C02-serf-reductions-lean.md) | Verified SERF reduction library | Open (Lean) |
