@@ -1,0 +1,8 @@
+{
+  "input_filename": "Argon_3D Tableau Rotation.pdf",
+  "input_sha256": "5c86926416fce825c8ff8e68471a1918493ddf0f248dc57f15a12ebe8afbd9a9",
+  "pages": 15,
+  "inspection": "all pages rendered; OCR inspected with page images for formulas",
+  "document_title": "Status of the Roger Ramanujan KR1 Proof",
+  "extraction_caveat": "PDF is image-only. OCR is a reading aid, not canonical mathematical source. Supplied code is unverified input."
+}

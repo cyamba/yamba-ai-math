@@ -1,0 +1,19 @@
+{
+  "status": "passed_independent_finite_transcription_checks",
+  "seed": 260026,
+  "cone_samples": 3500,
+  "valid_marked_cones": 3390,
+  "lower_intersections": 414,
+  "sector_samples": 1208,
+  "binary_apex_families_checked_k": [
+    1,
+    10
+  ],
+  "exact_capacity_comparison": {
+    "k": 128,
+    "max_weight": 75081,
+    "source_count": "340282366920938463463374607431768211456",
+    "target_upper_bound": "179149250616921445983301071424"
+  },
+  "assurance": "Finite checks corroborate transcription. Universal verdict rests on written proofs."
+}

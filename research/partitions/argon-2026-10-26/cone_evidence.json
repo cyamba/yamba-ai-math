@@ -1,0 +1,25 @@
+{
+  "status": "passed_finite_corroboration",
+  "bounds": {
+    "x_z_each": [
+      0,
+      5
+    ],
+    "y": [
+      1,
+      5
+    ],
+    "c6_c3_each": [
+      0,
+      3
+    ],
+    "c1": [
+      0,
+      2
+    ]
+  },
+  "states_checked": 8375,
+  "lower_image_states": 828,
+  "general_assurance": "written branch proof, separately reviewed in review-round1.md",
+  "claim": "cone valid; lower-image intersection iff z<=3,y>=3,c6>=2,c3>=2"
+}

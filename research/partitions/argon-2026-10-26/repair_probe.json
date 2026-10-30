@@ -1,0 +1,211 @@
+{
+  "status": "proposed_preservation_repairs_refuted",
+  "assurance": "explicit exact witnesses; finite counts support written proofs",
+  "collisions": [
+    {
+      "proposal": "weight31_option_B",
+      "proposed_source": {
+        "a": 5,
+        "b": 0,
+        "mu": [
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        "nu": []
+      },
+      "candidate_target": [
+        10,
+        9,
+        9,
+        3
+      ],
+      "existing_source": {
+        "a": 4,
+        "b": 0,
+        "mu": [
+          0,
+          0,
+          5,
+          10
+        ],
+        "nu": []
+      },
+      "weight": 31,
+      "status": "refuted_if_other_assignments_are_retained"
+    },
+    {
+      "proposal": "weight31_alternative",
+      "proposed_source": {
+        "a": 5,
+        "b": 0,
+        "mu": [
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        "nu": []
+      },
+      "candidate_target": [
+        9,
+        8,
+        8,
+        6
+      ],
+      "existing_source": {
+        "a": 3,
+        "b": 1,
+        "mu": [
+          0,
+          2,
+          2
+        ],
+        "nu": [
+          2
+        ]
+      },
+      "weight": 31,
+      "status": "refuted_if_other_assignments_are_retained"
+    },
+    {
+      "proposal": "weight25_free_head",
+      "proposed_source": {
+        "a": 5,
+        "b": 0,
+        "mu": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nu": []
+      },
+      "candidate_target": [
+        9,
+        8,
+        8
+      ],
+      "existing_source": {
+        "a": 4,
+        "b": 0,
+        "mu": [
+          0,
+          3,
+          3,
+          3
+        ],
+        "nu": []
+      },
+      "weight": 25,
+      "status": "refuted_if_other_assignments_are_retained"
+    },
+    {
+      "proposal": "weight37_pure_head",
+      "proposed_source": {
+        "a": 5,
+        "b": 0,
+        "mu": [
+          0,
+          1,
+          1,
+          5,
+          5
+        ],
+        "nu": []
+      },
+      "candidate_target": [
+        10,
+        10,
+        9,
+        8
+      ],
+      "existing_source": {
+        "a": 4,
+        "b": 0,
+        "mu": [
+          2,
+          5,
+          7,
+          7
+        ],
+        "nu": []
+      },
+      "weight": 37,
+      "status": "refuted_if_other_assignments_are_retained"
+    },
+    {
+      "proposal": "weight41_step_one_patch",
+      "proposed_source": {
+        "a": 5,
+        "b": 0,
+        "mu": [
+          0,
+          1,
+          2,
+          6,
+          7
+        ],
+        "nu": []
+      },
+      "candidate_target": [
+        10,
+        10,
+        9,
+        9,
+        3
+      ],
+      "existing_source": {
+        "a": 3,
+        "b": 1,
+        "mu": [
+          1,
+          2,
+          2
+        ],
+        "nu": [
+          5
+        ]
+      },
+      "weight": 41,
+      "status": "refuted_if_other_assignments_are_retained"
+    }
+  ],
+  "actual_apex_image": {
+    "cluster": {
+      "a": 5,
+      "b": 0,
+      "mu": [
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "nu": []
+    },
+    "image": [
+      18,
+      10,
+      3
+    ]
+  },
+  "unique_head_capacity": {
+    "maximum_weight": 55,
+    "source_apex_count": 30,
+    "eligible_head_count": 29,
+    "head_bounds": "0<=z<=3, y in {1,2}, x>=0, x+z>=1; min tail 1 if x=0",
+    "source_family": "a=3,b=2,mu=(0,r,r),r in {0,1,2},nu=(u,v),0<=u<=v",
+    "scope": "weight-preserving injective HEAD assignment with full unbounded increment octants"
+  },
+  "fixed_alphabet_witness": {
+    "binary_increment_length": 128,
+    "max_weight": 75081,
+    "source_count": 340282366920938463463374607431768211456,
+    "generous_target_bound": 179149250616921445983301071424
+  }
+}
