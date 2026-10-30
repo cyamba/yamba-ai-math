@@ -1,0 +1,35 @@
+{
+  "summary": "Independent experimenter read the populated ENERGY-012 main finite-check packet and frozen author statement eb76660af2f2ccb2ac003fdf835d2b05c325435d7600ed9e7f98448eb32da80b. One smoke and one bounded final run passed with no failures. Exact checks cover 36 unit reductions, including 21 noncoprime k,H cases, 345 enumerated characters/coefficient bounds/fiber reconstructions, 148 classwise Cauchy certificates, 36 base Parseval cases and 84 fixed-twist cases. They also cover 54 sampled normalized products, 6 independent-factor Cauchy certificates, 20000 smooth-divisor convolution cases, 136 real-weight partial-summation intervals, 1676 ordered sparse representations and 175 product coefficient cases through power 4. Final check-body runtime was 2.7821159 seconds on Python 3.11.17, Windows-10-10.0.26300-SP0. Code hash 3205b10f2b5eb96f76b35df248660ed9a0748b74fac4e4eae10ba7be3ee6447c and the frozen cyclotomic helper hash are saved. Exact root orders reach 168; no floating tolerance is used. Commands, domains, negative controls and unknown usage are recorded. These finite identities do not certify a zero-free strip, Mellin separation, analytic norm, major-energy estimate or Goldbach.",
+  "claims": [
+    {
+      "text": "The exact unit reduction, kernel cardinality, extension of each kernel character, fiber Fourier reconstruction, coefficient bounds and classwise k-Cauchy identity pass for H in {2,4,6,8,10,12,14,18,20}, k in {1,2,3,4}, including noncoprime k,H. Representative phases are retained. Base-character Parseval is checked after classwise Cauchy.",
+      "status": "empirical",
+      "source": "research/goldbach/reflected-energy-20261029/finite-results.json"
+    },
+    {
+      "text": "The phi(H) average, 1/Y arc factor and Y(MN)^2 prefactor agree exactly for both diagonal and independent bilinear finite products, with a separate fixed marking twist. Independent-factor Cauchy gaps have exact sums-of-squares certificates. These are Gaussian toy coefficients and order 4 multiplicative toy phases, not numerical evaluations of the actual arithmetic energy or continuous Mellin factors.",
+      "status": "empirical",
+      "source": "research/goldbach/reflected-energy-20261029/finite-results.json"
+    },
+    {
+      "text": "The smooth-divisor Mobius identity passes on n<=5000 for Z in {2,3,5,7}; discrete real-weight partial summation and its variation bound pass on all intervals within 1..16, retaining complex phases inside the coefficients. Repeated-prime multinomial representation counts and pointwise/total coefficient-square bounds pass for K=1,2 and powers 0..4.",
+      "status": "empirical",
+      "source": "research/goldbach/reflected-energy-20261029/finite-results.json"
+    },
+    {
+      "text": "Fixed-twist injectivity fails if twists vary with the base character, as shown by principal/quadratic products collapsing modulo 3. Treating the repeated-prime factorial bound as equality also fails, and raising the character value at product 35 to power 2 changes the correct quadratic value -1 to 1.",
+      "status": "refuted",
+      "source": "research/goldbach/reflected-energy-20261029/finite-results.json"
+    },
+    {
+      "text": "The analytic zero-free input and small-radical deduction, classical imported theorem ranges/proofs, Perron and local-zero consequences, tau3/tau9 estimate, smooth Mellin separation/tails, Gram estimates, major-energy bound and actual-prime/Goldbach consequences are outside finite coverage.",
+      "status": "unverified",
+      "source": "research/goldbach/reflected-energy-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/reflected-energy-20261029/experiment-plan.md",
+    "research/goldbach/reflected-energy-20261029/energy_checks.py",
+    "research/goldbach/reflected-energy-20261029/finite-results.json"
+  ]
+}

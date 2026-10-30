@@ -1,0 +1,38 @@
+{
+  "summary": "Supported relative to the actual accepted CENTERED018 k1/trivial-twist theorem and its named classical inputs. The exact independent-label swap, verified Psi plateau, unit orthogonality and coefficient ordering give actual-input comparison positivity and set monotonicity. The common-product Mellin transform, character-averaged tail retaining 1/H, effective PNT with exact log densities and integrable lambda decay prove Q0=(2 J_eta/9+O(1/log H))*HY/(V_H^2 log^4 H), J_eta>0, and the stated all-precision nonprincipal remainder. Full-major monotonicity and the power-small integer comparison prove the actual fractional lower bound. One P2 exposition clarification is required: the principal/nonprincipal central split uses the signed lift around zero already implemented by the rescaling; only its total is intrinsically torus-periodic. No formula or bound changes. No prescribed-H raw nonemptiness, raw-minus-major estimate, generic fractional PSD, other-k asymptotic, original prime margin, novelty, breakthrough classification or Goldbach follows. No unaccepted020 input, mathematical helper, experiment, supplement or new source search was used. Usage is unknown.",
+  "claims": [
+    {
+      "text": "For the actual label-independent H-unit coefficient class on the verified Psi plateau, swapping independent labels gives the exact character/residue-square representation of Q_M, proving positivity and monotonicity under measurable set inclusion without generic configuration-kernel PSD.",
+      "status": "proved",
+      "source": "research/goldbach/principal-comparison-20261029/review.md, Candidate 1"
+    },
+    {
+      "text": "Using the signed central-arc lift, the exact prefactor is YX^2 for the normalized character energy. The actual accepted018 estimate and paid common-product Mellin tails give Q0_nonprincipal=O_D(HY log^(-D)H) for every fixed D while retaining the essential 1/H.",
+      "status": "proved",
+      "source": "research/goldbach/principal-comparison-20261029/review.md, Common-product transform and Tail mean preserving 1/H"
+    },
+    {
+      "text": "Effective ordinary PNT, the exact principal density with two prime-density logarithms, uniform growing-lambda errors and integrable decay prove Q0=(2 J_eta/9+O(1/log H))*HY/(V_H^2 log^4 H), with finite strictly positive J_eta and the full group normalizer retained.",
+      "status": "proved",
+      "source": "research/goldbach/principal-comparison-20261029/review.md, Effective PNT and Integrable decay before logarithm expansion"
+    },
+    {
+      "text": "The complete-form monotonicity and negligible actual h=1 integer major compression imply that this specific input's actual full-major fractional comparison is at least (2 J_eta/9+o(1))*HY/(V_H^2 log^4 H), without generic fractional positivity or a full-major asymptotic.",
+      "status": "proved",
+      "source": "research/goldbach/principal-comparison-20261029/review.md, The actual fractional lower bound and its limits"
+    },
+    {
+      "text": "The principal/nonprincipal central split is defined on the signed lift phi in [-Lambda/Y,Lambda/Y]. Individual character squares need not be torus-periodic, whereas their total is; explicitly recording this existing coordinate convention changes no conclusion.",
+      "status": "proved",
+      "source": "research/goldbach/principal-comparison-20261029/review.md, Prioritized finding"
+    },
+    {
+      "text": "A prescribed-H lower bound for C1, a raw-minus-full-major estimate sufficient for the original target, other-k or other-array asymptotics, polynomial-sieve Type I, the original pointwise prime margin, novelty, substantive-breakthrough classification and Goldbach remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/principal-comparison-20261029/review.md, The actual fractional lower bound and its limits"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/principal-comparison-20261029/review.md"
+  ]
+}

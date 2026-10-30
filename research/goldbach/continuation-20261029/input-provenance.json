@@ -1,0 +1,88 @@
+{
+  "source_ref": "origin/research/goldbach-geometry-parity",
+  "source_revision": "b69b270947c053d20134431b172b49a7c51286e8",
+  "checkout_revision": "33862d8829bb05e0dc16bebb9d643c1180e102a9",
+  "method": "byte-identical git blob copy; existing files not overwritten",
+  "files": [
+    {
+      "path": "programs/goldbach-parity-bridge.json",
+      "sha256": "0f572dedb502c26432ff2fb477ebbd23bb5084c8f0257f430a43b00783884ab7"
+    },
+    {
+      "path": "research/goldbach/README.md",
+      "sha256": "463bec4f4dce57f2016524f343f40e3b4d85cc1f72a53fac9b7a23dc388190c4"
+    },
+    {
+      "path": "research/goldbach/checks/deterministic_worker.py",
+      "sha256": "c2f360cae77e43073b02afe684fb3d5cdfa8409e4c3136fa7a821f871958ade6"
+    },
+    {
+      "path": "research/goldbach/evidence/deterministic-run.json",
+      "sha256": "8f1a78743c8e093f6320450b1b990aede5fe36d5c43dcc055b8dc79cb4767b14"
+    },
+    {
+      "path": "research/goldbach/host-first-attempt/host_countermodel_check.py",
+      "sha256": "f2f56da194f0464f7fe4c2b8a9751243ac2469743c7e88d6e67bda09d5325a8e"
+    },
+    {
+      "path": "research/goldbach/host-first-attempt/host_critic.md",
+      "sha256": "dc3f54edeeac37f4e9b3af01c2d42a71c23146a66fb8a5f54f2e5729703665ec"
+    },
+    {
+      "path": "research/goldbach/host-first-attempt/host_critic_check.py",
+      "sha256": "ff96fbade9482c3d6629903e2e7524d3754620a4281b0a4064bb524686be903c"
+    },
+    {
+      "path": "research/goldbach/host-first-attempt/host_critic_results.txt",
+      "sha256": "02a045b838a051416dd3de0aa171af8776478bd13c0b037489d9487b9e249eeb"
+    },
+    {
+      "path": "research/goldbach/host-first-attempt/host_prover.md",
+      "sha256": "3498dea4c48170b7dfd80355815b3649fe846e37210f172da8e28901fc0fa927"
+    },
+    {
+      "path": "research/goldbach/lean/GoldbachElementary.lean",
+      "sha256": "a6af8732948980b162f36738b16a0853bb63a9475092c4bd9dd5385023978101"
+    },
+    {
+      "path": "research/goldbach/lean/README.md",
+      "sha256": "7bd5892f1b10a4f0d9c68ed095024c95a9c8eb82c9089c04f832424d663aa29a"
+    },
+    {
+      "path": "research/goldbach/lean/SHA256SUMS",
+      "sha256": "ec6d0c1db54e50f0ab24cb04e960a5819244b32b984fc4918fb9695f80551953"
+    },
+    {
+      "path": "research/goldbach/lean/lakefile.toml",
+      "sha256": "f68ddfdb32afcacf980fd733a3b2d0f40af6e59320ec6f14019a939c43664840"
+    },
+    {
+      "path": "research/goldbach/lean/lean-toolchain",
+      "sha256": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+    },
+    {
+      "path": "research/goldbach/lean/verification.log",
+      "sha256": "4e92b23aef74fd11e3f8ae7d9a540477c736b43995d1727ae64dec28a95805d9"
+    },
+    {
+      "path": "research/goldbach/orchestrated-prompt.md",
+      "sha256": "2722aa0592589e39e37aae87bface08a96e999a7901ad57e9af578bc2b7631f8"
+    },
+    {
+      "path": "research/goldbach/publication/goldbach_article.pdf",
+      "sha256": "1a428f20a415b18342971a641889bcc6b56931e677a550c283a9eb0013aee27e"
+    },
+    {
+      "path": "research/goldbach/publication/goldbach_article.tex",
+      "sha256": "bcabec400e816cbb1f4b2a52c4d7cdcfe85b664935cf33f42d1c7fefc8e0799d"
+    },
+    {
+      "path": "research/goldbach/publication/mathematical-audit.md",
+      "sha256": "6ba606beed28eeeb6692fff08276145b8439c87c3c81bd064e1a3ffd62c54ced"
+    },
+    {
+      "path": "tests/test_goldbach_worker.py",
+      "sha256": "24b1cb62dbb2b126995bd866f4cc1d8aa0e9a78f1c1acaad41462900e68ff3bf"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "Inspected the source determinant1 modular-inverse and projective-line count, while retaining that its variableH extension is unproved. A concrete determinantH matrix candidate and full local/interval error target are specified. The reviewed unweighted ratio calculation motivates a joint prescription estimate but does not imply it.",
+  "claims": [
+    {
+      "text": "The inspected source appendix contains a determinant1 matrix-to-line count with stated squarefree prescription range.",
+      "status": "established",
+      "source": "https://arxiv.org/html/2610.20242v1"
+    },
+    {
+      "text": "The proposed uniform determinantH joint ratio/projective-line estimate remains unproved and requires a complete argument or counterexample.",
+      "status": "unverified",
+      "source": "research/goldbach/projective-roots-20261029/brief.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/projective-roots-20261029/survey.md"
+  ]
+}

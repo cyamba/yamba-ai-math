@@ -1,0 +1,38 @@
+{
+  "id": "GOLDBACH-BALANCED-023",
+  "title": "Actual balanced prime/model covariance attempt",
+  "objective": "Seek a genuine signed estimate for the cubic approach's balanced two/three-factor arithmetic covariance, retaining its exact centering, all off-diagonal terms and original target connection.",
+  "fleet": "pair",
+  "briefs": [
+    "research/goldbach/balanced-covariance-20261029/brief.md"
+  ],
+  "constraints": {
+    "max_agents": 3,
+    "max_workers": 2,
+    "max_cost_units": 8,
+    "max_rounds": 1,
+    "timeout_seconds": 120
+  },
+  "rounds": 1,
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ],
+  "deliverables": [
+    "Actual signed arithmetic estimate or precise first failed inequality",
+    "Exact four-term covariance and support",
+    "Faithful weighted connection to even rough semiprimes",
+    "Distinct critique and bounded revision"
+  ],
+  "success_criteria": [
+    "No tiny diagonal or comparison constant is mistaken for off-diagonal cancellation",
+    "Integer-q and prime-q measures are distinguished",
+    "No unsupported weighted BV application or pilot-to-Goldbach implication",
+    "Complete coefficients and square/endpoint cases are retained"
+  ],
+  "stop_conditions": [
+    "One pair8 proxy-unit round; at most two mechanisms",
+    "No supplements, numerical helpers, paid calls, publication or external messages",
+    "Full Goldbach objective remains active unless actually achieved"
+  ]
+}

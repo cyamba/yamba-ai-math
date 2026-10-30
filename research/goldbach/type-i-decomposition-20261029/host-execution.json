@@ -1,0 +1,51 @@
+{
+  "program": "GOLDBACH-TYPEI-013",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "survey",
+    "statement",
+    "finite-check",
+    "counterexample",
+    "revise",
+    "integrate"
+  ],
+  "planned_proxy_units": 14,
+  "completed_proxy_units": 14,
+  "supplemental_primary_access_proxy_units": 2,
+  "supplemental_primary_access_status": "completed exact reproduced theorem statement and original-page visual inspection",
+  "supplemental_critic_pre_mortem_proxy_units": 2,
+  "supplemental_critic_pre_mortem_status": "completed separate pre-mortem and independent visual BV statement inspection; no main theorem verdict",
+  "supplemental_checker_preparation_proxy_units": 2,
+  "supplemental_checker_preparation_status": "completed gated syntax-only preparation; final check awaits frozen013author",
+  "total_planned_host_proxy_units": 20,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "survey": "/root",
+    "statement": "/root/trilinear_proof",
+    "counterexample": "/root/independent_critic",
+    "finite-check": "/root/exact_checks",
+    "supplemental_primary_access": "/root",
+    "supplemental_critic_pre_mortem": "/root/independent_critic",
+    "supplemental_checker_preparation": "/root/exact_checks",
+    "revise": "/root/trilinear_proof",
+    "integrate": "/root"
+  },
+  "objective_status": "active and incomplete; no Goldbach proof or demonstrated substantive breakthrough",
+  "author_status": "revision completed with actual accepted marked-prime scope, W still retained",
+  "prior_goal_turn_classification": "progress: actual reviewed011quadraticdifference changes next assembly task",
+  "frozen_pre_mortem_sha256": "64de633d5f3ffcb2d9cede9d6ed931a512943d9314fbf5d644924b86e6c017c0",
+  "frozen_statement_sha256": "f810cce2f92073af5244e673b0afdad6d6a1d624b22f4df422468bd61a174db2",
+  "frozen_revision_sha256": "8e1c40489618673257f07dbdafc84cac7be910f486cb0dbf49787462592b75a2",
+  "status": "completed_host_execution",
+  "total_declared_host_proxy_units": 20,
+  "proof_assurance": "complete written argument with distinct host-agent review and explicit classical inputs; no formal or external peer verification",
+  "next_action": "WEIGHTS014 actual author; independent COFACTORS015 actual author",
+  "protocol_validation": {
+    "backend": "replay",
+    "path": ".runs/goldbach-typei-013-validation-20261029",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  }
+}

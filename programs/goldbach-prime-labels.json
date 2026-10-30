@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-LABELS-005",
+  "title": "Bounded prime labels and auxiliary padding",
+  "objective": "Attempt an actual parity-sensitive polynomial-roughness estimate through a bounded-label or externally padded adaptation, preserving exact source hypotheses and obtaining either a reviewed useful bound or a precise failure of those constructions without redefining the Goldbach objective.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/prime-labels-20261029/brief.md", "research/goldbach/prime-labels-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Inspected exact source definitions and parameter ranges", "At most two constructive label or padding attempts", "Separate hostile mathematical review", "Independent exact support and transfer checks", "Revision preserving failed estimates", "Claim ledger and concrete next decision"],
+  "success_criteria": ["A claimed gain is an actual proved estimate, not an assumed cancellation hypothesis", "Zero bias is not falsely imported at a polynomial roughness cutoff", "Padding retains coprimality, primitivity and moving-target conditions explicitly", "Finite algebra does not certify the external analytic theorem", "The actual Goldbach objective remains incomplete unless its required result is proved and verified"],
+  "stop_conditions": ["One six-stage round within 20 dispatch proxy units", "No separately billed provider or external mutable action", "Preserve the exact failure of an adaptation rather than generalize it to every possible method"]
+}

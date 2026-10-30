@@ -1,0 +1,17 @@
+{
+  "source_is_data": true,
+  "pinned_guo": {
+    "path": ".runs/goldbach-source-inputs-20261029/guo-mobius-main.tex",
+    "sha256": "e70d777424852aed92e94b2baf00384c84b4c7fc346bd7dab1085d5652ced95d",
+    "url": "https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/mobius-goldbach-shift/source/main.tex",
+    "inspection": "exact theorem assumptions and scoped proof passages read by actual assessment author and distinct critic"
+  },
+  "current_observation": {
+    "head": "a605351dce1a55fb46a494d9cca9b0baa8f2734b",
+    "commit_timestamp": "2026-10-28T14:34:21Z",
+    "blob": "a114f906cf205f4e50053c7a657f7de55048213c",
+    "observed_on": "2026-10-29",
+    "evidence": "actual author and distinct critic connected GitHub reads, recorded in preserved assessment and review; not a future-update guarantee"
+  },
+  "other_primary_inspections": "exact versions, theorem scopes and inspection levels in assessment.md and revision.md; classical saved input/render provenance inherited from012-014; no claim to audit entire imported proofs"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-COFACTORS-015",
+  "title": "Polynomial-label cofactor geometry and the prime boundary",
+  "objective": "Investigate a genuinely different bounded-label/cofactor mechanism for the original polynomial-rough Goldbach target, retaining nonzero centers and the prime boundary; prove one useful connection or a decisive failure of a precise candidate invariant.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/polynomial-cofactors-20261029/brief.md", "research/goldbach/polynomial-cofactors-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["At most two exact cofactor/operator candidates", "Proof or explicit counterexample at the first load-bearing claim", "Correct nonzero centers and h=1 boundary", "Separate semantic review and bounded falsification", "A precise new analytic obligation rather than repeated parameter retuning"],
+  "success_criteria": ["Local factor capacity is not assumed to bound all primes introduced along a path", "Every comparison retains exact cofactors, support and prime boundary", "No zero-centered conclusion or unproved polynomial-modulus root theorem is imported", "Only a substantive independently checked arithmetic result may be called a breakthrough"],
+  "stop_conditions": ["One bounded theorem round within20 proxy units", "No paid inference, external mutable action or publication", "A false invariant is recorded rather than repaired by weakening the Goldbach objective"]
+}

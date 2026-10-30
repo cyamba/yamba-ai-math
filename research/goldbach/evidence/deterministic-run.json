@@ -1,0 +1,176 @@
+{
+  "schema": "goldbach-deterministic-run-v1",
+  "scope": "Exact finite computational checks and command-protocol exercise. No LLM inference or semantic review by this adapter.",
+  "base_commit": "6aff38737912136d95bee393b0828981420709ab",
+  "input_sha256": {
+    "programs/goldbach-parity-bridge.json": "0f572dedb502c26432ff2fb477ebbd23bb5084c8f0257f430a43b00783884ab7",
+    "research/goldbach/orchestrated-prompt.md": "2722aa0592589e39e37aae87bface08a96e999a7901ad57e9af578bc2b7631f8",
+    "research/goldbach/checks/deterministic_worker.py": "c2f360cae77e43073b02afe684fb3d5cdfa8409e4c3136fa7a821f871958ade6"
+  },
+  "attempts": [
+    {
+      "run_id": "GOLDBACH-PARITY-001-20261028T183438979585Z",
+      "backend": "command",
+      "status": "failed_execution",
+      "research_validated": false,
+      "planned_cost_units": 14,
+      "attempted_cost_units": 9,
+      "states": {
+        "survey": "completed",
+        "statement": "completed",
+        "counterexample": "completed",
+        "finite-check": "failed",
+        "revise": "blocked",
+        "integrate": "blocked"
+      },
+      "errors": {
+        "finite-check": "Adapter exited with code 1; stderr was not persisted"
+      },
+      "reported_usage": null,
+      "usage_reporting_complete": false,
+      "elapsed_seconds": 0.726,
+      "note": "Replay is offline input validation. Command completion certifies protocol execution, not truth, novelty, proof validity, or artifact existence. Token counts are adapter-reported, not independently metered."
+    },
+    {
+      "run_id": "GOLDBACH-PARITY-001-20261028T183451062934Z",
+      "backend": "command",
+      "status": "failed_execution",
+      "research_validated": false,
+      "planned_cost_units": 14,
+      "attempted_cost_units": 12,
+      "states": {
+        "survey": "completed",
+        "statement": "completed",
+        "counterexample": "completed",
+        "finite-check": "completed",
+        "revise": "failed",
+        "integrate": "blocked"
+      },
+      "errors": {
+        "revise": "Adapter exited with code 1; stderr was not persisted"
+      },
+      "reported_usage": null,
+      "usage_reporting_complete": false,
+      "elapsed_seconds": 1.019,
+      "note": "Replay is offline input validation. Command completion certifies protocol execution, not truth, novelty, proof validity, or artifact existence. Token counts are adapter-reported, not independently metered."
+    },
+    {
+      "run_id": "GOLDBACH-PARITY-001-20261028T183506221249Z",
+      "backend": "command",
+      "status": "completed_execution",
+      "research_validated": false,
+      "planned_cost_units": 14,
+      "attempted_cost_units": 14,
+      "states": {
+        "survey": "completed",
+        "statement": "completed",
+        "counterexample": "completed",
+        "finite-check": "completed",
+        "revise": "completed",
+        "integrate": "completed"
+      },
+      "errors": {},
+      "reported_usage": null,
+      "usage_reporting_complete": false,
+      "elapsed_seconds": 1.149,
+      "note": "Replay is offline input validation. Command completion certifies protocol execution, not truth, novelty, proof validity, or artifact existence. Token counts are adapter-reported, not independently metered."
+    }
+  ],
+  "final_stage_outputs": {
+    "survey": {
+      "summary": "Read the local research brief and its list of primary references. No new literature fetch or independent source inspection occurred in this deterministic stage. Worker type: deterministic Python, not an LLM; measured seconds: 0.000.",
+      "claims": [
+        {
+          "text": "The brief records source candidates that require exact theorem and hypothesis verification.",
+          "status": "unverified",
+          "source": "research/goldbach/orchestrated-prompt.md"
+        }
+      ],
+      "artifacts": [
+        "research/goldbach/orchestrated-prompt.md",
+        "research/goldbach/checks/deterministic_worker.py"
+      ]
+    },
+    "statement": {
+      "summary": "Precisely identified the signed-rough research target T(N)<0. This stage is scripted and does not provide a formal proof or mathematical review. Worker type: deterministic Python, not an LLM; measured seconds: 0.000.",
+      "claims": [
+        {
+          "text": "A proposed pointwise inequality T(N)<0 for all sufficiently large even N remains open.",
+          "status": "conjecture",
+          "source": "research/goldbach/orchestrated-prompt.md"
+        }
+      ],
+      "artifacts": [
+        "research/goldbach/orchestrated-prompt.md",
+        "research/goldbach/checks/deterministic_worker.py"
+      ]
+    },
+    "counterexample": {
+      "summary": "Executed the trial-division quarter-root counterexample scan. {\"convention\": \"unordered half-interval, trial division\", \"falsifies\": \"PP > SS for every even N >= 6\", \"negative_margins\": [], \"quarter_root_even_range\": [6, 500], \"ties\": [8, 12]} Worker type: deterministic Python, not an LLM; measured seconds: 0.043.",
+      "claims": [
+        {
+          "text": "The universal strict claim PP > SS for all even N >= 6 fails at N=8 and N=12 under the half-interval convention.",
+          "status": "refuted",
+          "source": "research/goldbach/checks/deterministic_worker.py"
+        }
+      ],
+      "artifacts": [
+        "research/goldbach/orchestrated-prompt.md",
+        "research/goldbach/checks/deterministic_worker.py"
+      ]
+    },
+    "finite-check": {
+      "summary": "Executed integer-sieve exact finite checks. {\"adjacent_progression_failures\": 0, \"adjacent_progression_targets\": 66, \"cube_even_range\": [6, 2000], \"cube_targets\": 998, \"exact_reflection_identity_failures\": 0, \"max_absolute_signed_value\": 160, \"method\": \"integer smallest-factor sieve and exact counting\"} Worker type: deterministic Python, not an LLM; measured seconds: 0.793.",
+      "claims": [
+        {
+          "text": "For the stated finite range, direct counting checked T=SS-PP and the adjacent-summand progression.",
+          "status": "empirical",
+          "source": "research/goldbach/checks/deterministic_worker.py"
+        }
+      ],
+      "artifacts": [
+        "research/goldbach/orchestrated-prompt.md",
+        "research/goldbach/checks/deterministic_worker.py"
+      ]
+    },
+    "revise": {
+      "summary": "The candidate remains unproved and requires a model-backed author and independent human review. This deterministic stage records the two upstream results; it does not perform a conceptual proof revision. Upstream keys: counterexample, finite-check Worker type: deterministic Python, not an LLM; measured seconds: 0.000.",
+      "claims": [
+        {
+          "text": "Finite observations do not imply the pointwise inequality for all sufficiently large N.",
+          "status": "established",
+          "source": "research/goldbach/orchestrated-prompt.md"
+        }
+      ],
+      "artifacts": [
+        "research/goldbach/orchestrated-prompt.md",
+        "research/goldbach/checks/deterministic_worker.py"
+      ]
+    },
+    "integrate": {
+      "summary": "Deterministic finite checks completed; no language-model proof search, independent semantic critic, or proof of Goldbach has been performed by this adapter. Upstream keys: counterexample, finite-check, revise Worker type: deterministic Python, not an LLM; measured seconds: 0.000.",
+      "claims": [
+        {
+          "text": "The principal pointwise inequality remains unresolved by this run.",
+          "status": "unverified",
+          "source": "research/goldbach/orchestrated-prompt.md"
+        }
+      ],
+      "artifacts": [
+        "research/goldbach/orchestrated-prompt.md",
+        "research/goldbach/checks/deterministic_worker.py"
+      ]
+    }
+  },
+  "failure_analysis": [
+    "First attempt: finite-check failed because the sieve equality spf[1]==1 was mistaken for primality. The bound was corrected to ensure both summands are >=2.",
+    "Second attempt: revise failed because the adapter assumed upstream was a dictionary; the actual packet contract provides a list. It was corrected to read each step_id."
+  ],
+  "limits": [
+    "No executable model-backed provider adapter was available.",
+    "Role profiles are distinct but this single scripted adapter does not supply independent mathematical criticism.",
+    "Protocol completion does not imply proof validity, novelty or research validation.",
+    "Unknown token use and provider cost are not reported as zero.",
+    "These are finite observations, not an all-integers proof."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "summary": "Executed the actual COFACTORS-015 revise stage after reading the populated packet, separate main review 250fee54d7d3e8dffad68fc86aeda699b09f874bbbf23913ac0c16adf54b66dd and distinct final finite output. The P2 correction restricts the equal-label-deleted (d-1) eigenvalue to equal-weight basic vertices with distinct labels and supplies the weighted multipartite cluster matrix for factorization multiplicities. The N=38 repeated-label example has norm sqrt(2), not 2; its difference squared norm is 2(1-m_arc)^2. The undeleted rank-one obstruction remains unchanged. Revision explicitly retains nonempty prime-block normalization, raw incidence versus Vaughan support, unweighted A versus weighted fiber vectors, gamma_1 positivity without positivity of every gamma_h, the fixed-j4 marking lemma's exact scope, and the fact that D already includes the unknown h1 prime atom. Frozen statement/review/finite files were preserved. No new experiment, helper mathematics, source search or supplemental round was performed. Assurance is reviewed written argument plus distinct finite reproduction, not formal verification or external peer review. D, polynomial transport, original prime margin, novelty and Goldbach remain open. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The equal-label-deleted top eigenvalue (d-1)w is valid for equal-weight basic vertices with distinct labels. With repeated factorization labels, the exact compressed off-diagonal matrix has entries sqrt(s_a*s_b) for label-cluster masses s_a, with zero diagonal. The N=38 masses 2 and 1 yield norm sqrt(2); the unqualified three-configuration formula is false.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/revision.md, P2 correction"
+    },
+    {
+      "text": "The raw global-three-label invariant is refuted in the specified incidence domain. Integer compression, the protected positive-product c1=h1 block and its undeleted configuration-space eigenmode retain their reviewed scope, with normalization only for nonempty blocks and no inferred factorable-Vaughan norm lower bound.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/revision.md; research/goldbach/polynomial-cofactors-20261029/review.md"
+    },
+    {
+      "text": "The exact unweighted count reconstruction, nonzero single-prime center and bounded harmonic Cauchy connection remain supported. The original raw-square identity uses the corresponding incidence or weighted fiber vector and is not the centered dispersion norm. D would imply positivity through its h1 summand but is not proved.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/revision.md, center and harmonic scope"
+    },
+    {
+      "text": "The fixed-fourth-power polynomial marking lemma retains repetitions, fixed twists, actual normalizers and polynomial support, giving the reviewed bounded eighth moment and logarithmic-power exceptional-count estimate only for that marking component.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/revision.md; research/goldbach/polynomial-cofactors-20261029/review.md"
+    },
+    {
+      "text": "The separate finite checker reports one smoke and final run with no failures and reproduces the repeated-label scope control. Its center is rational and designated, while its marking phases have t=lambda=0; it certifies no analytic dispersion or continuous asymptotic theorem.",
+      "status": "empirical",
+      "source": "research/goldbach/polynomial-cofactors-20261029/finite-check-result.json"
+    },
+    {
+      "text": "D, polynomial-modulus discrepancy, actual fractional-state coefficient linkage, full polynomial-label energy and Type I transport, positive original prime margin, novelty and Goldbach remain unverified. The marking lemma and the corrected block calculation do not establish these claims.",
+      "status": "unverified",
+      "source": "research/goldbach/polynomial-cofactors-20261029/revision.md, final boundary"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/polynomial-cofactors-20261029/revision.md"
+  ]
+}

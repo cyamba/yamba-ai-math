@@ -1,0 +1,41 @@
+{
+  "summary": "Accepted separate review of frozen equations (1)-(11): the self-contained elementary complete-sum bound, all-divisor interval completion, Ramanujan main term and explicit common-frequency factors, improved primitive both-unit mass, polynomial-frequency cancellation, Fejer discrepancy and normalized BV consequence. Preserved H>=2, literal U,V>=2 boxes, nonunit k, fixed positive box exponents with b>3a/4, nonzero polynomially bounded frequencies, empty-population handling and unspecified asymptotic constants. Added the necessary unnormalized formula: the error is at most N0 Var(g) D plus |N0-M| times the absolute mean of g, so H-dependent constants are handled correctly. Finite exact checks support the identities within their recorded scope. Refuted assertions are the omitted-unit, equal-incomplete-sum and omitted-v-coprimality claims, rather than their true counterexamples. Closest work records the stronger classical Weil bound, so this is a scoped classical-method specialization with novelty unverified. The next distinct arithmetic obligation is joint projective-line and ratio distribution on determinant-H root families with actual list and endpoint constraints. No actual-prime cancellation, Goldbach proof or breakthrough is obtained. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The reviewed complete Kloosterman bound, interval completion, Ramanujan center and explicit H and nonunit-frequency divisor costs remain valid under the frozen hypotheses.",
+      "status": "proved",
+      "source": "research/goldbach/complement-ratios-20261029/revision.md"
+    },
+    {
+      "text": "The mass, polynomial-frequency cancellation, discrepancy and normalized BV bounds hold in their stated range; balanced polynomial boxes give H^(-1/8+o(1)) with unspecified constants.",
+      "status": "proved",
+      "source": "research/goldbach/complement-ratios-20261029/revision.md"
+    },
+    {
+      "text": "An unnormalized leading-mass BV formula requires both N0 times variation times discrepancy and the absolute test-function mean times |N0-M|; zero variation does not remove population-mass error.",
+      "status": "proved",
+      "source": "research/goldbach/complement-ratios-20261029/revision.md"
+    },
+    {
+      "text": "The bounded exact checks passed, retaining empty populations, empty divisor intervals and nonunit k; they do not certify asymptotic constants or prime-list applicability.",
+      "status": "empirical",
+      "source": "research/goldbach/complement-ratios-20261029/finite-results.json"
+    },
+    {
+      "text": "The assertions that the unit-H condition can be omitted from the frequency simplification, that equal coefficient gcds imply equal incomplete sums, or that v-coprimality can be omitted without changing the sum are refuted by the recorded exact examples.",
+      "status": "refuted",
+      "source": "research/goldbach/complement-ratios-20261029/revision.md"
+    },
+    {
+      "text": "Joint root-family/list arithmetic, prime-weighted or high-moment extensions, the denominator-H prime major-arc estimate, novelty and a Goldbach lower bound or breakthrough remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/complement-ratios-20261029/revision.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/complement-ratios-20261029/revision.md",
+    "research/goldbach/complement-ratios-20261029/review.md",
+    "research/goldbach/complement-ratios-20261029/finite-results.json",
+    "research/goldbach/complement-ratios-20261029/closest-work.md"
+  ]
+}

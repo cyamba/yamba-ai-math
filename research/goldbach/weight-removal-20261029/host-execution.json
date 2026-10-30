@@ -1,0 +1,51 @@
+{
+  "program": "GOLDBACH-WEIGHTS-014",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "survey",
+    "statement",
+    "counterexample",
+    "finite-check",
+    "revise",
+    "integrate"
+  ],
+  "planned_proxy_units": 14,
+  "completed_proxy_units": 14,
+  "supplemental_primary_access_proxy_units": 2,
+  "supplemental_primary_access_status": "completed exact prime-BV statement and original-page visual inspection",
+  "supplemental_critic_pre_mortem_proxy_units": 2,
+  "supplemental_critic_pre_mortem_status": "completed separate pre-mortem with primary prime-BV visual inspection and closest-prior preview; no main verdict",
+  "supplemental_checker_preparation_proxy_units": 2,
+  "supplemental_checker_preparation_status": "completed gated syntax-only preparation; distinct actual smoke and final finite execution later completed",
+  "total_planned_host_proxy_units": 20,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "survey": "/root",
+    "statement": "/root/trilinear_proof",
+    "counterexample": "/root/independent_critic",
+    "finite-check": "/root/exact_checks",
+    "supplemental_primary_access": "/root",
+    "supplemental_critic_pre_mortem": "/root/independent_critic",
+    "supplemental_checker_preparation": "/root/exact_checks",
+    "revise": "/root/trilinear_proof",
+    "integrate": "/root"
+  },
+  "objective_status": "active and incomplete",
+  "author_status": "revision complete with supported actual-prime scopes and exact assurance limits",
+  "prior_goal_turn_classification": "progress: reviewed011difference and inspected analytic inputs change eventual actual-prime assembly task",
+  "frozen_pre_mortem_sha256": "a1c501db79940f147c1b35856cb1702e497d5b01d2b879a0e80ea013c96d55d4",
+  "frozen_statement_sha256": "22b1e94dff57c26ace239b82cf82f83aa06967338628cc14900fd911695fbda8",
+  "frozen_revision_sha256": "eab8a825bcb66e9db17238edddaf35d71c9ed554560a1e5326c53bbd0466ed39",
+  "total_declared_host_proxy_units": 20,
+  "status": "completed_host_execution",
+  "proof_assurance": "complete written argument with distinct host-agent review and explicit classical inputs; no formal or external peer verification",
+  "next_action": "COFACTORS015 revision and fresh ASSESS016 challenge/revision",
+  "protocol_validation": {
+    "backend": "replay",
+    "path": ".runs/goldbach-weights-014-validation-20261029",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  }
+}

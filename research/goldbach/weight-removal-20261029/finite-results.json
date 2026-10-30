@@ -1,0 +1,1693 @@
+{
+  "mode": "bounded_final",
+  "passed": true,
+  "runtime_seconds": 0.6740051999950083,
+  "python": "3.11.17",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "code_sha256": "d711f141e013f2990b0092cf1aa2a98e06c5b73b6f574a3ea237695cd189c25e",
+  "statement_sha256": "22b1e94dff57c26ace239b82cf82f83aa06967338628cc14900fd911695fbda8",
+  "packet_sha256": "3ab2b88d24159ab51dc04e220d5460f923a1e1633383bb9d0428baeec24a2b8a",
+  "comparisons": {
+    "prime_model_and_complex_cauchy": {
+      "counts": {
+        "single_and_mixed_positive_error_cases": 13824,
+        "bernoulli_outcomes": 1920,
+        "cross_moment_cases": 36,
+        "pointwise_diagonal_cases": 4224,
+        "normalized_outcome_cases": 4224,
+        "variance_and_weighted_cauchy_cases": 45
+      },
+      "records": [
+        {
+          "H": 2,
+          "rho": "1/4",
+          "K": 1,
+          "b": 1,
+          "means": [
+            "135/128"
+          ],
+          "variance": "55/81",
+          "finite_constant_across_family_prefixes": "331/53",
+          "variance_upper_bound": "331/53",
+          "weighted_measure_mass": "129043/107520",
+          "weighted_variance": "1381039/1741824",
+          "complex_correlation": [
+            "12467249/29030400",
+            "-1975283/29030400"
+          ],
+          "complex_cauchy_upper": "178213415677/187280916480"
+        },
+        {
+          "H": 2,
+          "rho": "1/4",
+          "K": 1,
+          "b": 2,
+          "means": [
+            "135/128",
+            "2233/2160"
+          ],
+          "variance": "127577/136242",
+          "finite_constant_across_family_prefixes": "331/53",
+          "variance_upper_bound": "331/106",
+          "weighted_measure_mass": "129043/107520",
+          "weighted_variance": "8095416947/7324369920",
+          "complex_correlation": [
+            "29608667/841881600",
+            "-4602001/29030400"
+          ],
+          "complex_cauchy_upper": "1044656889091721/787516253798400"
+        },
+        {
+          "H": 2,
+          "rho": "1/4",
+          "K": 1,
+          "b": 3,
+          "means": [
+            "135/128",
+            "2233/2160",
+            "11713/11520"
+          ],
+          "variance": "1898695057/1722167001",
+          "finite_constant_across_family_prefixes": "331/53",
+          "variance_upper_bound": "331/159",
+          "weighted_measure_mass": "129043/107520",
+          "weighted_variance": "49330755045703/37033479189504",
+          "complex_correlation": [
+            "7850795663/133859174400",
+            "-766975249/4615833600"
+          ],
+          "complex_cauchy_upper": "6365788623362652229/3981839682455470080"
+        },
+        {
+          "H": 2,
+          "rho": "1/4",
+          "K": 2,
+          "b": 1,
+          "means": [
+            "2233/2048"
+          ],
+          "variance": "44111/7569",
+          "finite_constant_across_family_prefixes": "27277/371",
+          "variance_upper_bound": "27277/371",
+          "weighted_measure_mass": "154746829/127733760",
+          "weighted_variance": "6794730603421/966816829440",
+          "complex_correlation": [
+            "-7021234271/22225674240",
+            "-493097849/2469519360"
+          ],
+          "complex_cauchy_upper": "1051463014788656302009/123495148855649894400"
+        },
+        {
+          "H": 2,
+          "rho": "1/4",
+          "K": 2,
+          "b": 2,
+          "means": [
+            "2233/2048",
+            "5118581/4976640"
+          ],
+          "variance": "63985564283/3274243434",
+          "finite_constant_across_family_prefixes": "27277/371",
+          "variance_upper_bound": "27277/742",
+          "weighted_measure_mass": "154746829/127733760",
+          "weighted_variance": "640181902254384737/26614727044190208",
+          "complex_correlation": [
+            "-7250695396081/41228625715200",
+            "-254140237789/1526986137600"
+          ],
+          "complex_cauchy_upper": "99066119357053989396748973/3399599156728101423022080"
+        },
+        {
+          "H": 2,
+          "rho": "1/2",
+          "K": 1,
+          "b": 1,
+          "means": [
+            "75/64"
+          ],
+          "variance": "3/5",
+          "finite_constant_across_family_prefixes": "55/9",
+          "variance_upper_bound": "55/9",
+          "weighted_measure_mass": "129043/107520",
+          "weighted_variance": "378991/537600",
+          "complex_correlation": [
+            "697877/1792000",
+            "31961/1792000"
+          ],
+          "complex_cauchy_upper": "48906135613/57802752000"
+        },
+        {
+          "H": 2,
+          "rho": "1/2",
+          "K": 1,
+          "b": 2,
+          "means": [
+            "75/64",
+            "77/72"
+          ],
+          "variance": "9/10",
+          "finite_constant_across_family_prefixes": "55/9",
+          "variance_upper_bound": "55/18",
+          "weighted_measure_mass": "129043/107520",
+          "weighted_variance": "570079/537600",
+          "complex_correlation": [
+            "13619/768000",
+            "-600281/5376000"
+          ],
+          "complex_cauchy_upper": "73564704397/57802752000"
+        },
+        {
+          "H": 2,
+          "rho": "1/2",
+          "K": 1,
+          "b": 3,
+          "means": [
+            "75/64",
+            "77/72",
+            "663/640"
+          ],
+          "variance": "437/405",
+          "finite_constant_across_family_prefixes": "55/9",
+          "variance_upper_bound": "55/27",
+          "weighted_measure_mass": "129043/107520",
+          "weighted_variance": "72873653/55987200",
+          "complex_correlation": [
+            "19661107/435456000",
+            "-8284507/62208000"
+          ],
+          "complex_cauchy_upper": "9403834804079/6019743744000"
+        },
+        {
+          "H": 2,
+          "rho": "1/2",
+          "K": 2,
+          "b": 1,
+          "means": [
+            "1925/1536"
+          ],
+          "variance": "27/5",
+          "finite_constant_across_family_prefixes": "2777/39",
+          "variance_upper_bound": "2777/39",
+          "weighted_measure_mass": "154746829/127733760",
+          "weighted_variance": "51882833/7884800",
+          "complex_correlation": [
+            "-107393183/425779200",
+            "-87778849/425779200"
+          ],
+          "complex_cauchy_upper": "8028703886286557/1007155150848000"
+        },
+        {
+          "H": 2,
+          "rho": "1/2",
+          "K": 2,
+          "b": 2,
+          "means": [
+            "1925/1536",
+            "1255501/1182720"
+          ],
+          "variance": "7469/390",
+          "finite_constant_across_family_prefixes": "2777/39",
+          "variance_upper_bound": "2777/78",
+          "weighted_measure_mass": "154746829/127733760",
+          "weighted_variance": "2088646381027/88310476800",
+          "complex_correlation": [
+            "-1437367231/9963233280",
+            "-26786479/158146560"
+          ],
+          "complex_cauchy_upper": "323211404366254013383/11280229249056768000"
+        },
+        {
+          "H": 2,
+          "rho": "3/4",
+          "K": 1,
+          "b": 1,
+          "means": [
+            "165/128"
+          ],
+          "variance": "79/121",
+          "finite_constant_across_family_prefixes": "521/55",
+          "variance_upper_bound": "521/55",
+          "weighted_measure_mass": "129043/107520",
+          "weighted_variance": "10282627/13009920",
+          "complex_correlation": [
+            "12656323/35481600",
+            "3125879/35481600"
+          ],
+          "complex_cauchy_upper": "1326901035961/1398826598400"
+        },
+        {
+          "H": 2,
+          "rho": "3/4",
+          "K": 1,
+          "b": 2,
+          "means": [
+            "165/128",
+            "2387/2160"
+          ],
+          "variance": "215769/232562",
+          "finite_constant_across_family_prefixes": "521/55",
+          "variance_upper_bound": "521/110",
+          "weighted_measure_mass": "129043/107520",
+          "weighted_variance": "916884021/833502208",
+          "complex_correlation": [
+            "460547/122214400",
+            "-3816001/52377600"
+          ],
+          "complex_cauchy_upper": "39439154907301/29872719134720"
+        },
+        {
+          "H": 2,
+          "rho": "3/4",
+          "K": 1,
+          "b": 3,
+          "means": [
+            "165/128",
+            "2387/2160",
+            "2431/2304"
+          ],
+          "variance": "28731281/26163225",
+          "finite_constant_across_family_prefixes": "521/55",
+          "variance_upper_bound": "521/165",
+          "weighted_measure_mass": "129043/107520",
+          "weighted_variance": "3736394630483/2813069952000",
+          "complex_correlation": [
+            "561529999/16498944000",
+            "-1742680573/16498944000"
+          ],
+          "complex_cauchy_upper": "482155572301417769/302461281239040000"
+        },
+        {
+          "H": 2,
+          "rho": "3/4",
+          "K": 2,
+          "b": 1,
+          "means": [
+            "26257/18432"
+          ],
+          "variance": "663719/116281",
+          "finite_constant_across_family_prefixes": "61813/395",
+          "variance_upper_bound": "61813/395",
+          "weighted_measure_mass": "154746829/127733760",
+          "weighted_variance": "104102006813989/14853009346560",
+          "complex_correlation": [
+            "-3586150985/17422884864",
+            "-6086970833/29038141440"
+          ],
+          "complex_cauchy_upper": "16109455447001190590881/1897230731151251865600"
+        },
+        {
+          "H": 2,
+          "rho": "3/4",
+          "K": 2,
+          "b": 2,
+          "means": [
+            "26257/18432",
+            "7629583/6967296"
+          ],
+          "variance": "707358716543/36285486050",
+          "finite_constant_across_family_prefixes": "61813/395",
+          "variance_upper_bound": "61813/790",
+          "weighted_measure_mass": "154746829/127733760",
+          "weighted_variance": "56028033675712227901/2317440783297024000",
+          "complex_correlation": [
+            "-20866984290907/172050988032000",
+            "-3264881779069/19116776448000"
+          ],
+          "complex_cauchy_upper": "8670160546421681584205075929/296015424827874072330240000"
+        },
+        {
+          "H": 6,
+          "rho": "1/4",
+          "K": 1,
+          "b": 1,
+          "means": [
+            "5/4"
+          ],
+          "variance": "3",
+          "finite_constant_across_family_prefixes": "331/53",
+          "variance_upper_bound": "331/53",
+          "weighted_measure_mass": "368407/322560",
+          "weighted_variance": "382597/107520",
+          "complex_correlation": [
+            "172321/179200",
+            "6061/38400"
+          ],
+          "complex_cauchy_upper": "140951412979/34681651200"
+        },
+        {
+          "H": 6,
+          "rho": "1/4",
+          "K": 1,
+          "b": 2,
+          "means": [
+            "5/4",
+            "2233/2160"
+          ],
+          "variance": "2551/1682",
+          "finite_constant_across_family_prefixes": "331/53",
+          "variance_upper_bound": "331/106",
+          "weighted_measure_mass": "368407/322560",
+          "weighted_variance": "490300207/271272960",
+          "complex_correlation": [
+            "23610847/46771200",
+            "-633547/3897600"
+          ],
+          "complex_cauchy_upper": "180630028360249/87501805977600"
+        },
+        {
+          "H": 6,
+          "rho": "1/4",
+          "K": 1,
+          "b": 3,
+          "means": [
+            "5/4",
+            "2233/2160",
+            "11713/11520"
+          ],
+          "variance": "28923709/21261321",
+          "finite_constant_across_family_prefixes": "331/53",
+          "variance_upper_bound": "331/159",
+          "weighted_measure_mass": "368407/322560",
+          "weighted_variance": "11164631739439/6858051701760",
+          "complex_correlation": [
+            "3550307879/7436620800",
+            "4672537/1239436800"
+          ],
+          "complex_cauchy_upper": "4113128485231503673/2212133156919705600"
+        },
+        {
+          "H": 6,
+          "rho": "1/4",
+          "K": 2,
+          "b": 1,
+          "means": [
+            "2233/1728"
+          ],
+          "variance": "12839/841",
+          "finite_constant_across_family_prefixes": "27277/371",
+          "variance_upper_bound": "27277/371",
+          "weighted_measure_mass": "148316477/127733760",
+          "weighted_variance": "189283773967/9765826560",
+          "complex_correlation": [
+            "415336381/6173798400",
+            "1726488923/2315174400"
+          ],
+          "complex_cauchy_upper": "28073902508049754259/1247425746016665600"
+        },
+        {
+          "H": 6,
+          "rho": "1/4",
+          "K": 2,
+          "b": 2,
+          "means": [
+            "2233/1728",
+            "5118581/4976640"
+          ],
+          "variance": "7967950027/363804826",
+          "finite_constant_across_family_prefixes": "27277/371",
+          "variance_upper_bound": "27277/742",
+          "weighted_measure_mass": "148316477/127733760",
+          "weighted_variance": "80107502046558121/2957191893798912",
+          "complex_correlation": [
+            "47806677533/763493068800",
+            "6328067939/16206220800"
+          ],
+          "complex_cauchy_upper": "11881262484815790482459717/377733239636455713669120"
+        },
+        {
+          "H": 6,
+          "rho": "1/2",
+          "K": 1,
+          "b": 1,
+          "means": [
+            "5/4"
+          ],
+          "variance": "3",
+          "finite_constant_across_family_prefixes": "55/9",
+          "variance_upper_bound": "55/9",
+          "weighted_measure_mass": "368407/322560",
+          "weighted_variance": "382597/107520",
+          "complex_correlation": [
+            "172321/179200",
+            "6061/38400"
+          ],
+          "complex_cauchy_upper": "140951412979/34681651200"
+        },
+        {
+          "H": 6,
+          "rho": "1/2",
+          "K": 1,
+          "b": 2,
+          "means": [
+            "5/4",
+            "77/72"
+          ],
+          "variance": "3/2",
+          "finite_constant_across_family_prefixes": "55/9",
+          "variance_upper_bound": "55/18",
+          "weighted_measure_mass": "368407/322560",
+          "weighted_variance": "191677/107520",
+          "complex_correlation": [
+            "279973/537600",
+            "-42703/268800"
+          ],
+          "complex_cauchy_upper": "70615148539/34681651200"
+        },
+        {
+          "H": 6,
+          "rho": "1/2",
+          "K": 1,
+          "b": 3,
+          "means": [
+            "5/4",
+            "77/72",
+            "663/640"
+          ],
+          "variance": "109/81",
+          "finite_constant_across_family_prefixes": "55/9",
+          "variance_upper_bound": "55/27",
+          "weighted_measure_mass": "368407/322560",
+          "weighted_variance": "378370759/235146240",
+          "complex_correlation": [
+            "21066407/43545600",
+            "4591/7257600"
+          ],
+          "complex_cauchy_upper": "139394436210913/75848771174400"
+        },
+        {
+          "H": 6,
+          "rho": "1/2",
+          "K": 2,
+          "b": 1,
+          "means": [
+            "385/288"
+          ],
+          "variance": "15",
+          "finite_constant_across_family_prefixes": "2777/39",
+          "variance_upper_bound": "2777/39",
+          "weighted_measure_mass": "148316477/127733760",
+          "weighted_variance": "810872543/42577920",
+          "complex_correlation": [
+            "5251387/70963200",
+            "239653/345600"
+          ],
+          "complex_cauchy_upper": "120265758873791011/5438637814579200"
+        },
+        {
+          "H": 6,
+          "rho": "1/2",
+          "K": 2,
+          "b": 2,
+          "means": [
+            "385/288",
+            "1255501/1182720"
+          ],
+          "variance": "1681/78",
+          "finite_constant_across_family_prefixes": "2777/39",
+          "variance_upper_bound": "2777/78",
+          "weighted_measure_mass": "148316477/127733760",
+          "weighted_variance": "1038332740345/38856609792",
+          "complex_correlation": [
+            "192679589/2767564800",
+            "1132006361/3113510400"
+          ],
+          "complex_cauchy_upper": "30800370800345232913/992660173916995584"
+        },
+        {
+          "H": 6,
+          "rho": "3/4",
+          "K": 1,
+          "b": 1,
+          "means": [
+            "5/4"
+          ],
+          "variance": "3",
+          "finite_constant_across_family_prefixes": "521/55",
+          "variance_upper_bound": "521/55",
+          "weighted_measure_mass": "368407/322560",
+          "weighted_variance": "382597/107520",
+          "complex_correlation": [
+            "172321/179200",
+            "6061/38400"
+          ],
+          "complex_cauchy_upper": "140951412979/34681651200"
+        },
+        {
+          "H": 6,
+          "rho": "3/4",
+          "K": 1,
+          "b": 2,
+          "means": [
+            "5/4",
+            "2387/2160"
+          ],
+          "variance": "2911/1922",
+          "finite_constant_across_family_prefixes": "521/55",
+          "variance_upper_bound": "521/110",
+          "weighted_measure_mass": "368407/322560",
+          "weighted_variance": "556790407/309980160",
+          "complex_correlation": [
+            "26784293/49996800",
+            "-647543/4166400"
+          ],
+          "complex_cauchy_upper": "205125483471649/99987200409600"
+        },
+        {
+          "H": 6,
+          "rho": "3/4",
+          "K": 1,
+          "b": 3,
+          "means": [
+            "5/4",
+            "2387/2160",
+            "2431/2304"
+          ],
+          "variance": "35554381/26163225",
+          "finite_constant_across_family_prefixes": "521/55",
+          "variance_upper_bound": "521/165",
+          "weighted_measure_mass": "368407/322560",
+          "weighted_variance": "13726221239167/8439209856000",
+          "complex_correlation": [
+            "4039074527/8249472000",
+            "-483137/196416000"
+          ],
+          "complex_cauchy_upper": "5056835988057796969/2722151531151360000"
+        },
+        {
+          "H": 6,
+          "rho": "3/4",
+          "K": 2,
+          "b": 1,
+          "means": [
+            "2387/1728"
+          ],
+          "variance": "14639/961",
+          "finite_constant_across_family_prefixes": "61813/395",
+          "variance_upper_bound": "61813/395",
+          "weighted_measure_mass": "148316477/127733760",
+          "weighted_variance": "2374739126717/122752143360",
+          "complex_correlation": [
+            "75701897/942796800",
+            "1595101657/2474841600"
+          ],
+          "complex_cauchy_upper": "352212941068722016009/15679592819431833600"
+        },
+        {
+          "H": 6,
+          "rho": "3/4",
+          "K": 2,
+          "b": 2,
+          "means": [
+            "2387/1728",
+            "7629583/6967296"
+          ],
+          "variance": "72160487413/3298680550",
+          "finite_constant_across_family_prefixes": "61813/395",
+          "variance_upper_bound": "61813/790",
+          "weighted_measure_mass": "148316477/127733760",
+          "weighted_variance": "521394550679115893/19152403167744000",
+          "complex_correlation": [
+            "4411664921/57929625600",
+            "66163078129/195512486400"
+          ],
+          "complex_cauchy_upper": "77331402883724426724468961/2446408469651851837440000"
+        },
+        {
+          "H": 10,
+          "rho": "1/4",
+          "K": 1,
+          "b": 1,
+          "means": [
+            "3/2"
+          ],
+          "variance": "1",
+          "finite_constant_across_family_prefixes": "331/53",
+          "variance_upper_bound": "331/53",
+          "weighted_measure_mass": "187751/161280",
+          "weighted_variance": "187751/161280",
+          "complex_correlation": [
+            "172321/268800",
+            "6061/57600"
+          ],
+          "complex_cauchy_upper": "35250438001/26011238400"
+        },
+        {
+          "H": 10,
+          "rho": "1/4",
+          "K": 1,
+          "b": 2,
+          "means": [
+            "3/2",
+            "2233/2160"
+          ],
+          "variance": "855/841",
+          "finite_constant_across_family_prefixes": "331/53",
+          "variance_upper_bound": "331/106",
+          "weighted_measure_mass": "187751/161280",
+          "weighted_variance": "20758181/16954560",
+          "complex_correlation": [
+            "179015/935424",
+            "3203/668160"
+          ],
+          "complex_cauchy_upper": "3897369240931/2734431436800"
+        },
+        {
+          "H": 10,
+          "rho": "1/4",
+          "K": 1,
+          "b": 3,
+          "means": [
+            "3/2",
+            "2233/2160",
+            "11713/11520"
+          ],
+          "variance": "24198971/21261321",
+          "finite_constant_across_family_prefixes": "331/53",
+          "variance_upper_bound": "331/159",
+          "weighted_measure_mass": "187751/161280",
+          "weighted_variance": "4791161406319/3429025850880",
+          "complex_correlation": [
+            "426092077/3718310400",
+            "-2097491/68857600"
+          ],
+          "complex_cauchy_upper": "899545345197798569/553033289229926400"
+        },
+        {
+          "H": 10,
+          "rho": "1/4",
+          "K": 2,
+          "b": 1,
+          "means": [
+            "2233/1440"
+          ],
+          "variance": "5999/841",
+          "finite_constant_across_family_prefixes": "27277/371",
+          "variance_upper_bound": "27277/371",
+          "weighted_measure_mass": "75241231/63866880",
+          "weighted_variance": "69145680673/7673149440",
+          "complex_correlation": [
+            "-3874441/17639424",
+            "619940381/926069760"
+          ],
+          "complex_cauchy_upper": "5202606132169428463/490060114506547200"
+        },
+        {
+          "H": 10,
+          "rho": "1/4",
+          "K": 2,
+          "b": 2,
+          "means": [
+            "2233/1440",
+            "5118581/4976640"
+          ],
+          "variance": "7228227967/363804826",
+          "finite_constant_across_family_prefixes": "27277/371",
+          "variance_upper_bound": "27277/742",
+          "weighted_measure_mass": "75241231/63866880",
+          "weighted_variance": "5251031055000389/211227992414208",
+          "complex_correlation": [
+            "-18238108261/127248844800",
+            "87716106281/245408486400"
+          ],
+          "complex_cauchy_upper": "395094040597457973838859/13490472844159132631040"
+        },
+        {
+          "H": 10,
+          "rho": "1/2",
+          "K": 1,
+          "b": 1,
+          "means": [
+            "3/2"
+          ],
+          "variance": "1",
+          "finite_constant_across_family_prefixes": "55/9",
+          "variance_upper_bound": "55/9",
+          "weighted_measure_mass": "187751/161280",
+          "weighted_variance": "187751/161280",
+          "complex_correlation": [
+            "172321/268800",
+            "6061/57600"
+          ],
+          "complex_cauchy_upper": "35250438001/26011238400"
+        },
+        {
+          "H": 10,
+          "rho": "1/2",
+          "K": 1,
+          "b": 2,
+          "means": [
+            "3/2",
+            "77/72"
+          ],
+          "variance": "1",
+          "finite_constant_across_family_prefixes": "55/9",
+          "variance_upper_bound": "55/18",
+          "weighted_measure_mass": "187751/161280",
+          "weighted_variance": "4841/4032",
+          "complex_correlation": [
+            "54577/268800",
+            "-1937/806400"
+          ],
+          "complex_cauchy_upper": "908902591/650280960"
+        },
+        {
+          "H": 10,
+          "rho": "1/2",
+          "K": 1,
+          "b": 3,
+          "means": [
+            "3/2",
+            "77/72",
+            "663/640"
+          ],
+          "variance": "91/81",
+          "finite_constant_across_family_prefixes": "55/9",
+          "variance_upper_bound": "55/27",
+          "weighted_measure_mass": "187751/161280",
+          "weighted_variance": "32363371/23514624",
+          "complex_correlation": [
+            "2581573/21772800",
+            "-410023/10886400"
+          ],
+          "complex_cauchy_upper": "6076255268621/3792438558720"
+        },
+        {
+          "H": 10,
+          "rho": "1/2",
+          "K": 2,
+          "b": 1,
+          "means": [
+            "77/48"
+          ],
+          "variance": "7",
+          "finite_constant_across_family_prefixes": "2777/39",
+          "variance_upper_bound": "2777/39",
+          "weighted_measure_mass": "75241231/63866880",
+          "weighted_variance": "10267897/1161216",
+          "complex_correlation": [
+            "-7554713/35481600",
+            "32845919/53222400"
+          ],
+          "complex_cauchy_upper": "772569210061207/74163242926080"
+        },
+        {
+          "H": 10,
+          "rho": "1/2",
+          "K": 2,
+          "b": 2,
+          "means": [
+            "77/48",
+            "1255501/1182720"
+          ],
+          "variance": "1525/78",
+          "finite_constant_across_family_prefixes": "2777/39",
+          "variance_upper_bound": "2777/78",
+          "weighted_measure_mass": "75241231/63866880",
+          "weighted_variance": "2381159685127/97141524480",
+          "complex_correlation": [
+            "-14946791/106444800",
+            "2040130387/6227020800"
+          ],
+          "complex_cauchy_upper": "13781645070502143949/477240468229324800"
+        },
+        {
+          "H": 10,
+          "rho": "3/4",
+          "K": 1,
+          "b": 1,
+          "means": [
+            "3/2"
+          ],
+          "variance": "1",
+          "finite_constant_across_family_prefixes": "521/55",
+          "variance_upper_bound": "521/55",
+          "weighted_measure_mass": "187751/161280",
+          "weighted_variance": "187751/161280",
+          "complex_correlation": [
+            "172321/268800",
+            "6061/57600"
+          ],
+          "complex_cauchy_upper": "35250438001/26011238400"
+        },
+        {
+          "H": 10,
+          "rho": "3/4",
+          "K": 1,
+          "b": 2,
+          "means": [
+            "3/2",
+            "2387/2160"
+          ],
+          "variance": "975/961",
+          "finite_constant_across_family_prefixes": "521/55",
+          "variance_upper_bound": "521/110",
+          "weighted_measure_mass": "187751/161280",
+          "weighted_variance": "23551811/19373760",
+          "complex_correlation": [
+            "1069697/4999680",
+            "-9133/999936"
+          ],
+          "complex_cauchy_upper": "4421876067061/3124600012800"
+        },
+        {
+          "H": 10,
+          "rho": "3/4",
+          "K": 1,
+          "b": 3,
+          "means": [
+            "3/2",
+            "2387/2160",
+            "2431/2304"
+          ],
+          "variance": "29740331/26163225",
+          "finite_constant_across_family_prefixes": "521/55",
+          "variance_upper_bound": "521/165",
+          "weighted_measure_mass": "187751/161280",
+          "weighted_variance": "5868315189631/4219604928000",
+          "complex_correlation": [
+            "503964277/4124736000",
+            "-10190233/229152000"
+          ],
+          "complex_cauchy_upper": "1101782045168409881/680537882787840000"
+        },
+        {
+          "H": 10,
+          "rho": "3/4",
+          "K": 2,
+          "b": 1,
+          "means": [
+            "2387/1440"
+          ],
+          "variance": "6839/961",
+          "finite_constant_across_family_prefixes": "61813/395",
+          "variance_upper_bound": "61813/395",
+          "weighted_measure_mass": "75241231/63866880",
+          "weighted_variance": "551952034351/61376071680",
+          "complex_correlation": [
+            "-136364233/659957760",
+            "562512703/989936640"
+          ],
+          "complex_cauchy_upper": "41529550517523526081/3919898204857958400"
+        },
+        {
+          "H": 10,
+          "rho": "3/4",
+          "K": 2,
+          "b": 2,
+          "means": [
+            "2387/1440",
+            "7629583/6967296"
+          ],
+          "variance": "65467014913/3298680550",
+          "finite_constant_across_family_prefixes": "61813/395",
+          "variance_upper_bound": "61813/790",
+          "weighted_measure_mass": "75241231/63866880",
+          "weighted_variance": "238979102112054919/9576201583872000",
+          "complex_correlation": [
+            "-2392646117/17378887680",
+            "117202224233/391024972800"
+          ],
+          "complex_cauchy_upper": "17981081826185712045165289/611602117412962959360000"
+        }
+      ],
+      "negative_controls": {
+        "singleton_prime": 3,
+        "actual_prime_mean": "3/2",
+        "wrong_integer_mean": "1",
+        "wrong_root_mean": "3/4",
+        "identical_copies": {
+          "normalized_values": [
+            0,
+            2
+          ],
+          "probabilities": [
+            "1/2",
+            "1/2"
+          ],
+          "b": 2,
+          "actual_variance": "1",
+          "incorrect_independent_variance": "1/2"
+        },
+        "zero_normalizer_group": {
+          "H": 30,
+          "original": [
+            3,
+            5
+          ],
+          "punctured": []
+        },
+        "fixed_threshold_illustration_only": {
+          "definition": "E_b(H)=1 if H<2^b else 0",
+          "finite_diagonal": [
+            {
+              "b": 2,
+              "even_H": 2,
+              "E_b_H": 1,
+              "E_b_at_2_power_b": 0
+            },
+            {
+              "b": 3,
+              "even_H": 6,
+              "E_b_H": 1,
+              "E_b_at_2_power_b": 0
+            },
+            {
+              "b": 4,
+              "even_H": 14,
+              "E_b_H": 1,
+              "E_b_at_2_power_b": 0
+            },
+            {
+              "b": 5,
+              "even_H": 30,
+              "E_b_H": 1,
+              "E_b_at_2_power_b": 0
+            },
+            {
+              "b": 6,
+              "even_H": 62,
+              "E_b_H": 1,
+              "E_b_at_2_power_b": 0
+            },
+            {
+              "b": 7,
+              "even_H": 126,
+              "E_b_H": 1,
+              "E_b_at_2_power_b": 0
+            },
+            {
+              "b": 8,
+              "even_H": 254,
+              "E_b_H": 1,
+              "E_b_at_2_power_b": 0
+            },
+            {
+              "b": 9,
+              "even_H": 510,
+              "E_b_H": 1,
+              "E_b_at_2_power_b": 0
+            },
+            {
+              "b": 10,
+              "even_H": 1022,
+              "E_b_H": 1,
+              "E_b_at_2_power_b": 0
+            }
+          ]
+        }
+      }
+    },
+    "finite_taylor_and_reduced_CRT": {
+      "counts": {
+        "taylor_cases": 165,
+        "normalized_reciprocal_Taylor_mass_cases": 240,
+        "retained_CRT_moduli": 44
+      },
+      "crt_records": [
+        {
+          "H": 2,
+          "punctured_groups": [
+            [
+              3,
+              5,
+              7
+            ],
+            [
+              11,
+              13,
+              17
+            ]
+          ],
+          "retained_depth": 1,
+          "full_six_prime_product_not_used": 255255,
+          "max_retained_modulus": 119,
+          "retained": [
+            {
+              "copies": [
+                0
+              ],
+              "chosen": [
+                3
+              ],
+              "d": 3,
+              "coefficient": "105/71",
+              "probability": "1/2",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0
+              ],
+              "chosen": [
+                5
+              ],
+              "d": 5,
+              "coefficient": "105/71",
+              "probability": "1/4",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0
+              ],
+              "chosen": [
+                7
+              ],
+              "d": 7,
+              "coefficient": "105/71",
+              "probability": "1/6",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                11
+              ],
+              "d": 11,
+              "coefficient": "2431/551",
+              "probability": "1/10",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                13
+              ],
+              "d": 13,
+              "coefficient": "2431/551",
+              "probability": "1/12",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                17
+              ],
+              "d": 17,
+              "coefficient": "2431/551",
+              "probability": "1/16",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                3,
+                11
+              ],
+              "d": 33,
+              "coefficient": "255255/39121",
+              "probability": "1/20",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                3,
+                13
+              ],
+              "d": 39,
+              "coefficient": "255255/39121",
+              "probability": "1/24",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                3,
+                17
+              ],
+              "d": 51,
+              "coefficient": "255255/39121",
+              "probability": "1/32",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                5,
+                11
+              ],
+              "d": 55,
+              "coefficient": "255255/39121",
+              "probability": "1/40",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                5,
+                13
+              ],
+              "d": 65,
+              "coefficient": "255255/39121",
+              "probability": "1/48",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                5,
+                17
+              ],
+              "d": 85,
+              "coefficient": "255255/39121",
+              "probability": "1/64",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                11
+              ],
+              "d": 77,
+              "coefficient": "255255/39121",
+              "probability": "1/60",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                13
+              ],
+              "d": 91,
+              "coefficient": "255255/39121",
+              "probability": "1/72",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                17
+              ],
+              "d": 119,
+              "coefficient": "255255/39121",
+              "probability": "1/96",
+              "reduced_residue": 2
+            }
+          ]
+        },
+        {
+          "H": 6,
+          "punctured_groups": [
+            [
+              5,
+              7
+            ],
+            [
+              11,
+              13,
+              17
+            ]
+          ],
+          "retained_depth": 1,
+          "full_six_prime_product_not_used": 255255,
+          "max_retained_modulus": 119,
+          "retained": [
+            {
+              "copies": [
+                0
+              ],
+              "chosen": [
+                5
+              ],
+              "d": 5,
+              "coefficient": "35/12",
+              "probability": "1/4",
+              "reduced_residue": 1
+            },
+            {
+              "copies": [
+                0
+              ],
+              "chosen": [
+                7
+              ],
+              "d": 7,
+              "coefficient": "35/12",
+              "probability": "1/6",
+              "reduced_residue": 6
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                11
+              ],
+              "d": 11,
+              "coefficient": "2431/551",
+              "probability": "1/10",
+              "reduced_residue": 6
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                13
+              ],
+              "d": 13,
+              "coefficient": "2431/551",
+              "probability": "1/12",
+              "reduced_residue": 6
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                17
+              ],
+              "d": 17,
+              "coefficient": "2431/551",
+              "probability": "1/16",
+              "reduced_residue": 6
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                5,
+                11
+              ],
+              "d": 55,
+              "coefficient": "85085/6612",
+              "probability": "1/40",
+              "reduced_residue": 6
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                5,
+                13
+              ],
+              "d": 65,
+              "coefficient": "85085/6612",
+              "probability": "1/48",
+              "reduced_residue": 6
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                5,
+                17
+              ],
+              "d": 85,
+              "coefficient": "85085/6612",
+              "probability": "1/64",
+              "reduced_residue": 6
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                11
+              ],
+              "d": 77,
+              "coefficient": "85085/6612",
+              "probability": "1/60",
+              "reduced_residue": 6
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                13
+              ],
+              "d": 91,
+              "coefficient": "85085/6612",
+              "probability": "1/72",
+              "reduced_residue": 6
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                17
+              ],
+              "d": 119,
+              "coefficient": "85085/6612",
+              "probability": "1/96",
+              "reduced_residue": 6
+            }
+          ]
+        },
+        {
+          "H": 10,
+          "punctured_groups": [
+            [
+              3,
+              7
+            ],
+            [
+              11,
+              13,
+              17
+            ]
+          ],
+          "retained_depth": 1,
+          "full_six_prime_product_not_used": 255255,
+          "max_retained_modulus": 119,
+          "retained": [
+            {
+              "copies": [
+                0
+              ],
+              "chosen": [
+                3
+              ],
+              "d": 3,
+              "coefficient": "21/10",
+              "probability": "1/2",
+              "reduced_residue": 1
+            },
+            {
+              "copies": [
+                0
+              ],
+              "chosen": [
+                7
+              ],
+              "d": 7,
+              "coefficient": "21/10",
+              "probability": "1/6",
+              "reduced_residue": 3
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                11
+              ],
+              "d": 11,
+              "coefficient": "2431/551",
+              "probability": "1/10",
+              "reduced_residue": 10
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                13
+              ],
+              "d": 13,
+              "coefficient": "2431/551",
+              "probability": "1/12",
+              "reduced_residue": 10
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                17
+              ],
+              "d": 17,
+              "coefficient": "2431/551",
+              "probability": "1/16",
+              "reduced_residue": 10
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                3,
+                11
+              ],
+              "d": 33,
+              "coefficient": "51051/5510",
+              "probability": "1/20",
+              "reduced_residue": 10
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                3,
+                13
+              ],
+              "d": 39,
+              "coefficient": "51051/5510",
+              "probability": "1/24",
+              "reduced_residue": 10
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                3,
+                17
+              ],
+              "d": 51,
+              "coefficient": "51051/5510",
+              "probability": "1/32",
+              "reduced_residue": 10
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                11
+              ],
+              "d": 77,
+              "coefficient": "51051/5510",
+              "probability": "1/60",
+              "reduced_residue": 10
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                13
+              ],
+              "d": 91,
+              "coefficient": "51051/5510",
+              "probability": "1/72",
+              "reduced_residue": 10
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                17
+              ],
+              "d": 119,
+              "coefficient": "51051/5510",
+              "probability": "1/96",
+              "reduced_residue": 10
+            }
+          ]
+        },
+        {
+          "H": 30,
+          "punctured_groups": [
+            [
+              7
+            ],
+            [
+              11,
+              13,
+              17
+            ]
+          ],
+          "retained_depth": 1,
+          "full_six_prime_product_not_used": 255255,
+          "max_retained_modulus": 119,
+          "retained": [
+            {
+              "copies": [
+                0
+              ],
+              "chosen": [
+                7
+              ],
+              "d": 7,
+              "coefficient": "7",
+              "probability": "1/6",
+              "reduced_residue": 2
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                11
+              ],
+              "d": 11,
+              "coefficient": "2431/551",
+              "probability": "1/10",
+              "reduced_residue": 8
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                13
+              ],
+              "d": 13,
+              "coefficient": "2431/551",
+              "probability": "1/12",
+              "reduced_residue": 4
+            },
+            {
+              "copies": [
+                1
+              ],
+              "chosen": [
+                17
+              ],
+              "d": 17,
+              "coefficient": "2431/551",
+              "probability": "1/16",
+              "reduced_residue": 13
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                11
+              ],
+              "d": 77,
+              "coefficient": "17017/551",
+              "probability": "1/60",
+              "reduced_residue": 30
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                13
+              ],
+              "d": 91,
+              "coefficient": "17017/551",
+              "probability": "1/72",
+              "reduced_residue": 30
+            },
+            {
+              "copies": [
+                0,
+                1
+              ],
+              "chosen": [
+                7,
+                17
+              ],
+              "d": 119,
+              "coefficient": "17017/551",
+              "probability": "1/96",
+              "reduced_residue": 30
+            }
+          ]
+        }
+      ],
+      "negative_control": {
+        "H": 6,
+        "retained_prime_if_not_punctured": 3,
+        "actual_probability": "0",
+        "incorrect_reduced_class_probability": "1/2"
+      }
+    }
+  },
+  "failures": [],
+  "scope": "Exact finite local models, positive-measure algebra and retained CRT classes only; no actual-prime asymptotic or Goldbach certification.",
+  "execution_history": {
+    "smoke_runs": 1,
+    "bounded_final_runs": 1,
+    "smoke_runtime_seconds": 0.004545700001472142,
+    "smoke_passed": true,
+    "smoke_failure_count": 0,
+    "commands": [
+      "python research/goldbach/weight-removal-20261029/weight_checks.py --smoke --packet .runs/goldbach-weights-014-manual-20261029/packets/finite-check.json",
+      "python research/goldbach/weight-removal-20261029/weight_checks.py --packet .runs/goldbach-weights-014-manual-20261029/packets/finite-check.json"
+    ],
+    "output_note": "Bounded-final stdout was parsed by PowerShell ConvertFrom-Json to display only actual metadata and counts; full output was saved by the checker.",
+    "runtime_scope": "Check body wall time, excluding Python startup, packet/hash validation and serialization.",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "usage": "Token usage and monetary cost unknown."
+  },
+  "coverage_limits": [
+    "Bernoulli and CRT populations are exact finite local models, not assertions of finite-prime independence.",
+    "Variance constants are maxima over each fixed finite toy family, shared across its prefixes, not asymptotic uniform band-array constants.",
+    "The altered positive rational measure uses its own variance in complex Cauchy.",
+    "The fixed-threshold counterfamily is E_b(H)=1_(H<2^b), not the author double exponential formula.",
+    "No prime-BV passage, asymptotic error budget, analytic dependency/zero-free assembly, actual-prime little-o cancellation or Goldbach certification."
+  ]
+}

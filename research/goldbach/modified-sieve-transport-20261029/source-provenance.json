@@ -1,0 +1,100 @@
+{
+  "source_is_data": true,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2309.08522v1",
+      "file": ".runs/goldbach-source-inputs-20261029/lichtman-large-moduli-2309.08522v1.pdf",
+      "scope": "Prop5.2 convolution estimate, Prop6.1 factorization and Prop6.6; already pinned unchanged primary"
+    },
+    {
+      "url": "https://msp.org/ant/2025/19-1/ant-v19-n1-p01-s.pdf",
+      "doi": "https://doi.org/10.2140/ant.2025.19.1",
+      "file": ".runs/goldbach-source-inputs-20261029/lichtman-modified-ant2025.pdf",
+      "scope": "published ANT19(2025)1-38; actual PDF41pages with cover/back matter; definitions2.3-2.4, Theorem2.10, modified construction5.14-5.17, Lemma5.3/Prop5.4 proof; not full semantic certification"
+    }
+  ],
+  "root_inspection": "scoped extracted text and actual renders: large-moduli PDF20/24, published PDF7/10/22/23/24/25/26/27; exact coefficient/convolution statements read, not their entire analytic proofs",
+  "inputs": [
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-large-moduli-2309.08522v1.pdf",
+      "bytes": 616691,
+      "sha256": "665693af46aee2d743e0a1f61c6e35464dc8113e3083b9f3546bfa7de98c55b5"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-large-moduli-2309.08522v1.txt",
+      "bytes": 127281,
+      "sha256": "b118d438d665a4c27025d2740791dd6b5c7a79dd07f4f95fdce804aff0d91704"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-large-page-09.png",
+      "bytes": 189628,
+      "sha256": "21c9929b93c3096507518457bd76644dd2ce6bb8652356a5e27f595de7c1b855"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-large-page-28.png",
+      "bytes": 233810,
+      "sha256": "6cbc9cc842e71a433ed3d55942aaef503a9d0f5b05865bf153f4023acd161eab"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-convolution-page-20.png",
+      "bytes": 178007,
+      "sha256": "061c4629d40a2a51cefa1151617e36208fbaf41e10e419b3f60c51bc7c008102"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-convolution-page-24.png",
+      "bytes": 192001,
+      "sha256": "58030569c46b625b89e61638884b7f69688ae890b52bac0f5f089ab7be6036df"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-ant2025.pdf",
+      "bytes": 1529407,
+      "sha256": "b00f50ffb68e155ef127039eb812a8ac8c07ea236e2e319976354e314bf59c58"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-ant2025.txt",
+      "bytes": 91938,
+      "sha256": "4b013dad4d8051264ae38cc37c09cbd81e349143c7dfea9c0f258bbc84205ec6"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-page-07.png",
+      "bytes": 169149,
+      "sha256": "279f198ef1d1d2724dfed2eb76a4af7db077b34c20e6af46307b05b82fda08c3"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-page-10.png",
+      "bytes": 158422,
+      "sha256": "0f40444b77b9b066a164bbe8c475c50440e88e1b9d1f5cc2bfb81f32b3e3f9d9"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-page-22.png",
+      "bytes": 168115,
+      "sha256": "40a87881e5252fb359e1e0cbe91f1d03fae2a95e030bd7207e082450ead13f26"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-page-23.png",
+      "bytes": 138618,
+      "sha256": "e65aaf760a33af97eed327ac1029c460599b4a5c72ea8eec72b56b2d4448c59e"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-page-24.png",
+      "bytes": 136061,
+      "sha256": "2ab571d49ab2ed0db9c057b8e1907754213632bbf29352b87e2cc88fe6e46abd"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-page-25.png",
+      "bytes": 153903,
+      "sha256": "6782193ba846d576a21a4bc095f8b1e8f5c21dc9496aeb63f1c6fc16778713d1"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-page-26.png",
+      "bytes": 181685,
+      "sha256": "a0140b8ba9caeb0d52fdaaccb7d04654fdffaa78c42d6895d66d82f15cfa0bbe"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-modified-page-27.png",
+      "bytes": 182841,
+      "sha256": "889de7f8c069f735765b985a2cc9688a57b44ccd5a7ae1b6b82f4e58ddd50196"
+    }
+  ],
+  "tool_notes": "ordinary public download of published open-access article, unchanged local inputs, pypdf and Poppler; console Unicode error occurred only after full text saved, no input or text loss; no certificate or external code execution"
+}

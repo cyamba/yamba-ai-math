@@ -1,0 +1,33 @@
+{
+  "summary": "Verdict: incomplete for the full constant-gap target. Actual independent challenge of frozen statement SHA256 9f385113df4b561399311ece472e41affd989ff187a93bdbec66a8d1cccffa5a supports the tiny-prime product sector o(M_N) relative to expressly imported classical maximal BV, the elementary odd squarefree rough central-strip o(M_N) estimate, the rough squareful long error, and the exact residual partition. One critical finding remains: no fixed-delta lower bound for the three actual residual operators is proved. No sector estimate is refuted; the even semiprime central coefficient -1 refutes a pointwise extension already disclaimed by the author. Proof assurance is human-readable independent review, not a proof-assistant certificate or source-wide certification. No Goldbach proof, powers-of-two improvement or novelty determination is obtained. Token and monetary usage are unknown. Scope remains pair eight plus root preparation two proxy units, ten total.",
+  "claims": [
+    {
+      "text": "For fixed B>=8 and every sufficiently large even N, the actual long signed contribution on products sharing a prime at most w=floor(log L/(4 log log L)) is o(M_N), relative to the imported classical maximal Bombieri-Vinogradov theorem; the gd shell, model density mismatch, multiplicity, atom and endpoints are accounted for.",
+      "status": "proved",
+      "source": "research/goldbach/cubic-signed-20261029/review.md, Supported deduction 1; frozen statement (2)-(7); inspected prime-bv-book277.png (26.1)."
+    },
+    {
+      "text": "For every fixed B>0 and every sufficiently large even N, the actual odd squarefree y-rough contribution from D<h<n/D is O_B(S(N)N(log L)^5/L^2+log L)=o(M_N); complementary pairing and the elementary Bonferroni bound for the actual |u| preserve the full wheel normalization and N-divisor factors.",
+      "status": "proved",
+      "source": "research/goldbach/cubic-signed-20261029/review.md, Supported deduction 2; frozen statement (8)-(17)."
+    },
+    {
+      "text": "The rough squareful long contribution is O(N^(5/6)L^4)=o(M_N), and the exact partition (19) leaves all other nonrough, even rough and outer odd terms in the three stated residual operators, including their endpoints and k=1 terms.",
+      "status": "proved",
+      "source": "research/goldbach/cubic-signed-20261029/review.md, Exact remainder and error ledger; frozen statement (18)-(20) and (R)."
+    },
+    {
+      "text": "The odd-strip coefficient suppression extends to every even rough squarefree product. This extension, already disclaimed by the author, is refuted by a central rough semiprime with T(n)=-1 exactly; the example supplies no refutation of an eventual actual-prime weighted inequality.",
+      "status": "refuted",
+      "source": "research/goldbach/cubic-signed-20261029/review.md, F1; explicit complementary semiprime argument."
+    },
+    {
+      "text": "The fixed-delta lower bound (21), and therefore the requested full 3/4-gap bound, remain unproved for all sufficiently large even N and for all sufficiently large powers of two. The coarse O(N L^5) residual bound supplies no target margin. Novelty of the narrow deductions remains unverified.",
+      "status": "unverified",
+      "source": "research/goldbach/cubic-signed-20261029/review.md, F1; frozen statement (21)."
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/cubic-signed-20261029/review.md"
+  ]
+}

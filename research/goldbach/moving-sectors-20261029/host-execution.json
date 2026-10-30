@@ -1,0 +1,42 @@
+{
+  "program": "GOLDBACH-SECTORS-006",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "survey",
+    "statement",
+    "counterexample",
+    "finite-check",
+    "revise",
+    "integrate"
+  ],
+  "planned_proxy_units": 14,
+  "completed_proxy_units": 14,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "survey": "/root",
+    "statement": "/root/trilinear_proof",
+    "counterexample": "/root/independent_critic",
+    "finite-check": "/root/exact_checks",
+    "revise": "/root/trilinear_proof",
+    "integrate": "/root"
+  },
+  "objective_status": "active and incomplete",
+  "prior_goal_turn_classification": "progress: reviewed exact labels and source-range audit changed the next mathematical attempt",
+  "supplemental_checker_preparation_proxy_units": 2,
+  "total_planned_host_proxy_units": 18,
+  "note": "Independent checker prepares a preregistered plan before the author freezes; actual finite-check execution awaits its populated dependent packet.",
+  "frozen_statement_sha256": "622e03bca08c00023894cfb98c892c7831a8aef6980cf00775aa6d7aa78291f9",
+  "supplemental_root_unit_edge_verification_proxy_units": 2,
+  "status": "completed_host_execution",
+  "total_declared_host_proxy_units": 18,
+  "proof_assurance": "complete stated elementary derivation plus distinct host-agent review; no formal or external peer verification",
+  "next_action": "RATIOS-007 actual author statement frozen and dispatched for independent review and finite checks",
+  "protocol_validation": {
+    "backend": "replay",
+    "path": ".runs/goldbach-sectors-006-validation-final-20261029",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  }
+}

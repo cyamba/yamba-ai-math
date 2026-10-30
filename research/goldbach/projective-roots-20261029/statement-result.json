@@ -1,0 +1,28 @@
+{
+  "summary": "Derived a complete finite joint prescribed-projective-line and canonical moving-ratio count with the proposed local main factor and error O_eta(2^omega(H)*(U^(7/4+eta)+V)*log^2(2U)), pending separate review. Line prescriptions split S=QR into Q|u and (u,R)=1 with c_H=rho*u mod R, explicitly covering primes dividing u and nonunit row entries. Double completion retains the zero c-frequency, separates the zero v-frequency exactly and handles every squarefree H divisor, including empty intervals. Weighted phi summation pays 2^omega(R) before its 1/R prefactor absorbs that cost. The result has no positive H power. It gives a relative power saving for fixed positive interval lengths in the subpolynomial-S range when U~X^a,V~X^b,b>3a/4, including balanced sqrt(X) boxes with exponent1/8. The broader arbitrary-aspect power-saving target is not proved; the displayed completion error identifies its precise range limitation without refuting the target. No source full theorem, high list/path moment, actual-prime cancellation, Goldbach proof, breakthrough or novelty claim is obtained. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The prescribed line conditions are exactly Q|u,(u,R)=1,c_H=rho*u mod R for the stated split S=QR, including p|u and nonunit row-entry cases.",
+      "status": "proved",
+      "source": "research/goldbach/projective-roots-20261029/statement.md"
+    },
+    {
+      "text": "The finite joint count has main UV|I1||I2||I3|kappa_b(H)/prod_(p|S)(p+1) and the displayed uniform absolute error, with every H divisor and CRT/canonical-representative condition retained.",
+      "status": "proved",
+      "source": "research/goldbach/projective-roots-20261029/statement.md"
+    },
+    {
+      "text": "For polynomially sized boxes with b>3a/4 and subpolynomial squarefree S coprime to H, the joint count has an absolute power saving with gamma=min(a,b-3a/4); fixed positive interval lengths also give a relative power saving.",
+      "status": "proved",
+      "source": "research/goldbach/projective-roots-20261029/statement.md"
+    },
+    {
+      "text": "The full arbitrary-aspect power-saving target, accumulated list/path-moment estimates, changed major-arc prime estimate, actual-prime correlation, Goldbach solution and novelty remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/projective-roots-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/projective-roots-20261029/statement.md"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "summary": "Inspected pinned Guo Sections6.1-6.5, exact primary published MSTT Lemma3.9(ii), prior checked Heath-Brown Burgess r2 input, and now the visually rendered original Iwaniec journal page97. The exact radical-dependent width and exceptional-character scope match the source transcription; the small-radical deduction is submitted for separate review. The complete reflected energy proof and general selected zero-free strip remain unverified. The actual prime Mobius coefficient and fixed twists must be retained. Separate preparatory critic independently confirmed the original page and small-radical deduction for all q*|kH; the full energy theorem still awaits author and main review.",
+  "claims": [
+    {
+      "text": "Published MSTT Lemma3.9(ii) has the stated weighted interval supremum for polylogarithmic character modulus and frequency up to its auxiliary variable.",
+      "status": "established",
+      "source": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6DF08E2A3EFABB2DD0DA6CDA38649B18/S2050508623000288a.pdf/div-class-title-higher-uniformity-of-arithmetic-functions-in-short-intervals-i-all-intervals-div.pdf"
+    },
+    {
+      "text": "The complete reflected major-energy chain and selected general zero-free strip remain unverified here.",
+      "status": "unverified",
+      "source": "research/goldbach/reflected-energy-20261029/brief.md"
+    },
+    {
+      "text": "Original Iwaniec journal page97 defines the stated radical-dependent zero-free width and restricts its possible nonprincipal exception to a real character and real simple zero.",
+      "status": "established",
+      "source": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0023/PPN356556735_0023.pdf"
+    },
+    {
+      "text": "For rad(H)<=L^C, choosing fixed A1>A0+C excludes the possible real primitive exception and yields each required selected closed strip for q*|kH above L^A1.",
+      "status": "proved",
+      "source": "research/goldbach/reflected-energy-20261029/pre-mortem.md; iwaniec-primary-statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/reflected-energy-20261029/survey.md",
+    "research/goldbach/reflected-energy-20261029/primary-inputs.md",
+    "research/goldbach/reflected-energy-20261029/iwaniec-primary-statement.md",
+    "research/goldbach/reflected-energy-20261029/pre-mortem.md"
+  ]
+}

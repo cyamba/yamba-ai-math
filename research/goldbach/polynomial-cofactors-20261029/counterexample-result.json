@@ -1,0 +1,43 @@
+{
+  "summary": "Independent critic executed the actual populated COFACTORS015 stage against frozen statement91bbf0074e34ef26d578a80b4ecf1644db2197748ca1070d38dc8c38686b0212. The raw global-label invariant is refuted. Integer-cofactor compression, the positive-product protected h1 block and its undeleted configuration-space norm are supported; they are not factorable Vaughan-input norm claims. The exact nonzero-center and harmonic Cauchy reduction and fixed-fourth-power polynomial-marking lemma are supported. One P2 scope clarification is required: the equal-label-deleted (d-1) eigenvalue formula assumes distinct labels per vertex and does not extend to arbitrary factorization multiplicities, as the explicit N38 three-state multipartite example shows. The unproved dispersion D already contains the unknown h1 prime boundary and is not inferred from the marking lemma. Assurance is a complete written-argument audit by a distinct host agent, not formal verification or a new full classical proof audit. The actual final finite output was inspected before freezing; its rational toy center and t=lambda=0 marking coverage are explicitly limited. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The proposed invariant that the exact raw equal-integer-cofactor transition rule bounds global selected polynomial labels by local factor capacity is refuted by the N16/N30 witnesses and averaged unbounded-block argument in their stated prime-incidence domains. The N222 toy has only its explicitly finite product-box domain.",
+      "status": "refuted",
+      "source": "research/goldbach/polynomial-cofactors-20261029/review.md"
+    },
+    {
+      "text": "On the specified positive-product configuration space with a<N and unit labels, integer compression gives m_arc*K, c1 is exactly the h1 sector, and every nonempty undeleted block has normalized difference eigenvalue1-m_arc. The larger fractional layers retain the exact kernel and require actual coefficient/support linkage.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/review.md"
+    },
+    {
+      "text": "Extending the equal-label-deleted (d-1) eigenvalue formula to arbitrary separate factorization states is refuted by N38 states(3,5,7),(3,7,5),(5,3,11), whose deleted block has top eigenvalue sqrt2. Restrict that optional formula to distinct-label vertices; the undeleted obstruction is unchanged.",
+      "status": "refuted",
+      "source": "research/goldbach/polynomial-cofactors-20261029/review.md"
+    },
+    {
+      "text": "The selected-divisor count identity, explicit nonzero single-prime center with gamma1 asymptotic to A_N, three-node prime reconstruction, bounded harmonic test mass and Cauchy reduction are supported. D would imply a positive prime margin through its h1 summand, but D is not proved.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/review.md"
+    },
+    {
+      "text": "For the retained fixed twist, positive lower normalizer and polynomial label scale, the fourth-power representation bound, exact character orthogonality and one-spaced calculus argument prove the stated bounded eighth moment and logarithmic-power exceptional-set estimate, including repetitions and boundary blocks.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/review.md"
+    },
+    {
+      "text": "The saved bounded finite output reports no failures in its declared incidence, positive-sector, integer-compression, weighted rank-one, toy-center and marking-coefficient cases, and independently reproduces the repeated-label scope counterexample. It certifies no dispersion, analytic intensity or continuous/asymptotic theorem.",
+      "status": "empirical",
+      "source": "research/goldbach/polynomial-cofactors-20261029/finite-results.json"
+    },
+    {
+      "text": "Actual dispersion D, polynomial-modulus arithmetic replacement, factorable-input operator linkage, full polynomial-label prime energy, original-target positive margin, novelty and Goldbach remain unestablished. The marking lemma supplies none of these by itself.",
+      "status": "unverified",
+      "source": "research/goldbach/polynomial-cofactors-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/polynomial-cofactors-20261029/review.md"
+  ]
+}

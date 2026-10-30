@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-RECOMBINE-020",
+  "title": "Polynomial Vaughan recombination and the actual one-sided prime margin",
+  "objective": "Determine the precise pointwise prime-target content of the polynomial-sifted coefficient estimates after full Vaughan recombination, and attempt a genuinely sufficient one-sided inequality rather than substituting a composite-input comparison for the Goldbach margin.",
+  "fleet": "pair",
+  "briefs": ["research/goldbach/polynomial-recombination-20261029/brief.md"],
+  "constraints": {"max_agents": 2, "max_workers": 2, "max_cost_units": 8, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["At most two exact original-target claims", "Complete polynomial decomposition with corrections", "A sufficient one-sided estimate or exact first obstruction", "Separate mathematical challenge and bounded revision"],
+  "success_criteria": ["The original prime variable and complement remain distinguished", "Composite cancellations and prime powers are retained", "A positive comparison term is never assumed to control an unbounded signed remainder", "Every proposed inequality has the true pointwise H/log²H target scale"],
+  "stop_conditions": ["One pair round within8 proxy units", "No paid inference, publication, external messages or unbounded experiments", "Failure to close an inequality does not relax the full Goldbach objective"]
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "Actual CENTERED018 original-author revision completed from the populated revise packet. Both critic-supported candidates are retained: all-precision nonprincipal energy saving for the exact powers-of-two balanced polynomial prime arrays, uniformly for common |v|<=log^C H and arbitrary real marking lambda at k=1 with trivial fixed twists, and the positive compact-time principal asymptotic with factor8. Both P2 clarifications are resolved in new files only: explicit prime-set definitions replace the frozen corrupted prime markers, and half-integer endpoints representing the exact included interval are used throughout Perron and the contour shift, with no unsupported O(L2) shift-back claim. Frozen statement and review remain unchanged. Assurance is a complete author derivation with distinct substantive written review relative to inspected classical statements, not formal verification or audit of the full published classical proofs. No new source search, experiment, research round, paid call, publication, external message or goal completion was performed. Usage is unknown.",
+  "claims": [
+    {
+      "text": "For every fixed A,B,C>0, the exact nonprincipal energy is O_(A,B,C,alpha,eta)(H^(-1)log^(-A) H), uniformly in every real marking lambda and common |v|<=log^C H, for H=2^ell, k=1 and trivial fixed character twists. The exact total energy is its nonnegative sum with the retained principal energy.",
+      "status": "proved",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/revision.md, Candidate1 and (R7)-(R17); distinct support recorded in frozen review.md"
+    },
+    {
+      "text": "The half-integer cutoffs y_+*=floor((1+delta)T)+1/2 and y_-*=ceil(T)-1/2 represent exactly the included prime interval. Keeping these cutoffs throughout the Perron integral and shift proves the required endpoint prime cancellation without the unsupported stronger shift-back aside; induction, units and higher prime-power corrections are preserved.",
+      "status": "proved",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/revision.md, (R12)-(R15), resolving critic P2 endpoint clarification"
+    },
+    {
+      "text": "At v=lambda=0 and each fixed K>0, the compact principal energy equals 8/(log(1/alpha)^2 H log^4 H) times integral_(-K)^K |C_eta(t)|^2 |J_delta(t)|^4 dt plus o_K(H^(-1)log^(-4) H). The integral is positive, and the exact growing-height principal energy is at least c/(H log^4 H), with no growing-height asymptotic asserted.",
+      "status": "proved",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/revision.md, Candidate2, (R5)-(R6) and (R18)"
+    },
+    {
+      "text": "The literal all-precision zero-centered total-energy extension on these changed polynomial prime arrays is false for A>4. This does not refute the accepted small-sift theorem or establish a signed full-comparison estimate.",
+      "status": "refuted",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/revision.md, positive principal lower contribution and final status"
+    },
+    {
+      "text": "Other arcs or fixed twists, full polynomial comparison/transport, polynomial-sieve Type I, identifying the principal energy with an original prime-pair main term, the original pointwise prime margin, closest-work novelty and Goldbach remain unestablished by this result.",
+      "status": "unverified",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/revision.md, final status and boundaries"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/centered-polynomial-energy-20261029/revision.md",
+    "research/goldbach/centered-polynomial-energy-20261029/revise-result.json"
+  ]
+}

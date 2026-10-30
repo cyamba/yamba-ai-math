@@ -1,0 +1,49 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/principal-comparison-20261029/brief.md",
+      "sha256": "9f1682229e6576045c268ca0e1ddf9d00c76c55caf11dfd6d5a83230e43f91a2"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/challenge-result.json",
+      "sha256": "e5c6bd80d27af2f581ddb55a76e3009233e8de8baca9562faefd2c7ce91dc798"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/host-execution.json",
+      "sha256": "df1d1d4130e67de0f93703170cf821a8e85102ec2d52061142f23d25cacea28a"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/NEXT_SESSION.md",
+      "sha256": "437251c60b7615cde963f4085313696a9f779a2fb55e223ff0f5ca1a70d241c2"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/objective-audit.json",
+      "sha256": "d1f6bff6b35481f187b1784bb5b93b3334d69a899e9f1c91d8b923a4ad5c3295"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/propose-result.json",
+      "sha256": "244eac31b6dffa36a9f700c96c752084d77654b8e76630223e8d8507ac4ab974"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/result.md",
+      "sha256": "f0c5bd7763fcaba5f284d8fc116385e35f7b1f3c4351577537f833fdb78587f1"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/review.md",
+      "sha256": "bc322435a18150e960065062c40c83fddbc5dbb04fb9663b683976190cbf1b5e"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/revise-result.json",
+      "sha256": "8b6daf86de515c7a05675d33ef599d4a8fd3cce2e1f9376f63c556598d3770a6"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/revision.md",
+      "sha256": "416c93fefde5163f6718e83c3b0585df2c4b2f919161caf96ed3ab2ecf80b4cf"
+    },
+    {
+      "path": "research/goldbach/principal-comparison-20261029/statement.md",
+      "sha256": "046701bca199227e1ec4c37e79b8dc911ca1ca0dfc314667c85500bb1bb0510d"
+    }
+  ]
+}

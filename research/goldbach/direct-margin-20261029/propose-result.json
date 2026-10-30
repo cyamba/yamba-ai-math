@@ -1,0 +1,39 @@
+{
+  "summary": "Actual DIRECT021 Mathematician attempt at the original prime/rough-semiprime signed margin on powers of two. The genuine nonzero-centered fixed-gap remainder target is unproved. The first unsigned majorization needed by the attempted character/convolution norm proof is refuted on every sufficiently large power of two: its actual arithmetic size is at least (1-log 2+o(1))H/log H, a logarithmic factor above the principal margin. Exact convolution, square corrections, principal normalization, finite controls and helper execution are preserved for distinct review. No Goldbach proof or breakthrough is claimed.",
+  "claims": [
+    {
+      "text": "For actual primes and strictly cubic-rough semiprimes below H=2^ell, ell>=3, unit-character orthogonality gives T=SS-PP=-D_H+R_H, with ordered counts and squares retained exactly.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/statement.md, sections 1-2; complete elementary author argument, pending distinct critic"
+    },
+    {
+      "text": "Ordinary PNT and exact least-factor enumeration give p_0~H/log H, s_0~(log 2)H/log H and D_H~2(1-(log 2)^2)H/log^2 H. No additive prime-pair asymptotic is assumed.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/statement.md, section 3; author deduction relative to imported established ordinary PNT"
+    },
+    {
+      "text": "The attempted estimate W_H=phi(H)^(-1)sum_nonprincipal ||S_chi|^2-|P_chi|^2|=O(H/log^2 H) is false on all sufficiently large powers of two. Exact Parseval gives W_H>=(1-log 2+o(1))H/log H and W_H/D_H>=(1+o(1))log H/[2(1+log 2)].",
+      "status": "refuted",
+      "source": "research/goldbach/direct-margin-20261029/statement.md, section 4; asymptotic falsifier of the unsigned estimate on the actual arithmetic sets"
+    },
+    {
+      "text": "The correct Cauchy bound for the parity-weighted product of the actual S-P and S+P transforms is asymptotic to (1+log 2)H/log H, so that bound cannot certify the required H/log^2 H fixed gap.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/statement.md, section 5; complete author norm calculation, pending distinct critic"
+    },
+    {
+      "text": "The finite assertions R_H<=0 for every ell>=3 and normalized probability-convolution contraction at every power of two are false: H=8 has R_H=1/4, and H=16 with the real even character modulo 8 has |S_chi|/s_0=1>3/5=|P_chi|/p_0. These finite failures do not refute eventual fixed-gap inequalities.",
+      "status": "refuted",
+      "source": "research/goldbach/direct-margin-20261029/statement.md, section 6; explicit exact actual-prime and semiprime lists"
+    },
+    {
+      "text": "There exist fixed kappa in (0,1) and ell_0 such that R_H<=(1-kappa)D_H for every ell>=ell_0, or another sufficient actual pointwise prime margin. This remains an unproved research target; no such arithmetic cancellation bound was obtained.",
+      "status": "unverified",
+      "source": "research/goldbach/direct-margin-20261029/statement.md, (G-open) and section 7"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/direct-margin-20261029/statement.md",
+    "research/goldbach/direct-margin-20261029/propose-result.json"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "program": "GOLDBACH-BALANCED-023",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "propose",
+    "challenge",
+    "revise"
+  ],
+  "planned_proxy_units": 8,
+  "completed_proxy_units": 8,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "propose": "/root/balanced_covariance as Mathematician",
+    "challenge": "/root/balanced_critic as Independent Critic",
+    "revise": "/root/balanced_covariance"
+  },
+  "author_status": "actual proposal, distinct mathematical challenge and original-author revision complete",
+  "objective_status": "active and incomplete",
+  "supplements": "none",
+  "independence": "distinct role/profile substantive review planned, not independent model errors",
+  "frozen_statement_sha256": "ee40705ea259c3ff2593ddf26d7f3f5d483c0cae3493fd6561fbe4cf1c893fc8",
+  "frozen_review_sha256": "4d44ab372a6a71fbeb2ec129026715ed380f51421ae9f5338720df44f8198ddd",
+  "frozen_statement_bare_cr": 6,
+  "frozen_revision_sha256": "f5759e12c4e3ebb57211907b49037e0d2aebb8bca25669bf54e1bd7bb8791a5c",
+  "formatting_correction": "six frozen bare-CR prime markers preserved; revision restates clean full formulas",
+  "next_action": "root integration and continued actual stronger-input CHEN024 signed research"
+}

@@ -1,0 +1,85 @@
+{
+  "scope": "completed SECTORS-006 local files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/moving-sectors-20261029/brief.md",
+      "sha256": "568b179aaf496b138c8bba1a2a0bc27fc2f63952ee942b93c6ea50a1f5d75115"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/counterexample-result.json",
+      "sha256": "8c49dcb4ed27380ec86df22ffee2ed831c2360792663039f4ea2092b7af38a91"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/edge-unit-results.json",
+      "sha256": "2b4e861a2a581ccf6888a2469ad3f41877cae0a7d91428a698f7a0f948fa4969"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/edge_unit_check.py",
+      "sha256": "abc70eede4c1429cfcc9422112a2ce75a85eb89f0e4d73fe07c89c85b2489173"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/experiment-plan.md",
+      "sha256": "4e04d4291fc77378ce99b831af133c7868f9f41734d3c219dc978d561b2632ca"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/finite-check-result.json",
+      "sha256": "5df098beafccd04871977cecaea3b631aed158e04892e0caacc491087f19d94a"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/finite-results.json",
+      "sha256": "7723f67be41710e610209946a4a12503e9cd2fc7b0cca431fa07f5356bc5cf13"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/host-execution.json",
+      "sha256": "919f3ef1e42344701b71e70a92728fa57021fe2d1ef2dc5477df6362badc23d9"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/integrate-result.json",
+      "sha256": "b831010867fbd0ec1962da4c1aa18fba7fc7cae13bb0393a711dcd058ff1732b"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/NEXT_SESSION.md",
+      "sha256": "07366c5b05cd577add916844ede26056838fef1cdf9489a4e49ea54bfb2c62de"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/repository-tests.json",
+      "sha256": "ffd008c8f8055cedacf0905fc6733648faac0c483c5e5841b15dbb25a2c8e500"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/result.md",
+      "sha256": "c9e663be11268f46e145f3b05214071d252aec17d5313cb249e1b3fdb28ba5f9"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/review.md",
+      "sha256": "d66bd8fdf6b5aac8412924dcbed6b2c72618a5270e671d697740b083374a812a"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/revise-result.json",
+      "sha256": "5f924842c55c9118a02f7f0014f50369f74a7a9d9fc2898b07a9b877cf8ab65f"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/revision.md",
+      "sha256": "f6331743963effbb169edf8047a43e23e27dc1171372ef59b1058467c53a8651"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/sector_checks.py",
+      "sha256": "f262967cdfe4459c44ef2b47d9c997024da1bd5133d41b052f9c4db86ae15196"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/statement-result.json",
+      "sha256": "b8b01949e895fba7bb88ec085f05502c7493783cc2df5f3c3b703a7a87c39808"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/statement.md",
+      "sha256": "622e03bca08c00023894cfb98c892c7831a8aef6980cf00775aa6d7aa78291f9"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/survey-result.json",
+      "sha256": "65be3aac6ea7530fc093aeaceff2003869be96307eb90c2932be4ed843bb17be"
+    },
+    {
+      "path": "research/goldbach/moving-sectors-20261029/survey.md",
+      "sha256": "a414c745de82d8ddc3b0d4cfc06791b16d77d9ff53251f2c3ba245b30192b21e"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/brief.md",
+      "sha256": "8fab7102219742132fba1196fd2c4861c8bd59ad5e57000e422cdcec68f9272f"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/cofactor_checks.py",
+      "sha256": "51a27ad91e31fec1023a01ec588d6064586440e15a56ba4b32dca328300067f4"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/counterexample-result.json",
+      "sha256": "e5966bab34fa6e824a0284ad96c7d68c81de60555098169e1608df593cfd6652"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/experiment-plan.md",
+      "sha256": "ddc89e0628866375fca2decc45629105dd439e8828d0d82ee23ca37da5faa7c2"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/finite-check-result.json",
+      "sha256": "9f05bdcc7d4944b7d1a7ab7c73da486801e5ccaf09d2cd46e65708e41637073f"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/finite-results.json",
+      "sha256": "019cd9e6e0ed1fe006130ae8797bb543b28738e3f62f5283adbf8fa3dde1b11d"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/host-execution.json",
+      "sha256": "2d27df735715fbc08ab4bad66da2160fc24e7c93331f96d69e0cf1e077ce6b34"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/integrate-result.json",
+      "sha256": "e9bd379a479a668d9de54e16f955a0a0588af0bae30349b6f1bc72e976de0642"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/NEXT_SESSION.md",
+      "sha256": "1345d80b58aa0be75e84644fe700c4b9897185563d2627783f81557b18a26bac"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/objective-audit.json",
+      "sha256": "cecd573628d4fcd376f0bf3baa3812c07ee3ac6732a93db57bd4fe5f2f342f72"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/pre-mortem.md",
+      "sha256": "72521afa11ce08c0c7d2ef380eb2da69df2109917381b7f7bffb8fef5b8cbf93"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/repository-tests.json",
+      "sha256": "d82b7e2697e01ac6b1196e52c958cbba0b5b3d9c5c58f9ae14d8dcc95155d5b8"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/result.md",
+      "sha256": "ea07c8e3e4204cc204a078401bda8089d466377e5d5353203d16eaa8aa457779"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/review.md",
+      "sha256": "250fee54d7d3e8dffad68fc86aeda699b09f874bbbf23913ac0c16adf54b66dd"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/revise-result.json",
+      "sha256": "af3c712e49486368a54c0ffa09097c9af59aa1358d7764093b9d4fd3b786621a"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/revision.md",
+      "sha256": "23996d11ed540409153fba0ed62957e472659d0f1082411e9a494671f0fa6d1c"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/statement-result.json",
+      "sha256": "db012d9b8dbc563696f27571fe849e490eefc68b6825a4a3e90cfbc6595a42a3"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/statement.md",
+      "sha256": "91bbf0074e34ef26d578a80b4ecf1644db2197748ca1070d38dc8c38686b0212"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/survey-result.json",
+      "sha256": "6bf81e68fcf4d7b0c5ee044da645bd8c7eda01e03a95b183d9665027e55c3c51"
+    },
+    {
+      "path": "research/goldbach/polynomial-cofactors-20261029/survey.md",
+      "sha256": "3ffd07cfbd60b27cec4a650de4888fdcc4343e03563377e8e3ca1427752b27c0"
+    }
+  ]
+}

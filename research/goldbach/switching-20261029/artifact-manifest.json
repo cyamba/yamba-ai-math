@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-29",
+  "objective_status": "Goldbach unresolved; no established breakthrough",
+  "files": {
+    "research/goldbach/switching-20261029/bilinear-model-test.md": "483a8ec93b95e09d26217187effd86c44aa0b95ce46ba3880e380d945bd1a36a",
+    "research/goldbach/switching-20261029/brief.md": "b6e22239381628ea2261e55cd9d15c47b1391b94885bd4db56156d56e8a1f905",
+    "research/goldbach/switching-20261029/coefficient-certificate.json": "1eee5b02672ebb04551d557485b54783ad62971bf4b6a92c70efc05b5c75898d",
+    "research/goldbach/switching-20261029/completion-audit.json": "ab8c21697d74e88afb8743ac78c640e6538a9b4419a2d6d9f732a11db3a80be0",
+    "research/goldbach/switching-20261029/counterexample-result.json": "cb9c223ccf962b8772d0f6e46623193ccb5f7ace7f2039b0e549ae3b7b176c5a",
+    "research/goldbach/switching-20261029/experiment-plan.md": "58cc29c7aa889e7e5d8822c9b655ab3ad09e9b09af3578e1c2d107e563af5ba3",
+    "research/goldbach/switching-20261029/finite-check-result.json": "145f5aa7d417ce0d043489fb5cfcba94202be878cbaac00dbcb7736ff8e84ac1",
+    "research/goldbach/switching-20261029/finite-results.json": "b360d46113754dc8a948b131c3aa7f16fc3709b88ec078ca84c627450e157589",
+    "research/goldbach/switching-20261029/host-execution.json": "130cac5adf24d58ca39bf1b656710b154427a473d89c4c75d8e5fb7369a35018",
+    "research/goldbach/switching-20261029/integrate-result.json": "83ed854d2692690335c7342258097c547267466b7eef1448eb2bc8359cb5df2b",
+    "research/goldbach/switching-20261029/next-bridge-inspection.md": "b41f8b7140379acb695bb43b74c2098790524126cde34b490c441395dc822130",
+    "research/goldbach/switching-20261029/NEXT_SESSION.md": "64198a0a8e9ec76dcae75f238225082422c843d28061da14ea30f4dc51988a62",
+    "research/goldbach/switching-20261029/parity-model.md": "8cfc0eabfbae699fbec0d10328277cac82bd37b97aafac6d9ab5d8d76f7f0e14",
+    "research/goldbach/switching-20261029/repository-tests.json": "d052e5597fa32a3fc46bc4b0f2cd479d452fd1902ef2a53585a44a194ff26d3f",
+    "research/goldbach/switching-20261029/result.md": "9a503b6f7dd6c2d8f9bbdf80ddf0916b09d3cb5e6dec8c542866fedc6c84ae16",
+    "research/goldbach/switching-20261029/review.md": "2f97793669d84b6928a0c8eea77e944c186ad9e01c021e3aa76240e62460d57d",
+    "research/goldbach/switching-20261029/revise-result.json": "a9928d1a0ddcc5e62db018a66673da9e603706f3c1d5fbbdb84d10a0032c80ac",
+    "research/goldbach/switching-20261029/revision.md": "bbc56a0da838b133b2071a927fedc31610dc1585fdfd0d6f998fccd05d6f009a",
+    "research/goldbach/switching-20261029/statement-result.json": "d220226339f868bf99549da135519af57d9aa1e8acf4e8d8a5667f48e11c8cc6",
+    "research/goldbach/switching-20261029/statement.md": "3faf6a11ff9189f7e8251d9187abaf0ead8069110951bc541ee004eca678ff53",
+    "research/goldbach/switching-20261029/survey-result.json": "0027041b019fa81e2e44bed74f27219d849075564aa95cf56227533fc239094a",
+    "research/goldbach/switching-20261029/survey.md": "652497f283067950e0700577fecc88d7bbaf052f134e7ca4d67ab1d8b2f03473",
+    "research/goldbach/switching-20261029/switching_checks.py": "ec0e9c66ed18ce9fdc800710acff4865384f020b5ad2de45375dff5ddde51c61"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "summary": "Inspected the pinned Guo exact sifted Vaughan identity, both prime-power corrections, endpoint/Mellin/unit support and reflected common-divisor TypeI proof text. Located the author's current public Murty-Vatwani PDF after an old-URL HTML redirect, downloaded/rendered journalp115 and visually inspected Proposition3's exact endpoint-uniform Mobius BV statement. It reproduces Siebert-Wolke1971; the original proof is not audited. The complete current decomposition and TypeI proof remains for the actual author, with g-specific scales, finite tails and plus-one counts explicit.",
+  "claims": [
+    {
+      "text": "Murty-Vatwani Proposition3 states the required endpoint-uniform Mobius BV inequality at level sqrt(x)/log^B x, even with all residue classes in its maximum.",
+      "status": "established",
+      "source": "https://mrammurty-ai.github.io/chowla.pdf"
+    },
+    {
+      "text": "The complete reflected decomposition, TypeI transport and eventual weighted-prime assembly remain unverified in this round.",
+      "status": "unverified",
+      "source": "research/goldbach/type-i-decomposition-20261029/brief.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/type-i-decomposition-20261029/survey.md",
+    "research/goldbach/type-i-decomposition-20261029/primary-inputs.md"
+  ]
+}

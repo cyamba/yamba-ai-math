@@ -1,0 +1,93 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/operator-moments-20261029/brief.md",
+      "sha256": "4ef039898282ecc6bba9348b1702b15e3f9cfd2d24969e0a78c53c60fc7845c4"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/counterexample-result.json",
+      "sha256": "f1dc36acab8c638cd39c8341320e7c3fcda97b53002b5e549aab290886552cd6"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/experiment-plan.md",
+      "sha256": "2a03bc6722f3fab1da192f1014b3cbc43b207c3aa64d079b5c73c940f8a16d4c"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/finite-check-result.json",
+      "sha256": "bad7b86e427e55e7d0802ec6cffb7c371faff8fee57f3856ebf788a115db29ce"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/finite-results.json",
+      "sha256": "929731d5d7e6b8ad5036fa1f7101fbb7ddf43c794c98a5eb540a5a064169fb88"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/host-execution.json",
+      "sha256": "9225d7e20df68e7c3fd8c47406f9219718d86a344671e1766d3f385de57eedba"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/integrate-result.json",
+      "sha256": "c4b3d1bf9382cc215d9d8eea715b481ad8cfc624f062cff370d42dee6e4eb5a1"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/moment_checks.py",
+      "sha256": "6d163348ba5513948cc033dd55130f24bd562dc2a9c8f07a7c4320ffd2d57376"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/next-analytic-inspection.md",
+      "sha256": "1bf32e7aa1b718be4508472d5e09e2e942fa0dde5b2823b5530e454167114d01"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/NEXT_SESSION.md",
+      "sha256": "c1c831029d35a2c7e4618b6269fec36934a9b58388ff3f823660f471f70270ca"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/objective-audit.json",
+      "sha256": "3f62cb9cc2039e56f20a4406ead52026276e01b5959ffa907dd19f4dca912ef9"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/pre-mortem.md",
+      "sha256": "2c884c12b3564774a7eb6e4d497312ccba2b15710e7dd088e6c3b605a7493b20"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/repository-tests.json",
+      "sha256": "99715dffaf3790b5385225d58921eb62cc00f22b9f226eccc6e7df193df11d42"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/result.md",
+      "sha256": "eb8b2c9a2570a35d0d02bd5e1dcb1480bd540ddb699de057c759dbf522a5a934"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/review.md",
+      "sha256": "aedcb031465999ed34dfbee97e50f9f76d3bdb775e83b6bc6bb529acdb229d91"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/revise-result.json",
+      "sha256": "b1bd4c0b293fc6865b4f4e2a7b4730e5f08cb90ca6e22efcdf0a3867e1a70963"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/revision.md",
+      "sha256": "947cc0c9b1fbcb79b9f221246bbc2ecf056dcdd9decf0543b508a3b7ee2931ba"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/source-provenance.json",
+      "sha256": "765e50005c20eeb6fa29e210ac586f3ec582fe0059dfce78195d93a1906b3704"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/statement-result.json",
+      "sha256": "3859b3a752c8e37db2b624504da537bacb4022454eec5a080fd817da5367c8f5"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/statement.md",
+      "sha256": "0e0e38bdb4f3b000bd67f385d5c32da1bb59fbd22790d1ddb31a8d10ead3e7ca"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/survey-result.json",
+      "sha256": "068cc6b984a1837a8d39abc5f421cacf14d32d9e339a6d28d3e3ab18bbf73819"
+    },
+    {
+      "path": "research/goldbach/operator-moments-20261029/survey.md",
+      "sha256": "411d68196e5d7cda62c22e5674a99daedccec9722634b6e5b369eabad3b6f7e3"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Prime moments and assembly: initial source inspection
+
+29 October2026. Root Literature Scout. Read the pinned Guo source's positive prime-relative moments, fixed-number variance, weight removal and assembly boundaries, and LWW Proposition2.3's fixed-b restriction. Source-wide transport and a growing-b rate are not assumed. The present brief deliberately asks only for the correctly ordered fixed-b limits needed for little-o cancellation.
+
+Prime divisibility of H-p at an eligible band prime r has local probability1/(r-1), because H avoids r and the affine prime residue is reduced. Cross moments require disjoint bands and retained finite divisors from at most two copies. Root-model probabilities1/(r+1) concern a different population. The original arbitrary-b fixed threshold is adequate for successive limits but not for an explicit b growing with H.
+
+The primary author-provided Koukoulopoulos book *The Distribution of Prime Numbers* was located through the inspected LWW bibliography. Its Chapter26, equation26.1 on printed page277, has the endpoint-uniform prime BV statement needed here. The actual PDF was downloaded, its page rendered and visually inspected; primary-inputs.md records its precise counting-function form and the extra fixed log loss for real partial summation. This is theorem-statement inspection, not a full book proof audit. ENERGY012 and TYPEI013 remain pending, so no actual-prime consequence is accepted by this preparation. The original polynomial-rough/h=1/nonzero-center bridge and novelty remain open.

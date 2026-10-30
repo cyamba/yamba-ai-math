@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-RATIOS-007",
+  "title": "Moving-multiplier complement-ratio averaging",
+  "objective": "Attempt and independently check a genuinely quantitative complement-ratio averaging bound uniform in a moving coprime multiplier, while preserving the remaining Goldbach prime-correlation and prime-list obligations.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/complement-ratios-20261029/brief.md", "research/goldbach/complement-ratios-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Complete elementary exponential-sum input", "Uniform fixed-u and summed estimates with all factors", "An explicit nonempty equidistribution range", "Separate substantive review", "Exact finite arithmetic checks", "Explicit remaining Goldbach obligations"],
+  "success_criteria": ["The new estimate is proved rather than assumed", "H and k dependence and coprimality remain explicit", "Complement-ratio averaging is not promoted to prime-list or prime-correlation cancellation", "The original Goldbach objective remains active unless actually achieved"],
+  "stop_conditions": ["One bounded theorem-fleet round within20 proxy units", "No external mutable action or provider billing", "Preserve failures rather than weaken the requested Goldbach objective"]
+}

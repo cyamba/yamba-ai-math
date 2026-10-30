@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-BOUNDARY-017",
+  "title": "Actual factorable arithmetic input at the polynomial prime boundary",
+  "objective": "Derive the exact protected-cofactor contribution for actual polynomial-label arithmetic coefficient arrays and decide whether factorability removes the construction obstruction or leaves a genuinely new cancellation obligation, without converting a configuration-space norm into an arithmetic no-go.",
+  "fleet": "pair",
+  "briefs": ["research/goldbach/factorable-boundary-20261029/brief.md"],
+  "constraints": {"max_agents": 2, "max_workers": 2, "max_cost_units": 8, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["At most two exact arithmetic candidates", "Complete coefficient/measure/support connection", "A proved useful connection or precise falsifier at the first load-bearing step", "Separate challenge and bounded revision"],
+  "success_criteria": ["Actual arithmetic coefficient roles and prime boundary remain visible", "No configuration-space witness is silently promoted to a factorable-input norm bound", "Other cofactor sectors and the full comparison are retained", "Any average-in-target result remains distinct from a pointwise Goldbach margin"],
+  "stop_conditions": ["One bounded pair round with8 proxy units", "No paid inference, publication or external messages", "A failed candidate does not relax the original Goldbach objective"]
+}

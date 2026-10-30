@@ -1,0 +1,39 @@
+{
+  "summary": "Integrated actual host theorem stages and separately reviewed root supplements. The precisely stated one-switch minorant has exact pre-semiprime coefficient (2/d)*log((d-alpha)/alpha)<=-4/3, independent of beta. The weighted parity model matches the stated odd-divisor densities with all logarithmic savings through each fixed x^(1-epsilon), while its plus model has no odd-Omega survivors; an explicit bilinear test excludes that model. Independent exact arithmetic and coefficient certificates passed. These are scoped classical-method failures and obstructions, not a Goldbach solution or demonstrated novel breakthrough. The next distinct route requires actual-prime parity-sensitive input; its preliminary source inspection remains unverified as a dependency.",
+  "claims": [
+    {
+      "text": "The chosen one-switch family has a negative coefficient throughout its declared parameter domain and cannot certify the required positive F margin.",
+      "status": "proved",
+      "source": "research/goldbach/switching-20261029/review.md"
+    },
+    {
+      "text": "The hypothetical assertion that this chosen one-switch family yields a positive lower coefficient is refuted.",
+      "status": "refuted",
+      "source": "research/goldbach/switching-20261029/coefficient-certificate.json"
+    },
+    {
+      "text": "The stated weighted parity model and its bilinear distinction have complete arguments and separate substantive review; neither models actual primes or all additional distribution data.",
+      "status": "proved",
+      "source": "research/goldbach/switching-20261029/review.md"
+    },
+    {
+      "text": "Finite switching and parity checks passed their recorded domains.",
+      "status": "empirical",
+      "source": "research/goldbach/switching-20261029/finite-results.json"
+    },
+    {
+      "text": "Goldbach, the positive pointwise odd-factor lower bound and any demonstrated novel breakthrough remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/switching-20261029/result.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/switching-20261029/result.md",
+    "research/goldbach/switching-20261029/revision.md",
+    "research/goldbach/switching-20261029/review.md",
+    "research/goldbach/switching-20261029/parity-model.md",
+    "research/goldbach/switching-20261029/bilinear-model-test.md",
+    "research/goldbach/switching-20261029/finite-results.json",
+    "research/goldbach/switching-20261029/NEXT_SESSION.md"
+  ]
+}

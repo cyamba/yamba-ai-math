@@ -1,0 +1,28 @@
+{
+  "program": "GOLDBACH-TRANSPORT-025",
+  "mode": "manual host-agent execution using actual harness packets",
+  "objective_status": "paused at explicit user request for handoff on2026-10-30",
+  "completed_stages": [],
+  "planned_proxy_units": 8,
+  "completed_proxy_units": 0,
+  "supplemental_primary_access_proxy_units": 2,
+  "supplemental_primary_access_status": "completed: scoped local statements and published open-access construction retrieved, exact renders read and provenance pinned; no external code",
+  "total_planned_host_proxy_units": 13,
+  "total_completed_host_proxy_units": 2,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "dependency": "actual CHEN024 author, distinct critic and revision complete and frozen; signed R13 supported, B0 remains conditional",
+  "scope": "actual modified-weight signed transport and its sign-aware prime bound; no automatic extension from generic triple factorability",
+  "assignments": {
+    "propose": "/root/sieve_transport_recovery as Mathematician",
+    "challenge": "distinct Independent Critic after frozen actual proposal",
+    "revise": "/root/sieve_transport_recovery",
+    "propose_original_interrupted": "/root/sieve_transport"
+  },
+  "author_status": "original author handle missing with no saved proof; recovery packets prepared, no recovery worker dispatched",
+  "interrupted_proxy_units": 3,
+  "total_attempted_host_proxy_units": 5,
+  "interruption_record": "research/goldbach/modified-sieve-transport-20261029/interruption-record.json",
+  "recovery_status": "awaiting explicit resume; prepared only",
+  "live_research_workers": 0
+}

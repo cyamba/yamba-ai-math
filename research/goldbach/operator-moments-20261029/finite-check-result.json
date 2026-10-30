@@ -1,0 +1,35 @@
+{
+  "summary": "Independent experimenter read the populated MOMENTS-010 packet and frozen author statement 0e0e38bdb4f3b000bd67f385d5c32da1bb59fbd22790d1ddb31a8d10ead3e7ca. One smoke and one bounded final run passed without failures. Exact Fraction and Gaussian-rational checks cover 340 inactive prime factors, 9,820 active factors/run normalizations, 2,948 prefix/suffix telescopings, 16 theta cancellations, 14,947 equality-pattern/active-mask cases, 874 permutations, 279 collections and 23 cyclic orthogonality factors. Tuple checks cover 2,186 ordered prime tuples, 126 symmetrization identities, 6,558 phase bounds, 14 measure identities and 400 full pair-memory tuples. Endpoint, inactive-status, run-normalization, nonsymmetric-F and factorial negative controls are preserved. The full memory mass and compatible-slice mass are kept distinct. Final full runtime 0.997767 seconds; code hash/platform are recorded, token use and monetary cost remain unknown. Coverage is limited to these finite identities: no full operational G/E path enumeration, adjoint Schur proof, memory-tail asymptotic, analytic edge/model-moment norm or reflected arithmetic replacement is certified.",
+  "claims": [
+    {
+      "text": "All tested inactive and active per-prime factors agree exactly with the source/author interval and lifetime formulas, including prefix/suffix telescoping, endpoint q values, maximal-active-run normalizers and local theta cancellations.",
+      "status": "empirical",
+      "source": "research/goldbach/operator-moments-20261029/finite-results.json"
+    },
+    {
+      "text": "The distinct-prime inclusion-exclusion identity passes on every equality pattern and active mask through six indices; independent permutation-cycle multiplicities and rank-weight bounds pass on the stated finite domain.",
+      "status": "empirical",
+      "source": "research/goldbach/operator-moments-20261029/finite-results.json"
+    },
+    {
+      "text": "All tested ordered-tuple symmetrizations, phase bounds and factorial/multiplicity measures pass exactly with repetitions and unavailable-coordinate phases retained. Full pair-memory mass lambda(X) differs from the compatible prime-choice mass s in the recorded example.",
+      "status": "empirical",
+      "source": "research/goldbach/operator-moments-20261029/finite-results.json"
+    },
+    {
+      "text": "The incorrect variants are false on explicit finite witnesses: replacing endpoint sqrt(rho) by rho changes 9/16 to 7/16; dropping active status changes a distinctness indicator 1 to 0; missing a maximal-run normalizer changes the factor; nonsymmetric F changes the weighted phase sum by i/8; unordered tuples with an unchanged factorial change mass 1/2 to 3/8.",
+      "status": "refuted",
+      "source": "research/goldbach/operator-moments-20261029/finite-results.json"
+    },
+    {
+      "text": "The full signed operational G/E identity, adjoint Schur bounds, memory tail, analytic norm/model-moment estimates and reflected replacement remain outside this finite verification.",
+      "status": "unverified",
+      "source": "research/goldbach/operator-moments-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/operator-moments-20261029/experiment-plan.md",
+    "research/goldbach/operator-moments-20261029/moment_checks.py",
+    "research/goldbach/operator-moments-20261029/finite-results.json"
+  ]
+}

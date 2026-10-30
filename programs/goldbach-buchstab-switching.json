@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-SWITCHING-004",
+  "title": "Explicit Buchstab switching minorant",
+  "objective": "Derive and independently test a pointwise Buchstab switching minorant for the original odd-factor rough-complement count, obtaining a justified positive coefficient or a precise checked failure certificate without substituting either for a Goldbach solution.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/switching-20261029/brief.md", "research/goldbach/switching-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Source-inspected exact sieve hypotheses", "One explicit switching minorant and coefficient formula", "Distinct mathematical critic", "Independent finite identities and rigorous coefficient certificate", "Revision preserving failures", "Claim ledger and next-step decision"],
+  "success_criteria": ["Every imported sieve theorem is applied within its actual parameter range", "Least-factor endpoints, repeated factors and remaining factor 1 are preserved", "A numerical scan is not labeled a uniform coefficient proof", "A failed minorant is not generalized to every possible proof method", "Goldbach remains unresolved unless the actual pointwise positivity is proved and independently reviewed"],
+  "stop_conditions": ["One six-stage round within 20 dispatch proxy units", "No separately billed provider or external mutable action", "Preserve any nonpositive coefficient and choose a genuinely different next route if required"]
+}

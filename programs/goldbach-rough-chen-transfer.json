@@ -1,0 +1,38 @@
+{
+  "id": "GOLDBACH-CHEN-024",
+  "title": "Stronger rough-Chen distribution and the signed prime margin",
+  "objective": "Use the exact primary stronger-distribution inputs of the referenced rough-Chen approach to attempt new signed arithmetic for the original prime margin, checking actual coefficient and vector hypotheses.",
+  "fleet": "pair",
+  "briefs": [
+    "research/goldbach/rough-chen-transfer-20261029/brief.md"
+  ],
+  "constraints": {
+    "max_agents": 3,
+    "max_workers": 2,
+    "max_cost_units": 10,
+    "max_rounds": 1,
+    "timeout_seconds": 120
+  },
+  "rounds": 1,
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ],
+  "deliverables": [
+    "Exact source-to-coefficient distribution transfer",
+    "At most two actual signed mechanisms",
+    "New arithmetic estimate or precise first failed inequality",
+    "Distinct challenge and bounded revision"
+  ],
+  "success_criteria": [
+    "Rough prime-plus-P2 is not promoted to a prime-pair lower bound",
+    "Small and Goldbach-size residue levels are distinguished",
+    "All well-factorable and smoothness hypotheses are checked",
+    "No numerical source certificate is treated as proof of the analytic transfer"
+  ],
+  "stop_conditions": [
+    "Pair8 plus root primary-access2, total10, one round",
+    "No further supplement, helper, retrieval, paid call, publication or external message",
+    "Full Goldbach objective remains active unless actually achieved"
+  ]
+}

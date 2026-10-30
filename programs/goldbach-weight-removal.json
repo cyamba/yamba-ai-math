@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-WEIGHTS-014",
+  "title": "Prime-relative weight removal and the actual reflected correlation",
+  "objective": "Derive positive prime-relative auxiliary-weight moments and assemble the actual reflected Mobius correlation only from accepted arithmetic and analytic dependencies, preserving the distinction from Goldbach and all novelty limits.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/weight-removal-20261029/brief.md", "research/goldbach/weight-removal-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Exact positive local moments and prime BV passage", "Fixed-number variance and correctly ordered limits", "Actual-prime conditional or small-radical consequence with complete dependency ledger", "Separate reviewer and exact finite local-model checks", "Closest-prior and Goldbach boundary"],
+  "success_criteria": ["The prime divisor probability is1/(p-1), not1/p or1/(p+1)", "A fixed-number limit is not promoted to an unjustified growing-family rate", "All dependencies are actually accepted before unconditional assembly", "An actual-prime Mobius sign theorem is not presented as a Goldbach lower bound"],
+  "stop_conditions": ["One bounded theorem round within20 proxy units", "No paid inference, publication or external mutable action", "No breakthrough claim without substantive proof and closest-work inspection"]
+}

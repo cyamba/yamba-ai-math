@@ -1,0 +1,9 @@
+# Original Iwaniec statement: bounded access attempt
+
+29 October 2026. Supplemental root source preview,2 proxy units. Read the prior MOMENTS-010 next-analytic-inspection.md and applied the PDF and built-in-browser reading skills. This is an access/assurance record, not validation of the theorem or an external-state blocker for the active operator work.
+
+The [indexed original-volume PDF](https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0023/PPN356556735_0023.pdf) has garbled width notation in search OCR and exceeds the web PDF reader limit. A direct in-app-browser load showed no rendered page. The [Mathdoc article notice](https://geodesic.mathdoc.fr/item/IM_1974__23_142254/) was read directly, and its actual GDZ article resolver was followed. That resolver points to the volume viewer at scan103, corresponding to journal page97, but the viewer returned a visible not-found page. The [EuDML notice](https://eudml.org/doc/142254) supplies the same full-text resolver, not an independently rendered original statement.
+
+One documented browser-download attempt on the already identified public PDF ended with an unavailable paused-download response and a navigation timeout. No local original page or file was obtained. Temporary research tabs were closed. No paywall, security interstitial or permission denial was bypassed, no access purchased, and no user data was submitted.
+
+The exact Iwaniec width therefore remains incompletely inspected. The transcribed formula, conditional small-radical deduction and checked Burgess statement in the prior preview are not upgraded by this attempt. The TypeII difference task does not require this zero-free input and continues independently. A later analytic proof must verify the original normalization through an accessible primary copy or retain the exact input as an unverified hypothesis. No request for user action is established by this limited source gap.

@@ -1,0 +1,49 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/brief.md",
+      "sha256": "0c9a3a15a4b8a2930c66fd4fd35a62181ca939f1cabbef5027544bea0f860a3d"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/challenge-result.json",
+      "sha256": "14880e989ff90ed2e8a805d67888e8e2e8d2013002629e4559f7d8abaf183bf9"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/host-execution.json",
+      "sha256": "8bea167a4f48d8a13dd8faf8d0db94dd9179a7efbfd2af8ae5cd2da5c743ce14"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/NEXT_SESSION.md",
+      "sha256": "757a31c68cbd9eb88b6c1a0b8519544cd7c2a0536fecb7463d95591d967356a6"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/objective-audit.json",
+      "sha256": "b159b290bc053083cd6e4def062344dfb5e0f673a5361744fb7105ba434e5726"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/propose-result.json",
+      "sha256": "c276881fa35e7b7fc9dea3d25696ee7727bba0fb470a3ed2b0a46784dac79152"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/result.md",
+      "sha256": "7a91b3d9c9d6ad0301dd393381633a243e1df51b6493b81e06e2d133b538ae32"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/review.md",
+      "sha256": "8c605c2e28515ace56aa253bdcdf53f305e6372aaafeb7cf7eeddf8769eb53d0"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/revise-result.json",
+      "sha256": "a734f2b053f7ceb979e00c56571216f4c349a4684914c4117640bb5cf25fe522"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/revision.md",
+      "sha256": "5f37b1f27f80282f3bd0594e0a8644ace431c2090a104b85c6547babb3424959"
+    },
+    {
+      "path": "research/goldbach/polynomial-recombination-20261029/statement.md",
+      "sha256": "e329f47df803775ca94610809b97630463d176ed73f5f682003a75f63185df9a"
+    }
+  ]
+}

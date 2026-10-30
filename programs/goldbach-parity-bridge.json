@@ -1,0 +1,33 @@
+{
+  "id": "GOLDBACH-PARITY-001",
+  "title": "Cube-root parity bridge for Goldbach",
+  "objective": "Investigate whether the signed cube-root rough-pair statistic can be bounded strictly below zero for every sufficiently large even target, and independently challenge every proposed proof step, source dependency, and finite extrapolation.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/orchestrated-prompt.md"],
+  "constraints": {"max_agents": 6, "max_workers": 4, "max_cost_units": 30, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": [
+    "Exact definitions and proof of the finite signed identity with reflection, boundary and parity handling",
+    "A parameter-uniform candidate estimate, its conditional consequences and complete dependency map",
+    "A source-inspected comparison with Huang and Li, rough numbers and OpenAI mathematics",
+    "Independent critic seeking counterexamples and revealing hidden circularity or parity assumptions",
+    "Preregistered exact arithmetic finite checks and separate reproducible results",
+    "Execution mode, resource receipt, unresolved obligations and explicitly marked next steps"
+  ],
+  "success_criteria": [
+    "Only an actual proof with explicit hypotheses can be labeled proved; computational observations never establish an unbounded theorem",
+    "The unrestricted fixed-percentage Chen gap is recognized as false and the roughness transition is respected",
+    "Ordinary Liouville cancellation is not falsely assumed at the cubic cutoff",
+    "A pointwise theorem is not inferred from an average theorem or positive-density result",
+    "The author and critic are distinct profiles and each conclusion has provenance and independent review",
+    "No purported universal bound silently assumes Goldbach or an equivalent positivity result"
+  ],
+  "stop_conditions": [
+    "One bounded round and 30 proxy dispatch units; no nested or unbounded feedback",
+    "Stop at a missing pointwise estimate and preserve the gap as open",
+    "No paid provider calls without explicitly configured authorized provider and budget",
+    "No publication, push, external message or external mutable action by workers",
+    "Treat proof-checker failures and missing dependencies as unverified rather than asserting success"
+  ]
+}

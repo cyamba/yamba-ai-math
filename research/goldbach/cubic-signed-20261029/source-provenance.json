@@ -1,0 +1,66 @@
+{
+  "source_is_data": true,
+  "record": "https://zenodo.org/records/23477014",
+  "download": "https://zenodo.org/records/23477014/files/Gold-40.pdf?download=1",
+  "version": "v1, published2026-10-19",
+  "pages": 22,
+  "record_md5": "626c80c793f8b59818d1cf52c021de19",
+  "observed_pdf_md5": "626c80c793f8b59818d1cf52c021de19",
+  "inspection": "exact definitions/theorem/hypothesis read and scoped proof passages; renders6,7,12,13,17 visually inspected; no source-wide semantic certification",
+  "inputs": [
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/arneth-gold40.pdf",
+      "bytes": 348668,
+      "sha256": "d604a310e193d33698c42e135bff63ce2499b4d0d90c71d9f9a4c08b9b9f3cbd"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/arneth-gold40.txt",
+      "bytes": 56038,
+      "sha256": "359c7aee9867fddce82b6887f8d9e485befe16d107164e2cdec04ebbe9c044d4"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/arneth-page6.png",
+      "bytes": 196342,
+      "sha256": "23165c450eda5c10fa5ad29335398418a633de0e638b25e8fbb47854d10d164b"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/arneth-page7.png",
+      "bytes": 179488,
+      "sha256": "0e8a63a66ebe0a6a9672f4b08c77e3351f712ec84900944acbe2ccb68c91121e"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/arneth-page12.png",
+      "bytes": 159137,
+      "sha256": "84452b131a98692d7780e9d2d006d00b0d20c709010fc44c0b31bc524d57ea87"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/arneth-page13.png",
+      "bytes": 200958,
+      "sha256": "42906b4857df2c7a66bde2b670fca34f4b3b6bee31bc747c21729b8561995e05"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/arneth-page17.png",
+      "bytes": 182633,
+      "sha256": "78523294306f0ac2d7a35c1f0634a04968d46bf25f7fdeae387e1c7ef5ed31ea"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/koukoulopoulos-primes-preliminary.pdf",
+      "bytes": 2238368,
+      "sha256": "1445e107bba9c89db6529aeb4bca3ecf01170fc2854a675f5ca6f288c77ea0a8",
+      "source": "https://www.dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf",
+      "inspection": "actual022Mathematician inspected exact equation26.1, printed277/PDF288; primary statement, not full proof audit"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/prime-bv-book277.png",
+      "bytes": 383889,
+      "sha256": "e47e69dc9951f29297de3d98d08fb9cacb2e93182553007100838c91f6831cac",
+      "source": "https://www.dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf",
+      "inspection": "actual022Mathematician inspected exact equation26.1, printed277/PDF288; primary statement, not full proof audit"
+    }
+  ],
+  "tool_notes": [
+    "web PDF reader failed Unicode decoding; ordinary public curl succeeded",
+    "pypdf extraction saved complete text; console encoding failed only on printing an excerpt",
+    "Poppler emitted missing-font warnings; relevant formula renders visually legible"
+  ]
+}

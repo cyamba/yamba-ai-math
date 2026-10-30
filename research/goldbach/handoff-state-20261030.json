@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-30",
+  "goal_status": "paused at explicit user request for handoff",
+  "recorded_goal_tokens": 8801261,
+  "recorded_goal_time_seconds": 51859,
+  "latest_completed_checkpoint": "GOLDBACH-CHEN-024",
+  "unfinished_checkpoint": "GOLDBACH-TRANSPORT-025",
+  "interrupted_author_handle": "/root/sieve_transport",
+  "authoritative_agent_inventory": "root only on30 October; no recovery worker was spawned before user requested handoff",
+  "saved_025_statement_exists": false,
+  "prepared_recovery_run": ".runs/goldbach-transport-025-recovery-20261030",
+  "prepared_recovery_status": "awaiting_execution",
+  "prepared_recovery_packets": {
+    "challenge.json": "06d649339efa5c04e206ad076e2e09091f45350df6f4be2c6e435348510b4897",
+    "propose.json": "eceffc46dfc677ec6f824ec01a516ff4231967cd516bdbd89283737986adf7d1",
+    "revise.json": "38799b92dec12bf8eea86d92b2eb825dc583d9db67c0cf8cb758789506d660ed"
+  },
+  "frozen_hash_audit": [
+    {
+      "manifest": "research/goldbach/continuation-20261029/input-provenance.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/balanced-covariance-20261029/artifact-manifest.json",
+      "files_checked": 11,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/centered-polynomial-energy-20261029/artifact-manifest.json",
+      "files_checked": 12,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/complement-ratios-20261029/artifact-manifest.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/continuation-20261029/artifact-manifest.json",
+      "files_checked": 31,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/cubic-signed-20261029/artifact-manifest.json",
+      "files_checked": 13,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/direct-margin-20261029/artifact-manifest.json",
+      "files_checked": 11,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/factorable-boundary-20261029/artifact-manifest.json",
+      "files_checked": 11,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/moving-sectors-20261029/artifact-manifest.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/operator-moments-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/polynomial-cofactors-20261029/artifact-manifest.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/polynomial-recombination-20261029/artifact-manifest.json",
+      "files_checked": 11,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/prime-labels-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/principal-comparison-20261029/artifact-manifest.json",
+      "files_checked": 11,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/projective-roots-20261029/artifact-manifest.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/reflected-energy-20261029/artifact-manifest.json",
+      "files_checked": 23,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/rough-chen-transfer-20261029/artifact-manifest.json",
+      "files_checked": 12,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/small-radical-assessment-20261029/artifact-manifest.json",
+      "files_checked": 12,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/switching-20261029/artifact-manifest.json",
+      "files_checked": 23,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/trace-extension-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/type-i-decomposition-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/type-ii-pairing-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/weight-removal-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    }
+  ],
+  "frozen_manifests": 23,
+  "frozen_files": 413,
+  "mismatches": 0,
+  "unfinished_source_files_checked": 16,
+  "last_full_suite": {
+    "tests_run": 116,
+    "successful": false,
+    "failures": [
+      "test_scoped_rules_are_delivered_with_briefs (test_harness.RuntimeTests.test_scoped_rules_are_delivered_with_briefs)",
+      "test_timeout_is_failure_without_retry (test_harness.RuntimeTests.test_timeout_is_failure_without_retry)",
+      "test_flags_hardcoded_drive_link_and_owner_name (test_operator_neutral_skills.OperatorNeutralSkillsTest.test_flags_hardcoded_drive_link_and_owner_name)",
+      "test_full_bijection_gate_fails_when_only_finite_checks_exist (test_rogers_ramanujan.KR1DefinitionsTests.test_full_bijection_gate_fails_when_only_finite_checks_exist)",
+      "test_optimized_python_keeps_completion_gate_and_receipt_no_overwrite (test_rr003.RR003Tests.test_optimized_python_keeps_completion_gate_and_receipt_no_overwrite)",
+      "test_restricted_composition_preserves_actual_endpoint_boundaries (test_rr003.RR003Tests.test_restricted_composition_preserves_actual_endpoint_boundaries)",
+      "test_certificate_reports_failure_class_without_bijection_claim (test_rr004.RR004Tests.test_certificate_reports_failure_class_without_bijection_claim)",
+      "test_optimized_cli_keeps_completion_failure_and_existing_evidence (test_rr004.RR004Tests.test_optimized_cli_keeps_completion_failure_and_existing_evidence)",
+      "test_small_literal_domain_check_cannot_trigger_larger_sweep (test_rr004.RR004Tests.test_small_literal_domain_check_cannot_trigger_larger_sweep)",
+      "test_full_compiler_gate_fails_even_under_optimized_python (test_separated_pairs.SeparatedPairTests.test_full_compiler_gate_fails_even_under_optimized_python)"
+    ],
+    "errors": [
+      "test_prompt_path_cannot_escape_repository (test_harness.CatalogTests.test_prompt_path_cannot_escape_repository)",
+      "test_finite_verifier_fails_closed_when_required_contract_is_missing (test_rogers_ramanujan.KR1DefinitionsTests.test_finite_verifier_fails_closed_when_required_contract_is_missing)",
+      "test_frozen_source_change_fails_closed_under_optimized_python (test_rr003.RR003Tests.test_frozen_source_change_fails_closed_under_optimized_python)"
+    ],
+    "skipped": 0,
+    "log": ".runs/cofactors-015-tests.log",
+    "note": "Existing unrelated Windows/timing/frozen-evidence failures remain; this is not a green suite. Imported Goldbach tests are evaluated separately within this suite. Finite mathematical checks have only their explicitly declared coverage."
+  },
+  "publication": "no push, publication, paid provider call or external message"
+}

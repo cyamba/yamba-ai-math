@@ -1,0 +1,18 @@
+{
+  "summary": "Inspected primary auxiliary weight definitions, fixed-shift theorem and TypeII parameter statements in Lue-Wang-Wu v1. No full proof or polynomial-cutoff extension is validated. The source weights require genuine group divisors; original groups vanish on the desired rough complements and many polynomial-sized groups exceed the factor budget. The author is asked to construct and test bounded-label and external-padding alternatives rather than assume cancellation. Live repository and earlier-chat checks did not reveal an additional mathematical construction.",
+  "claims": [
+    {
+      "text": "The inspected source uses subpolynomial auxiliary prime groups and a fixed-shift theorem; it does not state the needed moving-target polynomial-roughness result.",
+      "status": "established",
+      "source": "https://arxiv.org/html/2610.20242v1"
+    },
+    {
+      "text": "The desired bounded-label or padding adaptation remains to be proved and independently reviewed.",
+      "status": "unverified",
+      "source": "research/goldbach/prime-labels-20261029/brief.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/prime-labels-20261029/survey.md"
+  ]
+}

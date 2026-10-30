@@ -1,0 +1,97 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/reflected-energy-20261029/brief.md",
+      "sha256": "84d0a44b94f41cf2808c8a4ec10cbef3841c618a23e5ab8227abc49013e4cb86"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/counterexample-result.json",
+      "sha256": "a61e9042f6f4fee1dcbc8f3c8a2708b1cdcbdef840b9144bde810793c6b11f07"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/energy_checks.py",
+      "sha256": "3205b10f2b5eb96f76b35df248660ed9a0748b74fac4e4eae10ba7be3ee6447c"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/experiment-plan.md",
+      "sha256": "31639d1cf97b06673edd47dba222a41640324cff601f41ac65311239d7a7a827"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/finite-check-result.json",
+      "sha256": "68bbbb246a4bb07f573aec64c9066d1a0bfb224cdffece771fa22ed35737ff0d"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/finite-results.json",
+      "sha256": "b29a63fbdbf5a33708d828c61e1a448c3eb2f71f5dfcf05123579abef2468dfc"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/host-execution.json",
+      "sha256": "9fdfa975af8cf2d083f36c1779aa6c2bfa63bd125606b434a5650270fbed38c4"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/integrate-result.json",
+      "sha256": "4816073d8312375afcfa16980c7f3fab438e08741e700a29778d2169fbf00800"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/iwaniec-primary-statement.md",
+      "sha256": "4de7ed8accc3a0b548f3511ac922c2987361034c0f0169f87b9764038f3125d6"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/NEXT_SESSION.md",
+      "sha256": "7e4bad0fd605332de5ac1f3a73f42a29306a52fb640919aa94a5948db3b7a75f"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/objective-audit.json",
+      "sha256": "f160dd732df650e59263c174c01d42d1f8c5e75e42c2edec762266243d80cdd8"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/pre-mortem.md",
+      "sha256": "89e553b15a8856ca83410c62a8ecf7d185d9b0c28cd4a97b3fcf2d01f786977f"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/primary-inputs.md",
+      "sha256": "e3780b37583232cda574301f91a6a439070da27b6aee9e0d7a2c692d8d0b3187"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/repository-tests.json",
+      "sha256": "56e11b485dcf34be19ed245ee77583f32f32da8b5a984edb9ce657454fb23c97"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/result.md",
+      "sha256": "098b06d0bf7db19ed04136d1b3ae2c929b19d0bc8627bbf716d0f03c1408cee7"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/review.md",
+      "sha256": "419af4e55277e654c801cf5725258dc05636818c79d5fb226d7467b2b2aba2e8"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/revise-result.json",
+      "sha256": "ae9efc7abff2cf13d69733eafe110bac60f0293b8976b2b7b199d056eccb0229"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/revision.md",
+      "sha256": "89a8963af5d1bdb724d57e8a0be12cea6a7779f5fc21ff20ed6043b53fc2e9e1"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/source-provenance.json",
+      "sha256": "a84d275699993eaaa0afbe20fbedfe4005124c215e6aeabce572a3329c7b486e"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/statement-result.json",
+      "sha256": "8f604f0690b24db4d153482ebbe2b07de4a72f07beab2338252eaaf76fcf25dc"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/statement.md",
+      "sha256": "eb76660af2f2ccb2ac003fdf835d2b05c325435d7600ed9e7f98448eb32da80b"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/survey-result.json",
+      "sha256": "42815b58c601dfc74a7ee47689ebffb0c5803f0008b88532cf706c361185cdb4"
+    },
+    {
+      "path": "research/goldbach/reflected-energy-20261029/survey.md",
+      "sha256": "ad158471547feec91691cd1e69aa8f8c9dea51669e5802a740d197cb02e55653"
+    }
+  ]
+}

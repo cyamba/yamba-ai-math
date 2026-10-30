@@ -1,0 +1,16 @@
+{
+  "summary": "Accepted both WEIGHTS014 candidates after actual distinct review with no mathematical repair and preserved the frozen statement. Prime-relative moments and the positive variance retain a leading constant independent of fixed b; removal takes H to infinity before b. The actual accepted 008-013 proof chain gives the reflected prime Mobius correlation on each fixed small-radical class relative to its named classical inputs, while general H retains the eventual-for-each-fixed-b selected-strip family. Direct bounded-target log comparison and all scope restrictions remain. The exact closest source already states related conditional conclusions; the replacements remove its H2' input only for this consequence, without validating all H2', establishing novelty or Goldbach. Actual finite coverage and its nonanalytic limits are recorded. Usage is unknown.",
+  "claims": [
+    {"text": "The reviewed finite positive Taylor/BV argument proves the prime-relative moments and variance with leading constant independent of b, and the successive fixed-family limits remove W against the stated bounded targets.", "status": "proved", "source": "research/goldbach/weight-removal-20261029/revision.md"},
+    {"text": "Using actual accepted 008-013 replacements and their declared classical inputs, even H with rad(H)<=log^C H for each fixed C satisfies the stated weighted and unweighted reflected prime Mobius correlations. General H remains conditional on Sigma_b eventually for every fixed b.", "status": "proved", "source": "research/goldbach/weight-removal-20261029/revision.md"},
+    {"text": "The independent exact finite run passed its declared local-model, positive-measure, Taylor and retained-CRT cases; it certifies no prime asymptotic or analytic assembly.", "status": "empirical", "source": "research/goldbach/weight-removal-20261029/finite-results.json"},
+    {"text": "The pinned Guo source already contains related conditional correlation and removal architecture. Target-specific replacement arguments remove H2' for this consequence without proving its complete as-written hypothesis or novelty.", "status": "established", "source": "research/goldbach/weight-removal-20261029/review.md"},
+    {"text": "A classical general-H selected-strip family, any growing-b rate, full source validation, novelty, a correctly centered polynomial-rough prime-boundary lower margin and Goldbach remain unestablished.", "status": "unverified", "source": "research/goldbach/weight-removal-20261029/revision.md"}
+  ],
+  "artifacts": [
+    "research/goldbach/weight-removal-20261029/revision.md",
+    "research/goldbach/weight-removal-20261029/review.md",
+    "research/goldbach/weight-removal-20261029/finite-results.json",
+    "research/goldbach/weight-removal-20261029/primary-inputs.md"
+  ]
+}

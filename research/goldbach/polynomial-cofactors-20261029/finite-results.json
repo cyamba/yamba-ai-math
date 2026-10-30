@@ -1,0 +1,1095 @@
+{
+  "mode": "final",
+  "status": "pass",
+  "frozen_statement_sha256": "91bbf0074e34ef26d578a80b4ecf1644db2197748ca1070d38dc8c38686b0212",
+  "code_sha256": "51a27ad91e31fec1023a01ec588d6064586440e15a56ba4b32dca328300067f4",
+  "command": "python research/goldbach/polynomial-cofactors-20261029/cofactor_checks.py --mode final --output research/goldbach/polynomial-cofactors-20261029/finite-results.json",
+  "runtime_seconds": 0.539671,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.17 (main, Oct  3 2026, 01:03:09) [MSC v.1944 64 bit (AMD64)]",
+  "exact_arithmetic": "integers, Fraction, Gaussian-rational pairs",
+  "usage": "unknown",
+  "counts": {
+    "smaller_even_prime_label_count": 6,
+    "local_factor_capacity": 380,
+    "incidence_integer_cofactor": 430,
+    "first_four_rough_unit_prime_labels": 1,
+    "fixed_prime_path_vertex": 10,
+    "fixed_closed_path_edge": 10,
+    "N30_single_label_block": 1,
+    "N16_not_single_factor_four_block": 1,
+    "four_vertex_open_minimality": 5,
+    "four_vertex_closed_minimality": 5,
+    "separate_product_box": 4,
+    "protected_c1_exactly_h1": 1547,
+    "all_positive_state_sector_equivalence": 1133221,
+    "integer_cofactor_determinant": 633,
+    "integer_modular_compression": 633,
+    "original_positive_support_plateau": 633,
+    "compressed_fourier_frequency_zero": 331,
+    "extended_c1_layer": 124,
+    "extended_only_j0_integer": 124,
+    "extended_negative_fractional": 93,
+    "extended_frequency_and_cutoff_arguments": 4560,
+    "fractional_comparison_witness": 1,
+    "four_branch_no_extra_inverse": 13,
+    "weighted_positive_square": 30,
+    "rank_one_square_identity": 30,
+    "weighted_self_adjoint": 300,
+    "normalized_centered_block_eigenvalue": 6,
+    "distinct_label_equal_weight_eigenvalue": 2,
+    "delete_cross_label_loses_positive_mass": 1,
+    "delete_signed_entries_not_monotone": 1,
+    "negative_mu_not_positive_measure_witness": 1,
+    "repeated_label_product_state_control": 3,
+    "repeated_label_deleted_matrix_square": 1,
+    "repeated_label_exact_norm_upper_certificate": 1,
+    "repeated_label_exact_norm_lower_certificate": 1,
+    "A1_actual_rough_unit_prime_count": 5,
+    "selected_divisor_signed_reconstruction": 15,
+    "three_rho_prime_profile": 5,
+    "nonzero_toy_center_prime_profile": 5,
+    "harmonic_cofactor_test_mass": 5,
+    "weighted_harmonic_cauchy_toy_center": 15,
+    "original_raw_square_not_dispersion_norm": 5,
+    "D_implication_when_toy_condition_holds": 2,
+    "deleting_h1_false_positive_control": 1,
+    "synthetic_valid_D_implication": 1,
+    "complete_character_unit_parameterization": 30,
+    "character_multiplicativity": 9984,
+    "character_orthogonality": 1344,
+    "polynomial_marking_scale": 30,
+    "fourth_power_repeated_prime_multiplicity": 1516,
+    "coefficient_l2_bound": 30,
+    "fourth_power_l2_bound": 30,
+    "fourth_power_character_product_exact": 192,
+    "eighth_moment_exact_residue_identity": 30,
+    "classwise_cauchy_at_polynomial_support": 30,
+    "unnormalized_eighth_moment_constant": 30
+  },
+  "total_checks": 1156448,
+  "failure_count": 0,
+  "failures": [],
+  "records": {
+    "incidence": {
+      "even_N": [
+        4,
+        100
+      ],
+      "rough_test": "r^3>N",
+      "states": 430,
+      "first_N_with_four_h1_labels": 16
+    },
+    "fixed_paths": [
+      {
+        "N": 8,
+        "labels": [
+          3,
+          5
+        ],
+        "local_nu": 1,
+        "closed_edges": 2,
+        "z_gt_2_at_alpha_0.3": false
+      },
+      {
+        "N": 16,
+        "labels": [
+          3,
+          5,
+          11,
+          13
+        ],
+        "local_nu": 1,
+        "closed_edges": 4,
+        "z_gt_2_at_alpha_0.3": true
+      },
+      {
+        "N": 30,
+        "labels": [
+          7,
+          11,
+          13,
+          17
+        ],
+        "local_nu": 1,
+        "closed_edges": 4,
+        "z_gt_2_at_alpha_0.3": true
+      }
+    ],
+    "walk_max_label_counts": {
+      "0": {
+        "open": 1,
+        "closed": 1
+      },
+      "1": {
+        "open": 2,
+        "closed": 1
+      },
+      "2": {
+        "open": 3,
+        "closed": 2
+      },
+      "3": {
+        "open": 4,
+        "closed": 3
+      },
+      "4": {
+        "open": 4,
+        "closed": 4
+      }
+    },
+    "product_box_N222": {
+      "m_box": [
+        5,
+        10
+      ],
+      "n_box": [
+        11,
+        22
+      ],
+      "sift_cutoff": 4,
+      "states": [
+        {
+          "m": 5,
+          "n": 11,
+          "a": 167,
+          "h": 1
+        },
+        {
+          "m": 5,
+          "n": 13,
+          "a": 157,
+          "h": 1
+        },
+        {
+          "m": 5,
+          "n": 17,
+          "a": 137,
+          "h": 1
+        },
+        {
+          "m": 5,
+          "n": 19,
+          "a": 127,
+          "h": 1
+        }
+      ],
+      "scope": "finite box only; not asymptotic source/Vaughan support"
+    },
+    "fractional_comparison": {
+      "N_a_b_u_v": [
+        30,
+        7,
+        11,
+        19,
+        17
+      ],
+      "h_k": [
+        "11/7",
+        "13/11"
+      ],
+      "frequency": -1,
+      "arc": [
+        "-1/4",
+        "1/4"
+      ],
+      "integral": "sin(pi/2)/pi=1/pi, nonzero; elementary symbolic evaluation, no numerical quadrature"
+    },
+    "compression_domains": [
+      {
+        "N": 16,
+        "Y": "4",
+        "labels": [
+          5,
+          7,
+          11,
+          13
+        ],
+        "positive_states": 60,
+        "integer_states": 7,
+        "fractional_states": 53,
+        "u_unit_filter": false,
+        "extended_states": 16
+      },
+      {
+        "N": 30,
+        "Y": "15/2",
+        "labels": [
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "positive_states": 174,
+        "integer_states": 8,
+        "fractional_states": 166,
+        "u_unit_filter": false,
+        "extended_states": 24
+      },
+      {
+        "N": 40,
+        "Y": "10",
+        "labels": [
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "positive_states": 312,
+        "integer_states": 14,
+        "fractional_states": 298,
+        "u_unit_filter": false,
+        "extended_states": 32
+      },
+      {
+        "N": 78,
+        "Y": "39/2",
+        "labels": [
+          23,
+          29,
+          31,
+          37,
+          41,
+          43,
+          47,
+          53,
+          59,
+          61,
+          67,
+          71,
+          73
+        ],
+        "positive_states": 1001,
+        "integer_states": 18,
+        "fractional_states": 983,
+        "u_unit_filter": false,
+        "extended_states": 52
+      }
+    ],
+    "rank_one": {
+      "positive_measures": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "2/3",
+          "5/4",
+          "3/2"
+        ]
+      ],
+      "arc_masses": [
+        "1/2",
+        "1/3"
+      ],
+      "unit_four_state_raw_norm": 4,
+      "unit_four_state_half_arc_difference_norm": 2,
+      "factorable_input_scope": "configuration-space eigenvectors need not factor as actual Vaughan coefficient arrays",
+      "signed_deletion_counterexample": {
+        "f": [
+          1,
+          -1
+        ],
+        "full_Q": 0,
+        "diagonal_Q": 2
+      }
+    },
+    "repeated_label_scope_control": {
+      "N": 38,
+      "alpha": "3/10",
+      "factorization_states": [
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          3,
+          7,
+          5
+        ],
+        [
+          5,
+          3,
+          11
+        ]
+      ],
+      "deleted_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "deleted_matrix_square": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "exact_squared_norm": 2,
+      "incorrect_distinct_vertex_prediction_squared": 4,
+      "arc_scaling": "multiply squared norms by (1-m_arc)^2",
+      "undeleted_raw_rank_one_unchanged": true
+    },
+    "cofactor_centers": {
+      "alpha": "3/10",
+      "records": [
+        {
+          "N": 16,
+          "h": [
+            1,
+            3,
+            5
+          ],
+          "A_h": {
+            "1": 4,
+            "3": 0,
+            "5": 0
+          },
+          "toy_gamma_h": {
+            "1": "5/2",
+            "3": "0",
+            "5": "0"
+          },
+          "toy_gamma1": "5/2",
+          "R_unit": 4,
+          "nonsquarefree_rough_complements_excluded_by_mu": 1,
+          "harmonic_mass": "23/15",
+          "C_N": "377/225",
+          "toy_Delta": "9/4"
+        },
+        {
+          "N": 30,
+          "h": [
+            1,
+            7
+          ],
+          "A_h": {
+            "1": 6,
+            "7": 0
+          },
+          "toy_gamma_h": {
+            "1": "3",
+            "7": "0"
+          },
+          "toy_gamma1": "3",
+          "R_unit": 6,
+          "nonsquarefree_rough_complements_excluded_by_mu": 0,
+          "harmonic_mass": "8/7",
+          "C_N": "42001/22050",
+          "toy_Delta": "9"
+        },
+        {
+          "N": 60,
+          "h": [
+            1,
+            7,
+            11,
+            13,
+            17
+          ],
+          "A_h": {
+            "1": 12,
+            "7": 0,
+            "11": 0,
+            "13": 0,
+            "17": 0
+          },
+          "toy_gamma_h": {
+            "1": "13/2",
+            "7": "0",
+            "11": "0",
+            "13": "0",
+            "17": "0"
+          },
+          "toy_gamma1": "13/2",
+          "R_unit": 12,
+          "nonsquarefree_rough_complements_excluded_by_mu": 1,
+          "harmonic_mass": "23305/17017",
+          "C_N": "25072922989/14478914450",
+          "toy_Delta": "121/4"
+        },
+        {
+          "N": 100,
+          "h": [
+            1,
+            7,
+            11,
+            13,
+            17,
+            19,
+            23
+          ],
+          "A_h": {
+            "1": 11,
+            "7": 1,
+            "11": 1,
+            "13": 0,
+            "17": 0,
+            "19": 0,
+            "23": 0
+          },
+          "toy_gamma_h": {
+            "1": "11",
+            "7": "1/4",
+            "11": "1/12",
+            "13": "1/14",
+            "17": "0",
+            "19": "0",
+            "23": "0"
+          },
+          "toy_gamma1": "11",
+          "R_unit": 11,
+          "nonsquarefree_rough_complements_excluded_by_mu": 0,
+          "harmonic_mass": "10898999/7436429",
+          "C_N": "5218013185468801/2765023813602050",
+          "toy_Delta": "46735/3528"
+        },
+        {
+          "N": 200,
+          "h": [
+            1,
+            7,
+            11,
+            13,
+            17,
+            19,
+            23,
+            29,
+            31,
+            37
+          ],
+          "A_h": {
+            "1": 15,
+            "7": 2,
+            "11": 1,
+            "13": 1,
+            "17": 1,
+            "19": 1,
+            "23": 0,
+            "29": 0,
+            "31": 0,
+            "37": 0
+          },
+          "toy_gamma_h": {
+            "1": "21",
+            "7": "5/8",
+            "11": "1/4",
+            "13": "1/7",
+            "17": "1/9",
+            "19": "1/20",
+            "23": "1/24",
+            "29": "0",
+            "31": "0",
+            "37": "0"
+          },
+          "toy_gamma1": "21",
+          "R_unit": 15,
+          "nonsquarefree_rough_complements_excluded_by_mu": 3,
+          "harmonic_mass": "385727625788/247357937827",
+          "C_N": "3132303808868052129440257/1529648735150649937048225",
+          "toy_Delta": "303525067/3175200"
+        }
+      ],
+      "center_scope": "positive rational toy gamma_h=single-prime-count/(h+1), NOT analytic equation (6)",
+      "h1_deletion_witness": {
+        "A1": 0,
+        "gamma1": 1,
+        "other_errors": 0,
+        "full_Delta": 1,
+        "deleted_Delta": 0,
+        "sigma": "1/2",
+        "threshold": "1/4"
+      }
+    },
+    "marking": {
+      "configurations": [
+        {
+          "N": 8,
+          "Y": 3,
+          "V": "1",
+          "labels": [
+            3,
+            5,
+            7,
+            11
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "4/9",
+          "fourth_power_l2": "2716/6561",
+          "eighth_moment": "512/729",
+          "C_star": "1579008"
+        },
+        {
+          "N": 8,
+          "Y": 3,
+          "V": "3/2",
+          "labels": [
+            3,
+            5,
+            7,
+            11
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "16/81",
+          "fourth_power_l2": "695296/43046721",
+          "eighth_moment": "131072/4782969",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 8,
+          "Y": 4,
+          "V": "1",
+          "labels": [
+            5,
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "1/4",
+          "fourth_power_l2": "679/16384",
+          "eighth_moment": "9/128",
+          "C_star": "1579008"
+        },
+        {
+          "N": 8,
+          "Y": 4,
+          "V": "3/2",
+          "labels": [
+            5,
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "1/9",
+          "fourth_power_l2": "679/419904",
+          "eighth_moment": "2/729",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 8,
+          "Y": 5,
+          "V": "1",
+          "labels": [
+            5,
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 126,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 111,
+          "coefficient_l2": "6/25",
+          "fourth_power_l2": "18306/390625",
+          "eighth_moment": "105024/390625",
+          "C_star": "1579008"
+        },
+        {
+          "N": 8,
+          "Y": 5,
+          "V": "3/2",
+          "labels": [
+            5,
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 126,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 111,
+          "coefficient_l2": "8/75",
+          "fourth_power_l2": "57856/31640625",
+          "eighth_moment": "8962048/854296875",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 12,
+          "Y": 3,
+          "V": "1",
+          "labels": [
+            5,
+            7,
+            11
+          ],
+          "fourth_power_support_size": 15,
+          "max_ordered_representations": 12,
+          "repeated_prime_products": 15,
+          "coefficient_l2": "1/3",
+          "fourth_power_l2": "71/729",
+          "eighth_moment": "1252/6561",
+          "C_star": "1579008"
+        },
+        {
+          "N": 12,
+          "Y": 3,
+          "V": "3/2",
+          "labels": [
+            5,
+            7,
+            11
+          ],
+          "fourth_power_support_size": 15,
+          "max_ordered_representations": 12,
+          "repeated_prime_products": 15,
+          "coefficient_l2": "4/27",
+          "fourth_power_l2": "18176/4782969",
+          "eighth_moment": "320512/43046721",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 12,
+          "Y": 4,
+          "V": "1",
+          "labels": [
+            5,
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "1/4",
+          "fourth_power_l2": "679/16384",
+          "eighth_moment": "1/8",
+          "C_star": "1579008"
+        },
+        {
+          "N": 12,
+          "Y": 4,
+          "V": "3/2",
+          "labels": [
+            5,
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "1/9",
+          "fourth_power_l2": "679/419904",
+          "eighth_moment": "32/6561",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 12,
+          "Y": 5,
+          "V": "1",
+          "labels": [
+            5,
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 126,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 111,
+          "coefficient_l2": "6/25",
+          "fourth_power_l2": "18306/390625",
+          "eighth_moment": "209984/390625",
+          "C_star": "1579008"
+        },
+        {
+          "N": 12,
+          "Y": 5,
+          "V": "3/2",
+          "labels": [
+            5,
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 126,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 111,
+          "coefficient_l2": "8/75",
+          "fourth_power_l2": "57856/31640625",
+          "eighth_moment": "53755904/2562890625",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 16,
+          "Y": 3,
+          "V": "1",
+          "labels": [
+            3,
+            5,
+            7,
+            11
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "4/9",
+          "fourth_power_l2": "2716/6561",
+          "eighth_moment": "14656/6561",
+          "C_star": "1579008"
+        },
+        {
+          "N": 16,
+          "Y": 3,
+          "V": "3/2",
+          "labels": [
+            3,
+            5,
+            7,
+            11
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "16/81",
+          "fourth_power_l2": "695296/43046721",
+          "eighth_moment": "3751936/43046721",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 16,
+          "Y": 4,
+          "V": "1",
+          "labels": [
+            5,
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "1/4",
+          "fourth_power_l2": "679/16384",
+          "eighth_moment": "229/1024",
+          "C_star": "1579008"
+        },
+        {
+          "N": 16,
+          "Y": 4,
+          "V": "3/2",
+          "labels": [
+            5,
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 35,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 34,
+          "coefficient_l2": "1/9",
+          "fourth_power_l2": "679/419904",
+          "eighth_moment": "229/26244",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 16,
+          "Y": 5,
+          "V": "1",
+          "labels": [
+            5,
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 126,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 111,
+          "coefficient_l2": "6/25",
+          "fourth_power_l2": "18306/390625",
+          "eighth_moment": "125056/390625",
+          "C_star": "1579008"
+        },
+        {
+          "N": 16,
+          "Y": 5,
+          "V": "3/2",
+          "labels": [
+            5,
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 126,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 111,
+          "coefficient_l2": "8/75",
+          "fourth_power_l2": "57856/31640625",
+          "eighth_moment": "32014336/2562890625",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 20,
+          "Y": 3,
+          "V": "1",
+          "labels": [
+            3,
+            7,
+            11
+          ],
+          "fourth_power_support_size": 15,
+          "max_ordered_representations": 12,
+          "repeated_prime_products": 15,
+          "coefficient_l2": "1/3",
+          "fourth_power_l2": "71/729",
+          "eighth_moment": "2504/6561",
+          "C_star": "1579008"
+        },
+        {
+          "N": 20,
+          "Y": 3,
+          "V": "3/2",
+          "labels": [
+            3,
+            7,
+            11
+          ],
+          "fourth_power_support_size": 15,
+          "max_ordered_representations": 12,
+          "repeated_prime_products": 15,
+          "coefficient_l2": "4/27",
+          "fourth_power_l2": "18176/4782969",
+          "eighth_moment": "641024/43046721",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 20,
+          "Y": 4,
+          "V": "1",
+          "labels": [
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 15,
+          "max_ordered_representations": 12,
+          "repeated_prime_products": 15,
+          "coefficient_l2": "3/16",
+          "fourth_power_l2": "639/65536",
+          "eighth_moment": "977/8192",
+          "C_star": "1579008"
+        },
+        {
+          "N": 20,
+          "Y": 4,
+          "V": "3/2",
+          "labels": [
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 15,
+          "max_ordered_representations": 12,
+          "repeated_prime_products": 15,
+          "coefficient_l2": "1/12",
+          "fourth_power_l2": "71/186624",
+          "eighth_moment": "977/209952",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 20,
+          "Y": 5,
+          "V": "1",
+          "labels": [
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 70,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 65,
+          "coefficient_l2": "1/5",
+          "fourth_power_l2": "1577/78125",
+          "eighth_moment": "296/3125",
+          "C_star": "1579008"
+        },
+        {
+          "N": 20,
+          "Y": 5,
+          "V": "3/2",
+          "labels": [
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 70,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 65,
+          "coefficient_l2": "4/45",
+          "fourth_power_l2": "403712/512578125",
+          "eighth_moment": "75776/20503125",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 30,
+          "Y": 3,
+          "V": "1",
+          "labels": [
+            7,
+            11
+          ],
+          "fourth_power_support_size": 5,
+          "max_ordered_representations": 6,
+          "repeated_prime_products": 5,
+          "coefficient_l2": "2/9",
+          "fourth_power_l2": "70/6561",
+          "eighth_moment": "64/729",
+          "C_star": "1579008"
+        },
+        {
+          "N": 30,
+          "Y": 3,
+          "V": "3/2",
+          "labels": [
+            7,
+            11
+          ],
+          "fourth_power_support_size": 5,
+          "max_ordered_representations": 6,
+          "repeated_prime_products": 5,
+          "coefficient_l2": "8/81",
+          "fourth_power_l2": "17920/43046721",
+          "eighth_moment": "16384/4782969",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 30,
+          "Y": 4,
+          "V": "1",
+          "labels": [
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 15,
+          "max_ordered_representations": 12,
+          "repeated_prime_products": 15,
+          "coefficient_l2": "3/16",
+          "fourth_power_l2": "639/65536",
+          "eighth_moment": "1641/8192",
+          "C_star": "1579008"
+        },
+        {
+          "N": 30,
+          "Y": 4,
+          "V": "3/2",
+          "labels": [
+            7,
+            11,
+            13
+          ],
+          "fourth_power_support_size": 15,
+          "max_ordered_representations": 12,
+          "repeated_prime_products": 15,
+          "coefficient_l2": "1/12",
+          "fourth_power_l2": "71/186624",
+          "eighth_moment": "547/69984",
+          "C_star": "134742016/2187"
+        },
+        {
+          "N": 30,
+          "Y": 5,
+          "V": "1",
+          "labels": [
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 70,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 65,
+          "coefficient_l2": "1/5",
+          "fourth_power_l2": "1577/78125",
+          "eighth_moment": "15624/390625",
+          "C_star": "1579008"
+        },
+        {
+          "N": 30,
+          "Y": 5,
+          "V": "3/2",
+          "labels": [
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "fourth_power_support_size": 70,
+          "max_ordered_representations": 24,
+          "repeated_prime_products": 65,
+          "coefficient_l2": "4/45",
+          "fourth_power_l2": "403712/512578125",
+          "eighth_moment": "444416/284765625",
+          "C_star": "134742016/2187"
+        }
+      ],
+      "t": 0,
+      "lambda": 0,
+      "coefficient_phases": "powers of i",
+      "fixed_twist": "second exact character, fixed within each full chi family",
+      "unrun": "continuous derivative, one-spaced intervals, growing parameters and analytic exceptional sets"
+    }
+  },
+  "scope": "finite identities/inequalities and counterexamples only; not D, gamma asymptotics, asymptotic Vaughan support, source operator norms, continuous sampling or Goldbach"
+}

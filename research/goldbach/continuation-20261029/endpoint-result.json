@@ -1,0 +1,29 @@
+{
+  "summary": "Supplemental host-agent mathematical-author result: complete elementary discrete-Abel proof of the moving-endpoint weighted AP transfer bound with constant one and strict integer endpoint convention; exact ordinary-Mobius divisor-switch identity; and a two-point sequence attaining the bound while its full-endpoint discrepancy is zero. Handwritten proof pending separate substantive review, without proof-assistant verification. Prime-weighted use remains conditional on the full maximal twisted discrepancy input. No Goldbach or novelty claim and no usage measurements.",
+  "claims": [
+    {
+      "text": "For arbitrary complex f supported on 1,...,N-1 and eta>1, the weighted moving-endpoint AP discrepancy is bounded by sum_k |c_k| log((N-1)/k) max_{j<=M_k}|E_k(j)|, where M_k=max(0,ceil(N-eta*k)-1), hence by log(N-1) times the corresponding maximal-discrepancy sum.",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/endpoint-lemma.md"
+    },
+    {
+      "text": "The exact large-divisor switch d>eta, k=(N-n)/d requires the strict moving endpoint n<N-eta*k. The equality holds with ordinary Mobius weights including nonsquarefree inputs, and leaves noncoprime moduli as a separate explicit part.",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/endpoint-lemma.md"
+    },
+    {
+      "text": "The sequence N=10, eta=2, k=3, f(1)=f(8)=1 has zero full-endpoint discrepancy in every reduced residue modulo 3 but moving weighted discrepancy -log(3)/2. It exactly attains the single-modulus transfer bound.",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/endpoint-lemma.md"
+    },
+    {
+      "text": "Applying the transfer to von Mangoldt times reflected Mobius weights gives arbitrary logarithmic savings only if the full maximal-in-endpoint twisted discrepancy estimate is assumed. That estimate and Goldbach remain unproved here.",
+      "status": "unverified",
+      "source": "research/goldbach/continuation-20261029/endpoint-lemma.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/continuation-20261029/endpoint-lemma.md",
+    "research/goldbach/continuation-20261029/endpoint-result.json"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "summary": "Actual original-author CHEN024 revision after distinct challenge. The signed beyond-half congruence corollary is retained with its literal coupled weight and endpoint-uniform two-variable Abel proof. The base and its L0 BV combination are explicitly conditional on coefficient-indexed r=0 input B0 for the actual lower-level modified family; retained-D scope is plausible but not established, and no signed monotonicity is inferred. Clean formulas replace damaged indicators in the revision without changing frozen files. Prime-weight, wheel, atom and full residual transport remain open. No Goldbach margin, fixed cubic gap, novelty or breakthrough is claimed.",
+  "claims": [
+    {
+      "text": "The anatomy inequalities, disjoint r=0/1/2/3 grouping and residual classes remain proved. Base R3 and its L0 combination R7 are conditional on B0 for the actual level-D_sigma modified family and the specified construction; this coefficient-family scope is unverified here.",
+      "status": "unverified",
+      "source": "revision.md Section2, B0 and R1-R3; response to F2"
+    },
+    {
+      "text": "The vector cutoff t<57/224 and ordinary concatenation identity under ell^2<D remain proved; extension fails at d=1 above that boundary. No modified-weight identity is inferred.",
+      "status": "proved",
+      "source": "revision.md Section3, R4-R5; frozen proof and distinct review"
+    },
+    {
+      "text": "Absolute classical BV controls the actual bounded aggregated ordinary branch coefficients below total level one half and yields R6. Combining it with the particular base L0 retains the explicit B0 qualification.",
+      "status": "proved",
+      "source": "revision.md Section3, R6-R8, relative to classical BV"
+    },
+    {
+      "text": "Under exactly the stated optimistic analytic inputs, the semiprime-subtraction coefficient is less than -353328/7675425 for every alpha in (1/4,1/3). This proves a conditional coefficient calculation, not its analytic inputs or a universal obstruction.",
+      "status": "proved",
+      "source": "revision.md Section3.1, R9-R10; independently checked rational and logarithmic inequalities"
+    },
+    {
+      "text": "For the literal rough cubic coefficient R12 with prime cofactor N^(1/6)<k<=N^(1/3-epsilon), signed congruence estimate R13 holds at level153/256-100epsilon for genuinely triply well-factorable modulus coefficients, relative to Lichtman Proposition3.1. Small-factor size, SW and auxiliary coprimality, roughness, residue growth, endpoint uniformity and exact two-variable Abel insertion of Phi are justified.",
+      "status": "proved",
+      "source": "revision.md Section4, R11-R16; imported Lichtman Proposition3.1 and its interval reduction"
+    },
+    {
+      "text": "The exact prime filter R17 exceeds the modulus level, and its naive Mobius truncation fails triple factorability by the balanced prime coefficient test, including after coprime restriction. This disproves that transport only, not possible signed averages on actual supports.",
+      "status": "proved",
+      "source": "revision.md Section5; exact divisor identity and prime support contradiction"
+    },
+    {
+      "text": "A useful lower bound for R18, the fixed-positive-delta cubic target R19, and the original prime margin remain unproved. The exact wheel, atom, all cofactor ranges and earlier residuals remain present.",
+      "status": "unverified",
+      "source": "revision.md Sections5-6; accepted unresolved F1"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/rough-chen-transfer-20261029/revision.md",
+    "research/goldbach/rough-chen-transfer-20261029/revise-result.json"
+  ]
+}

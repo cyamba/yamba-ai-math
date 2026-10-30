@@ -1,0 +1,21 @@
+{
+  "source_is_data": true,
+  "inputs": [
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/murty-vatwani-chowla.pdf",
+      "bytes": 160622,
+      "sha256": "8c24673584e4bf71975467b39b33b48806a1dce410510a262d4b81d102e6257e",
+      "source": "https://mrammurty-ai.github.io/chowla.pdf",
+      "inspection": "journal115/PDF5 Proposition3 reproduced exactstatement, notoriginal1971proof"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/murty-vatwani-journal115.png",
+      "bytes": 299431,
+      "sha256": "c85318cfbc666f23797b305cb3e07d516ee6235a8b01825e9d8a92b400573009",
+      "source": "https://mrammurty-ai.github.io/chowla.pdf",
+      "inspection": "local inspected render of exactpage"
+    }
+  ],
+  "pinned_guo": "https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/mobius-goldbach-shift/source/main.tex",
+  "guo_copy_sha256": "e70d777424852aed92e94b2baf00384c84b4c7fc346bd7dab1085d5652ced95d"
+}

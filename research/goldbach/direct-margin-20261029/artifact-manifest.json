@@ -1,0 +1,49 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/direct-margin-20261029/brief.md",
+      "sha256": "5ce3fdc0b39378b3fa4e2c900faa044255d834bc3fb87ea20eb1f12ca8abffb9"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/challenge-result.json",
+      "sha256": "e6252632aa33c094021539bf134aae21e37b995fd2cd44d775452233a10a49c0"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/host-execution.json",
+      "sha256": "f6ff0d4cc3c8a78f0dcb0c64798866d754d6f60b6792d01aa1e23a19e9af8f72"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/NEXT_SESSION.md",
+      "sha256": "04a901c24c04284560a3d6c557ae628f0fb6a7057175c161a5d1302aaa39ade8"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/objective-audit.json",
+      "sha256": "79cb1ffe4fce26056deaf0e0b1ce1d307e81e183963f202dff1b5e292d9ba7b3"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/propose-result.json",
+      "sha256": "b26ab076cb53d6b56a41a2382e2b4c6018b1a9820c15ee82bfd364510b4d5700"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/result.md",
+      "sha256": "6b1655dec91cfa6cd9761879bb34c974d0e9fe4fec8e19f77f08009e1d78cca6"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/review.md",
+      "sha256": "fce28a4cbad01be6b5540d058ccf028a8363f72fff3a9e74c6573ff5a4f0944e"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/revise-result.json",
+      "sha256": "2bdddeb7ae4335f21726c50d125c7443033e98dc74b26be54c7c24b22026d74d"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/revision.md",
+      "sha256": "a8e29f3fd98571d5ca8689b5843cb5139d7b657447142981098a111a2a7e66c3"
+    },
+    {
+      "path": "research/goldbach/direct-margin-20261029/statement.md",
+      "sha256": "33849bec07236bb3a97944e2ed939b1bcf813e1af393c1eaf1d61f6ef7119297"
+    }
+  ]
+}

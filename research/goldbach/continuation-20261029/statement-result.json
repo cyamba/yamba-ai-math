@@ -1,0 +1,24 @@
+{
+  "summary": "Derived a complete handwritten proof of a coefficient-uniform pointwise upper bound H_alpha(N) <= omega_{>N^alpha}(N) + C*S(N)*N/log(N)^2*(epsilon+1/log(N))^2 for every sufficiently large even N, simultaneously for alpha=1/3-epsilon in [0.3,1/3]. The exceptional term counts prime divisors of N above N^alpha and is at most 3. The proof uses inspected Ford Theorem 2.5 and an explicit partial-summation consequence of Mertens, and treats repeated factors and gcd(ab,N)>1 separately. It is a classical sieve consequence pending the separate critic, with no formal verification or novelty claim. A pure epsilon-squared bound without remainder is refuted when epsilon varies with N by N=r^3+3. The required pointwise parity-sensitive lower bound remains open and Goldbach is not solved. A separately authored supplemental endpoint lemma is attached as an artifact for the critic; this statement author has not independently reviewed its proof.",
+  "claims": [
+    {
+      "text": "The pointwise contamination bound (H) follows from the inspected classical coefficient-uniform two-linear-form upper sieve and Mertens estimate, with an exceptional term at most 3 and absolute unspecified effective constants and all stated boundary cases.",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/statement.md"
+    },
+    {
+      "text": "A pure C*epsilon^2*S(N)*N/log(N)^2 upper bound for H without remainder cannot hold uniformly when epsilon depends on N.",
+      "status": "refuted",
+      "source": "research/goldbach/continuation-20261029/statement.md"
+    },
+    {
+      "text": "The pointwise lower bound (P-open), sufficient in conjunction with (H) for sufficiently-large Goldbach, is not proved in this stage.",
+      "status": "conjecture",
+      "source": "research/goldbach/continuation-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/continuation-20261029/statement.md",
+    "research/goldbach/continuation-20261029/endpoint-lemma.md"
+  ]
+}

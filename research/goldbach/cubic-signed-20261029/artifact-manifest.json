@@ -1,0 +1,57 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/cubic-signed-20261029/brief.md",
+      "sha256": "24829eaeb70a3edf6e8b04e420b6c610e83c61b8fdd8c714dcdee644d63719e3"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/challenge-result.json",
+      "sha256": "ce259b69c09a4d2919e3b67d5af6fd2202fbbdd178011ae1056d936dd4e61b00"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/host-execution.json",
+      "sha256": "25ba6caa7cc08ead4d4cc5bf07efcaa2f7896a84086c0993753a7efb51a45bc2"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/NEXT_SESSION.md",
+      "sha256": "f06fabdf79b069cad64b028a8838a72848302eaa1e402db2c0b17e410c341ca5"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/objective-audit.json",
+      "sha256": "97bd733b5cacdc6e0049de39ed903708a49e1369780900eb7a458b04203d543b"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/primary-inputs.md",
+      "sha256": "37dccdda7a451c58f3ed17b04c495f362846593d4d6e301c7d5bfdbfe2ec5bad"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/propose-result.json",
+      "sha256": "bb4cadea6a4ea9555a7b8d6c570d3e632a2cc333c10ae7e93eccf4526f2b9193"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/result.md",
+      "sha256": "93b5d4541225407846c712e5cd2539be072af0057e33f00bbb59f05284738b19"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/review.md",
+      "sha256": "4eaf6c19f2e36a5822915e5f1029cd4311ce09b79fe2131fdfcd49ff7bae5d1b"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/revise-result.json",
+      "sha256": "a551cc6be1fcb5091f90477f258f416e0aa375849eb6b256b16fd2c2fc6d2f94"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/revision.md",
+      "sha256": "079b5a44ecd258c81f3c86635eeb191d6057a4e9b4b9e3e7f81280e6a78a3424"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/source-provenance.json",
+      "sha256": "d9f5054a3f1d8048b2e47c9aa7b8ebe0fe868491b5e8bf9fb8b5df1ef2608114"
+    },
+    {
+      "path": "research/goldbach/cubic-signed-20261029/statement.md",
+      "sha256": "9f385113df4b561399311ece472e41affd989ff187a93bdbec66a8d1cccffa5a"
+    }
+  ]
+}

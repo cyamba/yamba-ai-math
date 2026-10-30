@@ -1,0 +1,44 @@
+{
+  "summary": "Supported for the bounded DIRECT021 first-failure result, relative to ordinary PNT: exact unit-character reflection, actual strict cubic-rough prime/semiprime classification including squares, s_0~(log 2)H/log H, the correct principal factor 2, the asymptotic unsigned Parseval obstruction and the precise Cauchy logarithmic loss all check. The true nonzero-centered fixed-gap target remains incomplete. Two P2 revision-only repairs are required: equation (6) contains three bare carriage returns in intended primality restrictions, and propose claims 3 and 5 attach refuted to true falsifier conclusions rather than literal false proposals. The explicit H=8/16/32 witnesses prove only their finite claims, not eventual refutations. This is a distinct complete written-argument audit, not formal verification, a fresh audit of the published PNT proof, an independent finite stage or a breakthrough. No mathematical helper, supplement, paid call, unbounded scan, external message, publication or goal completion was performed. Usage is unknown. Frozen statement SHA256: 33849bec07236bb3a97944e2ed939b1bcf813e1af393c1eaf1d61f6ef7119297.",
+  "claims": [
+    {
+      "text": "For actual P and S below H=2^ell, ell>=3, strict cubic roughness gives exactly prime or semiprime types; both types are H-units, squares are retained, and ordered reflection gives T=SS-PP=-D_H+R_H with h=H/2.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/review.md, Definitions and exact scope; Complete checks of the load-bearing deductions"
+    },
+    {
+      "text": "Relative to ordinary PNT, exact least-factor enumeration and partial summation give p_0~H/log H, s_0~(log 2)H/log H and D_H~2(1-(log 2)^2)H/log^2 H, with strict endpoints and repeated factors accounted for.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/review.md, Proved relative to ordinary PNT"
+    },
+    {
+      "text": "For the actual arithmetic sets on powers of two, W_H=O(H/log^2 H) as ell tends to infinity.",
+      "status": "refuted",
+      "source": "research/goldbach/direct-margin-20261029/review.md, Proved asymptotic falsifier of the proposed unsigned estimate"
+    },
+    {
+      "text": "Exact nonprincipal Parseval proves W_H>=p_0-s_0-D_H=(1-log 2+o(1))H/log H eventually and W_H/D_H>=(1+o(1))log H/[2(1+log 2)]. The valid Cauchy bound is C_H=(1+log 2+o(1))H/log H with C_H/D_H=(1+o(1))log H/[2(1-log 2)]. Neither statement lower-bounds R_H.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/review.md, Proved asymptotic falsifier; Proved Cauchy loss"
+    },
+    {
+      "text": "R_H<=0 for every ell>=3, and the actual normalized full semiprime measure is the multiplicative convolution of the actual normalized full prime measure with a probability measure at every power of two with S nonempty.",
+      "status": "refuted",
+      "source": "research/goldbach/direct-margin-20261029/review.md, Proved finite witnesses, finite scope only"
+    },
+    {
+      "text": "The displayed actual sets give R_8=1/4, R_32=3 and the exact H=16 even real-character inequality |S_chi|/s_0=1>3/5=|P_chi|/p_0. These finite witnesses do not refute eventual versions or the fixed-gap target.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/review.md, Proved finite witnesses, finite scope only"
+    },
+    {
+      "text": "Some fixed kappa in (0,1) and ell_0 satisfy R_H<=(1-kappa)D_H for every ell>=ell_0. No sufficient signed pointwise estimate, Goldbach proof, verified novelty or substantive breakthrough has been established in DIRECT021.",
+      "status": "unverified",
+      "source": "research/goldbach/direct-margin-20261029/review.md, Prioritized finding 1 and retained scope"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/direct-margin-20261029/review.md",
+    "research/goldbach/direct-margin-20261029/challenge-result.json"
+  ]
+}

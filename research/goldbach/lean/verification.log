@@ -1,0 +1,8 @@
+'GoldbachElementary.sums30_exact' does not depend on any axioms
+'GoldbachElementary.sums30_characterization' depends on axioms: [propext, Quot.sound]
+'GoldbachElementary.trialPrime_sound' depends on axioms: [propext, Quot.sound]
+'GoldbachElementary.trialPrime_complete' depends on axioms: [propext, Quot.sound]
+'GoldbachElementary.four_cell_identity' depends on axioms: [propext, Quot.sound]
+'GoldbachElementary.chen_parity_identity' depends on axioms: [propext, Quot.sound]
+'GoldbachElementary.no_adjacent_common_summand' depends on axioms: [propext, Quot.sound]
+'GoldbachElementary.prime_pair_symmetry' depends on axioms: [propext, Quot.sound]

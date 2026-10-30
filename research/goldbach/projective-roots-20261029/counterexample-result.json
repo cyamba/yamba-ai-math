@@ -1,0 +1,35 @@
+{
+  "summary": "Actual ROOTS-008 distinct critic stage supports the frozen joint-count proof and its restricted-aspect power-saving consequence. The exact Q/R projective-line reduction includes p|u, rho=0, even prescribed primes and prime powers in u. Canonical c progression Fourier l1 bounds, exact zero-w-frequency mass, nonzero-w terms with zero c frequency, all H divisors including empty intervals, weighted phi Euler products and the tau_R/R absorption all check out. No hidden positive H power or omitted S cost invalidates the absolute error. Half-open endpoints and shrinking/empty intervals are handled without relative normalization. No mathematical repair is required. The all-aspect power-saving target remains unproved, not refuted, and no growing-list moment, prime/operator bound, source extension, novelty or Goldbach breakthrough follows. The separate pre-mortem was prepared before reading the actual author statement and is not counted as an earlier main critic execution. Assurance is complete elementary argument plus separate agent review, without formal or external peer verification; usage is unknown.",
+  "claims": [
+    {
+      "text": "The finite joint prescribed-line and canonical complement-ratio count has the stated local density and absolute error, uniform in H, S, lines and intervals under its explicit coprimality and squarefree hypotheses.",
+      "status": "proved",
+      "source": "research/goldbach/projective-roots-20261029/review.md"
+    },
+    {
+      "text": "The stated subpolynomial-S power-saving consequence is supported for b>3a/4; fixed positive interval lengths give relative saving, while shrinking or empty intervals require main-mass conditions before normalization.",
+      "status": "proved",
+      "source": "research/goldbach/projective-roots-20261029/statement.md"
+    },
+    {
+      "text": "A power-saving theorem in the remaining all-aspect range is unproved; failure of the displayed completion error to save is not a refutation of the underlying main term.",
+      "status": "unverified",
+      "source": "research/goldbach/projective-roots-20261029/review.md"
+    },
+    {
+      "text": "Growing-list moments, selected-endpoint operator estimates, changed denominator-H prime major terms, actual-prime correlations and a Goldbach lower bound or breakthrough remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/projective-roots-20261029/review.md"
+    },
+    {
+      "text": "The proof is a scoped specialization of classical complete-sum and inverse-distribution methods; novelty and a full LWW source-theorem extension are not established.",
+      "status": "unverified",
+      "source": "research/goldbach/projective-roots-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/projective-roots-20261029/review.md",
+    "research/goldbach/projective-roots-20261029/statement.md",
+    "research/goldbach/projective-roots-20261029/pre-mortem.md"
+  ]
+}

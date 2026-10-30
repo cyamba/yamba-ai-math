@@ -1,0 +1,53 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/brief.md",
+      "sha256": "7aeddfa2f1f8f3d123b6cd63db7a941c250f62fd87c70da18ed755ed7010b429"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/challenge-result.json",
+      "sha256": "be98ae25323c1a32488f23cbe8aecfa914f959283d51d072148cb47ff63891e2"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/host-execution.json",
+      "sha256": "ae310a96ee15f63718a00e572e9cfb890b22616d98fc29421462686f3ba08b06"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/NEXT_SESSION.md",
+      "sha256": "aa49f7ef7caf58445abb1fcf7d092cdfdc7ce9ec8cde4b79f6bf668e2b224b56"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/objective-audit.json",
+      "sha256": "759be6f116e5b754a28238263ce701d09a04e4c20defdcb4cad4acfbc53f2161"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/propose-result.json",
+      "sha256": "9a212d25bdcb48b747e878fb4b2fc358709eacc81aeaa700c33cca09410ff7a0"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/result.md",
+      "sha256": "75cd7a094cfad85f03155a8f5456d18e3b0cfc62d17211987eb9e2cc67522e94"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/review.md",
+      "sha256": "3abe3e7627c88ab7da16d992bddc174534f9cd137559894d2165d405f0020de9"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/revise-result.json",
+      "sha256": "5a6d8637744ef7aa62a3c3ba2a66f8d2359bd73e52d57a4b32fb12ae6343a2ba"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/revision.md",
+      "sha256": "841fae786d76d4b14470467327c715011f9c3e57f83ee9e4177a309e5ba8f091"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/source-provenance.json",
+      "sha256": "3d227f7e5b4e080ba81a4774d1726d71c34bc82fba9d09ce3dda17e3d03785c3"
+    },
+    {
+      "path": "research/goldbach/rough-chen-transfer-20261029/statement.md",
+      "sha256": "09b17b941252a211f3ddc68aea95e5b516a6b58153e461e1e53a42d2566e6f68"
+    }
+  ]
+}

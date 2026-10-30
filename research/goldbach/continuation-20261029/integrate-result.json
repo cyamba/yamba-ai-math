@@ -1,0 +1,33 @@
+{
+  "summary": "Integrated actual host-agent results: a separately reviewed complete handwritten pointwise upper bound controls near-cubic three-factor contamination at the prime-pair scale with squared epsilon dependence and an explicit lower-scale term; a sharp endpoint-transfer lemma and exact divisor switch are supported. The independent finite checks pass in their ranges. An inherited quarter-root claim is corrected in the dated revision. These are classical technical advances with novelty unverified; the target-uniform parity-sensitive lower estimate and Goldbach remain unresolved. The next lower-bound proof attempt has been dispatched. No formal or external human verification, token measurements or monetary measurements are claimed. Repository contracts pass; the full existing test suite retains unrelated Windows and frozen-source failures.",
+  "claims": [
+    {
+      "text": "The stated uniform H upper bound and sharp finite endpoint lemma have complete handwritten arguments and separate substantive agent review.",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/review.md"
+    },
+    {
+      "text": "The finite identity and endpoint checks passed the exact recorded ranges; they do not establish infinite assertions.",
+      "status": "empirical",
+      "source": "research/goldbach/continuation-20261029/finite-results.json"
+    },
+    {
+      "text": "The pointwise lower bound P-open and binary Goldbach remain unproved by this tranche.",
+      "status": "conjecture",
+      "source": "research/goldbach/continuation-20261029/revision.md"
+    },
+    {
+      "text": "Novelty, numerical effective constants and an all-N finite connection are unverified.",
+      "status": "unverified",
+      "source": "research/goldbach/continuation-20261029/result.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/continuation-20261029/result.md",
+    "research/goldbach/continuation-20261029/statement.md",
+    "research/goldbach/continuation-20261029/endpoint-lemma.md",
+    "research/goldbach/continuation-20261029/review.md",
+    "research/goldbach/continuation-20261029/finite-results.json",
+    "research/goldbach/continuation-20261029/revision.md"
+  ]
+}

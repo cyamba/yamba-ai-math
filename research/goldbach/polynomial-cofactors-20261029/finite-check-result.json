@@ -1,0 +1,40 @@
+{
+  "summary": "Distinct main experimenter read the actual COFACTORS015 packet and frozen statement91bbf0074e34ef26d578a80b4ecf1644db2197748ca1070d38dc8c38686b0212. The root preregistration was transparently amended before any run to cover both frozen candidates and the critic's fixed repeated-label control. Exactly one smoke and one bounded final run passed: 35906 and 1156448 exact checks respectively, with no failures and no expanding sweep. Final check-body runtime was0.539671 seconds on Python3.11.17, Windows-10-10.0.26300-SP0. Checker SHA25651a27ad91e31fec1023a01ec588d6064586440e15a56ba4b32dca328300067f4. Exact integer/Fraction/Gaussian algebra reproduces the raw incidence counterpaths, positive cofactor compression and protected sector, weighted rank-one modes, fractional comparison witness, center/reconstruction and harmonic Cauchy for a designated rational toy center, and fixed-fourth-power coefficient/residue moments at t=lambda=0. The repeated-label factorization toy has squared deleted norm2 rather than4, so that simple distinct-label formula needs its basic-state scope. No asymptotic dispersion D, analytic gamma intensity, actual factorable-input norm, continuous exceptional-set estimate, source transport, prime margin or Goldbach is certified. Usage is unknown.",
+  "claims": [
+    {
+      "text": "Finite incidence enumeration over even N4..100 and the fixed N8/16/30 paths reproduces the local-versus-global label failure. N16 first has four rough unit h1 labels, while N30 fits one Y5 block. The separate N222 product box passes only its explicit finite support; none supplies asymptotic Vaughan support.",
+      "status": "empirical",
+      "source": "research/goldbach/polynomial-cofactors-20261029/finite-results.json, incidence and fixed_paths"
+    },
+    {
+      "text": "For N16,30,40,78 the declared positive-state sector equivalence, integer-cofactor compression, plateau and protected c1=h1 checks pass. Exact larger-layer frequency arguments and the fixed fractional-cofactor phase -1 witness pass. The nonzero integral1/pi is its elementary symbolic evaluation, not numeric quadrature.",
+      "status": "empirical",
+      "source": "research/goldbach/polynomial-cofactors-20261029/finite-results.json, compression_domains and fractional_comparison"
+    },
+    {
+      "text": "Positive rational weighted rank-one identities, centered eigenmodes and signed-deletion counterexamples pass. In the critic-supplied N38 factorization toy, repeated selected label3 gives K2,1 with exact squared norm2 and arc-scaled squared norm2(1-m_arc)^2. This refutes extending the distinct-label d-vertex deleted eigenvalue formula to repeated-label factorization states; the undeleted rank-one identity remains intact.",
+      "status": "empirical",
+      "source": "research/goldbach/polynomial-cofactors-20261029/finite-results.json, rank_one and repeated_label_scope_control"
+    },
+    {
+      "text": "At alpha3/10 and N16,30,60,100,200, exact squarefree rough unit counts satisfy the selected-divisor and three-rho prime reconstructions. Harmonic mass and Cauchy checks pass for the explicitly rational toy center, with the h1 deletion false-positive control retained. This does not evaluate the analytic gamma_h or prove its dispersion boundD.",
+      "status": "empirical",
+      "source": "research/goldbach/polynomial-cofactors-20261029/finite-results.json, cofactor_centers"
+    },
+    {
+      "text": "Thirty fixed marking configurations over N8,12,16,20,30, Y3,4,5 and V1 or3/2 pass exact repeated-prime multiplicity<=24, fourth-power coefficient bounds, complete-character residue orthogonality, classwise Cauchy and unnormalized eighth-moment bounds. Each family keeps its twist fixed; phases are Gaussian with t=lambda=0.",
+      "status": "empirical",
+      "source": "research/goldbach/polynomial-cofactors-20261029/finite-results.json, marking"
+    },
+    {
+      "text": "The analytic intensity gamma_h, PNT/Mertens limits, dispersionD including the unknown h1 prime atom, actual factorable-input operator norm, polynomial-label transport and root errors, continuous derivative/one-spaced large values, a prime margin, novelty and Goldbach remain outside finite coverage.",
+      "status": "unverified",
+      "source": "research/goldbach/polynomial-cofactors-20261029/experiment-plan.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/polynomial-cofactors-20261029/experiment-plan.md",
+    "research/goldbach/polynomial-cofactors-20261029/cofactor_checks.py",
+    "research/goldbach/polynomial-cofactors-20261029/finite-results.json"
+  ]
+}

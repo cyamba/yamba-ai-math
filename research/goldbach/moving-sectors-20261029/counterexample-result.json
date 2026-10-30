@@ -1,0 +1,34 @@
+{
+  "summary": "Distinct critic supports the frozen moving-sector statement: exact sector/gcd/complement identities; whole-centered-kernel block decomposition using the complete H-fold arc pullback; discrete weighted unitarity and adjoints; coprime Vaughan carry and small-label primitivity under stated hypotheses; correct parallelogram geometry; per-sector and aggregate density/error formulas; and aggregate relative asymptotic in the stated polynomial-size regime. The conservative exact-edge bound 17 is valid and sharpens, by retaining the exact domain, to at most two partner positions for fixed labels, and at most one for even H. No mathematical repair is required. The new pullback arcs include denominator H, and neither their prime major-arc contribution nor a target-uniform centered norm or list-constrained root moment is estimated. Position counts and exact-edge counts are not cancellation. The full LWW theorem and novelty remain unverified as dependencies, and no Goldbach lower bound or demonstrated breakthrough follows. Assurance is complete elementary argument and separate agent review, without formal or external peer verification; usage is unknown.",
+  "claims": [
+    {
+      "text": "For the deliberately defined complete-pullback centered operator on unit-first-coordinate states, the sector map gives the exact weighted unitary direct sum, including its centered comparison, good-state ratios, adjoints and finite moments.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/review.md"
+    },
+    {
+      "text": "The per-sector and aggregate primitive-point formulas, densities and errors are supported; the stated polynomial-size regime yields an aggregate relative position asymptotic. Retaining the exact domain sharpens the fixed-transition partner count to at most two positions, and at most one for even H.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/statement.md"
+    },
+    {
+      "text": "The actual prime-input coprimality restriction can be carried through an exact multiplicative Vaughan decomposition, and the stated original small-label hypotheses restore primitivity for nonzero centered kernel terms.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/review.md"
+    },
+    {
+      "text": "The pullback changes the arithmetic comparison arcs to include target-sized denominators; no ordinary small-denominator major-arc estimate or full source theorem extension has been established for that new term.",
+      "status": "unverified",
+      "source": "research/goldbach/moving-sectors-20261029/review.md"
+    },
+    {
+      "text": "Target-uniform arithmetic cancellation, list-constrained root moments, a Goldbach lower bound or breakthrough, full source validation and novelty remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/moving-sectors-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/moving-sectors-20261029/review.md",
+    "research/goldbach/moving-sectors-20261029/statement.md"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "Inspected accepted LABELS005 original polynomial-rough target identities, nonzero centers, h1 prime boundary, capacity and failed displayed retuning/padding attempts. The new bounded question is an exact cofactor-state/path construction, testing whether any claimed global polynomial-label birth bound truly follows and preserves the original quadratic form. No invariant, norm gain, polynomial root theorem or actual-prime/Goldbach conclusion is assumed.",
+  "claims": [
+    {
+      "text": "The accepted polynomial-label interpolation and nonzero-center/prime-boundary limitations remain explicit dependencies.",
+      "status": "proved",
+      "source": "research/goldbach/prime-labels-20261029/revision.md"
+    },
+    {
+      "text": "A cofactor-retaining path construction with a useful bounded global label budget and correctly centered prime-margin estimate remains unverified.",
+      "status": "unverified",
+      "source": "research/goldbach/polynomial-cofactors-20261029/brief.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/polynomial-cofactors-20261029/survey.md"
+  ]
+}

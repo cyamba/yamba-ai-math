@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-ENERGY-012",
+  "title": "Reflected character fibers and major energy",
+  "objective": "Reconstruct the exact reflected major-arc energy interface and its analytic proof, isolating every imported primary input and selected zero-free hypothesis without treating a conditional parity estimate as Goldbach.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/reflected-energy-20261029/brief.md", "research/goldbach/reflected-energy-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Exact character-fiber and Mellin prefactors", "A complete energy proof or precise first failure", "Primary-source inspection levels for every analytic input", "Separate critic and bounded exact finite fiber checks", "Preserved unconditional Goldbach obligations"],
+  "success_criteria": ["No unverified zero-free region or source-wide theorem is silently imported", "Each analytic length and exponent margin has its actual domain", "Conditional conclusions stay conditional", "Auxiliary or prime-sign cancellation is not identified with a Goldbach lower bound"],
+  "stop_conditions": ["One bounded theorem round within20 proxy units", "No publication, provider billing or external mutable action", "Record a load-bearing gap instead of hiding it behind an imported assertion"]
+}

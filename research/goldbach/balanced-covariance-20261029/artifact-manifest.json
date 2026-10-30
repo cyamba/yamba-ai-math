@@ -1,0 +1,49 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/brief.md",
+      "sha256": "9ca826fb8e4dfe68c5f63885dd4d1cb3bfdfa6e046c45c156a07c7c0e6174192"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/challenge-result.json",
+      "sha256": "46a8657cc18b895694c5e6c11c1c4a589dbaef3ca4ca22195787f21a307cc2b8"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/host-execution.json",
+      "sha256": "eab8318f2ef34b0363a38bd369b3ceb38617140375335c38ef723da670aadc8f"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/NEXT_SESSION.md",
+      "sha256": "d7096ea522255c6254f3d4a06222d71b08b0134e78b4a9ad9fcd04e35d6af81c"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/objective-audit.json",
+      "sha256": "bc397db7c1eb4199639a74e94eca23871d0761f14a781c2f984a6d621ed66f05"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/propose-result.json",
+      "sha256": "ccf8d3094b012f84a4fed652d802c3105bf99f5b252342a985f45525ff5419e3"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/result.md",
+      "sha256": "0626ad52ade8447f4bfa193a58c1ceedf46a2f7461ffa77921e3b1955db33ef2"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/review.md",
+      "sha256": "4d44ab372a6a71fbeb2ec129026715ed380f51421ae9f5338720df44f8198ddd"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/revise-result.json",
+      "sha256": "5552d2239113d35bd463a9d7cdfbd22306fc27aa1d28f63e939b09ea9254657b"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/revision.md",
+      "sha256": "f5759e12c4e3ebb57211907b49037e0d2aebb8bca25669bf54e1bd7bb8791a5c"
+    },
+    {
+      "path": "research/goldbach/balanced-covariance-20261029/statement.md",
+      "sha256": "ee40705ea259c3ff2593ddf26d7f3f5d483c0cae3493fd6561fbe4cf1c893fc8"
+    }
+  ]
+}

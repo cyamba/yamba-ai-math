@@ -1,0 +1,37 @@
+{
+  "program": "GOLDBACH-RECOMBINE-020",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "propose",
+    "challenge",
+    "revise"
+  ],
+  "planned_proxy_units": 8,
+  "completed_proxy_units": 8,
+  "total_planned_host_proxy_units": 8,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "propose": "/root/centered_energy as Mathematician",
+    "challenge": "/root/recombine_critic as Independent Critic",
+    "revise": "/root/centered_energy"
+  },
+  "author_status": "actual original-author revision completed with main review clarifications",
+  "objective_status": "active; Goldbach proof and substantive breakthrough remain unestablished",
+  "independence": "distinct actual author and critic identities and role profiles, not independent model errors",
+  "next_action": "DIRECT021 actual original-margin proof attempt",
+  "frozen_statement_sha256": "e329f47df803775ca94610809b97630463d176ed73f5f682003a75f63185df9a",
+  "reviewer_assignment_note": "planned reviewer replaced before actual challenge dispatch by fresh-context distinct critic, same role2 and no extra stage",
+  "frozen_main_review_sha256": "8c605c2e28515ace56aa253bdcdf53f305e6372aaafeb7cf7eeddf8769eb53d0",
+  "total_declared_host_proxy_units": 8,
+  "status": "completed_host_execution",
+  "proof_assurance": "complete written argument with distinct substantive AI mathematical review; no formal or external peer verification",
+  "frozen_revision_sha256": "5f37b1f27f80282f3bd0594e0a8644ace431c2090a104b85c6547babb3424959",
+  "protocol_validation": {
+    "backend": "replay",
+    "path": ".runs/goldbach-recombine-020-validation-20261029",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  }
+}

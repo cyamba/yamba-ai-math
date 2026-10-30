@@ -53,6 +53,15 @@ The [KR1 positive cut-word research package](research/rogers-ramanujan/terra2026
 
 ## Understand the work
 
+- [Goldbach research status and handoff](research/goldbach/CURRENT.md) preserves the paused
+  geometry/parity investigation, restricted results, failed estimates and remaining proof
+  obligations. No Goldbach proof or verified breakthrough is claimed. See the
+  [publication note](research/goldbach/PUBLICATION-20261030.md) for evidence preservation
+  and the deferred manuscript and website work.
+- [Free AI coding starter](docs/tutorials/free-ai-coding-starter.md) introduces Claude Free
+  in the browser and an open-source coding-agent route using OpenCode, with explicit cost
+  boundaries and a small exercise.
+
 - [The understanding layer](understanding/README.md) explains, illustrates and teaches the
   mathematics: intuition, verified examples, figures, step-by-step walkthroughs, several levels
   of abstraction, applications and articles. It explains results; it does not establish them.

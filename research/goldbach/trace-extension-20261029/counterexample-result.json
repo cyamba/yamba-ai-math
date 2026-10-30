@@ -1,0 +1,39 @@
+{
+  "summary": "Supported: the frozen finite compression, weighted Schatten/frame and ambient-Gram bounds; the pointwise counterexample; enlarged root bijection and multiplicity; every-squarefree-S joint absolute-error count including primes dividing H; restricted-aspect power saving; and stated real-coordinate bounds. No mathematical repair is needed for these limited assertions. Incomplete: the accumulated weighted signed path replacement and model edge/memory moment bound, full enlarged trace or selected endpoint-Gram saving, actual-prime transfer, polynomial roughness and Goldbach. The pinned Guo source already contains labelled enlargement and restricted-Gram framing and explicitly conditions its analytic transport on H2'; provenance and framing do not validate that chain. Exact reviewed hashes and three integration findings are recorded in review.md. Assurance is complete mathematical argument plus distinct host-agent review, without formal verification or external peer review; usage is unknown.",
+  "claims": [
+    {
+      "text": "The deliberately specified unit-sector operator is an orthogonal compression of the enlarged coefficient-one operator, and its weighted Schatten powers and endpoint root moments obey the displayed finite bounds with the exact list-fiber factor; the ambient restricted-Gram pairing bound is valid.",
+      "status": "proved",
+      "source": "research/goldbach/trace-extension-20261029/review.md; frozen statement SHA256 44336ee22423b7a63550ff3b49ca394a9e12af1971eb04ac7c8e455a116a4b3d"
+    },
+    {
+      "text": "The universal assertion that deleting intermediate projections always gives an upper bound for each diagonal trace-power term is refuted by the stated three-dimensional matrix.",
+      "status": "refuted",
+      "source": "research/goldbach/trace-extension-20261029/review.md"
+    },
+    {
+      "text": "Enlarged roots are in exact bijection with unit-r determinant-H triples vr=-H modulo u, with multiplicity phi(u)/phi(u/gcd(H,u)) when gcd(v,u)=gcd(H,u), and no roots otherwise.",
+      "status": "proved",
+      "source": "research/goldbach/trace-extension-20261029/review.md"
+    },
+    {
+      "text": "The enlarged joint count has density 1/(zeta(2)*product_{p|S}(p+1)) and the stated uniform absolute error with sigma_-3/4(H), for every squarefree S including primes dividing H; its power-saving consequence is supported in the declared range b>3a/4 with adequate interval main mass.",
+      "status": "proved",
+      "source": "research/goldbach/trace-extension-20261029/review.md"
+    },
+    {
+      "text": "The displayed relative-coordinate heights and individual box-boundary derivatives have 1+UV/H control; they do not establish accumulated discontinuous path variation or signed cancellation.",
+      "status": "proved",
+      "source": "research/goldbach/trace-extension-20261029/review.md"
+    },
+    {
+      "text": "The first remaining arithmetic task is a fully weighted signed path replacement with summed discrepancy costs and a proved model edge/memory moment bound. Full trace or endpoint-Gram saving, the actual-prime bridge, source-theorem transfer, novelty and Goldbach remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/trace-extension-20261029/review.md; inspected pinned Guo source and source-provenance.json"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/trace-extension-20261029/review.md",
+    "research/goldbach/trace-extension-20261029/counterexample-result.json"
+  ]
+}

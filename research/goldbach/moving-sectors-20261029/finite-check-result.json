@@ -1,0 +1,40 @@
+{
+  "summary": "Independent experimenter read the populated finite-check packet and author statement at frozen SHA256622e03bca08c00023894cfb98c892c7831a8aef6980cf00775aa6d7aa78291f9. After preparation and formula instantiation, smoke and bounded final runs passed with no failures. Checked 772 primitive forward/complement cases, 28,400 inverse-lattice cases, 40,632 ordered position pairs with 48,299 common-divisor checks, 975 exact character sums, 960 nonzero-frequency pullback integral identities, 15 zero-frequency measures and 2,160 exact sector/Mobius box counts. Finite Euler-product density identities passed at all 15 even H values. All 226,894 exact determinant-pair evaluations satisfy the stated edge bound17; the largest observed group was2. The ordinary-arc H6 cross-sector witness remains nonzero while the full pullback coefficient vanishes. Big-O error-scale comparisons are explicitly diagnostics, not certification of asymptotic constants or cancellation. Final full run took 0.392606 seconds; inference tokens and monetary cost are unknown.",
+  "claims": [
+    {
+      "text": "For the stated finite positions and all even H=2..30, sector maps and inverses preserve primitivity under the unit-first-coordinate restriction, preserve first-coordinate labels, and satisfy the integral-complement ratio multiplication by H modulo1.",
+      "status": "empirical",
+      "source": "research/goldbach/moving-sectors-20261029/finite-results.json"
+    },
+    {
+      "text": "All 48,299 tested common-divisor cases satisfy H|det(P,Q)/D iff the sector residues agree, with the mixed-sector determinant correction retained.",
+      "status": "empirical",
+      "source": "research/goldbach/moving-sectors-20261029/finite-results.json"
+    },
+    {
+      "text": "All 975 finite character sums and 960 nonzero-frequency Fourier identities for full pullback arcs hold exactly in integer cyclotomic polynomial arithmetic; zero-frequency measure has no extra1/H factor.",
+      "status": "empirical",
+      "source": "research/goldbach/moving-sectors-20261029/finite-results.json"
+    },
+    {
+      "text": "Ordinary arcs do not generally give centered cross-sector vanishing: H6,P(5,1),Q(7,1),a7,b5 gives frequency10 and integral -sqrt(2)/(20pi) on [-1/16,1/16], while its complete6-fold pullback integral is0.",
+      "status": "refuted",
+      "source": "research/goldbach/moving-sectors-20261029/finite-results.json"
+    },
+    {
+      "text": "All 2,160 sector-box counts agree with exact finite Mobius inversion; finite rational Euler-product identities reproduce the displayed density-factor relation and exact geometric areas and bounding-rectangle ratios.",
+      "status": "empirical",
+      "source": "research/goldbach/moving-sectors-20261029/finite-results.json"
+    },
+    {
+      "text": "No finite output in this stage proves a big-O asymptotic, arithmetic source-theorem applicability, centered-operator cancellation, or Goldbach.",
+      "status": "unverified",
+      "source": "research/goldbach/moving-sectors-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/moving-sectors-20261029/experiment-plan.md",
+    "research/goldbach/moving-sectors-20261029/sector_checks.py",
+    "research/goldbach/moving-sectors-20261029/finite-results.json"
+  ]
+}

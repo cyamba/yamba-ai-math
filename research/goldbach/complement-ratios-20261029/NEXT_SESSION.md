@@ -1,0 +1,15 @@
+# Active checkpoint after RATIOS-007
+
+29 October 2026. Original Goldbach goal active and unachieved. Read result.md, revision.md and review.md. Preserve frozen input hash dbd7f89da164cf2dba56a9b6ef877d083e936d3caee912e70390218e0a6a6699 and all reviewed artifacts.
+
+The limited unweighted Fourier/discrepancy bound is supported by a complete elementary proof and separate review. With U~H^a,V~H^b,b>3a/4, nonzero polynomially bounded frequencies have normalized error H^(-min(a,b-3a/4)+o(1)); balanced sqrt(H) boxes give discrepancy H^(-1/8+o(1)). Constants and thresholds are not numerically extracted. Keep divisor costs, Ramanujan center, nonunit frequencies, literal interval endpoints and empty-population rules. Unnormalized BV averages also pay |N0-M| times the absolute mean of g.
+
+This is classical-method specialization, not verified novelty or a Goldbach breakthrough. It does not permit arbitrary prime, prescribed-line or path weights. The strong classical Weil bound is documented as prior methodology and is not needed by the elementary proof.
+
+ROOTS-008 is already an actual dispatched author task. Use `.runs/goldbach-roots-008-manual-20261029/packets/statement.json` and ../projective-roots-20261029/brief.md. The candidate uses c_H=-H*v^(-1) mod u in [0,u), d_H=(H+v*c_H)/u, determinantH matrix [[u,c_H],[v,d_H]], both-unit primitive supports and squarefree S coprimeH. It seeks a joint ratio/prescribed-projective-line count with explicit S and divisor(H) costs and no full positive H power. The source determinant1 formula must be rederived for this setup, not assumed. The author is /root/trilinear_proof; /root/exact_checks is preparing only until a frozen statement and populated dependent packet arrive. /root/independent_critic is available for its distinct review after the author freezes.
+
+At this checkpoint ROOTS survey completed at2 nominal proxy units, author3 is in progress, checker preparation supplemental2; planned total16 within20. No final ROOTS finite checks or critic verdict yet. Preserve its DAG and actual outputs. RATIOS completed nominal14 plus preparation2 plus closest-work2, total18 within20. Unknown actual usage stays unknown. Replay validates saved protocol only.
+
+The latest full suite still has116 tests,10 failures and3 errors in existing unrelated paths; details in repository-tests.json and ignored log. Repository/harness contracts pass, exact new arithmetic scripts passed, imported Goldbach hashes remain unchanged. No provider adapter, publication, external message, push or original tracked-file edit was performed.
+
+The current goal turn is progress: an actual reviewed cancellation estimate changed the next proof attempt. It is not a blocked turn merely because the remaining mathematics is difficult. Do not mark the overall objective complete or blocked. The real remaining target is an arithmetic estimate that reaches the actual prime/list/operator problem and yields a Goldbach lower bound, or a substantive independently established breakthrough.

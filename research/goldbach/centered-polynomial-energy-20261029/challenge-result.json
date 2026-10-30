@@ -1,0 +1,33 @@
+{
+  "summary": "Distinct critic executed the actual CENTERED018 challenge against frozen statement6470a9f07d8b2074bf3fa89a241eb52114ed9e0fd7f6b6426fd897bcdb1a1cf4. Both candidates are supported relative to the precisely inspected Iwaniec and ordinary PNT theorem statements and elementary analysis. The all-nonprincipal powers-of-two strip follows from explicit positive grouped real L-series; periodic continuation and an independently reconstructed analytic-log/Borel-Caratheodory/Cauchy argument justify endpoint Perron without Hadamard. Prime-power, induction/unit and normalization checks pass. Exact below-H B orthogonality proves the stated nonprincipal energy saving, including common polylog v and arbitrary real marking lambda at k1/trivial fixed twists. Compact principal factor8 and the strictly positive retained center are correct. Two P2 revision clarifications preserve the frozen author: clean four corrupted prime markers and use the valid half-integer-cutoff branch throughout rather than the stronger unsupported O(L2) shift-back aside. Assurance is a complete written-argument audit by a distinct host agent, not formal verification or full audit of imported published proofs. No numerical experiment or goal completion is claimed. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The exact all-nonprincipal energy is O_(A,B,alpha,eta)(H^-1 log^-A H) for every fixed A,B on the stated powers-of-two prime arrays, retaining E0. The same proof is uniform over every real marking lambda and common |v|<=log^C H for each fixed C, at k1 with trivial fixed twists only.",
+      "status": "proved",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/review.md"
+    },
+    {
+      "text": "Explicit positive grouped series exclude every possible real exceptional character at power-of-two modulus. The inspected original Iwaniec nonprincipal scope, periodic continuation, analytic logarithm disk bound and half-integer endpoint Perron give the uniform log-prime cancellation used in the energy, without an imported Hadamard or small-sift cancellation theorem.",
+      "status": "proved",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/review.md"
+    },
+    {
+      "text": "For v=lambda=0 and fixed compact time range, the principal energy has the stated asymptotic with factor 8/(log(1/alpha)^2 H log^4 H) and strictly positive limiting integral. Its exact growing-height value is retained and bounded below, without a growing-height asymptotic.",
+      "status": "proved",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/review.md"
+    },
+    {
+      "text": "The literal all-precision zero-centered total-energy extension for these changed polynomial-sifted arrays is refuted for A>4 by the retained positive principal contribution. This does not refute the accepted small-sift energy theorem.",
+      "status": "refuted",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/review.md"
+    },
+    {
+      "text": "Other k, nontrivial fixed twists, full signed polynomial comparison/transport, polynomial-sieve Type I, identification of E0 with a prime-pair main term, an original pointwise prime margin, novelty and Goldbach remain unestablished by this theorem.",
+      "status": "unverified",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/centered-polynomial-energy-20261029/review.md"
+  ]
+}

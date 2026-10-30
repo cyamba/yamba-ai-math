@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-ROOTS-008",
+  "title": "Joint moving-determinant ratio and projective-line count",
+  "objective": "Attempt a genuinely proved joint root-average estimate uniform in a moving coprime determinant and subpolynomial line prescriptions, without promoting it to an unproved Goldbach operator or prime estimate.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/projective-roots-20261029/brief.md", "research/goldbach/projective-roots-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Exact determinantH root definitions", "A joint prescribed-line estimate or precise counterexample", "Full H,S,box and interval error dependence", "Distinct mathematical review", "Exact finite local and count checks", "Preserved prime/operator obligations"],
+  "success_criteria": ["No variable-target source extension is assumed", "All local line densities and nonunit residue cases are checked", "Any gain is a complete argument with separate review", "The original Goldbach goal is not weakened"],
+  "stop_conditions": ["One bounded theorem-fleet round within20 proxy units", "No provider or external mutable action", "Preserve failure and do not infer Goldbach from unweighted root data"]
+}

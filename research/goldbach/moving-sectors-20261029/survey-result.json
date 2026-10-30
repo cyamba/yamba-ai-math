@@ -1,0 +1,18 @@
+{
+  "summary": "Inspected the source parity-conjugacy map, exact state weights and domain handling. Proposed a separate moving-target congruence-sector construction for derivation and hostile review. No source analytic theorem or target-uniform thin-domain estimate is imported.",
+  "claims": [
+    {
+      "text": "The inspected source gives a fixed-shift parity conjugacy and retains an exact parallelogram.",
+      "status": "established",
+      "source": "https://arxiv.org/html/2610.20242v1"
+    },
+    {
+      "text": "The proposed moving-H sector conjugacy and arithmetic estimate require an actual derivation.",
+      "status": "unverified",
+      "source": "research/goldbach/moving-sectors-20261029/brief.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/moving-sectors-20261029/survey.md"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "summary": "Distinct critic supports the frozen RATIOS-007 equations (1)-(11): the elementary fourth-moment collision count and unit-scaling orbit prove the complete 3/4 Kloosterman bound; interval completion handles all H divisors and endpoint lengths; the Ramanujan main term and sigma/tau frequency costs are retained; the improved mass estimate avoids a squared H-divisor loss; and the declared polynomial-frequency range, Fejer discrepancy proof and normalized BV consequence yield the balanced asymptotic H^(-1/8+o(1)). One integration clarification is needed for unnormalized test-function sums: add the absolute mean times the mass-error cost, separately from variation times discrepancy. No prime/list/path-moment extension or changed-major-arc estimate follows, and no Goldbach lower bound or demonstrated breakthrough is established. Closest-work inspection independently confirms the stronger classical Weil bound and established inverse-distribution methodology. Assurance is a complete self-contained elementary argument plus separate agent review, without formal or external peer verification; usage is unknown.",
+  "claims": [
+    {
+      "text": "The self-contained complete Kloosterman bound, interval completion and explicit Ramanujan/divisor-frequency costs are supported for the stated moduli and nonzero Fourier frequencies.",
+      "status": "proved",
+      "source": "research/goldbach/complement-ratios-20261029/review.md"
+    },
+    {
+      "text": "The primitive both-unit mass estimate and polynomial-frequency cancellation/discrepancy bounds are supported, including the balanced H^(-1/8+o(1)) consequence with unspecified asymptotic constants.",
+      "status": "proved",
+      "source": "research/goldbach/complement-ratios-20261029/statement.md"
+    },
+    {
+      "text": "Normalized BV averaging is supported. An unnormalized leading-mass formula additionally requires the test-function mean times the mass-error cost, not only variation times discrepancy.",
+      "status": "proved",
+      "source": "research/goldbach/complement-ratios-20261029/review.md"
+    },
+    {
+      "text": "Prime-weighted, prescribed-list, selected-endpoint and high-moment extensions, the changed denominator-H major-arc bound, and a Goldbach lower bound or breakthrough remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/complement-ratios-20261029/review.md"
+    },
+    {
+      "text": "A stronger classical Weil bound and established inverse-distribution literature are documented; no new general theorem or verified novelty is claimed for this specialization.",
+      "status": "unverified",
+      "source": "research/goldbach/complement-ratios-20261029/closest-work.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/complement-ratios-20261029/review.md",
+    "research/goldbach/complement-ratios-20261029/statement.md",
+    "research/goldbach/complement-ratios-20261029/closest-work.md"
+  ]
+}

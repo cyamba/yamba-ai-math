@@ -1,0 +1,18 @@
+{
+  "summary": "Inspected the elementary Kloosterman fourth-moment and unit-orbit argument in the primary appendix. The assigned arithmetic lemma must rederive that finite argument and its completion estimate, independently of the full unverified external theorem. Proposed moving multiplier H is a unit modulo each admitted u; explicit H-divisor and frequency costs must be proved.",
+  "claims": [
+    {
+      "text": "The primary appendix displays the stated elementary complete Kloosterman estimate and derivation.",
+      "status": "established",
+      "source": "https://arxiv.org/html/2610.20242v1"
+    },
+    {
+      "text": "The desired moving-multiplier complement-ratio estimate and nonempty uniform range require an actual proof.",
+      "status": "unverified",
+      "source": "research/goldbach/complement-ratios-20261029/brief.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/complement-ratios-20261029/survey.md"
+  ]
+}

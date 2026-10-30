@@ -1,3 +1,9 @@
 # Frozen claims and benchmark provenance hash file bytes. Keep text files LF on every platform
 # so a Windows checkout reproduces the recorded SHA-256 values.
 * text=auto eol=lf
+
+# Imported Goldbach records are already frozen, with mixed historical line endings.
+# Preserve their recorded bytes rather than invalidate the evidence hashes.
+research/goldbach/** -text
+programs/goldbach-*.json -text
+tests/test_goldbach_worker.py -text

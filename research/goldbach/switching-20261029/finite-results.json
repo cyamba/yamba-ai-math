@@ -1,0 +1,76 @@
+{
+  "status": "passed_scoped_checks",
+  "python": "3.11.17",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "source_sha256": "ec0e9c66ed18ce9fdc800710acff4865384f020b5ad2de45375dff5ddde51c61",
+  "finite_identities": {
+    "range_even_N": [
+      6,
+      5000
+    ],
+    "beta_values": [
+      "1/8",
+      "1/6",
+      "1/5"
+    ],
+    "alpha_values": [
+      "3/10",
+      "8/25",
+      "33/100"
+    ],
+    "switching_identity_cases": 22482,
+    "parity_identity_cases": 7494,
+    "independent_trial_cross_checks": 48,
+    "C_r_q_equals_r_occurrences": 2655,
+    "C_r_repeated_factor_occurrences": 138955,
+    "C_r_dividing_target_occurrences": 3942,
+    "first_q_equals_r": {
+      "N": 32,
+      "r": 3,
+      "m": 1,
+      "p": 29,
+      "q": 3
+    },
+    "first_repeated_factor": {
+      "N": 10,
+      "r": 2,
+      "m": 4,
+      "p": 2,
+      "q": 8
+    },
+    "first_dividing_target": {
+      "N": 10,
+      "r": 2,
+      "m": 4,
+      "p": 2,
+      "q": 8
+    },
+    "max_C_r": {
+      "N": 4976,
+      "r": 3,
+      "count": 337
+    },
+    "method": "Exact rational-power integer roots, independent least-factor enumeration q=r*m, SPF primality, separate direct trial division through N=100."
+  },
+  "coefficient_diagnostics": {
+    "cases": 60,
+    "all_rational_upper_bounds_negative": true,
+    "max_quadrature_error": {
+      "absolute_error": 1.6147083670148277e-11,
+      "d": "7/20",
+      "alpha": "33/100",
+      "beta": "7/80"
+    },
+    "simpson_subdivisions": [
+      2000,
+      4000
+    ],
+    "numerical_relative_tolerance": 1e-08,
+    "beta_scan_limitation": "The universal conclusion comes from symbolic cancellation and rational inequalities; the scan is a diagnostic only."
+  },
+  "failures": [],
+  "elapsed_seconds": 1.7732947999993485,
+  "inference_tokens": "unknown",
+  "monetary_cost": "unknown"
+}

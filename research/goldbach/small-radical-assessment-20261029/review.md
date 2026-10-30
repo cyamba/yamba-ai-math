@@ -1,0 +1,81 @@
+# ASSESS-016 distinct challenge
+
+29 October 2026. Registry Independent Critic. I read the actual populated challenge packet and frozen assessment, the now-existing WEIGHTS-014 revision, and the exact MOMENTS-010 and PAIRING-011 passages singled out for a fresh semantic check. I compared those operations with the pinned Guo source, and independently inspected the primary comparison statements identified below. Only this review and its structured result are owned. Usage is unknown.
+
+**Verdict on assessment statement 1: supported.** The recorded arguments establish the exact restricted pointwise correlation at their declared written-proof assurance, relative to the named classical inputs. The fresh focused audit found no surviving H2' premise or uncontrolled cutoff in the inspected signed-moment, arithmetic-replacement and actual-pairing passage. This is a substantive arithmetic result for the project, not a consequence of replay or positive review status alone.
+
+**Verdict on assessment statement 2: supported as a bounded classification with the updates below.** The theorem is a target-specific replacement of a source proof-correctness dependency. A stronger globally new breakthrough claim remains unverified. The concrete remaining attribution question is whether this is a new completed proof contribution or an independent reconstruction/validation of assertions and transport already supplied in the collective LWW/Guo sources. The focused proof audit requested by the assessment is now complete at the stated assurance and must no longer be described as outstanding. Neither lack of a new high-level method nor Goldbach remaining open is by itself grounds to dismiss a substantive intermediate theorem.
+
+## Exact reviewed versions
+
+| Input | SHA256 |
+| --- | --- |
+| frozen assessment.md | 3557837a4c5155d71db547dd991d2b5412a0c25795f460ee70ec9cf1eb70c61c |
+| actual challenge packet | 4a33645a7d853cf3755cce15009f6b13bc0ee42ba52efefa6af26e61dc7b2d21 |
+| WEIGHTS-014 statement.md | 22b1e94dff57c26ace239b82cf82f83aa06967338628cc14900fd911695fbda8 |
+| WEIGHTS-014 review.md | 09e73744b787f2b6667da0c2daff8d8311192cf5ba5a7ac01dbf7cdec77bbb36 |
+| WEIGHTS-014 revision.md | eab8a825bcb66e9db17238edddaf35d71c9ed554560a1e5326c53bbd0466ed39 |
+| MOMENTS-010 statement.md | 0e0e38bdb4f3b000bd67f385d5c32da1bb59fbd22790d1ddb31a8d10ead3e7ca |
+| MOMENTS-010 revision.md | 947cc0c9b1fbcb79b9f221246bbc2ecf056dcdd9decf0543b508a3b7ee2931ba |
+| PAIRING-011 statement.md | f93c024abd19699640e90bb5680306432c2bb71600acd77a0b66024a6658645b |
+| PAIRING-011 revision.md | 21a75c833070b1436e69d6951dec67aad602f47d061b4e307c3f069aaf7a4f51 |
+| pinned Guo main.tex | e70d777424852aed92e94b2baf00384c84b4c7fc346bd7dab1085d5652ced95d |
+
+The assessment's observation that 014 revision/integration were absent is explicitly tied to its earlier cutoff, so it is not a false execution claim. The actual revision now exists and was read here. The other 008-013 hashes and application scopes are those checked in the actual WEIGHTS-014 review; their existence is not substituted for their mathematical contribution.
+
+## Fresh focused audit: signed norms to arithmetic (22)
+
+The eligible independent model uses one common alphabet at every intermediate state. The compatible memory slice has mass sum nu_i(p), whereas the full pair alphabet has mass sum (p+1)nu_i(p). The explicit G row and adjoint majorants use only the compatible slice and retain the occupation factorial ratios. The bounded memory projections reduce these positive sums. This avoids a potentially fatal replacement of the full alphabet mass by the small compatible mass.
+
+For the clean E part, the shared-prime lattice is adapted using a good primitive position; the zero extension and conversion of prime measure to counting measure give bounded endpoint factors. The determinant Fourier kernel keeps its sign. Goodness, existing-memory compatibility and the position cutoffs act as endpoint multipliers. The only coupled collision temporarily restored is separately controlled by an absolute Schur correction. This is a legitimate norm compression, not deletion of arbitrary signed entries.
+
+For the dirty raw part, a received coordinate at the maximal receiving group fixes the residue of the Bezout parameter. The second good test separates different DZ values; a possible value recovers both the old omission tuple and the remaining selected memory primes. The resulting omission average has mass m^-K. Repeated memory multiplicities are bounded only after fixing the target and retaining their theta factors. The reverse operation gives the other Schur direction, with bounded V_i factors. Thus the scalar exceptional mass is used inside a uniform two-sided estimate, not promoted directly into an operator norm. The dirty comparison bound uses a nonzero linear congruence in the adapted box. These deductions give the displayed E bound after A0 and K are selected.
+
+The distinctness expansion does not require a small signed norm after arbitrary restrictions. High ranks use atom bounds. At low rank the phases and active-slot indicators are attached to the actual introduction events, the complete appended-tuple phase is symmetrized against a symmetric continuation, and at most 2r E factors use the coarse absolute bound. Unmodified E factors retain their small norm on every input. This distinction is essential. The earlier separate source pre-mortem supplies the finite history justification for that symmetrization, and the main proof supplies the norms and tail calculation. I found no unproved H2' lemma imported at this step.
+
+The arithmetic replacement expands physical paths before Fock memory. All relative positions are primitive; eligible primes avoid H and therefore impose actual projective first-row kernel lines. The selected primitive both-unit root has the ROOTS-008 density kappa_b(H). It is not replaced by the enlarged density, and no intermediate unit-root restriction is inserted into the ambient power.
+
+The two physical coefficient budgets are distinct and adequate. Before damping truncation the mass is exp(O_K(L^0.73)). The unused-prime Bonferroni mean tail at degree L^0.76 is exp(-c L^0.76 log L), which absorbs it. The retained raw prime/line choices have the larger mass exp(O_K(L^0.96)); this larger quantity is paid in additive root discrepancies. Their prescribed modulus has log S=O_K(L^0.96), within the actual subpolynomial root range. Memory with an L^2 cap is introduced only after arithmetic replacement, so it does not enlarge that arithmetic modulus.
+
+The original position boundaries have a transverse s or t0 derivative bounded below on contributing positions. For intrinsic ratios the derivative in the canonical parameter is 1/tau(z)^2. All relevant integer frequencies, translates and relative-position choices have subpower count and size. The stated cube partition therefore bounds the boundary volume and the accumulated counting errors, including boundary cubes, before the moment limit. Both negative powers of x and the factorial tail dominate L^(-2AR) at R of order sqrt L. Orientation M<=N gives the actual ROOTS-008 aspect saving. Increasing H from x to x times a fixed log power preserves these estimates and does not introduce a positive H loss. These checks justify the particular arithmetic (22), with its original-box/good-test scope, rather than a claim for arbitrary root-dependent cutoffs.
+
+## Fresh focused audit: arithmetic moment to actual pairing
+
+PAIRING-011 uses the ambient power and the all-ones list fiber u_P at each actual endpoint. The matrix of its entries is positive semidefinite even though B itself is signed. Its trace is the sum of the actual endpoint diagonal entries. Applying its matrix bound inside a localized cell, followed by ambient spectral Holder, is legitimate and retains the list-fiber norms. It neither estimates a full trace nor deletes intermediate projections pointwise.
+
+The actual endpoint coefficient `f(Db m,s)=conj(alpha_m)*beta_s` gives exactly the required complex quadratic coefficient. The complete eligible-band part is determined by the endpoint position because long variables are sifted. Its complete-part support is imposed on f alone; it is not inserted into every intermediate state or into the arithmetic moment. The endpoint damping is one, the coefficient norm has no exponent growing with K or J, and both raw and comparison endpoints are primitive because any common large prime would divide the nonzero normalized determinant of size O(Y)<Z.
+
+Within a unit sector, only boundedly many neighboring slope cells interact, and each has O(d0Y) primitive endpoints by the exact H-congruence and lattice-line count. Consequently the restricted-Gram trace loss is the harmless `(d0Y)^(1/(2R))`. Good-state removal is a separate positive absolute one-edge calculation. It pays its own root replacement, union-prime mass, bad-ratio measure and true raw/comparison target counts. It is not inferred from the signed moment.
+
+Finally, ordered shared tuples reassemble with the exact factor 1/D and powers V_i^(-(J+2)). All D blocks together form the harmonic probability used in the collision estimate. There is no extra factorial or assertion that an individual D block has mass one. The comparison retains its complete pullback, cofactor divisibility and complex endpoint support. I found no faulty cutoff, missing source-correctness premise or coefficient-role change in this passage.
+
+This fresh audit is specific. It is not a second complete audit of all classical analytic proofs or all conclusions of H2'. The accepted ENERGY-012, TYPEI-013 and WEIGHTS-014 applications retain their previously checked precision, actual-coefficient, threshold and successive-limit restrictions. On each fixed small-radical class the inspected Iwaniec deduction supplies every fixed required strip, including all q* dividing kH; the general-H family remains an assumption. Thus assessment statement 1 has the stated uniform-in-class quantifiers, without an exceptional set or a growing-C claim.
+
+## Comparison with the actual source operations
+
+The exact [Guo source](https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/mobius-goldbach-shift/source/main.tex), lines 124-169, defines H2' as correctness as written of specified LWW proofs, rather than an independent arithmetic conjecture. Its root-averaging and block-Type-II proof passages, around lines 1290-1419, explicitly invoke those arguments after changing the determinant basis, unit sector, position cutoff and endpoint pairing. The needed operations are exactly the clean/dirty edge estimates, signed memory/distinctness mechanism, path averaging, moment-to-pairing step and removal of auxiliary restrictions. The local proofs checked above establish those particular uses. They do not establish every original proof sentence included in H2'.
+
+The source already supplies the reflected geometry, conditional block estimate, positive-tail framework, prime-relative removal and conditional small-radical conclusion. The present work exposes and verifies sufficient replacement statements and corrects its own initial overbroad normalizer comparison by using common eligible spaces throughout. This is a completed project-local proof route without an explicit H2' premise. No concrete false LWW/Guo assertion repaired by a new cancellation estimate has been established in this bounded challenge. In particular the common-space repair must not be advertised as a discovered source error without a source-specific witness.
+
+The inspected source is also quantitatively broader in its stated conditional conclusions: its packing argument takes a number of copies of order log log x and asserts an error O(pi(x)/sqrt(log log x)). It discusses radical envelopes such as `exp(log N/(log log N)^2)` under its specified real-zero inputs. The accepted 014 proof deliberately establishes fixed-b little-o removal and log-power radicals only. Neither a future packing calculation nor merely writing a larger radical envelope would establish new scope without comparison with those exact source hypotheses. These stronger source assertions were not used to upgrade the accepted theorem.
+
+I freshly read the connected GitHub main-branch endpoint. It still reports head `a605351dce1a55fb46a494d9cca9b0baa8f2734b`, the same pinned commit; its commit timestamp is `2026-10-28T14:34:21Z`. Thus the assessment's current-head comparison is consistent with the fresh observation. This is provenance, not mathematical validation.
+
+I also inspected these exact primary theorem statements, with no claim of a full proof audit:
+
+* [LWW v1, Theorem 1 and Remark 1](https://arxiv.org/html/2610.20242v1#S1): fixed shift +2. It does not state pointwise moving reflection at all even H in the small-radical class.
+* [Lichtman v2, Theorem 1.1](https://arxiv.org/html/2009.08969v2): an absolute mean over shifts under its logarithmic shift-range condition. It cannot select a prescribed exceptional thin family.
+* [Lichtman-Teravainen v3, Corollary 1.4](https://arxiv.org/html/2111.08912v3): cancellation for all but o(T) shifts in the stated range. This does not supply the reflected pointwise assertion.
+* [Carella v3, Theorem 1.1 and Hypothesis 2.1](https://arxiv.org/html/2206.12956v3): a small fixed shift with an explicit shifted-prime progression hypothesis. It is not an unconditional duplicate here.
+* [Tao-Teravainen v2, Theorem 1.6](https://arxiv.org/html/2109.06291v2): fixed-shift mixed correlations in a specified conductor-dependent range conditional on a Siegel zero. It does not directly yield the assessed theorem.
+
+These are scoped theorem-statement comparisons. The older Carella v1 and submission-history observations in the assessment were not used as new proof premises here. No global-priority claim is justified by this bounded source set.
+
+## Actionable assessment updates
+
+1. **P2, current status and audit attribution.** The proposed focused 010-to-011 audit is now completed with no surviving premise found at the recorded assurance. The 014 revision now exists and has the hash above. Preserve the original inspection cutoff as history, then record this challenge's actual mathematical check. Repeating the missing-audit rationale after this result would misstate the remaining limitation.
+2. **P2, distinguish theorem strength from novelty.** The proof establishes a substantive restricted pointwise arithmetic consequence without retaining the source's broad correctness-as-written input. That is a real project result, and a sound completed proof can be a contribution even with the same architecture. However H2' is a meta-level proof-correctness assertion about already supplied operator arguments. Merely deleting its label after reconstructing those arguments does not establish a globally new theorem or method. A defensible stronger attribution should identify either a genuinely new completed proof contribution not already present in those primary arguments, a particular source limitation actually repaired, or a further theorem scope not already asserted. This does not require a worldwide priority certificate or human peer review. The present challenge found no earlier unconditional duplicate in its bounded comparisons, but also did not establish that new-contribution claim.
+
+The remaining original-target boundary is independently precise: the sign mean does not isolate prime complements, the subpolynomial marks vanish on the polynomial-rough set, and its error has no proved one-sided force at H/log^2 H. A new estimate there would directly advance the original margin. Its absence does not invalidate the restricted correlation or make a full Goldbach proof the sole possible breakthrough criterion.
+
+No mathematical repair to assessment statement 1 is required. The appropriate factual description is a substantive, independently checked restricted arithmetic reconstruction and target-specific dependency replacement, with global novelty and the stronger breakthrough classification unverified. Only the root decides whether the user's completion criterion is met. No goal status is changed by this challenge.

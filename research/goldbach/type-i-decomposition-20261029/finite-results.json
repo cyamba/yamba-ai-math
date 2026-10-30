@@ -1,0 +1,417 @@
+{
+  "mode": "bounded_final",
+  "passed": true,
+  "runtime_seconds": 1.3581015000017942,
+  "python": "3.11.17",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "code_sha256": "6599592178caf976f528d3bbf65dd773122824077a35a1ed8527fdb084f83171",
+  "statement_sha256": "f810cce2f92073af5244e673b0afdad6d6a1d624b22f4df422468bd61a174db2",
+  "packet_sha256": "816087a8941da121e2ed474684e3656f13e2d94308dfffc3f2a5e994225728c2",
+  "comparisons": {
+    "convolution_and_corrections": {
+      "counts": {
+        "sifted_coefficients": 32000,
+        "vaughan_coefficients": 8000,
+        "multiplicative_cases": 6400,
+        "prime_correction_cases": 3
+      },
+      "prime_power_correction_records": [
+        {
+          "H": 26,
+          "y": 13,
+          "Z": 3,
+          "endpoint": 26,
+          "weight": "constant",
+          "U_V_exact_floor_fifth_root": 1,
+          "T1": {
+            "17": "1",
+            "19": "1",
+            "23": "1",
+            "5": "2"
+          },
+          "T2": {},
+          "T3": {
+            "5": "-1"
+          },
+          "small_base_restoration": {
+            "2": "1"
+          },
+          "all_higher_power_removal": {
+            "2": "1",
+            "5": "1"
+          },
+          "large_base_higher_powers": {
+            "5": "1"
+          }
+        },
+        {
+          "H": 520,
+          "y": 260,
+          "Z": 11,
+          "endpoint": 390,
+          "weight": "reflected",
+          "U_V_exact_floor_fifth_root": 3,
+          "T1": {
+            "271": "21/10",
+            "283": "21/10",
+            "17": "-21/5",
+            "307": "21/10",
+            "317": "21/10",
+            "337": "21/10",
+            "359": "21/10",
+            "19": "21/5",
+            "379": "21/10"
+          },
+          "T2": {},
+          "T3": {
+            "17": "21/10",
+            "19": "-21/10"
+          },
+          "small_base_restoration": {
+            "7": "21/10"
+          },
+          "all_higher_power_removal": {
+            "17": "-21/10",
+            "7": "21/10",
+            "19": "21/10"
+          },
+          "large_base_higher_powers": {
+            "17": "-21/10",
+            "19": "21/10"
+          }
+        },
+        {
+          "H": 520,
+          "y": 260,
+          "Z": 11,
+          "endpoint": 520,
+          "weight": "reflected",
+          "U_V_exact_floor_fifth_root": 3,
+          "T1": {
+            "271": "21/10",
+            "283": "21/10",
+            "17": "-21/10",
+            "307": "21/10",
+            "317": "21/10",
+            "337": "21/10",
+            "359": "21/10",
+            "19": "21/5",
+            "379": "21/10",
+            "23": "21/10",
+            "397": "21/10",
+            "401": "21/10",
+            "409": "21/10",
+            "433": "21/10",
+            "443": "21/10",
+            "463": "21/10",
+            "13": "21/10",
+            "37": "21/10",
+            "487": "21/10",
+            "499": "21/10"
+          },
+          "T2": {},
+          "T3": {
+            "19": "-21/10",
+            "23": "-21/10",
+            "37": "-21/10",
+            "13": "-21/10"
+          },
+          "small_base_restoration": {
+            "7": "21/10"
+          },
+          "all_higher_power_removal": {
+            "17": "-21/10",
+            "7": "21/10",
+            "19": "21/10"
+          },
+          "large_base_higher_powers": {
+            "17": "-21/10",
+            "19": "21/10"
+          }
+        }
+      ],
+      "negative_controls": {
+        "small_base_power": 16,
+        "large_base_power": 25,
+        "Z": 3,
+        "author_second_correction": {
+          "n": 9,
+          "Z": 2,
+          "sifted_mangoldt": {
+            "3": 1
+          },
+          "prime_only": {}
+        },
+        "positivity_endpoint": {
+          "H": 520,
+          "n": 520,
+          "F": "0"
+        }
+      }
+    },
+    "finite_expansions": {
+      "counts": {
+        "taylor_cases": 1008,
+        "bonferroni_cases": 189,
+        "reciprocal_mass_cases": 12,
+        "smooth_power_cases": 1600
+      },
+      "negative_control": {
+        "A": 3,
+        "v": 9,
+        "correct": 0,
+        "squarefree_b_only": 1,
+        "essential_prime_power_b": 9
+      }
+    },
+    "reduced_reflected_class": {
+      "counts": {
+        "positive_reflected_solutions": 3207,
+        "residue_parameter_cases": 8061,
+        "b_shares_g_cases": 1417,
+        "modulus_one_before_oddness": 1180,
+        "finite_log_power_cases": 24
+      },
+      "exponent_margin": "3/40",
+      "retained_subpower_epsilon": "1/100",
+      "finite_log_power_records": [
+        {
+          "s": 16,
+          "B": 1,
+          "ratio_power_of_2": 207,
+          "log_power_upper_bound": 3200
+        },
+        {
+          "s": 16,
+          "B": 2,
+          "ratio_power_of_2": 207,
+          "log_power_upper_bound": 10240000
+        },
+        {
+          "s": 16,
+          "B": 3,
+          "ratio_power_of_2": 207,
+          "log_power_upper_bound": 32768000000
+        },
+        {
+          "s": 16,
+          "B": 4,
+          "ratio_power_of_2": 207,
+          "log_power_upper_bound": 104857600000000
+        },
+        {
+          "s": 16,
+          "B": 5,
+          "ratio_power_of_2": 207,
+          "log_power_upper_bound": 335544320000000000
+        },
+        {
+          "s": 16,
+          "B": 6,
+          "ratio_power_of_2": 207,
+          "log_power_upper_bound": 1073741824000000000000
+        },
+        {
+          "s": 16,
+          "B": 7,
+          "ratio_power_of_2": 207,
+          "log_power_upper_bound": 3435973836800000000000000
+        },
+        {
+          "s": 16,
+          "B": 8,
+          "ratio_power_of_2": 207,
+          "log_power_upper_bound": 10995116277760000000000000000
+        },
+        {
+          "s": 32,
+          "B": 1,
+          "ratio_power_of_2": 415,
+          "log_power_upper_bound": 6400
+        },
+        {
+          "s": 32,
+          "B": 2,
+          "ratio_power_of_2": 415,
+          "log_power_upper_bound": 40960000
+        },
+        {
+          "s": 32,
+          "B": 3,
+          "ratio_power_of_2": 415,
+          "log_power_upper_bound": 262144000000
+        },
+        {
+          "s": 32,
+          "B": 4,
+          "ratio_power_of_2": 415,
+          "log_power_upper_bound": 1677721600000000
+        },
+        {
+          "s": 32,
+          "B": 5,
+          "ratio_power_of_2": 415,
+          "log_power_upper_bound": 10737418240000000000
+        },
+        {
+          "s": 32,
+          "B": 6,
+          "ratio_power_of_2": 415,
+          "log_power_upper_bound": 68719476736000000000000
+        },
+        {
+          "s": 32,
+          "B": 7,
+          "ratio_power_of_2": 415,
+          "log_power_upper_bound": 439804651110400000000000000
+        },
+        {
+          "s": 32,
+          "B": 8,
+          "ratio_power_of_2": 415,
+          "log_power_upper_bound": 2814749767106560000000000000000
+        },
+        {
+          "s": 64,
+          "B": 1,
+          "ratio_power_of_2": 831,
+          "log_power_upper_bound": 12800
+        },
+        {
+          "s": 64,
+          "B": 2,
+          "ratio_power_of_2": 831,
+          "log_power_upper_bound": 163840000
+        },
+        {
+          "s": 64,
+          "B": 3,
+          "ratio_power_of_2": 831,
+          "log_power_upper_bound": 2097152000000
+        },
+        {
+          "s": 64,
+          "B": 4,
+          "ratio_power_of_2": 831,
+          "log_power_upper_bound": 26843545600000000
+        },
+        {
+          "s": 64,
+          "B": 5,
+          "ratio_power_of_2": 831,
+          "log_power_upper_bound": 343597383680000000000
+        },
+        {
+          "s": 64,
+          "B": 6,
+          "ratio_power_of_2": 831,
+          "log_power_upper_bound": 4398046511104000000000000
+        },
+        {
+          "s": 64,
+          "B": 7,
+          "ratio_power_of_2": 831,
+          "log_power_upper_bound": 56294995342131200000000000000
+        },
+        {
+          "s": 64,
+          "B": 8,
+          "ratio_power_of_2": 831,
+          "log_power_upper_bound": 720575940379279360000000000000000
+        }
+      ],
+      "negative_controls": {
+        "omitted_g": {
+          "H": 78,
+          "q": 11,
+          "r": 3,
+          "d": 5,
+          "unextracted_residue": 9,
+          "unextracted_modulus": 33
+        },
+        "b_may_share_g": {
+          "H": 78,
+          "q": 11,
+          "r": 3,
+          "d": 5,
+          "g": 3,
+          "b": 3,
+          "j": 1,
+          "t": 1
+        },
+        "nonsquarefree_r": {
+          "H": 6,
+          "q": 5,
+          "r": 9,
+          "d": 7,
+          "b": 3
+        },
+        "noncoprime_q": {
+          "H": 10,
+          "q": 5,
+          "r": 1,
+          "d": 3
+        },
+        "sign_and_order": {
+          "H": 78,
+          "q": 5,
+          "j": [
+            1,
+            3
+          ],
+          "reflected_t": [
+            73,
+            63
+          ],
+          "wrong_plus_t": [
+            83,
+            93
+          ]
+        },
+        "zero_endpoint": {
+          "H": 2,
+          "q": 1,
+          "r": 1,
+          "j": 2,
+          "w": 0
+        },
+        "author_undoubled_parity": {
+          "H": 32,
+          "q": 1,
+          "r": 1,
+          "d": 3,
+          "g": 1,
+          "b": 1,
+          "j": 2,
+          "t": 10,
+          "wrong_doubled_residue": 0,
+          "correct_odd_class_modulo_2": 1
+        }
+      }
+    }
+  },
+  "failures": [],
+  "scope": "Exact finite coefficients and residue classes only; no BV, Mellin, asymptotic Type I or Goldbach certification.",
+  "execution_history": {
+    "smoke_runs": 1,
+    "bounded_final_runs": 1,
+    "smoke_runtime_seconds": 0.013086500002827961,
+    "smoke_passed": true,
+    "smoke_failure_count": 0,
+    "commands": [
+      "python research/goldbach/type-i-decomposition-20261029/typei_checks.py --smoke --packet .runs/goldbach-typei-013-manual-20261029/packets/finite-check.json",
+      "python research/goldbach/type-i-decomposition-20261029/typei_checks.py --packet .runs/goldbach-typei-013-manual-20261029/packets/finite-check.json"
+    ],
+    "runtime_scope": "Check body wall time, excluding Python startup, packet/hash validation and serialization.",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "usage": "Token usage and monetary cost unknown."
+  },
+  "coverage_limits": [
+    "Formal prime-log vectors check arithmetic coefficients without numerical logarithms.",
+    "Small toy dyads can have T2=0 after sifting; its nontrivial coefficient terms are covered by the exhaustive formal convolution cases.",
+    "The H=520 reflected toy uses exact eligible group {3,7}, not asymptotic band parameters.",
+    "Finite log-power inequalities are explicit rational comparisons, not a BV or eventual-parameter theorem.",
+    "No analytic Mellin, BV, smooth-power tail, energy/moment transport, assembled prime-correlation or Goldbach certification."
+  ]
+}

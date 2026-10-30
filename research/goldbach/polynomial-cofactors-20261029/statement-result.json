@@ -1,0 +1,33 @@
+{
+  "summary": "Two bounded COFACTORS-015 author candidates are complete, pending the separate critic and finite experimenter. Candidate 1 refutes the exact raw equal-cofactor global-label bound, with shortest four-label raw paths at N=16, the supplied N=30 witness and a separately scoped rectangular product toy. It proves that restricting the full pullback comparison to integer cofactors gives |M1| times the raw kernel, and that the positive-product modular cofactor sector c=1 is the protected h=1 block with an explicit noncontracting eigenmode. This statement is confined to its configuration Hilbert space and is not a lower bound for the different source operator or its factorable Vaughan inputs. Candidate 2 proposes an explicit positive single-prime center gamma_h, retains gamma_1 asymptotic to the Goldbach scale, and proves the harmonic cofactor Cauchy reduction with bounded reciprocal test mass. Its sufficient weighted dispersion estimate D remains unproved and already includes the unknown prime atom. Independently within that candidate, a fixed fourth-power polynomial-marking argument proves a bounded unnormalized eighth character moment and a polylogarithmic one-spaced exceptional-set bound, with repeated primes, fixed twists, normalizers and polynomial heights explicit. No polynomial-label operator transport, full energy extension, original prime margin, actual Goldbach consequence or novelty is claimed. All COFACTORS-015 mathematics was written without helper code execution; assurance is author derivation pending separate review. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The raw transition rule retaining every equality-of-integer-cofactor edge does not bound global selected polynomial labels by three. The N=16 closed four-edge h=1 path has four labels despite local factor count one. The prime-incidence and rectangular toy domains and their asymptotic Vaughan/sifting limitations are explicit.",
+      "status": "refuted",
+      "source": "research/goldbach/polynomial-cofactors-20261029/statement.md, Candidate 1"
+    },
+    {
+      "text": "On the specified positive-product configuration space, the complete-pullback comparison compressed to integer cofactors is |M1| times the raw kernel. Its modular c=1 sector is exactly h=1 and has the stated normalized difference eigenvalue 1-|M1|. Fractional cofactor extension layers have the explicit kernel (4) and require genuine coefficient/support linkage.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/statement.md, equations (1)-(4); author proof pending review"
+    },
+    {
+      "text": "The exact selected-divisor count vector gives the signed identity (5), the explicit single-prime model has nonzero prime center gamma_1 asymptotic to A_N by classical PNT, and the harmonic reciprocal mass gives (9). The sufficient dispersion inequality D would imply a positive prime margin but is not established.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/statement.md, equations (5)-(9) and conditional implication from D; author proof pending review"
+    },
+    {
+      "text": "For polynomial marking Y>=N^alpha, one genuine prime-label group, bounded eta, fixed positive normalizer and fixed twist, the fourth-power representation bound gives sum_chi |B|^8=O(1) and the one-spaced exceptional count O(L^(8A_s+B1+1)). The proof uses exact classwise Cauchy at polynomial support length rather than an enlarged root-averaging theorem.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-cofactors-20261029/statement.md, equations (10)-(12); author proof pending review"
+    },
+    {
+      "text": "The correctly centered original-target dispersion bound, polynomial-modulus discrepancy, fractionally enlarged operator linkage, polynomial roughness/Type I transport, any full analytic energy extension, positive original prime margin, closest-work novelty and Goldbach remain unverified. The fixed marking lemma does not supply these conclusions.",
+      "status": "unverified",
+      "source": "research/goldbach/polynomial-cofactors-20261029/statement.md, obligation D and final budget"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/polynomial-cofactors-20261029/statement.md"
+  ]
+}

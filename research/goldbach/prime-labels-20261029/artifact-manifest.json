@@ -1,0 +1,94 @@
+{
+  "scope": "completed LABELS-005 local files, excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/prime-labels-20261029/brief.md",
+      "sha256": "9971e70ce5c0f9b7fe9f888d12005ad91793e8d41edbc1f548c0ba08ccb952b9"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/counterexample-result.json",
+      "sha256": "8c9da03e59886312fa0610f5b2846f3cd762eabf07dab40a747b95136785cfa5"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/experiment-plan.md",
+      "sha256": "ef06b7bf5e05ac32616d61c103cdd72d0e6c558a39ee0ff1f15f0c5c340dec4c"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/finite-check-result.json",
+      "sha256": "ca603be48c66baef1f07a5595726169d207ae1c79154b2aebee8d68938c9f068"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/finite-results.json",
+      "sha256": "ae1786ee25875983d71a13d4dae6378f7b405837dc8d87ffad682ef6d88154a7"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/host-execution.json",
+      "sha256": "36244a2867704c6245b1453514272d09608e940441c20ffaaf3d98d26b4900a4"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/integrate-result.json",
+      "sha256": "c0ed09ddcf07fbddfea2aea401d488b97ea4c2f1a04d093978858a5b2aae38c7"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/label_checks.py",
+      "sha256": "338fd7650428ffd0c4872300c9c8208b73e1987a00ca190ab60e10a4fd414d75"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/NEXT_SESSION.md",
+      "sha256": "277f17bcf904d2b1fd63896336e210b9026eab6eda89e4bc102be4a42bf95cbd"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/parameter-retuning.md",
+      "sha256": "522cd21ceeda38915d4f468e273f2e0dfbb9f86034108cdbe08643e0bd81115d"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/repository-tests.json",
+      "sha256": "ef5235c16bc6b06de903a85a4656cda5d3b4c33ba2a7220e76c33eb7f5a2af0a"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/result.md",
+      "sha256": "53fb84004b64d096480ae59f5f8564811f81433a9d6a3ce9a5fd8ed3996ee1f7"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/review.md",
+      "sha256": "b0e30f0254fbae7bfedeeaacaa14d4b392ba5424f57fcbf6001fc5bda41c1c9c"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/revise-result.json",
+      "sha256": "61dd104026c25f55a1d563377681a21d213f2960218a61f63468d2475a60e23a"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/revision.md",
+      "sha256": "a68d9539081430fcacc79a2da11da3d8057bac21fde0216959ea048c02f4cfbf"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/sign-search-plan.md",
+      "sha256": "72ee801be0780c877142da52f84de35fc8f87e8ae177f94aab1c8bcce9b6ed4e"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/sign-search-results.json",
+      "sha256": "1f1eaa1418563bf2834a30dad613592fd4563c8772b976169abfa233ffcaec9b"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/sign_search.py",
+      "sha256": "75cd98948c9692157f23972bff750fb5967d714e18508e5ca151f518358fbcf4"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/statement-result.json",
+      "sha256": "03411354d42c3f6d83b3ae69b323c8c0707442b129659c88354203c16c0953c4"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/statement.md",
+      "sha256": "e8ae7df93ac39e8741ed5daa71bc24bf46fb49bcaae77c6aae4d14bd24df515e"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/survey-result.json",
+      "sha256": "235bfd6be5df7b4151a23c08527d7e20e002686f8c2a7b49238f075716f34b1d"
+    },
+    {
+      "path": "research/goldbach/prime-labels-20261029/survey.md",
+      "sha256": "35394ed75dacc23c4be202f8ba987cb800694f8d7080bddad873f339b7027085"
+    }
+  ],
+  "original_import_hashes_verified": true
+}

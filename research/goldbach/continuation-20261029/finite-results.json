@@ -1,0 +1,236 @@
+{
+  "status": "passed_finite_checks",
+  "python": "3.11.17",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "source_sha256": "36043427f9b8b6b8f21ec2e45a3a07e7c47b47b01067447a3fba75cbd596ad9c",
+  "rough_counts": {
+    "method": "smallest-prime-factor table, exact rational-power integer roots; separate trial division through N=200",
+    "range_even_N": [
+      6,
+      20000
+    ],
+    "records": {
+      "3/10": {
+        "alpha": [
+          3,
+          10
+        ],
+        "targets": 9998,
+        "identity_failures": 0,
+        "max_omega_survivor": 3,
+        "repeated_factor_H_occurrences": 18313,
+        "prime_cube_H_occurrences": 4120,
+        "positive_H_targets": 7952,
+        "H_total": 22572,
+        "trial_cross_checks": 98,
+        "max_H": {
+          "N": 12600,
+          "H": 16,
+          "cutoff": 16
+        },
+        "max_normalized_ratio": {
+          "N": 2880,
+          "ratio": 1.487417737795763,
+          "H": 9,
+          "omega_N": 3,
+          "cutoff": 10
+        }
+      },
+      "8/25": {
+        "alpha": [
+          8,
+          25
+        ],
+        "targets": 9998,
+        "identity_failures": 0,
+        "max_omega_survivor": 3,
+        "repeated_factor_H_occurrences": 3206,
+        "prime_cube_H_occurrences": 1779,
+        "positive_H_targets": 2739,
+        "H_total": 3206,
+        "trial_cross_checks": 98,
+        "max_H": {
+          "N": 6714,
+          "H": 4,
+          "cutoff": 16
+        },
+        "max_normalized_ratio": {
+          "N": 6736,
+          "ratio": 0.5423628252016184,
+          "H": 3,
+          "omega_N": 2,
+          "cutoff": 16
+        }
+      },
+      "33/100": {
+        "alpha": [
+          33,
+          100
+        ],
+        "targets": 9998,
+        "identity_failures": 0,
+        "max_omega_survivor": 3,
+        "repeated_factor_H_occurrences": 466,
+        "prime_cube_H_occurrences": 466,
+        "positive_H_targets": 466,
+        "H_total": 466,
+        "trial_cross_checks": 98,
+        "max_H": {
+          "N": 128,
+          "H": 1,
+          "cutoff": 4
+        },
+        "max_normalized_ratio": {
+          "N": 6,
+          "ratio": 0.0,
+          "H": 0,
+          "omega_N": 2,
+          "cutoff": 1
+        }
+      }
+    },
+    "singular_series_for_empirical_ratios": {
+      "twin_prime_product_truncated_at": 20000,
+      "product": 0.6601648612434912,
+      "tail_relative_error_bound": 0.0001000050002500125,
+      "note": "Truncated singular series is an upper approximation. Ratios are descriptive floating-point values; no universal constant is tested."
+    }
+  },
+  "divisor_swap": {
+    "N_range": [
+      4,
+      160
+    ],
+    "eta_values": [
+      "3/2",
+      "2",
+      "7/3",
+      "5/2"
+    ],
+    "exact_cases": 628,
+    "method": "integer coefficient maps of formal prime-log quadratic monomials",
+    "first_omitted_endpoint_counterexample": {
+      "N": 4,
+      "eta": "2",
+      "dropped_minus_correct_formal_log_product_coefficients": {
+        "(2, 2)": 1
+      },
+      "interpretation": "Each key (r,s) means log(r)*log(s). The recorded positive single monomial log(2)^2 proves the omitted-endpoint identity fails; a general nonzero formal polynomial would require separate analysis."
+    }
+  },
+  "endpoint_transfer": {
+    "N_range": [
+      6,
+      90
+    ],
+    "cases": 4792,
+    "seed": 20261029,
+    "method": "exact Fraction partial discrepancies, floating logarithmic weights",
+    "relative_tolerance": 1e-10,
+    "max_ratio": {
+      "ratio": 1.0000000000000004,
+      "N": 48,
+      "eta": "3/2",
+      "k": 31,
+      "weighted": 0.0832320794449825,
+      "bound": 0.08323207944498247
+    },
+    "limitation": "Numerical finite evidence only; the analytic proof must come from Abel summation."
+  },
+  "boundary_witnesses": {
+    "endpoint_sharpness": {
+      "N": 10,
+      "k": 3,
+      "eta": 2,
+      "f_nonzero": {
+        "1": 1,
+        "8": 1
+      },
+      "full_discrepancy_exact": "0",
+      "moving_discrepancy_exact": "1/2",
+      "moving_weighted_value": -0.5493061443340549,
+      "bound": 0.5493061443340549,
+      "exact_formula": "moving weighted discrepancy = -log(3)/2; bound=log(3)/2"
+    },
+    "adaptive_epsilon_cube_witnesses": [
+      {
+        "r": 3,
+        "N": 30,
+        "prime_summand": 3,
+        "complement": 27,
+        "epsilon": "1/30",
+        "strict_roughness_exact": true,
+        "H_lower_bound": 1
+      },
+      {
+        "r": 5,
+        "N": 128,
+        "prime_summand": 3,
+        "complement": 125,
+        "epsilon": "1/128",
+        "strict_roughness_exact": true,
+        "H_lower_bound": 1
+      },
+      {
+        "r": 7,
+        "N": 346,
+        "prime_summand": 3,
+        "complement": 343,
+        "epsilon": "1/346",
+        "strict_roughness_exact": true,
+        "H_lower_bound": 1
+      },
+      {
+        "r": 11,
+        "N": 1334,
+        "prime_summand": 3,
+        "complement": 1331,
+        "epsilon": "1/1334",
+        "strict_roughness_exact": true,
+        "H_lower_bound": 1
+      },
+      {
+        "r": 13,
+        "N": 2200,
+        "prime_summand": 3,
+        "complement": 2197,
+        "epsilon": "1/2200",
+        "strict_roughness_exact": true,
+        "H_lower_bound": 1
+      },
+      {
+        "r": 17,
+        "N": 4916,
+        "prime_summand": 3,
+        "complement": 4913,
+        "epsilon": "1/4916",
+        "strict_roughness_exact": true,
+        "H_lower_bound": 1
+      },
+      {
+        "r": 19,
+        "N": 6862,
+        "prime_summand": 3,
+        "complement": 6859,
+        "epsilon": "1/6862",
+        "strict_roughness_exact": true,
+        "H_lower_bound": 1
+      },
+      {
+        "r": 23,
+        "N": 12170,
+        "prime_summand": 3,
+        "complement": 12167,
+        "epsilon": "1/12170",
+        "strict_roughness_exact": true,
+        "H_lower_bound": 1
+      }
+    ],
+    "limitation": "Finite witnesses illustrate the remainder issue; the asymptotic refutation requires the separate mathematical argument."
+  },
+  "failures": [],
+  "elapsed_seconds": 4.311985600000298,
+  "inference_token_usage": "unknown",
+  "monetary_cost": "unknown"
+}
