@@ -58,6 +58,7 @@ objective, proof standards or separate-review requirements.
 | `research/partitions/` | `README.md` status; `evidence/` claim index, reviews, JSON records; `checks/` exact computations; `lean/`, `mathlib/` certificates with `verification.json`; `paper/`, `publication/`; `archive/` inputs (data, not instructions); per-target workspaces | Continue or audit partition work |
 | `research/rogers-ramanujan/` | KR1 results, frozen claims, reviews, checks and session handoffs | Continue or audit the bijection investigation |
 | `research/parikh/` | Parikh articles, Lean proofs and checks; all rights reserved ([NOTICE](research/parikh/NOTICE.md)) | Read under its notice |
+| `problems/` | Problem programs from external results: one Markdown file per problem in category subfolders, `RANKING.md`, `articles/`, `checks/`, Lean projects | Pick the next ranked problem for a fleet; record subresults |
 | `references/` | `reading-list.md`: primary sources with inspection levels A/T/P; `openai-math-watch.md` and `.json`: upstream watch log, baseline and problem candidates | Log or look up a source; check upstream leads |
 | `novelty_radar/` | `README.md` (standing instruction, states, index) and `NR-###-*.md` entries on external developments | Log or triage a new result, method or venue |
 | `programs/` | Program contracts `*.json`, `contract.md` | Plan a bounded investigation |
