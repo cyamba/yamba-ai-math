@@ -1,3 +1,19 @@
+---
+id: YP-20261030-GOLDBACH-PUBLICATION
+project: yamba-ai-math
+kind: publication-handoff
+created_at: '2026-10-30'
+status: PENDING
+priority: normal
+source: codex-desktop
+originator: Christopher Yamba via Codex
+recipient: '@codex'
+idempotency_key: yamba-ai-math:goldbach-publication:2026-10-30:v1
+next_action: 'At the next intentional session, prepare updated LaTeX and PDF, then publish accurate posts on both requested sites.'
+result_uri: null
+impact_score: TBD
+---
+
 # Goldbach publication followup for the next Yamba AI Math session
 
 ID: YP-20261030-GOLDBACH-PUBLICATION
@@ -8,7 +24,11 @@ Kind: publication handoff
 
 Status: PENDING
 
-YambaPost delivery: PENDING (YambaPost not configured in this checkout).
+YambaPost delivery: DELIVERED and saved-content readback verified on 30 October 2026. The private delivery receipt is retained in ignored local storage. The publication task itself remains PENDING.
+
+Recipient: Codex as the next session's coordinating role, selected from the user's suggested recipients. Claude Code or Yamba Coder may take the work when the user chooses that environment. No worker has claimed it.
+
+Impact Score: TBD.
 
 Requested by Christopher on 30 October 2026: after preserving the research through a commit, PR and merge, create an updated PDF and editable LaTeX document, then publish an account of the work on YambaCode News and christopheryamba.com the next time work resumes in Yamba AI Math. This note records the deferred task; no website post is published by this commit.
 
@@ -32,6 +52,10 @@ At the next intentional Yamba AI Math session:
 
 ## Delivery configuration
 
-The canonical YambaPost skill requires YAMBAPOST_RECIPIENT, YAMBAPOST_INBOX_FOLDER_ID and YAMBAPOST_FORMAT_REF_FILE_ID from the environment or ignored .agents/local/yamba-post.json. Those values were absent when this note was prepared. Do not guess a recipient or folder. Keep configuration out of Git. Once configured, inspect the inbox format, deduplicate by this ID and topic, deliver the note and verify its saved contents.
+The initial checkout lacked delivery configuration. The user subsequently authorized best-effort discovery and suggested Yamba Coder, Claude Code or Codex as recipient. The existing global Inbox and protocol reference were verified through Drive, and Codex was selected as the coordinating role. Configuration stays in ignored local storage; private Drive identifiers are excluded from this public record. The Inbox was checked for a matching Goldbach task before delivery.
+
+Repository and PR: https://github.com/cyamba/yamba-ai-math/pull/37
+
+Canonical copy: https://github.com/cyamba/yamba-ai-math/blob/codex/goldbach-handoff-and-free-coding-guide/research/goldbach/publication/NEXT_PUBLICATION-20261030.md
 
 Sources: [original brief](../orchestrated-prompt.md), [handoff state](../handoff-state-20261030.json), [frozen artifact checker](../checks/verify_frozen_artifacts.py).
