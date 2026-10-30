@@ -1,0 +1,134 @@
+{
+  "development": [
+    [
+      2,
+      4,
+      4,
+      6,
+      7,
+      7,
+      7
+    ],
+    [
+      3,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7
+    ],
+    [
+      3,
+      3,
+      4,
+      6,
+      6,
+      7,
+      8,
+      8
+    ],
+    [
+      3,
+      5,
+      5,
+      7,
+      7,
+      7,
+      8,
+      8
+    ]
+  ],
+  "filter": "actual larger graph parents, opposite sign and equal full effective degree",
+  "heldout": [
+    [
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      8,
+      9,
+      9
+    ],
+    [
+      6,
+      8,
+      9,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10
+    ]
+  ],
+  "heldout_rule": "round two only, after complete development and zero-unpaired reciprocal selector lock",
+  "limits": {
+    "artifact_bytes": 262144000,
+    "candidates": 5000000,
+    "case_seconds": 120,
+    "extensions": 5000000,
+    "memory_bytes": 2147483648,
+    "round_seconds": 600
+  },
+  "matching": "complete frozen grammar diagnostic, never unrestricted matching or universal proof",
+  "order": "n,h,degree,(parents,compositions,marks,epsilon)",
+  "primitives": [
+    "all five final P014 groups",
+    "adjacent labels in different components: relabel parents and carry payloads; toggle epsilon"
+  ],
+  "program": "P015",
+  "repair": "only extend adjacent label pairs to all label pairs; all other conditions unchanged",
+  "schema_version": 1,
+  "selectors": [
+    [
+      [
+        5,
+        3,
+        2,
+        1,
+        4,
+        0
+      ],
+      0
+    ],
+    [
+      [
+        5,
+        3,
+        2,
+        1,
+        4,
+        0
+      ],
+      -1
+    ],
+    [
+      [
+        0,
+        4,
+        1,
+        2,
+        3,
+        5
+      ],
+      0
+    ],
+    [
+      [
+        0,
+        4,
+        1,
+        2,
+        3,
+        5
+      ],
+      -1
+    ]
+  ],
+  "stop": "two formal rounds, one repair, no extra critic preflight or nested agents; no silent reruns",
+  "target": "height=3; lambda=(n-4,3,1)"
+}

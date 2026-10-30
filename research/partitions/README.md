@@ -1,5 +1,31 @@
 # Partition positivity: a proof attempt with checked boundaries
 
+The new [height-three coefficient-unimodality phase](height-three-unimodality/README.md)
+targets the coefficient indexed by `(n-4,3,1)`. Its first bounded investigation
+preserves a complete-grammar obstruction and compares forest triples; the
+universal theorem remains conjectural. It is separate from the completed
+height-two formalization and existing publication materials below.
+
+The subsequent [forest-surgery investigation](height-three-forest-surgery/results.md)
+tests checked word splits and one-edge forest surgery. Both grammars have
+retained seven-vertex obstructions; the universal unimodality target is still
+unproved, and capped held-out cases remain incomplete.
+
+The [fork-transport investigation](height-three-forest-transport/results.md)
+repairs those seven-vertex isolates with a reversible partial relation, then
+retains a two-to-one Hall obstruction at eight vertices. A written block
+deficit explains why transport across component blocks is necessary. The
+unimodality theorem remains conjectural; fresh held-out cases were not run
+after the obstruction was verified.
+
+The [failed-attempt ledger](failed-attempts.md) explicitly closes that rule.
+The subsequent [vertex-exchange investigation](height-three-forest-exchange/results.md)
+repairs its retained two-state obstruction but refutes all four frozen selectors.
+A written degree-zero boundary involution covers the known constant-term case.
+A seven-vertex signed-sector deficit proves that a universal extension cannot
+preserve the whole ordered composition word. The universal target is unproved;
+the fresh held-out cases remain unrun.
+
 **H3 is closed for height two:** Lean proves the actual coloring-to-survivor
 formula for every finite alphabet, including zero, over integer and natural
 polynomial coefficients. Fresh source builds and separate reviews support

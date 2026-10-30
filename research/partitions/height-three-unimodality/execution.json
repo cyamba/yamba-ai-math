@@ -1,0 +1,199 @@
+{
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "log": ".runs/h3-unimodality/unit-tests.log",
+      "sha256": "339dfdc88c37dc93d80b7fc00461f7ec917b3f737b78413b2e08aeeab86f8182",
+      "tests": 70
+    },
+    {
+      "command": "python3 scripts/check_repository.py",
+      "exit_code": 0,
+      "log": ".runs/h3-unimodality/repository-check.log",
+      "sha256": "13786a2815dd072d6b5194a2cfed3b2ac205284e0eba3656b05219d952e15de1"
+    },
+    {
+      "command": "python3 -m harness validate",
+      "status": "valid"
+    },
+    {
+      "command": "python3 -m harness plan programs/partition-h3-unimodality.json",
+      "status": "feasible; two roles, two rounds, 16 dispatch proxy units"
+    },
+    {
+      "command": "python3 -m harness run programs/partition-h3-unimodality.json --backend replay --replay-dir .runs/h3-unimodality/manual-results --output .runs/h3-unimodality/harness-replay",
+      "status": "completed offline response validation"
+    }
+  ],
+  "current_engineering_sources_sha256": {
+    "research/partitions/checks/forest_triples.py": "da0a87a2a79c0ae84f40c46d73b80b051c43d22414effb3cc01abb3ef73a1287",
+    "research/partitions/checks/height_three.py": "45ae739ed8c3ea25ee95198107d5c99ff6ed3c09d168b23bf3a45a134571dd67",
+    "tests/test_height_three.py": "81e02ab9c9ed24910b3eb852f277169d3fc2749013674ed13561cbe5488a0a80"
+  },
+  "date": "2026-10-23",
+  "evidence_sha256": "d7240e1067da8e15b37f96182cd36037a3fa34472cac62a11c3f850e0d1a42e6",
+  "gates": {
+    "forest_comparison": "completed; mark-step diagnostic failed",
+    "frontier_audit": "completed with novelty caveats",
+    "frozen_construction_tests": "completed; all selectors and complete tableau grammar failed",
+    "independent_semantic_review_of_universal_theorem": "not applicable; no universal theorem",
+    "lean_checking": "not started; no new Lean result",
+    "next_step": "New bounded phase would need a type-preserving forest split/join lemma with exact inversion compensation and inverse recovery.",
+    "signed_space": "written completeness argument plus finite regressions",
+    "universal_argument": "not met"
+  },
+  "harness": {
+    "actual_stage_artifacts": [
+      {
+        "artifacts": [
+          "protocol.json",
+          "frontier.md"
+        ],
+        "depends_on": [],
+        "role": "mathematician",
+        "saved_summary": ".runs/h3-unimodality/manual-results/r1--propose.json",
+        "saved_summary_sha256": "ba6f96476b42be6c618ecbd369c150029814550779d20f61ba37c2611a8c2752",
+        "stage": "r1--propose"
+      },
+      {
+        "artifacts": [
+          "review-r1.md"
+        ],
+        "depends_on": [
+          "r1--propose"
+        ],
+        "role": "critic",
+        "saved_summary": ".runs/h3-unimodality/manual-results/r1--challenge.json",
+        "saved_summary_sha256": "58ec075328bf322787c6a834baee4874d7c23e8cdb0612a897b490f186fb3895",
+        "stage": "r1--challenge"
+      },
+      {
+        "artifacts": [
+          "results.md",
+          "evidence.json"
+        ],
+        "depends_on": [
+          "r1--challenge"
+        ],
+        "role": "mathematician",
+        "saved_summary": ".runs/h3-unimodality/manual-results/r1--revise.json",
+        "saved_summary_sha256": "a7b97176a0f6642f1262eee1c69a9d414d189631ad7d74233c1cf70aae7b2b21",
+        "stage": "r1--revise"
+      },
+      {
+        "artifacts": [
+          "forest-protocol.json",
+          "evidence.json"
+        ],
+        "depends_on": [
+          "r1--revise"
+        ],
+        "role": "mathematician",
+        "saved_summary": ".runs/h3-unimodality/manual-results/r2--propose.json",
+        "saved_summary_sha256": "905757ec1a29ede34ab3605cec2bc1a512ff8e1b238714d69b7141956badefdc",
+        "stage": "r2--propose"
+      },
+      {
+        "artifacts": [
+          "review-r2.md"
+        ],
+        "depends_on": [
+          "r2--propose"
+        ],
+        "role": "critic",
+        "saved_summary": ".runs/h3-unimodality/manual-results/r2--challenge.json",
+        "saved_summary_sha256": "784d11f6490a202be2cde43e349cae6cdec9c4ef30b1f64fd1a74e1c920c8d18",
+        "stage": "r2--challenge"
+      },
+      {
+        "artifacts": [
+          "results.md",
+          "evidence.json"
+        ],
+        "depends_on": [
+          "r2--challenge"
+        ],
+        "role": "mathematician",
+        "saved_summary": ".runs/h3-unimodality/manual-results/r2--revise.json",
+        "saved_summary_sha256": "4027378eb76cebe29b5b7af30a701324d95f9b20e1f57494f41629a030ceffba",
+        "stage": "r2--revise"
+      }
+    ],
+    "dispatch_units_are_not_money_or_tokens": true,
+    "fleet": "pair",
+    "manual_packet": {
+      "attempted_cost_units": 0,
+      "meaning": "Prepared packets only; original pending receipt is preserved.",
+      "path": ".runs/h3-unimodality/harness-packet/receipt.json",
+      "sha256": "6d55449e7b57650ddda2a47b1df23c86935cc49b5eb46c8ea2d6f6708592580c",
+      "status": "awaiting_execution"
+    },
+    "planned_cost_units": 16,
+    "program": "programs/partition-h3-unimodality.json",
+    "replay": {
+      "meaning": "Offline validation of post-hoc lead-written stage summaries. This is not a command-worker execution or an attestation of dispatch history.",
+      "path": ".runs/h3-unimodality/harness-replay/receipt.json",
+      "reported_usage": null,
+      "research_validated": false,
+      "sha256": "428e78c6500d1215545ddbf5be310185378f0e0ee3a72bd668c08b6c64fc6b2c",
+      "states": {
+        "r1--challenge": "completed",
+        "r1--propose": "completed",
+        "r1--revise": "completed",
+        "r2--challenge": "completed",
+        "r2--propose": "completed",
+        "r2--revise": "completed"
+      },
+      "status": "completed_execution"
+    }
+  },
+  "novelty_status": "unverified",
+  "phase_status": "bounded investigation complete; universal theorem not achieved",
+  "preservation": "Changes are additive apart from two research/program index entries. Existing publication work, failed constructions and Lean certificates are untouched.",
+  "program": "P012",
+  "research_validated": false,
+  "resources": {
+    "engineering_compute": "70 unit tests, repository checker, harness validation/planning/replay and source review; not included in research enumeration counters.",
+    "enumeration_processes_concurrent_max": 1,
+    "new_dependencies": false,
+    "no_case_capped": true,
+    "paid_compute": false,
+    "research_artifacts_directory_bytes_at_closure": 692192,
+    "research_rounds": 2,
+    "resource_limit_caveats": [
+      "RSS sampled, not an OS reservation.",
+      "Artifact guard covers the output directory, not unrelated directories.",
+      "Original bubble-generation candidate scope was undercounted; accounted replay retained and disclosed."
+    ],
+    "round_one_candidate_charges_inferred": 232878,
+    "round_one_measured_extensions": 2046806,
+    "round_one_measured_wall_seconds": 18.025071083000512,
+    "round_two": {
+      "candidates": 539,
+      "extensions": 1290,
+      "limits": {
+        "artifact_bytes": 262144000,
+        "candidates": 5000000,
+        "case_seconds": 120,
+        "extensions": 5000000,
+        "memory_bytes": 2147483648,
+        "round_seconds": 600
+      },
+      "peak_rss_bytes": 23363584,
+      "process_seconds": 0.00248000000000001,
+      "wall_seconds": 0.0024921670119510964
+    },
+    "token_usage": "unavailable; no invented counts"
+  },
+  "schema_version": 1,
+  "team": {
+    "critic": "frontier_critic, separate critic role",
+    "lead": "root, manual work under mathematician role",
+    "lean_specialist_used": false,
+    "nested_agents": false,
+    "reason": "Universal mathematical argument gate not met.",
+    "separate_roles_do_not_imply_independent_models_or_errors": true
+  },
+  "theorem_status": "conjecture"
+}

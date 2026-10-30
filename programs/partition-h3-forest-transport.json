@@ -1,0 +1,30 @@
+{
+  "id": "P014",
+  "title": "Height-three coefficient unimodality: fork transport across forest blocks",
+  "objective": "Develop and falsify a reversible sibling-fork split/join for the unresolved (n-4,3,1) coefficient first differences, and isolate the cross-block obligation that survives insertion-coordinate cancellation.",
+  "fleet": "pair",
+  "briefs": ["research/partitions/height-three-forest-transport/README.md"],
+  "constraints": {"max_agents": 2, "max_cost_units": 16, "max_workers": 2, "max_rounds": 2, "timeout_seconds": 120},
+  "rounds": 2,
+  "deliverables": [
+    "Exact source-attributed insertion-coordinate normal form and written within-block deficit",
+    "Universal conditional fork inverse and weight-transport argument, with the P013 isolate explicitly paired",
+    "Frozen complete signed-space tests, failure certificates, development-only repair and held-out accounting",
+    "Separate critic verdict and universal-proof gate, with original evidence and publication material preserved"
+  ],
+  "success_criteria": [
+    "Retain all forest triples, distinct ordered composition assignments, marks and epsilon values before lower-half restriction",
+    "Check tree validity, type, sign, full effective degree, inverse membership, selector recovery and collisions",
+    "Do not equate a symmetric relation, finite matching or repaired example with a universal cancellation theorem",
+    "Report isolated states or certified Hall deficiency for the complete frozen grammar, separately from selector failures",
+    "Require a credible universal construction before substantial Lean; the unresolved target also requires the actual coloring bridge and separate semantic acceptance"
+  ],
+  "stop_conditions": [
+    "Two author-critic rounds maximum; at most one recorded insertion-digit repair; no nested agents",
+    "Each round: 600 computation seconds, 5000000 enumeration extensions and 5000000 move candidate charges",
+    "Each case: 120 seconds; one enumeration process, sampled RSS at most 2 GiB and aggregate output-directory artifacts at most 250 MiB",
+    "Capped cases remain incomplete and are never replaced; held-out outcomes cannot select the repair or selector",
+    "No installations, new dependencies, paid compute, or new Lean work before the universal argument gate"
+  ],
+  "preferred_tags": ["theorems", "constructive-skeptic"]
+}

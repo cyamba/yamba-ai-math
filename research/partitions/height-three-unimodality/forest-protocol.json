@@ -1,0 +1,30 @@
+{
+  "diagnostic": "one mark changes by one with epsilon toggle; no join/split search",
+  "enumeration": "all decreasing parent forests, all compositions of target type, all marks",
+  "h": [
+    2,
+    4,
+    4,
+    6,
+    7,
+    7,
+    7
+  ],
+  "holdout_used_for_repair": false,
+  "input_sha256": "3a49b79d32f6f08aba69893c7dd53fa426b87dc61c9eae593dcb7407809be54a",
+  "limits": {
+    "artifact_bytes": 262144000,
+    "candidates": 5000000,
+    "case_seconds": 120,
+    "extensions": 5000000,
+    "memory_bytes": 2147483648,
+    "round_seconds": 600
+  },
+  "round": 2,
+  "selection": "lexicographically smallest complete development isolated tableau state",
+  "target": [
+    3,
+    3,
+    1
+  ]
+}

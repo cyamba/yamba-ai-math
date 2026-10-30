@@ -1,0 +1,110 @@
+{
+  "development": [
+    [
+      2,
+      4,
+      4,
+      6,
+      7,
+      7,
+      7
+    ],
+    [
+      3,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7
+    ],
+    [
+      3,
+      3,
+      3,
+      6,
+      6,
+      6,
+      8,
+      8
+    ],
+    [
+      3,
+      5,
+      5,
+      7,
+      7,
+      7,
+      8,
+      8
+    ]
+  ],
+  "heldout": [
+    [
+      4,
+      6,
+      6,
+      7,
+      7,
+      8,
+      8,
+      9,
+      9
+    ],
+    [
+      4,
+      4,
+      4,
+      8,
+      8,
+      9,
+      9,
+      9,
+      9
+    ],
+    [
+      4,
+      5,
+      6,
+      7,
+      7,
+      9,
+      10,
+      10,
+      10,
+      10
+    ],
+    [
+      2,
+      7,
+      7,
+      8,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10
+    ]
+  ],
+  "holdout_rule": "run only in round two, after development-only repair and selector lock",
+  "limits": {
+    "artifact_bytes": 262144000,
+    "candidates": 5000000,
+    "case_seconds": 120,
+    "extensions": 5000000,
+    "memory_bytes": 2147483648,
+    "round_seconds": 600
+  },
+  "matching": "grammar-only augmenting paths, only if no isolated negative; diagnostic not proof",
+  "order": "n,h,degree,(parents,compositions,marks,epsilon)",
+  "primitives": [
+    "one mark step and epsilon toggle",
+    "checked last-part canonical-word break and exact inverse join"
+  ],
+  "program": "P013",
+  "repair_limit": "one recorded repair; no third proposal/review round",
+  "schema_version": 1,
+  "selectors": "priority (mark,word) or (word,mark), each first/last lex target; reciprocal only",
+  "target": "height=3; lambda=(n-4,3,1)"
+}

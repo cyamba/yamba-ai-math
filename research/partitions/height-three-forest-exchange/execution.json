@@ -1,0 +1,551 @@
+{
+  "acceptance": {
+    "new_lean_certificate": false,
+    "new_unresolved_theorem": false,
+    "next_hurdle": "A universally covering positive-degree pivot that changes ordered composition sectors and makes the reverse choice recoverable; prove validity, sign, statistic, inverse, coverage and positive survivors before substantial Lean.",
+    "semantic_review_of_universal_target": "not possible: no universal proof supplied",
+    "supported_novelty": false,
+    "universal_construction": false
+  },
+  "assurance": {
+    "coloring": "saved P014 independent coloring-checked coefficient comparisons reused; no fresh P015 coloring execution; component-set products share Tom insertion theorem",
+    "degree_zero": "complete written universal boundary involution and independent actual-coloring bridge; separately reviewed; established elementary base case, not a new unresolved theorem",
+    "final_evidence": {
+      "path": "research/partitions/height-three-forest-exchange/evidence.json",
+      "sha256": "40792325b57c3453c8cb6c3f2de7f82214935c89ad84688fe6786da055dccd7c"
+    },
+    "finite_results": "four disclosed development cases, complete original adjacent-grammar signed-space census; R2 direct repaired selector certificates and complete ordered-sector census, not full repaired-graph census",
+    "fixed_exchange": "written fixed-transposition partial involution; conditional adjacent-label defect formula; separately reviewed, not a covering construction",
+    "lean": "no new Lean work or checking; universal covering argument and novelty gates not met",
+    "ordered_partword_obstruction": "written finite nine-block exhaustion, checked by separate critic and corroborated by complete forest enumeration and component-set products; not Lean and not a coefficient-conjecture counterexample",
+    "original_review_versions": [
+      {
+        "path": ".runs/h3-forest-exchange/pre-formatting/review-r1.md",
+        "sha256": "176230788a4560f35d8614856a6560adddb3d7d5abf6a1ead433341994c54b45"
+      },
+      {
+        "path": ".runs/h3-forest-exchange/pre-formatting/review-r2.md",
+        "sha256": "f503cb746f8d58a62773a33db82d442c28c9a377ea01c9273e5390cd1c3a4655"
+      }
+    ],
+    "reviewed_evidence_original": {
+      "path": ".runs/h3-forest-exchange/evidence-reviewed.json",
+      "sha256": "0b2b63d49573d8324a11dd17988faa6fd1208fac7592d348416957bb30decf04"
+    },
+    "reviewed_evidence_sha256": "0b2b63d49573d8324a11dd17988faa6fd1208fac7592d348416957bb30decf04",
+    "semantic_reviews": [
+      {
+        "path": "research/partitions/height-three-forest-exchange/review-r1.md",
+        "sha256": "496228d6e22dedc085481b7b480d79be59b27a79a8bbd2a7c8c155f3cdcaf055"
+      },
+      {
+        "path": "research/partitions/height-three-forest-exchange/review-r2.md",
+        "sha256": "94ac6b1f3a8ac3b9fc74dbc1de7896dbe92263cfa2969b39260cb865251c9b9a"
+      }
+    ]
+  },
+  "engineering": {
+    "diff_check": {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "log": {
+        "path": ".runs/h3-forest-exchange/diff-check.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "focused_tests": {
+      "exit_code": 0,
+      "log": {
+        "path": ".runs/h3-forest-exchange/focused-tests-r2.log",
+        "sha256": "e34134e8c87acf32911dedec3c91fb5a305046605bb5e0994e3834f099a18f34"
+      },
+      "tests": 13
+    },
+    "harness_validate": {
+      "command": "python3 -m harness validate",
+      "exit_code": 0,
+      "log": {
+        "path": ".runs/h3-forest-exchange/harness-validate.log",
+        "sha256": "5a929bd63cb3e911b253546fb29d7d1d23fd6826b40e6a690ad0e75b18140554"
+      }
+    },
+    "new_file_whitespace": {
+      "exit_code": 0,
+      "log": {
+        "path": ".runs/h3-forest-exchange/new-file-whitespace.log",
+        "sha256": "64257c890cf978ecf97a89dfcf38a0f54a6a6109174d4152e92117076d13e187"
+      }
+    },
+    "repository_check": {
+      "command": "python3 scripts/check_repository.py",
+      "exit_code": 0,
+      "first_failure_preserved": {
+        "path": ".runs/h3-forest-exchange/repository-check-first.log",
+        "sha256": "b625a7c2b5bb3cd43542c8ebdbb2017182a3def99574767a31389a879c373036"
+      },
+      "log": {
+        "path": ".runs/h3-forest-exchange/repository-check.log",
+        "sha256": "13786a2815dd072d6b5194a2cfed3b2ac205284e0eba3656b05219d952e15de1"
+      },
+      "repair": "formula spacing only; no protected checker code changed"
+    },
+    "unit_tests": {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "log": {
+        "path": ".runs/h3-forest-exchange/unit-tests.log",
+        "sha256": "22d321914464bd693b047bf46e607c514ac470f5ada0aab2c4411f6b8d42752e"
+      },
+      "tests": 103
+    }
+  },
+  "frozen_inputs": [
+    {
+      "current_display_sha256": "a338bd281036180de6690bd20835fd5b67281b119bfb6db9ef55558c1bceb2ab",
+      "historical_version_archive": ".runs/h3-forest-exchange/pre-formatting/README.md",
+      "path": "research/partitions/height-three-forest-exchange/README.md",
+      "sha256": "b80b235afd410d154f0fdbf7e2c01937ead23aac93ea13d50148cf82339afdc6"
+    },
+    {
+      "path": "research/partitions/height-three-forest-exchange/upstream.json",
+      "sha256": "e6cc738f99102489804f8e21770e737875dd4d50fb1290de1100a6d580cd91d7"
+    },
+    {
+      "path": "research/partitions/height-three-forest-exchange/protocol.json",
+      "sha256": "c3261f3fa3bf9c5ddc0e8d93c1341998ffae17b82df1c830d3206bfcf35f66e0"
+    },
+    {
+      "path": "research/partitions/height-three-forest-exchange/repair.md",
+      "sha256": "96a9189bf33b3720cfd0cc834a783d9cb7fb42275d1a006f0deaf6c932e64233"
+    },
+    {
+      "path": "research/partitions/height-three-forest-exchange/round-two-protocol.json",
+      "sha256": "009a20aa93d4f99c924227d1e2c0b3ded005cbdf23432327831b2728505a4166"
+    },
+    {
+      "path": "research/partitions/height-three-forest-exchange/degree-zero.md",
+      "sha256": "3cdb586c66b53ebe8bd726dcebb02720c408f9c92c48518448cce91c660f252a"
+    },
+    {
+      "path": "programs/partition-h3-forest-exchange.json",
+      "sha256": "9a2a9b16e38c5dab516c3f54f872d9444cc7d9f34a5c33c4c522e18cd5417aa1"
+    }
+  ],
+  "heldout": {
+    "executed": false,
+    "frozen": [
+      [
+        5,
+        5,
+        5,
+        5,
+        6,
+        7,
+        8,
+        9,
+        9
+      ],
+      [
+        6,
+        8,
+        9,
+        9,
+        9,
+        9,
+        9,
+        10,
+        10,
+        10
+      ]
+    ],
+    "reason": "all four frozen selectors fail on development even after sole repair",
+    "selector_locked": false
+  },
+  "post_execution_written_proof": {
+    "path": "research/partitions/height-three-forest-exchange/partword-obstruction.md",
+    "sha256": "51d95b8f9ec987c2d5e9560ef793e5a805361c7a5ed43ef7df2a1f3af997261b"
+  },
+  "post_review_document_formatting": {
+    "documents": [
+      {
+        "after_sha256": "a338bd281036180de6690bd20835fd5b67281b119bfb6db9ef55558c1bceb2ab",
+        "before_sha256": "b80b235afd410d154f0fdbf7e2c01937ead23aac93ea13d50148cf82339afdc6",
+        "original_archive": ".runs/h3-forest-exchange/pre-formatting/README.md",
+        "path": "research/partitions/height-three-forest-exchange/README.md",
+        "replacement_count": 1
+      },
+      {
+        "after_sha256": "496228d6e22dedc085481b7b480d79be59b27a79a8bbd2a7c8c155f3cdcaf055",
+        "before_sha256": "176230788a4560f35d8614856a6560adddb3d7d5abf6a1ead433341994c54b45",
+        "original_archive": ".runs/h3-forest-exchange/pre-formatting/review-r1.md",
+        "path": "research/partitions/height-three-forest-exchange/review-r1.md",
+        "replacement_count": 1
+      },
+      {
+        "after_sha256": "94ac6b1f3a8ac3b9fc74dbc1de7896dbe92263cfa2969b39260cb865251c9b9a",
+        "before_sha256": "f503cb746f8d58a62773a33db82d442c28c9a377ea01c9273e5390cd1c3a4655",
+        "original_archive": ".runs/h3-forest-exchange/pre-formatting/review-r2.md",
+        "path": "research/partitions/height-three-forest-exchange/review-r2.md",
+        "replacement_count": 1
+      },
+      {
+        "after_sha256": "f084671491934ebdf5df9261d7b0402220d74df756c1a5dbc1e38e705af70cae",
+        "before_sha256": "65b1fa3d0e4335843bb3a61c3967fd50ee39d7edc360a73af6689e2e12bc19f7",
+        "original_archive": ".runs/h3-forest-exchange/pre-formatting/results.md",
+        "path": "research/partitions/height-three-forest-exchange/results.md",
+        "replacement_count": 1
+      }
+    ],
+    "failed_check": {
+      "path": ".runs/h3-forest-exchange/repository-check-first.log",
+      "sha256": "b625a7c2b5bb3cd43542c8ebdbb2017182a3def99574767a31389a879c373036"
+    },
+    "original_reviewed_evidence": {
+      "path": ".runs/h3-forest-exchange/evidence-reviewed.json",
+      "sha256": "0b2b63d49573d8324a11dd17988faa6fd1208fac7592d348416957bb30decf04"
+    },
+    "phase": "after both research rounds and semantic reviews",
+    "reason": "Repository link checker treats inline-code [q^d](1-q) as a Markdown link. Inserted one space between coefficient bracket and parenthesis; no mathematical, experimental or review-verdict change. No checker or protected source edited.",
+    "record": {
+      "path": ".runs/h3-forest-exchange/formatting-correction.json",
+      "sha256": "fc1b5995898884e44d8f4062f5e6948497c5d8bf2bb7d2d71a736f9f9ef7bf68"
+    },
+    "scope": "Equation spacing in four documents only; results subsequently add final engineering outcomes. Original verdicts and all executed research inputs remain unchanged in historical snapshots."
+  },
+  "preservation": {
+    "all_unchanged": true,
+    "final_check": {
+      "path": ".runs/h3-forest-exchange/preservation-final.json",
+      "sha256": "cf5ab22ca7a77716d29ce4a88da98bc8b48aa17d1b96f75684ccb5c58583350f"
+    },
+    "inventory": {
+      "path": "research/partitions/height-three-forest-exchange/upstream.json",
+      "sha256": "e6cc738f99102489804f8e21770e737875dd4d50fb1290de1100a6d580cd91d7"
+    },
+    "pre_formatting_check": {
+      "path": ".runs/h3-forest-exchange/preservation-check.json",
+      "sha256": "b3b0af63ae2c1d1a795796f3c0cff37cb3896642eb228251968264b0eaf8ce65"
+    },
+    "protected_files": 174,
+    "r2_code_and_tests_current": true,
+    "r2_document_only_formatting_differences": [
+      {
+        "after_sha256": "a338bd281036180de6690bd20835fd5b67281b119bfb6db9ef55558c1bceb2ab",
+        "before_sha256": "b80b235afd410d154f0fdbf7e2c01937ead23aac93ea13d50148cf82339afdc6",
+        "original_archive": ".runs/h3-forest-exchange/pre-formatting/README.md",
+        "path": "research/partitions/height-three-forest-exchange/README.md",
+        "replacement_count": 1
+      },
+      {
+        "after_sha256": "496228d6e22dedc085481b7b480d79be59b27a79a8bbd2a7c8c155f3cdcaf055",
+        "before_sha256": "176230788a4560f35d8614856a6560adddb3d7d5abf6a1ead433341994c54b45",
+        "original_archive": ".runs/h3-forest-exchange/pre-formatting/review-r1.md",
+        "path": "research/partitions/height-three-forest-exchange/review-r1.md",
+        "replacement_count": 1
+      }
+    ],
+    "snapshots_verified": true,
+    "two_indices_only_insertions": true
+  },
+  "program": "P015",
+  "recorded_utc": "2026-10-24T21:36:17.181063+00:00",
+  "repository": {
+    "base_revision": "a0c897fb7bcb0d01a9ccff5593c0471424255b96",
+    "branch": "codex/height-three-coefficient-unimodality",
+    "editing": "additive P015 phase only; existing P013/P014 work remains uncommitted",
+    "new_commit": false,
+    "origin": "https://github.com/cyamba/yamba-ai-math.git",
+    "pull_request": false,
+    "push": false
+  },
+  "research_target": {
+    "novelty": "unverified",
+    "reported_general_positivity_proof": "not independently rebuilt in full here; no new claim that positivity is open",
+    "statement": "For every height-exactly-three natural unit interval poset, n>=7, lambda=(n-4,3,1), [q^d](1-q)[e_lambda]X_G(x;q)>=0 for 0<=d<=floor(|E|/2).",
+    "status": "conjectural in inherited bounded audit"
+  },
+  "resources": {
+    "artifact_bytes_observed_after_archiving": 1568394,
+    "artifacts_boundary": "prospective output-directory guard, not filesystem quota",
+    "caps": [],
+    "complete_session_wall_time": null,
+    "installations": false,
+    "memory_boundary": "sampled high-water process RSS, not an OS reservation",
+    "money": null,
+    "new_dependencies": false,
+    "one_research_process": true,
+    "paid_compute_job": false,
+    "per_round_limits": {
+      "artifact_bytes": 262144000,
+      "candidates": 5000000,
+      "case_seconds": 120,
+      "extensions": 5000000,
+      "memory_bytes": 2147483648,
+      "round_seconds": 600
+    },
+    "provider_tokens": null,
+    "replaced_cases": [],
+    "timer_boundary": "research loops only; input/protocol verification, source snapshots, final source validation/output, literature reading, engineering tests and reviews excluded",
+    "unmeasured_note": "No total provider usage, reading/review/communication cost or full-session timer is available. Research process seconds and counters do not measure that overhead."
+  },
+  "rounds": [
+    {
+      "all_four_development_complete": true,
+      "coefficient_comparisons": "reuse of saved coloring-checked evidence",
+      "executed_exchange_module_sha256": "edccd5c0756b52c9e7987c1e00b6b4cb7bfb56dbbdcc0e8cb1b112b9edd47364",
+      "heldout_executed": false,
+      "mode": "complete adjacent-grammar development census",
+      "receipt": {
+        "path": ".runs/h3-forest-exchange/r1.json",
+        "sha256": "e2048852a9befc4f5dbac7ff34fe410ae2fe40a433ac9434995659f8bf228690"
+      },
+      "resources": {
+        "candidates": 1635171,
+        "extensions": 229926,
+        "limits": {
+          "artifact_bytes": 262144000,
+          "candidates": 5000000,
+          "case_seconds": 120,
+          "extensions": 5000000,
+          "memory_bytes": 2147483648,
+          "round_seconds": 600
+        },
+        "peak_rss_bytes": 64946176,
+        "process_seconds": 3.056602,
+        "wall_seconds": 3.1159076249750797
+      },
+      "round": 1,
+      "source_snapshot": ".runs/h3-forest-exchange/r1-source",
+      "source_stable": true
+    },
+    {
+      "all_four_development_complete": true,
+      "coefficient_comparisons": "reuse of saved coloring-checked evidence",
+      "executed_exchange_module_sha256": "9ca5b02bf0af251be45c041b436540d35589e5b83bc53153af9b232ffdf09b13",
+      "heldout_executed": false,
+      "mode": "direct all-pairs selector certificates and ordered-partword capacity census",
+      "receipt": {
+        "path": ".runs/h3-forest-exchange/r2.json",
+        "sha256": "8038412514060aced4151f6b08e622f595ba958775276c8ff5c7efaa7d5ddf5b"
+      },
+      "resources": {
+        "candidates": 9912,
+        "extensions": 46798,
+        "limits": {
+          "artifact_bytes": 262144000,
+          "candidates": 5000000,
+          "case_seconds": 120,
+          "extensions": 5000000,
+          "memory_bytes": 2147483648,
+          "round_seconds": 600
+        },
+        "peak_rss_bytes": 32899072,
+        "process_seconds": 0.15831299999999993,
+        "wall_seconds": 0.21788041602121666
+      },
+      "round": 2,
+      "source_snapshot": ".runs/h3-forest-exchange/r2-source",
+      "source_stable": true
+    }
+  ],
+  "sources": {
+    "programs/README.md": "144446db19526531931990e166d341af79dcae1c7cf6051110c135fb0723ddae",
+    "research/partitions/README.md": "43b604685d933c5726270b5e444e88a10600d668a9d984cdd6f30090051325f5",
+    "research/partitions/checks/forest_exchange.py": "9ca5b02bf0af251be45c041b436540d35589e5b83bc53153af9b232ffdf09b13",
+    "research/partitions/height-three-forest-exchange/evidence.json": "40792325b57c3453c8cb6c3f2de7f82214935c89ad84688fe6786da055dccd7c",
+    "research/partitions/height-three-forest-exchange/results.md": "e14ecd95286393a9adc2a48dec6193547afb5eed29d5fae3c0b436e7177e6992",
+    "tests/test_forest_exchange.py": "c59f329699214d9572a53c5b00f8191e3e59289ad0732eaa2a4ef0c5b987e144"
+  },
+  "status": "bounded phase completed; universal research objective not achieved",
+  "workflow": {
+    "adaptation": "After R1, froze direct selector certificates plus ordered-partword necessary-capacity diagnostic and independent component-set product checks before R2. This was not an original preregistered outcome.",
+    "critic_dispatches": 2,
+    "distinct_roles": [
+      "mathematician (root)",
+      "critic (frontier_critic)"
+    ],
+    "extra_research_execution": false,
+    "final_synthesis_correction": "Draft results table confused aggregated distinct product terms (20,6,20) with compatible component-set assignments (31,7,23); corrected from saved receipts and final review. No research data or input changed.",
+    "formal_rounds": 2,
+    "grammar_repairs": 1,
+    "manual_stage_proxy_units": 16,
+    "mode": "manual lead/critic execution using repository program, fleet plan and filled dependent packets; later offline response replay",
+    "nested_agents": false,
+    "original_packet": {
+      "path": ".runs/h3-forest-exchange/harness-packet/receipt.json",
+      "sha256": "6d55449e7b57650ddda2a47b1df23c86935cc49b5eb46c8ea2d6f6708592580c"
+    },
+    "original_packet_status": {
+      "attempted_cost_units": 0,
+      "backend": "manual",
+      "errors": {},
+      "note": "Packets are prepared only. Dependent packets contain null upstream results; an orchestrator must insert completed predecessor results before dispatch.",
+      "planned_cost_units": 16,
+      "research_validated": false,
+      "run_id": "harness-packet",
+      "states": {
+        "r1--challenge": "pending",
+        "r1--propose": "pending",
+        "r1--revise": "pending",
+        "r2--challenge": "pending",
+        "r2--propose": "pending",
+        "r2--revise": "pending"
+      },
+      "status": "awaiting_execution"
+    },
+    "planned_proxy_units": 16,
+    "precontract_critic_dispatches": 0,
+    "proxy_meaning": "sum of declared stage dispatch proxies; not tokens, money, independence of errors or scientific quality",
+    "repair": "adjacent labels to arbitrary pairs, same validity/payload/sign/full-degree filters",
+    "replay": {
+      "path": ".runs/h3-forest-exchange/harness-replay/receipt.json",
+      "sha256": "5a5fefcc819120b714d4812850ae53187c634f271b3770e300b4ac5947cbd705"
+    },
+    "replay_assurance": "offline input/response validation of actual manual stage summaries; not model-backend research dispatch or theorem certification",
+    "replay_status": {
+      "attempted_cost_units": 16,
+      "backend": "replay",
+      "elapsed_seconds": 0.013,
+      "errors": {},
+      "note": "Replay is offline input validation. Command completion certifies protocol execution, not truth, novelty, proof validity, or artifact existence. Token counts are adapter-reported, not independently metered.",
+      "planned_cost_units": 16,
+      "reported_usage": null,
+      "research_validated": false,
+      "run_id": "harness-replay",
+      "states": {
+        "r1--challenge": "completed",
+        "r1--propose": "completed",
+        "r1--revise": "completed",
+        "r2--challenge": "completed",
+        "r2--propose": "completed",
+        "r2--revise": "completed"
+      },
+      "status": "completed_execution",
+      "usage_reporting_complete": false
+    },
+    "stages": [
+      {
+        "agent_id": "mathematician",
+        "cost_units": 3,
+        "depends_on": [],
+        "handoff": null,
+        "id": "r1--propose",
+        "manual_result": {
+          "path": ".runs/h3-forest-exchange/manual-results/r1--propose.json",
+          "sha256": "274531c1da59b9cd667df07aae3df98c1ffbd097e28466834839584218125cb5"
+        },
+        "requires": [
+          "formalization"
+        ],
+        "round": 1,
+        "stage_id": "propose"
+      },
+      {
+        "agent_id": "critic",
+        "cost_units": 2,
+        "depends_on": [
+          "r1--propose"
+        ],
+        "handoff": {
+          "path": ".runs/h3-forest-exchange/manual-handoffs/r1--challenge.json",
+          "sha256": "0c95898565b41e1693d4a413639fb6ebdbcf3e14206127e857e540b84d1c77db"
+        },
+        "id": "r1--challenge",
+        "manual_result": {
+          "path": ".runs/h3-forest-exchange/manual-results/r1--challenge.json",
+          "sha256": "570dd09f5c96fd5fb14b192d7346fb891348b6022bea4b3c3c92f422dba27384"
+        },
+        "requires": [
+          "falsification"
+        ],
+        "round": 1,
+        "stage_id": "challenge"
+      },
+      {
+        "agent_id": "mathematician",
+        "cost_units": 3,
+        "depends_on": [
+          "r1--challenge"
+        ],
+        "handoff": {
+          "path": ".runs/h3-forest-exchange/manual-handoffs/r1--revise.json",
+          "sha256": "5edcd15e79b87847370902b93fcd596ca618a07f10bfd433f2c81d851a31ba86"
+        },
+        "id": "r1--revise",
+        "manual_result": {
+          "path": ".runs/h3-forest-exchange/manual-results/r1--revise.json",
+          "sha256": "25a2e83d402ae877ab4eaa7bf120dad11ce0d28fa6ff4cb18b5a3d73bd845103"
+        },
+        "requires": [
+          "formalization"
+        ],
+        "round": 1,
+        "stage_id": "revise"
+      },
+      {
+        "agent_id": "mathematician",
+        "cost_units": 3,
+        "depends_on": [
+          "r1--revise"
+        ],
+        "handoff": {
+          "path": ".runs/h3-forest-exchange/manual-handoffs/r2--propose.json",
+          "sha256": "35baf8ae02428bf49623d4365885b2094e2a41e45817091f9f8737bea9c6654e"
+        },
+        "id": "r2--propose",
+        "manual_result": {
+          "path": ".runs/h3-forest-exchange/manual-results/r2--propose.json",
+          "sha256": "b5d6010755e9061b74c8dc7c54210959693444fff056039f7d17bb99e385600e"
+        },
+        "requires": [
+          "formalization"
+        ],
+        "round": 2,
+        "stage_id": "propose"
+      },
+      {
+        "agent_id": "critic",
+        "cost_units": 2,
+        "depends_on": [
+          "r2--propose"
+        ],
+        "handoff": {
+          "path": ".runs/h3-forest-exchange/manual-handoffs/r2--challenge.json",
+          "sha256": "ba5b62bbe63f0bb878b53645320453636317ba6046da5a835d7089e091de6689"
+        },
+        "id": "r2--challenge",
+        "manual_result": {
+          "path": ".runs/h3-forest-exchange/manual-results/r2--challenge.json",
+          "sha256": "8b053033438e5dd1be40f223a04dde651a8dae733f5a0d8d0363601622c65c52"
+        },
+        "requires": [
+          "falsification"
+        ],
+        "round": 2,
+        "stage_id": "challenge"
+      },
+      {
+        "agent_id": "mathematician",
+        "cost_units": 3,
+        "depends_on": [
+          "r2--challenge"
+        ],
+        "handoff": {
+          "path": ".runs/h3-forest-exchange/manual-handoffs/r2--revise.json",
+          "sha256": "fde11e3a9564cd132b25c457a4b559cf63e79d3e9e953e1d9278a3a90671d0bf"
+        },
+        "id": "r2--revise",
+        "manual_result": {
+          "path": ".runs/h3-forest-exchange/manual-results/r2--revise.json",
+          "sha256": "ba9c30761ac3f146033932a441fc42ab7ff259ec83b7dee87e68e1739640c9e9"
+        },
+        "requires": [
+          "formalization"
+        ],
+        "round": 2,
+        "stage_id": "revise"
+      }
+    ],
+    "unresolved_disagreement": "No material proof error reported by either review. Universal pivot and novelty remain explicitly unresolved."
+  }
+}

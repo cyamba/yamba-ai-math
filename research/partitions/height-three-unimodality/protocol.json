@@ -1,0 +1,262 @@
+{
+  "development": [
+    [
+      2,
+      4,
+      4,
+      6,
+      7,
+      7,
+      7
+    ],
+    [
+      3,
+      3,
+      4,
+      4,
+      7,
+      7,
+      7
+    ],
+    [
+      3,
+      4,
+      4,
+      4,
+      7,
+      7,
+      7
+    ],
+    [
+      2,
+      6,
+      6,
+      6,
+      6,
+      6,
+      7
+    ],
+    [
+      3,
+      5,
+      5,
+      7,
+      7,
+      7,
+      8,
+      8
+    ],
+    [
+      2,
+      5,
+      5,
+      5,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      4,
+      6,
+      6,
+      6,
+      6,
+      6,
+      8,
+      8
+    ],
+    [
+      4,
+      5,
+      5,
+      5,
+      7,
+      7,
+      8,
+      8
+    ]
+  ],
+  "heldout": [
+    [
+      3,
+      3,
+      3,
+      6,
+      6,
+      6,
+      9,
+      9,
+      9
+    ],
+    [
+      3,
+      3,
+      4,
+      6,
+      6,
+      7,
+      9,
+      9,
+      9
+    ],
+    [
+      3,
+      3,
+      3,
+      6,
+      6,
+      6,
+      10,
+      10,
+      10,
+      10
+    ],
+    [
+      3,
+      3,
+      4,
+      7,
+      7,
+      7,
+      8,
+      10,
+      10,
+      10
+    ]
+  ],
+  "limits": {
+    "artifact_bytes": 262144000,
+    "candidates": 5000000,
+    "case_seconds": 120,
+    "extensions": 5000000,
+    "memory_bytes": 2147483648,
+    "round_seconds": 600
+  },
+  "primitives": [
+    "same-word reblocking",
+    "comparable-prefix insertion/all exact extractions",
+    "one adjacent incomparable swap then reblocking"
+  ],
+  "program": "P012",
+  "raw_order": [
+    "shape",
+    "sigma",
+    "rows",
+    "epsilon"
+  ],
+  "round_two": "after certified tableau obstruction compare complete forest triples; no new tableau grammar",
+  "schema_version": 1,
+  "selection": "minimum development unpaired negatives; ties by selector id; capped development ineligible",
+  "selectors": [
+    {
+      "endpoint": "first",
+      "id": 0,
+      "priority": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "endpoint": "last",
+      "id": 1,
+      "priority": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "endpoint": "first",
+      "id": 2,
+      "priority": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "endpoint": "last",
+      "id": 3,
+      "priority": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "endpoint": "first",
+      "id": 4,
+      "priority": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "endpoint": "last",
+      "id": 5,
+      "priority": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "endpoint": "first",
+      "id": 6,
+      "priority": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "endpoint": "last",
+      "id": 7,
+      "priority": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "endpoint": "first",
+      "id": 8,
+      "priority": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "endpoint": "last",
+      "id": 9,
+      "priority": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "endpoint": "first",
+      "id": 10,
+      "priority": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "endpoint": "last",
+      "id": 11,
+      "priority": [
+        2,
+        1,
+        0
+      ]
+    }
+  ],
+  "target": "(n-4,3,1), height exactly 3"
+}
