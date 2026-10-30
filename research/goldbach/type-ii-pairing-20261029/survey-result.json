@@ -1,0 +1,18 @@
+{
+  "summary": "Inspected the primary signed-cofactor enlargement, determinant/block and endpoint/removal interfaces. The source uses a nonnegative all-integer square rather than an unproved positive-target cutoff inside the centered operator. Its H2-conditional TypeII claim must be reconstructed from the actually accepted moment and exact normalization identities; the major comparison remains a separate unproved input.",
+  "claims": [
+    {
+      "text": "The inspected source explicitly uses signed cofactor enlargement, labelled lattice blocks and ambient restricted-root Gram pairing.",
+      "status": "established",
+      "source": "https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/mobius-goldbach-shift/source/main.tex"
+    },
+    {
+      "text": "The complete specified quadratic-difference bound and actual-prime consequences require the accepted moment scope and a new checked pairing/removal derivation.",
+      "status": "unverified",
+      "source": "research/goldbach/type-ii-pairing-20261029/brief.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/type-ii-pairing-20261029/survey.md"
+  ]
+}

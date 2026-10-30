@@ -1,0 +1,18 @@
+{
+  "summary": "Inspected source domain projections, endpoint norm bounds and the different arithmetic moment statement. Proposed a trace-compression route and an enlarged determinantH root population; neither is assumed from the source or the prior unit-filtered count. The finite Schatten comparison and nonunit-H inverse-sum gcd costs must be proved.",
+  "claims": [
+    {
+      "text": "The inspected source uses position projections in auxiliary operator estimates and a separate arithmetic root-moment replacement.",
+      "status": "established",
+      "source": "https://arxiv.org/html/2610.20242v1"
+    },
+    {
+      "text": "The proposed enlarged trace bridge and root count require actual proofs and separate review.",
+      "status": "unverified",
+      "source": "research/goldbach/trace-extension-20261029/brief.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/trace-extension-20261029/survey.md"
+  ]
+}

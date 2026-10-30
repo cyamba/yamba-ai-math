@@ -1,0 +1,107 @@
+{
+  "objective": "Goldbach proof or substantive independently checked breakthrough on the suggested approach",
+  "status": "active",
+  "achieved": false,
+  "current_turn_classification": "progress: exact actual-vector and signed fractional decomposition plus uniform principal-energy falsifier require a genuinely nonzero-centered new estimate",
+  "accepted_evidence": "actual author derivation, fresh distinct substantive review and original-author revision; no formal or external peer verification",
+  "remaining": [
+    "true centered polynomial energy, CENTERED018 actual distinct review executing",
+    "complete fractional comparison and polynomial Type I/decomposition",
+    "pointwise original h1 prime margin",
+    "novelty and stronger breakthrough classification",
+    "Goldbach"
+  ],
+  "next_actual_stages": [
+    "CENTERED018 distinct actual challenge",
+    "CENTERED018 original-author revision",
+    "root integration and further original-boundary mathematics"
+  ],
+  "prior_hash_audit": [
+    {
+      "manifest": "research/goldbach/continuation-20261029/input-provenance.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/complement-ratios-20261029/artifact-manifest.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/continuation-20261029/artifact-manifest.json",
+      "files_checked": 31,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/moving-sectors-20261029/artifact-manifest.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/operator-moments-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/polynomial-cofactors-20261029/artifact-manifest.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/prime-labels-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/projective-roots-20261029/artifact-manifest.json",
+      "files_checked": 20,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/reflected-energy-20261029/artifact-manifest.json",
+      "files_checked": 23,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/small-radical-assessment-20261029/artifact-manifest.json",
+      "files_checked": 12,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/switching-20261029/artifact-manifest.json",
+      "files_checked": 23,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/trace-extension-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/type-i-decomposition-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/type-ii-pairing-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    },
+    {
+      "manifest": "research/goldbach/weight-removal-20261029/artifact-manifest.json",
+      "files_checked": 22,
+      "mismatches": []
+    }
+  ],
+  "repository_checks": "passed",
+  "harness_validate": "passed",
+  "last_full_suite": {
+    "path": "research/goldbach/polynomial-cofactors-20261029/repository-tests.json",
+    "tests_run": 116,
+    "failures": 10,
+    "errors": 3,
+    "note": "existing unrelated failures; no new functional code or mathematical experiment in017"
+  },
+  "usage": "stage tokens and monetary costs unknown",
+  "blocked_audit": "no repeated external blocker; new centered construction and review continue"
+}

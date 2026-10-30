@@ -1,0 +1,49 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/brief.md",
+      "sha256": "3bb692b7e99d0c2866f7985671261dd591e50e6522cd2676b9a093bde3c9d29e"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/challenge-result.json",
+      "sha256": "99bbdec1a73595c46520e12493ae3f426ab5b026807fadcbfb48fab5d38b8401"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/host-execution.json",
+      "sha256": "de6d8002fa759b709b4444d0f2d46f85ad7d8756fd1d8fe2ab6387f26425e0d5"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/NEXT_SESSION.md",
+      "sha256": "2329ed8c3f1079e347218b5a816cfae0aa82024ddb9504d6cd345eb9c9ad687d"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/objective-audit.json",
+      "sha256": "ce0cfa2ba9f8be97149d98704847ad5693383a249c502dd8148517e0b0186be9"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/propose-result.json",
+      "sha256": "0cc1428f60dd521482a5ff8943fb524d360efc21e468e5fd5db9e205368baf41"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/result.md",
+      "sha256": "277d7ed2dbb968cb766643bacb19c229ac74024b04c7818db3db92eeea8cdcab"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/review.md",
+      "sha256": "08d1341da8fc27c33cfe3bc33009161aa7f99baae7eb634ac3ecc7f7ec612a67"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/revise-result.json",
+      "sha256": "efe459531d60d62968049087f50102b913df6762dff1e788f2bd6240430e42a7"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/revision.md",
+      "sha256": "3da5778cd7a6a00b9b5d8ad366036d1db5d41b64081e51aaf60b6d8c08631117"
+    },
+    {
+      "path": "research/goldbach/factorable-boundary-20261029/statement.md",
+      "sha256": "a72b8e79ec116a0af41f876a619e749f5d426ff700c00ecab809906a65993c70"
+    }
+  ]
+}

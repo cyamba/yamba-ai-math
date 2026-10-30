@@ -1,0 +1,36 @@
+{
+  "summary": "Accepted the separate critic and finite-check branches without altering frozen inputs. The defined complete-pullback centered operator has the reviewed exact unit-sector conjugacy, discrete weights, complement-ratio transport, adjoints and moments. Coprimality carry and original small-label primitivity retain their stated hypotheses. The elementary density and error formulas remain supported, with only an aggregate relative asymptotic in the stated polynomial-size regime. Retaining the exact domain sharpens fixed-transition exact partners to at most two for general H, and at most one for even H when both first coordinates are units; the supplemental 103228-pair unit check supports this argument. The main checker used a larger partner pool and legitimately observed two. The pullback introduces denominator-H arcs whose arithmetic major part remains unestimated. No ordinary-arc extension, list-constrained root-moment bound, actual-prime cancellation, full source validation, Goldbach proof, breakthrough or novelty claim is obtained. RATIOS-007 remains an in-progress follow-up, not an accepted dependency. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The reviewed full-pullback centered operator has the exact weighted unitary sector decomposition, complement-ratio multiplication by H, adjoints and finite moments under the stated unit and domain hypotheses.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/revision.md"
+    },
+    {
+      "text": "The reviewed elementary per-sector and aggregate primitive counts retain their stated H-dependent errors; exact-domain fixed-transition partners number at most two, and at most one for even H with unit-first-coordinate endpoints.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/revision.md"
+    },
+    {
+      "text": "The bounded main checks passed, and the supplemental even-H both-unit-first-coordinate check examined 103228 pairs, observed at most one partner and reported no failures.",
+      "status": "empirical",
+      "source": "research/goldbach/moving-sectors-20261029/edge-unit-results.json"
+    },
+    {
+      "text": "The assertion that retaining ordinary small-denominator arcs automatically gives the same cross-sector vanishing is refuted by an explicit nonzero integral witness.",
+      "status": "refuted",
+      "source": "research/goldbach/moving-sectors-20261029/revision.md"
+    },
+    {
+      "text": "The changed major-arc arithmetic, actual-prime centered-operator cancellation and list-constrained root moments, source-theorem extension, novelty and a Goldbach solution remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/moving-sectors-20261029/revision.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/moving-sectors-20261029/revision.md",
+    "research/goldbach/moving-sectors-20261029/review.md",
+    "research/goldbach/moving-sectors-20261029/finite-results.json",
+    "research/goldbach/moving-sectors-20261029/edge-unit-results.json"
+  ]
+}

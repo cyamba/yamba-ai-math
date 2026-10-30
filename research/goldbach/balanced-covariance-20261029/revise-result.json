@@ -1,0 +1,43 @@
+{
+  "summary": "BALANCED023 final round verdict: incomplete. The independent critic's three substantive gaps are accepted explicitly: the genuine second-prime-weighted discrepancy and matching wheel reference, the centered quotient-Mobius norm, and weighted branch/prefix transfer. The supported prime-power correction and exact two-way dispersion equivalence are retained. Clean full semiprime formulas correct six carriage-return-corrupted prime markers in the frozen proposal without modifying that file. No useful signed covariance estimate, semiprime margin, Goldbach breakthrough or full-goal completion is claimed. No CHEN024 result or stronger input is imported.",
+  "claims": [
+    {
+      "text": "The populated revise packet has the actual critic result upstream. The frozen proposal, result, review and critic result retain their recorded hashes. Six bare carriage-return bytes in frozen statement Section4 are a formatting defect; revision Section5 restates all semiprime formulas with explicit prime text markers, including p=D, p=q, all supports and the q-weighted Cauchy energy.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/revision.md, Sections1 and5; local byte/hash checks and complete coefficient enumeration; artifact checks are not proof certificates"
+    },
+    {
+      "text": "Support, zero rows, full wheel coprimality of surviving r, all four covariance terms and both branch cross terms are retained. Integer-residue and unit-residue local factors remain distinct finite identities, without a finite-interval genuine-prime correlation estimate.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/revision.md, Section2; supported by independent review.md"
+    },
+    {
+      "text": "The available BV partial-summation average retains the actual second-prime weight and gives only O(N^2 X/L^(A-4)+N^2 L^8) on its explicitly covered dyadic range. The critic's first gap is accepted: a negligible weighted discrepancy and matching finite-interval wheel reference terms remain unproved, and the whole support exceeds the imported BV cutoff.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/revision.md, Section3; the insufficient upper bound imports only exact Koukoulopoulos(26.1) in its stated range"
+    },
+    {
+      "text": "For E=F_Lambda-F>=0 on the unchanged support, sum E=O(sqrt(N)L^2) and sum q E^2=O(N^(3/2)L^3)=o(M_N^2). Complete large-prime-factor-slot counting, including repetitions, and the reverse triangle inequality prove the exact two-way equivalence of the theta and von Mangoldt dispersion targets. The equivalence establishes neither target.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/revision.md, Section4, equations(R7)-(R8); independent critic reconstruction retained"
+    },
+    {
+      "text": "The signed divisor and integer-cofactor quotient-Mobius identities are exact with all endpoints and k=1 retained. The critic's second gap remains open: no estimate of the actual centered norm(R11) is supplied by these identities or by the prime-count BV input.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/revision.md, Section4, equations(R9)-(R11)"
+    },
+    {
+      "text": "Distinct rough semiprimes have long coefficient -(3t^2-2t^3) for p<=D and -1 for p>D; squares have coefficient -1/2. The actual balanced semiprime contribution and its enlarged energy retain the varying coefficient w_D and q weight. The critic's third gap is accepted: combined unweighted pilot control does not supply the needed actual branch/prefix estimates, weighted energy or complementary-range ledger.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/revision.md, Section5, equations(R12)-(R19); clean formulas restate supported accounting only"
+    },
+    {
+      "text": "The uniform dispersion target, a useful signed weighted semiprime margin, complete long-signed hypothesis and user's Goldbach objective remain unproved after the one pair8 round. No eventual target has been refuted. Novelty is unverified, and no concurrent CHEN024 result or stronger distribution input is used.",
+      "status": "unverified",
+      "source": "research/goldbach/balanced-covariance-20261029/revision.md, verdict and final disposition"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/balanced-covariance-20261029/revision.md"
+  ]
+}

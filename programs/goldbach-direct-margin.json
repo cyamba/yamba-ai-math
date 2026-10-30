@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-DIRECT-021",
+  "title": "A direct one-sided signed rough-pair margin",
+  "objective": "Attempt an actual parity-sensitive one-sided estimate for the original signed rough-pair target, using the completed evidence to avoid false polynomial lifts and composite-input substitutions; retain any proved new arithmetic lemma or a precise first failure.",
+  "fleet": "pair",
+  "briefs": ["research/goldbach/direct-margin-20261029/brief.md"],
+  "constraints": {"max_agents": 2, "max_workers": 2, "max_cost_units": 8, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["At most two direct pointwise mechanisms", "A proved load-bearing arithmetic statement or exact failed inequality", "Full original prime/semiprime/triple and error accounting", "Distinct challenge and bounded revision"],
+  "success_criteria": ["The true one-sided prime target remains the research objective", "No average or composite-only bound is promoted to a pointwise margin", "Every character or operator estimate preserves its actual support and normalization", "A conditional restatement of Goldbach is not called a breakthrough"],
+  "stop_conditions": ["One pair round within8 proxy units", "No paid calls, publication, external messages or unbounded computation", "No goal completion without full independent mathematical and scope verification"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-PAIRING-011",
+  "title": "Reflected TypeII cofactor support, pairing and auxiliary reassembly",
+  "objective": "Attempt a complete reflected TypeII quadratic-difference estimate from the actually reviewed moment, with exact cofactor support, endpoint pairing, bad-state removal and auxiliary-prime normalization, preserving every remaining prime/Goldbach obligation.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/type-ii-pairing-20261029/brief.md", "research/goldbach/type-ii-pairing-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Exact signed cofactor enlargement and overlap bounds", "Ambient endpoint pairing with complex coefficients", "One-edge good-state removal proof", "Artificial shared-prime reassembly with full normalizers", "Separate critic and exact finite checks", "Quadratic difference estimate or first precise unproved step"],
+  "success_criteria": ["The moment input is actually accepted or retained as conditional", "No unsupported positivity cutoff or H loss is hidden", "All ordered-list and measure factors are explicit", "The full Goldbach goal is not replaced by TypeII alone"],
+  "stop_conditions": ["One bounded theorem round within20 proxy units", "No provider billing or external mutable action", "Preserve any missing removal/normalization bound rather than assume it"]
+}

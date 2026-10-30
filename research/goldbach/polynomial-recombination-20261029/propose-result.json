@@ -1,0 +1,34 @@
+{
+  "summary": "Actual RECOMBINE020 author stage: Candidate1 proves the exact polynomial Vaughan collapse, every <=3-factor profile cancellation, both small-base and higher-prime-power corrections, unit restoration and endpoint log deweighting. Since U,V0<z, T1 has only d=1, T2 vanishes, c_V0=log n on rough support, and T3 has exact coefficient Lambda(w)-log w. All composite original-variable profiles cancel, with prime powers removed by the final correction. The accepted018 balanced prime-factor energy concerns a composite original variable and supplies no positive surviving prime term under this recombination. Candidate2 refutes a precise localized/profilewise one-sided transfer R_b>=c B_b with the exact H128, w25, a103 square profile; it is not a counterexample to actual primes,018 or Goldbach. The accepted triple upper bound and nonzero centers are retained, but no actual original pointwise prime margin is proved. Usage is unknown; no new search, experiment, paid call, publication, external message or goal completion.",
+  "claims": [
+    {
+      "text": "For U=V0=y^(1/5)<z on an honest original product dyad, the polynomial-sifted Vaughan identity has T2=0, T1=sum R_z(w)log(w)g(w), c_V0(n)=log n on rough support, and T3 coefficient Lambda(w)-log w. The complete profile table includes prime, distinct semiprime, square, distinct triple, repeated mixed triple and cube.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-recombination-20261029/statement.md, Candidate1, (5)-(9)"
+    },
+    {
+      "text": "Restoring small prime-power bases and removing all higher powers yields the exact original-prime identity (11)-(12). All non-prime-power composite profiles cancel between T1 and T3, and prime squares/cubes cancel after the higher-power correction. Unit, squareful-complement and small-original-prime losses are below H/log^2 H; signed logarithmic deweighting uses the exact endpoint partial-summation formula.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-recombination-20261029/statement.md, (10)-(15)"
+    },
+    {
+      "text": "The proposed profilewise one-sided transfer R_b(H)>=c B_b(H), c>0, from the selected positive balanced composite contribution to the localized original prime count is false. At H128, alpha3/10, b=indicator(w25), r=s5, a103 and a valid cutoff positive at309/128, R_b=0 but B_b>0; exact Vaughan and higher-power correction cancel that original-variable square profile.",
+      "status": "refuted",
+      "source": "research/goldbach/polynomial-recombination-20261029/statement.md, Candidate2, (17)-(18)"
+    },
+    {
+      "text": "The accepted018 nonprincipal energy saving retains its true balanced k1 scope and its exact principal center. It does not evaluate the full linear T3, all its rectangles, the changed polynomial Type I correlation, or the surviving original-prime cell. No theorem of parallel019 is assumed.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-recombination-20261029/statement.md, support and exact recombination (14)-(16)"
+    },
+    {
+      "text": "A target-uniform parity-sensitive one-sided original-prime estimate at the H/log^2 H scale, a full signed comparison with adequate remainder, closest-work novelty, global breakthrough classification and Goldbach remain unestablished. The abstract semiprime-only profile model demonstrates that the available profile identities, nonzero centers and triple upper bound alone imply no positive prime margin.",
+      "status": "unverified",
+      "source": "research/goldbach/polynomial-recombination-20261029/statement.md, (19), missing inequality and final limits"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/polynomial-recombination-20261029/statement.md",
+    "research/goldbach/polynomial-recombination-20261029/propose-result.json"
+  ]
+}

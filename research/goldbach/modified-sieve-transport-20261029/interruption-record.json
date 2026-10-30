@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-30",
+  "program": "GOLDBACH-TRANSPORT-025",
+  "observed_authoritative_state": "collaboration.list_agents returned root only; prior /root/sieve_transport handle is absent",
+  "filesystem_state": "brief, host record and source provenance exist; no statement.md or propose-result.json exists",
+  "original_prepared_program_snapshot": ".runs/goldbach-transport-025-manual-20261029/program.json",
+  "original_prepared_program_sha256": "557b40b5958d39528103fb097fe5fd341c6ed1972597e2fec38d7e9b676317d7",
+  "interrupted_dispatch": {
+    "stage": "propose",
+    "agent": "/root/sieve_transport",
+    "attempted_proxy_units": 3,
+    "status": "interrupted without saved result",
+    "tokens": "unknown",
+    "money": "unknown",
+    "partial_messages": "unverified working notes only; none accepted as a completed proof"
+  },
+  "recovery": "resume same propose responsibility from saved inputs with fresh actual Mathematician, followed by distinct critic and original recovery author revision",
+  "resource_amendment": {
+    "pair_units": 8,
+    "completed_root_primary_units": 2,
+    "interrupted_dispatch_units": 3,
+    "total_host_boundary": 13,
+    "reason": "count failed/interrupted dispatch rather than silently erase it; user persistent research scope has no token or cost-unit limit"
+  },
+  "not_a_new_round": true,
+  "no_new_source_or_helper": true
+}

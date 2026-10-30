@@ -1,0 +1,42 @@
+{
+  "summary": "Integrated the actual label author, separate critic, independent finite checks, revision and separately reviewed parameter supplement. Exact finite reconstruction and scalar-padding identities hold with the corrected collision qualification. Available source bounds fail the attempted small-K polynomial-label transfer, but no actual norm lower bound or general impossibility follows. The correctly centered target-uniform arithmetic estimate remains unproved. A bounded numerical falsifier screen found no candidates and proves no infinite claim. Goldbach and a substantive demonstrated breakthrough remain unachieved; the next real proof attempt is moving-target congruence-sector conjugacy and a transformed-domain estimate.",
+  "claims": [
+    {
+      "text": "The bounded-label prime reconstruction and stated correction/deweighting identities have complete arguments and separate review.",
+      "status": "proved",
+      "source": "research/goldbach/prime-labels-20261029/revision.md"
+    },
+    {
+      "text": "External q-independent padding gives a scalar multiple of the original correlation; zero normalization cannot be inverted.",
+      "status": "proved",
+      "source": "research/goldbach/prime-labels-20261029/revision.md"
+    },
+    {
+      "text": "The displayed source ranges and parameter budgets do not certify the attempted polynomial-label transfer; no lower bound for actual operator norms is established.",
+      "status": "proved",
+      "source": "research/goldbach/prime-labels-20261029/review.md"
+    },
+    {
+      "text": "Exact finite label checks passed on the recorded domains.",
+      "status": "empirical",
+      "source": "research/goldbach/prime-labels-20261029/finite-results.json"
+    },
+    {
+      "text": "The numerical sign screen found no nonnegative candidate through its preregistered finite boundary; it is not an exact all-range or infinite certificate.",
+      "status": "empirical",
+      "source": "research/goldbach/prime-labels-20261029/sign-search-results.json"
+    },
+    {
+      "text": "Goldbach, the needed centered parity estimate, full source validation, novelty and a substantive demonstrated breakthrough remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/prime-labels-20261029/result.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/prime-labels-20261029/result.md",
+    "research/goldbach/prime-labels-20261029/revision.md",
+    "research/goldbach/prime-labels-20261029/review.md",
+    "research/goldbach/prime-labels-20261029/finite-results.json",
+    "research/goldbach/prime-labels-20261029/NEXT_SESSION.md"
+  ]
+}

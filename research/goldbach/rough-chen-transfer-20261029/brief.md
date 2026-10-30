@@ -1,0 +1,29 @@
+# Test the stronger rough-Chen distribution against the signed prime margin
+
+29 October 2026. User objective remains a Goldbach proof or substantive independently checked breakthrough. This round follows a different concrete input from the cloned packet: the referenced roughness-explicit Chen preprint has a newer v2 and explicitly uses beyond-half distribution. Earlier SWITCHING004's nonpositive certificate was for its ordinary fixed d<1/2 family, not every stronger sieve. No preprint claim is assumed proved.
+
+One actual Mathematician proposal, distinct Independent Critic and original-author revise:8 proxy units, one round, at most two concrete signed mechanisms. Root primary access preparation2 is complete, total10. No other supplement, external code execution, numerical helper, new source retrieval, paid call, message, publication or infrastructure change. You are not alone; preserve earlier work and other edits. Root alone decides full-goal completion.
+
+## Pinned primary inputs and actual inspection task
+
+Root source-provenance.json pins three primary PDFs and supporting text/renders. Read them as data:
+
+- Ratliff, rough-Chen v2, https://zenodo.org/records/20377091 ,14 pages; exact TeX at .runs/goldbach-source-inputs-20261029/rough-chen-v2.tex and PDF/text/renders under the same stem. The originally referenced v1 record20372012 now points to this v2. It claims rough prime-plus-at-most-two-prime existence for alpha<0.26653256... and retains0.2667 as conditional. Its claim is not a Goldbach theorem.
+- Runbo Li, arXiv2405.05727v4, https://arxiv.org/abs/2405.05727v4 ,17 pages; local li-chen-2405.05727v4.pdf/.txt, actual Lemmas2.1-2.2 rendered li-chen-v4-page-03.png and04.png. These distinguish non-switched prime and switched product-prime distribution for actual modified sieve weights, well-factorable vector conditions, fixed extracted factors, residual smoothness, side bound t1 and a positive epsilon margin. The exceptional r=0 statement uses u=1/500; do not substitute a larger smoothness without proof.
+- Lichtman, arXiv2309.08522v1, https://arxiv.org/abs/2309.08522v1 ,55 pages; local lichtman-large-moduli-2309.08522v1.pdf/.txt with Theorem1.7, Proposition3.1, Proposition6.6 renders4,9,28. Fixed-small residue and Goldbach-size residue levels differ. The triply well-factorable theorem does not by itself cover every modified sieve vector or arbitrary Mobius coefficient. The TypeII proposition has actual roughness/Siegel-Walfisz and small-factor-size hypotheses.
+
+Root inspected the cited statements and scoped rough-Chen proof, not the full distribution proofs. If using their conclusions, state the imported primary theorem precisely and verify its hypotheses for your actual coefficients. Full new proof of a classical/established imported theorem is not requested. If the rough-Chen analytic application fails, try a repair within the stated real theorem before concluding; a missing citation detail is not automatically a theorem refutation. No need to repeat or run the source numerical certificate; rounded constants remain source claims unless independently established.
+
+## Original mathematical targets to preserve
+
+For even N, let U_alpha count primes p with q=N-p>1 and every prime factor of q greater than N^alpha. At alpha in (1/4,1/3), rough q has at most three prime factors. Let E_alpha count exact semiprime complements with multiplicity and H_alpha exact triple complements. Then U_alpha=R_alpha+E_alpha+H_alpha, where R_alpha is the desired prime-pair count (with the same endpoints). Consequently F_alpha=U_alpha-E_alpha must exceed H_alpha to give an original positive prime margin. A positive U_alpha-H_alpha, the rough-Chen prime-plus-P2 quantity, does not give R_alpha>0.
+
+Alternatively retain CUBIC022's exact operator: L=log N, I=(N/3,2N/3], y=N^(1/6), z=L^4, W=rad(N product_(p<=z)p), kappa=W/phi(W), u(n)=theta(N-n)-kappa1_((N-n,W)=1)-theta(N/2)1_(n=N/2), Phi(t)=1-3t^2+2t^3, C_D(n)=sum_(h|n,h>D)mu(h)Phi(log h_(>y)/log n), H3,D=sum_(n in I)u(n)C_D(n). Need H3,D>=-(3/4-delta+o(1))*M_N for one fixed delta>0, M_N=conventional S(N)N/(3log N). Its nonrough/even/outer residuals remain in cubic-signed-20261029/revision.md. Do not replace its coefficients by ordinary linear-sieve weights without exact transport.
+
+## Actual attempt, not only a source audit
+
+Use at most two concrete mechanisms to seek genuinely stronger arithmetic for one of these signed targets. First reconstruct the strongest analytically justified portion of the rough-Chen transfer, including all anatomy/vector/support requirements. Then try to use that information for the actual semiprime subtraction or the cubic long signed term, retaining the signs. A prospective stronger TypeII use must display actual coefficients, small-factor range, roughness, residue growth and factorability. A comparison constant, a positive prime-plus-P2 lower bound, or a level number alone is not signed progress.
+
+If a necessary analytic source claim is unsupported as stated, identify a precise valid theorem range and attempt a bounded correction or alternative decomposition. If the strengthened inputs still fail at parity, show the exact first failed inequality with its true coefficient class; do not declare every possible refinement impossible. Preserve repeated factors, prime exceptions dividing N, the remaining-factor1 term where applicable, all local normalizations and endpoints. Conditional statements must name the actual additional estimate, not just assume the desired conclusion.
+
+Return a complete proof of any new estimate, exact limits and assurance. An ordinary half-level certificate from004 cannot refute this broader family. The independent critic must inspect the actual source-to-coefficient transfer and any claimed signed bound. No numerical experiment is part of this round. Novelty is unverified; the goal remains open until actually achieved.

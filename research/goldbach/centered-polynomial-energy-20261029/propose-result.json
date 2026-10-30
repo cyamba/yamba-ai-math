@@ -1,0 +1,34 @@
+{
+  "summary": "Two author-proved candidates pending distinct review: all-precision nonprincipal energy saving on powers of two for the exact balanced polynomial-sifted prime arrays, retaining the exact principal center, and an explicit positive compact-time principal Mellin asymptotic. The main candidate also derives uniformity for a common |v|<=log^C H phase and arbitrary real marking lambda at k=1 with trivial fixed character twists. The proof explicitly excludes every possible real exception in Iwaniec's inspected region by positive grouped L-series, reconstructs endpoint Perron using an elementary analytic-log derivative bound, and assembles with exact below-H character orthogonality. No full signed comparison, Type I, Goldbach or novelty result is claimed. Usage is unknown and no token counts are invented.",
+  "claims": [
+    {
+      "text": "For every fixed A,B>0, E_np(H) <<_(A,B,alpha,eta) H^(-1)log^(-A) H for the exact arrays in the brief and H=2^ell. The full energy is exactly E0+E_np, with E0 retained. Within the same candidate the bound is uniform for every real marking phase lambda and common |v|<=log^C H for each fixed C, still at k=1 with trivial fixed character twists.",
+      "status": "proved",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/statement.md, Candidate 1, equations (5)-(20); author derivation relative to inspected Iwaniec Theorem 2 and classical PNT, pending distinct critic"
+    },
+    {
+      "text": "Every nonprincipal real character modulo a power of two is induced by one of chi_-4, chi_8, chi_-8, whose grouped L(sigma,chi) series are strictly positive for every real sigma>0. Thus Iwaniec's possible real exception is absent, and every nonprincipal character has the requested fixed log-width, fixed polylog-height zero-free rectangle eventually.",
+      "status": "proved",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/statement.md, equations (7)-(10); explicit character and series argument plus original Iwaniec Theorem 2 statement visually inspected, its full published proof not audited"
+    },
+    {
+      "text": "For v=lambda=0 and every fixed K>0, the compact principal energy is [8/(log(1/alpha)^2 H log^4 H)] times integral_(-K)^K |C_eta(t)|^2 |J_delta(t)|^4 dt + o_K(H^(-1)log^(-4) H), with a strictly positive integral. Therefore the exact growing-height principal energy is at least c/(H log^4 H). No growing-height principal asymptotic is asserted.",
+      "status": "proved",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/statement.md, Candidate 2, equations (21)-(24); compact PNT partial summation, author derivation pending distinct critic"
+    },
+    {
+      "text": "The literal all-precision zero-centered total-energy extension on these changed polynomial prime arrays is false for A>4. This is not a refutation of the accepted small-sift energy theorem or a bound for the full signed comparison.",
+      "status": "refuted",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/statement.md, equation (24) and exact nonnegative decomposition (3)"
+    },
+    {
+      "text": "Closest-work novelty, any identification of E0 with the original full-comparison main term, polynomial-sieve Type I, the pointwise original prime margin, and Goldbach remain unverified or unresolved.",
+      "status": "unverified",
+      "source": "research/goldbach/centered-polynomial-energy-20261029/statement.md, final scope and review obligations"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/centered-polynomial-energy-20261029/statement.md",
+    "research/goldbach/centered-polynomial-energy-20261029/propose-result.json"
+  ]
+}

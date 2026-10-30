@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-MOMENTS-010",
+  "title": "Auxiliary memory/operator proof audit and reflected root moments",
+  "objective": "Prove or identify the first precise failure in the load-bearing auxiliary model moment and reflected arithmetic replacement, without assuming the unvalidated source operator estimates or weakening the Goldbach objective.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/operator-moments-20261029/brief.md", "research/goldbach/operator-moments-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Self-contained finite model and measures", "Actual edge/memory norm and moment proof or precise failing step", "Complete reflected arithmetic-replacement cost audit", "Separate substantive critic", "Exact finite memory/distinctness tests", "Preserved actual-prime and Goldbach obligations"],
+  "success_criteria": ["Source H2' or a desired norm is not silently assumed", "A mathematical gain has a complete argument and separate review", "All list/projection/root and limit costs remain explicit", "The full Goldbach goal is not replaced by an auxiliary lemma"],
+  "stop_conditions": ["One bounded theorem round within20 proxy units", "No provider billing or external mutable action", "A first load-bearing failure is recorded rather than hidden behind conditional notation"]
+}

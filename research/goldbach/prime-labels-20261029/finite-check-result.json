@@ -1,0 +1,40 @@
+{
+  "summary": "Independent experimenter read the completed author statement and populated finite-check packet, then executed smoke and final exact Fraction-based checks. All checks passed: 2,874 rough-support weight cases, 930 capacity cases, all 19 multiplicity types (7 squarefree) for the author formulas A1-A7, norm costs 7,53/3,323/16, 36 coprime padding sign cases, 36 separated-label weight cases, 1,458 signed-mixture cases and 900 unrestricted Liouville products. Explicit witnesses show that distinct group counts cannot identify multiplicity, Mobius multiplicativity fails without coprimality at D=q=2, coprimality alone does not guarantee label separation, and a zero normalized padding mean coexists with original signed sum 1. These are finite algebra and support checks, not verification of the manuscript analytic estimates, any target-uniform cancellation or Goldbach. Final runtime 0.222791 seconds; measured source hash and platform are in finite-results.json, while inference usage and monetary cost are unknown.",
+  "claims": [
+    {
+      "text": "All 2,874 tested source-weight values vanish on the rough complement set when group primes are <=13; all 930 group-capacity cases have zero support below N<=z^K, including equality.",
+      "status": "empirical",
+      "source": "research/goldbach/prime-labels-20261029/finite-results.json"
+    },
+    {
+      "text": "The final author rho=(1/4,1/2,3/4) reconstruction, signed-cell, repeated-factor-correction and half-weight formulas A1-A7 pass exactly on all 19 multiplicity types of total degree 1..3 over the finite prime alphabet; the norms 7,53/3 and323/16 agree exactly.",
+      "status": "empirical",
+      "source": "research/goldbach/prime-labels-20261029/finite-results.json"
+    },
+    {
+      "text": "On the tested one-group source weights, r,r^2,r^3 have identical distinct-divisor weights but different parity or prime indicators. Bare distinct-label reconstruction therefore requires the stated multiplicity corrections or squarefree restriction.",
+      "status": "empirical",
+      "source": "research/goldbach/prime-labels-20261029/finite-results.json"
+    },
+    {
+      "text": "Dropping coprimality from the asserted Mobius padding product formula is false: D=q=2 gives mu(4)=0 but mu(2)mu(2)=1. Liouville remains completely multiplicative in all 900 unrestricted finite cases tested.",
+      "status": "refuted",
+      "source": "research/goldbach/prime-labels-20261029/finite-results.json"
+    },
+    {
+      "text": "A zero padded mixture does not force zero original sum: rho=1/2, equal padding probabilities on D=10,30 and the recorded coefficient sequence give normalizer0,padded sum0,original Mobius sum1.",
+      "status": "refuted",
+      "source": "research/goldbach/prime-labels-20261029/finite-results.json"
+    },
+    {
+      "text": "The finite stage establishes no analytic prime-correlation estimate or Goldbach breakthrough.",
+      "status": "unverified",
+      "source": "research/goldbach/prime-labels-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/prime-labels-20261029/experiment-plan.md",
+    "research/goldbach/prime-labels-20261029/label_checks.py",
+    "research/goldbach/prime-labels-20261029/finite-results.json"
+  ]
+}

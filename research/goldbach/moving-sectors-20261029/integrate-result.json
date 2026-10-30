@@ -1,0 +1,38 @@
+{
+  "summary": "Integrated the actual sector author, separate critic, independent finite checks and revision. The defined complete-pullback centered operator has an exact unitary sector conjugacy and elementary quantitative position counts. Exact-domain partners are at most2 generally and1 for evenH with unit-first endpoints. The changed comparison includes denominatorH arcs whose prime sums are not controlled. No target-uniform prime/list-moment cancellation or Goldbach breakthrough follows. RATIOS-007 is an actual in-progress limited arithmetic follow-up, not a validated dependency.",
+  "claims": [
+    {
+      "text": "The defined complete-pullback operator has the reviewed exact unitary sector decomposition under its stated hypotheses.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/revision.md"
+    },
+    {
+      "text": "The stated primitive point counts and exact-domain partner bounds have complete arguments and separate review.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/review.md"
+    },
+    {
+      "text": "Recorded main and supplemental finite exact checks passed their declared domains.",
+      "status": "empirical",
+      "source": "research/goldbach/moving-sectors-20261029/finite-results.json"
+    },
+    {
+      "text": "Ordinary small arcs always have the defined pullback operator cross-sector zero.",
+      "status": "refuted",
+      "source": "research/goldbach/moving-sectors-20261029/revision.md"
+    },
+    {
+      "text": "The changed major part, prescribed-list moments, actual-prime cancellation, novelty and a Goldbach proof or breakthrough remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/moving-sectors-20261029/result.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/moving-sectors-20261029/result.md",
+    "research/goldbach/moving-sectors-20261029/revision.md",
+    "research/goldbach/moving-sectors-20261029/review.md",
+    "research/goldbach/moving-sectors-20261029/finite-results.json",
+    "research/goldbach/moving-sectors-20261029/edge-unit-results.json",
+    "research/goldbach/moving-sectors-20261029/NEXT_SESSION.md"
+  ]
+}

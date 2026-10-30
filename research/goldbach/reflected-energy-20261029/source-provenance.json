@@ -1,0 +1,52 @@
+{
+  "source_is_data": true,
+  "inputs": [
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/iwaniec-volume23.pdf",
+      "source": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0023/PPN356556735_0023.pdf",
+      "bytes": 27085705,
+      "sha256": "d98fe83def66ce90801760710d21f34458637d32de6ac77d726698220ae25832",
+      "inspected_page": "journal97 / PDF104 / zeroindex103",
+      "inspection": "original rendered theorem statement visually inspected; full source proof not audited",
+      "render_path": ".runs/goldbach-source-inputs-20261029/iwaniec-journal97.png",
+      "render_sha256": "88a60c54861c6a83a57e21186f09eeed080e2b487e4a368f9ea6267629648a61"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/mstt-published.pdf",
+      "source": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6DF08E2A3EFABB2DD0DA6CDA38649B18/S2050508623000288a.pdf/div-class-title-higher-uniformity-of-arithmetic-functions-in-short-intervals-i-all-intervals-div.pdf",
+      "bytes": 1213513,
+      "sha256": "18ff7ac32c700685421d10823b4aad0216c677ccd03c9161a016951f9bdad0fc",
+      "inspected_page": "journal46 / PDF46 / zeroindex45",
+      "inspection": "original rendered theorem statement visually inspected; full source proof not audited",
+      "render_path": ".runs/goldbach-source-inputs-20261029/mstt-journal46.png",
+      "render_sha256": "a3d82d7ba7b77accbcc8149f8c626241a51f020786c6023a0a677308dfaa96a4"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/heath-brown-1203.5219v2.pdf",
+      "source": "https://arxiv.org/pdf/1203.5219v2",
+      "bytes": 139508,
+      "sha256": "6c97675278fa084b75741481c0e959b5926661a09d977a466afa0d84bd46e22f",
+      "inspected_page": "page1 / equation1",
+      "inspection": "original rendered theorem statement visually inspected; full source proof not audited",
+      "render_path": ".runs/goldbach-source-inputs-20261029/heath-brown-page1.png",
+      "render_sha256": "9242371d406d0f3cec5b2e9c81c228ff8e25b3dd5d5ed22bba98a427e4208f67"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/koukoulopoulos-primes-preliminary.pdf",
+      "source": "https://www.dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf",
+      "bytes": 2238368,
+      "sha256": "1445e107bba9c89db6529aeb4bca3ecf01170fc2854a675f5ca6f288c77ea0a8",
+      "inspection": "Theorem11.1 anddefinition11.3 printed111/PDF122, exact continuation/functional-equation statement visually inspected; fullbook/Hadamardproofnotaudited"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/dirichlet-book111.png",
+      "source": "https://www.dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf",
+      "bytes": 418940,
+      "sha256": "b06a410b4e3f7947e849cf7f09a37dec328f73c0ed6e1d190da7fbd690a69e13",
+      "inspection": "local inspected render printed111/PDF122"
+    }
+  ],
+  "pinned_guo": "https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/mobius-goldbach-shift/source/main.tex",
+  "guo_copy_sha256": "e70d777424852aed92e94b2baf00384c84b4c7fc346bd7dab1085d5652ced95d",
+  "unverified": "complete energy chain, general selected strip, actual-prime and Goldbach bridge, novelty"
+}

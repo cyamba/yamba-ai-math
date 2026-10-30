@@ -1,0 +1,28 @@
+{
+  "summary": "Derived two bounded candidates. First, the moving-H congruence map T_c(u,v)=(u,(v-cu)/H) is a discrete isometric bijection on primitive unit-first-coordinate sectors. The full H-fold major-arc pullback has Fourier coefficients zero off H-divisible frequencies, so the entire centered operator, not only exact edges, splits into sectors and conjugates to coefficient1 on exact thin parallelograms. First-coordinate lists, weights, adjoints and complement ratio H*r_P are preserved. A correctly carried coprime prime-input restriction gives both-unit factors, and original small-label/sift separation then proves primitivity for nonzero centered terms. Second, proved explicit elementary primitive per-sector and aggregate both-unit point counts with H-dependent errors, plus at most17 exact-edge partners per fixed label transition. The per-sector count does not give a relative asymptotic when V/H is small, although a direct aggregate count works in polynomially sized boxes. None estimates the complement-ratio/list root moments or the centered operator cancellation uniformly in the Goldbach target. Source analytic bounds remain unverified as dependencies in this new range; no Goldbach proof, breakthrough or novelty claim is made. Separate review and finite checks are pending. The full pullback also creates arcs centered at j/H with denominator H; estimating that changed major part is a new explicit arithmetic obligation, not an inherited small-denominator bound.",
+  "claims": [
+    {
+      "text": "The full centered moving-H kernel with the defined arc pullback and scaled cutoff has exact unit-sector conjugacy, preserving the stated lists, state measures, adjoints and complement ratios.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/statement.md"
+    },
+    {
+      "text": "Under the explicitly stated coprime factor supports and original small-label/sift separation, nonzero centered kernel terms have primitive positions; arbitrary unprocessed endpoint arrays are not asserted to meet those hypotheses.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/statement.md"
+    },
+    {
+      "text": "The elementary per-sector and aggregate primitive count formulas and fixed-transition exact-edge bound follow with their explicit H-dependent errors and scope.",
+      "status": "proved",
+      "source": "research/goldbach/moving-sectors-20261029/statement.md"
+    },
+    {
+      "text": "The required uniform arithmetic root-moment or centered-operator estimate on moving-H thin domains, and any Goldbach solution or demonstrated breakthrough, remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/moving-sectors-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/moving-sectors-20261029/statement.md"
+  ]
+}

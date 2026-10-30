@@ -1,0 +1,35 @@
+{
+  "summary": "Independent experimenter read the actual populated PAIRING-011 finite-check packet and frozen author statement f93c024abd19699640e90bb5680306432c2bb71600acd77a0b66024a6658645b. One smoke and one bounded final run passed with no failures. The exact checks cover 29 signed-square/Cauchy cases, 165 integer cofactor records, 457 quadratic pairs, 5120 coprime determinant/cofactor cases and 81 complex-conjugation cases; 112 comparison degree cases, 5960 congruence pairs, 3542 pullback branch certificates, 15 determinant-H complements and 25 geometric sector pairs; and 18 ordered-padding cases, 27 group mass cases, 84 active-list cases and three nonzero J=2 per-group factorial cases. Final check-body runtime was 0.0261485 seconds on Python 3.11.17, Windows-10-10.0.26300-SP0; code hash c5d2e16afc0863661c4595ddb5f61684fd2407706418865a7f42af0dbf409898. Commands, ranges, hashes and exact witnesses are saved. Token usage and monetary cost are unknown. Geometric coverage is sparse and does not verify a localization asymptotic, automatic primitivity at asymptotic Z separation, ambient moment, good-state replacement, physical kernel reassembly, TypeII estimate or Goldbach.",
+  "claims": [
+    {
+      "text": "The positive Cauchy inequality, addition of negative-cofactor squares, nonzero cofactor under unit support, direct quadratic expansion, raw psi plateau and coprime determinant/cofactor equivalence pass exactly on the stated finite domains. The Gaussian endpoint product has the author's conjugations.",
+      "status": "empirical",
+      "source": "research/goldbach/type-ii-pairing-20261029/finite-results.json"
+    },
+    {
+      "text": "The finite comparison row and column degrees satisfy ceil(4MN/H)<=4, pullback branch normalization retains no extra 1/H, and tested canonical determinant-H complements, sector maps and rational slope bounds pass exactly. Only 25 endpoint pairs occur in the preregistered geometric boxes, and their maximum cell distance is zero.",
+      "status": "empirical",
+      "source": "research/goldbach/type-ii-pairing-20261029/finite-results.json"
+    },
+    {
+      "text": "The exact harmonic weight identity (16), ordered-draw dyadic reassembly of an arbitrary signed Gaussian endpoint-pair coefficient, invariant-list averaging, distinguished-entry accounting, per-group factorial conversion and explicit finite collision/exclusion union bound pass. Good padding mass is retained even when it is zero or far below one; the full physical operator identity (17) is not certified by these scalar weight checks.",
+      "status": "empirical",
+      "source": "research/goldbach/type-ii-pairing-20261029/finite-results.json"
+    },
+    {
+      "text": "The omitted hypotheses and normalizations fail on explicit witnesses: shared a=b=3 permits determinant equality with cofactor 1/3; omitted unit support permits h=0; wrong endpoint conjugation changes i to -i; unordered padding without its factorial halves 1470/5041; and the entrywise mn<H mask at H=22 increases a norm witness from squared norm 4 to 5.",
+      "status": "refuted",
+      "source": "research/goldbach/type-ii-pairing-20261029/finite-results.json"
+    },
+    {
+      "text": "The analytic overlap/AP-divisor bounds, primitive support at large Z, moment transport, Gram estimate, positive bad-state replacement, physical-kernel identification and asymptotic reassembly errors remain outside finite coverage. These computations do not establish (10), the major comparison bound or Goldbach.",
+      "status": "unverified",
+      "source": "research/goldbach/type-ii-pairing-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/type-ii-pairing-20261029/experiment-plan.md",
+    "research/goldbach/type-ii-pairing-20261029/pairing_checks.py",
+    "research/goldbach/type-ii-pairing-20261029/finite-results.json"
+  ]
+}

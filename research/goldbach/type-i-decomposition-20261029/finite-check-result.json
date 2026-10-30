@@ -1,0 +1,35 @@
+{
+  "summary": "Independent experimenter read the populated TYPEI-013 finite-check packet and frozen author statement f810cce2f92073af5244e673b0afdad6d6a1d624b22f4df422468bd61a174db2. One smoke and one bounded final run passed with no failures. Formal prime-log checks cover 8000 Vaughan coefficient cases, 32000 sifted coefficient cases, 6400 complete-multiplicativity cases and three direct partial/full dyad T1-T2+T3 plus prime-power corrections. Fraction checks cover 1008 Taylor bounds, 189 Bonferroni bounds, 12 reciprocal coefficient mass inequalities and 1600 smooth-power Mobius identities. Integer checks cover 8061 reduced-class parameter cases, 3207 positive reflected solutions, 1417 cases with b sharing g, 1180 undoubled modulus-one cases and 24 finite rational log-power comparisons. Final check-body runtime was 1.3581015 seconds on Python 3.11.17, Windows-10-10.0.26300-SP0. Checker SHA256 is 6599592178caf976f528d3bbf65dd773122824077a35a1ed8527fdb084f83171. Commands, exact ranges, hashes, witnesses and unknown usage are recorded. No analytic BV, Mellin, tail, norm, Type I or Goldbach assertion is certified by these finite tests.",
+  "claims": [
+    {
+      "text": "Vaughan's convolution and its sifted form agree exactly on n<=500 with U,V in {1,2,3,5}. The positive c_V coefficient bound holds formally prime by prime. Direct dyad sums with exact fifth-power truncations retain both small-base restoration and all higher-power removal, including bases exceeding Z, and the shifted positivity endpoint.",
+      "status": "empirical",
+      "source": "research/goldbach/type-i-decomposition-20261029/finite-results.json"
+    },
+    {
+      "text": "The finite single-band Taylor remainder has the stated alternating sign and positive binomial bound on the declared domain; Bonferroni and finite reciprocal-mass inequalities pass. The smooth-power Mobius identity passes with arbitrary supported prime powers of b on all tested squarefree odd A and v<=200.",
+      "status": "empirical",
+      "source": "research/goldbach/type-i-decomposition-20261029/finite-results.json"
+    },
+    {
+      "text": "For the declared even-H, unit-q, squarefree-r,d and supported-b domain, g extraction gives an invertible reduced odd class modulo 2qr/g, with exact forward/inverse indexing and reversed interval endpoints. Cases with b sharing g are valid. Rational exponent and finite logarithmic-power inequalities pass without floating cutoffs.",
+      "status": "empirical",
+      "source": "research/goldbach/type-i-decomposition-20261029/finite-results.json"
+    },
+    {
+      "text": "The incorrect variants fail on explicit witnesses: forcing b squarefree gives 1 instead of mu(27)=0; omitting g leaves residue 9 modulo 33 nonreduced; doubling the even numerator residue directly loses oddness; omitting parity admits H=32,d=3,j=2,t=10; and removing only the small-base sifting correction leaves the prime power 9 at Z=2. Reflected-sign reversal and zero-endpoint controls are retained.",
+      "status": "refuted",
+      "source": "research/goldbach/type-i-decomposition-20261029/finite-results.json"
+    },
+    {
+      "text": "The BV source theorem and analytic estimate, factorial/Rankin tails and plus-one budget, product-strip/Mellin approximation, unit removal, comparable-threshold energy and common-log moment transport, assembled weighted-prime bound and Goldbach remain outside finite verification.",
+      "status": "unverified",
+      "source": "research/goldbach/type-i-decomposition-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/type-i-decomposition-20261029/experiment-plan.md",
+    "research/goldbach/type-i-decomposition-20261029/typei_checks.py",
+    "research/goldbach/type-i-decomposition-20261029/finite-results.json"
+  ]
+}

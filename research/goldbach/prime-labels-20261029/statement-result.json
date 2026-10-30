@@ -1,0 +1,28 @@
+{
+  "summary": "Constructed two explicit adaptations. Attempt A uses one polynomial group covering every rough prime divisor and gives exact three-weight prime reconstruction R=-3Z_1/4+3Z_1/2-Z_3/4 with l1 cost7, plus the odd-profile reconstruction and a uniform O(N^(1-alpha)) repeated-factor correction. At rho1/2 deweighting differs by exactly one quarter of the squarefree triple count, already controlled by the prior H bound. The algebra repairs coverage, but the inspected source's edge estimate requires large K, its growing-list moment normalization fails at polynomial label height, and its primitive/fixed-shift hypotheses do not transfer. Correct nonzero centering is retained; simultaneous zero cancellation of the three adapted Z sums is inconsistent with their prime-count identity and the positive average prime-pair count. Attempt B derives W(Dq)=C_D and mu/lambda(Dq)=mu/lambda(D) times the original signs: every q-independent padded average is a scalar multiple of the original correlation, and a zero scalar supplies no information. It also records forced shared-label collisions, inverse-normalizer growth, the nonprimitive padded reflected form and ambient-scale costs. No source theorem is imported without audit, and no actual parity-sensitive one-sided bound, Goldbach proof, breakthrough or novelty claim is obtained. Separate mathematical and finite algebra review are pending. The selected-divisor quotient expansion explicitly retains h=1 as exactly the original -R term; long-quotient cancellation cannot silently remove that boundary. Strict support is empty already when K*alpha>=1.",
+  "claims": [
+    {
+      "text": "The bounded genuine-label identities, norm costs, repeated-factor bound, and rho1/2 deweighting formulas follow exactly on the stated Omega<=3 rough population.",
+      "status": "proved",
+      "source": "research/goldbach/prime-labels-20261029/statement.md"
+    },
+    {
+      "text": "The attempt to obtain the needed bounded-K polynomial-label estimate by direct substitution into the inspected source edge/moment and fixed-shift arguments is unsupported at the explicitly identified steps.",
+      "status": "unverified",
+      "source": "research/goldbach/prime-labels-20261029/statement.md"
+    },
+    {
+      "text": "The assertion that q-independent external squarefree padding alone creates new normalized cancellation is refuted by the exact scalar transfer, including the zero-normalizer case.",
+      "status": "refuted",
+      "source": "research/goldbach/prime-labels-20261029/statement.md"
+    },
+    {
+      "text": "A correctly centered actual-prime one-sided correlation estimate sufficient for the original F margin, Goldbach proof, and demonstrated breakthrough remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/prime-labels-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/prime-labels-20261029/statement.md"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "program": "GOLDBACH-LOWER-003",
+  "mode": "manual host-agent research using populated harness packet",
+  "stages": {
+    "propose": "completed",
+    "challenge": "completed",
+    "revise": "completed"
+  },
+  "assignments": {
+    "propose": "/root/trilinear_proof",
+    "challenge": "/root/independent_critic",
+    "revise": "/root/trilinear_proof"
+  },
+  "planned_proxy_units": 8,
+  "provider_billing": "unknown",
+  "token_usage": "unknown",
+  "goldbach_status": "unresolved; active user objective not achieved",
+  "note": "The proposal is not considered complete before its saved result is supplied; no model-backed command execution is claimed.",
+  "completed_proxy_units": 8,
+  "supplemental_root_mathematician_proxy_units": 3,
+  "amendment": "Root supplied a separately reviewed local-factor lemma during the proposal review. Count 3 additional support proxy units separately from the nominal 8-unit pair plan; combined two-tranche host proxy total will be 28. The original objective and all proof standards are preserved.",
+  "status": "completed_host_execution",
+  "total_declared_host_proxy_units": 11,
+  "next_route": "Explicit weighted Buchstab switching minorant with a checked positive coefficient or failure certificate."
+}

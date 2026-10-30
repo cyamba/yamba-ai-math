@@ -1,0 +1,63 @@
+{
+  "tests_run": 116,
+  "failures": [
+    {
+      "test": "test_scoped_rules_are_delivered_with_briefs (test_harness.RuntimeTests.test_scoped_rules_are_delivered_with_briefs)",
+      "last_line": "AssertionError: 'explore/AGENTS.md' not found in ['explore\\\\AGENTS.md']"
+    },
+    {
+      "test": "test_timeout_is_failure_without_retry (test_harness.RuntimeTests.test_timeout_is_failure_without_retry)",
+      "last_line": "AssertionError: 5.047 not less than 4"
+    },
+    {
+      "test": "test_flags_hardcoded_drive_link_and_owner_name (test_operator_neutral_skills.OperatorNeutralSkillsTest.test_flags_hardcoded_drive_link_and_owner_name)",
+      "last_line": "AssertionError: False is not true"
+    },
+    {
+      "test": "test_full_bijection_gate_fails_when_only_finite_checks_exist (test_rogers_ramanujan.KR1DefinitionsTests.test_full_bijection_gate_fails_when_only_finite_checks_exist)",
+      "last_line": "ModuleNotFoundError: No module named 'resource'"
+    },
+    {
+      "test": "test_optimized_python_keeps_completion_gate_and_receipt_no_overwrite (test_rr003.RR003Tests.test_optimized_python_keeps_completion_gate_and_receipt_no_overwrite)",
+      "last_line": "AssertionError: 1 != 2 : {\"program\": \"RR003\", \"status\": \"failed\", \"error\": \"('frozen source changed', 'research/rogers-ramanujan/checks/kr1.py')\", \"elapsed_seconds\": 0.0, \"finished_utc\": \"2026-10-29T07:56:33.325754+00:00\"}"
+    },
+    {
+      "test": "test_restricted_composition_preserves_actual_endpoint_boundaries (test_rr003.RR003Tests.test_restricted_composition_preserves_actual_endpoint_boundaries)",
+      "last_line": "AssertionError: 1 != 2 : {\"program\": \"RR003\", \"status\": \"failed\", \"error\": \"('frozen source changed', 'research/rogers-ramanujan/checks/kr1.py')\", \"elapsed_seconds\": 0.0, \"finished_utc\": \"2026-10-29T07:56:33.418491+00:00\"}"
+    },
+    {
+      "test": "test_certificate_reports_failure_class_without_bijection_claim (test_rr004.RR004Tests.test_certificate_reports_failure_class_without_bijection_claim)",
+      "last_line": "AssertionError: frozen source changed: research/rogers-ramanujan/rr004/contract.md"
+    },
+    {
+      "test": "test_optimized_cli_keeps_completion_failure_and_existing_evidence (test_rr004.RR004Tests.test_optimized_cli_keeps_completion_failure_and_existing_evidence)",
+      "last_line": "AssertionError: 1 != 2 : {\"status\": \"failed\", \"elapsed_seconds\": 0.0}"
+    },
+    {
+      "test": "test_small_literal_domain_check_cannot_trigger_larger_sweep (test_rr004.RR004Tests.test_small_literal_domain_check_cannot_trigger_larger_sweep)",
+      "last_line": "AssertionError: frozen source changed: research/rogers-ramanujan/rr004/contract.md"
+    },
+    {
+      "test": "test_full_compiler_gate_fails_even_under_optimized_python (test_separated_pairs.SeparatedPairTests.test_full_compiler_gate_fails_even_under_optimized_python)",
+      "last_line": "ModuleNotFoundError: No module named 'resource'"
+    }
+  ],
+  "errors": [
+    {
+      "test": "test_prompt_path_cannot_escape_repository (test_harness.CatalogTests.test_prompt_path_cannot_escape_repository)",
+      "last_line": "OSError: [WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\chris\\\\dev\\\\yamba-ai-math\\\\.runs\\\\goldbach-test-temp\\\\tmp85auohei\\\\outside.md' -> 'C:\\\\Users\\\\chris\\\\dev\\\\yamba-ai-math\\\\.runs\\\\goldbach-test-temp\\\\tmp85auohei\\\\root\\\\link.md'"
+    },
+    {
+      "test": "test_finite_verifier_fails_closed_when_required_contract_is_missing (test_rogers_ramanujan.KR1DefinitionsTests.test_finite_verifier_fails_closed_when_required_contract_is_missing)",
+      "last_line": "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "test": "test_frozen_source_change_fails_closed_under_optimized_python (test_rr003.RR003Tests.test_frozen_source_change_fails_closed_under_optimized_python)",
+      "last_line": "UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 5602: character maps to <undefined>"
+    }
+  ],
+  "elapsed_seconds": 6.844000000000051,
+  "log": "C:\\Users\\chris\\dev\\yamba-ai-math\\.runs\\goldbach-unittest-20261029.log",
+  "temp_directory": "C:\\Users\\chris\\dev\\yamba-ai-math\\.runs\\goldbach-test-temp",
+  "successful": false
+}

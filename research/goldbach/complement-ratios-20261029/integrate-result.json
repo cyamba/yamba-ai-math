@@ -1,0 +1,38 @@
+{
+  "summary": "Integrated actual author, distinct critic, finite-check and revision outputs. A complete elementary Kloosterman/completion argument yields a genuinely quantitative unweighted moving-H complement-ratio estimate with correct mass and explicit H/frequency costs. In balanced sqrtH boxes its interval discrepancy is H^(-1/8+o(1)), with unspecified asymptotic constants. Unnormalized BV sums retain mean-times-mass-error as well as variation-times-discrepancy. This is a scoped classical-method specialization, novelty unverified. No prescribed-line, prime, high-moment, changed-major-term or Goldbach lower-bound extension follows. The actual stronger ROOTS-008 task is dispatched and remains unproved.",
+  "claims": [
+    {
+      "text": "The stated elementary complete-sum, interval-completion, Ramanujan and common-frequency estimates have complete arguments and separate substantive review.",
+      "status": "proved",
+      "source": "research/goldbach/complement-ratios-20261029/review.md"
+    },
+    {
+      "text": "The stated primitive both-unit mass, polynomial-range Fourier/discrepancy power saving and normalized BV estimate are supported, including balanced H^(-1/8+o(1)); unnormalized leading mass needs the separate mean-times-mass-error term.",
+      "status": "proved",
+      "source": "research/goldbach/complement-ratios-20261029/revision.md"
+    },
+    {
+      "text": "Recorded exact finite algebra, orbit, completion, mass and discrepancy checks passed on their declared bounded domains.",
+      "status": "empirical",
+      "source": "research/goldbach/complement-ratios-20261029/finite-results.json"
+    },
+    {
+      "text": "The H-unit condition may be dropped from the frequency simplification, and equal coefficient gcds always imply equal incomplete inverse sums.",
+      "status": "refuted",
+      "source": "research/goldbach/complement-ratios-20261029/revision.md"
+    },
+    {
+      "text": "The joint prescribed-line, prime-weighted or high-moment extension, changed denominatorH prime major term, novelty, Goldbach proof and a substantive demonstrated breakthrough remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/complement-ratios-20261029/result.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/complement-ratios-20261029/result.md",
+    "research/goldbach/complement-ratios-20261029/revision.md",
+    "research/goldbach/complement-ratios-20261029/review.md",
+    "research/goldbach/complement-ratios-20261029/finite-results.json",
+    "research/goldbach/complement-ratios-20261029/closest-work.md",
+    "research/goldbach/complement-ratios-20261029/NEXT_SESSION.md"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/weight-removal-20261029/brief.md",
+      "sha256": "7236cf610a694d24a829ebb5a2bc61b3f1799406ac293dd0e13de132bdfd653f"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/counterexample-result.json",
+      "sha256": "a12d1124bad223c1a892f3ad4c441243fca7b39ba4e069194df5ce5389fa81ef"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/experiment-plan.md",
+      "sha256": "a1c4bb4c6942c896cc39e9667a16b36059fee983b86bbe78b82ddc4891ad37ea"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/finite-check-result.json",
+      "sha256": "b67246ec3da9b9383db5e263d0bd5c10d4078d638641ab8a14aac2c720e330ec"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/finite-results.json",
+      "sha256": "303f068651d4d90fd9e1d555270d78ec2c7ae0bcb8bbd354385c1bbf76ca62af"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/host-execution.json",
+      "sha256": "1d0ff3a9e24ec0ded8925cb66a93e8955404dd5c54bb51608e8022c1e8ec6972"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/integrate-result.json",
+      "sha256": "dc8085ff3cc89f01c2f56c26b3ec0f3c71ed0f1c71bfcdb00d327096933702ce"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/NEXT_SESSION.md",
+      "sha256": "3845581f0d988298dad7509cd083d9958baac5de94fd2ebe8c105e3a133be554"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/objective-audit.json",
+      "sha256": "b37109a80462ed00027d55840a26f1c331767360790d1e0fe96bcb810bb33c60"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/pre-mortem.md",
+      "sha256": "a1c501db79940f147c1b35856cb1702e497d5b01d2b879a0e80ea013c96d55d4"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/primary-inputs.md",
+      "sha256": "d19af60f119e35182406de9ba1c0fe52b3894530e0984950d28ba35168fbc0a5"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/repository-tests.json",
+      "sha256": "7d503acab070012f09b1f0202226b34052b8456c3872bd522988f3dfe97278d7"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/result.md",
+      "sha256": "447831d15b5612369e59341eb4b50ef42a12b9a4040140f7a10e86bddb311d05"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/review.md",
+      "sha256": "09e73744b787f2b6667da0c2daff8d8311192cf5ba5a7ac01dbf7cdec77bbb36"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/revise-result.json",
+      "sha256": "2ee5529b982406528d87bd4cf659f0dacfea7fae17efe2d7abcd35f2cec4835f"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/revision.md",
+      "sha256": "eab8a825bcb66e9db17238edddaf35d71c9ed554560a1e5326c53bbd0466ed39"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/source-provenance.json",
+      "sha256": "3624fd89e774f01a01a4f35d2ebe7feb17a84f9a1e5e07edbf383fda939fadc2"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/statement-result.json",
+      "sha256": "8a299ef125065c306f5207b8c388816a1feb1b12a4f5f8bbb64aecb90a50364b"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/statement.md",
+      "sha256": "22b1e94dff57c26ace239b82cf82f83aa06967338628cc14900fd911695fbda8"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/survey-result.json",
+      "sha256": "3707fc2487176bd2640f64b8cff51103b85d7dc663ae7432862394205129d5d6"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/survey.md",
+      "sha256": "f328dc422d3bd9aeaa0652dd6bf1503578fc3aeeea2b680189101472c6a3fcdc"
+    },
+    {
+      "path": "research/goldbach/weight-removal-20261029/weight_checks.py",
+      "sha256": "d711f141e013f2990b0092cf1aa2a98e06c5b73b6f574a3ea237695cd189c25e"
+    }
+  ]
+}

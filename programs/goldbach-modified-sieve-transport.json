@@ -1,0 +1,38 @@
+{
+  "id": "GOLDBACH-TRANSPORT-025",
+  "title": "Actual modified-sieve signed transport and prime-weight lower bound",
+  "objective": "Advance the literal cubic signed operator from a generic congruence estimate to actual modified sieve coefficients and an honest sign-aware reflected-prime bound, retaining exact weights, local densities and all residuals.",
+  "fleet": "pair",
+  "briefs": [
+    "research/goldbach/modified-sieve-transport-20261029/brief.md"
+  ],
+  "constraints": {
+    "max_agents": 3,
+    "max_workers": 2,
+    "max_cost_units": 13,
+    "max_rounds": 1,
+    "timeout_seconds": 120
+  },
+  "rounds": 1,
+  "preferred_tags": [
+    "theorems",
+    "constructive-skeptic"
+  ],
+  "deliverables": [
+    "Actual coefficient convolution with all analytic margins",
+    "Signed modified-weight estimate or precise obstruction",
+    "Actual prime-weight one-sided bound at the declared scale or first failed inequality",
+    "Independent challenge and bounded revision"
+  ],
+  "success_criteria": [
+    "Pointwise support factorization is not mistaken for a coefficient convolution",
+    "Published fixed-residue estimates do not become Goldbach-size ones",
+    "Actual mu signs, wheel and reduced numerator are retained",
+    "A suboperator bound is not promoted to the full original prime margin"
+  ],
+  "stop_conditions": [
+    "One pair8 round plus root primary-access2 and interrupted author dispatch3, total13; recovery is the same proposal stage",
+    "No new retrieval/helper/numerical search/supplement/paid calls/publication/messages",
+    "Full Goldbach objective remains active unless actually achieved"
+  ]
+}

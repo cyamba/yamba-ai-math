@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-ASSESS-016",
+  "title": "Independent assessment of the reflected small-radical consequence",
+  "objective": "Determine exactly what the reviewed reflected-prime correlation adds to the closest primary prior work and whether it establishes a substantive breakthrough toward the user's original Goldbach objective, without treating a verification record as novelty or a sign correlation as a Goldbach bound.",
+  "fleet": "pair",
+  "briefs": ["research/goldbach/small-radical-assessment-20261029/brief.md"],
+  "constraints": {"max_agents": 2, "max_workers": 2, "max_cost_units": 8, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Exact theorem and dependency comparison", "Primary closest-work inspection with levels", "Substantive consequence versus verification and remaining gap assessment", "Separate challenge and final bounded revision"],
+  "success_criteria": ["No source claim is upgraded from abstract or metadata", "H2' replacement is distinguished from proving every source claim", "Restricted pointwise, average and fixed-shift conclusions are not conflated", "Only the root may decide goal completion after inspecting evidence"],
+  "stop_conditions": ["One bounded author-critic-revision round,8 proxy units", "No external messages, publication or paid inference", "Uncertain novelty or breakthrough status remains unverified rather than selected for convenience"]
+}

@@ -1,0 +1,86 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/projective-roots-20261029/brief.md",
+      "sha256": "b0fae645750cf97079ec82143a6dfa4811d47a7977b623a3a759f268b6353a84"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/counterexample-result.json",
+      "sha256": "ad0b22f3fb2b9e23f02aaa25239a46624136a9dccd206aabe94ab62b2253cc25"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/experiment-plan.md",
+      "sha256": "6d401a37dccca7a9560426889ef0f53c24d2dce37463e795bb45a8b6d8d6adb8"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/finite-check-result.json",
+      "sha256": "1e923e136bed29c39e810eb2350b587d15f7688505d579fc5e33038a0e6bc547"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/finite-results.json",
+      "sha256": "b0c50df42ceda08507a22c58b6c149cb8e27e76eebd5c995b0a7d802a53976e4"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/host-execution.json",
+      "sha256": "9a43c557f4be554238be858df2f3a39d6a884aa5ae13f392b46c779c3d06e4f6"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/integrate-result.json",
+      "sha256": "048e9d892e625e52ec144725292b518519a18599cb92c1d3ff13a58688aa547d"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/next-operator-inspection.md",
+      "sha256": "808e44797820e5f44d133d772b8184418d6a08b26d8c2bcf0c77ec8e31fa97ac"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/NEXT_SESSION.md",
+      "sha256": "3d122d4384d750067e2517cbafa3c6a2e7b8a46aa5f809011f8cb03f8ab337e0"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/pre-mortem.md",
+      "sha256": "ac2c1daec4daca0e3cc2d3940d5e068110697b9c8907965c8f1524df9f91a1d8"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/repository-tests.json",
+      "sha256": "a63d85322d8beb239b27d3346ee482ef61687bebf327d57ac6271a9635874713"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/result.md",
+      "sha256": "a4bcb911e3604300c48cb604d27fc694011d8d9e0a8a510c1b5ea77969099616"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/review.md",
+      "sha256": "339a7ce10d6802086e3c308f6176b39fb37fdd9f29377da00ab7fce2f66a6dfc"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/revise-result.json",
+      "sha256": "9eb93909d00501884b77cfa0841e3abb8487aaf1a5f90ac8b19aeaadb811601e"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/revision.md",
+      "sha256": "cff39441bcff8923153f18da3ea6ee1bcdba37439e4a8d70351ac00554ce1b7e"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/root_checks.py",
+      "sha256": "51fbed86e66be3e7813bc021870f31e51ff79d39cb4688cb1bb55fc0cef21ecf"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/statement-result.json",
+      "sha256": "9054973b88bf8daf57e51e48dc7a20e61f75080b6ea645ba6c954525509afd48"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/statement.md",
+      "sha256": "42d72d988c7e82e71b2de7a901b5bb17708a7e61053017fc1fbf46c340b89dcf"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/survey-result.json",
+      "sha256": "48ba24fd5a6fd0bd20ffaa496441bccb466b15b151d925d71d57d25d4618165f"
+    },
+    {
+      "path": "research/goldbach/projective-roots-20261029/survey.md",
+      "sha256": "93d2cda5df7055243759b4116b9b54592cf6f05b876863f2b86ac9d554b5132e"
+    }
+  ],
+  "original_import_hashes_verified": true
+}

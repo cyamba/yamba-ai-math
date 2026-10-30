@@ -1,0 +1,11 @@
+# Inspected sieve inputs and coefficient domains
+
+29 October 2026. Root agent acting as Literature Scout. This records primary source statements, not a mathematical conclusion about the proposed minorant.
+
+1. Kevin Ford, [Sieve Methods Lecture Notes, Spring 2023](https://ford126.web.illinois.edu/sieve2023.pdf), Theorem 3.4, printed page 35, and Lemma 3.8, printed page 40. Inspected the full displayed BV hypothesis and the exact Buchstab identity. BV controls endpoint-maximal prime progression errors through sqrt(x) divided by a suitable logarithmic power. The identity partitions removed candidates by their least excluded prime. These statements supply no parity-sensitive lower bound. The notes discuss the dimension-one limit 2, but the sharp explicit linear-sieve functions used in this attempt are taken from the next primary source.
+
+2. J. Wu, [Chen's double sieve, Goldbach's conjecture and the twin prime problem](https://www.impan.pl/shop/en/publication/transaction/download/product/82961), Acta Arithmetica 114.3 (2004), Lemma 2.2 and equations (2.1)-(2.6), printed pages 219-220. Inspected the assumptions, coefficient orders, remainder sums and differential definitions. The lemma as printed requires 2<=z<=sqrt(Q). Thus direct application uses s=log(Q)/log(z)>=2. Its differential definitions yield F(s)=2exp(gamma)/s for 0<s<=3 and f(s)=2exp(gamma)log(s-1)/s for 2<=s<=4. The existence of the formal expression below s=2 does not widen the stated lemma's application domain.
+
+For a switching prime r, the remaining distribution budget is D/r. A legal upper-bound strategy is to sieve only to v_r=min(r,sqrt(D/r)); then log(D/r)/log(v_r)>=2. For exponents t=log(r)/log(N) in the proposed range, the new parameter is between 2 and 3. The changed density V_N(v_r), rather than V_N(r), must be retained. The author must check that its ratio produces the proposed effective coefficient and that all accumulated progression errors are controlled.
+
+No asymptotic theorem was inferred from a finite scan. No result at level above 1/2, reflected Mobius cancellation or distribution on an inadmissible residue class is an input. Inspection is limited to the cited statements and nearby proofs/definitions, not all 59 pages of Wu's paper. No novelty claim is established.

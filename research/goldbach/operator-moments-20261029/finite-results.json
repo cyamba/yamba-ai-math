@@ -1,0 +1,362 @@
+{
+  "status": "passed_exact_moment_combinatorics",
+  "python": "3.11.17",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "source_sha256": "6d163348ba5513948cc033dd55130f24bd562dc2a9c8f07a7c4320ffd2d57376",
+  "author_input": {
+    "statement_sha256": "0e0e38bdb4f3b000bd67f385d5c32da1bb59fbd22790d1ddb31a8d10ead3e7ca",
+    "covered_author_finite_identities": "q endpoints and b-prime/nu normalization; per-prime factor(16), inactive ghost interval and active-run lifetimes; local theta cancellations; distinctness identity(19), cycle and rank weights; tuple phase symmetry and factorial measures.",
+    "limited_coverage": "No full operational G/E history enumeration, G-adjoint Schur proof, memory-tail asymptotic, analytic edge norm(15), model moment(6), or arithmetic replacement(22) is validated by these finite checks."
+  },
+  "per_prime_damping": {
+    "inactive_cases": 340,
+    "active_cases": 9820,
+    "prefix_suffix_cases": 2948,
+    "active_run_normalization_cases": 9820,
+    "theta_local_cases": 16,
+    "reciprocal_prime_mass": "103/165",
+    "endpoint_factor_witness": {
+      "p": 3,
+      "rho": "1/4",
+      "projective_labels": [
+        0,
+        1,
+        2
+      ],
+      "correct_factor": "9/16",
+      "wrong_all_q_equal_rho_factor": "7/16"
+    },
+    "active_run_normalization_witness": {
+      "active_indices": [
+        0,
+        2
+      ],
+      "runs": 2,
+      "correct_normalized_factor": "12100/10609",
+      "wrong_one_run_factor": "220/309"
+    },
+    "scope": "Finite per-prime algebra, not the full signed G/E path identity or a norm estimate."
+  },
+  "distinct_prime_combinatorics": {
+    "max_indices": 6,
+    "equality_pattern_active_cases": 14947,
+    "enumerated_permutations": 874,
+    "collection_cases": 279,
+    "direct_baseline_cases": 291,
+    "rank_records": [
+      {
+        "n": 0,
+        "rank_weights": {
+          "0": 1
+        }
+      },
+      {
+        "n": 1,
+        "rank_weights": {
+          "0": 1
+        }
+      },
+      {
+        "n": 2,
+        "rank_weights": {
+          "0": 1,
+          "1": 1
+        }
+      },
+      {
+        "n": 3,
+        "rank_weights": {
+          "0": 1,
+          "1": 3,
+          "2": 2
+        }
+      },
+      {
+        "n": 4,
+        "rank_weights": {
+          "0": 1,
+          "1": 6,
+          "2": 11,
+          "3": 6
+        }
+      },
+      {
+        "n": 5,
+        "rank_weights": {
+          "0": 1,
+          "1": 10,
+          "2": 35,
+          "3": 50,
+          "4": 24
+        }
+      },
+      {
+        "n": 6,
+        "rank_weights": {
+          "0": 1,
+          "1": 15,
+          "2": 85,
+          "3": 225,
+          "4": 274,
+          "5": 120
+        }
+      }
+    ],
+    "exact_cyclic_orthogonality_cases": 23,
+    "inactive_index_negative_control": {
+      "n": 2,
+      "active_indices": [
+        0
+      ],
+      "equal_assigned_values": true,
+      "correct_distinct_indicator": 1,
+      "wrong_result_without_active_status": 0
+    },
+    "scope": "Exact distinctness/cycle/rank combinatorics only; no large-rank operator estimate follows."
+  },
+  "memory_tuple_symmetrization": {
+    "max_length": 6,
+    "ordered_tuple_cases": 2186,
+    "symmetrization_identity_cases": 126,
+    "phase_norm_cases": 6558,
+    "total_measure_cases": 14,
+    "mass_records": [
+      {
+        "length": 0,
+        "prime_weights": [
+          "1/7",
+          "2/7",
+          "3/7"
+        ],
+        "s": "6/7",
+        "active_mass": "1",
+        "fixed_line_appended_memory_mass": "1"
+      },
+      {
+        "length": 0,
+        "prime_weights": [
+          "1/5",
+          "1/3",
+          "1/2"
+        ],
+        "s": "31/30",
+        "active_mass": "1",
+        "fixed_line_appended_memory_mass": "1"
+      },
+      {
+        "length": 1,
+        "prime_weights": [
+          "1/7",
+          "2/7",
+          "3/7"
+        ],
+        "s": "6/7",
+        "active_mass": "6/7",
+        "fixed_line_appended_memory_mass": "6/7"
+      },
+      {
+        "length": 1,
+        "prime_weights": [
+          "1/5",
+          "1/3",
+          "1/2"
+        ],
+        "s": "31/30",
+        "active_mass": "31/30",
+        "fixed_line_appended_memory_mass": "31/30"
+      },
+      {
+        "length": 2,
+        "prime_weights": [
+          "1/7",
+          "2/7",
+          "3/7"
+        ],
+        "s": "6/7",
+        "active_mass": "36/49",
+        "fixed_line_appended_memory_mass": "18/49"
+      },
+      {
+        "length": 2,
+        "prime_weights": [
+          "1/5",
+          "1/3",
+          "1/2"
+        ],
+        "s": "31/30",
+        "active_mass": "961/900",
+        "fixed_line_appended_memory_mass": "961/1800"
+      },
+      {
+        "length": 3,
+        "prime_weights": [
+          "1/7",
+          "2/7",
+          "3/7"
+        ],
+        "s": "6/7",
+        "active_mass": "216/343",
+        "fixed_line_appended_memory_mass": "36/343"
+      },
+      {
+        "length": 3,
+        "prime_weights": [
+          "1/5",
+          "1/3",
+          "1/2"
+        ],
+        "s": "31/30",
+        "active_mass": "29791/27000",
+        "fixed_line_appended_memory_mass": "29791/162000"
+      },
+      {
+        "length": 4,
+        "prime_weights": [
+          "1/7",
+          "2/7",
+          "3/7"
+        ],
+        "s": "6/7",
+        "active_mass": "1296/2401",
+        "fixed_line_appended_memory_mass": "54/2401"
+      },
+      {
+        "length": 4,
+        "prime_weights": [
+          "1/5",
+          "1/3",
+          "1/2"
+        ],
+        "s": "31/30",
+        "active_mass": "923521/810000",
+        "fixed_line_appended_memory_mass": "923521/19440000"
+      },
+      {
+        "length": 5,
+        "prime_weights": [
+          "1/7",
+          "2/7",
+          "3/7"
+        ],
+        "s": "6/7",
+        "active_mass": "7776/16807",
+        "fixed_line_appended_memory_mass": "324/84035"
+      },
+      {
+        "length": 5,
+        "prime_weights": [
+          "1/5",
+          "1/3",
+          "1/2"
+        ],
+        "s": "31/30",
+        "active_mass": "28629151/24300000",
+        "fixed_line_appended_memory_mass": "28629151/2916000000"
+      },
+      {
+        "length": 6,
+        "prime_weights": [
+          "1/7",
+          "2/7",
+          "3/7"
+        ],
+        "s": "6/7",
+        "active_mass": "46656/117649",
+        "fixed_line_appended_memory_mass": "324/588245"
+      },
+      {
+        "length": 6,
+        "prime_weights": [
+          "1/5",
+          "1/3",
+          "1/2"
+        ],
+        "s": "31/30",
+        "active_mass": "887503681/729000000",
+        "fixed_line_appended_memory_mass": "887503681/524880000000"
+      }
+    ],
+    "nonsymmetric_F_negative_control": {
+      "alphabet": [
+        2,
+        3
+      ],
+      "length": 2,
+      "prime_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "phase": "i^(p1-p2)",
+      "test_F": "p1",
+      "symmetrized_weighted_sum": [
+        "5/8",
+        "0"
+      ],
+      "raw_weighted_sum": [
+        "5/8",
+        "1/8"
+      ]
+    },
+    "unordered_factorial_negative_control": {
+      "alphabet": [
+        2,
+        3
+      ],
+      "weights": [
+        "1/2",
+        "1/2"
+      ],
+      "length": 2,
+      "correct_ordered_memory_mass": "1/2",
+      "wrong_unordered_with_same_factorial_mass": "3/8"
+    },
+    "scope": "Exact Gaussian-rational phase and tuple algebra. No analytic phase-inserted G/E norm is certified."
+  },
+  "full_pair_memory": {
+    "full_pair_alphabet_size": 7,
+    "ordered_pair_tuple_cases": 400,
+    "lambda_X": "11/7",
+    "prime_choice_mass_s": "3/7",
+    "records": [
+      {
+        "length": 0,
+        "full_memory_mass": "1",
+        "symmetric_phase_sum": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "length": 1,
+        "full_memory_mass": "11/7",
+        "symmetric_phase_sum": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "length": 2,
+        "full_memory_mass": "121/98",
+        "symmetric_phase_sum": [
+          "913/98",
+          "0"
+        ]
+      },
+      {
+        "length": 3,
+        "full_memory_mass": "1331/2058",
+        "symmetric_phase_sum": [
+          "14423/2058",
+          "0"
+        ]
+      }
+    ],
+    "normalization_negative_control": "lambda(X)=11/7 differs from s=3/7 because every projective line is a memory atom.",
+    "scope": "Full pair-memory lambda measure, distinct from the fixed-current-line appended prime-tuple measure."
+  },
+  "failures": [],
+  "elapsed_seconds": 0.9977668999999878,
+  "inference_tokens": "unknown",
+  "monetary_cost": "unknown"
+}

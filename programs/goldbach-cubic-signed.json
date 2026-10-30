@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-CUBIC-022",
+  "title": "A direct cubic long-signed operator attempt",
+  "objective": "Attempt a genuine one-sided arithmetic gain on the cubic minorant's exact long signed operator, auditing the referenced primary definitions and preserving its coupled support, comparison density and original prime target.",
+  "fleet": "pair",
+  "briefs": ["research/goldbach/cubic-signed-20261029/brief.md", "research/goldbach/cubic-signed-20261029/primary-inputs.md"],
+  "constraints": {"max_agents": 3, "max_workers": 2, "max_cost_units": 10, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["At most two direct signed mechanisms", "Exact primary-source scope and coupled operator", "A proved one-sided gain or precise first failed estimate", "Distinct mathematical challenge and bounded revision"],
+  "success_criteria": ["A preprint's claimed reduction is not taken as proof of its missing hypothesis", "Nonrough products and k=1 remain in the exact long sum", "No unsigned norm, pilot range or comparison mass becomes an unproved positive prime margin", "Any application of earlier results matches actual weights and parameter ranges"],
+  "stop_conditions": ["One pair8 proxy-unit round plus2 root primary-access units,10 total", "No other supplements, paid calls, publication, external messages or unbounded computation", "The full Goldbach objective remains active unless actually proved or a substantive breakthrough verified"]
+}

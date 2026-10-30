@@ -1,0 +1,34 @@
+{
+  "summary": "Supported: Candidate1's positive selected-divisor expansion and overlap error, signed nonnegative cofactor square, coprime determinant equivalence and uniform raw/comparison absolute/shared estimates; and Candidate2's xY log^(-A) bound for Qall-Qmajor with the defined full-pullback comparison. The accepted corrected MOMENTS-010 input extends to the stated H range by the explicit root/boundary checks. The endpoint conjugation, no-H-loss block/cell ambient Gram argument, separate positive one-edge bad-state replacement and exact ordered harmonic D reassembly are valid. No mathematical repair was found for these limited claims. The first remaining analytic obligation is Qmajor itself; actual-prime, decomposition/weight-removal, polynomial-rough/nonzero-center/h=1, full-source, novelty and Goldbach conclusions remain incomplete. Exact frozen hashes, independent derivations, finite coverage limits and three integration findings are recorded in review.md. Assurance is a distinct host-agent mathematical review, not formal verification or external peer review; usage is unknown.",
+  "claims": [
+    {
+      "text": "The positive selected-prime expansion with its repeated-square error, Cauchy enlargement to nonzero signed cofactors and coprime a,b determinant/cofactor equivalence are valid under the stated unit, sifting and cutoff hypotheses.",
+      "status": "proved",
+      "source": "research/goldbach/type-ii-pairing-20261029/review.md; frozen statement SHA256 f93c024abd19699640e90bb5680306432c2bb71600acd77a0b66024a6658645b"
+    },
+    {
+      "text": "The elementary progression divisor-square proof and complete-pullback congruence yield the stated xY-scale absolute raw/comparison bounds and exponentially small shared-prime parts uniformly for x<=H<=x log^B x.",
+      "status": "proved",
+      "source": "research/goldbach/type-ii-pairing-20261029/review.md"
+    },
+    {
+      "text": "The assertion that a shared-a,b determinant equation alone enforces integer cofactors is refuted by the displayed H=2,a=b=3 unit-product witness.",
+      "status": "refuted",
+      "source": "research/goldbach/type-ii-pairing-20261029/review.md"
+    },
+    {
+      "text": "Using the accepted corrected eligible MOMENTS-010 model, the endpoint support and conjugation, selected-root ambient Gram localization, independent positive bad-edge replacement and ordered shared-list reassembly prove the stated bound for Qall-Qmajor in the declared symmetric input regime.",
+      "status": "proved",
+      "source": "research/goldbach/type-ii-pairing-20261029/review.md; research/goldbach/operator-moments-20261029/revision.md"
+    },
+    {
+      "text": "Qmajor, its actual-coefficient major-energy estimate, the remaining arithmetic prime/decomposition/weight-removal bridges, polynomial roughness and h=1/nonzero-center margins, novelty and Goldbach remain unestablished by this stage.",
+      "status": "unverified",
+      "source": "research/goldbach/type-ii-pairing-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/type-ii-pairing-20261029/review.md",
+    "research/goldbach/type-ii-pairing-20261029/counterexample-result.json"
+  ]
+}

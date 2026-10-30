@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-PRINCIPAL-019",
+  "title": "The actual principal comparison and fractional contribution",
+  "objective": "Connect the supported centered polynomial energy to the actual cofactor comparison on the honest balanced arithmetic input, retaining the nonzero principal term and identifying what it implies about fractional compensation without assuming a raw-count lower bound.",
+  "fleet": "pair",
+  "briefs": ["research/goldbach/principal-comparison-20261029/brief.md"],
+  "constraints": {"max_agents": 2, "max_workers": 2, "max_cost_units": 8, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["At most two exact comparison claims", "Actual kernel/coefficient/phase and normalization identities", "A positive main term or precise first falsifier", "Separate challenge and bounded revision"],
+  "success_criteria": ["Positivity is proved only on its actual input class", "Nonprincipal energy is connected through exact transforms with paid tails", "The principal term is not identified with an unknown prime-pair count", "The original signed difference and pointwise prime margin remain explicit"],
+  "stop_conditions": ["One pair round within8 proxy units", "No paid inference, publication or external messages", "A nonzero major comparison alone does not complete the Goldbach objective"]
+}

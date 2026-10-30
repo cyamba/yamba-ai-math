@@ -1,0 +1,14 @@
+# Next bridge: inspect parity-sensitive prime-list estimates
+
+29 October 2026. Preliminary source inspection by the root agent. This note identifies a concrete next question. It does not validate an external breakthrough, prove the Goldbach input, or claim that the observed restrictions are a no-go for every extension.
+
+Inspected the primary [Lue-Wang-Wu preprint, arXiv:2610.20242v1](https://arxiv.org/html/2610.20242v1), dated 14 October 2026: Theorem 1, definitions (2.12)-(2.16), statements of Propositions 4.2 and 4.5, and the moment-transfer step (4.68). The preprint claims cancellation of mu(p+2) at the fixed shift 2. Its full proof was not audited here; the claim remains **unverified** as a dependency. The existing Guo follow-up is conditional on specified parts of this argument and does not itself remove the polynomial-cutoff gap.
+
+The auxiliary prime groups in (2.12) have scales exp((log x)^a) with fixed 0.1<a<0.2. Each weight is a product of factors depending on the number of prime divisors from one group; that factor is zero if there is no such divisor. The number of groups is chosen sufficiently large for the stated precision. The spectral step also uses subpolynomial auxiliary products and a growing moment parameter.
+
+The exact next audit is whether some different use of those estimates can yield a one-sided polynomially sifted reflected-prime bound, rather than replacing parameters in a theorem outside its stated range. Two immediate support issues must be addressed before attempting that extension:
+
+1. Retaining the original groups while restricting q to P^-(q)>x^alpha for fixed alpha>0 makes every group-divisor count zero for sufficiently large x. The original auxiliary weight is then identically zero on the desired rough population. An unsifted weight-approximation result does not automatically give approximation relative to that population.
+2. Moving every group above x^alpha changes the construction. If K disjoint groups must each supply a prime divisor of q<=C*x, then q>x^(K*alpha). For K*alpha>1 the weight again has empty support eventually. Near alpha=1/3, a requirement of four or more such divisors is impossible. The source's use of arbitrarily many groups therefore cannot be carried over without a new argument.
+
+These are elementary support observations, proposed for separate audit in the next tranche. They are not a proof that every possible adaptation fails. A constructive next attempt must either replace the divisor-label amplification, exhibit a valid bound with a bounded number of labels and sufficient savings, or find a different parity-sensitive theorem whose actual hypotheses reach the needed moving target and cutoff. Merely increasing the ordinary distribution level or changing the starting Buchstab cutoff has already been ruled out as a solution within the analyzed information model.

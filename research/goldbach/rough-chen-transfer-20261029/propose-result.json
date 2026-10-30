@@ -1,0 +1,44 @@
+{
+  "summary": "Actual GOLDBACH-CHEN-024 proposal, incomplete for Goldbach. The base modified-weight application is repaired using Li's exact r=0,1,2,3 residual classes with u=1/500. The source fixed-prime branch fails Dwell beyond t=57/224; an ordinary-weight BV cap is derived. Direct semiprime subtraction has a strictly negative coefficient even under the explicitly optimistic stronger switched transfer. A genuinely beyond-half signed Type II congruence estimate is proved for the actual rough cubic suboperator with prime cofactor N^(1/6)<k<=N^(1/3-epsilon), relative to Lichtman Proposition3.1. Its transport to the complementary prime and the full cubic lower bound remains unproved.",
+  "claims": [
+    {
+      "text": "The exact r=0/1/2/3 extraction, with u=1/500 only for the exceptional smooth clause and the correct residual classes, verifies the anatomy and coefficient hypotheses for the modified lower base bound at level249/448 with a fixed positive margin.",
+      "status": "proved",
+      "source": "statement.md Section2, equations(3)-(7); relative to Li Lemma2.1 and the imported modified-weight support/sieve construction"
+    },
+    {
+      "text": "For the fixed largest modulus factor ell=N^t at eta(t)=57/64-3t/2, Li's required vector condition ell^2<D fails when t>57/224. The ordinary identity lambda^-_D(ell d)=-lambda^+_(D/ell)(d) holds below that condition and fails at d=1 above it. No modified-weight identity is assumed.",
+      "status": "proved",
+      "source": "statement.md Section3, equations(9)-(12)"
+    },
+    {
+      "text": "Ordinary BV at a total level below one half provides a valid replacement for the conditional one-prime branch, yielding the explicit repaired lower bound U_alpha/X_N>=L0-H_(1/2)(alpha)+o(1).",
+      "status": "proved",
+      "source": "statement.md Section3, equations(13)-(14), relative to classical Bombieri-Vinogradov and the base bound"
+    },
+    {
+      "text": "Even granting the source's stronger uncorrected branch and an explicit switched upper bound at level249/448 for both semiprime and triple contamination, the direct prime-margin coefficient is less than -353328/7675425 for every alpha in(1/4,1/3). This refutes the positive-sign claim for that particular subtraction only.",
+      "status": "proved",
+      "source": "statement.md Section3.1, equations(15)-(18); exact conditional coefficient calculation, not a claim that the optimistic transfer is established"
+    },
+    {
+      "text": "The literal signed coefficient mu(h)Phi(log h/log(kh)) on rough h>D and prime cofactors N^(1/6)<k<=N^(1/3-epsilon) satisfies the congruence error estimate(21) at level153/256-100epsilon for any genuinely triply well-factorable complementary-modulus coefficient, with residue N.",
+      "status": "proved",
+      "source": "statement.md Section4.1; complete reduction to Lichtman Proposition3.1, with small-factor size, roughness, SW, residue growth, exact coprimality and smooth weights verified"
+    },
+    {
+      "text": "The exact complementary-prime Mobius expansion has moduli beyond that level, and its naive truncation is not triply well-factorable: a prime coefficient above Q^(1/3) contradicts the balanced three-factor splitting. Thus estimate(21) has not been transported to the original prime weight.",
+      "status": "proved",
+      "source": "statement.md Section5, equations(22)-(23)"
+    },
+    {
+      "text": "No positive original prime margin F_alpha>H_alpha, no useful bound(24), and no fixed positive delta in the full cubic lower bound(25) is established. The full switched endpoint extension and modified fixed-factor coefficient transport are unresolved.",
+      "status": "unverified",
+      "source": "statement.md Sections3.1,5,6"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/rough-chen-transfer-20261029/statement.md",
+    "research/goldbach/rough-chen-transfer-20261029/propose-result.json"
+  ]
+}

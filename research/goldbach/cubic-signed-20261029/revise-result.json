@@ -1,0 +1,30 @@
+{
+  "summary": "Actual round-1 original-author revision accepts frozen critic F1: the requested fixed-delta lower bound remains unproved. Retained independently reviewed deductions are the actual tiny-prime product sector o(M_N) relative to expressly imported classical maximal BV at fixed B>=8; the elementary odd squarefree y-rough open central-strip o(M_N) estimate at every fixed B>0; and the separate rough squareful long error. Their exact support identity leaves the original nonrough, even rough, and outer odd residuals, including wheel, atom, endpoints, integer cofactors and k=1. Only a coarse O(N L^5) residual bound is proved. No Goldbach proof, powers-of-two improvement, breakthrough or novelty determination is claimed. The frozen proposal and review are preserved. Token and monetary usage are unknown; no invented usage values are supplied.",
+  "claims": [
+    {
+      "text": "For fixed B>=8 and every sufficiently large even N, the original long signed contribution from products sharing a prime at most w=floor(log L/(4 log log L)) is o(M_N), relative to the inspected classical maximal Bombieri-Vinogradov theorem; exact shell support, multiplicity, model mismatch, wheel, atom and endpoints are preserved.",
+      "status": "proved",
+      "source": "research/goldbach/cubic-signed-20261029/revision.md, (V3); frozen statement.md (2)-(7); frozen review.md, Supported deduction 1. Assurance: complete human-readable derivation plus distinct-role independent review, importing the classical BV theorem, without formal certification."
+    },
+    {
+      "text": "For every fixed B>0 and every sufficiently large even N, the actual y-rough squarefree mu(n)=-1 contribution from the open central divisor strip D<h<n/D is O_B(S(N)N(log L)^5/L^2+log L)=o(M_N), using the exact complementary-divisor involution and the elementary actual rough-|u| bound.",
+      "status": "proved",
+      "source": "research/goldbach/cubic-signed-20261029/revision.md, (V4); frozen statement.md (8)-(17); frozen review.md, Supported deduction 2. Assurance: elementary human-readable argument plus distinct-role independent review, without formal certification."
+    },
+    {
+      "text": "The entire actual long contribution from y-rough squareful products is O(N^(5/6)L^4)=o(M_N), and the exact partition (V5) leaves all remaining nonrough, even rough and outer odd terms in the three original residual operators. Nonrough squareful products and nonzero nonrough k=1 terms remain included.",
+      "status": "proved",
+      "source": "research/goldbach/cubic-signed-20261029/revision.md, Section 4, (R) and (V5); frozen statement.md (18)-(20); frozen review.md, Exact remainder and error ledger."
+    },
+    {
+      "text": "The fixed-delta lower bound (V6), equivalent after the proved negligible sectors to the requested full 3/4-gap bound, remains unproved for all sufficiently large even N and for all sufficiently large powers of two. This is an unresolved evidence gap rather than a refutation of the actual-prime assertion. Novelty and the original Goldbach objective remain incomplete.",
+      "status": "unverified",
+      "source": "research/goldbach/cubic-signed-20261029/revision.md, accepted F1, (V2) and (V6); frozen review.md, critical finding F1."
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/cubic-signed-20261029/revision.md",
+    "research/goldbach/cubic-signed-20261029/statement.md",
+    "research/goldbach/cubic-signed-20261029/review.md"
+  ]
+}

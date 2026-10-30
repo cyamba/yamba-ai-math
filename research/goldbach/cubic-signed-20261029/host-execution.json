@@ -1,0 +1,31 @@
+{
+  "program": "GOLDBACH-CUBIC-022",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "propose",
+    "challenge",
+    "revise"
+  ],
+  "planned_proxy_units": 8,
+  "completed_proxy_units": 8,
+  "supplemental_primary_access_proxy_units": 2,
+  "supplemental_primary_access_status": "completed root public-source retrieval, scoped text inspection, exact formula rendering and provenance",
+  "total_planned_host_proxy_units": 10,
+  "total_completed_host_proxy_units": 10,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "propose": "/root/cubic_signed as Mathematician",
+    "challenge": "/root/cubic_critic as Independent Critic",
+    "revise": "/root/cubic_signed",
+    "supplemental_primary_access": "/root"
+  },
+  "author_status": "actual proposal, distinct mathematical challenge and original-author revision complete",
+  "objective_status": "active and incomplete",
+  "next_action": "root integrates exact supported partial sectors; BALANCED023 actual signed covariance attempt executing",
+  "independence": "distinct actual author/critic identities and role profiles, not independent model errors",
+  "frozen_statement_sha256": "9f385113df4b561399311ece472e41affd989ff187a93bdbec66a8d1cccffa5a",
+  "frozen_review_sha256": "4eaf6c19f2e36a5822915e5f1029cd4311ce09b79fe2131fdfcd49ff7bae5d1b",
+  "primary_provenance_audit": "review records the exact current nine-input provenance-file hash; its seven primary-input wording refers to Arneth files; root verifies all nine source-file hashes",
+  "frozen_revision_sha256": "079b5a44ecd258c81f3c86635eeb191d6057a4e9b4b9e3e7f81280e6a78a3424"
+}

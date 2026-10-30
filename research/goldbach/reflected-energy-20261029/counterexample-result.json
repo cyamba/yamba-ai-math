@@ -1,0 +1,34 @@
+{
+  "summary": "Supported in the declared scopes: the classwise fixed-twist character-fiber and two-frequency Mellin reduction, its tails and YX^2 prefactor; the actual-coefficient energy under the selected precision-dependent strip; and the small-radical specialization that discharges this additional strip assumption for every required q* dividing kH using the inspected Iwaniec theorem and real-conductor bound. The sparse Gram/Burgess margins, direct MSTT interval rescaling, real-weight/smooth tails, Jensen/logarithmic-derivative deductions relative to explicitly declared classical completed-L structure, endpoint-uniform Perron and coefficient convolution are valid. No mathematical repair was found. General H remains conditional on its selected strip; no one-width all-precision claim is accepted. Finite algebra coverage and imported-theorem/background assurance limits are explicit in review.md. Remaining actual-prime assembly, polynomial-rough/nonzero-center/h=1 margins, source-wide validation, novelty and Goldbach remain incomplete. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The complete-pullback comparison is controlled by YX^2 times the uniform normalized fixed-twist energy, with classwise Cauchy before Parseval, two independent transform frequencies and the stated fixed logarithmic and tail costs.",
+      "status": "proved",
+      "source": "research/goldbach/reflected-energy-20261029/review.md; frozen statement SHA256 eb76660af2f2ccb2ac003fdf835d2b05c325435d7600ed9e7f98448eb32da80b"
+    },
+    {
+      "text": "Relative to the named classical inputs and explicitly declared completed-L structural background, the actual sifted Mobius/long-prime-factor coefficients have energy O_A(L^(-A)/H) under the selected precision-dependent large-conductor zero-free rectangle. General H retains that hypothesis.",
+      "status": "proved",
+      "source": "research/goldbach/reflected-energy-20261029/review.md"
+    },
+    {
+      "text": "On rad(H)<=log^C H for fixed C, choosing A1>A0+C excludes the possible real primitive exception, and the inspected Iwaniec width contains the selected closed rectangle uniformly for every q* dividing kH. The energy and comparison bounds then follow from the named classical inputs without that additional general-H strip assumption.",
+      "status": "proved",
+      "source": "research/goldbach/reflected-energy-20261029/review.md; research/goldbach/reflected-energy-20261029/iwaniec-primary-statement.md"
+    },
+    {
+      "text": "Finite agreement of the fiber/prefactor/convolution checks does not establish the continuous transform, analytic energy, zero-free inputs or Gram/Perron asymptotics; imported theorem statements and completed-L background retain the assurance limits recorded in the review.",
+      "status": "unverified",
+      "source": "research/goldbach/reflected-energy-20261029/review.md"
+    },
+    {
+      "text": "The general-H selected strip, full source validation, remaining decomposition/TypeI/weight-removal and actual-prime assembly, original polynomial-rough and h=1/nonzero-center Goldbach margins, novelty and Goldbach remain unestablished by this stage.",
+      "status": "unverified",
+      "source": "research/goldbach/reflected-energy-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/reflected-energy-20261029/review.md",
+    "research/goldbach/reflected-energy-20261029/counterexample-result.json"
+  ]
+}

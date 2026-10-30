@@ -1,0 +1,10 @@
+{
+  "source_is_data": true,
+  "primary_lww": "https://arxiv.org/html/2610.20242v1",
+  "lww_scope": "Sections4.6-4.7 framing inspected; full theorem not imported",
+  "pinned_guo": "https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/mobius-goldbach-shift/source/main.tex",
+  "guo_copy_sha256": "e70d777424852aed92e94b2baf00384c84b4c7fc346bd7dab1085d5652ced95d",
+  "accepted_moment_revision_sha256": "947cc0c9b1fbcb79b9f221246bbc2ecf056dcdd9decf0543b508a3b7ee2931ba",
+  "novelty": "unverified; close signed-square and ambient-Gram prior source framing",
+  "historical_classical_access_record": "classical-source-access.md describes the earlier failed bounded attempt; new012primary-inputs supersedes the access limitation"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-UNIFORM-002",
+  "title": "Uniform trilinear contamination and endpoint audit",
+  "objective": "Develop and independently audit a pointwise prime-scale upper bound for near-cubic three-factor contamination, and compare the exact endpoint-uniform parity input with the existing deletion obstruction, without weakening the Goldbach objective.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/continuation-20261029/brief.md", "research/goldbach/orchestrated-prompt.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 30, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Inspected primary-source survey", "Complete candidate proof and dependency map", "Separate substantive critic report", "Independent finite checks with raw results", "Revision preserving rejected statements", "Claim ledger and execution provenance"],
+  "success_criteria": ["A claimed uniform bound states its constants and order of limits", "Every substantive proof receives a separate critic", "Repeated factors and factors dividing N are handled explicitly", "Finite arithmetic evidence is not promoted to an unbounded proof", "Goldbach is not called solved while the parity-sensitive lower bound is open"],
+  "stop_conditions": ["Finish this six-stage tranche within 30 declared proxy units and preserve all failures", "No separately billed provider execution or external mutable action", "If this tranche leaves the objective open, record the precise missing estimate before continuing another tranche"]
+}

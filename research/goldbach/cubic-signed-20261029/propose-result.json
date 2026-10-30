@@ -1,0 +1,28 @@
+{
+  "summary": "Incomplete for the constant-gap target. Two actual signed sectors of H_3,D are o(M_N): products with a prime at most w=floor(log log N/(4 log log log N)), by exact small-prime cancellation into BV-controlled shells at fixed B>=8; and the odd squarefree y-rough central divisor strip, by complementary pairing plus an elementary actual rough-|u| upper bound. Rough squareful long terms are separately negligible. The exact remaining nonrough, even-parity and outer odd-parity operators are retained with only a coarse O(N log^5 N) bound. No fixed delta, Goldbach proof or power-of-two improvement is obtained. Novelty is unverified. Token and monetary usage are unknown.",
+  "claims": [
+    {
+      "text": "For fixed B>=8 and all sufficiently large even N, the original long operator restricted to products n with a prime factor at most w=floor(log L/(4 log log L)) is o(M_N), with the exact coupled support, large-prime-part Phi weight, mu(h), wheel and atom preserved.",
+      "status": "proved",
+      "source": "research/goldbach/cubic-signed-20261029/statement.md, Claim 1, equations (2)-(7); proof imports the classical maximal Bombieri-Vinogradov theorem in the inspected range."
+    },
+    {
+      "text": "For every fixed B>0, the original contribution from D<h<n/D on y-rough squarefree products with mu(n)=-1 is O_B(S(N)N(log L)^5/L^2+log L)=o(M_N), uniformly over sufficiently large even N.",
+      "status": "proved",
+      "source": "research/goldbach/cubic-signed-20261029/statement.md, Claim 2, equations (8)-(17); complete pairing and elementary Bonferroni argument."
+    },
+    {
+      "text": "The entire original long contribution from y-rough squareful products is O(N^(5/6)L^4)=o(M_N); squareful nonrough products remain in the nonrough residual.",
+      "status": "proved",
+      "source": "research/goldbach/cubic-signed-20261029/statement.md, equation (18), separate error ledger."
+    },
+    {
+      "text": "A fixed-delta lower bound for the sum of the three exact residual operators, and therefore the requested 3/4-gap bound for H_3,D, remains unproved for all large even N and for all large powers of two.",
+      "status": "unverified",
+      "source": "research/goldbach/cubic-signed-20261029/statement.md, equations (R), (19)-(21)."
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/cubic-signed-20261029/statement.md"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "source_is_data": true,
+  "inputs": [
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/koukoulopoulos-primes-preliminary.pdf",
+      "bytes": 2238368,
+      "sha256": "1445e107bba9c89db6529aeb4bca3ecf01170fc2854a675f5ca6f288c77ea0a8",
+      "source": "https://www.dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf",
+      "inspection": "author-provided preliminary version retainedunchanged; exact eq26.1 inspected, notfullbookaudit"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/prime-bv-book277.png",
+      "bytes": 383889,
+      "sha256": "e47e69dc9951f29297de3d98d08fb9cacb2e93182553007100838c91f6831cac",
+      "source": "https://www.dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf",
+      "inspection": "visually inspected printedpage277/PDF288"
+    }
+  ],
+  "pinned_guo": "https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/mobius-goldbach-shift/source/main.tex",
+  "guo_copy_sha256": "e70d777424852aed92e94b2baf00384c84b4c7fc346bd7dab1085d5652ced95d"
+}

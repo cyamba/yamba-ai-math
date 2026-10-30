@@ -1,0 +1,43 @@
+{
+  "summary": "Incomplete actual BALANCED023 proposal. Two arithmetic routes were attempted on the exact Section10 coefficients: four-term prime/model divisor switching and a signed von Mangoldt divisor expansion. The first retains a second-prime-weighted progression error; the actual BV partial-summation attempt has an incurable power loss in the available bound. The second has a proved negligible prime-power correction but leaves its signed quotient-Mobius correlation open. No useful o(M_N^2) covariance bound, weighted semiprime margin, Goldbach breakthrough or full-goal completion is claimed.",
+  "claims": [
+    {
+      "text": "For every sufficiently large even N, all supported rq are composite, so the correction atom vanishes after this support proof. Rows with (rq,N)>1 vanish exactly, and each remaining r is coprime to the full actual wheel W. The exact four-term covariance and both cross-branch contributions are retained.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/statement.md, Sections1 and2; complete elementary argument, no formal certificate"
+    },
+    {
+      "text": "For live r,s, the exact normalized wheel pair factor under uniform integer q residues is the product of ell/(ell-1) when ell divides N(s-r), and 1-1/(ell-1)^2 otherwise. The corresponding single-prime signed local covariance is 1/(ell-1) or -1/(ell-1)^2. The unit-residue measure has different factors. These are finite wheel identities and do not evaluate genuine prime-prime covariance on the finite interval.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/statement.md, equations(2.3)-(2.6); CRT and explicit residue counting"
+    },
+    {
+      "text": "The actual prime-pair switch gives s*m1-r*m2=N(s-r), with the full congruence m1=N modulo r retained. On BV-covered dyadic supports, a valid partial-summation average of the second-prime weight gives only O(N^2*X/L^(A-4)+N^2*L^8). This insufficient bound does not establish negligible weighted progression error, and the full r support also extends beyond the imported BV range.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/statement.md, equations(2.7)-(2.11); conditional only on the expressly imported classical BV theorem"
+    },
+    {
+      "text": "Replacing theta(N-rq) by von Mangoldt(N-rq) on the actual beta support changes the weighted square norm by an error with squared norm O(N^(3/2)*L^3)=o(M_N^2); its unweighted total is O(N^(1/2)*L^2)=o(M_N). Hence the two dispersion targets are equivalent. The proof counts the at-most-five large prime factors of each reflected prime-power complement and retains repeated factors.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/statement.md, equations(3.1)-(3.2); complete elementary counting proof"
+    },
+    {
+      "text": "The exact signed divisor expansion F_Lambda=S_H+V_H-kappa*B retains both branches and all endpoints; the long part is a signed quotient-Mobius sum with integer cofactor k. No estimate of its required centered weighted square norm is proved.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/statement.md, equations(3.3)-(3.5); algebraic identity only, not a cancellation theorem"
+    },
+    {
+      "text": "For distinct rough primes p<q with pq in I, the actual long coefficient is -(3t^2-2t^3) for p<=D and -1 for p>D, where t=log(p)/log(pq); p=D belongs to the first case. The square coefficient is -1/2. The balanced semiprime contribution therefore has the explicit weight w_D and q-weighted Cauchy energy stated in(4.3)-(4.4). Unweighted combined-branch pilot control does not provide the additional weighted prefix and complementary-range statements needed for that transfer.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/statement.md, Section4; exact divisor enumeration and weighted Cauchy"
+    },
+    {
+      "text": "The uniform target D_Q=o(M_N^2), a useful one-sided weighted semiprime estimate, the complete long-signed Hypothesis8.2, and the user's Goldbach objective remain unproved by this proposal. Novelty of the elementary deductions is unverified.",
+      "status": "unverified",
+      "source": "research/goldbach/balanced-covariance-20261029/statement.md, verdict and Sections2,3,5"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/balanced-covariance-20261029/statement.md"
+  ]
+}

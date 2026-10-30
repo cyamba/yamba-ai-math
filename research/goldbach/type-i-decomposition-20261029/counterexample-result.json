@@ -1,0 +1,38 @@
+{
+  "summary": "Independent critic read the actual populated TYPEI-013 packet and frozen statement f810cce2f92073af5244e673b0afdad6d6a1d624b22f4df422468bd61a174db2, reconstructed both proofs and the actual accepted011/012 assembly, and inspected the final finite output. Candidate1 is supported; Candidate2 is supported relative to the precisely inspected classical endpoint-uniform Mobius BV input. The W-weighted marked-prime corollary is supported with the explicit comparable-threshold/common-log interfaces and noncircular precision order, selected-strip conditional for general even H and classical on each fixed small-radical class. No mathematical repair was found. Assurance is a complete written-argument audit by a distinct host agent, not formal verification or source-wide validation. The finite checks certify only their declared algebraic cases. W removal, actual unweighted prime cancellation, the original Goldbach bridge and novelty remain unestablished. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The exact sifted Vaughan convolution, both prime-power corrections and endpoint-uniform rectangle/Mellin interface are supported with the actual Mobius and c_V0 arithmetic roles, fixed phase ceiling and unit-removal errors.",
+      "status": "proved",
+      "source": "research/goldbach/type-i-decomposition-20261029/review.md"
+    },
+    {
+      "text": "Relative to the inspected Mobius BV theorem statement, finite positive Taylor/Bonferroni errors, g extraction, arbitrary supported b powers, the reduced odd class, g-specific head scales, weighted BV and both Rankin tails prove the stated even-H endpoint-uniform Type-I saving. No full primorial modulus or extraneous gcd(g,db) condition is used.",
+      "status": "proved",
+      "source": "research/goldbach/type-i-decomposition-20261029/review.md"
+    },
+    {
+      "text": "The actual accepted PAIRING011 and ENERGY012 scopes, with the explicit comparable V0 threshold, common global bands/J/R/arcs and fixed precision order, yield the displayed W-weighted prime correlation under the selected general-H strip or classically on each fixed small-radical class.",
+      "status": "proved",
+      "source": "research/goldbach/type-i-decomposition-20261029/review.md"
+    },
+    {
+      "text": "The omitted-hypothesis variants restricting b to squarefree values, imposing gcd(g,db)=1, omitting parity or the second prime-power correction are refuted by the displayed exact witnesses. These witnesses do not refute the retained theorem.",
+      "status": "refuted",
+      "source": "research/goldbach/type-i-decomposition-20261029/review.md"
+    },
+    {
+      "text": "The final bounded finite run reports no failures on its declared formal convolution, positive finite-expansion, smooth-power and CRT cases; this is finite algebraic evidence, not analytic or asymptotic certification.",
+      "status": "empirical",
+      "source": "research/goldbach/type-i-decomposition-20261029/finite-results.json"
+    },
+    {
+      "text": "Removal of W, actual unweighted prime cancellation, a general-H selected strip from classical inputs, polynomial-rough/h1/nonzero-center margins, source-wide theorem validation, novelty and Goldbach are not established by this stage.",
+      "status": "unverified",
+      "source": "research/goldbach/type-i-decomposition-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/type-i-decomposition-20261029/review.md"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "summary": "Independent critic read the actual populated WEIGHTS014 packet and frozen statement22b1e94dff57c26ace239b82cf82f83aa06967338628cc14900fd911695fbda8, reconstructed both arguments and checked the actual accepted008-013 ledger. Both candidates are supported in their exact scopes: prime-relative first/mixed moments and fixed-b successive-limit removal follow from the inspected prime BV input; the reflected prime Mobius correlation follows classically on each fixed small-radical class of even H, while general-H sequences require the stated eventual-for-each-fixed-b selected-strip family. No mathematical repair was found. Assurance is a complete written-argument audit by a distinct host agent, not formal verification or full proof audit of imported classical results. The closest Guo source already asserts the corresponding correlation conditionally on H2'; the present replacement arguments remove that assumption only for the proved consequence, without proving all H2', establishing novelty or solving Goldbach. Actual final finite output was inspected before freezing and its exact algebraic coverage limits are retained. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The exact prime-relative probabilities1/(r-1), finite positive Taylor remainder counting with endpoint terms, at-most-two-copy subpolynomial moduli and endpoint prime BV prove the stated first/mixed moments and b-independent leading variance.",
+      "status": "proved",
+      "source": "research/goldbach/weight-removal-20261029/review.md"
+    },
+    {
+      "text": "For every fixed construction with vanishing marked correlations, the correctly ordered H-to-infinity then b-to-infinity limits remove W against bounded H-dependent targets, without a growing-b rate or a threshold uniform in b.",
+      "status": "proved",
+      "source": "research/goldbach/weight-removal-20261029/review.md"
+    },
+    {
+      "text": "The actual accepted008-013 proof chain, common parameter and coefficient scopes, and inspected classical inputs yield sum_(p<H)mu(H-p)log p=o(H) and sum_(p<H)mu(H-p)=o(pi(H)) along every fixed small-radical class of even H; on general even-H sequences this remains conditional on the exact fixed-b family Sigma_b.",
+      "status": "proved",
+      "source": "research/goldbach/weight-removal-20261029/review.md"
+    },
+    {
+      "text": "Replacing the prime-relative means by integer/root means, omitting copy disjointness, or promoting fixed-b errors to an automatic growing-family rate are refuted omitted-hypothesis variants. The retained theorem is not refuted by their witnesses.",
+      "status": "refuted",
+      "source": "research/goldbach/weight-removal-20261029/review.md"
+    },
+    {
+      "text": "Exact source inspection shows that Guo's H2' assumes specified LWW operator and Appendix arguments as written, and its Theorems G/S already assert the corresponding reflected correlation conditionally. The separately proved replacements remove that input for this consequence without establishing the full source hypothesis or novelty.",
+      "status": "established",
+      "source": "research/goldbach/weight-removal-20261029/review.md"
+    },
+    {
+      "text": "The saved bounded finite run reports no failures for its declared Bernoulli/mixed-moment, diagonal, positive-measure Cauchy, finite Taylor and retained CRT cases; it certifies no actual-prime asymptotic or analytic assembly.",
+      "status": "empirical",
+      "source": "research/goldbach/weight-removal-20261029/finite-results.json"
+    },
+    {
+      "text": "An unconditional classical general-H strip family, a growing-family rate, full Guo/LWW validation, verified novelty, a polynomial-rough prime-boundary lower margin and Goldbach remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/weight-removal-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/weight-removal-20261029/review.md"
+  ]
+}

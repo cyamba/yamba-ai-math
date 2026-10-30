@@ -1,0 +1,38 @@
+{
+  "summary": "Proved two bounded WEIGHTS014 candidates pending distinct review: exact prime-relative means and actual-prime first/mixed moments from finite positive Taylor errors and inspected prime BV, followed by fixed-number variance and successive-limit removal; and reflected prime Mobius cancellation on each fixed small-radical class using the actual accepted 008-013 revisions. General even H retains an explicit family of required fixed-b selected-strip inputs. The leading variance constant is independent of b, but thresholds may depend on each finite band array. Direct bounded-target log comparison supplies unweighting without a prefix-cancellation assumption. Closest Guo source already contains related conditional architecture and conclusions; no source-wide validation, growing-b rate, novelty, Goldbach proof or demonstrated breakthrough is claimed. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The exact local probabilities 1/(r-1), finite divisor expansions with positive arithmetic remainders, endpoint prime BV and bounded diagonal yield the stated first/mixed prime moments and variance with leading constant independent of the fixed number b.",
+      "status": "proved",
+      "source": "research/goldbach/weight-removal-20261029/statement.md, Candidate 1"
+    },
+    {
+      "text": "Taking H to infinity for each fixed b and then b to infinity removes the auxiliary weights against any bounded target whose normalized marked correlations vanish for every fixed construction.",
+      "status": "proved",
+      "source": "research/goldbach/weight-removal-20261029/statement.md, equations (18)-(19)"
+    },
+    {
+      "text": "Relative to the actual accepted 008-013 written dependencies and their named classical inputs, every fixed small-radical class rad(H)<=log^C H of even shifts satisfies sum_(p<H)mu(H-p)log p=o(H) and sum_(p<H)mu(H-p)=o(pi(H)); the general even-H version requires the explicit fixed-b family of selected-strip hypotheses.",
+      "status": "proved",
+      "source": "research/goldbach/weight-removal-20261029/statement.md, Candidate 2"
+    },
+    {
+      "text": "The assertions that integer/root local means may replace prime-relative means, disjointness may be omitted, or fixed-b errors automatically give a growing-b rate are refuted by the displayed finite population and counterarray examples.",
+      "status": "refuted",
+      "source": "research/goldbach/weight-removal-20261029/statement.md, local model and limit discussion"
+    },
+    {
+      "text": "A classical general-H selected-strip family, a growing-b rate, source-wide Guo/LWW validation, novelty, a polynomial-rough prime-boundary lower margin and Goldbach remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/weight-removal-20261029/statement.md, final boundary"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/weight-removal-20261029/statement.md",
+    "research/goldbach/weight-removal-20261029/primary-inputs.md",
+    "research/goldbach/weight-removal-20261029/source-provenance.json",
+    "research/goldbach/type-i-decomposition-20261029/revision.md",
+    "research/goldbach/reflected-energy-20261029/revision.md",
+    "research/goldbach/type-ii-pairing-20261029/revision.md"
+  ]
+}

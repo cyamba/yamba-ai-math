@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-SECTORS-006",
+  "title": "Moving-target congruence-sector conjugacy and arithmetic cost",
+  "objective": "Attempt an exact moving-target determinant conjugacy and a quantitative estimate on its transformed domains, preserving the distinction between coordinate algebra and the missing Goldbach cancellation bound.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/moving-sectors-20261029/brief.md", "research/goldbach/moving-sectors-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Exact sector map or counterexample", "Major-arc pullback including cross-sector terms", "Primitive and noncoprime position accounting", "One attempted quantitative transformed-domain estimate", "Separate critic and exact finite checks", "Explicit unresolved arithmetic obligation"],
+  "success_criteria": ["No coordinate change is promoted to cancellation", "The H-dependent domain and local restrictions retain their full costs", "A new bound has a complete argument and separate review", "The original Goldbach objective is preserved"],
+  "stop_conditions": ["One six-stage round within total20 proxy units", "No provider billing, publication or external mutable action", "If the arithmetic estimate fails, preserve the failing term without claiming general impossibility"]
+}

@@ -1,0 +1,35 @@
+{
+  "summary": "Separate critic supports the endpoint-corrected reduction relative to the stated imported unconditional coefficient lemmas and ordinary BV. The lcm squarefree tail, O(B^2) modulus multiplicity, noncoprime prime-power terms, strict moving endpoints, Mobius signs and short-h discard all check out. The root-authored supplemental local-factor proof is also supported: S(N)*(1-A(N)) is bounded below by c/log N uniformly, with order sharp and primorial asymptotic exp(gamma)/log N. This improves the sufficient maximal twisted discrepancy exponent from 3+eta to 2+eta. The revision should integrate that refinement and adjust the coarse log-gap comparison. No signed-operator or specialized bilinear cancellation has been proved, so Goldbach and any breakthrough remain unestablished. Assurance is complete handwritten argument from imported sources plus separate agent review, without formal or external peer verification; usage is unknown.",
+  "claims": [
+    {
+      "text": "The corrected decomposition G(N)=S(N)*(N-B_N)+O_N(N^theta)+O_{A,theta}(N/log(N)^A), for fixed theta<1/2, is supported relative to the inspected unconditional coefficient estimates and ordinary BV.",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/lower-review.md"
+    },
+    {
+      "text": "The supplemental bound S(N)*(1-A(N))>=c/log N is supported uniformly over sufficiently large even N, and its order is sharp along primorials with asymptotic constant exp(gamma).",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/local-gap.md"
+    },
+    {
+      "text": "A fixed maximal twisted discrepancy saving of exponent 2+eta at the stated complementary polynomial level is sufficient for the conditional closure, but that discrepancy estimate is not proved.",
+      "status": "conjecture",
+      "source": "research/goldbach/continuation-20261029/local-gap.md"
+    },
+    {
+      "text": "The near-cubic ordinary lower-sieve and specialized FI routes still lack the specified target-uniform distribution and parity-sensitive bilinear inputs.",
+      "status": "unverified",
+      "source": "research/goldbach/continuation-20261029/lower-review.md"
+    },
+    {
+      "text": "The work supplies reductions and a sharper sufficient hypothesis, but no actual Goldbach lower bound, established breakthrough, effective finite closure, or verified novelty.",
+      "status": "unverified",
+      "source": "research/goldbach/continuation-20261029/lower-review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/continuation-20261029/lower-review.md",
+    "research/goldbach/continuation-20261029/lower-proposal.md",
+    "research/goldbach/continuation-20261029/local-gap.md"
+  ]
+}

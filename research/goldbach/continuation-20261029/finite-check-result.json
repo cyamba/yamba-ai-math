@@ -1,0 +1,35 @@
+{
+  "summary": "Independent host-agent experimenter executed the preregistered standard-library arithmetic checks after receiving the populated finite-check packet. All 29,994 rough-complement target/cutoff cases passed R=(U-L)/2-H, with 294 separate trial-division cross-checks; all 628 exact symbolic-log divisor-switch cases passed. Omitting the moving cutoff fails already at N=4, eta=2 by the positive discrepancy log(2)^2. All 4,792 numerical Abel-transfer cases passed at relative tolerance 1e-10, and the N=10,k=3 sharpness witness and eight adaptive-epsilon cube witnesses were checked. No infinite theorem or unspecified sieve constant was verified by this computation. Full-run timing and Python/platform/source hash are in finite-results.json; inference usage and monetary cost are unknown.",
+  "claims": [
+    {
+      "text": "For every even N from 6 through 20,000 and alpha=3/10,8/25,33/100, exact integer cutoff/factor arithmetic verifies R=(U-L)/2-H, with zero failures and multiplicities included.",
+      "status": "empirical",
+      "source": "research/goldbach/continuation-20261029/finite-results.json"
+    },
+    {
+      "text": "For integer N=4..160 and eta in {3/2,2,7/3,5/2}, the corrected moving-endpoint divisor swap agrees in all 628 formal prime-log coefficient comparisons.",
+      "status": "empirical",
+      "source": "research/goldbach/continuation-20261029/finite-results.json"
+    },
+    {
+      "text": "The divisor-swap identity with the moving endpoint omitted is false: at N=4, eta=2 the erroneous expression exceeds the correct zero expression by log(2)^2.",
+      "status": "refuted",
+      "source": "research/goldbach/continuation-20261029/finite-results.json"
+    },
+    {
+      "text": "The numerical finite Abel checks pass at stated tolerance, and N=10,k=3,eta=2,f(1)=f(8)=1 has exact full discrepancy zero while moving weighted discrepancy is -log(3)/2.",
+      "status": "empirical",
+      "source": "research/goldbach/continuation-20261029/finite-results.json"
+    },
+    {
+      "text": "The proposed uniform infinite H bound, its constant, and Goldbach are not established by finite computation.",
+      "status": "unverified",
+      "source": "research/goldbach/continuation-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/continuation-20261029/experiment-plan.md",
+    "research/goldbach/continuation-20261029/finite_checks.py",
+    "research/goldbach/continuation-20261029/finite-results.json"
+  ]
+}

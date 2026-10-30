@@ -1,0 +1,40 @@
+{
+  "summary": "Independent experimenter read the populated RATIOS-007 finite-check packet and frozen author statement dbd7f89da164cf2dba56a9b6ef877d083e936d3caee912e70390218e0a6a6699. One smoke and one final bounded run passed without failures. Exact cyclotomic checks cover complete fourth moments at moduli2..18, 2,108 unit-orbit cases, 2,695 collision eliminations and 29,240 inputs to the size-at-most-two linear map. All 1,960 inverse-interval Mobius expansions and 132 exact Fourier completions passed, including 470 empty divisor intervals and 133 cases with nonunit k. Exact complement phases, mass expansions and circular discrepancies were computed on60 primitive-position domains, with 300 frequency-grouping checks, 1,148 complements and960 fixed-u mass checks; six empty populations were kept unnormalized. Numerical error-scale ratios are diagnostics only. Final full runtime 0.168224 seconds; source hash and platform are recorded, while token use and monetary cost are unknown. No analytic asymptotic, prescribed prime-list estimate or Goldbach result is certified by finite code.",
+  "claims": [
+    {
+      "text": "At all tested moduli2..18, exact cyclotomic arithmetic verifies the fourth-moment/collision identity and all2,108 unit-scaling orbit sizes; collision elimination, the size-at-most-two map and the stated tau3 counting bound pass exactly.",
+      "status": "empirical",
+      "source": "research/goldbach/complement-ratios-20261029/finite-results.json"
+    },
+    {
+      "text": "All1,960 tested incomplete inverse sums agree with their exact v-coprimality Mobius expansion; coefficient gcds equal gcd(k,u). All132 finite Fourier-completion identities pass, with empty divisor intervals retained.",
+      "status": "empirical",
+      "source": "research/goldbach/complement-ratios-20261029/finite-results.json"
+    },
+    {
+      "text": "The unit-H hypothesis cannot be dropped from the claimed complete-frequency simplification: u2,H2,k1 gives actual complete sum+1, whereas the unit-based Ramanujan center is-1.",
+      "status": "refuted",
+      "source": "research/goldbach/complement-ratios-20261029/finite-results.json"
+    },
+    {
+      "text": "Equal coefficient gcd does not make incomplete sums equal: u3,H2 andH4,k1 on the stated short interval give distinct zeta3 and zeta3^2 sums. Omitting v-coprimality at u3,H2,V2 changes the exact sum from0 to-1.",
+      "status": "refuted",
+      "source": "research/goldbach/complement-ratios-20261029/finite-results.json"
+    },
+    {
+      "text": "All300 bounded-frequency complement phase multisets agree exactly with fixed-u inverse grouping. Finite Mobius mass expansions and normalized circular discrepancies are exact on the60 tested domains; empty populations are not divided by zero.",
+      "status": "empirical",
+      "source": "research/goldbach/complement-ratios-20261029/finite-results.json"
+    },
+    {
+      "text": "The finite stage does not establish the analytic cancellation exponent, discrepancy asymptotics, prime-list applicability or Goldbach.",
+      "status": "unverified",
+      "source": "research/goldbach/complement-ratios-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/complement-ratios-20261029/experiment-plan.md",
+    "research/goldbach/complement-ratios-20261029/ratio_checks.py",
+    "research/goldbach/complement-ratios-20261029/finite-results.json"
+  ]
+}

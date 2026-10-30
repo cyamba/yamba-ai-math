@@ -1,0 +1,7 @@
+# Closest-work inspection and novelty boundary
+
+29 October 2026. Supplemental root literature inspection,2 proxy units. Inspected the introduction and statements1.1-1.3 of [Blomer, Risager and Shparlinski, arXiv:2411.17823v3](https://arxiv.org/html/2411.17823v3), version21 August2025. This is statement-level inspection, not a full proof audit. The HTML renders a different internal document date; the pinned version and submission history identify the source used.
+
+The paper studies modular-inverse discrepancy while varying the modulus. Equation1.4 explicitly records the classical complete Kloosterman bound |S(m,n;c)|<=gcd(m,n,c)^(1/2)*sqrt(c)*tau(c), stronger than the elementary3/4 bound being reconstructed here. Theorems1.1 and1.3 address sums over moduli and frequencies. No one of those statements has been proved to imply the present filtered moving-H estimate verbatim.
+
+This establishes that modular-inverse equidistribution via Kloosterman bounds is established prior methodology. The proposed calculation should be treated as a scoped specialization for the current research, with novelty unverified. It must not be called a new general modular-inverse theorem or a Goldbach breakthrough. Reconstructing an elementary input can make this particular argument auditable without validating the full LWW manuscript; it does not establish priority. The inaccessible Humphries journal page was not used as an inspected dependency.

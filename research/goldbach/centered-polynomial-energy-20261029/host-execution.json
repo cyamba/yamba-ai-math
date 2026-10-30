@@ -1,0 +1,36 @@
+{
+  "program": "GOLDBACH-CENTERED-018",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "propose",
+    "challenge",
+    "revise"
+  ],
+  "planned_proxy_units": 8,
+  "completed_proxy_units": 8,
+  "total_planned_host_proxy_units": 8,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "propose": "/root/centered_energy as Mathematician",
+    "challenge": "/root/independent_critic as Independent Critic after actual frozen proposal",
+    "revise": "/root/centered_energy"
+  },
+  "author_status": "actual original-author revision completed; notation and half-integer clarification accepted",
+  "objective_status": "active; Goldbach proof and substantive breakthrough remain unestablished",
+  "independence": "distinct actual author and critic identities and role profiles; no claim of independent model errors",
+  "next_action": "PRINCIPAL019 actual author then distinct challenge",
+  "frozen_statement_sha256": "6470a9f07d8b2074bf3fa89a241eb52114ed9e0fd7f6b6426fd897bcdb1a1cf4",
+  "frozen_main_review_sha256": "3a014cd1b9f78a36b81b05b9e38076e33807f8bd30080145927e54cf1e44caa2",
+  "total_declared_host_proxy_units": 8,
+  "status": "completed_host_execution",
+  "proof_assurance": "complete written proof with distinct AI substantive review relative to inspected classical inputs; no formal or external peer verification",
+  "frozen_revision_sha256": "a45b012cbd701675ce6746f060bedd7777f5075ca8cb96ab3fd903b5d40407d3",
+  "protocol_validation": {
+    "backend": "replay",
+    "path": ".runs/goldbach-centered-018-validation-20261029",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  }
+}

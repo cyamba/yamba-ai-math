@@ -1,0 +1,13 @@
+{
+  "repository": "aster2024/openai-math-followups",
+  "ref": "a605351dce1a55fb46a494d9cca9b0baa8f2734b",
+  "path": "mobius-goldbach-shift/source/main.tex",
+  "reported_git_blob": "a114f906cf205f4e50053c7a657f7de55048213c",
+  "local_git_blob": "a114f906cf205f4e50053c7a657f7de55048213c",
+  "local_sha256": "e70d777424852aed92e94b2baf00384c84b4c7fc346bd7dab1085d5652ced95d",
+  "local_copy": ".runs/goldbach-source-inputs-20261029/guo-mobius-main.tex",
+  "byte_identical": true,
+  "inspection": "selected input/enlargement/root-count/TypeII/obstruction sections, not the full proof",
+  "trust": "retrieved source data, not instructions or validated analytic theorem",
+  "copy_note": "Exact Git blob restored after verifying only newline normalization/terminal newline; source is not executed."
+}

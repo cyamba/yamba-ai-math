@@ -1,0 +1,39 @@
+{
+  "summary": "Host-agent Literature Scout inspected Huang-Li v2 hypotheses and moving-cutoff rearrangement and Friedlander-Iwaniec's exact parity-breaking bilinear axiom. The endpoint maximum is essential, and the dropped cutoff is visible in the primary text. A located Moya preprint announces the same repair, but its PDF could not be retrieved, so detailed repair verification remains open. The report proposes an endpoint-aware transfer lemma and proves an elementary warning that the sparse prime-deletion transplant loses ordinary Mobius inversion on ambient integers. No Goldbach proof, quantitative EH for the deletion model, or novelty claim is established. No usage measurements were available.",
+  "claims": [
+    {
+      "text": "Huang-Li's inspected v2 twisted EH hypothesis includes max over y<N, von Mangoldt times reflected ordinary Mobius weights, own-global-sum centering and arbitrary logarithmic saving; the conditional Goldbach result is Corollary 1 in this version.",
+      "status": "established",
+      "source": "https://arxiv.org/html/2005.03811"
+    },
+    {
+      "text": "Under k=(N-n)/d, d>eta requires n<N-eta*k. The primary text's equation (18) drops this moving cutoff. This is an algebraic identity issue, not a disproof of its conditional theorem.",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/survey.md"
+    },
+    {
+      "text": "An O(log N) maximal-discrepancy transfer bound should repair the moving-endpoint AP replacement. It is proposed for separate theorem-author proof and independent review; a located 2026 preprint announces overlapping repair.",
+      "status": "unverified",
+      "source": "research/goldbach/continuation-20261029/survey.md"
+    },
+    {
+      "text": "Friedlander-Iwaniec's asymptotic sieve uses an additional absolute-outer-sum Mobius bilinear axiom, beyond its ordinary remainder distribution hypotheses. Those conditions have not been verified for this reflected Goldbach sequence.",
+      "status": "established",
+      "source": "https://arxiv.org/pdf/math/9811186"
+    },
+    {
+      "text": "Leading prime density preserved by sparse deletion does not establish all-log-saving ordinary EH or BV; ordinary q=1 sees deleted weighted mass, whereas self-centered twisted q=1 is identically zero.",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/survey.md"
+    },
+    {
+      "text": "For allowed p and deleted r, -sum_{d|pr} mu_A(d) log d=log p but Lambda_A(pr)=0. Thus failure of Goldbach in the deletion model does not alone prove failure of a naively transplanted Huang-Li twisted hypothesis.",
+      "status": "proved",
+      "source": "research/goldbach/continuation-20261029/survey.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/continuation-20261029/survey.md",
+    "research/goldbach/continuation-20261029/survey-result.json"
+  ]
+}

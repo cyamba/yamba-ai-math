@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-LOWER-003",
+  "title": "Pointwise parity lower-bound attempt",
+  "objective": "Attempt an unconditional noncircular pointwise lower bound for the odd-factor rough-complement count strong enough to exceed the now-controlled three-factor contamination, or preserve the exact quantitative obstruction to each attempted route.",
+  "fleet": "pair",
+  "briefs": ["research/goldbach/continuation-20261029/lower-bound-brief.md", "research/goldbach/continuation-20261029/statement.md", "research/goldbach/continuation-20261029/endpoint-lemma.md"],
+  "constraints": {"max_agents": 2, "max_workers": 2, "max_cost_units": 8, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["At most two complete lower-bound attempts with exact dependencies", "Separate hostile review and smallest falsifiers", "Revision preserving the precise remaining analytic gap"],
+  "success_criteria": ["Only a complete separately reviewed unconditional argument counts as an unconditional lower bound", "Every distribution input has its precise level, weights and uniformity checked", "The remaining lower-bound obligation is not hidden in a new definition", "A failed attempt preserves its exact mathematical obstruction"],
+  "stop_conditions": ["One bounded author-critic-revision round and eight dispatch proxy units", "No external message, publication, push or separately billed provider", "Keep the Goldbach objective unresolved if its remaining estimate is not proved"]
+}

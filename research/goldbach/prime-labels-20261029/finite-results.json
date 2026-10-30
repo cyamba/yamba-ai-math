@@ -1,0 +1,1015 @@
+{
+  "status": "passed_exact_algebra",
+  "python": "3.11.17",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "source_sha256": "338fd7650428ffd0c4872300c9c8208b73e1987a00ca190ab60e10a4fd414d75",
+  "support": {
+    "small_groups": [
+      [
+        2,
+        3
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        11,
+        13
+      ]
+    ],
+    "rough_cutoff": 13,
+    "rough_q_range": [
+      2,
+      5000
+    ],
+    "exact_rough_weight_cases": 2874,
+    "rough_mean_square_error_from_one": "1 whenever the tested rough set is nonempty, since every source weight is exactly zero",
+    "capacity_cases": 930,
+    "capacity_examples": [
+      {
+        "z": 2,
+        "K": 1,
+        "N": 2,
+        "first_product_witness": 3,
+        "weight_at_product": "3"
+      },
+      {
+        "z": 2,
+        "K": 2,
+        "N": 4,
+        "first_product_witness": 15,
+        "weight_at_product": "15"
+      },
+      {
+        "z": 2,
+        "K": 3,
+        "N": 8,
+        "first_product_witness": 105,
+        "weight_at_product": "105"
+      },
+      {
+        "z": 2,
+        "K": 4,
+        "N": 16,
+        "first_product_witness": 1155,
+        "weight_at_product": "1155"
+      },
+      {
+        "z": 3,
+        "K": 1,
+        "N": 3,
+        "first_product_witness": 5,
+        "weight_at_product": "5"
+      },
+      {
+        "z": 3,
+        "K": 2,
+        "N": 9,
+        "first_product_witness": 35,
+        "weight_at_product": "35"
+      },
+      {
+        "z": 3,
+        "K": 3,
+        "N": 27,
+        "first_product_witness": 385,
+        "weight_at_product": "385"
+      },
+      {
+        "z": 3,
+        "K": 4,
+        "N": 81,
+        "first_product_witness": 5005,
+        "weight_at_product": "5005"
+      },
+      {
+        "z": 5,
+        "K": 1,
+        "N": 5,
+        "first_product_witness": 7,
+        "weight_at_product": "7"
+      },
+      {
+        "z": 5,
+        "K": 2,
+        "N": 25,
+        "first_product_witness": 77,
+        "weight_at_product": "77"
+      },
+      {
+        "z": 5,
+        "K": 3,
+        "N": 125,
+        "first_product_witness": 1001,
+        "weight_at_product": "1001"
+      },
+      {
+        "z": 5,
+        "K": 4,
+        "N": 625,
+        "first_product_witness": 17017,
+        "weight_at_product": "17017"
+      }
+    ],
+    "distinct_vs_total_witness": {
+      "q": 4,
+      "group": [
+        2,
+        3
+      ],
+      "rho": "2/3",
+      "distinct_omega": 1,
+      "Omega": 2,
+      "source_weight": "6/5",
+      "incorrect_multiplicity_weight": "8/5"
+    }
+  },
+  "reconstruction": {
+    "prime_alphabet": [
+      17,
+      19,
+      23
+    ],
+    "admissible_multiplicity_types": 19,
+    "squarefree_types": 7,
+    "rho_values": [
+      "1/2",
+      "2/3",
+      "3/4"
+    ],
+    "rational_profile_interpolants": {
+      "odd": [
+        "20",
+        "-51",
+        "32"
+      ],
+      "liouville": [
+        "-37",
+        "96",
+        "-60"
+      ],
+      "prime": [
+        "12",
+        "-27",
+        "16"
+      ]
+    },
+    "profile_coefficient_l1_norms": {
+      "odd": "103",
+      "liouville": "193",
+      "prime": "55"
+    },
+    "source_normalized_coefficient_l1_norms": {
+      "odd": "118553/7429",
+      "liouville": "222143/7429",
+      "prime": "63305/7429"
+    },
+    "reciprocal_prime_mass": "1151/7429",
+    "first_repeated_failures": {
+      "odd": {
+        "q": 529,
+        "multiplicities": [
+          0,
+          0,
+          2
+        ],
+        "Omega": 2,
+        "distinct_support": 1,
+        "label_reconstruction": "1",
+        "true_value": 0
+      },
+      "liouville": {
+        "q": 529,
+        "multiplicities": [
+          0,
+          0,
+          2
+        ],
+        "Omega": 2,
+        "distinct_support": 1,
+        "label_reconstruction": "-1",
+        "true_value": 1
+      },
+      "prime": {
+        "q": 529,
+        "multiplicities": [
+          0,
+          0,
+          2
+        ],
+        "Omega": 2,
+        "distinct_support": 1,
+        "label_reconstruction": "1",
+        "true_value": 0
+      }
+    },
+    "radical_invariance_witness": [
+      {
+        "q": 17,
+        "Omega": 1,
+        "distinct_support": 1,
+        "source_weights_at_all_three_rhos": [
+          "7429/1151",
+          "7429/1151",
+          "7429/1151"
+        ],
+        "liouville": -1,
+        "prime_indicator": 1
+      },
+      {
+        "q": 289,
+        "Omega": 2,
+        "distinct_support": 1,
+        "source_weights_at_all_three_rhos": [
+          "7429/1151",
+          "7429/1151",
+          "7429/1151"
+        ],
+        "liouville": 1,
+        "prime_indicator": 0
+      },
+      {
+        "q": 4913,
+        "Omega": 3,
+        "distinct_support": 1,
+        "source_weights_at_all_three_rhos": [
+          "7429/1151",
+          "7429/1151",
+          "7429/1151"
+        ],
+        "liouville": -1,
+        "prime_indicator": 0
+      }
+    ],
+    "author_formulas_A1_through_A7": {
+      "rho_values": [
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "bare_prime_coefficients": [
+        "3",
+        "-3",
+        "1"
+      ],
+      "bare_odd_coefficients": [
+        "17/3",
+        "-25/3",
+        "11/3"
+      ],
+      "prime_coefficient_l1": "7",
+      "odd_coefficient_l1": "53/3",
+      "profile_sup_norms": [
+        "1",
+        "1",
+        "27/16"
+      ],
+      "odd_coefficient_weighted_sup_cost": "323/16",
+      "type_records": [
+        {
+          "q": 23,
+          "Omega": 1,
+          "distinct_support": 1,
+          "squarefree": true,
+          "bare_prime_interpolant": "1",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "1",
+          "mu_odd_squarefree_reconstruction": "1",
+          "Z_profiles": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "half_unsigned_weight": "1"
+        },
+        {
+          "q": 529,
+          "Omega": 2,
+          "distinct_support": 1,
+          "squarefree": false,
+          "bare_prime_interpolant": "1",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 12167,
+          "Omega": 3,
+          "distinct_support": 1,
+          "squarefree": false,
+          "bare_prime_interpolant": "1",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 19,
+          "Omega": 1,
+          "distinct_support": 1,
+          "squarefree": true,
+          "bare_prime_interpolant": "1",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "1",
+          "mu_odd_squarefree_reconstruction": "1",
+          "Z_profiles": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "half_unsigned_weight": "1"
+        },
+        {
+          "q": 437,
+          "Omega": 2,
+          "distinct_support": 2,
+          "squarefree": true,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "0",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "1/2",
+            "1",
+            "3/2"
+          ],
+          "half_unsigned_weight": "1"
+        },
+        {
+          "q": 10051,
+          "Omega": 3,
+          "distinct_support": 2,
+          "squarefree": false,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "0",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 361,
+          "Omega": 2,
+          "distinct_support": 1,
+          "squarefree": false,
+          "bare_prime_interpolant": "1",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 8303,
+          "Omega": 3,
+          "distinct_support": 2,
+          "squarefree": false,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "0",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 6859,
+          "Omega": 3,
+          "distinct_support": 1,
+          "squarefree": false,
+          "bare_prime_interpolant": "1",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 17,
+          "Omega": 1,
+          "distinct_support": 1,
+          "squarefree": true,
+          "bare_prime_interpolant": "1",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "1",
+          "mu_odd_squarefree_reconstruction": "1",
+          "Z_profiles": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "half_unsigned_weight": "1"
+        },
+        {
+          "q": 391,
+          "Omega": 2,
+          "distinct_support": 2,
+          "squarefree": true,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "0",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "1/2",
+            "1",
+            "3/2"
+          ],
+          "half_unsigned_weight": "1"
+        },
+        {
+          "q": 8993,
+          "Omega": 3,
+          "distinct_support": 2,
+          "squarefree": false,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "0",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 323,
+          "Omega": 2,
+          "distinct_support": 2,
+          "squarefree": true,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "0",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "1/2",
+            "1",
+            "3/2"
+          ],
+          "half_unsigned_weight": "1"
+        },
+        {
+          "q": 7429,
+          "Omega": 3,
+          "distinct_support": 3,
+          "squarefree": true,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "1",
+          "Z_profiles": [
+            "-3/16",
+            "-3/4",
+            "-27/16"
+          ],
+          "half_unsigned_weight": "3/4"
+        },
+        {
+          "q": 6137,
+          "Omega": 3,
+          "distinct_support": 2,
+          "squarefree": false,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "0",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 289,
+          "Omega": 2,
+          "distinct_support": 1,
+          "squarefree": false,
+          "bare_prime_interpolant": "1",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 6647,
+          "Omega": 3,
+          "distinct_support": 2,
+          "squarefree": false,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "0",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 5491,
+          "Omega": 3,
+          "distinct_support": 2,
+          "squarefree": false,
+          "bare_prime_interpolant": "0",
+          "bare_phi": "0",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        },
+        {
+          "q": 4913,
+          "Omega": 3,
+          "distinct_support": 1,
+          "squarefree": false,
+          "bare_prime_interpolant": "1",
+          "bare_phi": "1",
+          "mu_prime_reconstruction": "0",
+          "mu_odd_squarefree_reconstruction": "0",
+          "Z_profiles": [
+            "0",
+            "0",
+            "0"
+          ],
+          "half_unsigned_weight": "0"
+        }
+      ]
+    },
+    "records": [
+      {
+        "multiplicities": [
+          0,
+          0,
+          1
+        ],
+        "q": 23,
+        "Omega": 1,
+        "squarefree": true,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "1"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 1
+        }
+      },
+      {
+        "multiplicities": [
+          0,
+          0,
+          2
+        ],
+        "q": 529,
+        "Omega": 2,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "1"
+        },
+        "truth": {
+          "odd": 0,
+          "liouville": 1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          0,
+          0,
+          3
+        ],
+        "q": 12167,
+        "Omega": 3,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "1"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          0,
+          1,
+          0
+        ],
+        "q": 19,
+        "Omega": 1,
+        "squarefree": true,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "1"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 1
+        }
+      },
+      {
+        "multiplicities": [
+          0,
+          1,
+          1
+        ],
+        "q": 437,
+        "Omega": 2,
+        "squarefree": true,
+        "reconstruction": {
+          "odd": "0",
+          "liouville": "1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 0,
+          "liouville": 1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          0,
+          1,
+          2
+        ],
+        "q": 10051,
+        "Omega": 3,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "0",
+          "liouville": "1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          0,
+          2,
+          0
+        ],
+        "q": 361,
+        "Omega": 2,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "1"
+        },
+        "truth": {
+          "odd": 0,
+          "liouville": 1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          0,
+          2,
+          1
+        ],
+        "q": 8303,
+        "Omega": 3,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "0",
+          "liouville": "1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          0,
+          3,
+          0
+        ],
+        "q": 6859,
+        "Omega": 3,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "1"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          1,
+          0,
+          0
+        ],
+        "q": 17,
+        "Omega": 1,
+        "squarefree": true,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "1"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 1
+        }
+      },
+      {
+        "multiplicities": [
+          1,
+          0,
+          1
+        ],
+        "q": 391,
+        "Omega": 2,
+        "squarefree": true,
+        "reconstruction": {
+          "odd": "0",
+          "liouville": "1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 0,
+          "liouville": 1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          1,
+          0,
+          2
+        ],
+        "q": 8993,
+        "Omega": 3,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "0",
+          "liouville": "1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          1,
+          1,
+          0
+        ],
+        "q": 323,
+        "Omega": 2,
+        "squarefree": true,
+        "reconstruction": {
+          "odd": "0",
+          "liouville": "1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 0,
+          "liouville": 1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          1,
+          1,
+          1
+        ],
+        "q": 7429,
+        "Omega": 3,
+        "squarefree": true,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          1,
+          2,
+          0
+        ],
+        "q": 6137,
+        "Omega": 3,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "0",
+          "liouville": "1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          2,
+          0,
+          0
+        ],
+        "q": 289,
+        "Omega": 2,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "1"
+        },
+        "truth": {
+          "odd": 0,
+          "liouville": 1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          2,
+          0,
+          1
+        ],
+        "q": 6647,
+        "Omega": 3,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "0",
+          "liouville": "1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          2,
+          1,
+          0
+        ],
+        "q": 5491,
+        "Omega": 3,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "0",
+          "liouville": "1",
+          "prime": "0"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      },
+      {
+        "multiplicities": [
+          3,
+          0,
+          0
+        ],
+        "q": 4913,
+        "Omega": 3,
+        "squarefree": false,
+        "reconstruction": {
+          "odd": "1",
+          "liouville": "-1",
+          "prime": "1"
+        },
+        "truth": {
+          "odd": 1,
+          "liouville": -1,
+          "prime": 0
+        }
+      }
+    ],
+    "scope": "The label profile depends on distinct support size. Equality with Omega reconstruction is asserted only for squarefree q. The explicit Omega polynomial itself works on every type of total degree<=3."
+  },
+  "padding": {
+    "coprime_sign_identity_cases": 36,
+    "group_separated_weight_cases": 36,
+    "mixture_cases": 1458,
+    "normalized_mixture_cases": 972,
+    "zero_normalizer_cases": 486,
+    "zero_normalizer_with_nonzero_original": {
+      "rho": "1/2",
+      "D_values": [
+        10,
+        30
+      ],
+      "padding_coefficients": [
+        "1/2",
+        "1/2"
+      ],
+      "q_values": [
+        17,
+        19,
+        289,
+        323
+      ],
+      "original_coefficients": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "sign_function": "mobius",
+      "normalizer": "0",
+      "padded_sum": "0",
+      "original_sum": 1
+    },
+    "smallest_mobius_noncoprime_counterexample": {
+      "D": 2,
+      "q": 2,
+      "mu_Dq": 0,
+      "mu_D_times_mu_q": 1
+    },
+    "unrestricted_liouville_cases": 900,
+    "coprime_but_not_group_separated_weight_counterexample": {
+      "D": 2,
+      "q": 3,
+      "rho": "2/3",
+      "coprime": true,
+      "W_D": "6/5",
+      "W_Dq": "8/5"
+    },
+    "scope": "These are exact finite checks of multiplicativity and scalar transfer. Zero normalizer implies no conclusion about the original sum."
+  },
+  "failures": [],
+  "elapsed_seconds": 0.22279059999891615,
+  "inference_tokens": "unknown",
+  "monetary_cost": "unknown"
+}

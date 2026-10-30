@@ -1,0 +1,53 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/assessment.md",
+      "sha256": "3557837a4c5155d71db547dd991d2b5412a0c25795f460ee70ec9cf1eb70c61c"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/brief.md",
+      "sha256": "de3c0da453227f8bdbe1c85ad9e5eb6e225f7668dbab2fba3b9f073f97f11217"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/challenge-result.json",
+      "sha256": "6f8ed94fdba2eb5d925bf6946cf5c7ee454aa42ce3fcc92a624c64ce770468db"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/host-execution.json",
+      "sha256": "048adebf1bb5bafde08826508d1a6844825376c6899ba386ed4076d60e993b74"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/NEXT_SESSION.md",
+      "sha256": "12b9bb2b4dc453b7dcb301f714c56d79142da7b8463ae4df0c277639f848c839"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/objective-audit.json",
+      "sha256": "21829beef2d9e602dc6ec8a5cf5b87e78075090f29c3c5e0d0b484cd4d6d7e0b"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/propose-result.json",
+      "sha256": "4c2c997a0eded670b76210c76aab7b778c3fccec9c2478acc22cea6f049a18e1"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/result.md",
+      "sha256": "5ad209426e596dcd423106e946169d6cf1ce6a4a7fbeca31c045652ed07759ae"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/review.md",
+      "sha256": "f9720b56380c97fbc146e7365638413bbaacc628c9992877828ff49cfb1df8f4"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/revise-result.json",
+      "sha256": "c5e8e043352242825cfb3e0feedc5cea6c1d142c6abed386949f7b54a93eb355"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/revision.md",
+      "sha256": "6e1122ee4ffb387056987fecb3ebdf8a8751e82816c504f6aef4ec8d175a2b9a"
+    },
+    {
+      "path": "research/goldbach/small-radical-assessment-20261029/source-provenance.json",
+      "sha256": "32fba6c60ac9e107c34d972403f50268b52440f9a9889b62a0cdbcec28e0034e"
+    }
+  ]
+}

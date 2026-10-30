@@ -1,0 +1,35 @@
+{
+  "summary": "Independent experimenter read the actual populated WEIGHTS-014 main packet and frozen author statement 22b1e94dff57c26ace239b82cf82f83aa06967338628cc14900fd911695fbda8. One smoke and one bounded final run passed with no failures. Exact Fraction and Gaussian checks cover 1920 Bernoulli outcomes, 36 disjoint mixed moments, 4224 pointwise diagonal cases, 45 normalized variance/positive-measure complex Cauchy cases, 13824 single/mixed product positive Taylor errors, 165 scalar Taylor bounds, 240 normalized reciprocal Taylor-mass inequalities and 44 retained reduced CRT moduli. Finite normalizers and prefix constants remain explicit. Wrong integer/root probabilities, duplicated copies, empty punctured normalizers, an unpunctured H-prime and a fixed-threshold diagonal are preserved negative controls. Final check-body runtime was 0.6740052 seconds on Python 3.11.17, Windows-10-10.0.26300-SP0. Code SHA256 is d711f141e013f2990b0092cf1aa2a98e06c5b73b6f574a3ea237695cd189c25e. Actual commands, ranges, hashes, platform and unknown usage are recorded. No actual-prime asymptotic, analytic weight removal, energy or Goldbach conclusion is finite-certified.",
+  "claims": [
+    {
+      "text": "The prime-relative Bernoulli means with probabilities 1/(p-1) equal the closed formulas exactly on every declared finite family. Disjoint cross moments factor, finite pointwise diagonal bounds hold, and each normalized prefix variance equals its exact diagonal identity and satisfies the finite-family bound with the same constant across prefixes.",
+      "status": "empirical",
+      "source": "research/goldbach/weight-removal-20261029/finite-results.json"
+    },
+    {
+      "text": "Cauchy for the bounded complex Gaussian target passes on the same positive rational measure on both sides, with that measure's actual variance. The unweighted Bernoulli variance is not substituted after changing the measure. Single/mixed product Taylor error bounds retain absolute preceding polynomials and bounded true following factors.",
+      "status": "empirical",
+      "source": "research/goldbach/weight-removal-20261029/finite-results.json"
+    },
+    {
+      "text": "The scalar Taylor remainder and normalized reciprocal coefficient bounds pass with both 1/p and 1/(p-1). Retained squarefree classes after H-puncturing have exact probability 1/phi(d), equal to the product of 1/(p-1). Their maximum modulus is 119; the full six-prime product 255255 is unused.",
+      "status": "empirical",
+      "source": "research/goldbach/weight-removal-20261029/finite-results.json"
+    },
+    {
+      "text": "Omitted-hypothesis variants fail explicitly: the prime-3 singleton mean is 3/2 rather than the integer mean 1 or root mean 3/4; two identical normalized copies retain variance 1 rather than 1/2; an unpunctured divisor of H has local probability 0; and the integer-threshold counterfamily retains a growing diagonal error despite each fixed threshold eventually vanishing.",
+      "status": "refuted",
+      "source": "research/goldbach/weight-removal-20261029/finite-results.json"
+    },
+    {
+      "text": "The prime BV theorem and arithmetic passage, uniform asymptotic band constants, factorial/endpoint asymptotic budgets, accepted dependency assembly, selected-strip quantifiers, actual-prime logarithmic unweighting and little-o Mobius correlation, novelty and Goldbach remain outside finite coverage. The threshold witness is an independent integer family, not a numerical evaluation of the author's double exponential example.",
+      "status": "unverified",
+      "source": "research/goldbach/weight-removal-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/weight-removal-20261029/experiment-plan.md",
+    "research/goldbach/weight-removal-20261029/weight_checks.py",
+    "research/goldbach/weight-removal-20261029/finite-results.json"
+  ]
+}

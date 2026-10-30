@@ -1,0 +1,37 @@
+{
+  "program": "GOLDBACH-DIRECT-021",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "propose",
+    "challenge",
+    "revise"
+  ],
+  "planned_proxy_units": 8,
+  "completed_proxy_units": 8,
+  "total_planned_host_proxy_units": 8,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "propose": "/root/direct_margin as Mathematician",
+    "challenge": "/root/direct_critic as Independent Critic",
+    "revise": "/root/direct_margin"
+  },
+  "author_status": "actual original-author revision completed with notation and claim-label clarifications",
+  "objective_status": "active and incomplete",
+  "next_action": "CUBIC022 actual coupled signed-operator attempt",
+  "independence": "distinct actual author/critic identities and role profiles; not independent model errors",
+  "frozen_statement_sha256": "33849bec07236bb3a97944e2ed939b1bcf813e1af393c1eaf1d61f6ef7119297",
+  "author_helper_note": "actual transient bounded helper at seven H=8..512, source and Python version retained in statement; no standalone independent finite branch or asymptotic certification",
+  "frozen_main_review_sha256": "fce28a4cbad01be6b5540d058ccf028a8363f72fff3a9e74c6573ff5a4f0944e",
+  "total_declared_host_proxy_units": 8,
+  "status": "completed_host_execution",
+  "proof_assurance": "complete written argument and fresh distinct AI substantive review relative to ordinary PNT; no formal or external peer verification",
+  "frozen_revision_sha256": "a8e29f3fd98571d5ca8689b5843cb5139d7b657447142981098a111a2a7e66c3",
+  "protocol_validation": {
+    "backend": "replay",
+    "path": ".runs/goldbach-direct-021-validation-20261029",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  }
+}

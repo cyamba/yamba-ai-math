@@ -1,0 +1,17 @@
+# Parameter audit of the proposed external bridge
+
+29 October 2026. Inspected primary project READMEs through the GitHub connector, pinned to `aster2024/openai-math-followups` revision `a605351dce1a55fb46a494d9cca9b0baa8f2734b`. These are source-reported claims, **unverified as mathematical theorems here**. Their full arguments and upstream OpenAI declarations were not audited or compiled. None is an input to the proved H bound or endpoint lemma.
+
+| Source | Inspected scope | Why it does not supply the needed input |
+| --- | --- | --- |
+| [Rough Goldbach parity README](https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/rough-goldbach-parity/README.md) | Stated result and dependency discussion; 9 October 2026 | Its cutoff is exp((log N)^(1/10)); its allowed factor count grows like 2 log log N. Neither reaches a fixed polynomial cutoff with a fixed factor count. Its graph extensions require additional proof beyond the source theorem statements. |
+| [Mobius Goldbach shift README](https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/mobius-goldbach-shift/README.md) | Stated version-2 results A-D and dependencies; 23 October 2026 | The rough-value range is z<=exp((log x)^a) for fixed a<1/2, progressions are polylogarithmic, and cancellation is conditional on specified LWW proof arguments plus zero-free inputs. These parameters and hypotheses do not provide polynomial roughness or the maximal twisted EH estimate needed here. |
+| [Liouville Goldbach README](https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/liouville-goldbach/README.md) | Stated reflected correlation, formalization scope and dependencies; 8 October 2026 | Unsifted sign-pattern correlation does not count prime summands. The announced formalization retains a published analytic input as a hypothesis; it does not certify the desired polynomially sifted prime-weighted estimate. |
+
+For fixed a<1 and fixed alpha>0, exp((log N)^a)=N^((log N)^(a-1)), and that exponent tends to zero. Thus replacing this subpolynomial cutoff by N^alpha is not an admissible parameter substitution. Similarly, restricting an unsifted cancellation sum to a rare arithmetic subpopulation requires an additional estimate; cancellation can disappear after that restriction. These elementary comparison observations do not dispute the external manuscripts' properly qualified statements.
+
+The [Cantarini primary arXiv record](https://arxiv.org/abs/2607.09110) was also inspected at abstract level only. It reports conditional weighted averages under GRH and another analytic conjecture, with diagonal endpoint formulations. No full theorem or proof inspection occurred here. It is a lead, not an unconditional target-uniform maximal discrepancy estimate.
+
+The [Arneth primary record](https://zenodo.org/records/23477014) was inspected at description level only. It explicitly retains a long signed correlation as unresolved in its cubic-minorant programme. No result from that manuscript is used here. Its declared unresolved transfer should not be treated as a completed Goldbach proof.
+
+This comparison closes no parity-sensitive lower-bound obligation. It rules out only the unsupported shortcuts of changing the cutoff range, dropping conditional dependencies, or inferring rare-population cancellation from an unsifted estimate.

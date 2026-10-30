@@ -1,0 +1,33 @@
+{
+  "summary": "Actual distinct Independent Critic challenge against frozen RECOMBINE020 author e329f47df803775ca94610809b97630463d176ed73f5f682003a75f63185df9a. Candidate1 is supported: exact d1/T2zero/cVlog collapse, all six <=3-factor multiplicity profiles, both prime-power corrections and scale-correct unit/squareful/endpoint/logarithmic losses. Candidate2's finite H128,w25,a103 localized coefficient obstruction is supported, with two P2 revision clarifications: quantify the refuted transfer over all admissible finite H including128, rather than implying an eventual localized theorem is refuted; and distinguish the abstract model's nonzero observable values from prescribed actual arithmetic centers. The accepted018 revision hash was verified and its positive principal energy, powers-of-two/k1/trivial-twist scope and composite-original-variable support are retained. No019 result is imported. The full original-prime margin remains incomplete. Assurance is an independent complete written-argument audit, not formal verification or a fresh audit of the imported classical proofs. No mathematical experiment, supplemental worker, publication, paid call, external message or goal completion occurred. Usage is unknown.",
+  "claims": [
+    {
+      "text": "The exact polynomial Vaughan collapse and all prime, distinct semiprime, square, distinct triple, repeated mixed triple and cube coefficients are correct. Full recombination and the higher-power correction cancel every composite original-variable profile and retain precisely the genuine prime sum.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-recombination-20261029/review.md, verified algebra"
+    },
+    {
+      "text": "Small-base restoration and removal of every higher power are both required; the stated unit, rough squareful-complement, small-original-prime and endpoint corrections are below the prime-pair scale. Signed logarithmic deweighting requires endpoint-uniform control as stated.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-recombination-20261029/review.md, correction and scale audit"
+    },
+    {
+      "text": "A universal finite-H localized positive transfer R_b(H)>=c B_b(H) for c>0, over all admissible H including128 and all nonnegative b, is false by the exact b=1_{25},r=s=5,a=103 witness. This does not refute an eventual large-H localized theorem or an unlocalized asymptotic actual-prime inequality.",
+      "status": "refuted",
+      "source": "research/goldbach/polynomial-recombination-20261029/review.md, finding1"
+    },
+    {
+      "text": "The semiprime-only abstract profile model satisfies the proved profile identities and retained population/triple upper bounds with zero prime margin. It shows that these identities, upper bounds and nonzero model values alone do not imply positivity; it does not instantiate prescribed actual arithmetic centers or the full018 theorem.",
+      "status": "proved",
+      "source": "research/goldbach/polynomial-recombination-20261029/review.md, finding2"
+    },
+    {
+      "text": "Accepted018 retains its actual nonprincipal energy and compact positive principal center on the prescribed balanced prime-factor arrays. A full signed comparison, all rectangles, polynomial Type I and a target-uniform one-sided original-prime margin at H/log^2 H remain unestablished. No unaccepted019 result, novelty, breakthrough classification or Goldbach conclusion is inferred.",
+      "status": "unverified",
+      "source": "research/goldbach/polynomial-recombination-20261029/review.md,018 scope and final limits"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/polynomial-recombination-20261029/review.md"
+  ]
+}

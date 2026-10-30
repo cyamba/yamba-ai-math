@@ -1,0 +1,54 @@
+{
+  "summary": "Actual DIRECT021 original-author revision accepts the distinct critic's support for the exact actual-prime/semiprime character identity, principal marginal calculation, asymptotic unsigned obstruction and Cauchy logarithmic loss. It repairs the convolution's prime notation and separates literal false estimates labelled refuted from their true falsifier certificates labelled proved. Frozen author and critic artifacts remain unchanged. The seven-target author exploration remains finite and is not an independent finite stage. The genuine nonzero-centered fixed-gap signed remainder remains incomplete; no Goldbach proof or breakthrough is claimed.",
+  "claims": [
+    {
+      "text": "For H=2^ell, ell>=3, the actual strict cubic-rough population consists exactly of the disjoint prime and semiprime sets, including squares, and ordered unit-character reflection gives T=SS-PP=-D_H+R_H without omitted endpoint, square, nonunit or midpoint corrections.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/revision.md, (R1)-(R2); accepted complete author argument with distinct written-argument audit"
+    },
+    {
+      "text": "Relative to ordinary PNT, p_0~H/log H, s_0~(log 2)H/log H and D_H~2(1-(log 2)^2)H/log^2 H, with the exact truncated prime convolution and square correction retained.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/revision.md, (R1) and (R3); frozen statement section 3, supported by the distinct review"
+    },
+    {
+      "text": "For the actual arithmetic sets on powers of two, W_H=O(H/log^2 H) as ell tends to infinity.",
+      "status": "refuted",
+      "source": "research/goldbach/direct-margin-20261029/revision.md, (False-W), refuted by (R4)-(R5)"
+    },
+    {
+      "text": "Exact nonprincipal Parseval proves W_H>=p_0-s_0-D_H=(1-log 2+o(1))H/log H eventually and W_H/D_H>=(1+o(1))log H/[2(1+log 2)]. These true lower bounds refute the unsigned estimate and do not lower-bound R_H.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/revision.md, (R4)-(R5); accepted exact arithmetic falsifier certificate"
+    },
+    {
+      "text": "The valid Cauchy bound is |R_H|<=C_H with C_H=(1+log 2+o(1))H/log H and C_H/D_H=(1+o(1))log H/[2(1-log 2)], so this bound does not certify the signed fixed gap.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/revision.md, (R6); accepted norm calculation"
+    },
+    {
+      "text": "For some fixed kappa in (0,1), the Cauchy majorant C_H satisfies C_H<=(1-kappa)D_H for every sufficiently large power of two.",
+      "status": "refuted",
+      "source": "research/goldbach/direct-margin-20261029/revision.md, (R6), whose ratio tends to infinity"
+    },
+    {
+      "text": "R_H<=0 for every ell>=3, and at every power of two with S nonempty the normalized full semiprime measure is the multiplicative convolution of the normalized full prime measure with a probability measure.",
+      "status": "refuted",
+      "source": "research/goldbach/direct-margin-20261029/revision.md, finite universal assertions refuted by the H=8 and H=16 exact witnesses"
+    },
+    {
+      "text": "The explicit actual sets prove R_8=1/4, R_32=3 and the H=16 even real-character inequality |S_chi|/s_0=1>3/5=|P_chi|/p_0. These certificates have only their stated finite scope and do not refute eventual fixed-gap or contraction assertions.",
+      "status": "proved",
+      "source": "research/goldbach/direct-margin-20261029/revision.md, finite controls and (R7); frozen exact sets and distinct semantic review"
+    },
+    {
+      "text": "There exist fixed kappa in (0,1) and ell_0 such that R_H<=(1-kappa)D_H for every ell>=ell_0.",
+      "status": "unverified",
+      "source": "research/goldbach/direct-margin-20261029/revision.md, (G-open); no sufficient actual signed correlation estimate was obtained"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/direct-margin-20261029/revision.md",
+    "research/goldbach/direct-margin-20261029/revise-result.json"
+  ]
+}

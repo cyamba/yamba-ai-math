@@ -1,0 +1,45 @@
+{
+  "summary": "Independent experimenter read the populated ROOTS-008 packet and frozen statement 42d72d988c7e82e71b2de7a901b5bb17708a7e61053017fc1fbf46c340b89dcf. One smoke and one bounded final run passed with zero failures. Checked 859 canonical determinant-H matrices, 2,174 local projective kernels, 11,352 complete residue matrices and 166 complete-prescription densities, 40,418 Q/R line reductions, 2,335 canonical-c Mobius masses, 1,740 interval aggregations and 3,216 prescription partitions. All 288 double-Fourier pair identities and their j=0 terms passed; 1,320 h=0 nonzero-j terms and 9,792 complete-frequency gcd cases were retained, including 18 empty w intervals. An explicit nonzero h=0 nonzero-j contribution is preserved. The H=6,S=3 omitted-coprimality horizontal-line example has zero count, as required by its structural obstruction. All candidate asymptotic error ratios are diagnostic only. Final full run took 0.353289 seconds; code hash and platform are recorded, token use and monetary cost are unknown. Frozen prior files were read only, and no earlier stage was rerun.",
+  "claims": [
+    {
+      "text": "All 859 tested canonical matrices have determinant H and primitive first row under the admitted hypotheses. All 2,174 local kernel cases include the allowed nonunit-entry cases and p dividing u.",
+      "status": "empirical",
+      "source": "research/goldbach/projective-roots-20261029/finite-results.json"
+    },
+    {
+      "text": "The complete determinant-H residue enumeration gives uniform first-row projective-line tuples, with count S*phi(S) per prescription in every tested coprime H,S case.",
+      "status": "empirical",
+      "source": "research/goldbach/projective-roots-20261029/finite-results.json"
+    },
+    {
+      "text": "All 40,418 tested projective prescriptions agree with the author Q/R/CRT reduction, and all 2,335 canonical-c masses agree exactly with finite Mobius inversion and the stated finite rounding bound.",
+      "status": "empirical",
+      "source": "research/goldbach/projective-roots-20261029/finite-results.json"
+    },
+    {
+      "text": "All 288 exact double-Fourier pair counts and their j=0 terms pass. The h=0,j!=0 contribution is genuinely nonzero in a recorded example, so dropping that boundary is not justified.",
+      "status": "empirical",
+      "source": "research/goldbach/projective-roots-20261029/finite-results.json"
+    },
+    {
+      "text": "All finite root-prescription sums and half-open ratio partitions aggregate exactly to their unweighted counts, including rational 1/3 and 2/3 boundaries.",
+      "status": "empirical",
+      "source": "research/goldbach/projective-roots-20261029/finite-results.json"
+    },
+    {
+      "text": "Dropping coprimality of S and H cannot preserve the claimed positive uniform line density: H=6,S=3 and the horizontal kernel line are impossible because admitted u is nonzero modulo 3.",
+      "status": "refuted",
+      "source": "research/goldbach/projective-roots-20261029/finite-results.json"
+    },
+    {
+      "text": "Finite checks establish neither the candidate uniform analytic error exponent nor its applicability to prime-list moments or Goldbach.",
+      "status": "unverified",
+      "source": "research/goldbach/projective-roots-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/projective-roots-20261029/experiment-plan.md",
+    "research/goldbach/projective-roots-20261029/root_checks.py",
+    "research/goldbach/projective-roots-20261029/finite-results.json"
+  ]
+}

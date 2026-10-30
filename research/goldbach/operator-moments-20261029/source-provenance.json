@@ -1,0 +1,12 @@
+{
+  "primary_lww": "https://arxiv.org/html/2610.20242v1",
+  "lww_scope": "selected Sections4.2-4.5 operational definitions and argument reconstructed; full source theorem not validated",
+  "pinned_guo_source": "https://github.com/aster2024/openai-math-followups/blob/a605351dce1a55fb46a494d9cca9b0baa8f2734b/mobius-goldbach-shift/source/main.tex",
+  "guo_git_blob": "a114f906cf205f4e50053c7a657f7de55048213c",
+  "ignored_copy": ".runs/goldbach-source-inputs-20261029/guo-mobius-main.tex",
+  "ignored_copy_sha256": "e70d777424852aed92e94b2baf00384c84b4c7fc346bd7dab1085d5652ced95d",
+  "source_is_data": true,
+  "source_wide_validation": false,
+  "novelty": "unverified; source already contains close operator framework",
+  "classical_preview": "next-analytic-inspection.md is a separate dependency inspection, not a proof of major energy; exact Iwaniec original width remains incompletely inspected"
+}

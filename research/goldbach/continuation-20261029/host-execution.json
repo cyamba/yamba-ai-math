@@ -1,0 +1,40 @@
+{
+  "mode": "manual host-agent execution using harness packets; validation replay planned",
+  "completed_stages": [
+    "survey",
+    "statement",
+    "counterexample",
+    "finite-check",
+    "revise",
+    "integrate"
+  ],
+  "planned_proxy_units": 14,
+  "completed_proxy_units": 14,
+  "actual_token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "model_identity": "inherited chat configuration; not independently measured",
+  "assignments": {
+    "survey": "/root/locate_goldbach",
+    "statement": "/root/trilinear_proof",
+    "supplemental_endpoint_author": "/root/locate_goldbach",
+    "finite-check": "/root/exact_checks",
+    "counterexample": "/root/independent_critic",
+    "revise": "/root/trilinear_proof",
+    "integrate": "/root"
+  },
+  "note": "Manual harness receipt remains awaiting_execution; this separate record identifies real host work.",
+  "supplemental_author_proxy_units": 3,
+  "total_declared_host_proxy_units": 17,
+  "status": "completed_host_execution",
+  "research_objective": "incomplete; pointwise lower bound open",
+  "research_assurance": "handwritten argument with separate agent semantic review, not formal or external peer review",
+  "protocol_validation_replay": {
+    "path": ".runs/goldbach-uniform-002-validation-20261029",
+    "backend": "replay",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  },
+  "original_import_hash_failures": [],
+  "changed_preexisting_tracked_files": []
+}

@@ -1,0 +1,36 @@
+{
+  "summary": "Separate critic supports the exact least-prime partition, legal Wu-domain one-switch calculation and negative coefficient M=(2/d)*log((d-alpha)/alpha)<=-4/3 in the declared fixed-parameter domain. The li(N) normalization, strict cutoffs, repeated factors, m=1, global prime-divisor exceptions, changed V_N(v_r), and unique-largest-prime BV remainder accumulation check out. The root-authored parity model also passes direct review: C0=1/(2C2), odd-divisor main sums, convolution, tau3 tails, Liouville odd summatory relation and summed all-log errors through x^(1-epsilon) are correct. Its separately reviewed bilinear corollary gives a concrete noncancelling C=1 test at M=x^(2/5). No mathematical repair is required. All conclusions remain scoped to one minorant or a nonnegative weighted divisibility model, and supply no actual Goldbach lower bound, established breakthrough, full FI application or verified novelty. Assurance is handwritten argument from inspected classical inputs plus separate agent review, without formal or external peer verification; usage is unknown.",
+  "claims": [
+    {
+      "text": "The declared one-switch minorant has the supported coefficient M=(2/d)*log((d-alpha)/alpha)<=-4/3, with legal sieve cutoffs and ordinary BV remainder control in the stated fixed-parameter domain.",
+      "status": "proved",
+      "source": "research/goldbach/switching-20261029/review.md"
+    },
+    {
+      "text": "The weighted parity model has main odd-divisor sums C0*x/phi(d), C0=1/(2C2), with summed arbitrary-log-saving errors through every fixed level x^(1-epsilon), while its plus sequence has zero odd-Omega population.",
+      "status": "proved",
+      "source": "research/goldbach/switching-20261029/parity-model.md"
+    },
+    {
+      "text": "For the plus model the stated C=1 bilinear expression at M=x^(2/5) is bounded below by a constant times x/log(x)^2, so sufficiently small control of that expression is extra information beyond the divisor-density assumptions.",
+      "status": "proved",
+      "source": "research/goldbach/switching-20261029/bilinear-model-test.md"
+    },
+    {
+      "text": "These results do not establish a positive odd-factor lower bound for actual prime complements, a Goldbach breakthrough, a no-go for every switching method, or applicability of every FI parameter condition.",
+      "status": "unverified",
+      "source": "research/goldbach/switching-20261029/review.md"
+    },
+    {
+      "text": "Novelty, numerical effective constants and finite thresholds remain unverified; the parity construction specializes a classical Selberg obstruction.",
+      "status": "unverified",
+      "source": "research/goldbach/switching-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/switching-20261029/review.md",
+    "research/goldbach/switching-20261029/statement.md",
+    "research/goldbach/switching-20261029/parity-model.md",
+    "research/goldbach/switching-20261029/bilinear-model-test.md"
+  ]
+}

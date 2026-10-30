@@ -1,0 +1,48 @@
+{
+  "program": "GOLDBACH-MOMENTS-010",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "survey",
+    "statement",
+    "counterexample",
+    "finite-check",
+    "revise",
+    "integrate"
+  ],
+  "planned_proxy_units": 14,
+  "completed_proxy_units": 14,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "survey": "/root",
+    "statement": "/root/trilinear_proof",
+    "counterexample": "/root/independent_critic",
+    "finite-check": "/root/exact_checks",
+    "supplemental_next_analytic_inspection": "/root/independent_critic",
+    "revise": "/root/trilinear_proof",
+    "integrate": "/root"
+  },
+  "objective_status": "active and incomplete; no Goldbach proof or demonstrated substantive breakthrough",
+  "prior_goal_turn_classification": "progress: accepted joint root and finite trace/Gram lemmas identify the remaining actual auxiliary/path chain",
+  "supplemental_checker_preparation_proxy_units": 2,
+  "supplemental_critic_pre_mortem_proxy_units": 2,
+  "total_planned_host_proxy_units": 20,
+  "supplemental_critic_pre_mortem_status": "completed separately before main author review",
+  "supplemental_next_analytic_source_inspection_proxy_units": 2,
+  "supplemental_checker_preparation_status": "completed preparation; actual final finite-check stage completed separately",
+  "frozen_statement_sha256": "0e0e38bdb4f3b000bd67f385d5c32da1bb59fbd22790d1ddb31a8d10ead3e7ca",
+  "supplemental_next_analytic_inspection_status": "completed separate source preview; exact Iwaniec normalization remains incompletely inspected",
+  "author_status": "revision completed; exact scaling narrowed to common state space, arithmetic cutoffs restricted to controlled original box",
+  "frozen_revision_sha256": "947cc0c9b1fbcb79b9f221246bbc2ecf056dcdd9decf0543b508a3b7ee2931ba",
+  "status": "completed_host_execution",
+  "total_declared_host_proxy_units": 20,
+  "proof_assurance": "independently reconstructed mathematical argument plus separate host-agent review; no formal or external peer verification",
+  "next_action": "PAIRING-011 actual reflected cofactor/pairing/removal proof in progress",
+  "protocol_validation": {
+    "backend": "replay",
+    "path": ".runs/goldbach-moments-010-validation-20261029",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  }
+}

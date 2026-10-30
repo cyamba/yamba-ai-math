@@ -1,0 +1,18 @@
+# Two signed sectors controlled; the fixed positive gap remains open
+
+29 October 2026. Actual CUBIC022 Mathematician proposal, distinct Independent Critic challenge and original-author revision are complete. The result is partial progress, with human-readable proofs plus distinct AI mathematical review. No Goldbach proof or substantive independently checked breakthrough has been established. Novelty remains unverified.
+
+For the exact cubic long operator H_3,D, use even N, L=log N, y=N^(1/6), z=L^4, D=sqrt(N)/L^B, the complete radical wheel, its true normalization and correction atom. All integer cofactors, nonrough products and coupled endpoints are retained. See [revision.md](revision.md) for the exact definitions, [statement.md](statement.md) for the proofs and [review.md](review.md) for the independent challenge.
+
+Two signed deductions are supported:
+
+- For fixed B>=8, the contribution from products with a prime divisor at most w=floor(log L/(4 log log L)) is o(M_N), uniformly over sufficiently large even N. Exact Mobius cancellation confines the progression moduli to controlled shells; the proof imports the classical maximal Bombieri-Vinogradov theorem in its inspected range, and retains the actual model density.
+- For fixed B>0, the contribution from D<h<n/D on squarefree y-rough products with odd factor parity is O_B(S(N)N(log L)^5/L^2+log L)=o(M_N). Complementary divisors cancel to first order, with an elementary upper bound on the actual rough absolute mass. This pairing does not suppress the even semiprime sector, whose central coefficient can equal -1 exactly.
+
+The separate rough squareful long error is O(N^(5/6)L^4)=o(M_N). Squareful nonrough products remain present. The resulting exact identity leaves three actual residuals: nonrough products with least prime above w, even-parity rough products, and the closed outer odd-parity range. Only a coarse O(N L^5) bound is obtained for their combined absolute size. The required one-sided lower bound with one fixed delta>0 at M_N scale remains unproved. The critic's critical finding F1 is an evidence gap, not a refutation of either supported sector lemma.
+
+The [Arneth primary input](primary-inputs.md) is now pinned and scoped-inspected. Its Hypothesis8.2 is explicitly open. A source reduction or comparison asymptotic does not fill this missing signed bound. The [nine-file provenance](source-provenance.json) retains seven Arneth files and the classical BV book PDF/render; the review records the exact current provenance hash, and root verified all nine file hashes. Neither source has received a source-wide semantic certification here.
+
+Actual pair dispatch completed8 proxy units; the root primary-access preparation completed2, total10. Stage token and monetary usage are unknown. Offline replay validates saved protocol and records research_validated=false; it adds no fresh inference or mathematical assurance. Repository and contract checks pass. No new functional code or numerical search occurred. Latest full functional suite remains015,116 tests with existing10 failures and3 errors, not green.
+
+The next actual attempt, BALANCED023, directly addresses balanced prime/model covariance and its weighted connection to rough semiprimes. Its fresh author is executing, so no result from that pending stage is accepted here. A pilot estimate alone would still leave the complementary ranges and full Goldbach margin. All imported inputs and earlier frozen files are unchanged. No push, publication, paid provider call or external message occurred. The persistent user objective remains active.

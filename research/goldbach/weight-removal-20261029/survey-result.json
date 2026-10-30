@@ -1,0 +1,19 @@
+{
+  "summary": "Inspected pinnedGuo prime-relative local moments, fixed-number variance/removal and assembly scope, and LWW fixed-b restriction. Downloaded and visually read the author-provided Koukoulopoulos preliminary book page277 equation26.1 for exact endpoint/reduced-class prime BV. Finite Taylor moduli from at mosttwo copies and successive H-then-b limits are required; no growing-b rate is assumed. ENERGY012 and TYPEI013 remain pending, so no actual-prime conclusion is yet accepted. Closely related conditional reflection/small-radical conclusions already appear in the pinned source; novelty and Goldbach remain open.",
+  "claims": [
+    {
+      "text": "The inspected prime BV statement gives the displayed endpoint-uniform reduced-class bound; real partial summation supplies log weights with a fixed precision loss.",
+      "status": "established",
+      "source": "https://www.dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf"
+    },
+    {
+      "text": "The prime-relative variance, complete actual-prime assembly and Goldbach consequence are not established by this preparation.",
+      "status": "unverified",
+      "source": "research/goldbach/weight-removal-20261029/brief.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/weight-removal-20261029/survey.md",
+    "research/goldbach/weight-removal-20261029/primary-inputs.md"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "program": "GOLDBACH-CHEN-024",
+  "objective_status": "active and incomplete",
+  "mode": "manual host-agent execution using actual harness packets",
+  "planned_proxy_units": 8,
+  "supplemental_primary_access_proxy_units": 2,
+  "total_planned_host_proxy_units": 10,
+  "completed_stages": [
+    "propose",
+    "challenge",
+    "revise"
+  ],
+  "completed_proxy_units": 8,
+  "supplemental_primary_access_status": "completed root public source retrieval, scoped statement/proof inspection, primary renders and provenance",
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "supplements": "only the declared root primary-access2, no other supplement",
+  "scope": "source claims are data; test exact stronger distribution against the original signed margin rather than silently importing rough Chen as Goldbach",
+  "total_completed_host_proxy_units": 10,
+  "assignments": {
+    "propose": "/root/rough_chen_transfer as Mathematician",
+    "challenge": "/root/chen_critic as Independent Critic",
+    "revise": "/root/rough_chen_transfer"
+  },
+  "author_status": "actual fresh proposal, distinct mathematical challenge and original-author revision complete",
+  "frozen_statement_sha256": "09b17b941252a211f3ddc68aea95e5b516a6b58153e461e1e53a42d2566e6f68",
+  "frozen_review_sha256": "3abe3e7627c88ab7da16d992bddc174534f9cd137559894d2165d405f0020de9",
+  "frozen_revision_sha256": "841fae786d76d4b14470467327c715011f9c3e57f83ee9e4177a309e5ba8f091",
+  "next_action": "root integrates accepted literal signed TypeII corollary and precise conditional base; actual TRANSPORT025 follows construction source preparation"
+}

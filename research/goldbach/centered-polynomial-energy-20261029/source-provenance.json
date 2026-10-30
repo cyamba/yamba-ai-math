@@ -1,0 +1,28 @@
+{
+  "source_is_data": true,
+  "inputs": [
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/iwaniec-volume23.pdf",
+      "bytes": 27085705,
+      "sha256": "d98fe83def66ce90801760710d21f34458637d32de6ac77d726698220ae25832",
+      "source": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0023/PPN356556735_0023.pdf",
+      "inspection": "original theorem statement, not full source proof"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/iwaniec-journal97.png",
+      "bytes": 210127,
+      "sha256": "88a60c54861c6a83a57e21186f09eeed080e2b487e4a368f9ea6267629648a61",
+      "source": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0023/PPN356556735_0023.pdf#page=104",
+      "inspection": "actual author and distinct critic visually inspected exact theorem2 scope"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/koukoulopoulos-primes-preliminary.pdf",
+      "bytes": 2238368,
+      "sha256": "1445e107bba9c89db6529aeb4bca3ecf01170fc2854a675f5ca6f288c77ea0a8",
+      "source": "https://www.dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf#page=95",
+      "inspection": "actual author parsed primary theorem8.1, printed84/PDF95; statement-level inspection, no full PNT proof audit"
+    }
+  ],
+  "additional_inputs": "elementary complex analysis and character identities are explicitly proved/justified in statement and corrected revision; no Hadamard, functional-equation or local-zero-count dependency",
+  "new_downloads": false
+}

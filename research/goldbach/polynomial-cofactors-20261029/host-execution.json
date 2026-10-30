@@ -1,0 +1,50 @@
+{
+  "program": "GOLDBACH-COFACTORS-015",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "survey",
+    "statement",
+    "counterexample",
+    "finite-check",
+    "revise",
+    "integrate"
+  ],
+  "planned_proxy_units": 14,
+  "completed_proxy_units": 14,
+  "total_planned_host_proxy_units": 18,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "survey": "/root",
+    "statement": "/root/exact_checks as Mathematician profile",
+    "counterexample": "/root/independent_critic",
+    "finite-check": "/root/trilinear_proof as Experimenter profile",
+    "revise": "/root/exact_checks",
+    "integrate": "/root",
+    "supplemental_critic_pre_mortem": "/root/independent_critic",
+    "supplemental_experiment_preparation": "/root"
+  },
+  "objective_status": "active; original prime margin and substantive breakthrough remain unestablished",
+  "author_status": "actual revision completed; repeated-label scope repaired",
+  "prior_goal_turn_classification": "progress: accepted auxiliary/TypeII chain makes original polynomial/prime-boundary gap the target of a separate construction question",
+  "independence": "015 mathematical author and015 main critic are distinct host agents and role profiles; previous roles in other programs do not certify independent errors",
+  "supplemental_critic_pre_mortem_proxy_units": 2,
+  "supplemental_critic_pre_mortem_status": "completed separate pre-mortem; distinct actual main review later completed",
+  "frozen_pre_mortem_sha256": "72521afa11ce08c0c7d2ef380eb2da69df2109917381b7f7bffb8fef5b8cbf93",
+  "supplemental_experiment_preparation_proxy_units": 2,
+  "supplemental_experiment_preparation_status": "root preregistration completed; distinct actual experimenter amended transparently before one smoke/final",
+  "frozen_statement_sha256": "91bbf0074e34ef26d578a80b4ecf1644db2197748ca1070d38dc8c38686b0212",
+  "frozen_main_review_sha256": "250fee54d7d3e8dffad68fc86aeda699b09f874bbbf23913ac0c16adf54b66dd",
+  "total_declared_host_proxy_units": 18,
+  "status": "completed_host_execution",
+  "proof_assurance": "complete written argument with distinct main host-agent mathematical review and separate bounded finite reproduction; no formal or external peer verification",
+  "next_action": "fresh ASSESS016 challenge and original-author revision",
+  "frozen_revision_sha256": "23996d11ed540409153fba0ed62957e472659d0f1082411e9a494671f0fa6d1c",
+  "protocol_validation": {
+    "backend": "replay",
+    "path": ".runs/goldbach-cofactors-015-corrected-validation-20261029",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  }
+}

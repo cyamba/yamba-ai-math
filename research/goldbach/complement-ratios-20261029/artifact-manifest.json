@@ -1,0 +1,86 @@
+{
+  "scope": "completed RATIOS-007 local files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/complement-ratios-20261029/brief.md",
+      "sha256": "ce4014815dbfe73ef62688b5d5ae5b5afe2e0f488f1d46e1bfa30027b657bcdf"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/closest-work.md",
+      "sha256": "95e4c94980157c3faf2530aab65d30d91a1b06c03f19b8f3857e6d862a130f71"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/counterexample-result.json",
+      "sha256": "82f43470293a3890bdb7f3c47cd5497239bd37127d8e40fa227e559acab3184b"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/experiment-plan.md",
+      "sha256": "149e3227646ef9de11bc41ac00bfdf3f31162045e027309697d6203fc0f37a21"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/finite-check-result.json",
+      "sha256": "88a9d2d85f9a95113aa3f0548562d061c2f2e5285bb1a80a9fe1b6327c095200"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/finite-results.json",
+      "sha256": "8f299ebd1aaba096fa9f6a8e69e7035110c29df202af4d17eaaab67682c237fd"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/host-execution.json",
+      "sha256": "7caf136ca019741403d4f45c0699db508e3a5f0d3854458de85b45ae53d402ac"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/integrate-result.json",
+      "sha256": "342fe35926b8797af092bc745309d93dc596dbfa2d31fc87e4c979881489ec0b"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/NEXT_SESSION.md",
+      "sha256": "31ee59478568c9b27be911a34180ddd7776d540c7bbac65dff5ed3ed536911e9"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/objective-audit.json",
+      "sha256": "3cf467e26b812dbf3a55ead65fcda82626de43e1d4b6bcbf938a2106f96357b9"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/ratio_checks.py",
+      "sha256": "498798fd996b211cf5d1f1b3bea47b101fcc720061d9b2133c1a9d5df92e28af"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/repository-tests.json",
+      "sha256": "ffd008c8f8055cedacf0905fc6733648faac0c483c5e5841b15dbb25a2c8e500"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/result.md",
+      "sha256": "bfc4f5a2013e1df172c346d8931dc282d1e186d28b7a2dbdb997d274f6083ae5"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/review.md",
+      "sha256": "3dccebac94c21967d741befc0f00aa8f6b089a3a18c40bf5121868e55fe4cb6e"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/revise-result.json",
+      "sha256": "5314b11fa18a8e72801191995e0710865ee97c605bdc78365282a81f014913b4"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/revision.md",
+      "sha256": "8e9ac542c530ab0682b8672532c66849c6fb591a647be7356826e2adbb8cb55e"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/statement-result.json",
+      "sha256": "1380ef811d138d6dae733f1bdfb9118b98edbc5fa69ca72d748c2a83bde995bd"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/statement.md",
+      "sha256": "dbd7f89da164cf2dba56a9b6ef877d083e936d3caee912e70390218e0a6a6699"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/survey-result.json",
+      "sha256": "44bea4d6cc9eb8ab1c1201a36b56dae9fb07120b3e237084ccacc7c14ad0ca40"
+    },
+    {
+      "path": "research/goldbach/complement-ratios-20261029/survey.md",
+      "sha256": "56933082bc0c3a30d16e3df466b1591fdd2557987f070bbecd1833ad73079bf6"
+    }
+  ],
+  "original_import_hashes_verified": true
+}

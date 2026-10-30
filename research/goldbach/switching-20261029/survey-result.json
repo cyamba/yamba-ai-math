@@ -1,0 +1,18 @@
+{
+  "summary": "Inspected primary BV and exact Buchstab statements in Ford and the actual domain of Wu Lemma2.2 plus its differential definitions of sharp linear-sieve functions. The printed upper/lower theorem requires sift cutoff<=sqrt(distribution level); weakening the switching upper cutoff may give a legal equivalent coefficient. No parity-sensitive lower estimate is imported or established.",
+  "claims": [
+    {
+      "text": "Wu Lemma2.2 as inspected requires 2<=z<=sqrt(Q); the formal functions below s=2 do not independently extend its parameter domain.",
+      "status": "established",
+      "source": "https://www.impan.pl/shop/en/publication/transaction/download/product/82961"
+    },
+    {
+      "text": "Ford supplies ordinary endpoint-maximal BV and exact least-prime Buchstab partition, without a reflected parity lower bound.",
+      "status": "established",
+      "source": "https://ford126.web.illinois.edu/sieve2023.pdf"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/switching-20261029/survey.md"
+  ]
+}

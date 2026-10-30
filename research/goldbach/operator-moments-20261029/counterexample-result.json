@@ -1,0 +1,39 @@
+{
+  "summary": "Supported after one bookkeeping clarification: the specified eligible finite G/E model has the reconstructed two-sided Schur, clean Fourier, dirty raw/comparison, lifetime, tail and distinctness bounds yielding Candidate1; physical-path Bonferroni and the reviewed unit-root theorem give equation22 for Candidate2 in its symmetric input/original-box domain, with the larger exp(O L^.96) additive discrepancy budget. No H2' assumption is needed for these limited model claims. Exact c_V rescaling must refer to a common eligible or unit-compressed state space; unit endpoints alone do not identify old full-band and new eligible ambient powers. Full arithmetic prime pairing/removal, major-energy and denominator-H prime major terms, polynomial roughness/h=1/nonzero-center margins, source-wide validation, novelty and Goldbach remain incomplete. Proof assurance is an independently reconstructed mathematical argument with distinct host-agent review, not formal verification or external peer review. Exact reviewed hashes and three findings are in review.md; usage is unknown.",
+  "claims": [
+    {
+      "text": "Eligible group reciprocal masses have the stated uniform positive bounds. The c_V^(m+2R) normalization identity is proved when the index space, kernels and good projections are common and only normalizers change; it is not a comparison of differently enlarged ambient powers.",
+      "status": "proved",
+      "source": "research/goldbach/operator-moments-20261029/review.md; frozen statement SHA256 0e0e38bdb4f3b000bd67f385d5c32da1bb59fbd22790d1ddb31a8d10ead3e7ca"
+    },
+    {
+      "text": "For the explicitly defined symmetric factorial memory model, the G adjoints and compatible-slice Schur bounds, E adjoint normalization, clean signed Fourier bound and two-sided dirty edge estimates prove the displayed uniform G/E norm bounds.",
+      "status": "proved",
+      "source": "research/goldbach/operator-moments-20261029/review.md"
+    },
+    {
+      "text": "The exact per-prime lifetime identity, globally distinct memory-tail estimate and high/low-rank conditioning argument yield the stated independent-line moment bound for the specified eligible model, without importing H2'.",
+      "status": "proved",
+      "source": "research/goldbach/operator-moments-20261029/review.md"
+    },
+    {
+      "text": "In the declared symmetric TypeII input regime with original-box cutoffs, the physical-path replacement before Fock memory, the retained Bonferroni/error costs and ROOTS-008's unit-root count prove equation22 and its selected-root moment consequence. This is an ambient power with unit root selection, not a full trace or a moment with intermediate unit projections.",
+      "status": "proved",
+      "source": "research/goldbach/operator-moments-20261029/review.md"
+    },
+    {
+      "text": "Arbitrary additional root-dependent cutoffs with uncontrolled boundaries are not covered by the arithmetic replacement proof; the norm-only projection stability does not supply such an arithmetic extension.",
+      "status": "unverified",
+      "source": "research/goldbach/operator-moments-20261029/review.md"
+    },
+    {
+      "text": "Actual reflected prime parity, major-energy and denominator-H prime major terms, endpoint/good-state removal, the original polynomial-roughness and h=1/nonzero-center Goldbach bridge, full source validation and novelty remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/operator-moments-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/operator-moments-20261029/review.md",
+    "research/goldbach/operator-moments-20261029/counterexample-result.json"
+  ]
+}

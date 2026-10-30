@@ -1,0 +1,571 @@
+{
+  "mode": "bounded_final",
+  "passed": true,
+  "runtime_seconds": 2.782115900001372,
+  "python": "3.11.17",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "helper_sha256": "498798fd996b211cf5d1f1b3bea47b101fcc720061d9b2133c1a9d5df92e28af",
+  "code_sha256": "3205b10f2b5eb96f76b35df248660ed9a0748b74fac4e4eae10ba7be3ee6447c",
+  "statement_sha256": "eb76660af2f2ccb2ac003fdf835d2b05c325435d7600ed9e7f98448eb32da80b",
+  "packet_sha256": "b84c05772401c45f8d856614420629ca52e327b3b723463db1456b8ccec50460",
+  "comparisons": {
+    "unit_fibers": {
+      "counts": {
+        "characters": 345,
+        "unit_reductions": 36,
+        "noncoprime_kH": 21,
+        "coefficient_bound_certificates": 345,
+        "fiber_reconstructions": 345,
+        "cauchy_certificates": 148,
+        "base_class_Parseval_cases": 36,
+        "fixed_twist_cases": 84
+      },
+      "domains": [
+        {
+          "H": 2,
+          "k": 1,
+          "q": 2,
+          "unit_count": 1,
+          "kernel_size": 1,
+          "character_exponent": 1,
+          "exact_root_order": 4
+        },
+        {
+          "H": 2,
+          "k": 2,
+          "q": 4,
+          "unit_count": 2,
+          "kernel_size": 2,
+          "character_exponent": 2,
+          "exact_root_order": 4
+        },
+        {
+          "H": 2,
+          "k": 3,
+          "q": 6,
+          "unit_count": 2,
+          "kernel_size": 2,
+          "character_exponent": 2,
+          "exact_root_order": 12
+        },
+        {
+          "H": 2,
+          "k": 4,
+          "q": 8,
+          "unit_count": 4,
+          "kernel_size": 4,
+          "character_exponent": 2,
+          "exact_root_order": 8
+        },
+        {
+          "H": 4,
+          "k": 1,
+          "q": 4,
+          "unit_count": 2,
+          "kernel_size": 1,
+          "character_exponent": 2,
+          "exact_root_order": 4
+        },
+        {
+          "H": 4,
+          "k": 2,
+          "q": 8,
+          "unit_count": 4,
+          "kernel_size": 2,
+          "character_exponent": 2,
+          "exact_root_order": 8
+        },
+        {
+          "H": 4,
+          "k": 3,
+          "q": 12,
+          "unit_count": 4,
+          "kernel_size": 2,
+          "character_exponent": 2,
+          "exact_root_order": 12
+        },
+        {
+          "H": 4,
+          "k": 4,
+          "q": 16,
+          "unit_count": 8,
+          "kernel_size": 4,
+          "character_exponent": 4,
+          "exact_root_order": 16
+        },
+        {
+          "H": 6,
+          "k": 1,
+          "q": 6,
+          "unit_count": 2,
+          "kernel_size": 1,
+          "character_exponent": 2,
+          "exact_root_order": 12
+        },
+        {
+          "H": 6,
+          "k": 2,
+          "q": 12,
+          "unit_count": 4,
+          "kernel_size": 2,
+          "character_exponent": 2,
+          "exact_root_order": 12
+        },
+        {
+          "H": 6,
+          "k": 3,
+          "q": 18,
+          "unit_count": 6,
+          "kernel_size": 3,
+          "character_exponent": 6,
+          "exact_root_order": 36
+        },
+        {
+          "H": 6,
+          "k": 4,
+          "q": 24,
+          "unit_count": 8,
+          "kernel_size": 4,
+          "character_exponent": 2,
+          "exact_root_order": 24
+        },
+        {
+          "H": 8,
+          "k": 1,
+          "q": 8,
+          "unit_count": 4,
+          "kernel_size": 1,
+          "character_exponent": 2,
+          "exact_root_order": 8
+        },
+        {
+          "H": 8,
+          "k": 2,
+          "q": 16,
+          "unit_count": 8,
+          "kernel_size": 2,
+          "character_exponent": 4,
+          "exact_root_order": 16
+        },
+        {
+          "H": 8,
+          "k": 3,
+          "q": 24,
+          "unit_count": 8,
+          "kernel_size": 2,
+          "character_exponent": 2,
+          "exact_root_order": 24
+        },
+        {
+          "H": 8,
+          "k": 4,
+          "q": 32,
+          "unit_count": 16,
+          "kernel_size": 4,
+          "character_exponent": 8,
+          "exact_root_order": 32
+        },
+        {
+          "H": 10,
+          "k": 1,
+          "q": 10,
+          "unit_count": 4,
+          "kernel_size": 1,
+          "character_exponent": 4,
+          "exact_root_order": 20
+        },
+        {
+          "H": 10,
+          "k": 2,
+          "q": 20,
+          "unit_count": 8,
+          "kernel_size": 2,
+          "character_exponent": 4,
+          "exact_root_order": 20
+        },
+        {
+          "H": 10,
+          "k": 3,
+          "q": 30,
+          "unit_count": 8,
+          "kernel_size": 2,
+          "character_exponent": 4,
+          "exact_root_order": 60
+        },
+        {
+          "H": 10,
+          "k": 4,
+          "q": 40,
+          "unit_count": 16,
+          "kernel_size": 4,
+          "character_exponent": 4,
+          "exact_root_order": 40
+        },
+        {
+          "H": 12,
+          "k": 1,
+          "q": 12,
+          "unit_count": 4,
+          "kernel_size": 1,
+          "character_exponent": 2,
+          "exact_root_order": 12
+        },
+        {
+          "H": 12,
+          "k": 2,
+          "q": 24,
+          "unit_count": 8,
+          "kernel_size": 2,
+          "character_exponent": 2,
+          "exact_root_order": 24
+        },
+        {
+          "H": 12,
+          "k": 3,
+          "q": 36,
+          "unit_count": 12,
+          "kernel_size": 3,
+          "character_exponent": 6,
+          "exact_root_order": 36
+        },
+        {
+          "H": 12,
+          "k": 4,
+          "q": 48,
+          "unit_count": 16,
+          "kernel_size": 4,
+          "character_exponent": 4,
+          "exact_root_order": 48
+        },
+        {
+          "H": 14,
+          "k": 1,
+          "q": 14,
+          "unit_count": 6,
+          "kernel_size": 1,
+          "character_exponent": 6,
+          "exact_root_order": 84
+        },
+        {
+          "H": 14,
+          "k": 2,
+          "q": 28,
+          "unit_count": 12,
+          "kernel_size": 2,
+          "character_exponent": 6,
+          "exact_root_order": 84
+        },
+        {
+          "H": 14,
+          "k": 3,
+          "q": 42,
+          "unit_count": 12,
+          "kernel_size": 2,
+          "character_exponent": 6,
+          "exact_root_order": 84
+        },
+        {
+          "H": 14,
+          "k": 4,
+          "q": 56,
+          "unit_count": 24,
+          "kernel_size": 4,
+          "character_exponent": 6,
+          "exact_root_order": 168
+        },
+        {
+          "H": 18,
+          "k": 1,
+          "q": 18,
+          "unit_count": 6,
+          "kernel_size": 1,
+          "character_exponent": 6,
+          "exact_root_order": 36
+        },
+        {
+          "H": 18,
+          "k": 2,
+          "q": 36,
+          "unit_count": 12,
+          "kernel_size": 2,
+          "character_exponent": 6,
+          "exact_root_order": 36
+        },
+        {
+          "H": 18,
+          "k": 3,
+          "q": 54,
+          "unit_count": 18,
+          "kernel_size": 3,
+          "character_exponent": 18,
+          "exact_root_order": 108
+        },
+        {
+          "H": 18,
+          "k": 4,
+          "q": 72,
+          "unit_count": 24,
+          "kernel_size": 4,
+          "character_exponent": 6,
+          "exact_root_order": 72
+        },
+        {
+          "H": 20,
+          "k": 1,
+          "q": 20,
+          "unit_count": 8,
+          "kernel_size": 1,
+          "character_exponent": 4,
+          "exact_root_order": 20
+        },
+        {
+          "H": 20,
+          "k": 2,
+          "q": 40,
+          "unit_count": 16,
+          "kernel_size": 2,
+          "character_exponent": 4,
+          "exact_root_order": 40
+        },
+        {
+          "H": 20,
+          "k": 3,
+          "q": 60,
+          "unit_count": 16,
+          "kernel_size": 2,
+          "character_exponent": 4,
+          "exact_root_order": 60
+        },
+        {
+          "H": 20,
+          "k": 4,
+          "q": 80,
+          "unit_count": 32,
+          "kernel_size": 4,
+          "character_exponent": 4,
+          "exact_root_order": 80
+        }
+      ],
+      "negative_control": {
+        "modulus": 3,
+        "chi1": [
+          0,
+          0
+        ],
+        "psi1": [
+          0,
+          1
+        ],
+        "chi2": [
+          0,
+          1
+        ],
+        "psi2": [
+          0,
+          0
+        ],
+        "common_product": [
+          0,
+          1
+        ]
+      }
+    },
+    "normalization_convolution": {
+      "counts": {
+        "sample_character_products": 54,
+        "two_factor_cauchy_certificates": 6,
+        "convolution_cases": 20000,
+        "partial_summation_intervals": 136
+      },
+      "normalization_records": [
+        {
+          "H": 6,
+          "k": 3,
+          "Y": 2,
+          "M": 3,
+          "N": 2,
+          "V": "167/385",
+          "prefactor": 72,
+          "raw_scaled_energy": [
+            "1140028241/2091675",
+            "-7884844/83667",
+            "0",
+            "3942422/83667"
+          ],
+          "normalized_energy": [
+            "1140028241/150600600",
+            "-1971211/1506006",
+            "0",
+            "1971211/3012012"
+          ],
+          "raw_scaled_bilinear": [
+            "-39111850151/75300300",
+            "-11522588/251001",
+            "3874904/83667",
+            "81911555/1004004"
+          ],
+          "normalized_bilinear": [
+            "-39111850151/5421621600",
+            "-2880647/4518018",
+            "484363/753003",
+            "81911555/72288288"
+          ],
+          "phase_scope": "Independent order4 multiplicative toy phases; no analytic Mellin or actual-coefficient energy test."
+        },
+        {
+          "H": 10,
+          "k": 3,
+          "Y": 2,
+          "M": 3,
+          "N": 2,
+          "V": "18/77",
+          "prefactor": 72,
+          "raw_scaled_energy": [
+            "333355/1944"
+          ],
+          "normalized_energy": [
+            "333355/139968"
+          ],
+          "raw_scaled_bilinear": [
+            "24200/243",
+            "-122815/5832"
+          ],
+          "normalized_bilinear": [
+            "3025/2187",
+            "-122815/419904"
+          ],
+          "phase_scope": "Independent order4 multiplicative toy phases; no analytic Mellin or actual-coefficient energy test."
+        }
+      ],
+      "scope": "Exact finite prefactors and discrete coefficient algebra, not Mellin or analytic energy estimates."
+    },
+    "sparse_representations": {
+      "counts": {
+        "ordered_representations": 1676,
+        "coefficient_cases": 175
+      },
+      "records": [
+        {
+          "K": 1,
+          "j": 0,
+          "distinct_products": 1,
+          "factorial_bound": 1,
+          "sum_coefficient_squares": "1",
+          "upper_bound": "1"
+        },
+        {
+          "K": 1,
+          "j": 1,
+          "distinct_products": 3,
+          "factorial_bound": 1,
+          "sum_coefficient_squares": "4507/22050",
+          "upper_bound": "4507/22050"
+        },
+        {
+          "K": 1,
+          "j": 2,
+          "distinct_products": 6,
+          "factorial_bound": 2,
+          "sum_coefficient_squares": "60305723/972405000",
+          "upper_bound": "20313049/243101250"
+        },
+        {
+          "K": 1,
+          "j": 3,
+          "distinct_products": 10,
+          "factorial_bound": 6,
+          "sum_coefficient_squares": "485655220811/21441530250000",
+          "upper_bound": "91550911843/1786794187500"
+        },
+        {
+          "K": 1,
+          "j": 4,
+          "distinct_products": 15,
+          "factorial_bound": 24,
+          "sum_coefficient_squares": "17343871085322083/1891142968050000000",
+          "upper_bound": "412619959676401/9849702958593750"
+        },
+        {
+          "K": 2,
+          "j": 0,
+          "distinct_products": 1,
+          "factorial_bound": 1,
+          "sum_coefficient_squares": "1",
+          "upper_bound": "1"
+        },
+        {
+          "K": 2,
+          "j": 1,
+          "distinct_products": 6,
+          "factorial_bound": 1,
+          "sum_coefficient_squares": "1217/429429",
+          "upper_bound": "1217/429429"
+        },
+        {
+          "K": 2,
+          "j": 2,
+          "distinct_products": 18,
+          "factorial_bound": 4,
+          "sum_coefficient_squares": "127087136923/8132448632408100",
+          "upper_bound": "5924356/184409266041"
+        },
+        {
+          "K": 2,
+          "j": 3,
+          "distinct_products": 40,
+          "factorial_bound": 36,
+          "sum_coefficient_squares": "68195229812641/582051547294396329150",
+          "upper_bound": "7209941252/8798965189635621"
+        },
+        {
+          "K": 2,
+          "j": 4,
+          "distinct_products": 75,
+          "factorial_bound": 576,
+          "sum_coefficient_squares": "91048870773838971352661/88182294345008501330139927480000",
+          "upper_bound": "140391976058944/3778530822420035090409"
+        }
+      ],
+      "negative_control": {
+        "K": 2,
+        "j": 2,
+        "u": 1089,
+        "exact_representation_count": 1,
+        "factorial_upper_bound": 4,
+        "character_product": {
+          "modulus": 3,
+          "row": [
+            5,
+            7
+          ],
+          "u": 35,
+          "correct_character_value": -1,
+          "wrong_squared_character_value": 1
+        }
+      }
+    }
+  },
+  "failures": [],
+  "scope": "Finite exact identities only; no zero-free, analytic norm, major-energy or Goldbach certification.",
+  "execution_history": {
+    "smoke_runs": 1,
+    "bounded_final_runs": 1,
+    "smoke_runtime_seconds": 0.027427900000475347,
+    "smoke_passed": true,
+    "smoke_failure_count": 0,
+    "commands": [
+      "python research/goldbach/reflected-energy-20261029/energy_checks.py --smoke --packet .runs/goldbach-energy-012-manual-20261029/packets/finite-check.json",
+      "python research/goldbach/reflected-energy-20261029/energy_checks.py --packet .runs/goldbach-energy-012-manual-20261029/packets/finite-check.json"
+    ],
+    "runtime_scope": "Check body wall time; excludes Python startup, packet/hash validation, helper import and output serialization.",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "usage": "Token usage and monetary cost unknown."
+  },
+  "coverage_limits": [
+    "Fiber additive numerator is1; exact roots are represented by Fraction coefficient polynomials modulo cyclotomic polynomials, with orders up to168.",
+    "Classwise Cauchy bounds are verified by exact sums-of-squares identities, without floating comparison of algebraic numbers.",
+    "Normalization uses Gaussian toy coefficients and independent order4 multiplicative phases, not actual arithmetic-coefficient energy or numerical n^(it).",
+    "No continuous Mellin separation/tail, Gram, Perron, zero-free, small-radical, asymptotic energy or Goldbach certification."
+  ]
+}

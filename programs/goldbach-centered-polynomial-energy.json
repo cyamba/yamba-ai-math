@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-CENTERED-018",
+  "title": "Principal-centered polynomial energy on powers of two",
+  "objective": "Prove or refute a genuine nonprincipal energy saving for the balanced polynomial-sifted prime coefficient family, retaining its explicit principal center and checking the precise relation to the original prime-boundary comparison.",
+  "fleet": "pair",
+  "briefs": ["research/goldbach/centered-polynomial-energy-20261029/brief.md"],
+  "constraints": {"max_agents": 2, "max_workers": 2, "max_cost_units": 8, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["At most two exact centered-energy claims", "Complete proof or first precise falsifier", "Named classical inputs and exact coefficient/support scopes", "Distinct substantive challenge and bounded revision"],
+  "success_criteria": ["Principal and nonprincipal energies are never interchanged", "Actual polynomial and accepted small-sift arrays remain distinct", "Every character/time/modulus normalization is explicit", "No unproved minor comparison or pointwise Goldbach conclusion is inferred"],
+  "stop_conditions": ["One pair round within8 proxy units", "No paid calls, publication or external messages", "A partial centered energy theorem does not redefine the full Goldbach objective"]
+}

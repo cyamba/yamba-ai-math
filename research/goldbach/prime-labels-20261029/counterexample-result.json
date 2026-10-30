@@ -1,0 +1,35 @@
+{
+  "summary": "Separate critic supports the support bounds, one-group prime and odd-factor reconstructions with costs 7 and 53/3, repeated-factor corrections and O(N/z) bound, half-weight deweighting, quotient expansion retaining h=1, nonzero-center consistency test, and scalar padding identities. The inspected source's dirty-edge, moment-height, fixed-shift and root-averaging ranges do not transfer directly to bounded K and polynomial labels. The separate parameter-retuning calculation is supported only as a failure of the displayed available bounds: it neither lower-bounds the actual norm nor rules out new arguments. One wording correction is required: collision probability is exactly 1/t_i for equal selections and at least 1/t_i for arbitrary normalized probabilities on forced divisors. The revision should integrate the root-range supplement. No new centered prime-correlation estimate, Goldbach lower bound, demonstrated breakthrough, full preprint validation or verified novelty has been obtained. Assurance is complete finite algebra and source-parameter audit plus separate agent review, without formal or external peer verification; usage is unknown.",
+  "claims": [
+    {
+      "text": "The bounded-label finite reconstructions, repeated-factor corrections, half-weight identities and quotient expansion with h=1 retained are supported as exact algebra and elementary bounds.",
+      "status": "proved",
+      "source": "research/goldbach/prime-labels-20261029/review.md"
+    },
+    {
+      "text": "The padding operation and every q-independent finite average multiply the original correlation by a scalar; a zero scalar cannot be normalized to recover that correlation.",
+      "status": "proved",
+      "source": "research/goldbach/prime-labels-20261029/statement.md"
+    },
+    {
+      "text": "An unqualified collision probability exactly 1/t_i is false for arbitrary weighted selections; the exact value is sum pi_j^2, at least 1/t_i, with equality for equal probabilities.",
+      "status": "refuted",
+      "source": "research/goldbach/prime-labels-20261029/review.md"
+    },
+    {
+      "text": "The separate retuning calculation correctly identifies failures of the displayed dirty-edge and height budgets and the stated root-averaging range, without proving a lower bound for actual norms or a no-go for other adaptations.",
+      "status": "proved",
+      "source": "research/goldbach/prime-labels-20261029/parameter-retuning.md"
+    },
+    {
+      "text": "A correctly centered target-uniform signed estimate for the adapted weights, a Goldbach lower bound or breakthrough, full source-theorem validation and novelty remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/prime-labels-20261029/review.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/prime-labels-20261029/review.md",
+    "research/goldbach/prime-labels-20261029/statement.md",
+    "research/goldbach/prime-labels-20261029/parameter-retuning.md"
+  ]
+}

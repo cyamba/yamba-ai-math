@@ -1,0 +1,13 @@
+{
+  "scope": "handoff artifacts at explicit pause; CURRENT.md remains mutable",
+  "files": [
+    {
+      "path": "research/goldbach/HANDOFF-20261030.md",
+      "sha256": "0f1934ccae908042b2bd402cf857596b0d32f6edef06415ec039739743075998"
+    },
+    {
+      "path": "research/goldbach/handoff-state-20261030.json",
+      "sha256": "3bbc5dd6f43c619280da4eccd517a0504736779292fa9860baae04efabc7c209"
+    }
+  ]
+}

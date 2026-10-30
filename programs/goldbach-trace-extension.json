@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-TRACE-009",
+  "title": "Trace compression and enlarged determinant-H root count",
+  "objective": "Attempt a valid trace-based removal of root-dependent unit projections and an enlarged joint root count with explicit moving-target costs, preserving the remaining high-moment and actual-prime obligations.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/trace-extension-20261029/brief.md", "research/goldbach/trace-extension-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Exact finite operator enlargement", "Correct trace comparison and endpoint factor", "Enlarged determinantH root bijection/count or counterexample", "Explicit H,S,list and aspect costs", "Separate critic and exact finite checks", "Unproved actual operator/prime obligations"],
+  "success_criteria": ["No false pointwise projection deletion", "New root population is distinguished from actual primes", "Every accepted bound has a complete argument and separate review", "Goldbach objective and proof standard remain unchanged"],
+  "stop_conditions": ["One bounded theorem round within20 proxy units", "No provider billing or external mutable action", "Preserve failed trace or counting steps without claiming a general impossibility"]
+}

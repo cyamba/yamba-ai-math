@@ -1,0 +1,745 @@
+{
+  "mode": "bounded_final",
+  "passed": true,
+  "runtime_seconds": 0.026148500000999775,
+  "python": "3.11.17",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "code_sha256": "c5d2e16afc0863661c4595ddb5f61684fd2407706418865a7f42af0dbf409898",
+  "statement_sha256": "f93c024abd19699640e90bb5680306432c2bb71600acd77a0b66024a6658645b",
+  "packet_sha256": "5b8d2689f766505ee82676df5a7c3dbe18fc2006d68bbc3f4a62241dfdaed3d7",
+  "comparisons": {
+    "signed_cofactors": {
+      "counts": {
+        "unit_products": 2050,
+        "integer_cofactor_records": 165,
+        "quadratic_pairs": 457,
+        "square_and_cauchy_cases": 29,
+        "empty_punctured_group": 1,
+        "coprime_equivalence_cases": 5120,
+        "conjugation_cases": 81
+      },
+      "negative_square_examples": [
+        {
+          "H": 2,
+          "groups": [
+            [
+              3,
+              5,
+              7
+            ]
+          ],
+          "Qpositive": "0",
+          "Qnegative": "2617825/544428"
+        },
+        {
+          "H": 2,
+          "groups": [
+            [
+              3,
+              5
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "Qpositive": "0",
+          "Qnegative": "3705625/746496"
+        },
+        {
+          "H": 4,
+          "groups": [
+            [
+              3,
+              5,
+              7
+            ]
+          ],
+          "Qpositive": "1225/408321",
+          "Qnegative": "2211125/544428"
+        }
+      ],
+      "negative_controls": {
+        "shared_prime": {
+          "H": 8,
+          "a": 3,
+          "b": 3,
+          "mn": 7,
+          "rs": 7,
+          "cofactor": "1/3"
+        },
+        "author_shared_prime": {
+          "H": 2,
+          "a": 3,
+          "b": 3,
+          "mn": 1,
+          "rs": 1,
+          "cofactor": "1/3"
+        },
+        "omitted_units_h_zero": {
+          "H": 6,
+          "m": 2,
+          "n": 3
+        },
+        "author_omitted_units_h_zero": {
+          "H": 2,
+          "a": 3,
+          "m": 1,
+          "n": 2
+        },
+        "negative_h": {
+          "H": 8,
+          "a": 7,
+          "m": 3,
+          "n": 5,
+          "h": -1
+        },
+        "wrong_conjugation": {
+          "actual": [
+            "0",
+            "-1"
+          ],
+          "expected": [
+            "0",
+            "1"
+          ]
+        }
+      }
+    },
+    "endpoint_geometry": {
+      "counts": {
+        "comparison_congruence_pairs": 5960,
+        "comparison_degree_cases": 112,
+        "full_pullback_branch_certificates": 3542,
+        "endpoint_boxes": 18,
+        "canonical_complements_and_sector_maps": 15,
+        "sector_pairs": 25,
+        "window_neighbor_pairs": 17
+      },
+      "max_cell_distance": 0,
+      "occupancy_diagnostics_only": [
+        {
+          "H": 10,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 0,
+          "max_cell_occupancy": 0,
+          "ratio_to_1_plus_UV_over_H": "0"
+        },
+        {
+          "H": 10,
+          "D": 3,
+          "parameters": [
+            2,
+            2,
+            2,
+            3
+          ],
+          "points": 0,
+          "max_cell_occupancy": 0,
+          "ratio_to_1_plus_UV_over_H": "0"
+        },
+        {
+          "H": 12,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 0,
+          "max_cell_occupancy": 0,
+          "ratio_to_1_plus_UV_over_H": "0"
+        },
+        {
+          "H": 14,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 2,
+          "max_cell_occupancy": 1,
+          "ratio_to_1_plus_UV_over_H": "14/23"
+        },
+        {
+          "H": 14,
+          "D": 3,
+          "parameters": [
+            2,
+            2,
+            2,
+            3
+          ],
+          "points": 1,
+          "max_cell_occupancy": 1,
+          "ratio_to_1_plus_UV_over_H": "7/19"
+        },
+        {
+          "H": 16,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 2,
+          "max_cell_occupancy": 2,
+          "ratio_to_1_plus_UV_over_H": "32/25"
+        },
+        {
+          "H": 16,
+          "D": 3,
+          "parameters": [
+            2,
+            2,
+            2,
+            3
+          ],
+          "points": 1,
+          "max_cell_occupancy": 1,
+          "ratio_to_1_plus_UV_over_H": "2/5"
+        },
+        {
+          "H": 18,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 0,
+          "max_cell_occupancy": 0,
+          "ratio_to_1_plus_UV_over_H": "0"
+        },
+        {
+          "H": 20,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 0,
+          "max_cell_occupancy": 0,
+          "ratio_to_1_plus_UV_over_H": "0"
+        },
+        {
+          "H": 20,
+          "D": 3,
+          "parameters": [
+            2,
+            2,
+            2,
+            3
+          ],
+          "points": 0,
+          "max_cell_occupancy": 0,
+          "ratio_to_1_plus_UV_over_H": "0"
+        },
+        {
+          "H": 22,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 2,
+          "max_cell_occupancy": 1,
+          "ratio_to_1_plus_UV_over_H": "22/31"
+        },
+        {
+          "H": 22,
+          "D": 3,
+          "parameters": [
+            2,
+            2,
+            2,
+            3
+          ],
+          "points": 1,
+          "max_cell_occupancy": 1,
+          "ratio_to_1_plus_UV_over_H": "11/23"
+        },
+        {
+          "H": 24,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 0,
+          "max_cell_occupancy": 0,
+          "ratio_to_1_plus_UV_over_H": "0"
+        },
+        {
+          "H": 26,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 2,
+          "max_cell_occupancy": 1,
+          "ratio_to_1_plus_UV_over_H": "26/35"
+        },
+        {
+          "H": 26,
+          "D": 3,
+          "parameters": [
+            2,
+            2,
+            2,
+            3
+          ],
+          "points": 1,
+          "max_cell_occupancy": 1,
+          "ratio_to_1_plus_UV_over_H": "13/25"
+        },
+        {
+          "H": 28,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 2,
+          "max_cell_occupancy": 1,
+          "ratio_to_1_plus_UV_over_H": "28/37"
+        },
+        {
+          "H": 28,
+          "D": 3,
+          "parameters": [
+            2,
+            2,
+            2,
+            3
+          ],
+          "points": 1,
+          "max_cell_occupancy": 1,
+          "ratio_to_1_plus_UV_over_H": "7/13"
+        },
+        {
+          "H": 30,
+          "D": 1,
+          "parameters": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "points": 0,
+          "max_cell_occupancy": 0,
+          "ratio_to_1_plus_UV_over_H": "0"
+        }
+      ],
+      "negative_controls": {
+        "both_unit_restriction": {
+          "H": 6,
+          "primitive_point": [
+            1,
+            2
+          ],
+          "sector": 2
+        },
+        "entrywise_mask": {
+          "H": 22,
+          "coordinates": [
+            3,
+            5
+          ],
+          "B": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "masked": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "x": [
+            1,
+            1
+          ],
+          "full_squared_norm": 4,
+          "masked_squared_norm": 5
+        }
+      }
+    },
+    "artificial_padding": {
+      "counts": {
+        "nonzero_J2_group_factorials": 3,
+        "single_group_mass_cases": 27,
+        "good_ordered_padding": 15,
+        "active_list_cases": 84,
+        "padding_cases": 18
+      },
+      "exact_masses": [
+        {
+          "H": 6,
+          "K": 1,
+          "J": 0,
+          "V": [
+            "167/385"
+          ],
+          "full_mass": "1",
+          "good_mass": "1",
+          "omitted_mass": "0",
+          "explicit_union_bound": "0",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            1
+          ]
+        },
+        {
+          "H": 6,
+          "K": 1,
+          "J": 1,
+          "V": [
+            "167/385"
+          ],
+          "full_mass": "1",
+          "good_mass": "35/167",
+          "omitted_mass": "132/167",
+          "explicit_union_bound": "132/167",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            8
+          ]
+        },
+        {
+          "H": 6,
+          "K": 1,
+          "J": 2,
+          "V": [
+            "167/385"
+          ],
+          "full_mass": "1",
+          "good_mass": "0",
+          "omitted_mass": "1",
+          "explicit_union_bound": "54267/27889",
+          "ordered_to_unordered_factor": 2,
+          "dyadic_blocks": []
+        },
+        {
+          "H": 6,
+          "K": 2,
+          "J": 0,
+          "V": [
+            "167/385",
+            "22392/96577"
+          ],
+          "full_mass": "1",
+          "good_mass": "1",
+          "omitted_mass": "0",
+          "explicit_union_bound": "0",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            1
+          ]
+        },
+        {
+          "H": 6,
+          "K": 2,
+          "J": 1,
+          "V": [
+            "167/385",
+            "22392/96577"
+          ],
+          "full_mass": "1",
+          "good_mass": "54145/623244",
+          "omitted_mass": "569099/623244",
+          "explicit_union_bound": "857519/623244",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            128
+          ]
+        },
+        {
+          "H": 6,
+          "K": 2,
+          "J": 2,
+          "V": [
+            "167/385",
+            "22392/96577"
+          ],
+          "full_mass": "1",
+          "good_mass": "0",
+          "omitted_mass": "1",
+          "explicit_union_bound": "11808818846809/3495897751824",
+          "ordered_to_unordered_factor": 4,
+          "dyadic_blocks": []
+        },
+        {
+          "H": 10,
+          "K": 1,
+          "J": 0,
+          "V": [
+            "131/231"
+          ],
+          "full_mass": "1",
+          "good_mass": "1",
+          "omitted_mass": "0",
+          "explicit_union_bound": "0",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            1
+          ]
+        },
+        {
+          "H": 10,
+          "K": 1,
+          "J": 1,
+          "V": [
+            "131/231"
+          ],
+          "full_mass": "1",
+          "good_mass": "21/131",
+          "omitted_mass": "110/131",
+          "explicit_union_bound": "110/131",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            8
+          ]
+        },
+        {
+          "H": 10,
+          "K": 1,
+          "J": 2,
+          "V": [
+            "131/231"
+          ],
+          "full_mass": "1",
+          "good_mass": "0",
+          "omitted_mass": "1",
+          "explicit_union_bound": "36279/17161",
+          "ordered_to_unordered_factor": 2,
+          "dyadic_blocks": []
+        },
+        {
+          "H": 10,
+          "K": 2,
+          "J": 0,
+          "V": [
+            "131/231",
+            "22392/96577"
+          ],
+          "full_mass": "1",
+          "good_mass": "1",
+          "omitted_mass": "0",
+          "explicit_union_bound": "0",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            1
+          ]
+        },
+        {
+          "H": 10,
+          "K": 2,
+          "J": 1,
+          "V": [
+            "131/231",
+            "22392/96577"
+          ],
+          "full_mass": "1",
+          "good_mass": "10829/162964",
+          "omitted_mass": "152135/162964",
+          "explicit_union_bound": "696755/488892",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            128
+          ]
+        },
+        {
+          "H": 10,
+          "K": 2,
+          "J": 2,
+          "V": [
+            "131/231",
+            "22392/96577"
+          ],
+          "full_mass": "1",
+          "good_mass": "0",
+          "omitted_mass": "1",
+          "explicit_union_bound": "7628204036977/2151138488976",
+          "ordered_to_unordered_factor": 4,
+          "dyadic_blocks": []
+        },
+        {
+          "H": 22,
+          "K": 1,
+          "J": 0,
+          "V": [
+            "71/105"
+          ],
+          "full_mass": "1",
+          "good_mass": "1",
+          "omitted_mass": "0",
+          "explicit_union_bound": "0",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            1
+          ]
+        },
+        {
+          "H": 22,
+          "K": 1,
+          "J": 1,
+          "V": [
+            "71/105"
+          ],
+          "full_mass": "1",
+          "good_mass": "15/71",
+          "omitted_mass": "56/71",
+          "explicit_union_bound": "56/71",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            4
+          ]
+        },
+        {
+          "H": 22,
+          "K": 1,
+          "J": 2,
+          "V": [
+            "71/105"
+          ],
+          "full_mass": "1",
+          "good_mass": "0",
+          "omitted_mass": "1",
+          "explicit_union_bound": "9843/5041",
+          "ordered_to_unordered_factor": 2,
+          "dyadic_blocks": []
+        },
+        {
+          "H": 22,
+          "K": 2,
+          "J": 0,
+          "V": [
+            "71/105",
+            "22392/96577"
+          ],
+          "full_mass": "1",
+          "good_mass": "1",
+          "omitted_mass": "0",
+          "explicit_union_bound": "0",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            1
+          ]
+        },
+        {
+          "H": 22,
+          "K": 2,
+          "J": 1,
+          "V": [
+            "71/105",
+            "22392/96577"
+          ],
+          "full_mass": "1",
+          "good_mass": "7735/88324",
+          "omitted_mass": "80589/88324",
+          "explicit_union_bound": "364127/264972",
+          "ordered_to_unordered_factor": 1,
+          "dyadic_blocks": [
+            128
+          ]
+        },
+        {
+          "H": 22,
+          "K": 2,
+          "J": 2,
+          "V": [
+            "71/105",
+            "22392/96577"
+          ],
+          "full_mass": "1",
+          "good_mass": "0",
+          "omitted_mass": "1",
+          "explicit_union_bound": "2138747327641/631891447056",
+          "ordered_to_unordered_factor": 4,
+          "dyadic_blocks": []
+        }
+      ],
+      "negative_controls": {
+        "missing_J_factorial": {
+          "J": 2,
+          "correct_ordered_mass": "1470/5041",
+          "wrong_unordered_mass": "735/5041"
+        },
+        "exclusion_mass_not_one": {
+          "group": [
+            3,
+            5,
+            7
+          ],
+          "allowed_distinct_ordered": [
+            [
+              3,
+              5
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "mass": "1470/5041"
+        }
+      }
+    }
+  },
+  "failures": [],
+  "scope": "Finite exact algebra and bounded endpoint diagnostics only; no analytic norm, removal, TypeII or Goldbach certification.",
+  "execution_history": {
+    "smoke_runs": 1,
+    "bounded_final_runs": 1,
+    "smoke_runtime_seconds": 0.002881200001866091,
+    "smoke_passed": true,
+    "smoke_failure_count": 0,
+    "commands": [
+      "python research/goldbach/type-ii-pairing-20261029/pairing_checks.py --smoke --packet .runs/goldbach-pairing-011-manual-20261029/packets/finite-check.json",
+      "python research/goldbach/type-ii-pairing-20261029/pairing_checks.py --packet .runs/goldbach-pairing-011-manual-20261029/packets/finite-check.json"
+    ],
+    "runtime_scope": "Check body wall time; excludes Python startup, packet validation and output serialization.",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "usage": "Token usage and monetary cost unknown."
+  },
+  "coverage_limits": [
+    "Small geometric boxes contain 25 sector pairs, and the tested maximum cell distance is zero.",
+    "All complete K-group J=2 good masses are zero in these punctured toy groups; three individual-group J=2 factorial cases are nonzero.",
+    "Author (17) is checked only as its scalar harmonic weight and arbitrary signed endpoint-pair coefficient identity, not a physical kernel identity.",
+    "No asymptotic analytic or Goldbach certification."
+  ]
+}

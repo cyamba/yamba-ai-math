@@ -1,0 +1,15 @@
+# Goldbach: an explicit switching minorant
+
+29 October 2026. Continue the active user objective without relaxing binary Goldbach or claiming a breakthrough from a reduction. Prior accepted work and open inputs are in `../continuation-20261029/result.md` and `lower-revision.md`.
+
+For even N, U_alpha counts prime p with q=N-p>1 and every prime factor of q greater than N^alpha. At alpha in [0.3,1/3), F_alpha=U_alpha-E_alpha exactly, where E_alpha counts semiprime complements, with repeated factors included. The reviewed H_alpha upper bound controls triple-prime contamination; a pointwise lower bound for F_alpha exceeding H_alpha remains missing.
+
+Test a concrete nonnegative Buchstab switching minorant. For beta<1/4 define C_r(N) by least prime factor r of q, so U_alpha=U_beta-sum_{N^beta<r<=N^alpha}C_r exactly. The case q=r, corresponding to remaining factor 1, belongs to C_r; it must not be erased from an exact identity. In the sieve for the remaining factor, primes less than r are excluded and r itself is allowed, including repeated factors. Primes dividing N create explicit exceptional prime summands, not reduced residue classes to assume away.
+
+Use a fixed ordinary distribution exponent d<1/2. First test beta in [d/4,d/2), alpha in [0.3,1/3), with alpha<d. The basic proposed coefficient for U_beta is exp(-gamma)*f(d/beta)/beta. The switching upper integral is exp(-gamma)*integral_beta^alpha F((d-t)/t)/t^2 dt, after any weakening of its sift cutoff has been justified by an inspected theorem. A closed-form cancellation may make the resulting minorant nonpositive independently of beta. Derive it rather than assuming it. Determine precisely whether an allowed split or refinement changes that conclusion for this family.
+
+The source survey identifies the actual domain of the imported Rosser-Iwaniec formula. Do not use an s<2 formula directly outside that domain. If needed, weaken the upper sieve cutoff to min(r,sqrt(D/r)), giving a legal s>=2 at the cost of its actual local-density ratio.
+
+Theorem fleet: source survey, statement, distinct critic and independent computation, revision and integration. One round, 14 planned dispatch proxy units within a 20-unit bound; at most three delegated workers at once. No separately billed provider, external message, publication, branch push or infrastructure change. Finite exact identity checks initially stop at even N=5,000. Numerical coefficient calculations must distinguish exploratory floating-point values from a rigorous rational or analytic certificate.
+
+Outputs: either a complete separately reviewed positive lower coefficient sufficient for the actual Goldbach objective, or an independently checked negative/nonpositive coefficient certificate for exactly the chosen minorant. A failed minorant does not prove Goldbach inaccessible to all methods. Record each remaining analytic input, the next genuinely different step and assurance. Keep the active user goal unresolved unless its actual success criterion is met.

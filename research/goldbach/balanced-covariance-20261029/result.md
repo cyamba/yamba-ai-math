@@ -1,0 +1,17 @@
+# Balanced covariance remains open after two direct attempts
+
+29 October 2026. GOLDBACH-BALANCED-023 completed the actual Mathematician proposal, distinct Independent Critic challenge and original-author revision. No useful signed covariance bound or positive original prime margin was obtained. The elementary results below have complete written arguments and distinct critic reconstruction, with classical maximal BV explicitly imported where used. Novelty remains unverified.
+
+The exact Section10 operator retains prime and rough-semiprime inner branches, all cross-branch terms, the reflected-prime weight, complete wheel and its prefactor. The atom vanishes only after proving every supported product composite. Uniform-integer and prime-unit local measures differ. The exact four-term covariance is retained; a small diagonal does not bound its off-diagonal.
+
+The first actual distribution/divisor-switching attempt preserves the relation s*m1-r*m2=N(s-r), the full congruence modulo r and the second genuine-prime weight. Partial summation of BV gives an insufficient bound with a power loss even on its covered ranges; some original moduli also exceed its allowed range. No assertion that all possible bounds have that loss is made.
+
+The second attempt proves a useful error lemma: replacing the prime-only theta by von Mangoldt on the actual factor support changes the squared q-weighted norm by an error norm squared O(N^(3/2)log^3 N)=o(M_N^2). It also has an unweighted total O(sqrt(N)log^2 N)=o(M_N). This makes the two dispersion targets equivalent; it does not prove either target. The resulting exact signed divisor expansion leaves a centered quotient-Mobius norm unbounded, with integer cofactors and all endpoints preserved.
+
+The exact long semiprime coefficient is also recorded. For distinct rough p<q, t=log p/log(pq), it equals -(3t^2-2t^3) when p<=D and -1 when p>D. For p=q it is -1/2. Equality p=D belongs to the first case. Its weighted transfer needs the actual prime branch and prefix control; a final combined two/three-factor pilot sum does not provide it. Complementary ranges remain outside this ledger.
+
+The [revision](revision.md) accepts all three substantive gaps: the weighted prime discrepancy plus matching wheel terms, the quotient-Mobius norm, and the weighted branch/prefix transfer. Six frozen CR-corrupted prime markers are preserved in the original statement and cleanly restated in the revision. This is a formatting correction, not a mathematical refutation. See [full independent review](review.md) and [frozen proof attempt](statement.md).
+
+Actual pair8 proxy units completed, one round, no supplement, helper, numerical search or new retrieval. Token and monetary usage are unknown. Replay validates saved protocol only and records research_validated=false. Repository/contracts pass; no new functional code was added. Latest full functional tests remain015:116 with existing10 failures and3 errors, not green. All21 audited original/prior manifests,390 files, are unchanged.
+
+The parallel actual CHEN024 author is testing stronger distribution from newly pinned primary inputs and its genuine signed application; no pending claim is imported here. Rough prime-plus-P2 is not the original prime-pair objective. No push, publication, paid provider call or external message occurred. The persistent user goal remains active and incomplete.

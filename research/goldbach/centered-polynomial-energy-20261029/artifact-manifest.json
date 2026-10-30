@@ -1,0 +1,53 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/brief.md",
+      "sha256": "4aebbcff3730231477d47e53f15be69f56f5447abb5e58673932f43a47a71f42"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/challenge-result.json",
+      "sha256": "125545642931812a91b2639e92c388122279cfc626967aa3fa8a52c7ebdfd543"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/host-execution.json",
+      "sha256": "4cb89b16a616c8751b451d3a8d6981ca34bf1743c1fff286ada800fc4f50c6dc"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/NEXT_SESSION.md",
+      "sha256": "5c0819c0c8ebdcb6c54d110aa1145d573d18d84425920d75a694a151311f2860"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/objective-audit.json",
+      "sha256": "e46305b697cb93a910ca851084c451ece1c2604d507d963e4782bd8cf2aad551"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/propose-result.json",
+      "sha256": "4c466ae38fcddac02d6c291c09f335412e4d65ce4c17b7540db8c50db1535f7b"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/result.md",
+      "sha256": "ce866e2d83a8e4417611ff1fb9a14105cc75f15ee5103164827653d8c4a3dea7"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/review.md",
+      "sha256": "3a014cd1b9f78a36b81b05b9e38076e33807f8bd30080145927e54cf1e44caa2"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/revise-result.json",
+      "sha256": "70fd997a22e2987f5a1cc596a4e14e877b5d0595bcc3179ebf46ddac046f0df3"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/revision.md",
+      "sha256": "a45b012cbd701675ce6746f060bedd7777f5075ca8cb96ab3fd903b5d40407d3"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/source-provenance.json",
+      "sha256": "2c31f08e6605fd3f191208d36a677b91ca44edf2606cee71713197ba9b81f427"
+    },
+    {
+      "path": "research/goldbach/centered-polynomial-energy-20261029/statement.md",
+      "sha256": "6470a9f07d8b2074bf3fa89a241eb52114ed9e0fd7f6b6426fd897bcdb1a1cf4"
+    }
+  ]
+}

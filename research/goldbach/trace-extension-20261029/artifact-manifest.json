@@ -1,0 +1,94 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/trace-extension-20261029/brief.md",
+      "sha256": "170c61468bacaf836b143b16ad2affc55635366a0a272b38321b73eaabea5e79"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/counterexample-result.json",
+      "sha256": "18fb51fb87d4f694b87298e001eedcdb6d26c1ff4df6cb581af7d500413244fd"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/experiment-plan.md",
+      "sha256": "807def175a3cc3ab4e6977102afa84df6ff8d2c114b5fbf6f327d8ed0aba6ab3"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/finite-check-result.json",
+      "sha256": "283970b38e05e024b169cbc8bd5fcc99f78901b82e889a8fb50fe3d9fc7b6946"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/finite-results.json",
+      "sha256": "e58e40b26f33d6dc64831d1124ede141730c1f158a5ec2cbb9401ccff3a6bcf5"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/goal-bridge-source-audit.md",
+      "sha256": "c0d88f11b5a0f027e03e94668a44768c4d74edf6e35f074c80c314a267fd82f6"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/host-execution.json",
+      "sha256": "6c94b4a4129902137b0f98b7109ae36edd2dc75cd13f78b06251d85aababcb7e"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/integrate-result.json",
+      "sha256": "4fcb68cba55fd40b373a199c835642e856b9a05f390031fa00b980cbe5974cd0"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/NEXT_SESSION.md",
+      "sha256": "c08b1a86414e35342cfd608a95c181d375daa601b12e6b18c4673366921db328"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/objective-audit.json",
+      "sha256": "01c8c7ae9720469d70b7663d3b3ad81c2b85cbadd24cb43a655e93f6a7b98bbf"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/pre-mortem.md",
+      "sha256": "08d340585dd11a8ab75ef1e8dc55bce8dd3959edca2bde5683dd54c2f36aeb11"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/repository-tests.json",
+      "sha256": "9b83f2c791ab91c54530d55558fd815aeea5285ef46ce1236280348ab989710a"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/result.md",
+      "sha256": "e341966d301ccbd8df538b58deba4d96e899a782d3d78fae3854c24703dd240b"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/review.md",
+      "sha256": "f2bbb20524fc05b4495e4edf0917ee055f4f2f3f15ce54e89fc7f3bbf2f2ceb1"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/revise-result.json",
+      "sha256": "0b98b241fdb3f694e8f4ec6e7f6bd0c88f39faa559d60b9e0409b2d0569fd17e"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/revision.md",
+      "sha256": "07a29496d5f256bb5c5c883242515cff07029e59e72e2c52bedf86f83ddbe97e"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/source-provenance.json",
+      "sha256": "3d341d58198f27acb1883df7d151a962cf1e5a152ce1cd342eea0d0570fc6c88"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/statement-result.json",
+      "sha256": "3793109eef328828e15724b1507e540c1e40e594491ac7928d7b4feb2bf1990a"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/statement.md",
+      "sha256": "44336ee22423b7a63550ff3b49ca394a9e12af1971eb04ac7c8e455a116a4b3d"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/survey-result.json",
+      "sha256": "12b846d65072b1f4136e49e53697a764432b4c8ca87d50e6e3518ffb90d2b5ad"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/survey.md",
+      "sha256": "c7ae650b93001fda23496cef1bff04733e0862b73ba516158815a76cebaaf6ad"
+    },
+    {
+      "path": "research/goldbach/trace-extension-20261029/trace_checks.py",
+      "sha256": "df93003d13809bb1f0812f3350beb3f52fd46644b06f05067bac42cd6941f3dc"
+    }
+  ],
+  "original_import_hashes_verified": true
+}

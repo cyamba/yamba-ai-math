@@ -1,0 +1,37 @@
+{
+  "program": "GOLDBACH-ASSESS-016",
+  "mode": "manual host-agent execution using actual harness packets",
+  "completed_stages": [
+    "propose",
+    "challenge",
+    "revise"
+  ],
+  "planned_proxy_units": 8,
+  "completed_proxy_units": 8,
+  "total_planned_host_proxy_units": 8,
+  "token_usage": "unknown",
+  "monetary_cost": "unknown",
+  "assignments": {
+    "propose": "/root/smallrad_assessment as Mathematician",
+    "challenge": "/root/independent_critic",
+    "revise": "/root/smallrad_assessment"
+  },
+  "objective_status": "active; full breakthrough criterion not established",
+  "author_status": "actual original-author revision completed",
+  "scope": "exact contribution/closest-prior assessment, not authority for worker to authorize goal completion",
+  "prior_goal_turn_classification": "progress: independently reviewed014candidateactual-prime consequence triggers a concrete contribution/novelty audit; original015margin investigation continues",
+  "frozen_main_review_sha256": "f9720b56380c97fbc146e7365638413bbaacc628c9992877828ff49cfb1df8f4",
+  "frozen_assessment_sha256": "3557837a4c5155d71db547dd991d2b5412a0c25795f460ee70ec9cf1eb70c61c",
+  "status": "completed_host_execution",
+  "total_declared_host_proxy_units": 8,
+  "frozen_revision_sha256": "6e1122ee4ffb387056987fecb3ebdf8a8751e82816c504f6aef4ec8d175a2b9a",
+  "protocol_validation": {
+    "backend": "replay",
+    "path": ".runs/goldbach-assess-016-validation-20261029",
+    "status": "completed_execution",
+    "research_validated": false,
+    "fresh_inference": false
+  },
+  "proof_assurance": "written mathematical proof with distinct AI semantic review relative to named classical inputs, not formal or external peer verification",
+  "next_action": "BOUNDARY017 actual mathematical author, then distinct challenge"
+}

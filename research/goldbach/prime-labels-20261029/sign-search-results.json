@@ -1,0 +1,127 @@
+{
+  "mode": "floating-point candidate search with exact candidate recounts",
+  "range_even_N": [
+    6,
+    100000
+  ],
+  "targets_screened": 49998,
+  "blocks": [
+    {
+      "prime_cutoff": 1,
+      "even_N_range": [
+        6,
+        6
+      ]
+    },
+    {
+      "prime_cutoff": 2,
+      "even_N_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "prime_cutoff": 3,
+      "even_N_range": [
+        28,
+        124
+      ]
+    },
+    {
+      "prime_cutoff": 5,
+      "even_N_range": [
+        126,
+        342
+      ]
+    },
+    {
+      "prime_cutoff": 7,
+      "even_N_range": [
+        344,
+        1330
+      ]
+    },
+    {
+      "prime_cutoff": 11,
+      "even_N_range": [
+        1332,
+        2196
+      ]
+    },
+    {
+      "prime_cutoff": 13,
+      "even_N_range": [
+        2198,
+        4912
+      ]
+    },
+    {
+      "prime_cutoff": 17,
+      "even_N_range": [
+        4914,
+        6858
+      ]
+    },
+    {
+      "prime_cutoff": 19,
+      "even_N_range": [
+        6860,
+        12166
+      ]
+    },
+    {
+      "prime_cutoff": 23,
+      "even_N_range": [
+        12168,
+        24388
+      ]
+    },
+    {
+      "prime_cutoff": 29,
+      "even_N_range": [
+        24390,
+        29790
+      ]
+    },
+    {
+      "prime_cutoff": 31,
+      "even_N_range": [
+        29792,
+        50652
+      ]
+    },
+    {
+      "prime_cutoff": 37,
+      "even_N_range": [
+        50654,
+        68920
+      ]
+    },
+    {
+      "prime_cutoff": 41,
+      "even_N_range": [
+        68922,
+        79506
+      ]
+    },
+    {
+      "prime_cutoff": 43,
+      "even_N_range": [
+        79508,
+        100000
+      ]
+    }
+  ],
+  "fft_length": 262144,
+  "maximum_rounding_residual": 3.637978807091713e-12,
+  "independent_small_trial_checks": 98,
+  "numerical_nonnegative_candidates": [],
+  "exact_candidate_recounts": [],
+  "largest_screened_T": -1,
+  "largest_screened_T_at_N_ge_1000": -24,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "source_sha256": "75cd98948c9692157f23972bff750fb5967d714e18508e5ca151f518358fbcf4",
+  "elapsed_seconds": 0.1720000000004802,
+  "limitation": "No infinite claim and no exact all-range convolution certification; a finite exception would not alone refute eventual negativity."
+}

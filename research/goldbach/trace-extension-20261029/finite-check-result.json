@@ -1,0 +1,45 @@
+{
+  "summary": "Independent experimenter read the populated TRACE-009 packet and frozen author statement 44336ee22423b7a63550ff3b49ca394a9e12af1971eb04ac7c8e455a116a4b3d. One smoke and one bounded final run passed without failures. Exact Fraction checks cover 1,944 weighted Schatten trace cases, 81 root-frame families with 1,215 principal minors, 243 root-moment trace comparisons, 9 restricted Gram matrices and 90 raised pairing inequalities, plus 192 ordered-list factor cases. The enlarged-root maps match on 781 roots/triples, including 380 nonunit-H cases, and all 1,320 original-pair multiplicities agree. Complete first-row line densities pass in 294 cases, including 176 prescriptions with S sharing H; 1,200 interval aggregations and 2,940 prescription partitions pass. Exact nonunit-H Fourier tests include 126 pair counts/j=0 terms, 84 nonunit cases, 456 nonzero-j zero coefficients and 6,490 gcd checks. The pointwise projection-deletion and endpoint-moment/trace counterexamples are preserved. Final full runtime 0.384372 seconds; code hash and platform are recorded, while token use and monetary cost remain unknown. No asymptotic error exponent, high-moment source theorem or Goldbach result is certified by finite computation.",
+  "claims": [
+    {
+      "text": "All tested weighted Schatten trace-power compressions pass exactly for R=1,2,3. The frame M-bound, root-moment trace bound and actual restricted ambient Gram pairing (8a) pass their finite Fraction and principal-minor checks.",
+      "status": "empirical",
+      "source": "research/goldbach/trace-extension-20261029/finite-results.json"
+    },
+    {
+      "text": "A pointwise diagonal inequality after deleting intermediate projections is false: the author example gives 2>25/16 at R=2. Small endpoint moments alone also do not control a full trace, as shown by exact endpoint moment 0 and trace 1 at R=1,2,3.",
+      "status": "refuted",
+      "source": "research/goldbach/trace-extension-20261029/finite-results.json"
+    },
+    {
+      "text": "All 192 finite ordered-list enumerations agree with the exact falling-factorial endpoint weight formula, with group masses retained rather than normalized away.",
+      "status": "empirical",
+      "source": "research/goldbach/trace-extension-20261029/finite-results.json"
+    },
+    {
+      "text": "All 781 enlarged roots and canonical determinant-H triples match under both maps, and all 1,320 original-pair multiplicities agree with phi(u)/phi(u/g) when gcd(v,u)=g=gcd(H,u), including nonunit H modulo u.",
+      "status": "empirical",
+      "source": "research/goldbach/trace-extension-20261029/finite-results.json"
+    },
+    {
+      "text": "Complete primitive-first-row projective densities and finite root aggregation pass even when S shares H. The H=6,u=v=3,r=1 horizontal kernel is valid in the enlarged population; no matrix-invertibility hypothesis is imposed there.",
+      "status": "empirical",
+      "source": "research/goldbach/trace-extension-20261029/finite-results.json"
+    },
+    {
+      "text": "The nonunit-H gcd factor cannot be copied from the unit case: H=2,u=4,h=0,j=2 gives actual gcd 4 versus the unit-only gcd 2. The corrected product bound and all bounded Fourier tests retain zero and nonunit coefficients.",
+      "status": "empirical",
+      "source": "research/goldbach/trace-extension-20261029/finite-results.json"
+    },
+    {
+      "text": "Finite checks do not establish the large-parameter normalization limit, the enlarged analytic trace/path bound, actual-prime cancellation or Goldbach.",
+      "status": "unverified",
+      "source": "research/goldbach/trace-extension-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/trace-extension-20261029/experiment-plan.md",
+    "research/goldbach/trace-extension-20261029/trace_checks.py",
+    "research/goldbach/trace-extension-20261029/finite-results.json"
+  ]
+}

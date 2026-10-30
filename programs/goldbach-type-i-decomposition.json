@@ -1,0 +1,13 @@
+{
+  "id": "GOLDBACH-TYPEI-013",
+  "title": "Reflected Vaughan decomposition and Type I",
+  "objective": "Prove the exact prime decomposition and reflected TypeI estimates needed to join the reviewed TypeII and analytic energy interfaces, with all common-divisor, endpoint and classical-input conditions explicit.",
+  "fleet": "theorem",
+  "briefs": ["research/goldbach/type-i-decomposition-20261029/brief.md", "research/goldbach/type-i-decomposition-20261029/survey.md"],
+  "constraints": {"max_agents": 5, "max_workers": 3, "max_cost_units": 20, "max_rounds": 1, "timeout_seconds": 120},
+  "rounds": 1,
+  "preferred_tags": ["theorems", "constructive-skeptic"],
+  "deliverables": ["Exact sifted Vaughan identity and both prime-power corrections", "Endpoint-uniform reflected TypeI proof or first failing step", "Inspected primary Mobius BV input", "Separate substantive critic and exact local identities", "Preserved full Goldbach objective"],
+  "success_criteria": ["Nonreduced target classes are factored before BV", "All truncation tails and plus-one counts retain their true scales", "TypeII and energy are used only in their accepted scopes", "Weighted prime parity is not identified with Goldbach"],
+  "stop_conditions": ["One bounded theorem round within20 proxy units", "No paid inference, publication or external mutable action", "Preserve unresolved substantive gaps rather than importing source-wide transport"]
+}

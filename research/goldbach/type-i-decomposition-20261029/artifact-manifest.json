@@ -1,0 +1,93 @@
+{
+  "scope": "completed local top-level files excluding this manifest",
+  "files": [
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/brief.md",
+      "sha256": "015773df4eaeed193cd17ccf4d9ddabeef68f9ace8650e21f768bb2275c454ce"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/counterexample-result.json",
+      "sha256": "4853307ccdc88222bfb3ef984c839ded9b62e7cd1161ca9ea16314ab77948750"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/experiment-plan.md",
+      "sha256": "8db398284edf9c037299b96d217d925b150baede032f3c7c9f6bcf06668fb360"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/finite-check-result.json",
+      "sha256": "320b951982d00eaaa66c51e20d6fc81af2b96e207c3f24f96ad9af1dd350362c"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/finite-results.json",
+      "sha256": "b27c05577a7f24851a9c2b548a222d060577a36bf865cdc8d2e785971d851766"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/host-execution.json",
+      "sha256": "7fe3c327c15549ce90a282d4fd2c809b53edf54e7f7188752f2ca1e945e87e70"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/integrate-result.json",
+      "sha256": "9bf0949dad517b2646174d4d20a00b11d4ce08bc8d3f2c7e802f23d230feeec3"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/NEXT_SESSION.md",
+      "sha256": "3bf10233a55c2bd66bfbdd7a9de32093e0c76e9a2269db1adfaf763cf1383a84"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/objective-audit.json",
+      "sha256": "f171090de5e19c67d76e3d5fc19d41ca84449175ee83ac1d8eb10650125f97c4"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/pre-mortem.md",
+      "sha256": "64de633d5f3ffcb2d9cede9d6ed931a512943d9314fbf5d644924b86e6c017c0"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/primary-inputs.md",
+      "sha256": "c1c43876c4d7f6ec4a34b3c1cc1f61ab4997c19a0166c301ade6d62822ce7576"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/repository-tests.json",
+      "sha256": "07ee66fab8b67e46cef7319ff735d99779ad211bc2d187adf5e758400f19e7dc"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/result.md",
+      "sha256": "5c66fce8126216fff69ef1643fc711192f653780fc1fc13a0a878e2edf8249f0"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/review.md",
+      "sha256": "34b75233d8a2846798491e1e8f3acdad261d7a4a35a7c9905fcaf5b7ee6506b7"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/revise-result.json",
+      "sha256": "e3c4f48c616de2dea8e43928f000805ab5aa210af512a696352aacb91b72a09e"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/revision.md",
+      "sha256": "8e1c40489618673257f07dbdafc84cac7be910f486cb0dbf49787462592b75a2"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/source-provenance.json",
+      "sha256": "998dece0e2e35249a2fbc74657aa8d8a4f00bf19f3edead309667d81193c2fdd"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/statement-result.json",
+      "sha256": "811456b532c157bf944f0d4a43c011cb9e941f113f9c3050414fd487f58d09ac"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/statement.md",
+      "sha256": "f810cce2f92073af5244e673b0afdad6d6a1d624b22f4df422468bd61a174db2"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/survey-result.json",
+      "sha256": "44d6930404d331177d1ba6b8a33749c420367ef84369409cb890e67ea0aac644"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/survey.md",
+      "sha256": "32d064f465661f3678d822f1190035430827ac63d798a5d5d023b7a9c42d9287"
+    },
+    {
+      "path": "research/goldbach/type-i-decomposition-20261029/typei_checks.py",
+      "sha256": "6599592178caf976f528d3bbf65dd773122824077a35a1ed8527fdb084f83171"
+    }
+  ]
+}

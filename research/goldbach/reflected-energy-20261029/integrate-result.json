@@ -1,0 +1,38 @@
+{
+  "summary": "Integrated actual ENERGY012 author, distinct critic, exact finite branch and accepted revision. The major comparison reduction and actual-coefficient energy are supported relative to explicit classical inputs, with a selected precision strip for general H and its classical small-radical specialization. Exact fixed twists, two Mellin frequencies,1/Y,YX\u00b2 and formal threshold scope are retained. TYPEI013 must check its inherited comparable threshold; WEIGHTS014 remains unexecuted by its author, and COFACTORS015 independently targets the original polynomial prime-boundary gap. Actual-prime assembly, source-wide validation, novelty and Goldbach remain unestablished. Usage unknown; replay is offline protocol validation only.",
+  "claims": [
+    {
+      "text": "The specified full-pullback major comparison is controlled by normalized fixed-twist energy with exact YX\u00b2 scale and all stated tail/logarithmic costs.",
+      "status": "proved",
+      "source": "research/goldbach/reflected-energy-20261029/revision.md"
+    },
+    {
+      "text": "Actual arithmetic energy satisfies the stated bound under the selected precision strip, relative to named classical and structural completed-L inputs; general H retains that strip hypothesis.",
+      "status": "proved",
+      "source": "research/goldbach/reflected-energy-20261029/review.md"
+    },
+    {
+      "text": "The inspected Iwaniec theorem and real-conductor cutoff supply the strip for every required q*|kH on the fixed small-radical class.",
+      "status": "proved",
+      "source": "research/goldbach/reflected-energy-20261029/iwaniec-primary-statement.md"
+    },
+    {
+      "text": "All reported bounded exact algebraic checks pass with numerator1 and toy-product limitations; they do not certify the analytic theorem.",
+      "status": "empirical",
+      "source": "research/goldbach/reflected-energy-20261029/finite-results.json"
+    },
+    {
+      "text": "General-H zero-free input, complete actual-prime decomposition/weight assembly, polynomial-rough and prime-boundary margins, novelty and Goldbach remain unestablished.",
+      "status": "unverified",
+      "source": "research/goldbach/reflected-energy-20261029/result.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/reflected-energy-20261029/result.md",
+    "research/goldbach/reflected-energy-20261029/revision.md",
+    "research/goldbach/reflected-energy-20261029/review.md",
+    "research/goldbach/reflected-energy-20261029/finite-results.json",
+    "research/goldbach/reflected-energy-20261029/source-provenance.json",
+    "research/goldbach/reflected-energy-20261029/NEXT_SESSION.md"
+  ]
+}

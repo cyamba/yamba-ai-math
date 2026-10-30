@@ -1,0 +1,43 @@
+{
+  "summary": "Independent Critic verdict: incomplete. The assigned frozen statement and actual populated upstream packet were checked. Independent reconstruction supports the exact four-term covariance and local wheel identities, the switched congruence and insufficient BV variation bound, the O(N^(3/2)L^3) prime-power correction and norm equivalence, the exact signed divisor identity, and the semiprime coefficients including squares and p=D. Neither attempted mechanism proves useful signed covariance cancellation. Three prioritized findings retain the genuine weighted discrepancy, quotient-Mobius cancellation, and weighted branchwise transfer as open obligations. Assurance is human-readable reconstruction with the exact classical BV statement imported, not a formal certificate or numerical experiment. No full-goal completion decision is made.",
+  "claims": [
+    {
+      "text": "The frozen statement SHA256 is ee40705ea259c3ff2593ddf26d7f3f5d483c0cae3493fd6561fbe4cf1c893fc8; the actual challenge packet's upstream result equals the actual schema-valid propose-result.json. All nine inputs listed in the existing primary provenance match their recorded hashes.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/review.md, Frozen inputs and assurance; local hash, equality and harness.runtime.validate_result checks"
+    },
+    {
+      "text": "The exact support removes the atom and zero rows, and makes surviving r coprime to the full wheel. The four-term expansion retains all coupled supports and both cross-branch terms. The displayed integer-residue local factors and different unit-residue factors are correct finite wheel identities, without a finite-interval prime-prime estimate.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/review.md, Supported deductions, support and four-term/local-measure checks"
+    },
+    {
+      "text": "The exact prime-pair switch retains m1=N modulo r. On the explicitly BV-covered dyadic supports, the actual second-prime weight has available variation O(X^2 L^4), giving the valid but insufficient error O(N^2 X/L^(A-4)+N^2 L^8). The full r support also extends beyond the exact imported BV cutoff.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/review.md, switched relation and BV reconstruction; imports only Koukoulopoulos (26.1) in its stated range"
+    },
+    {
+      "text": "The prime-power replacement satisfies sum q R(q)^2=O(N^(3/2)L^3)=o(M_N^2) and sum R(q)=O(sqrt(N)L^2)=o(M_N). Counting at most five rough prime-factor slots, with repetitions retained, and the weighted reverse triangle inequality prove the exact two-way dispersion equivalence.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/review.md, Prime-power replacement and equivalence"
+    },
+    {
+      "text": "The signed divisor expansion and long quotient-Mobius switch are exact, including integer k=1 with zero log factor. They give no estimate of the centered weighted norm required in (3.5).",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/review.md, Signed divisor identity and finding 2"
+    },
+    {
+      "text": "For distinct rough p<q the long coefficient is -(3t^2-2t^3) for p<=D and -1 for p>D; the square coefficient is -1/2. The weighted semiprime Cauchy energy has weight q. Combined unweighted pilot control alone supplies neither branchwise bounds nor the weighted prefix and complementary-range estimates needed for original-target transfer.",
+      "status": "proved",
+      "source": "research/goldbach/balanced-covariance-20261029/review.md, Semiprime coefficient reconstruction and finding 3"
+    },
+    {
+      "text": "The actual D_Q=o(M_N^2) target, a useful one-sided weighted semiprime margin, the complete long-signed hypothesis and Goldbach remain unproved by this round. The failure of the available upper bounds does not refute the eventual covariance target. Novelty of the checked elementary deductions remains unverified.",
+      "status": "unverified",
+      "source": "research/goldbach/balanced-covariance-20261029/review.md, verdict, findings and handoff"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/balanced-covariance-20261029/review.md"
+  ]
+}

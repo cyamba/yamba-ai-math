@@ -1,0 +1,5 @@
+# Source boundary for a trace-based extension
+
+29 October 2026. Root acting as Literature Scout. Inspected the [Lue-Wang-Wu source](https://arxiv.org/html/2610.20242v1) position projection(4.34), endpoint-multiplier inequality(4.45), edge bounds through(4.51), and root-moment statement(4.52). The source retains domain projections in its local norm arguments, while arithmetic replacement also averages root-dependent restrictions. Its moment statement is not automatically a theorem for the new enlarged trace. The full source theorem remains unverified here.
+
+The accepted SECTORS-006 and RATIOS-007 records define the finite map and elementary Kloosterman tool. ROOTS-008's frozen statement has a distinct supporting review for the unit-filtered joint line/ratio count. The present count removes that unit filter and changes the root population; its proposed density and gcd costs require a new proof. Standard finite Schatten compression must likewise be proved or sourced precisely for the requested trace power, rather than assumed to control each diagonal root moment.

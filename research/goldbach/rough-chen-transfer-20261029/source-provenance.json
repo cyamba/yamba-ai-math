@@ -1,0 +1,96 @@
+{
+  "source_is_data": true,
+  "record_referenced": "https://zenodo.org/records/20372012",
+  "latest_record_observed": "https://zenodo.org/records/20377091",
+  "versions": {
+    "rough_chen": "v2,25 May2026",
+    "li": "arXiv2405.05727v4,31 May2025",
+    "lichtman_large_moduli": "arXiv2309.08522v1,30 August2023"
+  },
+  "rough_chen_pdf_record_md5": "3fb82bd39f045fdfb6f2186722f9ba78",
+  "root_inspection": "record descriptions; rough-Chen exact TeX Sections3-5 and final limitation; Li Lemmas2.1-2.2 in text and pages3-4 renders; Lichtman Theorem1.7/Prop3.1/Prop6.6 statement renders4,9,28; rough-Chen propositions render5,9,10; no full proof certification",
+  "inputs": [
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/rough-chen-v2.pdf",
+      "bytes": 280292,
+      "sha256": "6f1b44549beda5fc855793a305a41c670867a9ba2b744cdc4346eefa14459d14"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/rough-chen-v2.tex",
+      "bytes": 26086,
+      "sha256": "a356ed1fa60b530c2186dd10f1c67caf3c45cf1020b26604deb867c53a6d02d3"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/rough-chen-v2.txt",
+      "bytes": 20510,
+      "sha256": "0338dd961ad22362fb35420dfecc0f938d12122048844fb1869c0671ecaec762"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/li-chen-2405.05727v4.pdf",
+      "bytes": 447639,
+      "sha256": "e62adef510c1e0a695769e03be1f7fe787cc2b30ea1f8761e87a9039efdf3f2c"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/li-chen-2405.05727v4.txt",
+      "bytes": 37615,
+      "sha256": "41104e2a24b05386e3321bcb3e0a223cf1abe6ca5ca092193597970181fc245d"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-large-moduli-2309.08522v1.pdf",
+      "bytes": 616691,
+      "sha256": "665693af46aee2d743e0a1f61c6e35464dc8113e3083b9f3546bfa7de98c55b5"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-large-moduli-2309.08522v1.txt",
+      "bytes": 127281,
+      "sha256": "b118d438d665a4c27025d2740791dd6b5c7a79dd07f4f95fdce804aff0d91704"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/rough-chen-v2-page-03.png",
+      "bytes": 142221,
+      "sha256": "f3dac7cf47130c8ef4c194fc423fb3f1ff124ffdd99305cc5623ab7fc03b1ee6"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/rough-chen-v2-page-05.png",
+      "bytes": 164829,
+      "sha256": "ef0da3b6a7dcfe4f358cf217d9e44795c339c71bd388c178546d74ac603be9e6"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/rough-chen-v2-page-09.png",
+      "bytes": 139141,
+      "sha256": "66635147b92176c06841bb61190ef90bb012c19f1981d92d1838baa361572b85"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/rough-chen-v2-page-10.png",
+      "bytes": 158784,
+      "sha256": "9c127dd614b971e83a2cd378eac2cb8abcf619409ba66776111a5a37a3242850"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/li-chen-v4-page-03.png",
+      "bytes": 165916,
+      "sha256": "0f173ad696a3275d7635d6cf00927309010d16c9525dbd56c44ccb98af0c388e"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/li-chen-v4-page-04.png",
+      "bytes": 158842,
+      "sha256": "96c99ffa83a97ac82aafd0af315c5a467a5019a83a1ccc9effd1f5d48cf007c7"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-large-page-04.png",
+      "bytes": 238894,
+      "sha256": "e6fdc17e5f7638d955ff0ffef720ffd7767cbeca2b7fb6f081b787105e913532"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-large-page-09.png",
+      "bytes": 189628,
+      "sha256": "21c9929b93c3096507518457bd76644dd2ce6bb8652356a5e27f595de7c1b855"
+    },
+    {
+      "path": ".runs/goldbach-source-inputs-20261029/lichtman-large-page-28.png",
+      "bytes": 233810,
+      "sha256": "6cbc9cc842e71a433ed3d55942aaef503a9d0f5b05865bf153f4023acd161eab"
+    }
+  ],
+  "external_code_execution": "none; accompanying preprint certificate was not downloaded or executed",
+  "tools": "public web record access; ordinary curl public downloads; pypdf text extraction; Poppler rendering; scoped image inspection"
+}

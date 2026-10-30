@@ -1,0 +1,36 @@
+{
+  "summary": "Independent experimenter read the final statement and populated finite-check packet and executed preregistered smoke and full checks. All 22,482 least-prime-factor switching identities and 7,494 parity identities passed through even N=5,000, with 48 independent trial-division cross-checks. The q=r case, repeated factors and r dividing N were retained and checked. Exact coefficient algebra cancels beta and gives M=(2/d)log((d-alpha)/alpha); the scoped rational certificate gives M<=-4/3. All 60 exact rational log enclosures were negative, and independent Simpson quadrature agreed within 1.615e-11 absolute error. The concrete author choice simplifies exactly to (200/49)log(19/30)<=-220/147. This validates arithmetic and the stated coefficient family, not the analytic source hypotheses or remainder control, and is not a Goldbach solution. Final full-run runtime was 1.773295 seconds; token usage and monetary cost are unknown.",
+  "claims": [
+    {
+      "text": "For every even N=6..5000 and the nine specified beta/alpha pairs, exact U_alpha=U_beta-sum C_r checks pass; the three upper-cutoff identities F_alpha=U_alpha-E_alpha also pass, including m=1 and multiplicities.",
+      "status": "empirical",
+      "source": "research/goldbach/switching-20261029/finite-results.json"
+    },
+    {
+      "text": "Every enumerated switching candidate with r dividing N has prime summand p=r; q=r and repeated-prime-factor cases are retained rather than removed from the exact identity.",
+      "status": "empirical",
+      "source": "research/goldbach/switching-20261029/finite-results.json"
+    },
+    {
+      "text": "For exactly the stated L and legal-cutoff upper integral, symbolic beta terms cancel: M=(2/d)log((d-alpha)/alpha). Under alpha>=3/10 and alpha<d<=1/2, log(x)<=x-1 with x=(d-alpha)/alpha<=2/3 gives M<=-4/3<0, independently of beta in the scoped family.",
+      "status": "proved",
+      "source": "research/goldbach/switching-20261029/coefficient-certificate.json"
+    },
+    {
+      "text": "The 60 numerical coefficient diagnostics agree with the closed expression within the preregistered tolerance; exact rational log enclosures certify a negative closed coefficient on this diagnostic grid.",
+      "status": "empirical",
+      "source": "research/goldbach/switching-20261029/coefficient-certificate.json"
+    },
+    {
+      "text": "No computation in this stage validates the analytic remainder assumptions, supplies a positive parity lower bound, rules out all switching methods, or proves Goldbach.",
+      "status": "unverified",
+      "source": "research/goldbach/switching-20261029/statement.md"
+    }
+  ],
+  "artifacts": [
+    "research/goldbach/switching-20261029/experiment-plan.md",
+    "research/goldbach/switching-20261029/switching_checks.py",
+    "research/goldbach/switching-20261029/finite-results.json",
+    "research/goldbach/switching-20261029/coefficient-certificate.json"
+  ]
+}
