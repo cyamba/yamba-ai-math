@@ -4,6 +4,8 @@
 
 # Yamba AI Math Lab
 
+[![YouTube: @yamba-ai-math](https://img.shields.io/badge/YouTube-%40yamba--ai--math-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@yamba-ai-math)
+
 **New mathematics for smaller, smarter, more cost-effective AI.**
 
 This is an open research workspace for investigating neural architectures, attention, geometric deep learning, reliable reasoning, world models, and agent systems. The aim is to turn promising mathematical ideas into precise statements, real experiments, and eventually useful models and software.
